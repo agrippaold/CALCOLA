@@ -105,4 +105,157 @@ export const UI_STRINGS: Record<string, Record<string, string>> = {
     'footer.languages': 'Lingue Disponibili',
     'footer.rights': 'Tutti i diritti riservati.',
   },
+
+  es: {
+    // Navegación
+    'nav.home': 'Inicio',
+    'nav.categories': 'Categorías',
+    'nav.about': 'Sobre nosotros',
+    'nav.language': 'Idioma',
+
+    // Categorías
+    'category.finance': 'Finanzas',
+    'category.health': 'Salud y Fitness',
+    'category.math': 'Matemáticas y Ciencia',
+    'category.conversion': 'Conversiones',
+    'category.date': 'Fecha y Hora',
+    'category.construction': 'Construcción y Hogar',
+    'category.text': 'Texto y Web',
+    'category.education': 'Educación y Juegos',
+    'category.physics': 'Electricidad y Física',
+
+    // UI Calculadora
+    'calc.calculate': 'Calcular',
+    'calc.reset': 'Reiniciar',
+    'calc.result': 'Resultado',
+    'calc.save': 'Guardar cálculo',
+    'calc.saved': '¡Guardado!',
+    'calc.share': 'Compartir',
+    'calc.embed': 'Insertar esta calculadora',
+    'calc.copyEmbed': 'Copiar código embed',
+    'calc.copied': '¡Copiado!',
+
+    // Secciones de contenido
+    'content.howItWorks': 'Cómo Funciona',
+    'content.formula': 'Fórmula',
+    'content.source': 'Fuente',
+    'content.examples': 'Ejemplos Prácticos',
+    'content.faq': 'Preguntas Frecuentes',
+    'content.relatedTools': 'Calculadoras Relacionadas',
+    'content.lastUpdated': 'Última actualización',
+    'content.writtenBy': 'Escrito por',
+    'content.reviewedBy': 'Revisado por',
+
+    // Footer
+    'footer.about': 'Sobre CalcHub',
+    'footer.methodology': 'Nuestra Metodología',
+    'footer.privacy': 'Política de Privacidad',
+    'footer.terms': 'Términos de Servicio',
+    'footer.contact': 'Contacto',
+    'footer.allCalculators': 'Todas las Calculadoras',
+    'footer.languages': 'Idiomas Disponibles',
+    'footer.rights': 'Todos los derechos reservados.',
+  },
+
+  fr: {
+    // Navigation
+    'nav.home': 'Accueil',
+    'nav.categories': 'Catégories',
+    'nav.about': 'À propos',
+    'nav.language': 'Langue',
+
+    // Catégories
+    'category.finance': 'Finances',
+    'category.health': 'Santé et Fitness',
+    'category.math': 'Mathématiques et Sciences',
+    'category.conversion': 'Conversions',
+    'category.date': 'Date et Heure',
+    'category.construction': 'Construction et Maison',
+    'category.text': 'Texte et Web',
+    'category.education': 'Éducation et Loisirs',
+    'category.physics': 'Électricité et Physique',
+
+    // UI Calculatrice
+    'calc.calculate': 'Calculer',
+    'calc.reset': 'Réinitialiser',
+    'calc.result': 'Résultat',
+    'calc.save': 'Enregistrer le calcul',
+    'calc.saved': 'Enregistré !',
+    'calc.share': 'Partager',
+    'calc.embed': 'Intégrer cette calculatrice',
+    'calc.copyEmbed': 'Copier le code embed',
+    'calc.copied': 'Copié !',
+
+    // Sections de contenu
+    'content.howItWorks': 'Comment Ça Marche',
+    'content.formula': 'Formule',
+    'content.source': 'Source',
+    'content.examples': 'Exemples Pratiques',
+    'content.faq': 'Questions Fréquentes',
+    'content.relatedTools': 'Calculatrices Associées',
+    'content.lastUpdated': 'Dernière mise à jour',
+    'content.writtenBy': 'Rédigé par',
+    'content.reviewedBy': 'Vérifié par',
+
+    // Footer
+    'footer.about': 'À propos de CalcHub',
+    'footer.methodology': 'Notre Méthodologie',
+    'footer.privacy': 'Politique de Confidentialité',
+    'footer.terms': 'Conditions d\'Utilisation',
+    'footer.contact': 'Contact',
+    'footer.allCalculators': 'Toutes les Calculatrices',
+    'footer.languages': 'Langues Disponibles',
+    'footer.rights': 'Tous droits réservés.',
+  },
+
+  de: {
+    // Navigation
+    'nav.home': 'Startseite',
+    'nav.categories': 'Kategorien',
+    'nav.about': 'Über uns',
+    'nav.language': 'Sprache',
+
+    // Kategorien
+    'category.finance': 'Finanzen',
+    'category.health': 'Gesundheit & Fitness',
+    'category.math': 'Mathematik & Wissenschaft',
+    'category.conversion': 'Umrechner',
+    'category.date': 'Datum & Uhrzeit',
+    'category.construction': 'Bauen & Wohnen',
+    'category.text': 'Text & Web',
+    'category.education': 'Bildung & Spiele',
+    'category.physics': 'Elektrizität & Physik',
+
+    // Rechner UI
+    'calc.calculate': 'Berechnen',
+    'calc.reset': 'Zurücksetzen',
+    'calc.result': 'Ergebnis',
+    'calc.save': 'Berechnung speichern',
+    'calc.saved': 'Gespeichert!',
+    'calc.share': 'Teilen',
+    'calc.embed': 'Rechner einbetten',
+    'calc.copyEmbed': 'Embed-Code kopieren',
+    'calc.copied': 'Kopiert!',
+
+    // Inhaltsabschnitte
+    'content.howItWorks': 'So Funktioniert Es',
+    'content.formula': 'Formel',
+    'content.source': 'Quelle',
+    'content.examples': 'Praktische Beispiele',
+    'content.faq': 'Häufig Gestellte Fragen',
+    'content.relatedTools': 'Ähnliche Rechner',
+    'content.lastUpdated': 'Zuletzt aktualisiert',
+    'content.writtenBy': 'Geschrieben von',
+    'content.reviewedBy': 'Geprüft von',
+
+    // Footer
+    'footer.about': 'Über CalcHub',
+    'footer.methodology': 'Unsere Methodik',
+    'footer.privacy': 'Datenschutz',
+    'footer.terms': 'Nutzungsbedingungen',
+    'footer.contact': 'Kontakt',
+    'footer.allCalculators': 'Alle Rechner',
+    'footer.languages': 'Verfügbare Sprachen',
+    'footer.rights': 'Alle Rechte vorbehalten.',
+  },
 };
