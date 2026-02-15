@@ -1,0 +1,81 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Baufinanzierung Rechner - Tilgungsplan | CalcHub"
+metaDescription: "Berechnen Sie Ihre monatliche Rate, Zinsen und Tilgungsplan fuer Ihre Baufinanzierung. Sollzins, Effektivzins und Sondertilgung sofort vergleichen."
+h1: "Baufinanzierung Rechner"
+slug: "baufinanzierung-rechner"
+
+primaryKeyword: "baufinanzierung rechner"
+secondaryKeywords:
+  - "hypothekenrechner"
+  - "tilgungsrechner"
+  - "immobilienkredit berechnen"
+  - "baukredit rechner"
+
+intro: "Der Kauf einer Immobilie ist die groesste finanzielle Entscheidung im Leben der meisten Menschen in Deutschland. Bevor Sie einen Darlehensvertrag unterschreiben, sollten Sie genau wissen, wie hoch Ihre monatliche Rate ausfaellt, wie viel Zinsen Sie insgesamt bezahlen und wie sich Sondertilgungen auf die Gesamtkosten auswirken. Dieser Baufinanzierung Rechner schlüsselt Ihre Rate in Zins- und Tilgungsanteil auf, erstellt einen detaillierten Tilgungsplan und erlaubt den Vergleich verschiedener Szenarien. Geben Sie Darlehensbetrag, Sollzins und Laufzeit ein, um die Zahlen zu sehen, die fuer Ihre Finanzplanung entscheidend sind."
+
+howItWorks:
+  title: "So wird eine Baufinanzierung berechnet"
+  content: "Jede Annuitaetenrate einer Baufinanzierung mit festem Sollzins wird nach derselben Formel berechnet, die alle deutschen Banken und Bausparkassen verwenden. Die Formel benoetigt drei Eingabewerte: den Darlehensbetrag (die Summe, die Sie aufnehmen), den gebundenen Sollzinssatz pro Jahr und die Zinsbindungsdauer beziehungsweise Gesamtlaufzeit. Die monatliche Rate bleibt waehrend der Zinsbindung konstant, aber das Verhaeltnis zwischen Zinsanteil und Tilgungsanteil verschiebt sich von Monat zu Monat. In den ersten Jahren fliesst der groesste Teil Ihrer Rate in die Zinszahlung, weil die Restschuld noch hoch ist. Mit jeder Zahlung sinkt die Restschuld, dadurch fallen weniger Zinsen an, und ein immer groesserer Anteil jeder Rate tilgt tatsaechlich das Darlehen. Genau deshalb haben Sondertilgungen in den ersten Jahren einen besonders grossen Effekt auf die Gesamtzinskosten. Betrachten wir ein konkretes Beispiel: Bei einem Darlehen von 300.000 Euro mit einem Sollzins von 3,50 Prozent und einer anfaenglichen Tilgung von 2 Prozent betraegt die monatliche Annuitaetenrate 1.375,00 Euro. Von der ersten Rate entfallen 875,00 Euro auf Zinsen und 500,00 Euro auf die Tilgung. Nach 10 Jahren Zinsbindung liegt die Restschuld noch bei rund 237.000 Euro. Waehlt man stattdessen eine anfaengliche Tilgung von 3 Prozent, steigt die Rate auf 1.625,00 Euro, aber die Restschuld nach 10 Jahren sinkt auf etwa 203.000 Euro, eine Differenz von 34.000 Euro. In Deutschland unterscheidet man zwischen Sollzins und Effektivzins. Der Sollzins (auch Nominalzins genannt) ist der reine Darlehenszins, waehrend der Effektivzins nach der Preisangabenverordnung (PAngV) alle Kosten einschliesst, etwa Bearbeitungsgebuehren und die Verrechnungsweise der Tilgung. Der Effektivzins ist die gesetzlich vorgeschriebene Vergleichsgroesse und liegt in der Regel leicht ueber dem Sollzins. KfW-Darlehen der Kreditanstalt fuer Wiederaufbau bieten fuer bestimmte Vorhaben, etwa energieeffizientes Bauen oder den Erwerb von Wohneigentum, zinsvergünstigte Kredite mit Tilgungszuschüssen. Ein KfW-Darlehen wird oft als Ergaenzung zur Hauptfinanzierung bei der Hausbank eingesetzt und kann die durchschnittlichen Zinskosten des gesamten Finanzierungspakets deutlich senken. Sondertilgungen sind in den meisten deutschen Darlehensvertraegen bis zu einer bestimmten Hoehe pro Jahr moeglich, haeufig 5 bis 10 Prozent der urspruenglichen Darlehenssumme. Wer regelmaessig Sondertilgungen leistet, reduziert die Restschuld schneller und spart ueber die gesamte Laufzeit erhebliche Zinskosten. Bei einem Darlehen von 300.000 Euro zu 3,50 Prozent Sollzins spart eine jaehrliche Sondertilgung von 5.000 Euro ueber 10 Jahre rund 15.000 Euro an Zinsen. Neben der Finanzierung selbst sollten Kaeufer die Kaufnebenkosten einplanen: Grunderwerbsteuer (je nach Bundesland 3,5 bis 6,5 Prozent), Notar- und Grundbuchkosten (etwa 1,5 bis 2 Prozent) sowie gegebenenfalls Maklergebuehren (bis zu 3,57 Prozent inklusive Mehrwertsteuer fuer jede Seite). Diese Kosten summieren sich schnell auf 10 bis 15 Prozent des Kaufpreises und muessen in der Regel aus Eigenkapital finanziert werden."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = monatliche Rate, P = Darlehensbetrag, r = monatlicher Zinssatz (Jahreszins / 12 / 100), n = Gesamtanzahl der Raten (Jahre × 12)"
+  academicSource: "Deutsche Bundesbank. (2025). Statistiken zum Wohnungsbaukreditgeschaeft der Monetaeren Finanzinstitute."
+
+faqs:
+  - question: "Was ist der Unterschied zwischen Sollzins und Effektivzins?"
+    answer: "Der Sollzins (oder Nominalzins) gibt den reinen Darlehenszins an, den die Bank fuer die Bereitstellung des Kapitals berechnet. Der Effektivzins hingegen enthaelt neben dem Sollzins auch saemtliche Nebenkosten wie Bearbeitungsgebuehren und die Art der Zins- und Tilgungsverrechnung. Die Preisangabenverordnung (PAngV) schreibt vor, dass Banken in Deutschland den Effektivzins ausweisen muessen, damit Kreditnehmer verschiedene Angebote objektiv vergleichen koennen. Bei einer Baufinanzierung von 250.000 Euro kann der Unterschied zwischen Sollzins und Effektivzins schon bei 0,1 Prozentpunkten ueber die gesamte Laufzeit mehrere Tausend Euro betragen."
+  - question: "Wie viel Eigenkapital brauche ich fuer eine Baufinanzierung?"
+    answer: "Banken empfehlen in der Regel mindestens 20 bis 30 Prozent Eigenkapital bezogen auf den Kaufpreis inklusive Nebenkosten. Das Eigenkapital sollte dabei mindestens die Kaufnebenkosten abdecken, also Grunderwerbsteuer, Notar, Grundbuch und eventuelle Maklerprovision. Bei einem Kaufpreis von 400.000 Euro sind das rund 40.000 bis 60.000 Euro allein fuer die Nebenkosten. Je mehr Eigenkapital Sie einbringen, desto niedriger faellt der Sollzins aus, weil die Bank ein geringeres Risiko traegt. Eine Vollfinanzierung ohne Eigenkapital ist moeglich, fuehrt aber zu deutlich hoeheren Zinsen und einer laengeren Gesamtlaufzeit."
+  - question: "Lohnt sich ein KfW-Darlehen fuer meine Immobilienfinanzierung?"
+    answer: "KfW-Darlehen koennen die Gesamtzinskosten einer Baufinanzierung erheblich senken, besonders bei Neubauten oder energetischen Sanierungen. Das Programm KfW 300 (Wohneigentum fuer Familien) und das Programm KfW 261 (Energieeffizient Bauen und Sanieren) bieten zinsvergünstigte Kredite bis zu bestimmten Hoechstbetraegen, oft kombiniert mit Tilgungszuschüssen. Ein KfW-Darlehen von 150.000 Euro mit einem Zinsvorteil von 1 Prozentpunkt gegenueber dem Marktzins spart ueber 10 Jahre Zinsbindung rund 12.000 bis 15.000 Euro. Beantragen muessen Sie das KfW-Darlehen vor Beginn des Bauvorhabens ueber Ihre Hausbank."
+  - question: "Was passiert nach Ablauf der Zinsbindung?"
+    answer: "Nach Ablauf der Zinsbindungsfrist besteht in der Regel eine Restschuld, die Sie durch eine Anschlussfinanzierung weiter tilgen. Sie koennen bei Ihrer bisherigen Bank ein Prolongationsangebot einholen oder zu einem anderen Kreditinstitut wechseln (Umschuldung). Der neue Zinssatz haengt vom dann aktuellen Marktniveau ab. Liegt der Zinssatz hoeher als bei Ihrem Erstdarlehen, steigt die monatliche Rate oder die Restlaufzeit verlaengert sich. Um dieses Zinsaenderungsrisiko zu verringern, koennen Sie bereits bis zu 5 Jahre vor Ablauf der Zinsbindung ein Forward-Darlehen abschliessen, das den kuenftigen Zinssatz schon heute festschreibt."
+  - question: "Wie wirkt sich die Tilgungshoehe auf die Gesamtkosten aus?"
+    answer: "Die anfaengliche Tilgungsrate bestimmt, wie schnell Sie Ihre Schulden abbauen. Bei einem Darlehen von 300.000 Euro zu 3,5 Prozent Sollzins fuehrt eine anfaengliche Tilgung von 1 Prozent zu einer Gesamtlaufzeit von ueber 45 Jahren und Gesamtzinsen von rund 270.000 Euro. Erhoehen Sie die Tilgung auf 3 Prozent, verkuerzt sich die Laufzeit auf etwa 23 Jahre und die Gesamtzinsen sinken auf rund 130.000 Euro. Das bedeutet eine Ersparnis von 140.000 Euro an Zinsen. Experten raten zu einer anfaenglichen Tilgung von mindestens 2 Prozent, besser 3 Prozent, damit Sie in einem vernuenftigen Zeitraum schuldenfrei werden."
+  - question: "Welche Rolle spielt die Sondertilgung bei der Baufinanzierung?"
+    answer: "Sondertilgungen ermoeglichen es Ihnen, ausserplanmaessige Zahlungen auf Ihr Darlehen zu leisten und damit die Restschuld schneller zu reduzieren. Die meisten Banken erlauben Sondertilgungen von 5 bis 10 Prozent der urspruenglichen Darlehenssumme pro Jahr ohne Vorfaelligkeitsentschaedigung. Bei einem Darlehen von 250.000 Euro zu 3,5 Prozent Sollzins und einer jaehrlichen Sondertilgung von 5.000 Euro sparen Sie ueber die gesamte Laufzeit mehr als 20.000 Euro an Zinsen und werden mehrere Jahre frueher schuldenfrei. Achten Sie bereits bei Vertragsabschluss darauf, dass Sondertilgungsoptionen vertraglich vereinbart sind, da nicht alle Angebote diese Moeglichkeit kostenlos enthalten."
+
+examples:
+  - title: "Klassische Baufinanzierung ueber 25 Jahre"
+    scenario: "Ein Kreditnehmer finanziert eine Immobilie mit einem Darlehen von 300.000 Euro bei 3,50 Prozent Sollzins und 2 Prozent anfaenglicher Tilgung"
+    inputs:
+      loanAmount: 300000
+      interestRate: 3.5
+      loanTerm: 25
+    expectedResult: "Monatliche Rate: 1.375,00 € | Gesamtzinsen: ca. 112.500 €"
+    explanation: "Mit einer monatlichen Rate von 1.375 Euro zahlt dieser Kreditnehmer ueber 25 Jahre rund 112.500 Euro an Zinsen. Die erste Rate besteht aus 875 Euro Zinsen und 500 Euro Tilgung. Im letzten Jahr des Darlehens kehrt sich dieses Verhaeltnis praktisch um. Kaufnebenkosten wie Grunderwerbsteuer und Notargebuehren kommen zusaetzlich hinzu und sollten aus dem Eigenkapital gedeckt werden."
+  - title: "Kuerzere Laufzeit mit hoeherer Tilgung"
+    scenario: "Dasselbe Darlehen von 300.000 Euro, aber mit 3 Prozent anfaenglicher Tilgung bei 3,20 Prozent Sollzins"
+    inputs:
+      loanAmount: 300000
+      interestRate: 3.2
+      loanTerm: 20
+    expectedResult: "Monatliche Rate: 1.550,00 € | Gesamtzinsen: ca. 72.000 €"
+    explanation: "Die monatliche Belastung steigt um 175 Euro gegenueber dem 25-Jahres-Szenario, aber die Gesamtzinsen sinken um rund 40.000 Euro. Bei einem Haushaltsnettoeinkommen von 5.000 Euro liegt die Belastungsquote bei 31 Prozent und damit innerhalb der von Banken empfohlenen Grenze von 35 Prozent. Der niedrigere Zinssatz und die hoehere Tilgung verkuerzen die Laufzeit deutlich."
+  - title: "Kleine Baufinanzierung mit KfW-Ergaenzung"
+    scenario: "Ein Erstkäufer nimmt 180.000 Euro Bankdarlehen zu 3,80 Prozent auf 20 Jahre plus 50.000 Euro KfW-Darlehen zu 1,50 Prozent auf"
+    inputs:
+      loanAmount: 180000
+      interestRate: 3.8
+      loanTerm: 20
+    expectedResult: "Bankdarlehen monatliche Rate: 1.072,62 € | KfW-Rate: ca. 241 € | Gesamtrate: ca. 1.314 €"
+    explanation: "Durch die Aufteilung der Finanzierung auf ein Bankdarlehen und ein zinsvergünstigtes KfW-Darlehen sinken die durchschnittlichen Zinskosten. Ohne das KfW-Darlehen wuerde die gesamte Summe von 230.000 Euro zu 3,80 Prozent finanziert, was eine hoehere monatliche Rate und deutlich hoehere Gesamtzinsen bedeuten wuerde. Die Zinsdifferenz von 2,3 Prozentpunkten auf 50.000 Euro spart ueber 20 Jahre rund 14.000 Euro."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

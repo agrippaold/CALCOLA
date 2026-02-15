@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Kalorienrechner - Tagesbedarf & Makros | CalcHub"
+metaDescription: "Berechnen Sie Ihren taeglichen Kalorienbedarf und die Makronaehrstoffverteilung fuer Abnehmen, Gewicht halten oder Muskelaufbau. Basierend auf Mifflin-St Jeor."
+h1: "Kalorienrechner"
+slug: "kalorienrechner"
+
+primaryKeyword: "kalorienrechner"
+secondaryKeywords:
+  - "kalorienbedarf berechnen"
+  - "kalorien pro tag"
+  - "makronaehrstoffe berechnen"
+  - "kalorienzaehler"
+
+intro: "Wie viele Kalorien brauchen Sie tatsaechlich pro Tag? Die Antwort haengt von Ihrem Koerper, Ihrem Aktivitaetslevel und Ihrem Ziel ab. Dieser Rechner kombiniert die Mifflin-St-Jeor-Formel mit Ihrem Aktivitaetsniveau und Ihrem Ziel, um Ihnen ein taegliches Kalorienziel samt Aufschluesselung der Makronaehrstoffe in Gramm Eiweiss, Kohlenhydrate und Fett zu liefern. Kein Raetselraten, sondern personalisierte Zahlen, die Sie direkt fuer Ihre Mahlzeitenplanung einsetzen koennen."
+
+howItWorks:
+  title: "So wird der taegliche Kalorienbedarf berechnet"
+  content: "Dieser Rechner arbeitet in drei Schritten. Zuerst berechnet er Ihren Grundumsatz (BMR) mit der Mifflin-St-Jeor-Gleichung, die Gewicht, Groesse, Alter und Geschlecht beruecksichtigt. Im zweiten Schritt wird der Grundumsatz mit einem Aktivitaetsfaktor multipliziert, um den Gesamtenergieumsatz (TDEE) zu ermitteln, also Ihre Erhaltungskalorien. Im dritten Schritt erfolgt die Anpassung an Ihr Ziel: Beim Abnehmen werden 500 Kalorien vom Erhaltungswert abgezogen, beim Zunehmen 500 Kalorien addiert, und beim Gewicht halten bleibt der Wert unveraendert. Die Anpassung um 500 Kalorien basiert auf dem weit verbreiteten Energiebilanz-Prinzip: Rund 7.000 Kalorien entsprechen etwa einem Kilogramm Koerperfett. Ein taegliches Defizit von 500 Kalorien ergibt daher einen Fettverlust von ungefaehr einem halben Kilogramm pro Woche. Dieser Zusammenhang ist eine Naeherung, die kurz- bis mittelfristig gut funktioniert, wobei die metabolische Anpassung dazu fuehrt, dass die tatsaechliche Abnahmerate ueber Monate hinweg nachlassen kann. Die Makronaehrstoffverteilung folgt einem ausgewogenen Verhaeltnis von 30 Prozent Eiweiss, 40 Prozent Kohlenhydrate und 30 Prozent Fett. Der Eiweissanteil von 30 Prozent ist gewaehlt, weil Studien bestaetigen, dass eine hoehere Proteinzufuhr den Muskelerhalt waehrend einer Kalorienrestriktion unterstuetzt und das Saettigungsgefuehl foerdert. Die Umrechnung erfolgt mit 4 Kalorien pro Gramm Eiweiss, 4 Kalorien pro Gramm Kohlenhydrate und 9 Kalorien pro Gramm Fett. Diese Aufteilung eignet sich fuer die Mehrzahl der Menschen mit allgemeinen Fitnesszielen, obwohl bestimmte Ziele Anpassungen erfordern koennen. Sportler und Personen, die sich auf Muskelaufbau konzentrieren, profitieren moeglicherweise von 35 bis 40 Prozent Eiweiss. Ausdauersportler erzielen oft bessere Leistungen mit 50 bis 55 Prozent Kohlenhydraten. Low-Carb-Ansaetze verschieben das Verhaeltnis hin zu einem hoeheren Fettanteil bei gleichbleibendem Eiweiss. Die Deutsche Gesellschaft fuer Ernaehrung (DGE) empfiehlt fuer die Allgemeinbevoelkerung einen Eiweissanteil von 15 bis 20 Prozent, einen Fettanteil von maximal 30 Prozent und den Rest aus Kohlenhydraten. Fuer sportlich aktive Personen oder Personen in einem Kaloriendefizit kann ein hoeherer Proteinanteil sinnvoll sein. Ein wichtiger Grundsatz: Dieser Rechner liefert einen Startpunkt und keine exakte Vorgabe. Individuelle Stoffwechselunterschiede, Ungenauigkeiten bei der Lebensmittelerfassung und taegliche Schwankungen in der Aktivitaet machen Anpassungen in der Praxis immer noetig. Beginnen Sie mit diesen Werten, verfolgen Sie Ihr Gewicht und Ihr Energielevel ueber 2 bis 3 Wochen und passen Sie bei Bedarf um 100 bis 200 Kalorien an."
+  formula: "Kalorien = TDEE +/- 500 (je nach Ziel)"
+  formulaExplanation: "TDEE = Grundumsatz x Aktivitaetsfaktor. Abnehmen: TDEE - 500. Halten: TDEE. Zunehmen: TDEE + 500. Untergrenze von 1.200 kcal aus Sicherheitsgruenden."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Makronaehrstoff-Empfehlungen: Deutsche Gesellschaft fuer Ernaehrung (DGE), Referenzwerte fuer die Naehrstoffzufuhr, 2. Auflage."
+
+faqs:
+  - question: "Wie viele Kalorien sollte ich essen, um abzunehmen?"
+    answer: "Fuer eine nachhaltige Gewichtsabnahme essen Sie 300 bis 500 Kalorien weniger als Ihren Gesamtenergieumsatz (TDEE). Das fuehrt zu einem Fettverlust von etwa 0,25 bis 0,5 kg pro Woche. Fuer die meisten Frauen bedeutet das 1.400 bis 1.800 Kalorien am Tag, fuer die meisten Maenner 1.800 bis 2.200 Kalorien taeglich, wobei der individuelle Bedarf je nach Koerpergroesse und Aktivitaet abweicht. Unterschreiten Sie nicht 1.200 Kalorien pro Tag ohne aerztliche Begleitung, da sehr niedrige Kalorienzufuhr zu Naehrstoffmangel, Muskelverlust und einer Verlangsamung des Stoffwechsels fuehren kann."
+  - question: "Muss ich Kalorien zaehlen, um abzunehmen?"
+    answer: "Kalorienzaehlen ist nicht zwingend noetig, bietet aber die praeziseste Kontrolle ueber Ihre Energiebilanz. Alternativen sind die Portionskontrolle mit der Handmethode, Prinzipien des intuitiven Essens oder das alleinige Erfassen der Proteinzufuhr bei gleichzeitig vollwertiger Ernaehrung. Studien zeigen, dass Personen, die ihre Aufnahme zumindest anfangs protokollieren, ein besseres Bewusstsein fuer Portionsgroessen und Kaloriendichte entwickeln. Viele stellen fest, dass 4 bis 6 Wochen Tracking ausreichend Erfahrung aufbauen, um Portionen danach auch ohne staendiges Erfassen einschaetzen zu koennen."
+  - question: "Was ist das beste Makroverhaeltnis zum Abnehmen?"
+    answer: "Forschungsergebnisse sprechen fuer eine erhoehte Proteinzufuhr waehrend einer Kalorienrestriktion: 25 bis 35 Prozent der Gesamtkalorien aus Eiweiss helfen, die fettfreie Masse zu erhalten, und steigern das Saettigungsgefuehl. Die restlichen Kalorien koennen nach persoenlicher Vorliebe und Durchhaltevermoegen auf Kohlenhydrate und Fette verteilt werden. Wer bei 1.800 Kalorien einen Proteinanteil von 30 Prozent waehlt, nimmt taeglich etwa 135 Gramm Eiweiss zu sich. Das genaue Verhaeltnis von Kohlenhydraten zu Fett ist fuer die meisten Menschen weniger entscheidend als die Gesamtkalorienmenge und eine ausreichende Proteinzufuhr. Waehlen Sie die Aufteilung, die Sie langfristig am besten beibehalten koennen."
+  - question: "Sollte ich an Trainingstagen mehr und an Ruhetagen weniger essen?"
+    answer: "Kalorienzyklisierung, also mehr an Trainingstagen und weniger an Ruhetagen zu essen, ist ein gangbarer Ansatz, aber keine Voraussetzung fuer Ergebnisse. Ihr Koerper setzt die Energiebilanz nicht um Mitternacht zurueck; entscheidend ist Ihre durchschnittliche Aufnahme ueber die Woche. Wenn Sie an Trainingstagen groessere Mahlzeiten fuer Leistung und Regeneration bevorzugen, koennen Sie an Trainingstagen 200 bis 300 Kalorien ueber und an Ruhetagen 200 bis 300 Kalorien unter Ihrem Tagesziel essen und dabei die gleiche Wochensumme einhalten. Dieser Ansatz kann die Trainingsqualitaet steigern, ohne das Gesamtergebnis zu veraendern."
+  - question: "Warum nehme ich trotz Kaloriendefizit nicht ab?"
+    answer: "Die haeufigsten Gruende sind: Unterschaetzung der Kalorienaufnahme, Ueberschaetzung des Kalorienverbrauchs, Wassereinlagerungen, die den Fettabbau auf der Waage ueberdecken, oder metabolische Anpassung durch laengeres Diaeten. Studien belegen, dass Menschen ihre Nahrungsaufnahme im Durchschnitt um 30 bis 50 Prozent unterschaetzen, wenn sie die Portionen nicht abwiegen. Speiseoele, Saucen und Getraenke werden oft nicht mitgezaehlt. Wenn sich die Waage trotz konsequentem Tracking 3 bis 4 Wochen lang nicht bewegt, reduzieren Sie die Aufnahme um weitere 100 bis 200 Kalorien, steigern Sie die taegliche Bewegung (besonders Spaziergaenge) oder legen Sie eine Diaetpause von 1 bis 2 Wochen auf Erhaltungskalorien ein, bevor Sie fortfahren."
+  - question: "Sind 1.200 Kalorien pro Tag zu wenig?"
+    answer: "Fuer die meisten Erwachsenen gelten 1.200 Kalorien pro Tag als die von Gesundheitsorganisationen empfohlene Mindestgrenze fuer eine ausreichende Naehrstoffversorgung. Unterhalb dieses Wertes wird es schwierig, den Bedarf an Vitaminen, Mineralstoffen und Eiweiss allein ueber die Nahrung zu decken. Sehr kleine Personen mit geringer Aktivitaet koennen einen tatsaechlichen Erhaltungsbedarf von 1.400 bis 1.500 Kalorien haben, sodass ein Defizit auf 1.200 Kalorien angemessen sein kann. Fuer groessere, schwerere oder aktivere Personen stellt eine Aufnahme von 1.200 Kalorien ein uebertrieben aggressives Defizit dar, das Muskelverlust, Muedigkeit, hormonelle Stoerungen und Heisshungerattacken beguenstigt. Ein moderaterer Ansatz bringt fuer die grosse Mehrheit langfristig bessere Ergebnisse."
+
+examples:
+  - title: "Abnehmplan fuer sitzende Frau"
+    scenario: "Eine 28-jaehrige Frau, 68 kg, 165 cm, sitzende Taetigkeit, Ziel: Abnehmen"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Taegliche Kalorien: 1.227 kcal | Eiweiss: 92 g | Kohlenhydrate: 123 g | Fett: 41 g"
+    explanation: "Ihr TDEE von 1.727 minus 500 ergibt ein Ziel von 1.227 Kalorien (mindestens 1.200 als Untergrenze). Die Makroverteilung stellt mit 92 g Eiweiss eine ausreichende Proteinversorgung sicher, um waehrend des Kaloriendefizits die Muskelmasse zu schuetzen."
+  - title: "Muskelaufbau fuer aktiven Mann"
+    scenario: "Ein 25-jaehriger Mann, 75 kg, 178 cm, aktiv (6 Tage/Woche), Ziel: Zunehmen"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Taegliche Kalorien: 3.573 kcal | Eiweiss: 268 g | Kohlenhydrate: 357 g | Fett: 119 g"
+    explanation: "Mit einem TDEE von 3.073 plus einem Ueberschuss von 500 Kalorien benoetigt er 3.573 Kalorien taeglich. Die 268 Gramm Eiweiss unterstuetzen die Muskelproteinsynthese waehrend seines intensiven Trainingsprogramms."
+  - title: "Erhaltung bei moderater Aktivitaet"
+    scenario: "Ein 40-jaehriger Mann, 82 kg, 175 cm, moderates Training 4 Tage pro Woche"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Taegliche Kalorien: 2.668 kcal | Eiweiss: 200 g | Kohlenhydrate: 267 g | Fett: 89 g"
+    explanation: "Bei Erhaltungskalorien isst er rund 2.668 Kalorien, um sein aktuelles Gewicht und Aktivitaetsniveau aufrechtzuerhalten. Die 200 Gramm Eiweiss unterstuetzen die Regeneration nach dem moderaten Training und den Erhalt der fettfreien Masse."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

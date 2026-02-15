@@ -1,0 +1,81 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "BMI Rechner - Body Mass Index Berechnen | CalcHub"
+metaDescription: "BMI berechnen mit dem kostenlosen BMI Rechner. Geben Sie Gewicht und Groesse ein, um Ihren Body Mass Index und Ihre WHO-Kategorie sofort zu erfahren."
+h1: "BMI Rechner (Body Mass Index)"
+slug: "bmi-rechner"
+
+primaryKeyword: "bmi rechner"
+secondaryKeywords:
+  - "body mass index berechnen"
+  - "bmi berechnen"
+  - "bmi ausrechnen"
+  - "bmi calculator deutsch"
+
+intro: "Wie steht es um Ihr Gewicht im Verhaeltnis zu Ihrer Koerpergroesse? Der Body Mass Index liefert eine schnelle Einschaetzung, die weltweit von Aerzten, Ernaehrungsberatern und Krankenkassen als erste Orientierung genutzt wird. Geben Sie einfach Ihr Gewicht und Ihre Groesse in den Rechner ein und erhalten Sie in wenigen Sekunden Ihren BMI-Wert, die zugehoerige WHO-Kategorie und eine verstaendliche Erklaerung, was das Ergebnis fuer Ihre Gesundheit bedeutet."
+
+howItWorks:
+  title: "So wird der BMI berechnet"
+  content: "Der Body Mass Index ergibt sich aus dem Koerpergewicht in Kilogramm geteilt durch die Koerpergroesse in Metern zum Quadrat. Diese Formel geht auf den belgischen Mathematiker und Statistiker Adolphe Quetelet zurueck, der sie in den 1830er Jahren entwickelte, um koerperliche Proportionen in grossen Bevoelkerungsgruppen zu beschreiben. Erst Jahrzehnte spaeter uebernahmen Gesundheitsbehoerden den Index als Screening-Werkzeug fuer Uebergewicht und Adipositas. Die Weltgesundheitsorganisation (WHO) teilt den BMI in vier Hauptkategorien ein. Ein BMI unter 18,5 gilt als Untergewicht. Werte zwischen 18,5 und 24,9 entsprechen Normalgewicht. Von 25,0 bis 29,9 spricht man von Uebergewicht, auch Praeadipositas genannt. Ab einem BMI von 30,0 liegt Adipositas vor, die wiederum in drei Schweregrade unterteilt wird: Grad I (30,0 bis 34,9), Grad II (35,0 bis 39,9) und Grad III (ab 40,0), oft als morbide Adipositas bezeichnet. Diese Grenzwerte wurden auf Basis grosser epidemiologischer Studien festgelegt, die den Zusammenhang zwischen BMI-Bereichen und dem Risiko fuer Herz-Kreislauf-Erkrankungen, Typ-2-Diabetes und bestimmte Krebsarten untersucht haben. Das Robert Koch-Institut und die Deutsche Adipositas-Gesellschaft verwenden dieselben Schwellenwerte in ihren Leitlinien. Allerdings hat der BMI bekannte Schwaechen. Er unterscheidet nicht zwischen Muskelmasse und Fettmasse. Ein Kraftsportler oder Rugbyspieler kann einen BMI von 28 oder hoeher aufweisen und trotzdem einen Koerperfettanteil unter 12 Prozent haben. Umgekehrt kann eine aeltere Person, die Muskelmasse verloren hat, einen normalen BMI zeigen, obwohl sich ueberschuessiges viszerales Fett um die Organe angesammelt hat. Fuer asiatische Bevoelkerungsgruppen empfiehlt die WHO, den Schwellenwert fuer Uebergewicht auf 23 statt 25 zu senken, da das metabolische Risiko bei diesen Gruppen frueher ansteigt. Fuer eine genauere Beurteilung empfehlen Fachgesellschaften, den BMI mit dem Taillenumfang zu kombinieren. Ein Taillenumfang ueber 94 cm bei Maennern und ueber 80 cm bei Frauen gilt laut der Deutschen Gesellschaft fuer Ernaehrung als erhoehtes Risiko fuer Stoffwechselkomplikationen. Auch der Koerperfettanteil, gemessen etwa per Hautfaltenmessung oder bioelektrischer Impedanzanalyse, liefert wertvolle Zusatzinformationen. Trotz dieser Einschraenkungen bleibt der BMI das am haeufigsten eingesetzte Screening-Instrument, weil er einfach zu berechnen ist und auf Bevoelkerungsebene eine starke statistische Korrelation mit gesundheitlichen Risiken zeigt."
+  formula: "BMI = Gewicht (kg) / Groesse (m)²"
+  formulaExplanation: "Das Koerpergewicht in Kilogramm wird durch die Koerpergroesse in Metern zum Quadrat geteilt. Fuer imperiale Einheiten: BMI = (Gewicht in Pfund x 703) / (Groesse in Zoll)²"
+  academicSource: "Weltgesundheitsorganisation. (2000). Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894."
+
+faqs:
+  - question: "Was ist ein normaler BMI-Wert?"
+    answer: "Die Weltgesundheitsorganisation definiert einen normalen BMI als Wert zwischen 18,5 und 24,9. Menschen in diesem Bereich haben statistisch gesehen ein geringeres Risiko fuer Herz-Kreislauf-Erkrankungen, Typ-2-Diabetes und bestimmte Krebsarten im Vergleich zu Personen ausserhalb dieser Spanne. Allerdings haengt die individuelle Gesundheit von vielen weiteren Faktoren ab, darunter Ernaehrungsqualitaet, koerperliche Aktivitaet, familiare Vorbelastung sowie Stoffwechselmarker wie Blutdruck, Blutzucker und Cholesterinwerte."
+  - question: "Ist der BMI bei Sportlern und muskuloesen Menschen genau?"
+    answer: "Der BMI neigt dazu, den Koerperfettanteil bei Personen mit hoher Muskelmasse zu ueberschaetzen. Ein Bodybuilder oder Leistungssportler kann einen BMI von 28 oder mehr aufweisen und gleichzeitig einen Koerperfettanteil unter 15 Prozent haben. Wenn Sie regelmaessig Krafttraining betreiben und ueberdurchschnittlich viel Muskelmasse besitzen, sollten Sie Ihren BMI durch eine Koerperfettmessung oder den Taillenumfang-zu-Hueftumfang-Quotienten ergaenzen, um eine realistischere Einschaetzung Ihrer Koerperzusammensetzung zu erhalten."
+  - question: "Gilt der BMI fuer Maenner und Frauen gleich?"
+    answer: "Die BMI-Formel ist fuer Maenner und Frauen identisch, aber die Interpretation kann sich unterscheiden. Frauen tragen von Natur aus einen hoeheren Anteil an Koerperfett als Maenner bei gleichem BMI-Wert. Manche Forscher haben geschlechtsspezifische Grenzwerte vorgeschlagen, doch die WHO-Standardkategorien bleiben die gebraeuchlichsten. Besonders fuer Frauen kann der Taillenumfang zusaetzliche Erkenntnisse liefern, wobei Werte ueber 80 cm mit einem erhoehten Gesundheitsrisiko verbunden sind."
+  - question: "Wie oft sollte ich meinen BMI ueberpruefen?"
+    answer: "Fuer die meisten Erwachsenen reicht es, den BMI alle paar Monate zu berechnen, um Trends zu erkennen, ohne in zwanghaftes Wiegen zu verfallen. Wenn Sie aktiv an Gewichtsveraenderung arbeiten, liefern monatliche Kontrollen nuetzliches Feedback zu Ihrem Fortschritt. Vermeiden Sie taegliches Wiegen fuer BMI-Zwecke, da normale Fluessigkeitsschwankungen Ihr Gewicht um 1 bis 2 kg in beide Richtungen verschieben koennen, was kurzfristige BMI-Berechnungen unzuverlaessig macht."
+  - question: "Welche Grenzen hat der BMI als Gesundheitsindikator?"
+    answer: "Der BMI kann nicht zwischen Muskel- und Fettmasse unterscheiden, beruecksichtigt nicht die Fettverteilung im Koerper (viszerales versus subkutanes Fett) und verwendet bevoelkerungsbasierte Grenzwerte, die nicht fuer alle ethnischen Gruppen gleich gelten. Studien zeigen, dass asiatische Bevoelkerungsgruppen bereits bei niedrigeren BMI-Werten ein erhoehtes Stoffwechselrisiko aufweisen als europaeische Bevoelkerungsgruppen. Ausserdem erfasst der BMI keine Veraenderungen der Koerperzusammensetzung, die mit dem Altern einhergehen, da Muskelverlust oft mit Fettzunahme einhergeht, selbst wenn das Gewicht stabil bleibt."
+  - question: "Koennen Kinder diesen BMI-Rechner benutzen?"
+    answer: "Dieser Rechner ist fuer Erwachsene ab 20 Jahren konzipiert. Kinder und Jugendliche benoetigen alters- und geschlechtsspezifische BMI-Perzentilkurven, da sich ihre Koerperzusammensetzung waehrend des Wachstums erheblich veraendert. Das Robert Koch-Institut stellt mit der KiGGS-Studie Referenzwerte fuer Kinder und Jugendliche in Deutschland bereit, bei denen Untergewicht unterhalb der 10. Perzentile und Adipositas ab der 97. Perzentile definiert wird. Sprechen Sie bei Fragen zum Gewicht Ihres Kindes immer mit dem Kinderarzt."
+
+examples:
+  - title: "Normalgewichtiger Erwachsener"
+    scenario: "Eine 170 cm grosse Person mit 65 kg Koerpergewicht"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "BMI: 22,5 — Normalgewicht"
+    explanation: "Mit einem BMI von 22,5 liegt diese Person bequem im Normalgewichtsbereich (18,5 bis 24,9). Dieser Wert ist statistisch mit dem geringsten Risiko fuer gewichtsbedingte Gesundheitsprobleme verbunden."
+  - title: "Person mit Uebergewicht"
+    scenario: "Eine 175 cm grosse Person mit einem Gewicht von 90 kg"
+    inputs:
+      weight: 90
+      height: 175
+      unit: "metric"
+    expectedResult: "BMI: 29,4 — Uebergewicht"
+    explanation: "Ein BMI von 29,4 ordnet diese Person in die Kategorie Uebergewicht ein (25,0 bis 29,9). Der Wert liegt nahe an der Grenze zur Adipositas. Eine Gewichtsreduktion von etwa 8 kg wuerde den BMI in den Normalbereich bringen."
+  - title: "Untergewicht-Pruefung"
+    scenario: "Eine 180 cm grosse Person mit 55 kg Koerpergewicht"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "BMI: 17,0 — Untergewicht"
+    explanation: "Mit einem BMI von 17,0 gilt diese Person als untergewichtig (unter 18,5). Untergewicht kann auf Naehrstoffmangel hinweisen und ist mit einem geschwaechten Immunsystem sowie einem erhoehten Osteoporose-Risiko verbunden. Eine aerztliche Beratung wird empfohlen."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "ideal-weight-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,68 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+
+title: "Flaechenrechner - Flaeche Berechnen | CalcHub"
+metaDescription: "Flaeche berechnen fuer Rechteck, Kreis, Dreieck, Trapez und Ellipse. Kostenloser Flaechenrechner mit Formeln, Beispielen und sofortigem Ergebnis."
+h1: "Flaechenrechner"
+slug: "flaechenrechner"
+
+primaryKeyword: "flaeche berechnen"
+secondaryKeywords:
+  - "flaechenrechner"
+  - "flaechenberechnung"
+  - "quadratmeter berechnen"
+  - "flaeche ausrechnen"
+
+intro: "Ob Sie den Bodenbelag fuer ein Zimmer planen, die Grundstuecksgroesse fuer den Kaufvertrag ermitteln oder eine geometrische Aufgabe in der Schule loesen muessen: Dieser Rechner nimmt Ihnen die Arbeit ab. Waehlen Sie eine der fuenf gaengigen Formen aus, tragen Sie die Masse ein und erhalten Sie sofort das Ergebnis in Quadrateinheiten. Der Rechner arbeitet mit jeder beliebigen Masseinheit, egal ob Meter, Zentimeter, Fuss oder Zoll. Das Ergebnis wird immer in der quadrierten Variante Ihrer Eingabeeinheit ausgegeben."
+
+howItWorks:
+  title: "So wird die Flaeche verschiedener Formen berechnet"
+  content: "Die Flaeche gibt an, wie viel zweidimensionaler Raum innerhalb einer Begrenzungslinie eingeschlossen ist. Das Ergebnis wird stets in Quadrateinheiten angegeben, also zum Beispiel in Quadratmetern oder Quadratzentimetern. Jede geometrische Form hat ihre eigene Formel, die sich aus mathematischen Grundsaetzen ableitet. Das Rechteck besitzt die einfachste Formel: Laenge mal Breite. Misst ein Raum 5,50 Meter in der Laenge und 3,80 Meter in der Breite, betraegt seine Grundflaeche 20,90 Quadratmeter. Ein Quadrat ist ein Sonderfall des Rechtecks, bei dem beide Seiten gleich lang sind. In der deutschen Baupraxis ist die Wohnflaechenberechnung nach der Wohnflaechenverordnung (WoFlV) geregelt. Danach zaehlen Raeume mit einer lichten Hoehe von mindestens zwei Metern voll zur Wohnflaeche, Raeume mit einer Hoehe zwischen einem und zwei Metern nur zur Haelfte, und Flaechen unter einem Meter Raumhoehe gar nicht. Die Flaeche eines Kreises berechnet man mit der Formel Pi mal Radius zum Quadrat. Pi, die Kreiszahl, betraegt ungefaehr 3,14159 und beschreibt das Verhaeltnis des Umfangs eines Kreises zu seinem Durchmesser. Fuer einen Kreis mit einem Radius von 4 Metern ergibt sich eine Flaeche von 3,14159 mal 16, also rund 50,27 Quadratmeter. Im Gartenbau wird diese Rechnung oft gebraucht, um runde Beete, Teiche oder Springbrunnen zu bemessen. Ein Dreieck hat die Flaeche ein halb mal Grundseite mal Hoehe. Wichtig ist dabei, dass die Hoehe senkrecht auf der Grundseite stehen muss und nicht mit der Laenge einer Seitenkante verwechselt werden darf. Ein Dreieck mit 12 Meter Grundseite und 8 Meter Hoehe hat eine Flaeche von 48 Quadratmetern. Fuer Dreiecke, bei denen keine Hoehe gegeben ist, sondern alle drei Seiten bekannt sind, laesst sich die Heronsche Formel verwenden: Man bildet den halben Umfang s und rechnet die Wurzel aus s mal (s minus a) mal (s minus b) mal (s minus c). Ein Trapez hat zwei parallele Seiten unterschiedlicher Laenge. Die Flaechenformel lautet ein halb mal die Summe der beiden parallelen Seiten mal die senkrechte Hoehe zwischen ihnen. Messen die parallelen Seiten 6 und 10 Meter bei einer Hoehe von 4 Metern, betraegt die Flaeche 0,5 mal (6 plus 10) mal 4, also 32 Quadratmeter. Diese Form kommt bei Grundstuecken haeufig vor, wenn eine Seite an einer Strasse liegt und die gegenueberliegende Seite kuerzer ist. Die Ellipse ist eine ovale Form, die durch zwei Halbachsen definiert wird: die grosse Halbachse und die kleine Halbachse. Die Flaeche berechnet sich als Pi mal grosse Halbachse mal kleine Halbachse. Sind beide Halbachsen gleich lang, wird die Ellipse zum Kreis. Ein elliptischer Swimmingpool mit Halbachsen von 5 und 3 Metern hat eine Flaeche von ungefaehr 47,12 Quadratmetern. Bei der Umrechnung zwischen Flaecheneinheiten gilt die Quadratregel: Man multipliziert mit dem quadrierten Umrechnungsfaktor. Ein Meter entspricht 100 Zentimetern, daher entspricht ein Quadratmeter 10.000 Quadratzentimetern. Ebenso gilt: Ein Hektar sind 10.000 Quadratmeter, und ein Quadratkilometer umfasst 100 Hektar beziehungsweise 1.000.000 Quadratmeter. In Deutschland wird die Groesse von Wohnungen und Haeusern ueblicherweise in Quadratmetern angegeben, waehrend land- und forstwirtschaftliche Flaechen in Hektar gemessen werden. Die Grundbuchaemter verzeichnen Grundstuecksflaechen ebenfalls in Quadratmetern, wobei der amtliche Lageplan des Katasteramts als verbindliche Grundlage dient."
+  formula: "Rechteck: A = l x b | Kreis: A = Pi x r² | Dreieck: A = 1/2 x g x h"
+  formulaExplanation: "Trapez: A = 1/2 x (a+b) x h, wobei a und b die parallelen Seiten sind. Ellipse: A = Pi x a x b (a = grosse Halbachse, b = kleine Halbachse). Alle Ergebnisse in Quadrateinheiten."
+  academicSource: "Euklid. Elemente, Buecher I-IV. ca. 300 v. Chr. Moderne Referenz: Papula, L. (2018). Mathematische Formelsammlung (12. Aufl.). Springer Vieweg."
+
+faqs:
+  - question: "Wie berechne ich die Flaeche eines unregelmaessig geformten Raums?"
+    answer: "Teilen Sie den Raum in einfache Grundformen auf, zum Beispiel in Rechtecke und Dreiecke, berechnen Sie jede Teilflaeche einzeln und addieren Sie die Ergebnisse. Ein L-foermiger Raum laesst sich in zwei Rechtecke zerlegen. Ein Zimmer mit Erker kann als Rechteck plus Dreieck oder Trapez behandelt werden. Fuer besonders komplizierte Formen, etwa bei Altbauwohnungen mit runden Erkern oder schraegen Waenden, hilft ein Lasermessgeraet, das die Flaeche aus mehreren Messpunkten direkt berechnet. Bei Grundstuecken in freier Natur nutzt man haeufig die Vermessungsmethode mit GPS-Koordinaten."
+  - question: "Was ist der Unterschied zwischen Flaeche und Umfang?"
+    answer: "Die Flaeche misst den Platz innerhalb einer Form in Quadrateinheiten, waehrend der Umfang die gesamte Laenge der Aussenkante in Laengeneinheiten angibt. Ein Raum mit 6 Meter Laenge und 4 Meter Breite hat eine Flaeche von 24 Quadratmetern, aber einen Umfang von 20 Metern. Zwei verschiedene Formen koennen den gleichen Umfang, aber sehr unterschiedliche Flaechen haben: Ein Rechteck mit 8 mal 2 Metern und ein Quadrat mit 5 mal 5 Metern haben beide einen Umfang von 20 Metern, doch die Flaechen betragen 16 bzw. 25 Quadratmeter."
+  - question: "Wie rechne ich Quadratmeter in Quadratfuss um?"
+    answer: "Ein Quadratmeter entspricht ungefaehr 10,764 Quadratfuss. Um Quadratmeter in Quadratfuss umzurechnen, multiplizieren Sie den Wert mit 10,764. Fuer die umgekehrte Richtung multiplizieren Sie Quadratfuss mit 0,0929, um Quadratmeter zu erhalten. Eine einfache Faustregel fuer den Kopf: Multiplizieren Sie die Quadratmeter mit 10 und schlagen Sie grob 8% drauf. Diese Umrechnung ist besonders nuetzlich, wenn Sie Immobilienangebote aus dem angloamerikanischen Raum mit deutschen Groessenangaben vergleichen moechten."
+  - question: "Warum kommt die Zahl Pi in der Kreisformel vor?"
+    answer: "Pi ergibt sich aus dem grundlegenden Zusammenhang zwischen dem Durchmesser eines Kreises und seinem Umfang. Egal wie gross oder klein ein Kreis ist, die Division von Umfang durch Durchmesser liefert immer Pi, also rund 3,14159. Bei der Flaechenberechnung stellt man sich vor, unendlich viele konzentrische Ringe vom Mittelpunkt bis zum Rand aufzusummieren. Dieses Vorgehen, in der Mathematik als Integration bekannt, fuehrt automatisch zur Formel Pi mal Radius zum Quadrat. Pi ist eine irrationale Zahl, das heisst, ihre Nachkommastellen enden nie und wiederholen sich nie in einem Muster."
+  - question: "Wie genau muessen meine Messungen sein?"
+    answer: "Das haengt vom Verwendungszweck ab. Beim Kauf von Teppichboden oder Laminat reicht eine Genauigkeit von zwei bis drei Prozent, da Materialien ohnehin mit einem Verschnittaufschlag bestellt werden, ueblicherweise zehn Prozent. Fuer Bauantraege und Grundrisszeichnungen sollte die Abweichung unter einem Prozent liegen. In Wissenschaft und Technik kann Millimetergenauigkeit erforderlich sein. Messen Sie grundsaetzlich zweimal und verwenden Sie durchgehend dieselbe Einheit. Runden Sie Zwischenergebnisse nicht, da sich Rundungsfehler aufschaukeln koennen. Erst das Endergebnis sollte auf eine sinnvolle Stellenzahl gerundet werden."
+
+examples:
+  - title: "Wohnflaeche fuer Bodenbelag"
+    scenario: "Berechnung der Grundflaeche eines rechteckigen Zimmers mit 5,20 m Laenge und 3,60 m Breite"
+    inputs:
+      shape: "rectangle"
+      length: 5.2
+      width: 3.6
+    expectedResult: "Flaeche: 18,7200 Quadrateinheiten"
+    explanation: "Das Zimmer hat eine Grundflaeche von 18,72 Quadratmetern. Bei der Bestellung von Laminat oder Parkett sollten Sie rund 10% Verschnitt einplanen, sodass Sie ungefaehr 20,6 Quadratmeter Material kaufen sollten."
+  - title: "Rundes Gartenbeet"
+    scenario: "Flaechenberechnung eines kreisfoermigen Blumenbeets mit 3 Metern Radius"
+    inputs:
+      shape: "circle"
+      radius: 3
+    expectedResult: "Flaeche: 28,2743 Quadrateinheiten"
+    explanation: "Das Beet bedeckt rund 28,27 Quadratmeter. Um die benoetigte Menge Mutterboden zu schaetzen, multiplizieren Sie die Flaeche mit der gewuenschten Schichtdicke. Bei 20 cm Erdschicht benoetigen Sie ungefaehr 5,65 Kubikmeter Mutterboden."
+
+relatedTools:
+  - "percentage-calculator"
+  - "mortgage-calculator"
+  - "temperature-converter"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

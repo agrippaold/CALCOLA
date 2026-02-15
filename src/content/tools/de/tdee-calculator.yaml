@@ -1,0 +1,73 @@
+id: "tdee-calculator"
+category: "health"
+calculatorComponent: "TDEECalculator"
+
+title: "TDEE Rechner - Kalorienbedarf Berechnen | CalcHub"
+metaDescription: "Berechnen Sie Ihren taeglichen Gesamtenergieumsatz (TDEE) anhand von Grundumsatz und Aktivitaetslevel. Finden Sie Ihre Erhaltungskalorien fuer jedes Ziel."
+h1: "TDEE Rechner (Gesamtenergieumsatz)"
+slug: "tdee-rechner"
+
+primaryKeyword: "tdee rechner"
+secondaryKeywords:
+  - "kalorienverbrauch berechnen"
+  - "taeglicher kalorienbedarf"
+  - "gesamtumsatz berechnen"
+  - "energiebedarf rechner"
+
+intro: "Ihr TDEE, der Gesamtenergieumsatz, beschreibt die Gesamtzahl an Kalorien, die Sie an einem kompletten Tag verbrennen. Darin enthalten ist alles, von der Atmung ueber das Treppensteigen bis hin zum Sport. Er setzt sich aus dem Grundumsatz und dem Energieverbrauch durch saemtliche koerperliche Aktivitaet zusammen. Ob Sie abnehmen, Muskeln aufbauen oder Ihr Gewicht halten wollen, der TDEE ist die zentrale Zahl, um die sich Ihre Ernaehrungsplanung dreht. Dieser Rechner liefert eine zuverlaessige Schaetzung auf Basis der Mifflin-St-Jeor-Formel und wissenschaftlich gepruefter Aktivitaetsmultiplikatoren."
+
+howItWorks:
+  title: "So wird der TDEE berechnet"
+  content: "Der Gesamtenergieumsatz wird in zwei Schritten ermittelt. Zuerst berechnet der Rechner Ihren Grundumsatz (BMR) mit der Mifflin-St-Jeor-Gleichung. Anschliessend wird der Grundumsatz mit einem Aktivitaetsfaktor multipliziert, der Ihre typischen taeglichen Bewegungs- und Sportgewohnheiten widerspiegelt. Die verwendeten Aktivitaetsmultiplikatoren stammen aus der Forschung zum Energieverbrauch bei verschiedenen Lebensstilen. Fuer vorwiegend sitzende Personen (Bueroarbeit, kaum Bewegung) betraegt der Faktor 1,2, was bedeutet, dass koerperliche Aktivitaet den Grundumsatz um etwa 20 Prozent erhoet. Leicht aktive Personen (leichter Sport 1 bis 3 Tage pro Woche) nutzen den Faktor 1,375. Moderat aktive Personen (strukturiertes Training 3 bis 5 Tage pro Woche) verwenden 1,55. Aktive Personen (intensives Training 6 bis 7 Tage pro Woche) rechnen mit 1,725. Sehr aktive Personen (Leistungssportler, koerperlich anstrengende Berufe) setzen den Faktor 1,9 ein. Diese sogenannten PAL-Werte (Physical Activity Level) beruecksichtigen sowohl geplanten Sport als auch die Alltagsaktivitaet, in der Fachsprache als NEAT bezeichnet: Non-Exercise Activity Thermogenesis. NEAT umfasst saemtliche Bewegung ausserhalb des gezielten Trainings, also Gehen, Stehen, Hausarbeit, Treppensteigen und aehnliches. Der NEAT-Anteil schwankt zwischen Personen enorm und kann 200 bis 900 Kalorien pro Tag betragen, abhaengig vom Beruf, allgemeinen Bewegungsgewohnheiten und individueller Veranlagung. Ein Lagerist, der zusaetzlich Sport treibt, hat einen wesentlich hoeheren NEAT als ein Bueroangestellter, der dieselbe Trainingseinheit absolviert. Auch die nahrungsinduzierte Thermogenese ist in den Multiplikatoren enthalten. Der Koerper verbraucht etwa 10 Prozent der aufgenommenen Kalorien fuer die Verdauung und Verarbeitung der Nahrung. Eiweiss hat mit 20 bis 30 Prozent den hoechsten thermischen Effekt, gefolgt von Kohlenhydraten mit 5 bis 10 Prozent und Fetten mit 0 bis 3 Prozent. Das ist einer der Gruende, warum eiweissreiche Ernaehrung den Fettabbau wirksam unterstuetzt. Beachten Sie, dass der TDEE eine Schaetzung und keine exakte Messung darstellt. Individuelle Unterschiede im Stoffwechsel, Hormonspiegel, der Zusammensetzung der Darmflora und taegliche Schwankungen der Aktivitaet fuehren dazu, dass Ihr tatsaechlicher Verbrauch an einem bestimmten Tag um 10 bis 15 Prozent vom errechneten Wert abweichen kann. Nutzen Sie den TDEE als Startpunkt und passen Sie die Werte auf Basis realer Ergebnisse innerhalb von 2 bis 4 Wochen an."
+  formula: "TDEE = Grundumsatz x Aktivitaetsfaktor"
+  formulaExplanation: "Der Grundumsatz wird mit der Mifflin-St-Jeor-Gleichung berechnet (10 x Gewicht + 6,25 x Groesse - 5 x Alter +/- Geschlechtskonstante). Die Aktivitaetsfaktoren reichen von 1,2 (sitzend) bis 1,9 (sehr aktiv)."
+  academicSource: "Harris, J. A., & Benedict, F. G. (1918). A Biometric Study of Human Basal Metabolism. Proceedings of the National Academy of Sciences, 4(12), 370-373. Aktivitaetsfaktoren: Ainsworth, B. E., et al. (2011). Compendium of Physical Activities. Medicine and Science in Sports and Exercise, 43(8), 1575-1581."
+
+faqs:
+  - question: "Welches Aktivitaetslevel sollte ich auswaehlen?"
+    answer: "Seien Sie ehrlich in Bezug auf Ihre durchschnittliche Woche, anstatt die aktivste Woche als Massstab zu nehmen. Sitzend bedeutet, dass Sie eine Bueroarbeit haben und sich nicht regelmaessig bewegen. Leicht aktiv beschreibt gelegentliches Spazierengehen, Yoga oder leichten Sport 1 bis 3 Mal pro Woche. Moderat aktiv passt zu den meisten regelmaessigen Fitnessstudio-Besuchern, die 3 bis 5 Mal pro Woche mit mittlerer Intensitaet trainieren. Aktiv trifft zu, wenn Sie an den meisten Tagen intensiv trainieren. Sehr aktiv ist Leistungssportlern oder Personen mit koerperlich anstrengenden Berufen vorbehalten, die zusaetzlich regelmaessig trainieren. Waehlen Sie im Zweifelsfall eine Stufe niedriger als Sie denken und passen Sie anhand der Ergebnisse an."
+  - question: "Wie nutze ich den TDEE zum Abnehmen?"
+    answer: "Um abzunehmen, essen Sie weniger Kalorien als Ihr TDEE. Ein Defizit von 500 Kalorien pro Tag fuehrt zu einem Fettverlust von etwa 0,45 kg pro Woche. Beginnen Sie, indem Sie 300 bis 500 Kalorien von Ihrem TDEE abziehen, und beobachten Sie Ihr Gewicht ueber 2 bis 3 Wochen. Falls Sie nicht abnehmen, reduzieren Sie um weitere 100 bis 200 Kalorien. Vermeiden Sie Defizite von mehr als 1.000 Kalorien taeglich, da diese den Muskelverlust beschleunigen, die Energie senken und schwer durchzuhalten sind. Kombinieren Sie Ihr Kaloriendefizit mit einer ausreichenden Eiweisszufuhr von 1,6 bis 2,2 g pro kg Koerpergewicht, um Muskelmasse zu erhalten."
+  - question: "Wie nutze ich den TDEE fuer Muskelaufbau?"
+    answer: "Muskelaufbau erfordert, dass Sie mehr Kalorien essen als Ihr TDEE, damit dem Koerper genug Energie und Naehrstoffe fuer den Aufbau von neuem Gewebe zur Verfuegung stehen. Ein Ueberschuss von 200 bis 400 Kalorien pro Tag foerdert das Muskelwachstum bei gleichzeitig minimiertem Fettansatz. Das ergibt typischerweise eine Gewichtszunahme von 0,25 bis 0,5 kg pro Woche. Der Eiweissbedarf ist in der Aufbauphase am hoechsten: Streben Sie 1,6 bis 2,2 Gramm pro Kilogramm Koerpergewicht taeglich an. Messen Sie neben dem Gewicht auch Ihren Taillenumfang, um sicherzustellen, dass die Zunahme ueberwiegend aus Muskelmasse besteht."
+  - question: "Warum weicht mein TDEE vom Wert meines Fitness-Trackers ab?"
+    answer: "Fitness-Tracker schaetzen den TDEE anhand von Herzfrequenzdaten, Schrittzahlen und Beschleunigungssensoren, waehrend dieser Rechner einen formelbasierten Ansatz verfolgt. Beides sind Schaetzungen mit einer gewissen Fehlertoleranz. Fitness-Tracker neigen laut einer Studie der Stanford University dazu, den Kalorienverbrauch bei sportlicher Aktivitaet um 27 bis 93 Prozent zu ueberschaetzen. Der Formelansatz kann den TDEE bei sehr aktiven Personen unterschaetzen. Fuer das genaueste Bild koennen Sie den Tracker-Wert mit dem Formelergebnis mitteln oder einfach den Rechnerwert als Startpunkt verwenden und auf Basis tatsaechlicher Gewichtsveraenderungen ueber 2 bis 3 Wochen anpassen."
+  - question: "Aendert sich der TDEE im Laufe der Zeit?"
+    answer: "Ja, der TDEE veraendert sich mit Gewichtsschwankungen, Aenderungen der Koerperzusammensetzung, dem Alter und veraenderten Aktivitaetsmustern. Gewichtsverlust senkt den TDEE, da ein kleinerer Koerper weniger Energie zur Erhaltung benoetigt. Muskelzuwachs steigert den TDEE, weil Muskelgewebe metabolisch aktiv ist. Metabolische Anpassung waehrend einer laengeren Kalorienrestriktion kann den TDEE voruebergehend staerker senken, als die Formel vorhersagt. Berechnen Sie Ihren TDEE neu, wenn sich Ihr Gewicht um mehr als 5 kg aendert oder wenn sich Ihr Aktivitaetslevel merklich verschiebt."
+
+examples:
+  - title: "Moderat aktiver Mann"
+    scenario: "Ein 30-jaehriger Mann, 80 kg, 180 cm, moderates Training 3 bis 5 Tage pro Woche"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+      activity: "moderate"
+    expectedResult: "TDEE: 2.759 kcal/Tag | Grundumsatz: 1.780 kcal"
+    explanation: "Sein Grundumsatz von 1.780 kcal wird mit dem Faktor 1,55 fuer moderate Aktivitaet multipliziert. Zum Abnehmen sollte er rund 2.259 Kalorien taeglich anpeilen (500 kcal Defizit). Fuer Muskelaufbau waeren etwa 3.059 Kalorien sinnvoll (300 kcal Ueberschuss)."
+  - title: "Sitzende Bueroangestellte"
+    scenario: "Eine 35-jaehrige Frau, 65 kg, 162 cm, Bueroarbeit ohne regelmaessigen Sport"
+    inputs:
+      weight: 65
+      height: 162
+      age: 35
+      gender: "female"
+      activity: "sedentary"
+    expectedResult: "TDEE: 1.618 kcal/Tag | Grundumsatz: 1.348 kcal"
+    explanation: "Bei einer vorwiegend sitzenden Lebensweise liegt ihr Tagesbedarf bei nur rund 1.618 Kalorien. Wuerde sie 3 Mal pro Woche leichten Sport treiben, stiege ihr TDEE auf etwa 1.854 Kalorien, was ihr mehr Spielraum bei der Ernaehrung bietet und gleichzeitig Gewichtskontrolle erlaubt."
+
+relatedTools:
+  - "bmr-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

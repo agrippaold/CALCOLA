@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 2.3 (FR content per 11 tool)
-**Prossimo step da eseguire:** STEP 2.4
+**Ultimo step completato:** STEP 2.4 (DE content per 11 tool)
+**Prossimo step da eseguire:** STEP 2.5
 **Branch attivo:** claude/continue-step-tracker-ZHIy0
-**Build status:** OK (80 pagine, 92 test passano, 44 YAML validati)
+**Build status:** OK (96 pagine, 92 test passano, 55 YAML validati)
 
 ---
 
@@ -434,11 +434,14 @@ Completato: 2026-02-15
 File creati/modificati: src/content/tools/fr/{bmi,bmr,tdee,calorie,mortgage,compound-interest,loan,savings,percentage,area}-calculator.yaml, src/content/tools/fr/temperature-converter.yaml, src/pages/fr/index.astro, src/pages/fr/{finances,sante,mathematiques,conversions}/index.astro, src/pages/fr/sante/{calcul-imc,calcul-metabolisme-basal,calcul-depense-energetique,calcul-calories}.astro, src/pages/fr/finances/{simulateur-credit-immobilier,calcul-interets-composes,calcul-pret-personnel,calcul-epargne}.astro, src/pages/fr/mathematiques/{calcul-pourcentage,calcul-surface}.astro, src/pages/fr/conversions/convertisseur-temperature.astro
 Note: 11 YAML francesi con keyword native (calcul imc, simulateur credit immobilier, calcul pourcentage, ecc.). Slug francesi. Categorie: finances, santé, mathématiques, conversions. Contesto francese (taux d'usure, TAEG, assurance emprunteur, PTZ, Livret A, PEA, loi Lemoine). Defaults EUR, metrico, formato 1.234,56. 44 YAML validati, 80 pagine totali, build 6.59s.
 
-## STEP 2.4 — Contenuto DE per 10 tool ⬜
+## STEP 2.4 — Contenuto DE per 11 tool ✅
 ```
-Keyword native: "bmi rechner", "hypothekenrechner", etc.
-Commit: [STEP 2.4] German content for 10 tools with native keywords
+Keyword native: "bmi rechner", "baufinanzierung rechner", "prozentrechner", etc.
+Commit: [STEP 2.4] German content for 11 tools with native keywords
 ```
+Completato: 2026-02-15
+File creati/modificati: src/content/tools/de/{bmi,bmr,tdee,calorie,mortgage,compound-interest,loan,savings,percentage,area}-calculator.yaml, src/content/tools/de/temperature-converter.yaml, src/pages/de/index.astro, src/pages/de/{finanzen,gesundheit,mathematik,umrechner}/index.astro, src/pages/de/gesundheit/{bmi-rechner,grundumsatz-rechner,tdee-rechner,kalorienrechner}.astro, src/pages/de/finanzen/{baufinanzierung-rechner,zinseszinsrechner,kreditrechner,sparrechner}.astro, src/pages/de/mathematik/{prozentrechner,flaechenrechner}.astro, src/pages/de/umrechner/temperatur-umrechner.astro
+Note: 11 YAML tedeschi con keyword native (bmi rechner, baufinanzierung rechner, prozentrechner, ecc.). Slug tedeschi. Categorie: Finanzen, Gesundheit, Mathematik, Umrechner. Contesto tedesco (Sollzins, Effektivzins, KfW-Darlehen, Sondertilgung, Bausparvertrag, Abgeltungssteuer, Riester-Rente). Defaults EUR, metrico, formato 1.234,56. 55 YAML validati, 96 pagine totali, build 7.49s.
 
 ## STEP 2.5 — UI Strings e Language Switcher ⬜
 ```
@@ -590,3 +593,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | 3 | 2026-02-15 | STEP 2.1 | Contenuto italiano per 11 tool con keyword native. 11 YAML IT + 16 pagine Astro (11 calcolatori + homepage + 4 categorie). Slug italiani: calcolo-imc, calcolo-mutuo, calcolo-percentuale, ecc. Categorie: finanza, salute, matematica, conversioni. Defaults EUR/metrico. 22 YAML validati, 48 pagine totali, build 6.56s. |
 | 3 | 2026-02-15 | STEP 2.2 | Contenuto spagnolo per 11 tool con keyword native. 11 YAML ES + 16 pagine Astro. Slug spagnoli: calculadora-imc, calculadora-hipoteca, calculadora-porcentaje, ecc. Categorie: finanzas, salud, matemáticas, conversiones. Contesto spagnolo (Euríbor, TIN/TAE, IVA 21%). 33 YAML validati, 64 pagine totali, build 7.15s. |
 | 4 | 2026-02-15 | STEP 2.3 | Contenuto francese per 11 tool con keyword native. 11 YAML FR + 16 pagine Astro. Slug francesi: calcul-imc, simulateur-credit-immobilier, calcul-pourcentage, ecc. Categorie: finances, santé, mathématiques, conversions. Contesto francese (taux d'usure, TAEG, PTZ, loi Lemoine, Livret A, PEA). 44 YAML validati, 80 pagine totali, build 6.59s. |
+| 4 | 2026-02-15 | STEP 2.4 | Contenuto tedesco per 11 tool con keyword native. 11 YAML DE + 16 pagine Astro. Slug tedeschi: bmi-rechner, baufinanzierung-rechner, prozentrechner, ecc. Categorie: Finanzen, Gesundheit, Mathematik, Umrechner. Contesto tedesco (Sollzins, Effektivzins, KfW-Darlehen, Sondertilgung, Abgeltungssteuer). 55 YAML validati, 96 pagine totali, build 7.49s. |
