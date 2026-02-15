@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.2
-**Prossimo step da eseguire:** STEP 0.3
+**Ultimo step completato:** STEP 0.3
+**Prossimo step da eseguire:** STEP 0.4
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -53,7 +53,7 @@ Completato: 2026-02-15
 File creati/modificati: src/components/{layout,calculators/{base,finance,health,math,conversion,date,construction,text,education,physics},content}/, src/content/tools/{25 locale dirs}/, src/i18n/, src/layouts/, src/lib/{formulas,schema,seo}/, scripts/, nginx/, docs/, public/favicon.svg
 Note: Tutte le directory create con .gitkeep per tracciamento Git. Struttura conforme a GUIDA sezione 1.3. Build OK.
 
-## STEP 0.3 — Sistema i18n ⬜
+## STEP 0.3 — Sistema i18n ✅
 ```
 Azioni:
 1. Creare src/i18n/locales.ts — config 25 lingue (codici ISO, nomi, dir)
@@ -65,9 +65,9 @@ Azioni:
 Verifica: Importare utils in una pagina test, verificare che funzionano
 Commit: [STEP 0.3] Implement i18n system with 25 locale configs
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/i18n/locales.ts, src/i18n/defaults.ts, src/i18n/ui.ts, src/i18n/utils.ts
+Note: 25 locali configurati con ISO codes, nomi nativi, tier, direzione testo. Defaults per valuta/unità/formato numeri. UI strings EN+IT. Helper: getLang(), t(), getLocalePath(), formatNumber(), formatCurrency(). Build OK.
 
 ## STEP 0.4 — Content Collection Schema ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1, 0.2 | Inizializzazione progetto Astro + struttura directory completa |
+| 1 | 2026-02-15 | STEP 0.1, 0.2, 0.3 | Inizializzazione progetto Astro + struttura directory + sistema i18n |
