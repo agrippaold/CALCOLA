@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.10
-**Prossimo step da eseguire:** STEP 0.11
+**Ultimo step completato:** STEP 0.11
+**Prossimo step da eseguire:** STEP 0.12
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -254,9 +254,9 @@ Azioni:
 Verifica: docker compose up -d --build → sito accessibile su localhost:8090
 Commit: [STEP 0.11] Add Docker and Nginx production configuration
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: Dockerfile, docker-compose.yml, nginx/nginx.conf
+Note: Multi-stage build (Node 20 → Nginx 1.25 Alpine). Gzip compression, 1y cache per /_astro/, 30d per asset statici. Security headers (X-Frame-Options, X-Content-Type-Options, XSS-Protection, Referrer-Policy). .dockerignore già creato in STEP 0.1. Build OK.
 
 ## STEP 0.12 — Validazione e Script ⬜
 ```

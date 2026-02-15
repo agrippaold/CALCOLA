@@ -1,0 +1,15 @@
+services:
+  calchub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: calchub:latest
+    container_name: calchub
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
