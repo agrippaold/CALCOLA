@@ -1,5 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { bmi, bmiCategory, bmr, tdee, calorieNeeds, macroSplit } from './health';
+import {
+  bmi, bmiCategory, bmr, tdee, calorieNeeds, macroSplit,
+  bodyFatNavy, pregnancyDueDate, gestationalAge, ovulationDate,
+} from './health';
 
 describe('bmi', () => {
   it('calculates metric BMI correctly', () => {
@@ -126,5 +129,76 @@ describe('macroSplit', () => {
     const macros = macroSplit(2000, { protein: 0.4, carbs: 0.3, fat: 0.3 });
     expect(macros.protein).toBeCloseTo(200, 0);
     expect(macros.carbs).toBeCloseTo(150, 0);
+  });
+});
+
+describe('bodyFatNavy', () => {
+  it('calculates male body fat', () => {
+    // Male: waist 85cm, neck 37cm, height 178cm
+    const result = bodyFatNavy('male', 85, 37, 178);
+    expect(result).toBeGreaterThan(10);
+    expect(result).toBeLessThan(30);
+  });
+
+  it('calculates female body fat', () => {
+    // Female: waist 70cm, neck 34cm, height 165cm, hip 90cm → ~47.8%
+    const result = bodyFatNavy('female', 70, 34, 165, 90);
+    expect(result).toBeCloseTo(47.8, 0);
+  });
+
+  it('returns 0 for invalid inputs', () => {
+    expect(bodyFatNavy('male', 0, 37, 178)).toBe(0);
+    expect(bodyFatNavy('female', 75, 32, 165)).toBe(0); // missing hip
+  });
+});
+
+describe('pregnancyDueDate', () => {
+  it('calculates due date 280 days from LMP', () => {
+    const lmp = new Date('2026-01-01');
+    const due = pregnancyDueDate(lmp);
+    expect(due.getFullYear()).toBe(2026);
+    expect(due.getMonth()).toBe(9); // October (0-indexed)
+    expect(due.getDate()).toBe(8);
+  });
+
+  it('accepts string date', () => {
+    const due = pregnancyDueDate('2026-03-15');
+    expect(due.getFullYear()).toBe(2026);
+    expect(due.getMonth()).toBe(11); // December
+    expect(due.getDate()).toBe(20);
+  });
+});
+
+describe('gestationalAge', () => {
+  it('calculates weeks and days', () => {
+    const lmp = new Date('2026-01-01');
+    const today = new Date('2026-02-15');
+    const result = gestationalAge(lmp, today);
+    expect(result.weeks).toBe(6);
+    expect(result.days).toBe(3);
+    expect(result.totalDays).toBe(45);
+  });
+});
+
+describe('ovulationDate', () => {
+  it('calculates ovulation for 28-day cycle', () => {
+    const lp = new Date('2026-02-01');
+    const result = ovulationDate(lp, 28);
+    // Ovulation: day 14 (Feb 15)
+    expect(result.ovulation.getDate()).toBe(15);
+    // Fertile start: 5 days before ovulation (Feb 10)
+    expect(result.fertileStart.getDate()).toBe(10);
+    // Fertile end: 1 day after ovulation (Feb 16)
+    expect(result.fertileEnd.getDate()).toBe(16);
+    // Next period: Feb 1 + 28 = Mar 1
+    expect(result.nextPeriod.getMonth()).toBe(2); // March
+    expect(result.nextPeriod.getDate()).toBe(1);
+  });
+
+  it('handles 32-day cycle', () => {
+    const lp = new Date('2026-02-01');
+    const result = ovulationDate(lp, 32);
+    // Ovulation: day 18 (Feb 19)
+    expect(result.ovulation.getDate()).toBe(19);
   });
 });

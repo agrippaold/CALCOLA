@@ -1,0 +1,69 @@
+id: "pregnancy-due-date-calculator"
+category: "health"
+calculatorComponent: "PregnancyCalculator"
+
+title: "Pregnancy Due Date Calculator | CalcHub"
+metaDescription: "Calculate your estimated due date and track pregnancy milestones. Enter your last menstrual period to see your due date, trimester, and gestational age."
+h1: "Pregnancy Due Date Calculator"
+slug: "pregnancy-due-date-calculator"
+
+primaryKeyword: "due date calculator"
+secondaryKeywords:
+  - "pregnancy calculator"
+  - "pregnancy due date"
+  - "expected delivery date calculator"
+  - "gestational age calculator"
+
+intro: "Wondering when your baby will arrive? This due date calculator uses your last menstrual period to estimate your expected delivery date, current gestational age, trimester progress, and key pregnancy milestones. While only about 5% of babies are born on their exact due date, having an estimated date helps you and your healthcare provider plan prenatal care, monitor fetal development, and prepare for delivery. Enter the first day of your last period below to get started."
+
+howItWorks:
+  title: "How Due Date Calculation Works"
+  content: "The most widely used method for estimating a pregnancy due date is Naegele's Rule, named after German obstetrician Franz Naegele who published it in 1812. The rule is straightforward: take the first day of the last menstrual period (LMP), add 280 days (40 weeks), and you get the estimated due date. This can also be calculated by adding one year, subtracting three months, and adding seven days to the LMP date. The 280-day figure assumes a 28-day menstrual cycle with ovulation occurring on day 14. Since conception typically happens around ovulation, the actual pregnancy duration from conception to birth is approximately 266 days (38 weeks), but because the exact date of conception is rarely known, medical convention counts from the LMP instead. This means the first two weeks of a pregnancy, as counted by gestational age, occur before conception has actually taken place. Gestational age and fetal age are therefore different measurements. Gestational age counts from the LMP and is used in all medical settings. Fetal age (also called embryonic age or conceptional age) counts from the estimated date of fertilization and is approximately two weeks less than gestational age. When your doctor says you are 12 weeks pregnant, they mean 12 weeks gestational age, which corresponds to about 10 weeks of actual fetal development. Pregnancy is divided into three trimesters, each representing roughly 13 weeks. The first trimester spans weeks 1 through 12 and is when the fertilized egg implants, major organs begin forming, and the risk of miscarriage is highest. The second trimester covers weeks 13 through 26, often called the most comfortable period, when morning sickness typically subsides, the baby begins moving noticeably, and anatomical ultrasounds are performed around week 20. The third trimester runs from week 27 through delivery, during which the baby gains most of its birth weight, the lungs mature, and the body prepares for labor. Why is a due date only an estimate? Several factors contribute to the uncertainty. First, not all women have 28-day cycles. A woman with a 35-day cycle likely ovulated around day 21 rather than day 14, pushing the actual conception date a full week later than Naegele's Rule assumes. Second, even within a regular cycle, ovulation timing can vary by several days from month to month. Third, individual variation in fetal growth rate means some babies develop faster or slower than average. Statistical data shows that only about 5% of babies arrive on their exact due date. Approximately 80% of deliveries occur within a window of two weeks before to two weeks after the estimated date. Full-term pregnancy is now defined as 39 weeks 0 days through 40 weeks 6 days, with early term being 37 weeks 0 days through 38 weeks 6 days, and late term being 41 weeks 0 days through 41 weeks 6 days. Ultrasound dating, especially when performed in the first trimester (before 14 weeks), provides a more accurate estimate than LMP-based calculation for many women. First-trimester ultrasound measures the crown-rump length of the embryo and can estimate gestational age within 5-7 days. If the ultrasound-based date differs from the LMP-based date by more than 7 days in the first trimester, most practitioners will adjust the due date to match the ultrasound. Later ultrasounds become less precise for dating because normal variation in fetal size increases as pregnancy progresses. For women who conceived through IVF or other assisted reproductive technologies, the due date calculation is more precise because the exact date of embryo transfer is known. The due date is calculated from the transfer date plus the age of the embryo at transfer (typically 3 or 5 days) to establish a conception date equivalent."
+  formula: "Due Date = LMP + 280 days"
+  formulaExplanation: "Last Menstrual Period date plus 280 days (40 weeks). Alternatively: LMP + 1 year - 3 months + 7 days. Gestational age = current date minus LMP date. Fetal age = gestational age minus 14 days."
+  academicSource: "American College of Obstetricians and Gynecologists (ACOG). Committee Opinion No. 700: Methods for Estimating the Due Date. Obstetrics & Gynecology, 2017. Naegele, F.C. (1812). Lehrbuch der Geburtshilfe."
+
+faqs:
+  - question: "How accurate is a due date calculated from my last period?"
+    answer: "An LMP-based due date is an estimate with a margin of about plus or minus two weeks for most women. The accuracy depends heavily on the regularity of your menstrual cycle. Women with consistent 28-day cycles get the most accurate LMP-based estimates. Those with irregular cycles (varying by more than a week between months) may find their LMP-based date off by a week or more. First-trimester ultrasound dating is considered more accurate, with precision within 5-7 days. Your healthcare provider may adjust your due date if ultrasound measurements differ significantly from the LMP calculation."
+  - question: "What does gestational age mean?"
+    answer: "Gestational age is the standard medical measurement of how far along a pregnancy has progressed, counted from the first day of your last menstrual period rather than from conception. This means gestational age includes roughly two weeks before fertilization actually occurred. When a doctor says you are 8 weeks pregnant, they mean 8 weeks of gestational age, which corresponds to approximately 6 weeks since the embryo was conceived. All prenatal milestones, fetal development charts, and delivery timing guidelines use gestational age as the reference point because it provides a consistent starting date that most women can identify."
+  - question: "Why do so few babies arrive on their exact due date?"
+    answer: "Only about 5% of babies are born on the exact estimated due date because the calculation assumes average cycle length, average ovulation timing, and average fetal growth rate. In reality, all three of these variables differ from person to person. Ovulation can occur anywhere from day 10 to day 20 even in women with regular cycles. Fetal growth rates are influenced by genetics, placental function, maternal nutrition, and many other factors. The due date is best understood as the center of a probable delivery window spanning roughly four weeks (from 38 to 42 weeks gestational age), not as a precise prediction."
+  - question: "What are the three trimesters and their key milestones?"
+    answer: "The first trimester (weeks 1-12) covers implantation, organ formation, and early heartbeat detection around week 6. Morning sickness is most common during this period. The second trimester (weeks 13-26) brings the anatomy scan around week 20, you may start feeling fetal movement between weeks 16-22, and the risk of miscarriage drops significantly. The third trimester (weeks 27-40) is when the baby gains most of its weight, the lungs mature for breathing outside the womb, and the body prepares for labor. Prenatal visits become more frequent during this period, typically shifting to every two weeks and then weekly in the final month."
+  - question: "Does cycle length affect my due date?"
+    answer: "Yes, cycle length directly affects the accuracy of an LMP-based due date. Naegele's Rule assumes a 28-day cycle with ovulation on day 14. If your cycle is longer, say 35 days, ovulation likely occurred around day 21 rather than day 14, meaning your actual due date would be about one week later than the standard calculation suggests. Similarly, shorter cycles (such as 24 days) may mean ovulation occurred earlier and your due date could be a few days sooner. Some advanced due date calculators allow you to input your average cycle length to adjust for this variation. If you know your cycle length differs significantly from 28 days, mention this to your healthcare provider."
+  - question: "When is a pregnancy considered full term?"
+    answer: "The American College of Obstetricians and Gynecologists defines full term as 39 weeks 0 days through 40 weeks 6 days of gestational age. Early term is 37 weeks 0 days through 38 weeks 6 days. Late term is 41 weeks 0 days through 41 weeks 6 days. Post-term begins at 42 weeks 0 days. These distinctions matter because babies born at 39-40 weeks have better outcomes on average than those born at 37-38 weeks, even though both are sometimes loosely called full term. Elective deliveries (inductions or cesareans without medical indication) are generally not recommended before 39 weeks."
+
+examples:
+  - title: "Standard LMP calculation"
+    scenario: "A woman whose last menstrual period started on June 1, 2026, with a regular 28-day cycle"
+    inputs:
+      lastMenstrualPeriod: "2026-06-01"
+      cycleLength: 28
+    expectedResult: "Due date: March 8, 2027 | Current gestational age varies by date of calculation"
+    explanation: "Adding 280 days to June 1, 2026 gives an estimated due date of March 8, 2027. With a standard 28-day cycle, ovulation likely occurred around June 15 (day 14). The first trimester extends through August 24, the second trimester through November 30, and the third trimester through the due date. This straightforward case aligns well with Naegele's Rule because the cycle length matches the assumed 28-day standard."
+  - title: "Longer cycle adjustment"
+    scenario: "A woman whose last menstrual period started on May 15, 2026, with a regular 35-day cycle"
+    inputs:
+      lastMenstrualPeriod: "2026-05-15"
+      cycleLength: 35
+    expectedResult: "Adjusted due date: February 26, 2027 (standard calculation would give February 19, 2027)"
+    explanation: "The standard LMP calculation gives February 19, 2027 (280 days from May 15). However, with a 35-day cycle, ovulation likely occurred around day 21 (June 5) rather than day 14 (May 29). This 7-day difference shifts the adjusted due date forward to approximately February 26, 2027. This example shows why informing your healthcare provider about your typical cycle length improves the accuracy of your estimated due date."
+
+relatedTools:
+  - "ovulation-calculator"
+  - "bmi-calculator"
+  - "calorie-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

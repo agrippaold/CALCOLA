@@ -1,0 +1,85 @@
+id: "macro-calculator"
+category: "health"
+calculatorComponent: "MacroCalculator"
+
+title: "Macro Calculator - Protein, Carbs & Fat | CalcHub"
+metaDescription: "Calculate your ideal macronutrient split for protein, carbs, and fat based on your calorie goals. Supports balanced, high protein, low carb, and keto diets."
+h1: "Macro Calculator"
+slug: "macro-calculator"
+
+primaryKeyword: "macro calculator"
+secondaryKeywords:
+  - "macronutrient calculator"
+  - "protein carbs fat calculator"
+  - "IIFYM calculator"
+  - "macro counting calculator"
+
+intro: "Knowing your total calorie target is only half the equation. How you divide those calories among protein, carbohydrates, and fat shapes everything from muscle recovery to energy levels to appetite control. This macro calculator takes your Total Daily Energy Expenditure and splits it into precise gram targets for each macronutrient, with preset options for balanced, high protein, low carb, and ketogenic approaches. Enter your details, pick a diet style, and get an actionable daily breakdown you can follow immediately."
+
+howItWorks:
+  title: "How Macronutrient Calculations Work"
+  content: "Macronutrients are the three main nutrients your body uses for energy: protein, carbohydrates, and fat. Each one carries a different caloric density. Protein provides 4 calories per gram and serves as the building material for muscle tissue, enzymes, hormones, and immune cells. Carbohydrates also provide 4 calories per gram and act as the body's preferred fuel source for high-intensity activity and brain function. Fat delivers 9 calories per gram, more than double the other two, and plays a key role in hormone production, cell membrane structure, and absorption of fat-soluble vitamins A, D, E, and K. This calculator starts with your TDEE, which represents the total number of calories your body burns in a day including exercise. From there, it applies a percentage split to determine how many grams of each macronutrient you should eat. The balanced approach uses a 30/40/30 split (30% protein, 40% carbohydrates, 30% fat), which works well for general health and moderate fitness goals. The high protein approach shifts to a 40/30/30 split, pushing protein intake higher to support muscle protein synthesis during resistance training or to increase satiety during a calorie deficit. Research published in the Journal of the International Society of Sports Nutrition suggests that 1.6 to 2.2 grams of protein per kilogram of body weight per day optimizes muscle building for most active individuals. The low carb approach uses a 35/20/45 split, reducing carbohydrates while increasing dietary fat. This method can be effective for people who find they manage hunger better with fewer carbs and more fat in their diet. Blood sugar regulation often improves on lower carbohydrate intakes, which is why some individuals with insulin resistance respond well to this pattern. The ketogenic split takes this further with a 25/5/70 ratio, dropping carbohydrates to roughly 20-50 grams per day. At this level, the body enters ketosis and begins using ketone bodies derived from fat as its primary fuel source instead of glucose. Why do these ratios matter for body composition? Protein intake is the most important factor after total calories. Insufficient protein during a calorie deficit leads to greater muscle loss, slower metabolism, and increased hunger. On the other hand, excess carbohydrates or fat beyond your caloric needs will both result in fat storage regardless of the source. The specific carb-to-fat ratio is largely a matter of personal preference, activity demands, and metabolic response. Endurance athletes benefit from higher carbohydrate intake to fuel long training sessions, while sedentary individuals may perform equally well on lower carb approaches. The gram conversion uses straightforward division: multiply total calories by the macro percentage, then divide by the caloric density of that nutrient. For example, on a 2,000-calorie balanced diet, protein would be 2,000 times 0.30 divided by 4, yielding 150 grams per day. These numbers give you a precise starting framework, but pay attention to how your body responds and adjust ratios by 5-10% at a time if energy, performance, or hunger is not where you want it."
+  formula: "Grams = (Total Calories × Macro Percentage) / Calories per Gram"
+  formulaExplanation: "Protein: (Calories × % protein) / 4. Carbs: (Calories × % carbs) / 4. Fat: (Calories × % fat) / 9. Percentages vary by diet approach: Balanced 30/40/30, High Protein 40/30/30, Low Carb 35/20/45, Keto 25/5/70."
+  academicSource: "Jager, R., et al. (2017). International Society of Sports Nutrition Position Stand: protein and exercise. Journal of the International Society of Sports Nutrition, 14, 20. Dietary Guidelines for Americans 2020-2025, USDA."
+
+faqs:
+  - question: "What is the best macro ratio for weight loss?"
+    answer: "For weight loss, a higher protein ratio of 35-40% of total calories is generally most effective because protein increases satiety, preserves lean muscle mass during calorie restriction, and has a higher thermic effect than carbs or fat (meaning your body burns more calories digesting it). The remaining calories can be split between carbs and fat based on your preferences. A practical starting point is 40% protein, 30% carbs, and 30% fat. What matters most is maintaining the calorie deficit consistently while keeping protein high enough to protect muscle tissue."
+  - question: "How much protein do I need per day to build muscle?"
+    answer: "Research consistently supports consuming 1.6 to 2.2 grams of protein per kilogram of body weight per day for maximizing muscle growth when combined with resistance training. For a 75 kg person, that translates to 120-165 grams of protein daily. Going beyond 2.2 g/kg has not shown significant additional muscle-building benefits in most studies, though it is not harmful. Spreading protein intake across 3-5 meals of 25-40 grams each optimizes muscle protein synthesis throughout the day rather than consuming it all in one or two large meals."
+  - question: "Does eating fat make you fat?"
+    answer: "Dietary fat does not directly cause body fat gain any more than carbohydrates or protein do. Weight gain occurs when total calorie intake exceeds total calorie expenditure, regardless of the macronutrient source. Fat is more calorie-dense at 9 calories per gram compared to 4 for protein and carbs, which makes it easier to overconsume in terms of total energy. However, fat also contributes to satiety, hormone production, and nutrient absorption. Eliminating fat from your diet can lead to hormonal disruptions, dry skin, and poor absorption of vitamins A, D, E, and K."
+  - question: "Can I hit my macro targets with any foods I want (IIFYM)?"
+    answer: "The If It Fits Your Macros approach allows you to eat any foods as long as you meet your macro targets. While this provides flexibility and can improve dietary adherence, food quality still matters for micronutrient intake, fiber, gut health, and long-term wellbeing. A practical approach is the 80/20 guideline: get 80% of your calories from whole, minimally processed foods like lean meats, vegetables, fruits, whole grains, and healthy fats, then use the remaining 20% for foods you enjoy regardless of their nutritional profile. This preserves both health benefits and psychological sustainability."
+  - question: "How do I track my macros accurately?"
+    answer: "Accurate macro tracking requires a digital food scale and a nutrition tracking app such as MyFitnessPal, Cronometer, or MacroFactor. Weigh all solid foods in grams before cooking, as cooked weights vary based on water content. Measure liquids with measuring cups or a scale. Log everything immediately after eating rather than trying to recall meals later. Pay special attention to cooking oils (1 tablespoon of olive oil adds 14 grams of fat and 120 calories), sauces, and beverages, which are the most commonly missed sources of untracked calories."
+  - question: "Should I change my macros on rest days vs training days?"
+    answer: "Adjusting macros between training and rest days is optional but can be beneficial for some people. A common approach is to eat more carbohydrates on training days to fuel workouts and support glycogen replenishment, then shift toward higher fat and slightly lower carbs on rest days. For example, you might use a 30/45/25 split on training days and a 35/25/40 split on rest days while keeping total weekly calories the same. This strategy, called carb cycling, can improve workout performance without increasing overall calorie intake. However, keeping macros consistent every day produces similar results for most people."
+
+examples:
+  - title: "Balanced diet for weight maintenance"
+    scenario: "A 30-year-old moderately active male with a TDEE of 2,500 calories choosing the balanced macro split"
+    inputs:
+      calories: 2500
+      approach: "balanced"
+      proteinPct: 30
+      carbsPct: 40
+      fatPct: 30
+    expectedResult: "Protein: 188g (750 kcal) | Carbs: 250g (1,000 kcal) | Fat: 83g (750 kcal)"
+    explanation: "At 2,500 calories with a 30/40/30 split, this person gets 188 grams of protein (well above the minimum for muscle maintenance), 250 grams of carbs to fuel moderate activity, and 83 grams of fat for hormonal health. This balanced approach suits someone who exercises 3-4 times per week and wants to maintain current body composition."
+  - title: "High protein for muscle building"
+    scenario: "A 25-year-old male lifting 5 days per week with a TDEE of 2,800 calories plus a 300-calorie surplus"
+    inputs:
+      calories: 3100
+      approach: "high-protein"
+      proteinPct: 40
+      carbsPct: 30
+      fatPct: 30
+    expectedResult: "Protein: 310g (1,240 kcal) | Carbs: 233g (930 kcal) | Fat: 103g (930 kcal)"
+    explanation: "With 3,100 calories and 40% allocated to protein, this person consumes 310 grams of protein daily, supporting aggressive muscle growth during a bulk phase. The 233 grams of carbs provide energy for intense training sessions, while 103 grams of fat maintain hormonal balance. At 80 kg body weight, this exceeds 2.2 g/kg protein, but the surplus ensures maximum muscle protein synthesis."
+  - title: "Ketogenic approach for fat loss"
+    scenario: "A 35-year-old female with a TDEE of 1,900 calories minus a 400-calorie deficit, choosing keto"
+    inputs:
+      calories: 1500
+      approach: "keto"
+      proteinPct: 25
+      carbsPct: 5
+      fatPct: 70
+    expectedResult: "Protein: 94g (375 kcal) | Carbs: 19g (75 kcal) | Fat: 117g (1,050 kcal)"
+    explanation: "On a ketogenic plan at 1,500 calories, carbs drop to just 19 grams per day, low enough to induce and maintain ketosis. Fat provides the bulk of energy at 117 grams. Protein sits at 94 grams, which is adequate for preserving lean mass during the deficit. This approach works well for people who experience strong satiety from high-fat meals and prefer to minimize carbohydrate intake."
+
+relatedTools:
+  - "calorie-calculator"
+  - "bmi-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
