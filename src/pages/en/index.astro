@@ -1,18 +1,140 @@
 ---
-// Placeholder homepage — will be expanded in STEP 1.6
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+
+const categories = [
+  {
+    name: 'Finance',
+    slug: 'finance',
+    description: 'Mortgage, loans, compound interest, savings, and investment calculators.',
+    icon: '💰',
+    tools: [
+      { name: 'Mortgage Calculator', slug: '/en/finance/mortgage-calculator/' },
+      { name: 'Compound Interest', slug: '/en/finance/compound-interest-calculator/' },
+      { name: 'Loan Calculator', slug: '/en/finance/loan-calculator/' },
+      { name: 'Savings Calculator', slug: '/en/finance/savings-calculator/' },
+    ],
+  },
+  {
+    name: 'Health',
+    slug: 'health',
+    description: 'BMI, BMR, TDEE, calorie needs, and body composition calculators.',
+    icon: '🏥',
+    tools: [
+      { name: 'BMI Calculator', slug: '/en/health/bmi-calculator/' },
+      { name: 'BMR Calculator', slug: '/en/health/bmr-calculator/' },
+      { name: 'TDEE Calculator', slug: '/en/health/tdee-calculator/' },
+      { name: 'Calorie Calculator', slug: '/en/health/calorie-calculator/' },
+    ],
+  },
+  {
+    name: 'Math',
+    slug: 'math',
+    description: 'Percentage, area, algebra, and everyday math calculators.',
+    icon: '📐',
+    tools: [
+      { name: 'Percentage Calculator', slug: '/en/math/percentage-calculator/' },
+      { name: 'Area Calculator', slug: '/en/math/area-calculator/' },
+    ],
+  },
+  {
+    name: 'Conversions',
+    slug: 'conversions',
+    description: 'Temperature, length, weight, and volume unit converters.',
+    icon: '🔄',
+    tools: [
+      { name: 'Temperature Converter', slug: '/en/conversions/temperature-converter/' },
+    ],
+  },
+];
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CalcHub — Free Online Calculators</title>
-    <meta name="description" content="200+ free online calculators in 25 languages. Finance, health, math, conversions and more." />
-  </head>
-  <body>
-    <main class="max-w-4xl mx-auto px-4 py-16 text-center">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">CalcHub</h1>
-      <p class="text-lg text-gray-600">Free Online Calculators — Coming Soon</p>
-    </main>
-  </body>
-</html>
+<BaseLayout
+  title="CalcHub - Free Online Calculators | Finance, Health, Math"
+  description="200+ free online calculators in 25 languages. Mortgage, BMI, compound interest, percentage, temperature and more. Fast, accurate, no signup required."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Free Online Calculators</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Fast, accurate calculators for finance, health, math, and conversions. No signup. No ads interrupting your work.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/en/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Popular Calculators</h2>
+    <p class="text-gray-600 mb-8">Most-used tools across all categories</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/en/finance/mortgage-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">Finance</div>
+        <div class="font-semibold text-gray-900">Mortgage Calculator</div>
+        <p class="text-sm text-gray-500 mt-1">Estimate monthly payments and total interest.</p>
+      </a>
+      <a href="/en/health/bmi-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Health</div>
+        <div class="font-semibold text-gray-900">BMI Calculator</div>
+        <p class="text-sm text-gray-500 mt-1">Check your Body Mass Index instantly.</p>
+      </a>
+      <a href="/en/math/percentage-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">Math</div>
+        <div class="font-semibold text-gray-900">Percentage Calculator</div>
+        <p class="text-sm text-gray-500 mt-1">All percentage calculations in one place.</p>
+      </a>
+      <a href="/en/health/calorie-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Health</div>
+        <div class="font-semibold text-gray-900">Calorie Calculator</div>
+        <p class="text-sm text-gray-500 mt-1">Daily calorie needs with macro breakdown.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">All Categories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/en/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/en/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            View all {cat.name.toLowerCase()} tools &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

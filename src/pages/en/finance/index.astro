@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+
+const tools = [
+  { name: 'Mortgage Calculator', slug: '/en/finance/mortgage-calculator/', description: 'Calculate monthly mortgage payments, total interest, and compare loan terms.' },
+  { name: 'Compound Interest Calculator', slug: '/en/finance/compound-interest-calculator/', description: 'See how your investments grow with compound interest over time.' },
+  { name: 'Loan Calculator', slug: '/en/finance/loan-calculator/', description: 'Estimate monthly payments and total cost for personal, auto, or student loans.' },
+  { name: 'Savings Calculator', slug: '/en/finance/savings-calculator/', description: 'Project your savings growth with initial deposits and monthly contributions.' },
+];
+---
+
+<BaseLayout
+  title="Finance Calculators - Mortgage, Loans, Interest | CalcHub"
+  description="Free finance calculators: mortgage payments, compound interest, loan amortization, savings growth. Accurate results with no signup required."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/en/" class="hover:text-blue-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Finance</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Finance Calculators</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Tools for mortgage planning, loan analysis, investment growth, and savings projections. All calculations use standard financial formulas used by banks and financial advisors.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

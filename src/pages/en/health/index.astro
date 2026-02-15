@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+
+const tools = [
+  { name: 'BMI Calculator', slug: '/en/health/bmi-calculator/', description: 'Calculate your Body Mass Index and find your weight category.' },
+  { name: 'BMR Calculator', slug: '/en/health/bmr-calculator/', description: 'Find your Basal Metabolic Rate using the Mifflin-St Jeor equation.' },
+  { name: 'TDEE Calculator', slug: '/en/health/tdee-calculator/', description: 'Calculate Total Daily Energy Expenditure based on your activity level.' },
+  { name: 'Calorie Calculator', slug: '/en/health/calorie-calculator/', description: 'Get daily calorie targets and macro breakdown for your goals.' },
+];
+---
+
+<BaseLayout
+  title="Health Calculators - BMI, BMR, TDEE, Calories | CalcHub"
+  description="Free health and fitness calculators: BMI, BMR, TDEE, daily calorie needs with macronutrient breakdown. Evidence-based formulas."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/en/" class="hover:text-blue-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Health</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Health & Fitness Calculators</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Evidence-based health calculators using validated equations. BMI, metabolic rate, energy expenditure, and calorie planning tools for informed health decisions.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
