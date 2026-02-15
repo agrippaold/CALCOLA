@@ -1,0 +1,79 @@
+id: "temperature-converter"
+category: "conversions"
+calculatorComponent: "TemperatureConverter"
+
+title: "Temperature Converter - C, F, Kelvin | CalcHub"
+metaDescription: "Convert temperatures between Celsius, Fahrenheit, and Kelvin instantly. Free temperature converter with reference points and conversion formulas."
+h1: "Temperature Converter"
+slug: "temperature-converter"
+
+primaryKeyword: "temperature converter"
+secondaryKeywords:
+  - "celsius to fahrenheit"
+  - "fahrenheit to celsius"
+  - "temperature conversion"
+  - "celsius to kelvin"
+
+intro: "Converting between temperature scales is one of those everyday tasks that trips people up because the formulas are not intuitive. Unlike length or weight, temperature scales do not share a common zero point, making conversions less straightforward than simple multiplication. This converter handles all three major temperature scales: Celsius, Fahrenheit, and Kelvin. Enter a value in any scale and see the equivalents in all three instantly."
+
+howItWorks:
+  title: "How Temperature Conversion Works"
+  content: "The three temperature scales differ in their zero points and degree sizes. Celsius (also called centigrade) sets 0 at the freezing point of water and 100 at the boiling point at standard atmospheric pressure. Anders Celsius created this scale in 1742, though he originally set 0 as boiling and 100 as freezing; it was inverted after his death. Fahrenheit, developed by Daniel Gabriel Fahrenheit in 1724, sets 32 as the freezing point of water and 212 as the boiling point. The scale was originally based on three reference points: 0 for a brine solution (the coldest temperature Fahrenheit could reliably produce), 32 for ice water, and 96 for body temperature (later revised to 98.6). This history explains the seemingly arbitrary numbers. Kelvin, the SI unit of temperature, starts at absolute zero, the theoretical point where all molecular motion ceases (minus 273.15 degrees Celsius). Each Kelvin degree is the same size as a Celsius degree, so conversions between them simply add or subtract 273.15. Lord Kelvin proposed this scale in 1848 for scientific work because it has no negative values. To convert Celsius to Fahrenheit, multiply by 9/5 and add 32. To go the other direction, subtract 32 and multiply by 5/9. The 9/5 factor exists because there are 180 Fahrenheit degrees between water freezing and boiling (212 minus 32) but only 100 Celsius degrees, giving a ratio of 180/100 or 9/5. A useful shortcut: minus 40 is the same in both Celsius and Fahrenheit. For rough mental conversions from Celsius to Fahrenheit, double the number and add 30. This gives approximate results: 20 degrees C becomes about 70 degrees F (actual: 68), 30 degrees C becomes about 90 degrees F (actual: 86). The approximation works best between 0 and 40 degrees Celsius, which covers most weather temperatures."
+  formula: "°F = °C × 9/5 + 32 | °C = (°F - 32) × 5/9 | K = °C + 273.15"
+  formulaExplanation: "Celsius to Fahrenheit: multiply by 1.8 then add 32. Fahrenheit to Celsius: subtract 32 then multiply by 0.5556. Kelvin conversions add or subtract 273.15 from Celsius."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "What is the easiest way to convert Celsius to Fahrenheit in my head?"
+    answer: "For quick estimates, double the Celsius temperature and add 30. This gives results within a few degrees for common temperatures: 10 degrees C becomes about 50 degrees F (exact: 50), 20 degrees C becomes about 70 degrees F (exact: 68), 30 degrees C becomes about 90 degrees F (exact: 86). For more accuracy, multiply by 2, subtract 10% of the result, and add 32. These shortcuts are useful for travel, cooking, and understanding weather forecasts in an unfamiliar scale."
+  - question: "Why do the US and a few other countries still use Fahrenheit?"
+    answer: "The United States, along with a handful of other countries (Liberia, Cayman Islands, Palau, Bahamas, Belize), continue using Fahrenheit primarily due to established infrastructure and cultural familiarity. The US attempted metrication in the 1970s with the Metric Conversion Act, but without mandatory requirements, adoption remained voluntary and incomplete. Fahrenheit persists in daily life (weather, cooking, thermostats) while Celsius and Kelvin dominate scientific, medical, and military contexts within the US."
+  - question: "What is absolute zero and why does it matter?"
+    answer: "Absolute zero (0 Kelvin, minus 273.15 degrees Celsius, minus 459.67 degrees Fahrenheit) is the lowest theoretically possible temperature, where particles have minimum kinetic energy. No object has ever been cooled to exactly absolute zero, though laboratories have reached within billionths of a degree. It matters because the Kelvin scale starts here, making it the only temperature scale with a true zero point where zero means no thermal energy. This makes Kelvin essential for scientific calculations involving temperature ratios."
+  - question: "At what temperature are Celsius and Fahrenheit equal?"
+    answer: "Celsius and Fahrenheit scales intersect at minus 40 degrees. At this point, both thermometers read the same number. You can verify this by plugging minus 40 into either conversion formula: (minus 40 times 9/5) plus 32 equals minus 72 plus 32 equals minus 40. This fact serves as a useful reference point and makes for a convenient mnemonic when remembering the conversion relationship between the two scales."
+  - question: "What temperature scale should I use for cooking?"
+    answer: "Use whatever scale your oven and recipes specify. Most American recipes use Fahrenheit, while European and international recipes use Celsius. Common equivalents worth memorizing: 350 degrees F equals 175 degrees C (standard baking), 400 degrees F equals 200 degrees C (higher heat baking), 425 degrees F equals 220 degrees C (roasting), and 450 degrees F equals 230 degrees C (pizza and bread). Many modern ovens display both scales, eliminating the need for conversion."
+  - question: "How does temperature conversion differ from length or weight conversion?"
+    answer: "Length and weight conversions are proportional (purely multiplicative): doubling the centimeters always doubles the inches. Temperature conversions involve both multiplication and addition because the scales have different zero points. Zero degrees Celsius does not equal zero degrees Fahrenheit. This offset means you cannot simply multiply by a conversion factor. It also means that temperature differences convert differently from absolute temperatures: a 10-degree Celsius difference equals an 18-degree Fahrenheit difference, regardless of the starting point."
+
+examples:
+  - title: "Body temperature check"
+    scenario: "Converting normal body temperature 37 degrees Celsius to Fahrenheit"
+    inputs:
+      temperature: 37
+      from: "celsius"
+      to: "fahrenheit"
+    expectedResult: "37°C = 98.60°F"
+    explanation: "Normal human body temperature of 37 degrees C equals 98.6 degrees F. A fever is generally considered to start at 38 degrees C (100.4 degrees F). Emergency-level fever begins around 40 degrees C (104 degrees F)."
+  - title: "Winter weather conversion"
+    scenario: "Understanding a minus 4 degrees Fahrenheit forecast in Celsius"
+    inputs:
+      temperature: -4
+      from: "fahrenheit"
+      to: "celsius"
+    expectedResult: "-4°F = -20.00°C"
+    explanation: "Minus 4 degrees Fahrenheit equals minus 20 degrees Celsius, representing extremely cold conditions. At this temperature, exposed skin can develop frostbite within 30 minutes."
+  - title: "Scientific temperature"
+    scenario: "Converting room temperature (293.15 K) to Celsius and Fahrenheit"
+    inputs:
+      temperature: 293.15
+      from: "kelvin"
+      to: "celsius"
+    expectedResult: "293.15 K = 20.00°C = 68.00°F"
+    explanation: "Standard room temperature in scientific contexts is 293.15 Kelvin, equal to 20 degrees Celsius or 68 degrees Fahrenheit. Laboratory experiments often specify temperatures in Kelvin to avoid confusion with negative Celsius values."
+
+relatedTools:
+  - "bmi-calculator"
+  - "percentage-calculator"
+  - "area-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

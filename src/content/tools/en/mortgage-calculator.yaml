@@ -1,0 +1,79 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Mortgage Calculator - Estimate Monthly Payments | CalcHub"
+metaDescription: "Calculate your monthly mortgage payment, total interest, and amortization with our free mortgage calculator. Compare loan terms and rates instantly."
+h1: "Mortgage Calculator"
+slug: "mortgage-calculator"
+
+primaryKeyword: "mortgage calculator"
+secondaryKeywords:
+  - "home loan calculator"
+  - "mortgage payment calculator"
+  - "house payment calculator"
+  - "monthly mortgage payment"
+
+intro: "Buying a home is the biggest financial commitment most people ever make. Before you sign anything, you need to know exactly what your monthly payment will look like. This mortgage calculator breaks down your payment into principal and interest, shows you the total cost over the life of the loan, and helps you compare different scenarios. Plug in your loan amount, interest rate, and term to see the numbers that matter for your budget."
+
+howItWorks:
+  title: "How Mortgage Payments Are Calculated"
+  content: "Every fixed-rate mortgage payment is calculated using the same amortization formula that banks and lenders use worldwide. The formula takes three inputs: the loan principal (the amount you borrow), the annual interest rate, and the loan term in years. Each monthly payment stays the same throughout the loan, but the proportion going toward principal versus interest shifts over time. In the early years, most of your payment covers interest charges. As the principal balance decreases, less interest accrues, and more of each payment reduces the actual loan balance. This is why paying extra toward principal in the first few years has an outsized effect on total interest costs. For example, on a $300,000 mortgage at 6.5% over 30 years, your monthly payment would be $1,896.20. Over 30 years, you would pay $382,633.47 in total interest, which is more than the original loan amount. Shortening the term to 15 years increases the monthly payment to $2,613.32 but cuts total interest to $170,398.12, saving you over $212,000. The interest rate has an enormous impact too. Just one percentage point difference on a $300,000 loan over 30 years changes total interest by roughly $65,000. This is why shopping among multiple lenders and improving your credit score before applying can save tens of thousands of dollars over the life of the mortgage. Property taxes, homeowner insurance, and private mortgage insurance (PMI) are not included in this base calculation but typically add $200 to $600 per month depending on location and down payment size."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = monthly payment, P = loan principal, r = monthly interest rate (annual rate / 12 / 100), n = total number of payments (years × 12)"
+  academicSource: "Federal Reserve Board. (2023). Consumer Handbook on Adjustable-Rate Mortgages."
+
+faqs:
+  - question: "How much house can I afford with my income?"
+    answer: "Most financial advisors recommend keeping your total housing costs below 28% of your gross monthly income. This includes mortgage principal, interest, property taxes, and insurance. If your household earns $6,000 per month gross, aim for a total housing payment under $1,680. Use this calculator to find a loan amount that produces a principal-and-interest payment leaving room for taxes and insurance within that budget."
+  - question: "Should I choose a 15-year or 30-year mortgage?"
+    answer: "A 15-year mortgage has higher monthly payments but saves dramatically on total interest. For a $250,000 loan at 6%, the 30-year payment is $1,499 with $289,595 total interest, while the 15-year payment is $2,109 with $129,684 total interest. Choose 15 years if you can comfortably afford the higher payment and want to build equity faster. Choose 30 years if you need lower payments or want to invest the difference elsewhere."
+  - question: "How does my credit score affect my mortgage rate?"
+    answer: "Credit scores directly impact the interest rate lenders offer you. Borrowers with scores above 760 typically qualify for the best rates, while scores below 620 may face rates 1.5 to 3 percentage points higher. On a $300,000 30-year mortgage, a 1.5% rate difference translates to roughly $300 more per month and approximately $97,000 in additional interest over the loan term. Improving your score before applying is one of the most effective ways to reduce borrowing costs."
+  - question: "What is PMI and when is it required?"
+    answer: "Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home purchase price. PMI typically costs between 0.5% and 1.5% of the loan amount annually, added to your monthly payment. On a $250,000 loan, PMI could add $104 to $312 per month. Once your equity reaches 20% through payments or home appreciation, you can request PMI removal. FHA loans have their own mortgage insurance premiums with different rules."
+  - question: "Should I make extra mortgage payments?"
+    answer: "Extra payments toward principal can significantly reduce total interest and shorten your loan term. Adding just $100 per month to a $250,000 mortgage at 6% for 30 years would save approximately $47,000 in interest and pay off the loan nearly 5 years early. However, if you have higher-interest debt like credit cards or student loans, paying those off first typically provides a better return on your money."
+  - question: "What closing costs should I expect?"
+    answer: "Closing costs typically range from 2% to 5% of the loan amount. For a $300,000 mortgage, expect $6,000 to $15,000 in fees including origination fees, appraisal, title insurance, attorney fees, and prepaid items like property tax escrow and homeowner insurance. Some lenders offer no-closing-cost options by rolling fees into the loan or charging a slightly higher interest rate, but this increases your long-term costs."
+
+examples:
+  - title: "Standard 30-year fixed mortgage"
+    scenario: "A borrower taking out a $250,000 mortgage at 6.5% for 30 years"
+    inputs:
+      loanAmount: 250000
+      interestRate: 6.5
+      loanTerm: 30
+    expectedResult: "Monthly payment: $1,580.17 | Total interest: $318,861.22"
+    explanation: "At $1,580.17 per month, this borrower will pay nearly $319,000 in interest over 30 years, bringing the total cost to $568,861. The first payment allocates $1,354.17 to interest and only $226 to principal reduction."
+  - title: "15-year mortgage comparison"
+    scenario: "The same $250,000 loan at 6% but over 15 years"
+    inputs:
+      loanAmount: 250000
+      interestRate: 6
+      loanTerm: 15
+    expectedResult: "Monthly payment: $2,109.64 | Total interest: $129,735.49"
+    explanation: "The monthly payment is $530 higher than a 30-year at the same rate, but total interest drops to $129,735, saving approximately $160,000 compared to the 30-year option."
+  - title: "Small home loan"
+    scenario: "A $120,000 mortgage at 7% for 30 years"
+    inputs:
+      loanAmount: 120000
+      interestRate: 7
+      loanTerm: 30
+    expectedResult: "Monthly payment: $798.36 | Total interest: $167,409.91"
+    explanation: "Even on a smaller loan, the 7% rate means total interest ($167,410) exceeds the original principal. This highlights the importance of securing the lowest possible rate."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

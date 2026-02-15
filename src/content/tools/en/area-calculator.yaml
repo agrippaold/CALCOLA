@@ -1,0 +1,78 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+
+title: "Area Calculator - Rectangle, Circle & More | CalcHub"
+metaDescription: "Calculate the area of rectangles, circles, triangles, trapezoids, and ellipses. Free area calculator with formulas and instant results for any shape."
+h1: "Area Calculator"
+slug: "area-calculator"
+
+primaryKeyword: "area calculator"
+secondaryKeywords:
+  - "calculate area"
+  - "square footage calculator"
+  - "area of a circle calculator"
+  - "triangle area calculator"
+
+intro: "Need to figure out the area of a room, a garden plot, or a geometric shape for homework? This calculator handles five common shapes, just select the one you need, enter the dimensions, and get your answer instantly. It works with any unit of measurement: meters, feet, inches, centimeters, or whatever your project requires. The result is in squared units matching your input."
+
+howItWorks:
+  title: "How Area Is Calculated for Different Shapes"
+  content: "Area measures the amount of two-dimensional space enclosed within a shape boundary, expressed in square units. Each geometric shape has a distinct formula derived from fundamental mathematical principles. A rectangle (or square) has the simplest area formula: length multiplied by width. If a room measures 5 meters by 4 meters, its area is 20 square meters. Squares are rectangles where both sides are equal. A circle area equals pi times the radius squared. Pi (approximately 3.14159) represents the ratio of a circle circumference to its diameter and appears in all circular calculations. For a circle with radius 7 meters, the area is 3.14159 times 49 equals approximately 153.94 square meters. A triangle area equals one-half times base times height. The height must be perpendicular (at a right angle) to the base, not the length of a slanted side. A triangle with a 10 cm base and 6 cm height has an area of 30 square centimeters. A trapezoid (or trapezium in British English) has two parallel sides of different lengths. Its area equals one-half times the sum of the two parallel sides times the perpendicular height between them. If the parallel sides measure 8 and 12 meters with a height of 5 meters, the area is 0.5 times (8+12) times 5 equals 50 square meters. An ellipse is an oval shape defined by two semi-axes: the semi-major axis (longer) and semi-minor axis (shorter). The area equals pi times the semi-major axis times the semi-minor axis. When both axes are equal, the ellipse becomes a circle. A pool shaped as an ellipse with semi-axes of 6 and 4 meters has an area of approximately 75.4 square meters. Unit conversion follows the square rule: to convert between square units, multiply by the conversion factor squared. One meter equals 3.281 feet, so one square meter equals 3.281 squared equals 10.764 square feet."
+  formula: "Rectangle: A = l × w | Circle: A = πr² | Triangle: A = ½bh"
+  formulaExplanation: "Trapezoid: A = ½(a+b)×h where a and b are parallel sides. Ellipse: A = π × semi-major × semi-minor. All results in squared units."
+  academicSource: "Euclid. Elements, Books I-IV. c. 300 BCE. Modern reference: Stewart, J. (2020). Calculus: Early Transcendentals (9th ed.). Cengage Learning."
+
+faqs:
+  - question: "How do I calculate the area of an irregular shape?"
+    answer: "For irregular shapes, break them into combinations of simple shapes (rectangles, triangles, circles), calculate each area separately, then add them together. For example, an L-shaped room can be split into two rectangles. A room with a bay window might be a rectangle plus a triangle. For highly irregular shapes like natural land plots, GPS-based surveying tools or the coordinate geometry method (dividing the shape into triangles using vertex coordinates) provides accurate measurements."
+  - question: "What is the difference between area and perimeter?"
+    answer: "Area measures the space inside a shape (in square units), while perimeter measures the total length around the outside edge (in linear units). A 10 by 5 meter room has an area of 50 square meters but a perimeter of 30 meters. Two shapes can have the same perimeter but very different areas: a 10x5 rectangle (area 50) and a 1x14 rectangle (area 14) both have a perimeter of 30 meters."
+  - question: "How do I convert between square meters and square feet?"
+    answer: "One square meter equals approximately 10.764 square feet. One square foot equals approximately 0.0929 square meters. To convert, multiply square meters by 10.764 to get square feet, or multiply square feet by 0.0929 to get square meters. For a rough mental estimate: multiply square meters by 10 and add about 7.5% to get approximate square footage."
+  - question: "How do I calculate the area of a room with odd angles?"
+    answer: "Divide the room into rectangular sections and calculate each separately. For angled walls, treat the angled section as a triangle. Measure the base (along one wall) and height (perpendicular distance to the opposite wall or corner). Add all section areas together. For precision with complex rooms, consider using a laser measuring tool that calculates area directly from multiple measurements along the walls."
+  - question: "Why does the circle formula use pi?"
+    answer: "Pi emerges from the fundamental relationship between a circle diameter and its circumference. No matter how large or small a circle is, dividing its circumference by its diameter always yields pi (approximately 3.14159). When calculating area, you integrate infinitely many thin concentric rings from the center to the edge; this process naturally produces the formula pi times radius squared. Pi is an irrational number, meaning its decimal expansion never terminates or repeats."
+  - question: "How accurate does my measurement need to be?"
+    answer: "Accuracy requirements depend on the application. For ordering carpet or flooring, measurements within 2-3% are sufficient because materials are sold with waste allowance. For construction and building permits, measurements should be within 1% or better. For scientific and engineering applications, millimeter precision may be needed. Always measure twice and use the same units throughout your calculation. Rounding intermediate results can compound errors, so keep full precision until the final answer."
+
+examples:
+  - title: "Room area for flooring"
+    scenario: "Calculating area for a rectangular room 4.5 m by 3.8 m"
+    inputs:
+      shape: "rectangle"
+      length: 4.5
+      width: 3.8
+    expectedResult: "Area: 17.1000 sq units"
+    explanation: "The room has an area of 17.1 square meters. When ordering flooring, add 10% for waste and cuts, bringing the purchase amount to approximately 18.8 square meters."
+  - title: "Circular garden bed"
+    scenario: "Finding the area of a circular flower bed with 2.5 m radius"
+    inputs:
+      shape: "circle"
+      radius: 2.5
+    expectedResult: "Area: 19.6350 sq units"
+    explanation: "The garden bed covers approximately 19.64 square meters. To estimate soil volume, multiply the area by the desired depth (e.g., 0.15 m for 15 cm of topsoil gives about 2.95 cubic meters)."
+  - title: "Triangular plot of land"
+    scenario: "Measuring a triangular corner lot with 20 m base and 15 m height"
+    inputs:
+      shape: "triangle"
+      base: 20
+      height: 15
+    expectedResult: "Area: 150.0000 sq units"
+    explanation: "The triangular lot has an area of 150 square meters. This equals approximately 1,615 square feet, useful for property valuation or planning purposes."
+
+relatedTools:
+  - "percentage-calculator"
+  - "bmi-calculator"
+  - "mortgage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

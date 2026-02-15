@@ -1,0 +1,82 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "BMR Calculator - Basal Metabolic Rate | CalcHub"
+metaDescription: "Calculate your Basal Metabolic Rate with the Mifflin-St Jeor equation. Find out how many calories your body burns at rest based on age, weight, and height."
+h1: "BMR Calculator (Basal Metabolic Rate)"
+slug: "bmr-calculator"
+
+primaryKeyword: "bmr calculator"
+secondaryKeywords:
+  - "basal metabolic rate calculator"
+  - "metabolism calculator"
+  - "resting metabolic rate"
+  - "bmr formula"
+
+intro: "Your Basal Metabolic Rate is the number of calories your body burns just to stay alive, breathing, circulating blood, maintaining body temperature, and keeping organs functioning while you lie completely still. It accounts for 60% to 75% of total daily calories for most people. Knowing your BMR gives you the foundation for calculating how much you actually need to eat, whether your goal is losing fat, building muscle, or maintaining your current weight."
+
+howItWorks:
+  title: "How BMR Is Calculated"
+  content: "This calculator uses the Mifflin-St Jeor equation, which the American Dietetic Association identified as the most accurate BMR estimation method for healthy individuals in a 2005 comparative study. The equation accounts for weight, height, age, and biological sex. For males, the formula is BMR = 10 times weight in kilograms plus 6.25 times height in centimeters minus 5 times age in years plus 5. For females, the same base calculation applies but subtracts 161 instead of adding 5. This difference reflects the generally higher lean body mass percentage in males. The Mifflin-St Jeor equation replaced the older Harris-Benedict equation (1919) as the gold standard because it proved more accurate across diverse populations. The Harris-Benedict equation tends to overestimate BMR by about 5% in normal-weight individuals and even more in obese individuals. Several factors influence your actual BMR beyond what the formula captures. Muscle mass is the biggest variable since muscle tissue burns more calories at rest than fat tissue. Two people of identical weight, height, and age can have BMRs differing by 200 to 300 calories if one has significantly more lean mass. Genetics play a role too, accounting for roughly 40% of BMR variation between individuals even after controlling for body composition. Thyroid function directly regulates metabolic rate; hypothyroidism can lower BMR by 10% to 15%. Age-related BMR decline averages about 1% to 2% per decade after age 20, primarily due to progressive muscle loss rather than aging itself. Maintaining muscle through resistance training can significantly slow this decline. Environmental temperature, certain medications, caffeine intake, and recent food consumption also create temporary BMR fluctuations."
+  formula: "BMR (male) = 10×weight(kg) + 6.25×height(cm) - 5×age + 5"
+  formulaExplanation: "For females, replace +5 with -161. This is the Mifflin-St Jeor equation, considered the most accurate BMR estimation for healthy adults."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "What is the difference between BMR and RMR?"
+    answer: "BMR (Basal Metabolic Rate) and RMR (Resting Metabolic Rate) are often used interchangeably, but they differ in measurement conditions. BMR requires strict laboratory conditions: 12 hours of fasting, 8 hours of sleep, a thermoneutral environment, and complete physical and psychological rest. RMR is measured under less restrictive conditions and is typically 10% to 20% higher than BMR. For practical purposes, the difference is small enough that either value works as a baseline for calorie calculations."
+  - question: "Why does BMR decrease with age?"
+    answer: "BMR declines roughly 1% to 2% per decade after age 20. The primary driver is sarcopenia, the gradual loss of muscle mass that occurs naturally with aging. Since muscle tissue is metabolically active (burning about 6 calories per pound per day at rest), losing muscle reduces energy expenditure. Between ages 30 and 80, most people lose 30% to 40% of their muscle mass without intervention. Regular resistance training and adequate protein intake (0.7 to 1 gram per pound of body weight) can substantially slow this process."
+  - question: "Can I increase my BMR?"
+    answer: "Building lean muscle mass is the most effective way to increase BMR. Each pound of muscle burns approximately 6 calories per day at rest, compared to 2 calories per pound of fat. Adding 10 pounds of muscle through consistent strength training raises your daily BMR by roughly 40 to 60 calories. While this sounds modest, over a year it amounts to an additional 15,000 to 22,000 calories burned at rest. Other factors that temporarily boost metabolic rate include high-protein diets (through the thermic effect of food), cold exposure, and caffeine."
+  - question: "How accurate is this BMR calculator?"
+    answer: "The Mifflin-St Jeor equation predicts BMR within 10% of measured values for about 82% of people, according to the original validation study. Accuracy is highest for normal-weight adults and decreases somewhat for individuals who are significantly overweight or underweight. Athletes with above-average muscle mass may find the formula underestimates their actual BMR, while individuals with less muscle mass than average may see overestimates. For clinical-grade accuracy, indirect calorimetry testing at a hospital or sports medicine facility measures actual oxygen consumption."
+  - question: "Should I eat below my BMR to lose weight?"
+    answer: "Eating below your BMR is generally not recommended and can be counterproductive. Your body needs those baseline calories to maintain basic organ function, hormone production, and immune response. Chronic under-eating below BMR triggers metabolic adaptation, where your body reduces energy expenditure to conserve resources. This makes further weight loss harder and often leads to muscle loss. Instead, use your TDEE (which includes activity calories) as the starting point and create a moderate deficit of 300 to 500 calories below TDEE for sustainable fat loss."
+  - question: "How does BMR relate to TDEE and calorie counting?"
+    answer: "BMR is the foundation of your total daily energy expenditure. TDEE multiplies your BMR by an activity factor to account for exercise and daily movement. For sedentary individuals, TDEE is about 1.2 times BMR. For very active people, it can reach 1.9 times BMR. If your BMR is 1,600 calories and you are moderately active (multiplier 1.55), your TDEE is approximately 2,480 calories. To lose weight, you would eat below your TDEE (not below BMR). To gain weight, eat above your TDEE."
+
+examples:
+  - title: "Active male, age 30"
+    scenario: "A 30-year-old male weighing 80 kg and 180 cm tall"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "BMR: 1,780 kcal/day"
+    explanation: "This man burns approximately 1,780 calories daily at complete rest. With moderate activity (3-5 days of exercise per week), his TDEE would be roughly 2,759 calories per day (1,780 x 1.55)."
+  - title: "Female, age 25"
+    scenario: "A 25-year-old female weighing 60 kg and 165 cm tall"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "BMR: 1,345 kcal/day"
+    explanation: "Her resting calorie burn is 1,345 per day. The lower value compared to the male example reflects both smaller body size and the gender-specific adjustment in the Mifflin-St Jeor formula."
+  - title: "Older adult"
+    scenario: "A 60-year-old male weighing 75 kg and 172 cm tall"
+    inputs:
+      weight: 75
+      height: 172
+      age: 60
+      gender: "male"
+    expectedResult: "BMR: 1,530 kcal/day"
+    explanation: "At age 60, the same-sized person has a BMR approximately 150 calories lower per day than at age 30. This illustrates why calorie needs decrease with age and why maintaining muscle mass through exercise becomes increasingly important."
+
+relatedTools:
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

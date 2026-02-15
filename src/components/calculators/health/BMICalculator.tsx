@@ -1,4 +1,5 @@
 import { useState } from 'preact/hooks';
+import { bmi, bmiCategory } from '../../../lib/formulas/health';
 import CalculatorShell from '../base/CalculatorShell';
 import InputField from '../base/InputField';
 import SelectField from '../base/SelectField';
@@ -11,26 +12,15 @@ interface Props {
   lang?: string;
 }
 
-function calculateBMI(weight: number, height: number, unit: string): number | null {
-  if (weight <= 0 || height <= 0) return null;
-
-  if (unit === 'metric') {
-    const heightM = height / 100;
-    return weight / (heightM * heightM);
-  } else {
-    return (weight * 703) / (height * height);
-  }
+function getBMIColor(value: number): string {
+  if (value < 18.5) return 'text-yellow-600';
+  if (value < 25) return 'text-green-600';
+  if (value < 30) return 'text-orange-600';
+  return 'text-red-600';
 }
 
-function getBMICategory(bmi: number): { label: string; color: string } {
-  if (bmi < 18.5) return { label: 'Underweight', color: 'text-yellow-600' };
-  if (bmi < 25) return { label: 'Normal weight', color: 'text-green-600' };
-  if (bmi < 30) return { label: 'Overweight', color: 'text-orange-600' };
-  return { label: 'Obese', color: 'text-red-600' };
-}
-
-function getBMIBarPosition(bmi: number): number {
-  return Math.min(Math.max((bmi / 40) * 100, 0), 100);
+function getBMIBarPosition(value: number): number {
+  return Math.min(Math.max((value / 40) * 100, 0), 100);
 }
 
 export default function BMICalculator({ defaults, lang }: Props) {
@@ -40,8 +30,8 @@ export default function BMICalculator({ defaults, lang }: Props) {
 
   const w = parseFloat(weight);
   const h = parseFloat(height);
-  const bmi = calculateBMI(w, h, unit);
-  const category = bmi ? getBMICategory(bmi) : null;
+  const result = w > 0 && h > 0 ? bmi(w, h, unit as 'metric' | 'imperial') : null;
+  const category = result ? bmiCategory(result) : null;
 
   const weightUnit = unit === 'metric' ? 'kg' : 'lbs';
   const heightUnit = unit === 'metric' ? 'cm' : 'in';
@@ -81,12 +71,12 @@ export default function BMICalculator({ defaults, lang }: Props) {
         />
       </div>
 
-      {bmi && category && (
+      {result && category && (
         <div class="mt-6">
           <ResultDisplay
             items={[
-              { label: 'Your BMI', value: bmi.toFixed(1), highlight: true },
-              { label: 'Category', value: category.label },
+              { label: 'Your BMI', value: result.toFixed(1), highlight: true },
+              { label: 'Category', value: category },
               { label: 'Healthy BMI range', value: '18.5 - 24.9' },
             ]}
           >
@@ -95,7 +85,7 @@ export default function BMICalculator({ defaults, lang }: Props) {
               <div class="relative h-4 rounded-full overflow-hidden" style="background: linear-gradient(to right, #FBBF24, #22C55E, #22C55E, #F97316, #EF4444)">
                 <div
                   class="absolute top-0 w-1 h-full bg-gray-900 rounded"
-                  style={`left: ${getBMIBarPosition(bmi)}%`}
+                  style={`left: ${getBMIBarPosition(result)}%`}
                 />
               </div>
               <div class="flex justify-between text-xs text-gray-500 mt-1">

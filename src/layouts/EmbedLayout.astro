@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title} - CalcHub Embed</title>
+  </head>
+  <body class="bg-white p-4">
+    <slot />
+    <p class="text-center text-xs text-gray-400 mt-4">
+      Calculator by <a href="https://calchub.com" target="_blank" rel="noopener" class="text-blue-500 hover:underline">CalcHub</a>
+    </p>
+  </body>
+</html>

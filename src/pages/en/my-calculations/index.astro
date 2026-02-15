@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+---
+
+<BaseLayout
+  title="My Saved Calculations | CalcHub"
+  description="View your saved calculations from CalcHub. All data stored locally in your browser."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">My Saved Calculations</h1>
+    <p class="text-gray-600 mb-8">
+      Your calculations are stored locally in your browser. No data is sent to our servers.
+    </p>
+
+    <div id="saved-calculations" class="space-y-4">
+      <p class="text-gray-400 text-sm" id="empty-state">No saved calculations yet. Use any calculator and your results will appear here.</p>
+    </div>
+
+    <button
+      id="clear-all"
+      class="mt-8 px-4 py-2 text-sm text-red-600 border border-red-200 rounded hover:bg-red-50 transition-colors hidden"
+    >
+      Clear all saved calculations
+    </button>
+  </section>
+
+  <script>
+    function loadSavedCalculations() {
+      const container = document.getElementById('saved-calculations');
+      const emptyState = document.getElementById('empty-state');
+      const clearBtn = document.getElementById('clear-all');
+      if (!container || !emptyState || !clearBtn) return;
+
+      const saved = JSON.parse(localStorage.getItem('calchub_calculations') || '[]');
+
+      if (saved.length === 0) {
+        emptyState.style.display = 'block';
+        clearBtn.classList.add('hidden');
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      clearBtn.classList.remove('hidden');
+
+      saved.reverse().forEach((calc: { tool: string; date: string; result: string; url: string }) => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-lg p-4 border border-gray-100 shadow-sm';
+        card.innerHTML = `
+          <div class="flex justify-between items-start">
+            <div>
+              <a href="${calc.url}" class="font-semibold text-gray-900 hover:text-blue-600">${calc.tool}</a>
+              <p class="text-sm text-gray-500 mt-1">${calc.result}</p>
+            </div>
+            <span class="text-xs text-gray-400">${new Date(calc.date).toLocaleDateString()}</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      clearBtn.addEventListener('click', () => {
+        localStorage.removeItem('calchub_calculations');
+        location.reload();
+      });
+    }
+
+    loadSavedCalculations();
+  </script>
+</BaseLayout>
