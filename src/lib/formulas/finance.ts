@@ -199,6 +199,67 @@ export function discountPrice(
 }
 
 /**
+ * Calculate tip amount and total bill.
+ * @param billAmount   Bill before tip
+ * @param tipPercent   Tip percentage (e.g. 20 for 20%)
+ * @param splitWays    Number of people splitting the bill (default 1)
+ */
+export function tipCalculation(
+  billAmount: number,
+  tipPercent: number,
+  splitWays: number = 1,
+): { tipAmount: number; totalBill: number; perPerson: number } {
+  if (billAmount <= 0 || tipPercent < 0) {
+    return { tipAmount: 0, totalBill: billAmount, perPerson: billAmount };
+  }
+  const tipAmount = billAmount * (tipPercent / 100);
+  const totalBill = billAmount + tipAmount;
+  const split = Math.max(splitWays, 1);
+  return { tipAmount, totalBill, perPerson: totalBill / split };
+}
+
+/**
+ * Calculate sales tax and total price.
+ * @param price     Price before tax
+ * @param taxRate   Sales tax rate as percentage
+ */
+export function salesTax(
+  price: number,
+  taxRate: number,
+): { taxAmount: number; totalPrice: number } {
+  if (price <= 0 || taxRate < 0) {
+    return { taxAmount: 0, totalPrice: price };
+  }
+  const taxAmount = price * (taxRate / 100);
+  return { taxAmount, totalPrice: price + taxAmount };
+}
+
+/**
+ * Calculate VAT (Value Added Tax).
+ * Supports both adding VAT to a net price and extracting VAT from a gross price.
+ * @param amount    The amount (net or gross depending on mode)
+ * @param vatRate   VAT rate as percentage (e.g. 20 for 20%)
+ * @param mode      'add' = add VAT to net, 'extract' = extract VAT from gross
+ */
+export function vatCalculation(
+  amount: number,
+  vatRate: number,
+  mode: 'add' | 'extract' = 'add',
+): { netPrice: number; vatAmount: number; grossPrice: number } {
+  if (amount <= 0 || vatRate < 0) {
+    return { netPrice: amount, vatAmount: 0, grossPrice: amount };
+  }
+  if (mode === 'add') {
+    const vatAmount = amount * (vatRate / 100);
+    return { netPrice: amount, vatAmount, grossPrice: amount + vatAmount };
+  }
+  // extract: amount is gross
+  const netPrice = amount / (1 + vatRate / 100);
+  const vatAmount = amount - netPrice;
+  return { netPrice, vatAmount, grossPrice: amount };
+}
+
+/**
  * Generate a full amortization schedule.
  */
 export function amortizationSchedule(

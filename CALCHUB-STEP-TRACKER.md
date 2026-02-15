@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 2.5 (UI translations 5 lingue) — FASE 2 COMPLETA
-**Prossimo step da eseguire:** STEP 3.1
+**Ultimo step completato:** STEP 3.1 (Finance batch 2: auto loan, investment, ROI, inflation, currency, discount)
+**Prossimo step da eseguire:** STEP 3.2
 **Branch attivo:** claude/continue-step-tracker-ZHIy0
-**Build status:** OK (96 pagine, 92 test passano, 55 YAML validati)
+**Build status:** OK (108 pagine, 109 test passano, 61 YAML validati)
 
 ---
 
@@ -475,11 +475,14 @@ Note: Aggiunte traduzioni UI complete per ES, FR, DE (IT già presente). 4 sezio
 
 Obiettivo: Completare i primi 30 tool 🔴 in EN.
 
-## STEP 3.1 — Finance Batch 2 (6 tool) ⬜
+## STEP 3.1 — Finance Batch 2 (6 tool) ✅
 ```
 AutoLoan, Investment, ROI, Inflation, CurrencyConverter, Discount
 Commit: [STEP 3.1] Finance batch 2 (auto loan, investment, ROI, inflation, currency, discount)
 ```
+Completato: 2026-02-15
+File creati/modificati: src/lib/formulas/finance.ts (6 nuove funzioni: autoLoanPayment, investmentGrowth, inflationAdjust, inflationFutureValue, currencyConvert, discountPrice), src/lib/formulas/finance.test.ts (17 nuovi test, totale 38), src/components/calculators/finance/{AutoLoan,Investment,ROI,Inflation,Discount}Calculator.tsx, src/components/calculators/finance/CurrencyConverter.tsx, src/content/tools/en/{auto-loan,investment,roi,inflation,discount}-calculator.yaml, src/content/tools/en/currency-converter.yaml, src/pages/en/finance/{auto-loan,investment,roi,inflation,discount}-calculator.astro, src/pages/en/finance/currency-converter.astro, src/pages/embed/en/ (6 embed pages), src/pages/en/finance/index.astro (aggiornato con 10 tool), src/pages/en/index.astro (aggiornato homepage con 10 finance tool)
+Note: 6 calcolatori finance completi. AutoLoan con down payment e trade-in. Investment con grafico breakdown. ROI con indicatore visuale profit/loss. Inflation con purchasing power bar. CurrencyConverter con 10 valute e tassi di riferimento. Discount con barra savings. 109 test verdi, 61 YAML validati, 108 pagine, build 7.56s.
 
 ## STEP 3.2 — Finance Batch 3 (4 tool) ⬜
 ```
@@ -601,3 +604,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | 4 | 2026-02-15 | STEP 2.3 | Contenuto francese per 11 tool con keyword native. 11 YAML FR + 16 pagine Astro. Slug francesi: calcul-imc, simulateur-credit-immobilier, calcul-pourcentage, ecc. Categorie: finances, santé, mathématiques, conversions. Contesto francese (taux d'usure, TAEG, PTZ, loi Lemoine, Livret A, PEA). 44 YAML validati, 80 pagine totali, build 6.59s. |
 | 4 | 2026-02-15 | STEP 2.4 | Contenuto tedesco per 11 tool con keyword native. 11 YAML DE + 16 pagine Astro. Slug tedeschi: bmi-rechner, baufinanzierung-rechner, prozentrechner, ecc. Categorie: Finanzen, Gesundheit, Mathematik, Umrechner. Contesto tedesco (Sollzins, Effektivzins, KfW-Darlehen, Sondertilgung, Abgeltungssteuer). 55 YAML validati, 96 pagine totali, build 7.49s. |
 | 4 | 2026-02-15 | STEP 2.5 | UI translations complete per ES, FR, DE (IT già presente). Navigazione, categorie, UI calcolatore, contenuto, footer tradotti. Language switcher + footer links funzionanti. FASE 2 COMPLETA. |
+| 5 | 2026-02-15 | STEP 3.1 | Finance batch 2: 6 nuovi calcolatori EN (AutoLoan, Investment, ROI, Inflation, CurrencyConverter, Discount). 6 formule, 17 nuovi test (109 totali), 6 componenti Preact, 6 YAML, 6 pagine + 6 embed. Homepage e categoria finance aggiornate. 61 YAML validati, 108 pagine, build 7.56s. |

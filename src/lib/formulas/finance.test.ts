@@ -13,6 +13,9 @@ import {
   inflationFutureValue,
   currencyConvert,
   discountPrice,
+  tipCalculation,
+  salesTax,
+  vatCalculation,
 } from './finance';
 
 describe('mortgagePayment', () => {
@@ -238,5 +241,78 @@ describe('discountPrice', () => {
     const result = discountPrice(-10, 20);
     expect(result.finalPrice).toBe(-10);
     expect(result.savings).toBe(0);
+  });
+});
+
+describe('tipCalculation', () => {
+  it('calculates 20% tip on $50 bill', () => {
+    const result = tipCalculation(50, 20);
+    expect(result.tipAmount).toBe(10);
+    expect(result.totalBill).toBe(60);
+    expect(result.perPerson).toBe(60);
+  });
+
+  it('splits bill between 4 people', () => {
+    const result = tipCalculation(100, 15, 4);
+    expect(result.tipAmount).toBe(15);
+    expect(result.totalBill).toBe(115);
+    expect(result.perPerson).toBeCloseTo(28.75, 2);
+  });
+
+  it('handles 0% tip', () => {
+    const result = tipCalculation(80, 0);
+    expect(result.tipAmount).toBe(0);
+    expect(result.totalBill).toBe(80);
+  });
+
+  it('handles invalid bill amount', () => {
+    const result = tipCalculation(-10, 20);
+    expect(result.tipAmount).toBe(0);
+  });
+});
+
+describe('salesTax', () => {
+  it('calculates 8.25% tax on $100', () => {
+    const result = salesTax(100, 8.25);
+    expect(result.taxAmount).toBeCloseTo(8.25, 2);
+    expect(result.totalPrice).toBeCloseTo(108.25, 2);
+  });
+
+  it('handles 0% tax', () => {
+    const result = salesTax(50, 0);
+    expect(result.taxAmount).toBe(0);
+    expect(result.totalPrice).toBe(50);
+  });
+
+  it('handles invalid price', () => {
+    const result = salesTax(0, 10);
+    expect(result.taxAmount).toBe(0);
+  });
+});
+
+describe('vatCalculation', () => {
+  it('adds 20% VAT to net price', () => {
+    const result = vatCalculation(100, 20, 'add');
+    expect(result.netPrice).toBe(100);
+    expect(result.vatAmount).toBe(20);
+    expect(result.grossPrice).toBe(120);
+  });
+
+  it('extracts 20% VAT from gross price', () => {
+    const result = vatCalculation(120, 20, 'extract');
+    expect(result.netPrice).toBeCloseTo(100, 2);
+    expect(result.vatAmount).toBeCloseTo(20, 2);
+    expect(result.grossPrice).toBe(120);
+  });
+
+  it('handles 0% VAT', () => {
+    const result = vatCalculation(100, 0, 'add');
+    expect(result.vatAmount).toBe(0);
+    expect(result.grossPrice).toBe(100);
+  });
+
+  it('defaults to add mode', () => {
+    const result = vatCalculation(100, 10);
+    expect(result.grossPrice).toBe(110);
   });
 });
