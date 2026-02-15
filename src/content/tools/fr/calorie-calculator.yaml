@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Calcul Calories et Macronutriments | CalcHub"
+metaDescription: "Calculez vos besoins caloriques journaliers et la répartition en macronutriments pour maigrir, stabiliser ou prendre du poids. Basé sur Mifflin-St Jeor."
+h1: "Calcul des Calories et Macronutriments"
+slug: "calcul-calories"
+
+primaryKeyword: "calcul calories journalieres"
+secondaryKeywords:
+  - "calories par jour"
+  - "calcul macronutriments"
+  - "combien de calories par jour"
+  - "besoin calorique"
+
+intro: "De combien de calories avez-vous réellement besoin chaque jour ? La réponse dépend de votre morphologie, de votre niveau d'activité physique et de votre objectif. Ce calculateur combine l'équation de Mifflin-St Jeor pour le métabolisme basal avec votre niveau d'activité et votre objectif personnel pour vous fournir un apport calorique cible quotidien, accompagné d'une répartition en macronutriments indiquant les grammes de protéines, de glucides et de lipides. Pas de suppositions, uniquement des chiffres personnalisés que vous pouvez utiliser directement pour organiser vos repas."
+
+howItWorks:
+  title: "Comment les besoins caloriques journaliers sont calculés"
+  content: "Ce calculateur fonctionne en trois étapes. Premièrement, il détermine votre métabolisme basal à l'aide de l'équation de Mifflin-St Jeor, qui prend en compte votre poids, votre taille, votre âge et votre sexe. Deuxièmement, il multiplie votre MB par un coefficient d'activité pour obtenir votre dépense énergétique totale quotidienne (TDEE), qui correspond à vos calories de maintien. Troisièmement, il ajuste le résultat selon votre objectif : la perte de poids soustrait 500 calories du maintien, la prise de poids ajoute 500 calories, et le maintien conserve le chiffre tel quel. L'ajustement de 500 calories repose sur le principe largement cité de l'équilibre énergétique : environ 7 700 calories correspondent à un kilogramme de graisse corporelle. Créer un déficit quotidien de 500 calories produit approximativement une perte de 0,45 kg de graisse par semaine. Cette relation est une approximation qui fonctionne bien à court et moyen terme, bien que l'adaptation métabolique signifie que le rythme réel de perte peut ralentir après plusieurs mois de régime continu. La répartition en macronutriments utilise un partage équilibré de 30 % de protéines, 40 % de glucides et 30 % de lipides. Les protéines sont fixées à 30 % parce que les études montrent de manière constante qu'un apport protéique plus élevé soutient la préservation musculaire en période de restriction calorique et favorise la satiété. La conversion utilise 4 calories par gramme pour les protéines, 4 pour les glucides et 9 pour les lipides. Ce partage convient à la plupart des personnes poursuivant un objectif de forme générale, mais des objectifs spécifiques peuvent justifier des ajustements. Les athlètes et ceux qui se concentrent sur la prise de muscle peuvent bénéficier de 35 à 40 % de protéines. Les sportifs d'endurance sont souvent plus performants avec 50 à 55 % de glucides. Les approches pauvres en glucides déplacent le ratio vers un pourcentage plus élevé de lipides tout en maintenant les protéines constantes. Un principe important : ce calculateur fournit un point de départ, pas une prescription exacte. Les variations métaboliques individuelles, les imprécisions dans le suivi alimentaire et les fluctuations quotidiennes d'activité font que des ajustements réels sont toujours nécessaires. Commencez avec ces chiffres, suivez votre poids et votre niveau d'énergie pendant 2 à 3 semaines, puis ajustez de 100 à 200 calories si les résultats ne correspondent pas à vos attentes."
+  formula: "Calories = TDEE ± 500 (selon l'objectif)"
+  formulaExplanation: "TDEE = MB × coefficient d'activité. Perte de poids : TDEE - 500. Maintien : TDEE. Prise de poids : TDEE + 500. Plancher de sécurité à 1 200 kcal."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Recommandations en macronutriments : ANSES (Agence nationale de sécurité sanitaire de l'alimentation), Recommandations nutritionnelles 2021."
+
+faqs:
+  - question: "Combien de calories faut-il manger pour perdre du poids ?"
+    answer: "Pour une perte de poids durable, mangez 300 à 500 calories en dessous de votre TDEE (niveau de maintien). Cela produit une perte de graisse d'environ 0,25 à 0,5 kg par semaine. Pour la plupart des femmes, cela représente 1 400 à 1 800 calories par jour ; pour la plupart des hommes, 1 800 à 2 200 calories par jour, bien que les besoins individuels varient selon la taille et le niveau d'activité. Il est déconseillé de descendre en dessous de 1 200 calories par jour sans suivi médical, car les régimes très restrictifs augmentent le risque de carences nutritionnelles, de perte musculaire et de ralentissement métabolique."
+  - question: "Faut-il compter les calories pour maigrir ?"
+    answer: "Compter les calories n'est pas strictement nécessaire, mais c'est la méthode qui offre le contrôle le plus précis sur votre bilan énergétique. Les alternatives incluent les méthodes de contrôle des portions (en utilisant la main comme repère de mesure), les principes de l'alimentation intuitive, ou le suivi uniquement de l'apport en protéines en mangeant librement des aliments non transformés. Les recherches montrent que les personnes qui suivent leur alimentation, au moins au début, développent une meilleure conscience de la taille des portions et de la densité calorique des aliments. Beaucoup constatent que 4 à 6 semaines de suivi suffisent pour apprendre à estimer les portions sans avoir besoin de tout noter."
+  - question: "Quelle est la meilleure répartition des macronutriments pour maigrir ?"
+    answer: "Les études soutiennent un apport protéique plus élevé en période de restriction calorique : 25 à 35 % des calories totales sous forme de protéines aident à préserver la masse maigre et augmentent la sensation de satiété. Les calories restantes peuvent être réparties entre glucides et lipides selon les préférences personnelles et la facilité d'adhésion. Une personne mangeant 1 800 calories avec 30 % de protéines consomme 135 grammes de protéines par jour. Le ratio précis entre glucides et lipides importe moins que l'apport calorique total et la quantité suffisante de protéines pour la plupart des gens. Choisissez la répartition que vous trouvez la plus facile à maintenir sur la durée."
+  - question: "Faut-il manger plus les jours d'entraînement et moins les jours de repos ?"
+    answer: "L'alternance calorique (manger davantage les jours d'entraînement et moins les jours de repos) est une approche valide mais pas indispensable pour obtenir des résultats. Votre corps ne remet pas son bilan énergétique à zéro à minuit ; ce qui compte, c'est votre apport moyen sur la semaine. Si vous préférez des repas plus copieux les jours d'entraînement pour la performance et la récupération, vous pouvez manger 200 à 300 calories au-dessus de votre cible quotidienne les jours d'exercice et 200 à 300 en dessous les jours de repos, tout en maintenant le même total hebdomadaire. Cette approche peut améliorer la qualité des séances sans modifier les résultats globaux."
+  - question: "Pourquoi je ne maigris pas malgré un déficit calorique ?"
+    answer: "Les raisons les plus fréquentes sont la sous-estimation de l'apport calorique réel, la surestimation de la dépense calorique, la rétention d'eau qui masque la perte de graisse, ou l'adaptation métabolique consécutive à un régime prolongé. Les études montrent que les gens sous-déclarent leur apport alimentaire de 30 à 50 % en moyenne lorsqu'ils ne pèsent pas les portions. Les huiles de cuisson, les sauces et les boissons passent souvent inaperçues. Si la balance n'a pas bougé en 3 à 4 semaines malgré un suivi régulier, vous pouvez soit réduire l'apport de 100 à 200 calories supplémentaires, soit augmenter l'activité quotidienne (surtout la marche), soit faire une pause du régime en mangeant au niveau de maintien pendant 1 à 2 semaines avant de reprendre."
+  - question: "Est-ce que 1 200 calories par jour, c'est trop peu ?"
+    answer: "Pour la plupart des adultes, 1 200 calories par jour est le minimum recommandé par les autorités de santé pour couvrir les besoins nutritionnels de base. En dessous de ce seuil, il devient difficile d'atteindre les apports nécessaires en vitamines, minéraux et protéines par l'alimentation seule. Les personnes de petite taille avec un niveau d'activité faible peuvent avoir des calories de maintien légitimement proches de 1 400-1 500, ce qui rend un déficit à 1 200 acceptable. Pour les personnes plus grandes, plus lourdes ou plus actives, 1 200 calories représentent un déficit excessivement agressif qui augmente le risque de perte musculaire, de fatigue, de perturbations hormonales et de compulsions alimentaires. Une approche plus modérée donne de meilleurs résultats à long terme pour la grande majorité des gens."
+
+examples:
+  - title: "Programme de perte de poids pour une femme sédentaire"
+    scenario: "Une femme de 28 ans, 68 kg, 165 cm, sédentaire, objectif : perdre du poids"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Calories quotidiennes : 1 227 kcal | Protéines : 92 g | Glucides : 123 g | Lipides : 41 g"
+    explanation: "Sa TDEE de 1 727 moins 500 donne un objectif de 1 227 calories (avec un plancher de sécurité à 1 200). La répartition en macronutriments fournit un apport suffisant en protéines (92 g) pour soutenir le maintien musculaire pendant le déficit calorique."
+  - title: "Prise de muscle pour un homme actif"
+    scenario: "Un homme de 25 ans, 75 kg, 178 cm, actif (6 jours par semaine), objectif : prendre du poids"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Calories quotidiennes : 3 573 kcal | Protéines : 268 g | Glucides : 357 g | Lipides : 119 g"
+    explanation: "Avec une TDEE de 3 073 plus un surplus de 500 calories, il a besoin de 3 573 calories par jour. Les 268 grammes de protéines soutiennent la synthèse des protéines musculaires dans le cadre de son programme d'entraînement intensif."
+  - title: "Maintien pour un adulte modérément actif"
+    scenario: "Un homme de 40 ans, 82 kg, 175 cm, exercice modéré 4 jours par semaine"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Calories quotidiennes : 2 668 kcal | Protéines : 200 g | Glucides : 267 g | Lipides : 89 g"
+    explanation: "Au niveau de maintien, il consomme environ 2 668 calories pour soutenir son poids actuel et son niveau d'activité. Les 200 grammes de protéines assurent la récupération après un exercice modéré tout en préservant la masse maigre."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

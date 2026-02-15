@@ -1,0 +1,81 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "Calcul IMC - Indice de Masse Corporelle | CalcHub"
+metaDescription: "Calculez votre IMC gratuitement. Entrez votre taille et votre poids pour obtenir votre indice de masse corporelle et les recommandations de l'OMS."
+h1: "Calcul IMC (Indice de Masse Corporelle)"
+slug: "calcul-imc"
+
+primaryKeyword: "calcul imc"
+secondaryKeywords:
+  - "indice de masse corporelle"
+  - "calculer imc"
+  - "imc calcul"
+  - "calculatrice imc"
+
+intro: "Vous voulez savoir si votre poids est adapté à votre taille ? L'indice de masse corporelle est l'indicateur de référence recommandé par l'Organisation mondiale de la santé pour évaluer la corpulence d'un adulte. Il est utilisé quotidiennement par les médecins généralistes, les nutritionnistes et les chercheurs en épidémiologie. Saisissez simplement votre poids et votre taille ci-dessous pour obtenir votre IMC en quelques secondes, accompagné d'une explication détaillée de votre catégorie et de ce qu'elle signifie pour votre santé."
+
+howItWorks:
+  title: "Comment l'IMC est calculé"
+  content: "L'indice de masse corporelle est le rapport entre le poids en kilogrammes et le carré de la taille en mètres. Cette formule a été mise au point par le mathématicien et statisticien belge Adolphe Quetelet dans les années 1830, à l'origine pour étudier les proportions du corps humain à l'échelle des populations. Elle a été reprise bien plus tard par les organismes de santé publique comme outil de dépistage rapide du surpoids et de l'obésité. L'Organisation mondiale de la santé classe l'IMC en quatre grandes catégories. Un IMC inférieur à 18,5 correspond à une insuffisance pondérale. Entre 18,5 et 24,9, le poids est considéré comme normal. De 25,0 à 29,9, on parle de surpoids. Au-delà de 30,0, la personne est classée en situation d'obésité, avec des sous-catégories (obésité modérée, sévère et morbide). Ces seuils ont été établis à partir de vastes études épidémiologiques qui mettent en relation les tranches d'IMC avec les risques de maladies cardiovasculaires, de diabète de type 2 et de certains cancers. Toutefois, l'IMC présente des limites bien documentées. Il ne fait pas la distinction entre la masse musculaire et la masse grasse. Un sportif pratiquant la musculation peut afficher un IMC de 28 tout en ayant un taux de graisse corporelle inférieur à 12 %. Inversement, une personne âgée qui a perdu de la masse musculaire peut avoir un IMC normal alors qu'elle accumule de la graisse viscérale autour des organes. Pour les populations asiatiques, l'OMS recommande d'abaisser le seuil de surpoids à 23 au lieu de 25, car le risque métabolique augmente plus tôt chez ces populations. Pour une évaluation plus complète, il est conseillé de combiner l'IMC avec le tour de taille et, si possible, une mesure du pourcentage de masse grasse. Le tour de taille supérieur à 94 cm chez l'homme et 80 cm chez la femme est associé à un risque accru de complications métaboliques. Malgré ces réserves, l'IMC reste l'indicateur le plus employé dans le monde en raison de sa simplicité de calcul et de la corrélation statistique solide qu'il présente avec les risques sanitaires à l'échelle des populations. Les médecins l'utilisent comme premier filtre avant de prescrire des examens complémentaires tels que le bilan lipidique, la glycémie à jeun ou la mesure de la tension artérielle."
+  formula: "IMC = poids (kg) / taille (m)²"
+  formulaExplanation: "Le poids en kilogrammes est divisé par la taille en mètres élevée au carré. Pour les unités impériales : IMC = (poids en livres × 703) / (taille en pouces)²"
+  academicSource: "Organisation mondiale de la santé. (2000). Obésité : prévention et prise en charge de l'épidémie mondiale. Rapport technique OMS n° 894."
+
+faqs:
+  - question: "Quel est l'IMC normal pour un adulte ?"
+    answer: "Selon l'Organisation mondiale de la santé, un IMC normal se situe entre 18,5 et 24,9. Les personnes dont l'IMC se trouve dans cette fourchette présentent statistiquement un risque plus faible de maladies cardiovasculaires, de diabète de type 2 et de certains cancers par rapport à celles qui se trouvent en dehors de cette plage. Il faut garder à l'esprit que la santé individuelle dépend de nombreux autres facteurs : alimentation, activité physique régulière, antécédents familiaux et marqueurs métaboliques comme la tension artérielle et le taux de cholestérol."
+  - question: "L'IMC est-il fiable pour les sportifs et les personnes musclées ?"
+    answer: "L'IMC a tendance à surestimer la masse grasse chez les personnes ayant une masse musculaire importante. Un rugbyman ou un pratiquant de musculation peut afficher un IMC de 28 ou plus tout en maintenant un taux de graisse corporelle inférieur à 15 %. Si vous pratiquez un sport de force ou si votre masse musculaire est supérieure à la moyenne, il est recommandé de compléter votre IMC par une mesure du pourcentage de masse grasse ou par le calcul du rapport tour de taille / tour de hanches pour mieux évaluer votre composition corporelle."
+  - question: "L'IMC se calcule-t-il de la même façon pour les hommes et les femmes ?"
+    answer: "La formule de l'IMC est identique pour les hommes et les femmes. En revanche, l'interprétation peut varier. Les femmes ont naturellement un pourcentage de masse grasse plus élevé que les hommes à IMC égal. Certains chercheurs ont proposé des seuils différenciés selon le sexe, mais les catégories de l'OMS restent la référence la plus utilisée à l'échelle mondiale. Pour les femmes en particulier, le tour de taille fournit une information complémentaire pertinente, un tour de taille supérieur à 80 cm étant associé à un risque accru pour la santé."
+  - question: "À quelle fréquence faut-il calculer son IMC ?"
+    answer: "Pour la plupart des adultes, un calcul tous les deux ou trois mois suffit pour suivre l'évolution de sa corpulence sans tomber dans un suivi obsessionnel. Si vous êtes engagé dans un programme de perte ou de prise de poids, un contrôle mensuel donne un retour raisonnable sur votre progression. Il est préférable de ne pas se peser tous les jours pour calculer l'IMC, car les fluctuations normales de l'hydratation peuvent faire varier le poids de 1 à 2 kg d'un jour à l'autre, ce qui rend les relevés quotidiens peu fiables."
+  - question: "Quelles sont les limites de l'IMC comme indicateur de santé ?"
+    answer: "L'IMC ne distingue pas la masse maigre de la masse grasse, ne tient pas compte de la répartition des graisses (graisse viscérale contre graisse sous-cutanée) et repose sur des seuils statistiques qui ne s'appliquent pas de manière identique à tous les groupes ethniques. Les recherches montrent que les populations asiatiques présentent un risque métabolique accru à des seuils d'IMC inférieurs à ceux des populations européennes. L'indicateur ne capture pas non plus les changements de composition corporelle liés au vieillissement, car la perte musculaire s'accompagne souvent d'un gain de graisse même lorsque le poids reste stable."
+  - question: "Ce calculateur d'IMC convient-il aux enfants ?"
+    answer: "Ce calculateur est conçu pour les adultes de 20 ans et plus. Les enfants et les adolescents nécessitent des courbes de corpulence spécifiques en fonction de l'âge et du sexe, car leur composition corporelle évolue considérablement au cours de la croissance. En France, les carnets de santé contiennent des courbes de référence établies par l'INSERM et le Programme national nutrition santé (PNNS). L'insuffisance pondérale est définie en dessous du 3e percentile et l'obésité au-delà du 97e percentile sur ces courbes."
+
+examples:
+  - title: "Adulte de poids normal"
+    scenario: "Une personne mesurant 170 cm et pesant 65 kg"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "IMC : 22,5 — Poids normal"
+    explanation: "Avec un IMC de 22,5, cette personne se situe confortablement dans la fourchette du poids normal (18,5-24,9). Ce niveau d'IMC est associé au risque statistique le plus faible de problèmes de santé liés au poids."
+  - title: "Personne en surpoids"
+    scenario: "Une personne mesurant 175 cm et pesant 90 kg"
+    inputs:
+      weight: 90
+      height: 175
+      unit: "metric"
+    expectedResult: "IMC : 29,4 — Surpoids"
+    explanation: "Un IMC de 29,4 place cette personne dans la catégorie du surpoids (25,0-29,9). Sans être encore classée en obésité, cette tranche est associée à un risque modérément accru de maladies cardiovasculaires. Une perte de 8 à 10 kg permettrait de revenir dans la zone de poids normal."
+  - title: "Vérification d'une insuffisance pondérale"
+    scenario: "Une personne mesurant 180 cm et pesant 55 kg"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "IMC : 17,0 — Insuffisance pondérale"
+    explanation: "Avec un IMC de 17,0, cette personne est classée en insuffisance pondérale (en dessous de 18,5). Un poids trop faible peut indiquer des carences nutritionnelles, un affaiblissement du système immunitaire et un risque accru d'ostéoporose. Il est recommandé de consulter un médecin ou un diététicien."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "ideal-weight-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

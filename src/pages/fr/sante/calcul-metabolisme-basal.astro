@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import BMRCalculator from '../../../components/calculators/health/BMRCalculator';
+
+const lang = 'fr';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'bmr-calculator' && t.id.startsWith('fr/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/fr/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <BMRCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

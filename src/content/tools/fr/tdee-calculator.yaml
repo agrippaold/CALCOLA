@@ -1,0 +1,85 @@
+id: "tdee-calculator"
+category: "health"
+calculatorComponent: "TDEECalculator"
+
+title: "Calcul TDEE - Dépense Énergétique Totale | CalcHub"
+metaDescription: "Calculez votre dépense énergétique journalière totale selon votre métabolisme basal et votre niveau d'activité. Trouvez vos calories de maintien."
+h1: "Calcul de la Dépense Énergétique Totale (TDEE)"
+slug: "calcul-depense-energetique"
+
+primaryKeyword: "calcul depense energetique"
+secondaryKeywords:
+  - "depense energetique journaliere"
+  - "calories journalieres"
+  - "calories de maintien"
+  - "tdee calcul"
+
+intro: "Votre dépense énergétique totale quotidienne représente la quantité totale de calories que vous brûlez en une journée complète, en tenant compte de toutes les activités : respiration, digestion, marche, travail, exercice physique et même les petits gestes du quotidien. Elle combine votre métabolisme basal avec le coût énergétique de toutes vos activités physiques. Que vous souhaitiez perdre de la graisse, prendre du muscle ou stabiliser votre poids, la TDEE est le chiffre autour duquel planifier votre alimentation. Ce calculateur vous fournit une estimation fiable basée sur l'équation de Mifflin-St Jeor et des coefficients d'activité validés par la recherche."
+
+howItWorks:
+  title: "Comment la dépense énergétique totale est calculée"
+  content: "Le calcul de la TDEE se fait en deux temps. D'abord, votre métabolisme basal (MB) est déterminé grâce à l'équation de Mifflin-St Jeor. Ensuite, ce MB est multiplié par un coefficient d'activité qui reflète vos habitudes de mouvement et d'exercice quotidiennes. Les coefficients d'activité utilisés dans ce calculateur proviennent de travaux de recherche sur la dépense énergétique selon différents modes de vie. Les personnes sédentaires (travail de bureau, peu ou pas d'exercice) multiplient leur MB par 1,2, ce qui signifie que l'activité physique n'ajoute qu'environ 20 % aux besoins de base. Les personnes légèrement actives (exercice léger 1 à 3 jours par semaine) utilisent le coefficient 1,375. Les personnes modérément actives (exercice structuré 3 à 5 jours par semaine) utilisent 1,55. Les personnes actives (exercice intense 6 à 7 jours par semaine) utilisent 1,725. Les personnes très actives (athlètes, métiers physiques) utilisent 1,9. Ces multiplicateurs intègrent à la fois l'exercice structuré et la thermogenèse liée aux activités non sportives (NEAT en anglais), qui regroupe tous les mouvements en dehors de l'entraînement volontaire. Le NEAT varie considérablement d'une personne à l'autre et peut représenter 200 à 900 calories par jour selon la profession, les habitudes de mouvement spontané et le mode de vie général. Un ouvrier du bâtiment qui s'entraîne le soir a un NEAT bien plus élevé qu'un employé de bureau qui fréquente la même salle de sport pour la même durée. L'effet thermique des aliments (ETA) est également pris en compte dans ces coefficients. Votre organisme consacre environ 10 % de l'apport calorique total à la digestion et au traitement des nutriments. Les protéines ont l'effet thermique le plus élevé, de l'ordre de 20 % à 30 % de leurs calories, suivies des glucides à 5 % à 10 %, puis des lipides à 0 % à 3 %. C'est l'une des raisons pour lesquelles les régimes riches en protéines aident à la perte de graisse. Il est important de garder à l'esprit que la TDEE est une estimation, pas une mesure exacte. Les variations individuelles liées à l'efficacité métabolique, aux taux hormonaux, à la composition du microbiote intestinal et aux fluctuations quotidiennes d'activité font que votre dépense réelle peut différer de 10 % à 15 % par rapport à la valeur calculée. Utilisez la TDEE comme point de départ et ajustez en fonction des résultats observés sur 2 à 4 semaines."
+  formula: "TDEE = MB × Coefficient d'activité"
+  formulaExplanation: "Le MB est calculé avec l'équation de Mifflin-St Jeor (10×poids + 6,25×taille - 5×âge ± constante de sexe). Les coefficients d'activité vont de 1,2 (sédentaire) à 1,9 (très actif)."
+  academicSource: "Harris, J. A., & Benedict, F. G. (1918). A Biometric Study of Human Basal Metabolism. Proceedings of the National Academy of Sciences, 4(12), 370-373. Coefficients d'activité : Ainsworth, B. E., et al. (2011). Compendium of Physical Activities. Medicine and Science in Sports and Exercise, 43(8), 1575-1581."
+
+faqs:
+  - question: "Quel niveau d'activité dois-je sélectionner ?"
+    answer: "Soyez honnête quant à votre semaine moyenne plutôt que de choisir votre semaine la plus active. Sédentaire signifie que vous avez un travail de bureau et ne faites pas d'exercice régulier. Légèrement actif correspond à de la marche occasionnelle, du yoga ou un exercice léger 1 à 3 fois par semaine. Modérément actif convient à la plupart des pratiquants de salle de sport qui s'entraînent 3 à 5 fois par semaine avec une intensité modérée. Actif s'applique si vous faites du sport intense la plupart des jours. Très actif est réservé aux athlètes de compétition, aux travailleurs manuels ou à ceux qui combinent un métier physique avec un entraînement régulier. En cas de doute, choisissez un niveau en dessous de ce que vous pensez et ajustez selon les résultats."
+  - question: "Comment utiliser la TDEE pour perdre du poids ?"
+    answer: "Pour perdre du poids, il faut manger moins de calories que votre TDEE. Un déficit de 500 calories par jour produit une perte de graisse d'environ 0,45 kg par semaine. Commencez par soustraire 300 à 500 calories de votre TDEE et surveillez votre poids pendant 2 à 3 semaines. Si vous ne perdez pas de poids, réduisez de 100 à 200 calories supplémentaires. Il est préférable de ne pas dépasser un déficit de 1 000 calories par jour, car cela augmente la perte de muscle, réduit les niveaux d'énergie et s'avère difficile à maintenir sur la durée. Associez votre déficit calorique à un apport suffisant en protéines (1,6 à 2,2 g par kg de poids corporel) pour préserver la masse musculaire."
+  - question: "Comment utiliser la TDEE pour prendre du muscle ?"
+    answer: "La prise de muscle nécessite de manger au-dessus de votre TDEE pour fournir l'énergie et les nutriments nécessaires à la synthèse de nouveaux tissus. Un surplus de 200 à 400 calories par jour soutient la croissance musculaire tout en limitant le gain de graisse. Cela se traduit généralement par une prise de poids de 0,25 à 0,5 kg par semaine. Les besoins en protéines sont les plus élevés en période de surplus : visez 1,6 à 2,2 grammes par kilogramme de poids corporel par jour. Mesurez votre tour de taille en parallèle du poids pour vous assurer que les gains sont principalement de la masse maigre plutôt que de la graisse."
+  - question: "Pourquoi ma TDEE diffère-t-elle de l'estimation de mon bracelet connecté ?"
+    answer: "Les bracelets et montres connectés estiment la TDEE à partir des données de fréquence cardiaque, du nombre de pas et des relevés d'accéléromètre, tandis que ce calculateur utilise une approche basée sur des formules. Les deux méthodes sont des estimations avec des marges d'erreur. Les capteurs portables ont tendance à surestimer la dépense calorique pendant l'exercice de 27 % à 93 % selon une étude de l'université de Stanford. L'approche par formule peut sous-estimer la TDEE chez les personnes très actives. Pour le résultat le plus fiable, faites la moyenne entre l'estimation de votre capteur et celle de la formule, ou utilisez simplement la valeur du calculateur comme point de départ et ajustez selon les variations réelles de poids sur 2 à 3 semaines."
+  - question: "La TDEE évolue-t-elle au fil du temps ?"
+    answer: "La TDEE change avec les variations de poids corporel, de composition corporelle, d'âge et de niveau d'activité. Perdre du poids réduit la TDEE parce qu'un corps plus léger nécessite moins d'énergie pour se maintenir. Gagner du muscle augmente la TDEE car le tissu musculaire est métaboliquement actif. L'adaptation métabolique lors d'une restriction calorique prolongée peut temporairement abaisser la TDEE au-delà de ce que la formule prévoit. Il est conseillé de recalculer votre TDEE chaque fois que votre poids change de plus de 5 kg ou que votre niveau d'activité évolue de manière significative."
+  - question: "Qu'est-ce que le NEAT et pourquoi est-il important pour la TDEE ?"
+    answer: "La thermogenèse liée aux activités non sportives (NEAT) regroupe toutes les activités physiques qui ne sont pas de l'exercice structuré : marcher pour aller faire les courses, s'agiter sur sa chaise, travailler debout, cuisiner, faire le ménage et les déplacements quotidiens en général. Le NEAT peut représenter 200 à 900 calories par jour et explique en grande partie les écarts de dépense calorique totale entre des personnes ayant des habitudes d'exercice similaires. Les individus qui bougent spontanément davantage tout au long de la journée maintiennent souvent un taux de graisse corporelle plus bas malgré une alimentation comparable. Augmenter son NEAT en marchant plus, en travaillant debout ou en se garant plus loin peut faire une vraie différence sur la dépense énergétique quotidienne."
+
+examples:
+  - title: "Homme modérément actif"
+    scenario: "Un homme de 30 ans, 80 kg, 180 cm, exercice modéré 3 à 5 jours par semaine"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+      activity: "moderate"
+    expectedResult: "TDEE : 2 759 kcal/jour | MB : 1 780 kcal"
+    explanation: "Son MB de 1 780 est multiplié par 1,55 pour une activité modérée. Pour perdre du poids, il devrait viser environ 2 259 calories par jour (déficit de 500). Pour prendre du muscle, environ 3 059 calories (surplus de 300)."
+  - title: "Femme sédentaire travaillant en bureau"
+    scenario: "Une femme de 35 ans, 65 kg, 162 cm, travail de bureau sans exercice régulier"
+    inputs:
+      weight: 65
+      height: 162
+      age: 35
+      gender: "female"
+      activity: "sedentary"
+    expectedResult: "TDEE : 1 618 kcal/jour | MB : 1 348 kcal"
+    explanation: "Avec un mode de vie sédentaire, ses besoins quotidiens se limitent à environ 1 618 calories. Ajouter une activité physique légère 3 fois par semaine augmenterait sa TDEE à environ 1 854 calories, lui offrant plus de flexibilité alimentaire tout en maintenant ou en perdant du poids."
+  - title: "Athlète très actif"
+    scenario: "Un homme de 25 ans, 85 kg, 185 cm, entraînement biquotidien"
+    inputs:
+      weight: 85
+      height: 185
+      age: 25
+      gender: "male"
+      activity: "very_active"
+    expectedResult: "TDEE : 3 548 kcal/jour | MB : 1 868 kcal"
+    explanation: "Cet athlète a besoin de plus de 3 500 calories par jour pour maintenir son poids et sa charge d'entraînement. Manger en dessous de 3 000 calories entraînerait probablement une baisse de performance, de la fatigue et une perte de poids progressive."
+
+relatedTools:
+  - "bmr-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

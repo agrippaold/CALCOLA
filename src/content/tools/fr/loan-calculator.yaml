@@ -1,0 +1,81 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Calculateur Prêt Personnel - Mensualités | CalcHub"
+metaDescription: "Calculez la mensualité de votre prêt personnel ou crédit à la consommation. Comparez taux, durées et coût total des intérêts en quelques secondes."
+h1: "Calculateur de Prêt Personnel"
+slug: "calcul-pret-personnel"
+
+primaryKeyword: "calcul pret personnel"
+secondaryKeywords:
+  - "simulateur pret personnel"
+  - "calculer mensualite pret"
+  - "calcul credit conso"
+  - "pret personnel simulation"
+
+intro: "Que vous financiez l'achat d'une voiture, des travaux de rénovation, un projet personnel ou le regroupement de vos crédits, il est indispensable de connaître le coût réel d'un emprunt avant de vous engager. Ce calculateur de prêt personnel affiche votre mensualité, le montant total des intérêts payés sur la durée du prêt et le coût global du financement. Comparez différents taux et durées pour trouver la formule qui s'adapte le mieux à votre budget tout en limitant les frais d'intérêts. Renseignez le montant souhaité, le taux et la durée pour obtenir une estimation claire et immédiate."
+
+howItWorks:
+  title: "Comment sont calculées les mensualités d'un prêt personnel"
+  content: "Les prêts personnels, les crédits auto et la plupart des crédits à la consommation à taux fixe utilisent la même formule d'amortissement que les prêts immobiliers. L'établissement prêteur calcule une mensualité constante qui, versée régulièrement sur toute la durée du contrat, permet de rembourser à la fois le capital emprunté et l'ensemble des intérêts à l'échéance finale. Chaque mensualité se décompose en deux parties : les intérêts calculés sur le capital restant dû et le remboursement du capital. Au début du prêt, la part des intérêts dans la mensualité est la plus élevée car le solde restant est maximal. Au fil des remboursements, le capital diminue, les intérêts baissent et une proportion croissante de la mensualité est affectée à la réduction du solde. Les dernières mensualités sont presque entièrement constituées de capital. Le taux d'intérêt a un effet direct sur le coût total du crédit. Pour un prêt personnel de 15 000 € sur 5 ans, un taux de 4,5 % donne une mensualité de 279,65 € et un total d'intérêts de 1 779,00 €. Au taux de 8 %, la mensualité passe à 304,15 € et les intérêts grimpent à 3 249,00 €. Cette différence de 3,5 points de taux représente un surcoût de 1 470 € sur cinq ans. En France, le crédit à la consommation est encadré par le Code de la consommation et la loi Lagarde de 2010, qui impose aux prêteurs de mentionner clairement le TAEG dans toute offre de crédit. Le TAEG inclut le taux nominal, les frais de dossier et l'assurance facultative. Le taux d'usure, publié trimestriellement par la Banque de France, fixe le plafond légal du TAEG que les organismes de crédit peuvent pratiquer. Pour les prêts personnels, ce taux d'usure est distinct de celui appliqué aux crédits immobiliers. La durée du crédit crée le compromis classique entre mensualité et coût total. Un prêt de 10 000 € à 5 % coûte 790 € d'intérêts sur 3 ans (mensualité de 299,71 €) contre 2 728 € d'intérêts sur 7 ans (mensualité de 181,83 €). La mensualité baisse de 118 € mais le coût en intérêts est multiplié par 3,5. Pour limiter les frais, choisissez la durée la plus courte compatible avec votre budget mensuel. Les emprunteurs disposent d'un délai de rétractation de 14 jours après la signature d'un crédit à la consommation, pendant lequel ils peuvent annuler le contrat sans frais ni justification. Le remboursement anticipé est possible à tout moment, avec des indemnités limitées par la loi : 1 % du montant remboursé si le reste à courir dépasse un an, ou 0,5 % si le reste à courir est inférieur à un an. Comparer les offres de plusieurs établissements (banques traditionnelles, banques en ligne, organismes spécialisés) avant de souscrire permet souvent d'obtenir un meilleur taux et de réduire le coût global du financement."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = mensualité, P = capital emprunté, r = taux mensuel (taux annuel / 12 / 100), n = nombre total de mensualités (durée en années × 12)"
+  academicSource: "Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF). (2024). Le crédit à la consommation."
+
+faqs:
+  - question: "Comment obtenir le meilleur taux pour un prêt personnel ?"
+    answer: "Le taux proposé dépend principalement de votre situation financière, de votre historique bancaire et de l'organisme prêteur. Un dossier sans incident de paiement, avec des revenus stables et un taux d'endettement inférieur à 33 %, obtient généralement les meilleures conditions. Comparez au moins trois à cinq offres auprès de votre banque, des banques en ligne et des organismes spécialisés. Les banques en ligne proposent souvent des taux plus compétitifs grâce à des frais de structure réduits. Vérifiez aussi si votre employeur a négocié des conditions préférentielles avec un établissement partenaire."
+  - question: "Quelle est la différence entre crédit affecté et prêt personnel ?"
+    answer: "Un crédit affecté est lié à un achat précis (voiture, travaux, électroménager) : les fonds sont versés directement au vendeur et le contrat est annulé si la vente ne se réalise pas. Un prêt personnel n'est pas lié à un achat spécifique, ce qui offre une plus grande liberté d'utilisation. En contrepartie, le taux d'un prêt personnel est généralement légèrement plus élevé que celui d'un crédit affecté, car la banque prend un risque plus important sans garantie sur un bien identifié. Choisissez le crédit affecté si le bien est clairement défini et le prêt personnel pour des projets variés."
+  - question: "Puis-je rembourser mon prêt personnel par anticipation ?"
+    answer: "La loi française garantit à tout emprunteur le droit de rembourser par anticipation un crédit à la consommation, en totalité ou en partie. Pour les montants supérieurs à 10 000 €, l'organisme prêteur peut appliquer une indemnité plafonnée à 1 % du montant remboursé (ou 0,5 % si la durée restante est inférieure à un an). Pour les remboursements anticipés de moins de 10 000 €, aucune indemnité ne peut être exigée. Rembourser plus tôt réduit le total des intérêts payés et libère de la capacité d'endettement pour d'éventuels projets futurs."
+  - question: "Qu'est-ce que le taux d'usure et à quoi sert-il ?"
+    answer: "Le taux d'usure est le taux maximal (TAEG) qu'un établissement de crédit est légalement autorisé à pratiquer. Il est calculé et publié chaque trimestre par la Banque de France, séparément pour les différentes catégories de crédits (immobilier, consommation, découvert). Son objectif est de protéger les emprunteurs contre des conditions abusives. Si le TAEG d'une offre de crédit dépasse le taux d'usure en vigueur, le prêteur n'a pas le droit d'accorder ce crédit. Pour les prêts personnels, le taux d'usure varie selon le montant emprunté."
+  - question: "Le regroupement de crédits est-il avantageux ?"
+    answer: "Le regroupement de crédits (ou rachat de crédits) consiste à rassembler plusieurs prêts en cours en un seul crédit avec une mensualité unique, souvent plus faible. Cette opération peut réduire vos mensualités de 30 % à 50 %, mais elle allonge généralement la durée totale de remboursement, ce qui augmente le coût total en intérêts. Le regroupement est intéressant si vous êtes en difficulté pour honorer vos mensualités actuelles ou si vous pouvez obtenir un taux global inférieur à la moyenne de vos crédits existants. Analysez le coût total avant et après regroupement."
+  - question: "Quel montant puis-je emprunter avec mon salaire ?"
+    answer: "La règle générale en France est de ne pas dépasser un taux d'endettement de 33 % à 35 % de vos revenus nets mensuels, toutes charges de crédit confondues. Si vous gagnez 2 800 € net par mois et que vous remboursez déjà 300 € de crédit auto, votre capacité de remboursement restante est d'environ 680 € par mois (2 800 × 0,35 - 300). Utilisez ce calculateur pour déterminer le montant maximal que vous pouvez emprunter avec cette mensualité selon le taux et la durée envisagés. Gardez une marge pour les imprévus."
+
+examples:
+  - title: "Crédit auto pour un véhicule neuf"
+    scenario: "Financement d'une voiture à 18 000 € au taux de 4,90 % sur 5 ans"
+    inputs:
+      loanAmount: 18000
+      interestRate: 4.9
+      loanTerm: 5
+    expectedResult: "Mensualité : 338,39 € | Intérêts totaux : 2 303,40 €"
+    explanation: "Le coût total du véhicule s'élève à 20 303 € avec les intérêts. En négociant un taux inférieur à 4 % grâce aux offres promotionnelles des concessionnaires ou des banques en ligne, l'emprunteur pourrait économiser environ 400 € d'intérêts sur la durée du prêt. Un apport personnel de 3 000 € réduirait le montant emprunté à 15 000 € et la mensualité à 282 €."
+  - title: "Prêt travaux pour une rénovation énergétique"
+    scenario: "Emprunt de 25 000 € à 5,50 % sur 7 ans pour des travaux d'isolation"
+    inputs:
+      loanAmount: 25000
+      interestRate: 5.5
+      loanTerm: 7
+    expectedResult: "Mensualité : 358,18 € | Intérêts totaux : 5 087,12 €"
+    explanation: "Les travaux de rénovation énergétique peuvent donner droit à des aides de l'État comme MaPrimeRénov' ou l'éco-prêt à taux zéro, ce dernier permettant de financer jusqu'à 50 000 € de travaux sans intérêts. Si l'emprunteur obtient un éco-PTZ de 15 000 €, le prêt complémentaire tombe à 10 000 €, soit une mensualité de 143 € et seulement 2 035 € d'intérêts, une économie de plus de 3 000 €."
+  - title: "Petit prêt personnel pour un projet"
+    scenario: "Emprunt de 5 000 € à 6,50 % sur 3 ans"
+    inputs:
+      loanAmount: 5000
+      interestRate: 6.5
+      loanTerm: 3
+    expectedResult: "Mensualité : 153,05 € | Intérêts totaux : 509,80 €"
+    explanation: "Sur un montant modeste et une durée courte, les intérêts restent contenus à environ 10 % du capital emprunté. La mensualité de 153 € est accessible pour la plupart des budgets. Si l'emprunteur a la possibilité de rembourser sur 2 ans plutôt que 3, la mensualité monte à 222,70 € mais les intérêts baissent à 345 €, soit une économie de 165 €."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

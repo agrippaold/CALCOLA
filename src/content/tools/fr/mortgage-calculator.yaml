@@ -1,0 +1,81 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Simulateur Crédit Immobilier - Mensualités | CalcHub"
+metaDescription: "Calculez vos mensualités de crédit immobilier, le coût total des intérêts et le tableau d'amortissement. Comparez durées et taux en quelques clics."
+h1: "Simulateur de Crédit Immobilier"
+slug: "simulateur-credit-immobilier"
+
+primaryKeyword: "simulateur credit immobilier"
+secondaryKeywords:
+  - "calcul pret immobilier"
+  - "simulation pret immobilier"
+  - "calculer mensualite pret"
+  - "credit immobilier calcul"
+
+intro: "L'achat d'un bien immobilier représente l'engagement financier le plus important dans la vie de la plupart des ménages français. Avant de signer une offre de prêt, il est indispensable de connaître précisément le montant de vos mensualités, le coût total des intérêts et la part de capital remboursé chaque mois. Ce simulateur de crédit immobilier décompose votre mensualité en capital et intérêts, génère un tableau d'amortissement détaillé et vous permet de comparer différents scénarios en modifiant le montant emprunté, le taux et la durée. Renseignez les données de votre projet pour obtenir des chiffres fiables qui vous aideront à négocier avec votre banque et à préparer votre plan de financement."
+
+howItWorks:
+  title: "Comment sont calculées les mensualités d'un prêt immobilier"
+  content: "Chaque mensualité d'un prêt immobilier à taux fixe est déterminée par la formule d'amortissement standard utilisée par toutes les banques françaises. Cette formule prend en compte trois paramètres : le capital emprunté, le taux d'intérêt annuel et la durée du prêt en années. La mensualité reste identique tout au long du remboursement, mais la répartition entre capital et intérêts évolue au fil du temps. Au début du prêt, la plus grande partie de chaque mensualité sert à payer les intérêts, car le capital restant dû est élevé. Au fur et à mesure que le capital diminue, les intérêts calculés chaque mois baissent également, et une part croissante de la mensualité réduit le solde du prêt. C'est pourquoi effectuer des remboursements anticipés dans les premières années a un effet considérable sur le coût total du crédit. Prenons un exemple concret : pour un prêt de 250 000 € à un taux fixe de 3,5 % sur 25 ans, la mensualité hors assurance s'établit à 1 252,35 €. Sur toute la durée du crédit, les intérêts s'élèvent à 125 705 €, soit plus de la moitié du capital emprunté. Si la durée est réduite à 20 ans, la mensualité passe à 1 449,38 € mais les intérêts tombent à 97 851 €, une économie de près de 28 000 €. En France, le taux d'usure fixé par la Banque de France encadre le TAEG maximal que les établissements de crédit peuvent proposer. Le TAEG inclut non seulement le taux d'intérêt nominal mais aussi l'assurance emprunteur, les frais de dossier, les frais de garantie et les éventuels frais de courtage. L'assurance emprunteur représente souvent entre 0,10 % et 0,40 % du capital emprunté par an, ce qui peut ajouter entre 20 € et 85 € par mois sur un prêt de 250 000 €. Depuis la loi Lemoine de 2022, les emprunteurs peuvent changer d'assurance de prêt à tout moment sans frais, ce qui ouvre la possibilité de réaliser des économies importantes en faisant jouer la concurrence. Le prêt à taux zéro (PTZ) est un dispositif de l'État qui permet aux primo-accédants de financer une partie de leur achat sans payer d'intérêts, sous conditions de ressources et de localisation du bien. Intégrer un PTZ dans un plan de financement réduit le coût global de l'opération et peut abaisser les mensualités de 100 € à 200 € selon le montant accordé. Lors de votre simulation, tenez compte également des frais de notaire, qui représentent environ 7 à 8 % du prix dans l'ancien et 2 à 3 % dans le neuf. Ces frais ne sont pas financés par le prêt principal dans la majorité des cas et doivent être couverts par votre apport personnel."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = mensualité, P = capital emprunté, r = taux mensuel (taux annuel / 12 / 100), n = nombre total de mensualités (durée en années × 12)"
+  academicSource: "Banque de France. (2024). Taux d'usure et conditions d'octroi des crédits immobiliers aux particuliers."
+
+faqs:
+  - question: "Quel taux de crédit immobilier puis-je obtenir en 2026 ?"
+    answer: "Les taux de crédit immobilier en France dépendent de la durée du prêt, de votre profil emprunteur et de la politique monétaire de la Banque centrale européenne. En début d'année 2026, les taux moyens se situent autour de 3,00 % à 3,50 % sur 20 ans pour les meilleurs dossiers. Un apport personnel d'au moins 10 % du prix du bien, un taux d'endettement inférieur à 35 % et des revenus stables sont les critères principaux pour décrocher un taux avantageux. Faire appel à un courtier permet souvent de gagner 0,10 à 0,30 point sur le taux négocié."
+  - question: "Comment calculer mon taux d'endettement pour un prêt immobilier ?"
+    answer: "Le taux d'endettement se calcule en divisant l'ensemble de vos charges de crédit mensuelles (y compris la future mensualité du prêt immobilier et l'assurance emprunteur) par vos revenus nets mensuels avant impôts, puis en multipliant par 100. Depuis les recommandations du Haut Conseil de stabilité financière (HCSF), le taux d'endettement maximal est fixé à 35 % assurance comprise. Par exemple, si vos revenus nets mensuels sont de 4 500 € et que vous remboursez déjà 200 € de crédit auto, votre capacité d'emprunt maximale correspond à une mensualité de 1 375 €."
+  - question: "Quelle est la durée idéale pour un crédit immobilier ?"
+    answer: "La durée la plus courante en France est de 20 à 25 ans. Une durée plus courte (15 ans) implique des mensualités plus élevées mais réduit le coût total des intérêts de façon significative. Pour un prêt de 200 000 € à 3,5 %, la différence d'intérêts entre 20 ans et 25 ans représente environ 23 000 €. Choisissez la durée la plus courte possible tout en conservant un reste à vivre confortable. Le HCSF recommande de ne pas dépasser 25 ans, avec un maximum de 27 ans lorsqu'il y a un différé lié à un achat en VEFA."
+  - question: "Qu'est-ce que le TAEG et pourquoi est-il important ?"
+    answer: "Le Taux Annuel Effectif Global (TAEG) est l'indicateur légal qui regroupe la totalité des coûts liés à votre crédit : taux d'intérêt nominal, assurance emprunteur, frais de dossier, frais de garantie et frais de courtage éventuel. Il permet de comparer objectivement les offres de différentes banques, car deux prêts au même taux nominal peuvent avoir des TAEG très différents selon les frais annexes. La loi impose à chaque établissement de mentionner le TAEG dans l'offre de prêt. Un TAEG dépassant le taux d'usure en vigueur entraîne automatiquement le refus légal du crédit."
+  - question: "Peut-on emprunter sans apport personnel ?"
+    answer: "Techniquement, certaines banques acceptent de financer 110 % du projet (prix du bien plus frais de notaire), mais ces dossiers sont devenus rares depuis les recommandations du HCSF. Sans apport, le taux proposé sera généralement plus élevé et la durée maximale de remboursement plus longue, ce qui augmente le coût total du crédit. Un apport de 10 % minimum est recommandé pour obtenir de meilleures conditions. Le PTZ peut être considéré comme un complément d'apport pour les primo-accédants éligibles et permet d'améliorer le profil du dossier."
+  - question: "Comment fonctionne le remboursement anticipé d'un crédit immobilier ?"
+    answer: "En France, tout emprunteur a le droit de rembourser son crédit par anticipation, en totalité ou en partie. La banque peut toutefois appliquer des indemnités de remboursement anticipé (IRA), plafonnées par la loi à 6 mois d'intérêts ou 3 % du capital restant dû, le montant le plus faible étant retenu. Sur un prêt de 200 000 € avec 150 000 € de capital restant dû à 3,5 %, l'IRA maximale serait de 2 625 €. Malgré ces frais, un remboursement anticipé peut vous faire économiser des dizaines de milliers d'euros d'intérêts, surtout s'il intervient dans la première moitié de la durée du prêt."
+
+examples:
+  - title: "Achat d'un appartement sur 25 ans"
+    scenario: "Un emprunteur souscrit un prêt de 250 000 € à 3,50 % sur 25 ans"
+    inputs:
+      loanAmount: 250000
+      interestRate: 3.5
+      loanTerm: 25
+    expectedResult: "Mensualité : 1 252,35 € | Intérêts totaux : 125 705,00 €"
+    explanation: "Avec une mensualité de 1 252,35 €, le coût total du crédit atteint 375 705 €, dont 125 705 € d'intérêts. La première mensualité se décompose en 729,17 € d'intérêts et 523,18 € de capital. L'assurance emprunteur, non incluse ici, ajoute généralement entre 40 € et 90 € par mois selon le profil et le contrat choisi."
+  - title: "Prêt immobilier sur 20 ans avec taux compétitif"
+    scenario: "Un couple emprunte 300 000 € à 3,10 % sur 20 ans"
+    inputs:
+      loanAmount: 300000
+      interestRate: 3.1
+      loanTerm: 20
+    expectedResult: "Mensualité : 1 685,83 € | Intérêts totaux : 104 599,20 €"
+    explanation: "En choisissant une durée de 20 ans plutôt que 25, ce couple paie 104 599 € d'intérêts au lieu de près de 135 000 € sur 25 ans au même taux. La mensualité est plus élevée de 230 € environ, mais l'économie totale sur la durée dépasse 30 000 €. Avec un revenu net du ménage de 5 500 €, le taux d'endettement se situe à 30,6 %, dans les limites recommandées."
+  - title: "Petit emprunt pour un studio"
+    scenario: "Un primo-accédant emprunte 120 000 € à 3,80 % sur 20 ans"
+    inputs:
+      loanAmount: 120000
+      interestRate: 3.8
+      loanTerm: 20
+    expectedResult: "Mensualité : 714,67 € | Intérêts totaux : 51 520,80 €"
+    explanation: "Pour un studio ou un petit appartement, un emprunt de 120 000 € reste accessible avec une mensualité inférieure à 715 €. Les intérêts représentent environ 43 % du capital emprunté. Si ce primo-accédant bénéficie d'un PTZ de 40 000 € sur la partie sans intérêts, la mensualité sur le prêt principal diminue proportionnellement, rendant le projet encore plus abordable."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

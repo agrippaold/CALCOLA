@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'fr';
+
+const categories = [
+  {
+    name: 'Finances',
+    slug: 'finances',
+    description: 'Calculatrices de crédit immobilier, prêt personnel, intérêts composés et épargne.',
+    icon: '💰',
+    tools: [
+      { name: 'Simulateur Crédit Immobilier', slug: '/fr/finances/simulateur-credit-immobilier/' },
+      { name: 'Intérêts Composés', slug: '/fr/finances/calcul-interets-composes/' },
+      { name: 'Calcul Prêt Personnel', slug: '/fr/finances/calcul-pret-personnel/' },
+      { name: 'Calcul Épargne', slug: '/fr/finances/calcul-epargne/' },
+    ],
+  },
+  {
+    name: 'Santé',
+    slug: 'sante',
+    description: 'Calculatrices IMC, métabolisme basal, dépense énergétique et besoins caloriques.',
+    icon: '🏥',
+    tools: [
+      { name: 'Calcul IMC', slug: '/fr/sante/calcul-imc/' },
+      { name: 'Métabolisme Basal', slug: '/fr/sante/calcul-metabolisme-basal/' },
+      { name: 'Dépense Énergétique', slug: '/fr/sante/calcul-depense-energetique/' },
+      { name: 'Calcul Calories', slug: '/fr/sante/calcul-calories/' },
+    ],
+  },
+  {
+    name: 'Mathématiques',
+    slug: 'mathematiques',
+    description: 'Calculatrices de pourcentages, surfaces et problèmes mathématiques courants.',
+    icon: '📐',
+    tools: [
+      { name: 'Calcul Pourcentage', slug: '/fr/mathematiques/calcul-pourcentage/' },
+      { name: 'Calcul Surface', slug: '/fr/mathematiques/calcul-surface/' },
+    ],
+  },
+  {
+    name: 'Conversions',
+    slug: 'conversions',
+    description: 'Convertisseurs de température, longueur, poids et volume.',
+    icon: '🔄',
+    tools: [
+      { name: 'Convertisseur Température', slug: '/fr/conversions/convertisseur-temperature/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - Calculatrices en Ligne Gratuites | Finances, Santé, Maths"
+  description="200+ calculatrices en ligne gratuites en 25 langues. Crédit immobilier, IMC, intérêts composés, pourcentages, température et bien plus. Rapides, précises, sans inscription."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Calculatrices en Ligne Gratuites</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Calculatrices rapides et précises pour les finances, la santé, les mathématiques et les conversions. Sans inscription. Sans publicité intrusive.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/fr/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Calculatrices Populaires</h2>
+    <p class="text-gray-600 mb-8">Les outils les plus utilisés de toutes les catégories</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/fr/finances/simulateur-credit-immobilier/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">Finances</div>
+        <div class="font-semibold text-gray-900">Simulateur Crédit Immobilier</div>
+        <p class="text-sm text-gray-500 mt-1">Calculez la mensualité et le coût total de votre crédit.</p>
+      </a>
+      <a href="/fr/sante/calcul-imc/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Santé</div>
+        <div class="font-semibold text-gray-900">Calcul IMC</div>
+        <p class="text-sm text-gray-500 mt-1">Vérifiez votre Indice de Masse Corporelle en un instant.</p>
+      </a>
+      <a href="/fr/mathematiques/calcul-pourcentage/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">Mathématiques</div>
+        <div class="font-semibold text-gray-900">Calcul Pourcentage</div>
+        <p class="text-sm text-gray-500 mt-1">Toutes les opérations sur les pourcentages au même endroit.</p>
+      </a>
+      <a href="/fr/sante/calcul-calories/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Santé</div>
+        <div class="font-semibold text-gray-900">Calcul Calories</div>
+        <p class="text-sm text-gray-500 mt-1">Calories journalières et macronutriments pour vos objectifs.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Toutes les Catégories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/fr/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/fr/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            Voir tous les outils {cat.name.toLowerCase()} &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
