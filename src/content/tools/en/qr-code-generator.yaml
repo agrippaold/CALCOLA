@@ -1,0 +1,79 @@
+id: "qr-code-generator"
+category: "text"
+calculatorComponent: "QRCodeGenerator"
+
+title: "Free QR Code Generator - URL, Text, WiFi, Email | CalcHub"
+metaDescription: "Generate QR codes instantly for URLs, text, WiFi credentials, and email addresses. Free, no signup, download as PNG. Works on all devices."
+h1: "QR Code Generator"
+slug: "qr-code-generator"
+
+primaryKeyword: "qr code generator"
+secondaryKeywords:
+  - "free qr code generator"
+  - "qr code maker"
+  - "generate qr code online"
+  - "wifi qr code"
+  - "url qr code"
+
+intro: "Create QR codes instantly for any purpose, from sharing website links and WiFi credentials to encoding text messages and email addresses. This free QR code generator runs entirely in your browser with no signup required and no watermarks on your downloads. Choose from URL, plain text, email, or WiFi mode, generate a crisp QR code in real time, and download it as a high-resolution PNG. Every code uses medium error correction so it remains scannable even when partially obscured or printed at smaller sizes. Use it for business cards, restaurant menus, event flyers, product packaging, or anywhere you need a fast bridge between the physical and digital world."
+
+howItWorks:
+  title: "How QR Codes Work"
+  content: "A QR (Quick Response) code is a two-dimensional barcode invented in 1994 by Denso Wave, a subsidiary of Toyota, originally to track automotive parts during manufacturing. Unlike traditional barcodes that store data in one dimension using varying line widths, QR codes encode information in both horizontal and vertical directions using a matrix of dark and light modules arranged in a square grid. This two-dimensional approach allows QR codes to store significantly more data, up to 4,296 alphanumeric characters or 7,089 numeric digits, compared to roughly 20 characters for a standard barcode. The encoding process begins by analyzing the input data and selecting the most efficient encoding mode. QR codes support four modes: numeric (digits only), alphanumeric (digits, uppercase letters, and a few symbols), byte (any character via UTF-8), and kanji (Japanese characters). The encoder then adds error correction data using Reed-Solomon codes, which allow the QR code to be read correctly even when a portion of the code is damaged, dirty, or obscured. Error correction levels range from L (7% recovery) through M (15%), Q (25%), to H (30%). Higher error correction means more modules are needed, resulting in a denser code, but greater resilience. This calculator uses level M as a practical balance between data density and durability. The distinctive square patterns in three corners of every QR code are called finder patterns. These allow scanners to identify the code, determine its orientation, and locate the data area regardless of the viewing angle. Alignment patterns, timing patterns, and format information areas provide additional structural guidance for the decoding algorithm. Modern smartphones can read QR codes using their built-in camera apps without requiring any special software. The COVID-19 pandemic dramatically accelerated QR code adoption worldwide, with contactless menus, digital payments, vaccine passports, and event check-ins all driving mainstream familiarity. Today QR codes are used in marketing campaigns, product authentication, boarding passes, two-factor authentication, and countless other applications."
+  formula: "QR Code capacity: up to 4,296 alphanumeric characters | Error correction level M: 15% data recovery"
+  formulaExplanation: "Data is encoded using Reed-Solomon error correction, with finder patterns for orientation detection"
+  academicSource: "ISO/IEC 18004:2015 — QR Code bar code symbology specification"
+
+faqs:
+  - question: "Is this QR code generator really free?"
+    answer: "Yes, this QR code generator is completely free to use with no limitations, no watermarks, and no account required. The QR codes are generated entirely in your browser using JavaScript, meaning your data is never sent to any server. You can generate unlimited codes and download them as high-resolution PNG files for any purpose, including commercial use. There are no hidden fees, premium tiers, or feature restrictions."
+  - question: "What is the maximum data a QR code can hold?"
+    answer: "A QR code can hold up to 7,089 numeric digits, 4,296 alphanumeric characters, or 2,953 bytes of binary data at the largest standard size (version 40, 177 by 177 modules). However, practical QR codes for scanning with phone cameras typically work best with shorter content. URLs should ideally be under 300 characters for reliable scanning. Very long data produces dense codes that require higher resolution printing and closer scanning distances. For URLs, consider using a URL shortener if the original link is extremely long."
+  - question: "How do I create a WiFi QR code?"
+    answer: "Select the WiFi tab, enter your network name (SSID), password, and encryption type (WPA/WPA2 for most modern networks). The generator creates a QR code using the standard WiFi configuration format recognized by both Android and iOS devices. When someone scans the code with their phone camera, they will be prompted to join the network automatically without needing to type the password. This is especially useful for guest networks in homes, offices, cafes, and hotels where you want to share access without revealing the password verbally."
+  - question: "Can QR codes be scanned if they are partially damaged?"
+    answer: "Yes, QR codes include built-in error correction using Reed-Solomon coding. This generator uses error correction level M, which allows the code to be read correctly even if up to 15 percent of the modules are damaged, dirty, or obscured. Higher error correction levels (Q at 25 percent and H at 30 percent) provide even more resilience but require larger codes. This redundancy is why QR codes remain scannable even when printed on curved surfaces, partially covered by a logo, or slightly smudged."
+  - question: "What size should I print a QR code?"
+    answer: "The minimum recommended print size depends on scanning distance. As a general rule, the QR code should be at least one-tenth the scanning distance in size. For a code scanned from 10 centimeters (about 4 inches), a minimum size of 1 centimeter works. For a poster scanned from 1 meter away, the code should be at least 10 centimeters. For billboards or signs scanned from several meters, codes need to be proportionally larger. Always test your printed QR code at the expected scanning distance before committing to a large print run."
+  - question: "Do QR codes expire?"
+    answer: "Static QR codes like the ones generated by this tool never expire. The data is encoded directly in the pattern of black and white modules, so the code will work as long as the encoded content remains valid. For example, a QR code encoding a URL will work indefinitely, but the linked website could go offline. Dynamic QR codes, offered by some commercial services, use a redirect URL that can be changed later, but those depend on the service remaining active. Static codes are more reliable for long-term use."
+
+examples:
+  - title: "Website URL QR code"
+    scenario: "Generate a QR code for a business website URL"
+    inputs:
+      type: "url"
+      content: "https://example.com"
+    expectedResult: "QR code image ready for download"
+    explanation: "Enter the full URL including https:// in the URL tab. The generator creates a scannable QR code instantly. Download the PNG and use it on business cards, flyers, or your storefront window. Most smartphone cameras will automatically recognize the URL and offer to open it in a browser when the code is scanned."
+  - title: "Guest WiFi sharing"
+    scenario: "Create a QR code for guest WiFi access"
+    inputs:
+      type: "wifi"
+      ssid: "GuestNetwork"
+      password: "Welcome2024"
+      encryption: "WPA"
+    expectedResult: "WiFi QR code that auto-connects devices"
+    explanation: "Switch to the WiFi tab and enter your network details. The generated QR code uses the standard WiFi configuration format. Print it and place it near your entrance or on table tents. Guests scan with their phone camera and connect instantly without asking for the password. This works with both Android and iOS devices running recent operating systems."
+  - title: "Event contact sharing"
+    scenario: "Create a QR code for quick email contact"
+    inputs:
+      type: "email"
+      email: "info@conference.com"
+      subject: "Inquiry from conference"
+    expectedResult: "Email QR code that opens mail client with pre-filled recipient and subject"
+    explanation: "Use the Email tab to encode an email address and optional subject line. When scanned, the QR code opens the default email app with the recipient and subject pre-filled. This is useful for conference badges, promotional materials, or feedback forms where you want to make it effortless for people to reach out."
+
+relatedTools:
+  - "password-generator"
+  - "word-counter"
+  - "character-counter"
+
+defaults:
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -20,6 +20,9 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
     <slot name="head" />
     {!Astro.slots.has('head') && (
       <>
@@ -34,5 +37,61 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
       <slot />
     </main>
     <Footer lang={lang} />
+
+    {/* PWA: Service Worker Registration + Install Banner */}
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+
+      // Install banner — show after second visit
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+
+        const visits = parseInt(localStorage.getItem('calchub_visits') || '0', 10) + 1;
+        localStorage.setItem('calchub_visits', String(visits));
+
+        if (visits >= 2) {
+          const banner = document.getElementById('pwa-install-banner');
+          if (banner) banner.style.display = 'flex';
+        }
+      });
+
+      function installPWA() {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then(() => {
+            deferredPrompt = null;
+            const banner = document.getElementById('pwa-install-banner');
+            if (banner) banner.style.display = 'none';
+          });
+        }
+      }
+
+      function dismissInstall() {
+        const banner = document.getElementById('pwa-install-banner');
+        if (banner) banner.style.display = 'none';
+        localStorage.setItem('calchub_install_dismissed', '1');
+      }
+    </script>
+
+    {/* Install Banner (hidden by default) */}
+    <div
+      id="pwa-install-banner"
+      style="display:none"
+      class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-96 bg-white rounded-lg shadow-lg border border-gray-200 p-4 flex items-center gap-3 z-50"
+    >
+      <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">CH</div>
+      <div class="flex-1 min-w-0">
+        <p class="font-semibold text-gray-900 text-sm">Install CalcHub</p>
+        <p class="text-xs text-gray-500">Use calculators offline, anytime</p>
+      </div>
+      <button onclick="installPWA()" class="bg-blue-600 text-white px-3 py-1.5 rounded-md text-sm font-medium hover:bg-blue-700 flex-shrink-0">Install</button>
+      <button onclick="dismissInstall()" class="text-gray-400 hover:text-gray-600 flex-shrink-0" aria-label="Dismiss">&times;</button>
+    </div>
   </body>
 </html>

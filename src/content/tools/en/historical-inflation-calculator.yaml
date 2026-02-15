@@ -1,0 +1,82 @@
+id: "historical-inflation-calculator"
+category: "finance"
+calculatorComponent: "HistoricalInflationCalculator"
+
+title: "Historical Inflation Calculator - CPI 1913-2025"
+metaDescription: "See what money was worth from 1913 to 2025 using real US CPI data. Find what $100 in any past year is worth today."
+h1: "Historical Inflation Calculator"
+slug: "historical-inflation-calculator"
+
+primaryKeyword: "historical inflation calculator"
+secondaryKeywords:
+  - "inflation calculator by year"
+  - "what was a dollar worth in"
+  - "CPI calculator"
+  - "purchasing power by year"
+  - "dollar value over time"
+  - "inflation rate history"
+
+intro: "Have you ever wondered what $100 in 1950 would buy today, or how much your grandparents' first house would cost in current dollars? This historical inflation calculator uses real Consumer Price Index data from the Bureau of Labor Statistics covering every year from 1913 to 2025. Enter any dollar amount and two years to see exactly how purchasing power has changed. Whether you are comparing salaries across decades, adjusting historical prices for a research paper, or simply curious about how inflation has eroded the dollar over the past century, this tool gives you precise answers backed by official government data rather than rough estimates."
+
+howItWorks:
+  title: "How Historical CPI Data Measures Inflation"
+  content: "The Consumer Price Index (CPI) is the most widely cited measure of inflation in the United States. Published monthly by the Bureau of Labor Statistics (BLS), the CPI tracks the average change in prices paid by urban consumers for a representative basket of goods and services including food, housing, apparel, transportation, medical care, recreation, education, and communication. The index uses a base period of 1982 to 1984, set equal to 100, meaning that a CPI value of 300 indicates prices have tripled since that base period. This calculator uses annual average CPI-U (All Urban Consumers) data, which covers approximately 93 percent of the total US population. To convert a dollar amount from one year to another, the formula divides the CPI of the target year by the CPI of the original year and multiplies by the original amount. For example, converting $100 from 1970 (CPI 38.8) to 2024 (CPI 313.0) yields $100 multiplied by 313.0 divided by 38.8, which equals approximately $806.70. This means an item that cost $100 in 1970 would cost about $807 in 2024, reflecting the cumulative effect of more than five decades of inflation. The average annual inflation rate is calculated using the compound annual growth rate formula, which finds the constant rate that would produce the same cumulative change over the given number of years. Historically, US inflation has averaged about 3.2 percent per year since 1913, though individual decades have varied enormously. The 1970s and early 1980s saw double-digit inflation driven by oil crises and loose monetary policy, while the 1990s and 2000s experienced more moderate rates between 2 and 3 percent. The post-2020 period brought a notable spike, with annual inflation exceeding 8 percent in 2022 before moderating in subsequent years. Understanding these historical patterns helps contextualize current price changes and make more informed financial decisions about savings, investments, and long-term planning. It is worth noting that CPI measures average price changes across all goods and services. Individual categories like healthcare, education, and housing have often inflated much faster than the overall index, while technology products have generally deflated in quality-adjusted terms."
+  formula: "Adjusted Value = Original Amount x (CPI in Target Year / CPI in Original Year)"
+  formulaExplanation: "CPI values are annual averages from the Bureau of Labor Statistics CPI-U series (base 1982-84 = 100)"
+  academicSource: "Bureau of Labor Statistics. (2025). Consumer Price Index — All Urban Consumers (CPI-U), U.S. city average, all items."
+
+faqs:
+  - question: "What CPI data does this calculator use?"
+    answer: "This calculator uses the annual average Consumer Price Index for All Urban Consumers (CPI-U) published by the Bureau of Labor Statistics. The data covers every year from 1913 through 2025. The CPI-U measures price changes for a basket of goods and services purchased by approximately 93 percent of the US population. The base period is 1982 to 1984, set equal to 100. This is the same index used by the Social Security Administration to calculate cost-of-living adjustments and by the IRS to adjust tax brackets."
+  - question: "How accurate is the CPI as a measure of inflation?"
+    answer: "The CPI is the most widely used inflation measure but has known limitations. Critics argue it may overstate inflation because it does not fully account for consumers substituting cheaper alternatives when prices rise, or for quality improvements in products. Others argue it understates inflation because it uses rental equivalence rather than actual home purchase prices for housing costs, which represent the largest expenditure for most families. The BLS has made methodological improvements over the decades, including geometric mean formulas and hedonic quality adjustments, but no single index perfectly captures every household's experience of changing prices."
+  - question: "Why do prices seem to rise faster than the CPI suggests?"
+    answer: "Individual experiences of inflation vary significantly depending on spending patterns. If you spend a large portion of income on categories that inflated faster than average, such as healthcare, college tuition, or housing in high-cost cities, your personal inflation rate may exceed the official CPI figure. The CPI measures an average urban consumer basket, not any individual household. Additionally, the CPI includes categories like technology products where quality-adjusted prices have fallen, bringing down the overall average even as the items you notice most, like groceries and rent, may have risen substantially."
+  - question: "What was the worst period of inflation in US history?"
+    answer: "The worst sustained inflation in modern US history occurred during the late 1970s and early 1980s. Annual CPI inflation peaked at 13.5 percent in 1980 and remained above 10 percent for three consecutive years from 1979 to 1981. This period was driven by oil price shocks from OPEC embargoes, expansionary fiscal policy during the Vietnam War era, and accommodative monetary policy from the Federal Reserve. Federal Reserve Chairman Paul Volcker ultimately tamed inflation by raising the federal funds rate above 20 percent in 1981, triggering a severe recession but breaking the inflationary spiral."
+  - question: "Has the US dollar ever experienced deflation?"
+    answer: "Yes, the United States experienced significant deflation during the Great Depression. Prices fell approximately 24 percent between 1929 and 1933, as measured by the CPI dropping from 17.2 to 12.9. This deflation was devastating because it increased the real burden of debts, discouraged spending as consumers waited for lower prices, and contributed to widespread business failures and unemployment exceeding 25 percent. Smaller periods of mild deflation also occurred in 2009 during the Great Recession, when CPI briefly dipped. Modern central banks actively target mild positive inflation of around 2 percent specifically to avoid the risks of deflation."
+  - question: "How does US inflation compare to other countries?"
+    answer: "Among developed nations, the US has experienced moderate inflation compared to historical extremes elsewhere. Germany in 1923 saw prices double every few days during hyperinflation. More recently, Venezuela experienced annual inflation exceeding 1,000,000 percent in 2018. Among peer economies, the US, UK, eurozone countries, Canada, and Japan have generally maintained inflation between 0 and 5 percent in recent decades, with Japan notably experiencing extended periods of near-zero inflation or deflation from the 1990s through the 2010s. Central bank independence and inflation targeting frameworks have been key factors in maintaining price stability across developed economies."
+
+examples:
+  - title: "Value of $100 from 1970"
+    scenario: "$100 in 1970 adjusted to 2025 dollars"
+    inputs:
+      amount: 100
+      fromYear: 1970
+      toYear: 2025
+    expectedResult: "Approximately $822.16 | Cumulative inflation: 722.2% | Average annual rate: 3.82%"
+    explanation: "One hundred dollars in 1970 has the same purchasing power as approximately $822 in 2025. This reflects 55 years of cumulative inflation averaging 3.82% per year. A house that cost $25,000 in 1970 would need to cost over $205,000 today just to keep pace with general inflation, and in many markets actual housing costs have far exceeded this figure."
+  - title: "Pre-Depression era comparison"
+    scenario: "$1,000 in 1920 adjusted to 2025 dollars"
+    inputs:
+      amount: 1000
+      fromYear: 1920
+      toYear: 2025
+    expectedResult: "Approximately $15,950 | Cumulative inflation: 1,495% | Average annual rate: 2.67%"
+    explanation: "A thousand dollars in 1920 carries the purchasing power of nearly $16,000 today. This 105-year span includes the Great Depression deflation of the 1930s, the post-war boom, the stagflation of the 1970s, and the Great Moderation era. Despite enormous economic upheavals, the average annual inflation rate across this entire period was a relatively moderate 2.67%."
+  - title: "Recent inflation spike"
+    scenario: "$500 in 2020 adjusted to 2025 dollars"
+    inputs:
+      amount: 500
+      fromYear: 2020
+      toYear: 2025
+    expectedResult: "Approximately $616.31 | Cumulative inflation: 23.3% | Average annual rate: 4.26%"
+    explanation: "The five years from 2020 to 2025 saw unusually high inflation driven by pandemic-related supply chain disruptions, massive fiscal stimulus, and energy price volatility. Five hundred dollars in 2020 purchasing power requires over $616 in 2025, a 23.3% increase in just five years. This period alone eroded more purchasing power than the entire decade of the 2010s."
+
+relatedTools:
+  - "inflation-calculator"
+  - "savings-calculator"
+  - "compound-interest-calculator"
+  - "investment-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

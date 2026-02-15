@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Maskable icon: content within safe zone (80% center = 409x409 centered) -->
+  <rect width="512" height="512" fill="#2563EB"/>
+  <text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="180" fill="white">CH</text>
+  <text x="50%" y="73%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="48" fill="rgba(255,255,255,0.8)">CalcHub</text>
+</svg>
