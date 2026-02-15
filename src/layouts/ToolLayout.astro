@@ -9,6 +9,7 @@ import FAQ from '../components/content/FAQ.astro';
 import PracticalExamples from '../components/content/PracticalExamples.astro';
 import RelatedTools from '../components/content/RelatedTools.astro';
 import AdPlacement from '../components/content/AdPlacement.astro';
+import EmbedCode from '../components/content/EmbedCode.astro';
 import { t } from '../i18n/utils';
 
 interface Props {
@@ -97,7 +98,10 @@ const { tool, lang } = Astro.props;
     <!-- 12. RELATED TOOLS -->
     <RelatedTools tools={tool.relatedTools} lang={lang} />
 
-    <!-- 13. LAST UPDATED -->
+    <!-- 13. EMBED CODE -->
+    <EmbedCode toolSlug={tool.slug} toolTitle={tool.h1} lang={lang} />
+
+    <!-- 14. LAST UPDATED -->
     <p class="text-sm text-gray-400 mt-8">
       {t('content.lastUpdated', lang)}: {tool.lastUpdated}
     </p>
