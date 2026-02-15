@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** Nessuno (progetto non iniziato)
-**Prossimo step da eseguire:** STEP 0.1
-**Branch attivo:** main
-**Build status:** N/A
+**Ultimo step completato:** STEP 0.1
+**Prossimo step da eseguire:** STEP 0.2
+**Branch attivo:** claude/start-step-0.1-OD4hw
+**Build status:** OK (npm run build passa senza errori)
 
 ---
 
@@ -22,7 +22,7 @@ questo file per sapere da dove ripartire.
 
 Obiettivo: Repository funzionante, struttura completa, build che passa, Docker funzionante.
 
-## STEP 0.1 — Inizializzazione Progetto ⬜
+## STEP 0.1 — Inizializzazione Progetto ✅
 ```
 Azioni:
 1. Inizializzare progetto Astro: npm create astro@latest . -- --template minimal --typescript strict
@@ -35,9 +35,9 @@ Azioni:
 Verifica: npm run build completa senza errori
 Commit: [STEP 0.1] Initialize Astro project with Preact, Tailwind, i18n
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: package.json, astro.config.mjs, tsconfig.json, tailwind.config.mjs, src/pages/index.astro, src/pages/en/index.astro, src/styles/global.css, .gitignore, .dockerignore, .editorconfig
+Note: create-astro template fetch non disponibile (network), progetto creato manualmente con npm install. Astro 5.17.2, Preact 10.28.3, Tailwind 3.4.19. Build OK.
 
 ## STEP 0.2 — Struttura Directory ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| | | | |
+| 1 | 2026-02-15 | STEP 0.1 | Inizializzazione progetto Astro con Preact, Tailwind, Sitemap, i18n 25 lingue |
