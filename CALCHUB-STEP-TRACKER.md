@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.1
-**Prossimo step da eseguire:** STEP 0.2
+**Ultimo step completato:** STEP 0.2
+**Prossimo step da eseguire:** STEP 0.3
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -39,7 +39,7 @@ Completato: 2026-02-15
 File creati/modificati: package.json, astro.config.mjs, tsconfig.json, tailwind.config.mjs, src/pages/index.astro, src/pages/en/index.astro, src/styles/global.css, .gitignore, .dockerignore, .editorconfig
 Note: create-astro template fetch non disponibile (network), progetto creato manualmente con npm install. Astro 5.17.2, Preact 10.28.3, Tailwind 3.4.19. Build OK.
 
-## STEP 0.2 — Struttura Directory ⬜
+## STEP 0.2 — Struttura Directory ✅
 ```
 Azioni:
 1. Creare TUTTE le cartelle come da GUIDA sezione 1.3
@@ -49,9 +49,9 @@ Azioni:
 Verifica: tree src/ mostra struttura corretta
 Commit: [STEP 0.2] Create full project directory structure
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/components/{layout,calculators/{base,finance,health,math,conversion,date,construction,text,education,physics},content}/, src/content/tools/{25 locale dirs}/, src/i18n/, src/layouts/, src/lib/{formulas,schema,seo}/, scripts/, nginx/, docs/, public/favicon.svg
+Note: Tutte le directory create con .gitkeep per tracciamento Git. Struttura conforme a GUIDA sezione 1.3. Build OK.
 
 ## STEP 0.3 — Sistema i18n ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1 | Inizializzazione progetto Astro con Preact, Tailwind, Sitemap, i18n 25 lingue |
+| 1 | 2026-02-15 | STEP 0.1, 0.2 | Inizializzazione progetto Astro + struttura directory completa |
