@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 3.3 (Health batch 2: macro, body fat, pregnancy, ovulation)
-**Prossimo step da eseguire:** STEP 3.4
+**Ultimo step completato:** STEP 3.4 (Math & conversions batch 2: percent change, fraction, scientific, volume/length/weight)
+**Prossimo step da eseguire:** STEP 3.5
 **Branch attivo:** claude/continue-step-tracker-ZHIy0
-**Build status:** OK (124 pagine, 128 test passano, 69 YAML validati)
+**Build status:** OK (136 pagine, 153 test passano, 75 YAML validati)
 
 ---
 
@@ -502,11 +502,14 @@ Completato: 2026-02-15
 File creati/modificati: src/lib/formulas/health.ts (4 nuove funzioni: bodyFatNavy, pregnancyDueDate, gestationalAge, ovulationDate), src/lib/formulas/health.test.ts (8 nuovi test, totale 29), src/components/calculators/health/{Macro,BodyFat,Pregnancy,Ovulation}Calculator.tsx, 4 YAML EN, 4 pagine Astro, 4 embed pages, homepage e categoria salute aggiornate.
 Note: MacroCalculator con diet presets (Balanced/High Protein/Low Carb/Keto). BodyFatCalculator con US Navy method e gender-conditional hip input. PregnancyCalculator con trimester progress bar e gestational age. OvulationCalculator con cycle visualization. Health ora ha 8 calcolatori totali. 128 test verdi, 69 YAML validati, 124 pagine, build 8.13s.
 
-## STEP 3.4 — Math & Conversions Batch 2 (6 tool) ⬜
+## STEP 3.4 — Math & Conversions Batch 2 (6 tool) ✅
 ```
 PercentChange, Fraction, Scientific, Volume, LengthConverter, WeightConverter
-Commit: [STEP 3.4] Math and conversions batch 2
+Commit: [STEP 3.4] Math & conversions batch 2
 ```
+Completato: 2026-02-15
+File creati/modificati: src/lib/formulas/math.ts (13 nuove funzioni: gcd, lcm, fractionSimplify/Add/Sub/Mul/Div, fractionToDecimal, decimalToFraction, factorial, logBase, combination, permutation), src/lib/formulas/math.test.ts (25 nuovi test, totale 48), src/components/calculators/math/{PercentChange,Fraction,Scientific}Calculator.tsx, src/components/calculators/conversion/{Volume,Length,Weight}Converter.tsx, 6 YAML EN, 6 pagine Astro, 6 embed pages, homepage e categorie math/conversions aggiornate.
+Note: Math ora ha 5 calcolatori. Conversions ora ha 4 converter. 153 test verdi, 75 YAML validati, 136 pagine, build 8.82s.
 
 ## STEP 3.5 — Remaining Wave 1 tools ⬜
 ```
@@ -612,3 +615,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | 5 | 2026-02-15 | STEP 3.1 | Finance batch 2: 6 nuovi calcolatori EN (AutoLoan, Investment, ROI, Inflation, CurrencyConverter, Discount). 6 formule, 17 nuovi test (109 totali), 6 componenti Preact, 6 YAML, 6 pagine + 6 embed. Homepage e categoria finance aggiornate. 61 YAML validati, 108 pagine, build 7.56s. |
 | 5 | 2026-02-15 | STEP 3.2 | Finance batch 3: 4 nuovi calcolatori EN (Tip, SalesTax, VAT, Amortization). 3 nuove formule, 11 nuovi test (120 totali), 4 componenti Preact, 4 YAML, 4 pagine + 4 embed. Finance: 14 calcolatori totali. 65 YAML validati, 116 pagine, build 7.89s. |
 | 6 | 2026-02-15 | STEP 3.3 | Health batch 2: 4 nuovi calcolatori EN (Macro, BodyFat, Pregnancy, Ovulation). 4 nuove formule health, 8 nuovi test (128 totali), 4 componenti Preact, 4 YAML, 4 pagine + 4 embed. Health: 8 calcolatori totali. 69 YAML validati, 124 pagine, build 8.13s. |
+| 6 | 2026-02-15 | STEP 3.4 | Math & conversions batch 2: 6 nuovi tool EN (PercentChange, Fraction, Scientific, Volume, Length, Weight). 13 nuove funzioni math, 25 nuovi test (153 totali), 6 componenti Preact, 6 YAML, 6 pagine + 6 embed. Math: 5 tool, Conversions: 4 tool. 75 YAML validati, 136 pagine, build 8.82s. |
