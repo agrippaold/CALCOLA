@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+---
+
+<BaseLayout title="Our Methodology | CalcHub" description="How CalcHub builds and validates calculators. Our process ensures accuracy through peer-reviewed formulas, cross-validation, and regular updates." lang={lang}>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6">Our Methodology</h1>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">How We Build Calculators</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Every calculator on CalcHub follows a rigorous development and validation process. We do not publish tools that have not been verified against external sources.
+      </p>
+
+      <div class="space-y-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">1. Formula Sourcing</h3>
+          <p class="text-gray-700 text-sm">
+            All formulas come from peer-reviewed academic publications, government agency guidelines (WHO, CDC, Federal Reserve), or established textbooks. We cite the specific source on every calculator page.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">2. Implementation & Testing</h3>
+          <p class="text-gray-700 text-sm">
+            Each formula is implemented in TypeScript with strict type checking. We run at least 5 test scenarios per calculator, comparing results against 2 or more external references (established calculators, textbook examples, or official calculation tools).
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">3. Expert Review</h3>
+          <p class="text-gray-700 text-sm">
+            Financial calculators are reviewed by our financial analyst. Health calculators are reviewed by our nutritional biologist. Math tools are validated by our applied mathematics professor. Each reviewer verifies both the formula implementation and the educational content.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">4. Localization</h3>
+          <p class="text-gray-700 text-sm">
+            Calculators are adapted for each market with locally relevant defaults (currency, units, number formats), native keywords (not translated from English), and market-specific FAQ content. We do not machine-translate content.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">5. Ongoing Maintenance</h3>
+          <p class="text-gray-700 text-sm">
+            We update calculators when underlying data changes (tax rates, health guidelines) and review all tools quarterly for accuracy. Every page shows its last update date.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Standards</h2>
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Every formula verified against peer-reviewed sources
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Results cross-validated with at least 2 external references
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Domain expert review for YMYL categories (finance, health)
+        </li>
+        <li class="flex items-start gap-2">
+          <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          Quarterly accuracy reviews and data updates
+        </li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

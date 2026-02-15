@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.5
-**Prossimo step da eseguire:** STEP 0.5b
+**Ultimo step completato:** STEP 0.5b
+**Prossimo step da eseguire:** STEP 0.6
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -102,7 +102,7 @@ Completato: 2026-02-15
 File creati/modificati: src/layouts/{BaseLayout,ToolLayout,CategoryLayout}.astro, src/components/layout/{Header,Footer,Breadcrumb,SEOHead,AuthorByline}.astro, src/components/content/{HowItWorks,FormulaDisplay,FAQ,PracticalExamples,RelatedTools,AdPlacement}.astro
 Note: BaseLayout con RTL support per arabo. ToolLayout con template SEO killer completo (12 sezioni). Header con language switcher dropdown 25 lingue. Footer con link trust + link lingue visibili per Google. Breadcrumb con Schema BreadcrumbList microdata. SEOHead con canonical, hreflang 25 lingue, x-default, Open Graph. FAQ con Schema FAQPage JSON-LD. Build OK.
 
-## STEP 0.5b — Pagine Trust & E-E-A-T ⬜
+## STEP 0.5b — Pagine Trust & E-E-A-T ✅
 ```
 CRITICO per YMYL (finance + health). Google penalizza siti senza trust signals.
 
@@ -124,9 +124,9 @@ Azioni:
 Verifica: Schema Organization e Person validi, pagine trust accessibili
 Commit: [STEP 0.5b] Add E-E-A-T trust pages and author system
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/data/authors.ts, src/pages/en/{about,methodology,privacy-policy,terms-of-service}/index.astro
+Note: 4 autori con credenziali per categoria (finance, health, math, tech). About page con Schema Organization + Person. Methodology page con 5-step validation process. Privacy e Terms GDPR-compliant. Footer già configurato in STEP 0.5 con link trust. Build OK con 5 pagine generate.
 
 ## STEP 0.6 — Componenti Contenuto Statici ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1-0.5 | Setup Astro + struttura + i18n + Content Collection + layouts + componenti |
+| 1 | 2026-02-15 | STEP 0.1-0.5b | Setup Astro + struttura + i18n + Content Collection + layouts + componenti + E-E-A-T trust |

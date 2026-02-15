@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { AUTHORS } from '../../../data/authors';
+
+const lang = 'en';
+---
+
+<BaseLayout title="About CalcHub | Free Online Calculators" description="Learn about CalcHub, our team, and our mission to provide accurate, free calculators in 25 languages." lang={lang}>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6">About CalcHub</h1>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        CalcHub provides free, accurate online calculators for everyone. We believe that financial planning, health tracking, and mathematical computations should be accessible regardless of language or location.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Every calculator on CalcHub is built with verified formulas from peer-reviewed sources, tested against multiple external references, and available in 25 languages with locally relevant defaults.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6">Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {Object.values(AUTHORS).map((author) => (
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg flex-shrink-0">
+                {author.name.split(' ').map(n => n[0]).join('')}
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900">{author.name}</h3>
+                <p class="text-sm text-blue-600 mb-2">{author.role}</p>
+                <p class="text-sm text-gray-600 mb-3">{author.bio}</p>
+                <ul class="space-y-1">
+                  {author.credentials.map((cred) => (
+                    <li class="text-xs text-gray-500 flex items-center gap-1">
+                      <svg class="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                      {cred}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
+      <p class="text-gray-700">
+        Questions, feedback, or partnership inquiries: <a href="mailto:contact@calchub.com" class="text-blue-600 hover:underline">contact@calchub.com</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- Schema Organization -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CalcHub",
+    "url": "https://calchub.com",
+    "description": "Free online calculators in 25 languages",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@calchub.com",
+      "contactType": "customer service"
+    },
+    "founder": Object.values(AUTHORS).map(a => ({
+      "@type": "Person",
+      "name": a.name,
+      "jobTitle": a.role,
+      "description": a.bio
+    }))
+  })} />
+</BaseLayout>
