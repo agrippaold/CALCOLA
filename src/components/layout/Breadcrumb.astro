@@ -1,0 +1,36 @@
+---
+import { t } from '../../i18n/utils';
+
+interface Props {
+  tool: {
+    h1: string;
+    category: string;
+  };
+  lang: string;
+}
+
+const { tool, lang } = Astro.props;
+const categoryKey = `category.${tool.category}` as const;
+const categoryName = t(categoryKey, lang);
+---
+
+<nav class="text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
+  <ol class="flex items-center gap-1 flex-wrap" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href={`/${lang}/`} itemprop="item" class="hover:text-blue-600">
+        <span itemprop="name">CalcHub</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li class="before:content-['/'] before:mx-1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href={`/${lang}/${tool.category}/`} itemprop="item" class="hover:text-blue-600">
+        <span itemprop="name">{categoryName}</span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li class="before:content-['/'] before:mx-1 text-gray-900 font-medium" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{tool.h1}</span>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>

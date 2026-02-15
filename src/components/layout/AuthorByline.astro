@@ -1,0 +1,20 @@
+---
+import { t } from '../../i18n/utils';
+
+interface Props {
+  author: string;
+  reviewer?: string;
+  lastUpdated: string;
+  lang: string;
+}
+
+const { author, reviewer, lastUpdated, lang } = Astro.props;
+---
+
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500 mb-6">
+  <span>{t('content.writtenBy', lang)} <strong class="text-gray-700">{author}</strong></span>
+  {reviewer && (
+    <span>| {t('content.reviewedBy', lang)} <strong class="text-gray-700">{reviewer}</strong></span>
+  )}
+  <span>| {t('content.lastUpdated', lang)}: {lastUpdated}</span>
+</div>

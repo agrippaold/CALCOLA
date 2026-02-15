@@ -1,0 +1,38 @@
+---
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { title = 'CalcHub', description = '', lang = 'en' } = Astro.props;
+
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+---
+
+<!DOCTYPE html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <slot name="head" />
+    {!Astro.slots.has('head') && (
+      <>
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+      </>
+    )}
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+    <Header lang={lang} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

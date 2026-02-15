@@ -1,0 +1,23 @@
+---
+import { t } from '../../i18n/utils';
+
+interface Props {
+  formula: string;
+  explanation: string;
+  source: string;
+  lang: string;
+}
+
+const { formula, explanation, source, lang } = Astro.props;
+---
+
+<section class="mb-12 bg-blue-50 rounded-xl p-6 border border-blue-100">
+  <h3 class="text-lg font-semibold text-gray-900 mb-3">{t('content.formula', lang)}</h3>
+  <div class="bg-white rounded-lg p-4 mb-4 font-mono text-lg text-center text-blue-800 border border-blue-200">
+    {formula}
+  </div>
+  <p class="text-gray-700 text-sm mb-3">{explanation}</p>
+  <p class="text-xs text-gray-500">
+    <span class="font-medium">{t('content.source', lang)}:</span> {source}
+  </p>
+</section>

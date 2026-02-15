@@ -1,0 +1,20 @@
+---
+import { t } from '../../i18n/utils';
+
+interface Props {
+  title: string;
+  content: string;
+  lang: string;
+}
+
+const { title, content, lang } = Astro.props;
+---
+
+<section class="mb-12">
+  <h2 class="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+  <div class="text-gray-700 leading-relaxed space-y-4">
+    {content.split('\n\n').map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </div>
+</section>

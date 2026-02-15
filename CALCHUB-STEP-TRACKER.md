@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.4
-**Prossimo step da eseguire:** STEP 0.5
+**Ultimo step completato:** STEP 0.5
+**Prossimo step da eseguire:** STEP 0.5b
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -83,7 +83,7 @@ Completato: 2026-02-15
 File creati/modificati: src/content.config.ts, src/content/tools/en/bmi-calculator.yaml
 Note: Schema Zod con validazione stringhe min/max, array min/max. Usato content.config.ts (Astro 5 naming) con glob loader per YAML. BMI calculator YAML validato senza errori. Build OK.
 
-## STEP 0.5 — Layout e Componenti Base ⬜
+## STEP 0.5 — Layout e Componenti Base ✅
 ```
 Azioni:
 1. Creare src/layouts/BaseLayout.astro — HTML base, <head>, font loading, Tailwind
@@ -98,9 +98,9 @@ Azioni:
 Verifica: Pagina test renderizza con tutti i componenti layout
 Commit: [STEP 0.5] Create layouts and core layout components
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/layouts/{BaseLayout,ToolLayout,CategoryLayout}.astro, src/components/layout/{Header,Footer,Breadcrumb,SEOHead,AuthorByline}.astro, src/components/content/{HowItWorks,FormulaDisplay,FAQ,PracticalExamples,RelatedTools,AdPlacement}.astro
+Note: BaseLayout con RTL support per arabo. ToolLayout con template SEO killer completo (12 sezioni). Header con language switcher dropdown 25 lingue. Footer con link trust + link lingue visibili per Google. Breadcrumb con Schema BreadcrumbList microdata. SEOHead con canonical, hreflang 25 lingue, x-default, Open Graph. FAQ con Schema FAQPage JSON-LD. Build OK.
 
 ## STEP 0.5b — Pagine Trust & E-E-A-T ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1, 0.2, 0.3, 0.4 | Setup Astro + struttura + i18n + Content Collection schema |
+| 1 | 2026-02-15 | STEP 0.1-0.5 | Setup Astro + struttura + i18n + Content Collection + layouts + componenti |
