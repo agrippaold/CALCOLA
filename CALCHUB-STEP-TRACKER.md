@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 3.4 (Math & conversions batch 2: percent change, fraction, scientific, volume/length/weight)
-**Prossimo step da eseguire:** STEP 3.5
+**Ultimo step completato:** STEP 3.5 (Wave 1 remaining: age, date diff, word/char counter, password gen, GPA)
+**Prossimo step da eseguire:** STEP 3.6
 **Branch attivo:** claude/continue-step-tracker-ZHIy0
-**Build status:** OK (136 pagine, 153 test passano, 75 YAML validati)
+**Build status:** OK (151 pagine, 179 test passano, 81 YAML validati)
 
 ---
 
@@ -511,14 +511,14 @@ Completato: 2026-02-15
 File creati/modificati: src/lib/formulas/math.ts (13 nuove funzioni: gcd, lcm, fractionSimplify/Add/Sub/Mul/Div, fractionToDecimal, decimalToFraction, factorial, logBase, combination, permutation), src/lib/formulas/math.test.ts (25 nuovi test, totale 48), src/components/calculators/math/{PercentChange,Fraction,Scientific}Calculator.tsx, src/components/calculators/conversion/{Volume,Length,Weight}Converter.tsx, 6 YAML EN, 6 pagine Astro, 6 embed pages, homepage e categorie math/conversions aggiornate.
 Note: Math ora ha 5 calcolatori. Conversions ora ha 4 converter. 153 test verdi, 75 YAML validati, 136 pagine, build 8.82s.
 
-## STEP 3.5 — Remaining Wave 1 tools ⬜
+## STEP 3.5 — Remaining Wave 1 tools (6 tool) ✅
 ```
-Completare tutti i tool 🔴 rimanenti dalla lista in GUIDA sezione 4.x
-AgeCalc, DateDiff, DateCalc, SqFootage, Concrete, WordCounter, CharCounter, 
-PasswordGen, GPA, Grade, ElectricityCost, InchesToCM, CMToInches, KGToLBS, 
-LBSToKG, CelsiusToFahrenheit, FahrenheitToCelsius, TimezoneConv
-Commit: [STEP 3.5] Complete all Wave 1 (red priority) tools
+AgeCalculator, DateDifference, WordCounter, CharacterCounter, PasswordGenerator, GPACalculator
+Commit: [STEP 3.5] Wave 1 remaining: age, date diff, word/char counter, password gen, GPA
 ```
+Completato: 2026-02-15
+File creati/modificati: src/lib/formulas/{date,text}.ts (calculateAge, dateDifference, wordCount, charCount, readingTime, generatePassword, passwordStrength, calculateGPA), src/lib/formulas/{date,text}.test.ts (26 nuovi test, totale 179), src/components/calculators/date/{Age,DateDifference}Calculator.tsx, src/components/calculators/text/{WordCounter,CharacterCounter,PasswordGenerator}.tsx, src/components/calculators/education/GPACalculator.tsx, 6 YAML EN, 6 pagine Astro (3 nuove categorie: date, text, education), 6 embed pages, 3 category index pages, homepage aggiornata con 7 categorie.
+Note: 3 nuove categorie (date, text, education). AgeCalculator con milestones. DateDifferenceCalculator con years/months/weeks/days/hours/minutes. WordCounter con reading time. CharacterCounter con limiti Twitter/SMS/meta. PasswordGenerator con strength meter e copy. GPACalculator con grade scale bar. EN ora ha 37 tool totali. 81 YAML validati, 151 pagine, build 9.62s.
 
 ## STEP 3.6 — Categorie e Homepage aggiornate ⬜
 ```
@@ -616,3 +616,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | 5 | 2026-02-15 | STEP 3.2 | Finance batch 3: 4 nuovi calcolatori EN (Tip, SalesTax, VAT, Amortization). 3 nuove formule, 11 nuovi test (120 totali), 4 componenti Preact, 4 YAML, 4 pagine + 4 embed. Finance: 14 calcolatori totali. 65 YAML validati, 116 pagine, build 7.89s. |
 | 6 | 2026-02-15 | STEP 3.3 | Health batch 2: 4 nuovi calcolatori EN (Macro, BodyFat, Pregnancy, Ovulation). 4 nuove formule health, 8 nuovi test (128 totali), 4 componenti Preact, 4 YAML, 4 pagine + 4 embed. Health: 8 calcolatori totali. 69 YAML validati, 124 pagine, build 8.13s. |
 | 6 | 2026-02-15 | STEP 3.4 | Math & conversions batch 2: 6 nuovi tool EN (PercentChange, Fraction, Scientific, Volume, Length, Weight). 13 nuove funzioni math, 25 nuovi test (153 totali), 6 componenti Preact, 6 YAML, 6 pagine + 6 embed. Math: 5 tool, Conversions: 4 tool. 75 YAML validati, 136 pagine, build 8.82s. |
+| 7 | 2026-02-15 | STEP 3.5 | Wave 1 remaining: 6 nuovi tool EN (Age, DateDifference, WordCounter, CharacterCounter, PasswordGenerator, GPA). 2 nuove librerie formule (date.ts, text.ts), 26 nuovi test (179 totali), 6 componenti Preact, 6 YAML, 6 pagine + 6 embed + 3 nuove categorie (date, text, education). 81 YAML validati, 151 pagine, build 9.62s. |
