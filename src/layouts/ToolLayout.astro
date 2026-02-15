@@ -10,6 +10,7 @@ import PracticalExamples from '../components/content/PracticalExamples.astro';
 import RelatedTools from '../components/content/RelatedTools.astro';
 import AdPlacement from '../components/content/AdPlacement.astro';
 import EmbedCode from '../components/content/EmbedCode.astro';
+import ShareButtons from '../components/content/ShareButtons.astro';
 import { t } from '../i18n/utils';
 
 interface Props {
@@ -101,7 +102,10 @@ const { tool, lang } = Astro.props;
     <!-- 13. EMBED CODE -->
     <EmbedCode toolSlug={tool.slug} toolTitle={tool.h1} lang={lang} />
 
-    <!-- 14. LAST UPDATED -->
+    <!-- 14. SHARE BUTTONS -->
+    <ShareButtons title={tool.h1} url={`https://calchub.com/${lang}/${tool.category}/${tool.slug}/`} />
+
+    <!-- 15. LAST UPDATED -->
     <p class="text-sm text-gray-400 mt-8">
       {t('content.lastUpdated', lang)}: {tool.lastUpdated}
     </p>
