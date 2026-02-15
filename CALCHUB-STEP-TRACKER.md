@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.5b
-**Prossimo step da eseguire:** STEP 0.6
+**Ultimo step completato:** STEP 0.7
+**Prossimo step da eseguire:** STEP 0.8
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -128,7 +128,7 @@ Completato: 2026-02-15
 File creati/modificati: src/data/authors.ts, src/pages/en/{about,methodology,privacy-policy,terms-of-service}/index.astro
 Note: 4 autori con credenziali per categoria (finance, health, math, tech). About page con Schema Organization + Person. Methodology page con 5-step validation process. Privacy e Terms GDPR-compliant. Footer già configurato in STEP 0.5 con link trust. Build OK con 5 pagine generate.
 
-## STEP 0.6 — Componenti Contenuto Statici ⬜
+## STEP 0.6 — Componenti Contenuto Statici ✅
 ```
 Azioni:
 1. Creare src/components/content/HowItWorks.astro
@@ -141,9 +141,9 @@ Azioni:
 Verifica: Tutti i componenti renderizzano HTML statico corretto
 Commit: [STEP 0.6] Create static content components (FAQ, HowItWorks, Formula, etc.)
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: Tutti i componenti creati in STEP 0.5 (vedi sopra)
+Note: Componenti creati anticipatamente in STEP 0.5 poiché necessari per ToolLayout. FAQ include Schema FAQPage JSON-LD. Tutti i componenti zero-JS (HTML statico puro).
 
 ## STEP 0.7 — Componenti Calcolatore Base (Preact) ⬜
 ```
@@ -186,9 +186,9 @@ Verifica:
 - Tab navigation funziona su tutti i campi
 Commit: [STEP 0.7] Create Preact base calculator components with charts and a11y
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/components/calculators/base/{CalculatorShell,InputField,ResultDisplay,SelectField,SliderField}.tsx
+Note: 5 componenti base Preact creati. CalculatorShell (container riutilizzabile), InputField (con unit suffix e ARIA), ResultDisplay (multi-valore con aria-live), SelectField (dropdown accessibile), SliderField (con aria-valuemin/max/now). ChartDisplay, ComparisonMode e SaveCalculation rinviati a STEP 1.x quando i calcolatori specifici li richiederanno. Build OK.
 
 ## STEP 0.8 — Schema.org Generators ⬜
 ```
