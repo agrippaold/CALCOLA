@@ -1,0 +1,79 @@
+id: "percentage-calculator"
+category: "math"
+calculatorComponent: "PercentageCalculator"
+
+title: "Percentage Calculator - All Percent Calculations | CalcHub"
+metaDescription: "Calculate percentages instantly: find X% of Y, percent change, percent increase/decrease, and more. Free percentage calculator with multiple modes."
+h1: "Percentage Calculator"
+slug: "percentage-calculator"
+
+primaryKeyword: "percentage calculator"
+secondaryKeywords:
+  - "percent calculator"
+  - "calculate percentage"
+  - "percent change calculator"
+  - "percentage increase calculator"
+
+intro: "Percentages show up everywhere, from calculating tips and discounts to analyzing investment returns and test scores. This calculator handles five different types of percentage problems so you do not have to remember the formulas. Select the calculation mode you need, enter your values, and get an instant result. Whether you need to find what 15% of a number is or calculate the percent change between two values, this tool covers it."
+
+howItWorks:
+  title: "How Percentage Calculations Work"
+  content: "Percentages express a number as a fraction of 100. The word itself comes from the Latin per centum, meaning by the hundred. This calculator handles five distinct percentage operations, each with its own formula. Finding X percent of Y multiplies Y by X divided by 100. For example, 20% of 150 equals 150 times 0.20 equals 30. The reverse question asks what percent X is of Y, calculated as X divided by Y times 100. If 25 students out of 200 passed, that is 25 divided by 200 times 100 equals 12.5%. Percent change measures the relative difference between an old value and a new value. The formula divides the difference (new minus old) by the absolute value of the old number, then multiplies by 100. If a stock went from $80 to $100, the change is (100-80)/80 times 100 equals 25%. If it went from $100 to $80, the change is (80-100)/100 times 100 equals negative 20%. Notice that a 25% increase followed by a 20% decrease returns to the original value, not a 25% decrease. This asymmetry catches many people off guard. Percentage increase adds a percentage to a value: result equals value times (1 plus percent/100). A $50 item with a 8% tax becomes 50 times 1.08 equals $54. Percentage decrease subtracts: result equals value times (1 minus percent/100). A $200 item with a 30% discount becomes 200 times 0.70 equals $140. Percentages greater than 100 are perfectly valid and common in finance. A 150% return means you gained 1.5 times your original investment, ending up with 2.5 times what you started with. Negative percentages indicate decreases. These calculations form the backbone of everyday math, from sales tax and tipping to grade calculations, business metrics, and statistical analysis."
+  formula: "X% of Y = (X/100) × Y"
+  formulaExplanation: "Other modes: X is what % of Y = (X/Y) × 100. Percent change = ((new-old)/|old|) × 100. Increase = value × (1+%/100). Decrease = value × (1-%/100)."
+  academicSource: "National Council of Teachers of Mathematics. (2000). Principles and Standards for School Mathematics. NCTM."
+
+faqs:
+  - question: "How do I calculate a percentage of a number?"
+    answer: "Multiply the number by the percentage divided by 100. To find 15% of 200, calculate 200 times 0.15 equals 30. A shortcut: to find 10% of any number, move the decimal point one place left. So 10% of 200 is 20. Then 15% is 20 plus half of 20 (which is 10) equals 30. This mental math technique works well for tips and quick estimates."
+  - question: "How do I find what percentage one number is of another?"
+    answer: "Divide the part by the whole and multiply by 100. If you scored 42 out of 50 on a test, your percentage is (42/50) times 100 equals 84%. If your expenses are $1,200 out of a $4,000 monthly income, expenses represent (1200/4000) times 100 equals 30% of your income. The key is identifying which number is the part and which is the whole."
+  - question: "How do I calculate percent change between two values?"
+    answer: "Subtract the old value from the new value, divide by the absolute value of the old value, then multiply by 100. If rent went from $1,500 to $1,650, the change is (1650-1500)/1500 times 100 equals 10% increase. If your portfolio dropped from $50,000 to $42,000, the change is (42000-50000)/50000 times 100 equals negative 16% (a 16% decrease)."
+  - question: "Why is a 50% increase followed by a 50% decrease not back to the original?"
+    answer: "Because the second percentage applies to a different base number. Starting at 100, a 50% increase gives 150. A 50% decrease of 150 gives 75, not 100. The decrease applies to the larger number (150), removing more than the original increase added. To return to the original after a 50% increase, you need a 33.3% decrease. This asymmetry is important in finance: a 50% market loss requires a 100% gain to break even."
+  - question: "How do I calculate a tip percentage?"
+    answer: "To tip 20% on a $65 restaurant bill: find 10% ($6.50) and double it ($13.00). For 15%, take 10% ($6.50) and add half of that ($3.25) for $9.75. For 18%, find 20% ($13.00) and subtract 2% ($1.30) for $11.70. The quick 10% method works because moving the decimal point one place left always gives exactly 10% of any number."
+  - question: "How do percentages relate to fractions and decimals?"
+    answer: "Percentages, fractions, and decimals are three ways of expressing the same value. 25% equals 25/100 equals 1/4 equals 0.25. To convert a percentage to a decimal, divide by 100 (move decimal two places left). To convert a decimal to a percentage, multiply by 100 (move decimal two places right). To convert a fraction to a percentage, divide numerator by denominator and multiply by 100. These conversions are useful because different contexts favor different formats: stores use percentages, cooking uses fractions, and calculations use decimals."
+
+examples:
+  - title: "Shopping discount"
+    scenario: "Finding the sale price of a $85 jacket with 25% off"
+    inputs:
+      mode: "decrease"
+      value: 85
+      percent: 25
+    expectedResult: "Result: $63.75"
+    explanation: "25% of $85 is $21.25. The sale price is $85 minus $21.25 equals $63.75. You save $21.25 on this purchase."
+  - title: "Investment return"
+    scenario: "Calculating percent change from $12,000 investment to $15,600 current value"
+    inputs:
+      mode: "change"
+      oldValue: 12000
+      newValue: 15600
+    expectedResult: "Percent change: +30%"
+    explanation: "The investment gained $3,600 on the original $12,000, which is a 30% return. This calculation works the same way for stocks, real estate, or any asset."
+  - title: "Grade percentage"
+    scenario: "Finding what percentage 37 correct answers is out of 45 total questions"
+    inputs:
+      mode: "is_what"
+      valueX: 37
+      valueY: 45
+    expectedResult: "37 is 82.22% of 45"
+    explanation: "Scoring 37 out of 45 gives a grade of approximately 82.2%. This method works for any test or assessment where you need to convert a score to a percentage."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
