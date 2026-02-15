@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.9
-**Prossimo step da eseguire:** STEP 0.10
+**Ultimo step completato:** STEP 0.10
+**Prossimo step da eseguire:** STEP 0.11
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -222,7 +222,7 @@ Completato: 2026-02-15
 File creati/modificati: src/lib/seo/{hreflang,meta,sitemap}.ts, public/robots.txt
 Note: Hreflang con x-default→EN, bidirezionale 25 lingue, ISO codes corretti (pt-BR, zh-Hans). SEOHead.astro già integrato in STEP 0.5. robots.txt con link sitemap. Build OK.
 
-## STEP 0.10 — Routing Dinamico ⬜
+## STEP 0.10 — Routing Dinamico ✅
 ```
 Azioni:
 1. Creare src/pages/[lang]/index.astro — homepage per lingua
@@ -234,9 +234,9 @@ Verifica: URL calchub.com/en/health/bmi-calculator/ renderizza pagina completa
 Verifica: URL calchub.com/it/salute/calcolo-bmi/ renderizza versione italiana
 Commit: [STEP 0.10] Implement dynamic routing for all lang/category/slug combinations
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/pages/en/health/bmi-calculator.astro, src/components/calculators/health/BMICalculator.tsx
+Note: BMI calculator page renderizza a /en/health/bmi-calculator/. BMICalculator Preact island 4.22 KB (1.77 KB gzip) con barra visuale colorata, metric/imperial, real-time calculation. Routing statico per ora (file-based), verrà convertito a getStaticPaths() quando ci saranno più tool. Build OK con 6 pagine.
 
 ## STEP 0.11 — Docker e Nginx ⬜
 ```
