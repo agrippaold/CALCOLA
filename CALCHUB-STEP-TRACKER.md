@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.12 (FASE 0 COMPLETA)
-**Prossimo step da eseguire:** STEP 1.1
-**Branch attivo:** claude/start-step-0.1-OD4hw
-**Build status:** OK (npm run build passa senza errori)
+**Ultimo step completato:** STEP 1.1
+**Prossimo step da eseguire:** STEP 1.2
+**Branch attivo:** claude/continue-step-tracker-BA8lt
+**Build status:** OK (npm run build passa senza errori, 92 test passano)
 
 ---
 
@@ -295,7 +295,7 @@ Al completamento di tutti gli step 0.x:
 Obiettivo: 10 calcolatori funzionanti in EN con contenuto SEO completo.
 Questi sono i tool ad altissima priorità 🔴.
 
-## STEP 1.1 — Formula Library ⬜
+## STEP 1.1 — Formula Library ✅
 ```
 Azioni:
 1. Creare src/lib/formulas/finance.ts:
@@ -312,9 +312,9 @@ Azioni:
 Verifica: Tutti i test passano, risultati verificati con fonti esterne
 Commit: [STEP 1.1] Create formula library with unit tests
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/lib/formulas/{finance,health,math,conversions,index}.ts, src/lib/formulas/{finance,health,math,conversions}.test.ts, package.json (aggiunto vitest + scripts test)
+Note: 4 librerie formule pure (no UI). Finance: 7 funzioni (mortgage, compound interest, loan, simple interest, ROI, savings growth, amortization schedule). Health: 6 funzioni (BMI, BMI category, BMR Mifflin-St Jeor, TDEE, calorie needs, macro split). Math: 10 funzioni (percentage, percent change/of/increase/decrease, area rectangle/circle/triangle/trapezoid/ellipse). Conversions: 9 funzioni (temperature 6x, length/weight/volume via intermediate unit). 92 test tutti verdi. Vitest installato come test framework. Build OK.
 
 ## STEP 1.2 — Calcolatore BMI (tool pilota) ⬜
 ```
@@ -647,3 +647,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
 | 1 | 2026-02-15 | STEP 0.1-0.12 (FASE 0 COMPLETA) | Setup Astro completo: i18n 25 lingue, Content Collection, layouts, componenti Preact, Schema.org, hreflang, Docker, Nginx, validation, CI. BMI calculator funzionante. |
+| 2 | 2026-02-15 | STEP 1.1 (in corso FASE 1) | Formula library: finance (7 fn), health (6 fn), math (10 fn), conversions (9 fn). 92 unit test con Vitest. |
