@@ -1,0 +1,84 @@
+id: "compound-interest-calculator"
+category: "finance"
+calculatorComponent: "CompoundInterestCalculator"
+
+title: "Calcolo Interesse Composto - Crescita nel Tempo | CalcHub"
+metaDescription: "Scopri come cresce il tuo capitale con l'interesse composto. Calcola il valore futuro con diversi tassi, orizzonti temporali e frequenze di capitalizzazione."
+h1: "Calcolo Interesse Composto"
+slug: "calcolo-interesse-composto"
+
+primaryKeyword: "calcolo interesse composto"
+secondaryKeywords:
+  - "interesse composto formula"
+  - "calcolo interessi"
+  - "crescita investimento"
+  - "capitalizzazione composta"
+
+intro: "L'interesse composto è il meccanismo che trasforma piccoli risparmi costanti in un patrimonio significativo nel corso del tempo. La sua forza risiede nella capitalizzazione: gli interessi maturati vengono reinvestiti e a loro volta producono nuovi interessi, generando una crescita esponenziale anziché lineare. Questo calcolatore ti mostra esattamente come evolve il tuo investimento iniziale quando i rendimenti vengono reinvestiti. Inserisci il capitale di partenza, il tasso di interesse, l'orizzonte temporale e la frequenza di capitalizzazione per osservare l'effetto valanga in azione."
+
+howItWorks:
+  title: "Come funziona l'interesse composto"
+  content: "L'interesse composto calcola il rendimento non solo sul capitale iniziale, ma anche su tutti gli interessi precedentemente accumulati. Questo meccanismo genera una crescita esponenziale, ben diversa dalla crescita lineare dell'interesse semplice, dove il rendimento viene calcolato sempre e solo sul capitale originario. La formula moltiplica il capitale iniziale per uno più il tasso periodale elevato al numero totale di periodi di capitalizzazione. Vediamo un esempio concreto con numeri realistici per il contesto italiano: se si investono €10.000 al 5% annuo con capitalizzazione mensile per 30 anni, il risultato finale è di €44.677. Con l'interesse semplice, lo stesso investimento produrrebbe soltanto €25.000. La differenza di quasi €20.000 deriva interamente dall'effetto della capitalizzazione composta, ovvero dal fatto che gli interessi dei periodi precedenti generano a loro volta nuovi interessi. La frequenza di capitalizzazione incide più di quanto si pensi comunemente. Gli stessi €10.000 al 5% per 30 anni producono €43.219 con capitalizzazione annuale, €44.402 con capitalizzazione trimestrale e €44.677 con capitalizzazione mensile. La capitalizzazione giornaliera porta il risultato a €44.816. Il salto più significativo è quello fra capitalizzazione annuale e mensile, mentre la differenza fra mensile e giornaliera è contenuta. Il tempo è la variabile più potente in questa equazione: raddoppiare l'orizzonte temporale produce un risultato ben superiore al doppio, proprio grazie alla natura esponenziale della crescita. La Regola del 72 offre un metodo rapido per stimare in quanti anni il capitale raddoppia: basta dividere 72 per il tasso di interesse annuo. Al 6%, il capitale raddoppia in circa 12 anni. Questo principio spiega perché iniziare a investire presto, anche con somme modeste, produce risultati enormemente migliori rispetto a partire in ritardo con importi più elevati. Nel contesto italiano, è utile considerare anche l'effetto della tassazione sulle rendite finanziarie, attualmente fissata al 26% per la maggior parte degli strumenti finanziari e al 12,5% per i titoli di Stato come BOT e BTP, che riduce il rendimento netto effettivo."
+  formula: "A = P(1 + r/n)^(nt)"
+  formulaExplanation: "A = valore futuro, P = capitale iniziale, r = tasso di interesse annuo (in forma decimale), n = numero di capitalizzazioni per anno, t = tempo in anni"
+  academicSource: "Bodie, Z., Kane, A., & Marcus, A. J. (2021). Investments (12th ed.). McGraw-Hill Education."
+
+faqs:
+  - question: "Qual è la differenza tra interesse semplice e interesse composto?"
+    answer: "L'interesse semplice viene calcolato esclusivamente sul capitale iniziale, producendo una crescita lineare e costante nel tempo. L'interesse composto, invece, calcola gli interessi sia sul capitale originario sia su tutti gli interessi accumulati nei periodi precedenti, generando una crescita esponenziale che accelera progressivamente. Su un investimento di €10.000 al 5% per 20 anni, l'interesse semplice produce €10.000 di rendimento (totale €20.000), mentre l'interesse composto genera circa €16.533 (totale €26.533). Più lungo è l'orizzonte temporale, più la differenza diventa marcata e favorevole alla capitalizzazione composta."
+  - question: "Ogni quanto devono essere capitalizzati gli interessi?"
+    answer: "Una capitalizzazione più frequente produce rendimenti leggermente superiori a parità di tasso nominale. La capitalizzazione mensile è la più diffusa per conti deposito e strumenti di investimento in Italia. La differenza fra capitalizzazione mensile e giornaliera è trascurabile nella pratica. Per un investimento di €10.000 al 5% su 10 anni: la capitalizzazione annuale produce €16.289, quella mensile €16.470 e quella giornaliera €16.487. Il passaggio da annuale a mensile è apprezzabile, mentre da mensile a giornaliera si aggiungono meno di €17 in un decennio. Per la maggior parte degli investitori, concentrarsi sul tasso offerto è più importante della frequenza di capitalizzazione."
+  - question: "Cos'è la Regola del 72 e come si applica?"
+    answer: "La Regola del 72 è un calcolo mentale rapido per stimare in quanti anni un investimento raddoppia di valore grazie all'interesse composto. Si divide semplicemente 72 per il tasso di interesse annuo. Al 4% il capitale raddoppia in circa 18 anni (72 diviso 4). Al 6% raddoppia in circa 12 anni. All'8% bastano circa 9 anni. Questa approssimazione funziona al meglio con tassi compresi fra il 4% e il 12% e perde precisione con tassi molto alti o molto bassi. È uno strumento utile per valutare rapidamente diverse opportunità di investimento senza ricorrere a formule complesse."
+  - question: "L'interesse composto gioca contro di me quando ho debiti?"
+    answer: "L'interesse composto funziona in modo identico anche con i debiti, ma in senso opposto: lavora contro il debitore anziché a suo favore. I debiti sulle carte di credito revolving, ad esempio, capitalizzano gli interessi sugli importi non pagati. Un debito di €5.000 al tasso del 18% annuo, se lasciato senza rimborsi, cresce a circa €5.956 dopo un anno e supera i €11.400 dopo cinque anni. Questo è il motivo per cui pagare solo il minimo sulle carte di credito è estremamente costoso e perché i debiti ad alto tasso dovrebbero avere la priorità assoluta nel piano di rimborso."
+  - question: "Quale rendimento realistico posso aspettarmi dai miei investimenti?"
+    answer: "I rendimenti variano in base allo strumento scelto e al livello di rischio accettato. I conti deposito italiani offrono attualmente tassi fra il 2% e il 4% lordo. I BTP (Buoni del Tesoro Poliennali) offrono rendimenti variabili in funzione della durata, generalmente fra il 3% e il 4,5%. Un portafoglio diversificato di azioni ha storicamente reso circa il 7-8% annuo lordo nel lungo periodo, ma con volatilità significativa. I fondi comuni bilanciati si collocano tipicamente fra il 4% e il 6%. Per proiezioni a lungo termine, utilizzare un rendimento netto del 4-5% dopo tasse e inflazione rappresenta una stima prudente e ragionevole per un portafoglio diversificato."
+  - question: "Come incide l'inflazione sulla crescita dell'interesse composto?"
+    answer: "L'inflazione erode il potere d'acquisto dei rendimenti futuri. Se un investimento rende il 6% annuo ma l'inflazione media è del 2,5%, il rendimento reale (al netto dell'inflazione) è di circa il 3,5%. Su €10.000 investiti per 30 anni al 6% nominale, il valore nominale finale sarebbe circa €57.435, ma il potere d'acquisto effettivo equivale a circa €27.400 in euro di oggi. L'inflazione italiana è stata particolarmente volatile negli ultimi anni, con picchi dell'8,7% nel 2022 seguiti da un rientro verso il 2%. Nella pianificazione finanziaria a lungo termine, è essenziale considerare sempre i rendimenti reali e non solo quelli nominali per evitare di sovrastimare la crescita effettiva del proprio patrimonio."
+
+examples:
+  - title: "Investimento a lungo termine in un fondo azionario"
+    scenario: "Investimento di €10.000 al 6% annuo con capitalizzazione mensile per 30 anni"
+    inputs:
+      principal: 10000
+      annualRate: 6
+      years: 30
+      compounding: "monthly"
+    expectedResult: "Valore futuro: €60.225,75 | Interessi maturati: €50.225,75"
+    explanation: "Il capitale iniziale di €10.000 si moltiplica per oltre sei volte in 30 anni. La crescita accelera nel tempo: dopo 10 anni il valore è di circa €18.194, dopo 20 anni circa €33.102, e nell'ultimo decennio si aggiungono oltre €27.000. Questo dimostra come la pazienza sia l'alleata principale dell'investitore."
+  - title: "Conto deposito vincolato"
+    scenario: "Deposito di €20.000 al 3,5% con capitalizzazione annuale per 5 anni"
+    inputs:
+      principal: 20000
+      annualRate: 3.5
+      years: 5
+      compounding: "annual"
+    expectedResult: "Valore futuro: €23.754,73 | Interessi maturati: €3.754,73"
+    explanation: "Un conto deposito vincolato offre una crescita moderata ma sicura, protetta dal Fondo Interbancario di Tutela dei Depositi fino a €100.000. Gli interessi lordi di €3.755 vanno decurtati della ritenuta fiscale del 26%, lasciando un rendimento netto di circa €2.778."
+  - title: "Confronto fra capitalizzazione annuale e mensile"
+    scenario: "Confronto di €15.000 al 5% per 20 anni con capitalizzazione annuale rispetto a mensile"
+    inputs:
+      principal: 15000
+      annualRate: 5
+      years: 20
+      compounding: "annual"
+    expectedResult: "Annuale: €39.799,58 | Mensile: €40.979,16"
+    explanation: "La capitalizzazione mensile produce circa €1.180 in più rispetto a quella annuale sullo stesso capitale e tasso in 20 anni. Sebbene la differenza percentuale sia contenuta (circa il 3%), rappresenta un guadagno aggiuntivo ottenuto semplicemente grazie a una capitalizzazione più frequente degli interessi."
+
+relatedTools:
+  - "savings-calculator"
+  - "mortgage-calculator"
+  - "loan-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

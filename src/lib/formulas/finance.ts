@@ -111,6 +111,155 @@ export function savingsGrowth(
 }
 
 /**
+ * Auto loan monthly payment with down payment and trade-in.
+ * @param vehiclePrice  Total vehicle price
+ * @param downPayment   Down payment amount
+ * @param tradeInValue  Trade-in value of existing vehicle
+ * @param annualRate    Annual interest rate as percentage
+ * @param years         Loan term in years
+ */
+export function autoLoanPayment(
+  vehiclePrice: number,
+  downPayment: number,
+  tradeInValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  const loanAmount = vehiclePrice - downPayment - tradeInValue;
+  if (loanAmount <= 0) return 0;
+  return mortgagePayment(loanAmount, annualRate, years);
+}
+
+/**
+ * Investment future value with initial amount and regular contributions.
+ * @param initialAmount   Starting investment
+ * @param monthlyContrib  Monthly contribution
+ * @param annualReturn    Expected annual return as percentage
+ * @param years           Investment horizon in years
+ */
+export function investmentGrowth(
+  initialAmount: number,
+  monthlyContrib: number,
+  annualReturn: number,
+  years: number,
+): number {
+  return savingsGrowth(initialAmount, monthlyContrib, annualReturn, years);
+}
+
+/**
+ * Adjust a value for inflation (what today's amount will buy in the future).
+ * Formula: adjustedValue = presentValue / (1 + rate/100)^years
+ */
+export function inflationAdjust(
+  presentValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  if (years <= 0 || annualRate === 0) return presentValue;
+  return presentValue / Math.pow(1 + annualRate / 100, years);
+}
+
+/**
+ * Future cost of something accounting for inflation.
+ * Formula: futureValue = presentValue * (1 + rate/100)^years
+ */
+export function inflationFutureValue(
+  presentValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  if (years <= 0 || annualRate === 0) return presentValue;
+  return presentValue * Math.pow(1 + annualRate / 100, years);
+}
+
+/**
+ * Convert currency using an exchange rate.
+ * @param amount  Amount in source currency
+ * @param rate    Exchange rate (1 source = rate target)
+ */
+export function currencyConvert(amount: number, rate: number): number {
+  if (rate <= 0) return 0;
+  return amount * rate;
+}
+
+/**
+ * Calculate discount price and savings.
+ * @param originalPrice  Original price
+ * @param discountPct    Discount percentage (e.g. 20 for 20%)
+ */
+export function discountPrice(
+  originalPrice: number,
+  discountPct: number,
+): { finalPrice: number; savings: number } {
+  if (originalPrice <= 0 || discountPct <= 0) {
+    return { finalPrice: originalPrice, savings: 0 };
+  }
+  const savings = originalPrice * (discountPct / 100);
+  return { finalPrice: originalPrice - savings, savings };
+}
+
+/**
+ * Calculate tip amount and total bill.
+ * @param billAmount   Bill before tip
+ * @param tipPercent   Tip percentage (e.g. 20 for 20%)
+ * @param splitWays    Number of people splitting the bill (default 1)
+ */
+export function tipCalculation(
+  billAmount: number,
+  tipPercent: number,
+  splitWays: number = 1,
+): { tipAmount: number; totalBill: number; perPerson: number } {
+  if (billAmount <= 0 || tipPercent < 0) {
+    return { tipAmount: 0, totalBill: billAmount, perPerson: billAmount };
+  }
+  const tipAmount = billAmount * (tipPercent / 100);
+  const totalBill = billAmount + tipAmount;
+  const split = Math.max(splitWays, 1);
+  return { tipAmount, totalBill, perPerson: totalBill / split };
+}
+
+/**
+ * Calculate sales tax and total price.
+ * @param price     Price before tax
+ * @param taxRate   Sales tax rate as percentage
+ */
+export function salesTax(
+  price: number,
+  taxRate: number,
+): { taxAmount: number; totalPrice: number } {
+  if (price <= 0 || taxRate < 0) {
+    return { taxAmount: 0, totalPrice: price };
+  }
+  const taxAmount = price * (taxRate / 100);
+  return { taxAmount, totalPrice: price + taxAmount };
+}
+
+/**
+ * Calculate VAT (Value Added Tax).
+ * Supports both adding VAT to a net price and extracting VAT from a gross price.
+ * @param amount    The amount (net or gross depending on mode)
+ * @param vatRate   VAT rate as percentage (e.g. 20 for 20%)
+ * @param mode      'add' = add VAT to net, 'extract' = extract VAT from gross
+ */
+export function vatCalculation(
+  amount: number,
+  vatRate: number,
+  mode: 'add' | 'extract' = 'add',
+): { netPrice: number; vatAmount: number; grossPrice: number } {
+  if (amount <= 0 || vatRate < 0) {
+    return { netPrice: amount, vatAmount: 0, grossPrice: amount };
+  }
+  if (mode === 'add') {
+    const vatAmount = amount * (vatRate / 100);
+    return { netPrice: amount, vatAmount, grossPrice: amount + vatAmount };
+  }
+  // extract: amount is gross
+  const netPrice = amount / (1 + vatRate / 100);
+  const vatAmount = amount - netPrice;
+  return { netPrice, vatAmount, grossPrice: amount };
+}
+
+/**
  * Generate a full amortization schedule.
  */
 export function amortizationSchedule(

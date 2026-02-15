@@ -1,0 +1,81 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "Calcolo IMC - Indice di Massa Corporea Online | CalcHub"
+metaDescription: "Calcola il tuo IMC online gratis. Inserisci peso e altezza per scoprire la tua categoria di peso secondo le linee guida OMS e ricevere indicazioni."
+h1: "Calcolo IMC (Indice di Massa Corporea)"
+slug: "calcolo-imc"
+
+primaryKeyword: "calcolo imc"
+secondaryKeywords:
+  - "indice massa corporea"
+  - "calcolo bmi"
+  - "calcolo peso ideale"
+  - "imc calcolo"
+
+intro: "Vuoi sapere se il tuo peso rientra nei parametri consigliati dall'Organizzazione Mondiale della Sanità? L'Indice di Massa Corporea, noto anche come IMC o BMI, rappresenta il metodo di screening più diffuso a livello mondiale per valutare il rapporto tra peso e altezza. Medici di base, nutrizionisti e ricercatori lo utilizzano quotidianamente come primo indicatore dello stato ponderale, pur tenendo conto dei suoi limiti ben documentati. Inserisci i tuoi dati qui sotto per ottenere il risultato in pochi secondi, accompagnato da una spiegazione dettagliata del significato clinico della tua categoria."
+
+howItWorks:
+  title: "Come si calcola l'IMC"
+  content: "L'Indice di Massa Corporea si ottiene dividendo il peso corporeo espresso in chilogrammi per il quadrato dell'altezza espressa in metri. Questa formula fu ideata nel 1832 dal matematico belga Adolphe Quetelet, che cercava un metodo semplice per quantificare le proporzioni corporee su larga scala nelle popolazioni europee. Nonostante la sua età, il calcolo resta lo standard internazionale di riferimento grazie alla sua semplicità e alla solida correlazione con il rischio di malattie metaboliche a livello di popolazione. L'Organizzazione Mondiale della Sanità classifica i risultati dell'IMC in quattro categorie principali: sottopeso (inferiore a 18,5), normopeso (da 18,5 a 24,9), sovrappeso (da 25,0 a 29,9) e obesità (30,0 e oltre). Queste soglie sono state stabilite attraverso vaste ricerche epidemiologiche che hanno correlato i valori di IMC con l'incidenza di malattie cardiovascolari, diabete di tipo 2 e alcune forme tumorali. Tuttavia, l'IMC presenta limiti riconosciuti dalla stessa comunità scientifica. Non distingue tra massa magra e massa grassa: un atleta con elevata muscolatura potrebbe risultare sovrappeso pur avendo una percentuale di grasso corporeo molto bassa. Allo stesso modo, una persona anziana che ha perso massa muscolare potrebbe rientrare nel normopeso nonostante un eccesso di grasso viscerale. Per le popolazioni asiatiche, l'OMS suggerisce di adottare soglie più basse, utilizzando il valore di 23 come limite per il sovrappeso anziché 25, poiché queste popolazioni manifestano rischi metabolici elevati a valori di IMC inferiori rispetto alle popolazioni europee. Per una valutazione più completa della composizione corporea, è consigliabile integrare l'IMC con la misurazione della circonferenza vita o con il calcolo della percentuale di massa grassa. Nonostante queste limitazioni, l'IMC rimane lo strumento di screening ponderale più utilizzato nella pratica clinica mondiale, spesso associato a controlli della pressione arteriosa, della glicemia e del profilo lipidico per fornire un quadro complessivo dello stato di salute."
+  formula: "IMC = peso (kg) / altezza (m)²"
+  formulaExplanation: "Il peso in chilogrammi viene diviso per l'altezza in metri elevata al quadrato. Ad esempio, per una persona di 70 kg alta 1,75 m: IMC = 70 / (1,75)² = 22,9."
+  academicSource: "World Health Organization. (2000). Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894."
+
+faqs:
+  - question: "Qual è il valore di IMC considerato nella norma?"
+    answer: "Secondo l'Organizzazione Mondiale della Sanità, un IMC compreso tra 18,5 e 24,9 è considerato normopeso. Le persone che rientrano in questo intervallo presentano statisticamente un rischio inferiore di sviluppare malattie cardiovascolari, diabete di tipo 2 e alcune neoplasie rispetto a chi si trova al di fuori di questa fascia. Va ricordato che la salute individuale dipende da numerosi fattori oltre all'IMC, tra cui la qualità dell'alimentazione, il livello di attività fisica, la familiarità per determinate patologie e i marcatori metabolici come pressione arteriosa, glicemia e colesterolo."
+  - question: "L'IMC è affidabile per sportivi e persone molto muscolose?"
+    answer: "L'IMC tende a sovrastimare il grasso corporeo nelle persone con una massa muscolare particolarmente sviluppata. Un culturista o un giocatore di rugby potrebbe presentare un IMC superiore a 28 pur mantenendo una percentuale di grasso corporeo inferiore al 15%. Chi si allena regolarmente e possiede una muscolatura superiore alla media dovrebbe integrare il risultato dell'IMC con una misurazione della percentuale di massa grassa, eseguibile tramite plicometria o bioimpedenziometria, oppure con il calcolo del rapporto vita-fianchi per una valutazione più accurata della propria composizione corporea."
+  - question: "Esistono differenze tra uomini e donne nel calcolo dell'IMC?"
+    answer: "La formula dell'IMC è identica per uomini e donne, ma l'interpretazione clinica può variare. Le donne presentano fisiologicamente una percentuale di grasso corporeo più elevata rispetto agli uomini a parità di IMC. Alcuni ricercatori hanno proposto soglie specifiche per sesso, ma le categorie standard dell'OMS restano le più utilizzate nella pratica clinica. Per le donne in particolare, la misurazione della circonferenza vita offre un'informazione aggiuntiva importante: valori superiori a 80 cm sono associati a un rischio metabolico aumentato, mentre per gli uomini la soglia di attenzione si colloca a 94 cm."
+  - question: "Ogni quanto tempo è opportuno controllare il proprio IMC?"
+    answer: "Per la maggior parte degli adulti, verificare l'IMC una volta ogni due o tre mesi fornisce dati utili sull'andamento ponderale senza incoraggiare un monitoraggio ossessivo. Chi sta seguendo un percorso di dimagrimento o di incremento di peso può effettuare un controllo mensile per valutare i progressi. È sconsigliabile pesarsi quotidianamente per calcolare l'IMC, poiché le normali fluttuazioni dei liquidi corporei possono determinare variazioni di peso nell'ordine di 1-2 kg nell'arco della giornata, rendendo inaffidabili le misurazioni a breve termine e generando inutile ansia."
+  - question: "Quali sono i principali limiti dell'IMC come indicatore di salute?"
+    answer: "L'IMC non è in grado di distinguere tra massa magra e massa grassa, non tiene conto della distribuzione del tessuto adiposo (grasso viscerale rispetto a grasso sottocutaneo) e utilizza soglie basate su studi di popolazione che potrebbero non essere ugualmente applicabili a tutti i gruppi etnici. Le ricerche dimostrano che le popolazioni asiatiche presentano rischi metabolici elevati a valori di IMC inferiori rispetto alle popolazioni europee. Inoltre, l'indice non riesce a cogliere le variazioni della composizione corporea legate all'invecchiamento, poiché la perdita di massa muscolare si accompagna spesso a un incremento del grasso corporeo anche quando il peso complessivo resta invariato."
+  - question: "Questo calcolatore di IMC è adatto anche per bambini e adolescenti?"
+    answer: "Questo strumento è stato progettato per adulti dai 20 anni in su. Per bambini e adolescenti è necessario utilizzare le curve di crescita specifiche per età e sesso, poiché la composizione corporea cambia in modo significativo durante le fasi dello sviluppo. In Italia, i pediatri fanno riferimento alle tabelle di crescita elaborate dalla Società Italiana di Pediatria e dall'OMS, che confrontano il valore di IMC del giovane con le popolazioni di riferimento della stessa età e sesso, definendo il sottopeso al di sotto del 5° percentile e l'obesità al di sopra del 95° percentile."
+
+examples:
+  - title: "Adulto normopeso"
+    scenario: "Una persona alta 170 cm che pesa 65 kg"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "IMC: 22,5 — Normopeso"
+    explanation: "Con un valore di 22,5 questa persona si colloca comodamente nella fascia del normopeso (18,5-24,9). Questo livello di IMC è associato al minor rischio statistico di sviluppare patologie correlate al peso corporeo."
+  - title: "Valutazione sovrappeso"
+    scenario: "Una persona alta 175 cm che pesa 88 kg"
+    inputs:
+      weight: 88
+      height: 175
+      unit: "metric"
+    expectedResult: "IMC: 28,7 — Sovrappeso"
+    explanation: "Un IMC di 28,7 colloca questa persona nella categoria del sovrappeso (25-29,9). Pur non rientrando ancora nella classificazione di obesità, questo valore è associato a un rischio moderatamente aumentato di problemi cardiovascolari. Una riduzione di circa 8-10 kg riporterebbe il valore nella fascia del normopeso."
+  - title: "Verifica sottopeso"
+    scenario: "Una persona alta 180 cm che pesa 55 kg"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "IMC: 17,0 — Sottopeso"
+    explanation: "Con un valore di 17,0 questa persona è classificata come sottopeso (inferiore a 18,5). Essere sottopeso può indicare carenze nutrizionali, un indebolimento del sistema immunitario e un rischio aumentato di osteoporosi. È consigliabile consultare il proprio medico curante o un nutrizionista."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "ideal-weight-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

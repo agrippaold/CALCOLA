@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'de';
+
+const tools = [
+  { name: 'BMI Rechner', slug: '/de/gesundheit/bmi-rechner/', description: 'Berechnen Sie Ihren Body-Mass-Index und erfahren Sie Ihre Gewichtskategorie.' },
+  { name: 'Grundumsatz Rechner (BMR)', slug: '/de/gesundheit/grundumsatz-rechner/', description: 'Berechnen Sie Ihren Grundumsatz mit der Mifflin-St-Jeor-Gleichung.' },
+  { name: 'TDEE Rechner', slug: '/de/gesundheit/tdee-rechner/', description: 'Berechnen Sie Ihren täglichen Gesamtenergieverbrauch nach Aktivitätslevel.' },
+  { name: 'Kalorienrechner', slug: '/de/gesundheit/kalorienrechner/', description: 'Täglicher Kalorienbedarf und Makronährstoff-Verteilung für Ihre Ziele.' },
+];
+---
+
+<BaseLayout
+  title="Gesundheitsrechner - BMI, BMR, TDEE, Kalorien | CalcHub"
+  description="Kostenlose Gesundheits- und Fitnessrechner: BMI, Grundumsatz, TDEE, täglicher Kalorienbedarf mit Makronährstoffen. Wissenschaftlich validierte Formeln."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/de/" class="hover:text-blue-600">Startseite</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Gesundheit</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Gesundheits- und Fitnessrechner</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Evidenzbasierte Rechner mit wissenschaftlich validierten Gleichungen. BMI, Grundumsatz, Energieverbrauch und Kalorienplanung für fundierte Entscheidungen rund um Ihre Gesundheit.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

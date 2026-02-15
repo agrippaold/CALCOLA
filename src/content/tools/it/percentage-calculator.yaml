@@ -1,0 +1,79 @@
+id: "percentage-calculator"
+category: "math"
+calculatorComponent: "PercentageCalculator"
+
+title: "Calcolo Percentuale - Tutte le Operazioni | CalcHub"
+metaDescription: "Calcola percentuali in un istante: trova X% di Y, variazione percentuale, aumento e diminuzione. Calcolatrice percentuale gratuita con cinque modalità."
+h1: "Calcolatrice Percentuale"
+slug: "calcolo-percentuale"
+
+primaryKeyword: "calcolo percentuale"
+secondaryKeywords:
+  - "calcolatrice percentuale"
+  - "calcolare percentuale"
+  - "variazione percentuale"
+  - "percentuale di sconto"
+
+intro: "Le percentuali fanno parte della vita quotidiana di ognuno di noi: dal calcolo dello sconto durante i saldi al controllo dell'IVA sullo scontrino, dal rendimento di un investimento al voto di un esame. Questa calcolatrice gestisce cinque tipologie diverse di operazioni percentuali in modo da non dover ricordare le formule a memoria. Scegli la modalità che ti serve, inserisci i valori e ottieni subito il risultato. Che tu debba trovare il 22% di un importo oppure la variazione percentuale tra due cifre, qui trovi tutto quello che ti occorre."
+
+howItWorks:
+  title: "Come Funziona il Calcolo Percentuale"
+  content: "La parola percentuale deriva dal latino per centum, che significa letteralmente ogni cento. Esprimere un numero in percentuale vuol dire rappresentarlo come una frazione il cui denominatore è sempre 100: dire il 25% equivale a scrivere 25/100, ossia un quarto. Questa calcolatrice mette a disposizione cinque modalità distinte, ciascuna con la propria formula. La prima modalità calcola X% di Y: si moltiplica Y per X diviso 100. Ad esempio, il 22% di 500 è uguale a 500 moltiplicato per 0,22, che fa 110. Questa operazione è utile per calcolare l'IVA italiana, che nella misura ordinaria è appunto al 22%. La seconda modalità risponde alla domanda inversa: X è il quanto percento di Y? Si divide X per Y e si moltiplica per 100. Se su 80 studenti 68 hanno superato la prova, la percentuale di promossi è 68 diviso 80 per 100, cioè l'85%. La terza modalità è la variazione percentuale, che misura quanto un valore è cambiato rispetto al punto di partenza. La formula divide la differenza tra il valore nuovo e il valore vecchio per il valore assoluto del vecchio, poi moltiplica per 100. Se un titolo azionario passa da 40 euro a 52 euro, la variazione è (52-40)/40 per 100 uguale a +30%. Se invece scende da 52 a 40, la variazione è (40-52)/52 per 100, pari a circa -23,1%. Si noti che un aumento del 30% e una diminuzione del 23,1% portano allo stesso risultato numerico, ma le percentuali non sono uguali perché la base di partenza è diversa. Questa asimmetria inganna moltissime persone: un rialzo del 50% seguito da un calo del 50% non riporta al valore originale. Partendo da 100, il 50% in più dà 150; il 50% in meno di 150 dà 75, non 100. Per tornare a 100 dopo un aumento del 50% serve una diminuzione del 33,3%. La quarta modalità è l'aumento percentuale, dove il risultato si ottiene moltiplicando il valore per (1 + percentuale/100). Un prodotto da 80 euro con un ricarico del 15% diventa 80 per 1,15 uguale a 92 euro. Infine, la quinta modalità è la diminuzione percentuale: il risultato è il valore moltiplicato per (1 - percentuale/100). Un articolo da 120 euro scontato del 30% diventa 120 per 0,70 uguale a 84 euro. Le percentuali superiori al 100% sono del tutto legittime, soprattutto in ambito finanziario: un rendimento del 200% significa aver triplicato il capitale iniziale. Le percentuali negative indicano una riduzione. Queste cinque operazioni sono alla base della matematica di tutti i giorni: dall'IVA agli sconti, dalla mancia al ristorante ai voti scolastici, dalle statistiche alle analisi finanziarie."
+  formula: "X% di Y = (X/100) × Y"
+  formulaExplanation: "Altre modalità: X è il % di Y = (X/Y) × 100. Variazione percentuale = ((nuovo-vecchio)/|vecchio|) × 100. Aumento = valore × (1+%/100). Diminuzione = valore × (1-%/100)."
+  academicSource: "National Council of Teachers of Mathematics. (2000). Principles and Standards for School Mathematics. NCTM."
+
+faqs:
+  - question: "Come si calcola la percentuale di un numero?"
+    answer: "Si moltiplica il numero per la percentuale e si divide per 100. Per trovare il 15% di 200, si calcola 200 per 0,15 che fa 30. Un trucco pratico: per ottenere il 10% di qualsiasi cifra basta spostare la virgola di un posto verso sinistra. Quindi il 10% di 200 è 20. Il 15% si ricava sommando al 10% la sua metà: 20 più 10 uguale a 30. Questa tecnica di calcolo mentale è molto comoda per stimare rapidamente sconti, mance e ricarichi senza bisogno della calcolatrice."
+  - question: "Come faccio a sapere che percentuale è un numero rispetto a un altro?"
+    answer: "Dividi la parte per il totale e moltiplica per 100. Se hai preso 42 su 50 a un compito in classe, la tua percentuale è (42/50) per 100, cioè l'84%. Se le tue spese mensili sono 900 euro su uno stipendio di 1.800 euro, le spese rappresentano (900/1800) per 100, ovvero il 50% del reddito. La chiave è individuare correttamente quale numero è la parte e quale il tutto, perché invertirli porta a un risultato completamente diverso."
+  - question: "Come si calcola la variazione percentuale tra due valori?"
+    answer: "Sottrai il valore iniziale dal valore finale, dividi il risultato per il valore assoluto del valore iniziale e moltiplica per 100. Se l'affitto è passato da 750 euro a 825 euro, la variazione è (825-750)/750 per 100, uguale al 10% di aumento. Se il tuo portafoglio è sceso da 25.000 euro a 21.000 euro, la variazione è (21000-25000)/25000 per 100, ossia meno 16%, cioè una diminuzione del 16%. Questa formula è fondamentale per confronti tra periodi diversi."
+  - question: "Perché un aumento del 50% seguito da una diminuzione del 50% non riporta al valore originale?"
+    answer: "Perché la seconda percentuale si applica a una base diversa dalla prima. Partendo da 100, un aumento del 50% dà 150. Una diminuzione del 50% di 150 dà 75, non 100. Il calo si calcola sul numero più grande (150), perciò toglie più di quanto l'aumento avesse aggiunto. Per tornare esattamente a 100 dopo un rialzo del 50% sarebbe necessario un ribasso del 33,3%. Questa asimmetria è fondamentale in finanza: una perdita del 50% in Borsa richiede un guadagno del 100% per tornare in pari."
+  - question: "Come si calcola lo sconto o la mancia con le percentuali?"
+    answer: "Per lo sconto, moltiplica il prezzo per la percentuale di sconto divisa per 100 e sottrai dal prezzo originale. Un vestito da 90 euro scontato del 20% ha uno sconto di 18 euro e costa quindi 72 euro. Per la mancia, in Italia non è obbligatoria ma se vuoi lasciare il 10% su un conto di 65 euro, calcola il 10% (6,50 euro). Un metodo rapido: per il 10% sposta la virgola di un posto, per il 5% dimezza il risultato del 10%. Ricorda che in Italia i prezzi sono già comprensivi di IVA al 22%."
+  - question: "Qual è il rapporto tra percentuali, frazioni e numeri decimali?"
+    answer: "Percentuali, frazioni e decimali sono tre modi per esprimere lo stesso valore. Il 25% equivale a 25/100 che si semplifica in 1/4 ed è uguale a 0,25. Per passare da una percentuale a un decimale, si divide per 100 (si sposta la virgola di due posti a sinistra). Per il passaggio inverso, da decimale a percentuale, si moltiplica per 100. Per convertire una frazione in percentuale si divide il numeratore per il denominatore e si moltiplica per 100. Ciascun formato è preferito in contesti diversi: i negozi usano le percentuali, le ricette le frazioni, e i calcoli scientifici i decimali."
+
+examples:
+  - title: "Sconto durante i saldi"
+    scenario: "Calcolare il prezzo scontato di una giacca da 120 euro con il 25% di sconto, considerando l'IVA italiana al 22% già inclusa"
+    inputs:
+      mode: "decrease"
+      value: 120
+      percent: 25
+    expectedResult: "Risultato: 90,00 €"
+    explanation: "Il 25% di 120 € è 30 €. Il prezzo finale è 120 € meno 30 € uguale a 90 €. Il risparmio è di 30 €. L'IVA al 22% è già inclusa nel prezzo esposto, come previsto dalla normativa italiana."
+  - title: "Rendimento di un investimento"
+    scenario: "Calcolare la variazione percentuale di un investimento passato da 10.000 € a 13.500 €"
+    inputs:
+      mode: "change"
+      oldValue: 10000
+      newValue: 13500
+    expectedResult: "Variazione percentuale: +35%"
+    explanation: "L'investimento ha fruttato 3.500 € sui 10.000 € iniziali, pari a un rendimento del 35%. Questo calcolo si applica allo stesso modo ad azioni, fondi comuni, immobili o qualsiasi altro strumento finanziario."
+  - title: "Voto di un esame"
+    scenario: "Scoprire che percentuale corrisponde un punteggio di 27 risposte esatte su 30 domande totali"
+    inputs:
+      mode: "is_what"
+      valueX: 27
+      valueY: 30
+    expectedResult: "27 è il 90,00% di 30"
+    explanation: "Un punteggio di 27 su 30 corrisponde al 90%. Nell'ordinamento universitario italiano, dove il massimo è 30/30 e lode, un voto di 27 si colloca nella fascia alta e corrisponde a una prestazione eccellente."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

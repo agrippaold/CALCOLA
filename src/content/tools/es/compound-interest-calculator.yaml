@@ -1,0 +1,84 @@
+id: "compound-interest-calculator"
+category: "finance"
+calculatorComponent: "CompoundInterestCalculator"
+
+title: "Calculadora Interés Compuesto - Crecimiento | CalcHub"
+metaDescription: "Calcula cómo crece tu dinero con el interés compuesto. Simula el valor futuro con diferentes tipos de interés, plazos y frecuencias de capitalización."
+h1: "Calculadora de Interés Compuesto"
+slug: "calculadora-interes-compuesto"
+
+primaryKeyword: "calculadora interes compuesto"
+secondaryKeywords:
+  - "interes compuesto formula"
+  - "calcular interes compuesto"
+  - "calculo interes compuesto"
+  - "simulador interes compuesto"
+
+intro: "El interés compuesto es el mecanismo que convierte aportaciones pequeñas y constantes en cantidades significativas a lo largo del tiempo. La diferencia respecto al interés simple es que los rendimientos generados se reinvierten y empiezan a producir sus propios rendimientos, creando un efecto multiplicador que se acelera con cada año que pasa. Esta calculadora te muestra exactamente cómo crece tu inversión inicial según el tipo de interés, el plazo y la frecuencia de capitalización. Introduce tus datos para ver el efecto bola de nieve del interés compuesto en acción."
+
+howItWorks:
+  title: "Cómo funciona el interés compuesto"
+  content: "El interés compuesto calcula los rendimientos no solo sobre el capital inicial, sino también sobre todos los intereses acumulados anteriormente. Esto genera un crecimiento exponencial en lugar de lineal. La fórmula multiplica el capital por uno más el tipo de interés periódico, elevado al número total de períodos de capitalización. Veamos un ejemplo concreto: si inviertes 10.000 € al 6% anual con capitalización mensual durante 25 años, el resultado es 44.649,70 €. Con interés simple, la misma inversión alcanzaría solo 25.000 €. Esa diferencia de casi 20.000 € proviene exclusivamente del efecto compuesto, donde los intereses generados en períodos anteriores producen a su vez nuevos intereses en los períodos siguientes. La frecuencia de capitalización influye más de lo que la mayoría de la gente piensa. Los mismos 10.000 € al 6% durante 25 años producen 42.918,71 € con capitalización anual, 44.120,46 € con capitalización trimestral y 44.649,70 € con capitalización mensual. La capitalización diaria lo eleva ligeramente a 44.816,89 €. La diferencia entre capitalización anual y mensual es notable, aunque entre mensual y diaria resulta pequeña en términos prácticos. El tiempo es la variable más determinante en esta ecuación. Duplicar el plazo de inversión produce un resultado muy superior al doble, precisamente por la naturaleza exponencial del crecimiento. La Regla del 72 ofrece una aproximación rápida: divide 72 entre el tipo de interés anual para estimar en cuántos años se duplica tu capital. Al 6%, tu inversión se duplica aproximadamente cada 12 años. Al 8%, cada 9 años. Este principio explica por qué empezar a invertir pronto, aunque sea con cantidades modestas, produce resultados mucho mejores que empezar tarde con aportaciones mayores. En el contexto español, los depósitos a plazo fijo en entidades bancarias suelen ofrecer tipos más conservadores, mientras que los fondos indexados y los planes de pensiones permiten acceder a rendimientos históricos más elevados a cambio de asumir la volatilidad del mercado. Entender cómo funciona el interés compuesto es la base para tomar decisiones informadas sobre dónde colocar tus ahorros a largo plazo."
+  formula: "A = P(1 + r/n)^(nt)"
+  formulaExplanation: "A = valor futuro, P = capital inicial, r = tipo de interés anual (en decimal), n = número de capitalizaciones por año, t = tiempo en años"
+  academicSource: "Brealey, R. A., Myers, S. C., & Allen, F. (2020). Principios de Finanzas Corporativas (13ª ed.). McGraw-Hill Education."
+
+faqs:
+  - question: "¿Cuál es la diferencia entre interés simple e interés compuesto?"
+    answer: "El interés simple se calcula solo sobre el capital inicial, lo que produce un crecimiento lineal constante. El interés compuesto se calcula sobre el capital más todos los intereses acumulados previamente, generando un crecimiento exponencial. Sobre una inversión de 10.000 € al 5% durante 20 años, el interés simple genera 10.000 € de rendimiento (total 20.000 €), mientras que el interés compuesto genera aproximadamente 16.533 € (total 26.533 €). Cuanto mayor es el plazo, más pronunciada se vuelve esta diferencia, lo que hace del interés compuesto una herramienta de acumulación de patrimonio muy eficaz."
+  - question: "¿Con qué frecuencia se debe capitalizar el interés?"
+    answer: "Una capitalización más frecuente produce rendimientos ligeramente superiores. La capitalización mensual es la más habitual en cuentas de ahorro e inversiones. Para una inversión de 10.000 € al 5% durante 10 años: la capitalización anual produce 16.288,95 €, la mensual 16.470,09 € y la diaria 16.486,65 €. El salto de anual a mensual es significativo, pero de mensual a diaria apenas añade 17 € en una década. En la práctica, la capitalización mensual es el estándar que ofrecen la mayoría de las entidades financieras."
+  - question: "¿Qué es la Regla del 72 y cómo se usa?"
+    answer: "La Regla del 72 es un atajo de cálculo mental que permite estimar cuánto tiempo tarda una inversión en duplicar su valor con interés compuesto. Se divide 72 entre el tipo de interés anual para obtener el número aproximado de años necesarios. Al 6%, tu dinero se duplica en unos 12 años (72/6). Al 4%, en 18 años. Al 9%, en 8 años. Esta aproximación funciona mejor para tipos entre el 4% y el 12%, y pierde precisión en valores extremos. Es muy práctica para hacer estimaciones rápidas sin necesidad de calculadora."
+  - question: "¿El interés compuesto también actúa en contra con las deudas?"
+    answer: "El interés compuesto funciona de manera idéntica con las deudas, pero en tu contra. Los saldos de tarjetas de crédito, por ejemplo, acumulan intereses sobre el importe no pagado de forma continua. Un saldo de 3.000 € en una tarjeta de crédito al 20% TAE, si no se paga, crece hasta aproximadamente 3.600 € en un año y puede superar los 7.400 € en cinco años sin realizar ningún pago. Por esta razón, las deudas con tipos altos deben ser la primera prioridad de pago antes de plantearse cualquier inversión."
+  - question: "¿Qué rendimiento realista puedo esperar de mis inversiones?"
+    answer: "Los rendimientos varían mucho según el tipo de producto. Las cuentas de ahorro remuneradas en España ofrecen actualmente entre el 1% y el 3,5% TAE. Los depósitos a plazo fijo se sitúan entre el 2% y el 4%. Los fondos indexados que replican índices bursátiles como el IBEX 35 o el S&P 500 han ofrecido históricamente un rendimiento medio del 7% al 10% anual antes de inflación. Las Letras del Tesoro y los bonos del Estado español ofrecen entre el 2,5% y el 3,5%. Para proyecciones a largo plazo, usar un 5% a 6% como estimación conservadora después de inflación es razonable para una cartera diversificada."
+  - question: "¿Cómo afecta la inflación al crecimiento por interés compuesto?"
+    answer: "La inflación reduce el poder adquisitivo de los rendimientos futuros. Si tu inversión rinde un 7% anual pero la inflación media es del 3%, tu rendimiento real (ajustado por inflación) es de aproximadamente el 4%. Sobre 10.000 € a 25 años al 7% nominal, tendrías 54.274 € en términos nominales, pero solo unos 25.000 € en poder adquisitivo actual. En España, la inflación media histórica ronda el 2,5% al 3%. Por eso es importante considerar siempre los rendimientos reales y no solo los nominales cuando se evalúan proyecciones de inversión a largo plazo."
+
+examples:
+  - title: "Inversión a largo plazo en un fondo indexado"
+    scenario: "Invertir 10.000 € al 7% anual con capitalización mensual durante 25 años"
+    inputs:
+      principal: 10000
+      annualRate: 7
+      years: 25
+      compounding: "monthly"
+    expectedResult: "Valor futuro: 57.176,65 € | Intereses generados: 47.176,65 €"
+    explanation: "Tu inversión de 10.000 € se multiplica casi por seis en 25 años. La mayor parte del crecimiento ocurre en la segunda mitad del periodo: tras 12 años tienes unos 23.000 €, pero en los 13 años restantes se añaden más de 34.000 €. Este efecto de aceleración es la característica principal del interés compuesto."
+  - title: "Depósito a plazo fijo en una entidad bancaria"
+    scenario: "Depositar 20.000 € al 3,2% con capitalización anual durante 5 años"
+    inputs:
+      principal: 20000
+      annualRate: 3.2
+      years: 5
+      compounding: "annual"
+    expectedResult: "Valor futuro: 23.403,54 € | Intereses generados: 3.403,54 €"
+    explanation: "Un depósito a plazo fijo ofrece un crecimiento moderado pero seguro, protegido por el Fondo de Garantía de Depósitos hasta 100.000 € por titular y entidad. Los 3.403,54 € de intereses se obtienen sin asumir riesgo de mercado, lo que lo convierte en una opción adecuada para el ahorro a corto y medio plazo."
+  - title: "Efecto de la frecuencia de capitalización"
+    scenario: "Comparar 15.000 € al 5% durante 20 años con capitalización anual frente a mensual"
+    inputs:
+      principal: 15000
+      annualRate: 5
+      years: 20
+      compounding: "annual"
+    expectedResult: "Anual: 39.799,47 € | Mensual: 40.753,45 €"
+    explanation: "La capitalización mensual genera 953,98 € más que la anual sobre el mismo capital y tipo de interés a 20 años. Aunque la diferencia porcentual es pequeña (alrededor del 2,4%), representa dinero adicional que se obtiene sin esfuerzo alguno, simplemente por la frecuencia con la que se reinvierten los rendimientos."
+
+relatedTools:
+  - "savings-calculator"
+  - "mortgage-calculator"
+  - "loan-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

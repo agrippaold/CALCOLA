@@ -1,0 +1,81 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Calcolo Prestito - Rata e Interessi Online | CalcHub"
+metaDescription: "Calcola la rata del prestito personale, gli interessi totali e il piano di rimborso. Confronta tassi e durate per trovare il finanziamento più conveniente."
+h1: "Calcolo Prestito"
+slug: "calcolo-prestito"
+
+primaryKeyword: "calcolo prestito"
+secondaryKeywords:
+  - "calcolo rata prestito"
+  - "simulazione prestito personale"
+  - "calcolo interessi prestito"
+  - "prestito personale calcolo"
+
+intro: "Che si tratti di finanziare l'acquisto di un'auto, consolidare debiti esistenti o affrontare una spesa imprevista, conoscere il costo reale di un prestito prima di sottoscriverlo è essenziale per una scelta consapevole. Questo calcolatore mostra la rata mensile insieme agli interessi totali che pagherai nel corso dell'intero finanziamento. Confronta diversi tassi di interesse e durate per individuare la combinazione che si adatta al tuo bilancio familiare riducendo al minimo il costo complessivo del prestito."
+
+howItWorks:
+  title: "Come si calcola la rata del prestito"
+  content: "I prestiti personali, i finanziamenti auto e la maggior parte dei prestiti rateali utilizzano la stessa formula di ammortamento alla francese impiegata per i mutui ipotecari. L'istituto finanziatore calcola una rata mensile costante che, pagata regolarmente per l'intera durata del contratto, copre sia il rimborso del capitale sia gli interessi maturati. Ogni singola rata si compone di due parti: la quota interessi, calcolata sul debito residuo, e la quota capitale, che riduce effettivamente l'importo ancora dovuto. Le prime rate sono composte prevalentemente da interessi, poiché il debito residuo è al suo livello massimo. Man mano che il capitale viene rimborsato, la quota interessi diminuisce e una porzione crescente della rata va a ridurre il debito. Le ultime rate sono quasi interamente quota capitale. Il tasso di interesse ha un impatto determinante sul costo complessivo del finanziamento. Su un prestito personale di €15.000 per 5 anni, un tasso del 6% produce una rata di €289,99 e interessi totali di €2.399,40. Al 12%, la rata sale a €333,67 con interessi totali di €5.020,20. Quella differenza di sei punti percentuali costa oltre €2.600 in più nell'arco di cinque anni. Nel mercato italiano è fondamentale distinguere fra TAN (Tasso Annuo Nominale) e TAEG (Tasso Annuo Effettivo Globale). Il TAN indica il puro costo degli interessi, mentre il TAEG include anche tutte le spese accessorie obbligatorie come le spese di istruttoria, le commissioni di incasso rata e le eventuali polizze assicurative obbligatorie. Il TAEG rappresenta quindi il vero indicatore del costo del finanziamento e per legge deve essere sempre comunicato al consumatore. La durata del prestito genera il classico compromesso: rate più brevi significano rate mensili più alte ma meno interessi complessivi, mentre durate più lunghe alleggeriscono la rata mensile ma aumentano il costo totale. Un prestito di €10.000 al 7% costa €2.190 di interessi in 5 anni ma solo €752 in 2 anni. L'opzione biennale costa €148 in più al mese ma fa risparmiare oltre €1.400 di interessi. Tra le forme di finanziamento disponibili in Italia, oltre al classico prestito personale esiste la cessione del quinto dello stipendio, riservata a lavoratori dipendenti e pensionati, nella quale la rata viene trattenuta direttamente dalla busta paga e non può superare un quinto del reddito netto. Questa forma offre generalmente tassi più bassi grazie alle maggiori garanzie per il finanziatore."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = rata mensile, P = capitale finanziato, r = tasso di interesse mensile (tasso annuo / 12 / 100), n = numero totale di rate (anni × 12)"
+  academicSource: "Banca d'Italia. (2024). Guida pratica al credito ai consumatori."
+
+faqs:
+  - question: "Come ottenere il tasso di interesse più basso su un prestito personale?"
+    answer: "I fattori principali che determinano il tasso offerto sono il profilo creditizio del richiedente, il rapporto fra rata e reddito e l'istituto finanziatore scelto. I richiedenti con un reddito stabile documentabile, nessuna segnalazione nei Sistemi di Informazioni Creditizie (SIC come CRIF e CTC) e un rapporto rata-reddito contenuto ottengono le condizioni migliori. Prima di presentare domanda, è consigliabile verificare la propria posizione presso la Centrale Rischi di Banca d'Italia e i SIC privati. Confrontare le offerte di almeno quattro o cinque istituti, incluse banche tradizionali, banche online e finanziarie specializzate, è essenziale perché i tassi possono variare anche di tre o quattro punti percentuali a parità di importo e durata."
+  - question: "È meglio scegliere una durata breve o lunga per il prestito?"
+    answer: "Una durata più breve fa risparmiare significativamente sugli interessi totali ma richiede rate mensili più elevate. Una regola pratica utile è scegliere la durata più corta nella quale la rata non superi il 15-20% del reddito netto mensile per debiti al consumo. Se la rata a 3 anni rende il bilancio troppo stretto, allungare a 5 anni a un costo complessivo leggermente superiore può essere la scelta più prudente. È importante però evitare di allungare la durata oltre il necessario solo per abbassare la rata, perché questo aumenta in modo sostanziale gli interessi totali pagati e il rischio di trovarsi impegnati in un debito più a lungo del previsto."
+  - question: "Come funziona l'estinzione anticipata di un prestito personale?"
+    answer: "L'estinzione anticipata, totale o parziale, di un prestito al consumo è un diritto garantito dal Codice del Consumo italiano. Per prestiti superiori a €10.000 con durata residua oltre un anno, il finanziatore può applicare un indennizzo massimo dell'1% del capitale rimborsato anticipatamente (0,5% se la durata residua è inferiore a un anno). Per importi inferiori a €10.000, l'indennizzo non può superare l'1% del capitale rimborsato. L'estinzione anticipata è particolarmente vantaggiosa nei primi anni del finanziamento, quando la quota interessi della rata è più elevata. Prima di procedere, confronta il risparmio sugli interessi con l'eventuale indennizzo richiesto."
+  - question: "Qual è la differenza tra TAN e TAEG?"
+    answer: "Il TAN (Tasso Annuo Nominale) rappresenta il tasso di interesse puro applicato al capitale finanziato, senza includere alcuna spesa accessoria. Il TAEG (Tasso Annuo Effettivo Globale) comprende invece il TAN più tutte le spese obbligatorie connesse al finanziamento: spese di istruttoria, commissioni periodiche di incasso rata, costi di assicurazioni obbligatorie e ogni altro onere necessario per ottenere il prestito. Un prestito con TAN del 6% potrebbe avere un TAEG del 7,5% o superiore una volta incluse tutte le spese. Per legge, il TAEG deve essere sempre comunicato prima della sottoscrizione del contratto ed è l'unico indicatore affidabile per confrontare offerte di finanziamento diverse."
+  - question: "Che impatto ha un prestito sulla mia affidabilità creditizia?"
+    answer: "La richiesta di un nuovo prestito viene registrata nei Sistemi di Informazioni Creditizie (SIC) come CRIF e resta visibile per un periodo variabile. La sola richiesta, anche se non concessa, rimane negli archivi per sei mesi. Il pagamento regolare delle rate costruisce progressivamente uno storico positivo che migliora il profilo creditizio e facilita l'accesso a futuri finanziamenti a condizioni migliori. Al contrario, ritardi nei pagamenti superiori a due rate vengono segnalati come negativi e possono compromettere la possibilità di ottenere credito per un periodo che va da uno a tre anni dalla regolarizzazione. È consigliabile mantenere sempre un rapporto complessivo rata-reddito contenuto."
+  - question: "Quanto prestito posso permettermi realisticamente?"
+    answer: "La regola generale seguita dagli istituti finanziari italiani prevede che il totale delle rate di tutti i finanziamenti in corso, incluso il nuovo prestito, non superi il 30-35% del reddito netto mensile del richiedente. Se il reddito netto è di €2.000 al mese e si pagano già €200 per un finanziamento auto, la capacità residua per un nuovo prestito è di circa €500-€550 al mese. Utilizza questo calcolatore per trovare l'importo massimo finanziabile che mantiene la rata entro questo limite, ricordando di conservare un margine per le spese impreviste. È fondamentale valutare non solo la rata in sé, ma la sostenibilità complessiva del bilancio familiare per l'intera durata del prestito."
+
+examples:
+  - title: "Finanziamento auto"
+    scenario: "Prestito di €18.000 al 6,5% per 5 anni per l'acquisto di un'auto"
+    inputs:
+      loanAmount: 18000
+      interestRate: 6.5
+      loanTerm: 5
+    expectedResult: "Rata mensile: €352,35 | Interessi totali: €3.141,00"
+    explanation: "Il costo totale dell'auto diventa €21.141 includendo gli interessi. Un acconto più consistente o la scelta di un veicolo con un prezzo inferiore potrebbe ridurre l'importo finanziato e di conseguenza gli interessi complessivi. Confrontare il finanziamento della concessionaria con un prestito personale della propria banca è sempre consigliabile."
+  - title: "Consolidamento debiti"
+    scenario: "Consolidamento di €12.000 di debiti vari al 8,5% per 4 anni"
+    inputs:
+      loanAmount: 12000
+      interestRate: 8.5
+      loanTerm: 4
+    expectedResult: "Rata mensile: €296,35 | Interessi totali: €2.224,80"
+    explanation: "Se i debiti originari avevano tassi medi del 15-18% (tipici delle carte revolving in Italia), questo consolidamento genera un risparmio significativo sugli interessi. La rata unica mensile semplifica anche la gestione del bilancio familiare rispetto a più pagamenti diversi con scadenze differenti."
+  - title: "Piccolo prestito personale"
+    scenario: "Prestito di €5.000 al 7% per 2 anni per una spesa imprevista"
+    inputs:
+      loanAmount: 5000
+      interestRate: 7
+      loanTerm: 2
+    expectedResult: "Rata mensile: €224,11 | Interessi totali: €378,64"
+    explanation: "La durata breve mantiene gli interessi totali sotto i €380 su questo prestito di importo contenuto. La rata di €224 è gestibile per la maggior parte dei bilanci familiari e il finanziamento si chiude in soli 24 mesi, liberando rapidamente capacità di spesa per altri obiettivi."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,81 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Calculadora de Préstamo - Cuota e Intereses | CalcHub"
+metaDescription: "Calcula la cuota mensual de tu préstamo personal, el total de intereses y el calendario de pagos. Compara tipos de interés y plazos de forma sencilla."
+h1: "Calculadora de Préstamo"
+slug: "calculadora-prestamo"
+
+primaryKeyword: "calculadora prestamo"
+secondaryKeywords:
+  - "calcular cuota prestamo"
+  - "simulador prestamo personal"
+  - "calculo prestamo"
+  - "prestamo personal calcular"
+
+intro: "Ya sea para financiar un coche, reunificar deudas o cubrir un gasto imprevisto, conocer el coste real de un préstamo antes de contratarlo es un paso que no debes saltarte. Esta calculadora te muestra la cuota mensual junto con el total de intereses que pagarás durante toda la vida del préstamo. Compara diferentes tipos de interés y plazos para encontrar la combinación que se ajuste a tu presupuesto mensual y que minimice lo que acabas pagando en concepto de intereses."
+
+howItWorks:
+  title: "Cómo se calcula la cuota de un préstamo"
+  content: "Los préstamos personales, los préstamos al consumo y la mayoría de los préstamos a plazos utilizan la misma fórmula de amortización que las hipotecas: el sistema francés de cuota fija. La entidad financiera calcula una cuota mensual constante que, pagada de forma regular durante todo el plazo, cubre tanto el capital prestado como todos los intereses generados hasta el último pago. Cada cuota se divide entre los intereses devengados sobre el saldo pendiente y la reducción del capital. Los primeros pagos destinan una proporción mayor a intereses porque el saldo vivo es más alto. A medida que se amortiza el capital, se generan menos intereses cada mes y una parte mayor de cada cuota reduce directamente la deuda. Por eso, los últimos pagos del préstamo son casi en su totalidad amortización de capital. El tipo de interés tiene un efecto determinante en el coste total del préstamo. En un préstamo personal de 15.000 € a 5 años, un tipo del 6% produce una cuota mensual de 289,99 € y un total de intereses de 2.399,74 €. Al 12%, la cuota sube a 333,67 € y los intereses se disparan hasta 5.020,00 €. Esa diferencia de 6 puntos porcentuales supone pagar 2.620 € más a lo largo de cinco años. En España, es importante distinguir entre el TIN (Tipo de Interés Nominal) y la TAE (Tasa Anual Equivalente). El TIN refleja solo el tipo de interés puro del préstamo, mientras que la TAE incluye el TIN más todas las comisiones y gastos asociados (comisión de apertura, seguros obligatorios, etc.), calculados sobre base anual. La TAE es el indicador que permite comparar ofertas de diferentes entidades de forma justa, ya que recoge el coste total real del préstamo. Un préstamo con un TIN del 5% pero una comisión de apertura del 2% tendrá una TAE notablemente superior al 5%. El plazo del préstamo genera el clásico dilema: plazos cortos implican cuotas más altas pero menos intereses totales, mientras que plazos largos reducen la cuota mensual pero aumentan el coste final. Un préstamo de 10.000 € al 7% cuesta 1.878,82 € en intereses a 3 años, pero 3.580,72 € a 7 años. La opción a 3 años supone 115 € más al mes, pero ahorra más de 1.700 € en intereses. Comparar ofertas de varias entidades antes de firmar puede ahorrarte cientos o miles de euros."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = cuota mensual, P = capital del préstamo, r = tipo de interés mensual (tipo anual / 12 / 100), n = número total de pagos (años × 12)"
+  academicSource: "Banco de España. (2024). Portal del Cliente Bancario: préstamos personales."
+
+faqs:
+  - question: "¿Cómo puedo conseguir un tipo de interés más bajo en un préstamo personal?"
+    answer: "Los factores que más influyen en el tipo de interés son tu historial crediticio, tu nivel de ingresos estables y la entidad que elijas. Los solicitantes con nómina domiciliada y un buen perfil de riesgo suelen acceder a tipos más competitivos. Antes de solicitar un préstamo, asegúrate de no tener deudas impagadas registradas en ficheros de morosos como ASNEF o CIRBE. Compara ofertas de al menos tres o cuatro entidades, incluyendo bancos tradicionales, bancos online y cooperativas de crédito. Los préstamos con finalidad específica (coche, reformas) suelen tener tipos más bajos que los de libre disposición."
+  - question: "¿Es mejor un préstamo a corto o a largo plazo?"
+    answer: "Los plazos cortos suponen un ahorro considerable en intereses a cambio de cuotas mensuales más elevadas. Una regla práctica es elegir el plazo más corto cuya cuota no supere el 30-35% de tus ingresos netos disponibles después de cubrir otros gastos fijos. Si un plazo de 3 años genera cuotas demasiado ajustadas, un plazo de 5 años con un coste total algo superior puede ser la opción más sensata. Evita alargar el plazo más de lo necesario solo para reducir la cuota, porque el incremento en intereses totales puede ser muy significativo."
+  - question: "¿Conviene amortizar un préstamo antes de tiempo?"
+    answer: "Adelantar pagos de un préstamo reduce el capital pendiente, lo que disminuye los intereses futuros y puede acortar el plazo de devolución. Antes de hacerlo, comprueba si tu contrato incluye comisión por amortización anticipada. En España, la Ley de Crédito al Consumo limita esta comisión al 1% del importe amortizado si queda más de un año de plazo, o al 0,5% si queda menos. Incluso con la comisión, la amortización anticipada suele ser rentable si el tipo de interés de tu préstamo supera al rendimiento que obtendrías invirtiendo ese dinero en otro producto financiero."
+  - question: "¿Qué diferencia hay entre el TIN y la TAE?"
+    answer: "El TIN (Tipo de Interés Nominal) es el porcentaje que la entidad aplica directamente sobre el capital prestado para calcular los intereses. La TAE (Tasa Anual Equivalente) incluye el TIN más todas las comisiones y gastos obligatorios del préstamo (apertura, estudio, seguros vinculados), expresados en términos anuales. La TAE siempre es igual o superior al TIN y refleja el coste real del préstamo. Dos préstamos con el mismo TIN pueden tener TAE muy diferentes si uno cobra comisión de apertura y el otro no. Por eso, la TAE es el indicador correcto para comparar ofertas entre entidades."
+  - question: "¿Cómo afecta un préstamo a mi perfil crediticio?"
+    answer: "Solicitar un nuevo préstamo genera una consulta en la Central de Información de Riesgos del Banco de España (CIRBE) y puede producir una bajada temporal en tu puntuación crediticia. Sin embargo, devolver las cuotas puntualmente durante toda la vida del préstamo construye un historial de pagos positivo, que es el factor más importante en la evaluación de riesgo crediticio. Gestionar correctamente un préstamo a plazos demuestra capacidad de pago y disciplina financiera. Por el contrario, cualquier impago queda registrado y puede dificultar el acceso a financiación futura durante varios años."
+  - question: "¿Cuánto puedo permitirme pedir prestado de forma responsable?"
+    answer: "La recomendación general es que el total de tus cuotas de deuda (incluyendo el nuevo préstamo) no supere el 35-40% de tus ingresos netos mensuales. Si cobras 2.500 € al mes y ya pagas 400 € por otros créditos, tu margen disponible para un nuevo préstamo sería de entre 475 € y 600 € al mes. Usa esta calculadora para determinar el importe máximo que puedes solicitar manteniendo la cuota dentro de ese rango. Deja siempre un colchón para imprevistos y no comprometas la totalidad de tu capacidad de endeudamiento."
+
+examples:
+  - title: "Préstamo para compra de coche"
+    scenario: "Financiar un vehículo de 18.000 € al 6,5% TAE a 5 años"
+    inputs:
+      loanAmount: 18000
+      interestRate: 6.5
+      loanTerm: 5
+    expectedResult: "Cuota mensual: 352,15 € | Total intereses: 3.128,80 €"
+    explanation: "El coste total del coche asciende a 21.128,80 € incluyendo intereses. Dar una entrada mayor para reducir el importe financiado o negociar un tipo por debajo del 5% con el concesionario o con financiación directa del banco podría ahorrar varios cientos de euros a lo largo del préstamo."
+  - title: "Préstamo personal para reforma del hogar"
+    scenario: "Solicitar 12.000 € al 8% TAE para reformar la cocina, a devolver en 4 años"
+    inputs:
+      loanAmount: 12000
+      interestRate: 8
+      loanTerm: 4
+    expectedResult: "Cuota mensual: 292,96 € | Total intereses: 2.062,08 €"
+    explanation: "A 4 años, los intereses suponen 2.062,08 €. Si el mismo préstamo se contratara a 7 años, la cuota bajaría a 186,86 €, pero los intereses subirían hasta 3.696,24 €, casi el doble. Elegir el plazo más corto que permita tu presupuesto es la estrategia que más dinero te ahorra."
+  - title: "Préstamo rápido de importe reducido"
+    scenario: "Pedir 5.000 € al 7% TAE a 2 años para cubrir un gasto imprevisto"
+    inputs:
+      loanAmount: 5000
+      interestRate: 7
+      loanTerm: 2
+    expectedResult: "Cuota mensual: 224,08 € | Total intereses: 377,92 €"
+    explanation: "Con un plazo corto de 2 años, el total de intereses se mantiene por debajo de los 378 €. La cuota de 224,08 € resulta asumible para la mayoría de los presupuestos y el préstamo queda totalmente liquidado en solo 24 meses, evitando que la deuda se prolongue innecesariamente."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

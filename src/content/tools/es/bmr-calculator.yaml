@@ -1,0 +1,82 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "Calculadora TMB - Tasa Metabólica Basal | CalcHub"
+metaDescription: "Calcula tu Tasa Metabólica Basal con la ecuación Mifflin-St Jeor. Descubre cuántas calorías quema tu cuerpo en reposo según edad, peso y altura."
+h1: "Calculadora TMB (Tasa Metabólica Basal)"
+slug: "calculadora-metabolismo-basal"
+
+primaryKeyword: "calculadora metabolismo basal"
+secondaryKeywords:
+  - "tasa metabolica basal"
+  - "calcular metabolismo basal"
+  - "tmb calcular"
+  - "metabolismo basal formula"
+
+intro: "Tu Tasa Metabólica Basal es la cantidad de calorías que tu cuerpo necesita simplemente para mantenerse vivo: respirar, hacer circular la sangre, regular la temperatura corporal y mantener los órganos en funcionamiento mientras estás en reposo absoluto. La TMB representa entre el 60% y el 75% del gasto calórico total diario en la mayoría de las personas. Conocer tu metabolismo basal te da la base para calcular cuánto necesitas comer realmente, ya sea para perder grasa, ganar músculo o mantener tu peso actual."
+
+howItWorks:
+  title: "Cómo se calcula la TMB"
+  content: "Esta calculadora emplea la ecuación de Mifflin-St Jeor, que la Asociación Americana de Dietética identificó como el método de estimación de TMB más preciso para personas sanas en un estudio comparativo de 2005. La ecuación tiene en cuenta el peso, la altura, la edad y el sexo biológico. Para hombres, la fórmula es TMB = 10 por el peso en kilogramos más 6,25 por la altura en centímetros menos 5 por la edad en años más 5. Para mujeres, se aplica el mismo cálculo base pero se resta 161 en lugar de sumar 5. Esta diferencia refleja el porcentaje generalmente mayor de masa corporal magra en los hombres. La ecuación de Mifflin-St Jeor sustituyó a la antigua ecuación de Harris-Benedict (1919) como referencia porque demostró ser más precisa en poblaciones diversas. La ecuación de Harris-Benedict tiende a sobreestimar la TMB en aproximadamente un 5% en personas de peso normal e incluso más en personas con obesidad. Hay varios factores que afectan a tu TMB real más allá de lo que la fórmula puede captar. La masa muscular es la variable más importante, ya que el tejido muscular quema más calorías en reposo que el tejido graso. Dos personas con el mismo peso, altura y edad pueden tener TMB que difieran entre 200 y 300 calorías si una tiene significativamente más masa magra que la otra. La genética también desempeña un papel, representando aproximadamente el 40% de la variación de la TMB entre individuos incluso después de controlar la composición corporal. La función tiroidea regula directamente la tasa metabólica; el hipotiroidismo puede reducir la TMB entre un 10% y un 15%. La disminución de la TMB relacionada con la edad promedia entre un 1% y un 2% por década después de los 20 años, debido principalmente a la pérdida progresiva de músculo más que al envejecimiento en sí. Mantener la musculatura mediante entrenamiento de fuerza puede frenar esta disminución de forma notable. La temperatura ambiental, ciertos medicamentos, el consumo de cafeína y la ingesta reciente de alimentos también generan fluctuaciones temporales en la TMB."
+  formula: "TMB (hombre) = 10×peso(kg) + 6,25×altura(cm) - 5×edad + 5"
+  formulaExplanation: "Para mujeres, se sustituye el +5 por -161. Esta es la ecuación de Mifflin-St Jeor, considerada la estimación de TMB más precisa para adultos sanos."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "¿Cuál es la diferencia entre TMB y TMR?"
+    answer: "La TMB (Tasa Metabólica Basal) y la TMR (Tasa Metabólica en Reposo) se usan a menudo como sinónimos, pero difieren en las condiciones de medición. La TMB requiere condiciones de laboratorio estrictas: 12 horas de ayuno, 8 horas de sueño, un entorno termoneutro y reposo físico y psicológico completo. La TMR se mide en condiciones menos restrictivas y suele ser entre un 10% y un 20% más alta que la TMB. A efectos prácticos, la diferencia es lo bastante pequeña como para que cualquiera de los dos valores sirva como punto de partida para los cálculos de calorías."
+  - question: "¿Por qué la TMB disminuye con la edad?"
+    answer: "La TMB desciende aproximadamente entre un 1% y un 2% por década a partir de los 20 años. El principal responsable es la sarcopenia, la pérdida gradual de masa muscular que ocurre de forma natural con el envejecimiento. Dado que el tejido muscular es metabólicamente activo y quema unas 13 calorías por kilogramo al día en reposo, perder músculo reduce el gasto energético. Entre los 30 y los 80 años, la mayoría de las personas pierden entre un 30% y un 40% de su masa muscular sin intervención. El entrenamiento de fuerza regular y una ingesta adecuada de proteínas (entre 1,6 y 2,2 gramos por kg de peso corporal) pueden frenar este proceso de manera importante."
+  - question: "¿Puedo aumentar mi TMB?"
+    answer: "Ganar masa muscular magra es la forma más efectiva de aumentar la TMB. Cada kilogramo de músculo quema aproximadamente 13 calorías al día en reposo, comparado con unas 4,5 calorías por kilogramo de grasa. Añadir 5 kg de músculo mediante entrenamiento de fuerza constante sube tu TMB diaria en unas 65 calorías. Aunque parezca poco, a lo largo de un año supone unas 24.000 calorías adicionales quemadas en reposo. Otros factores que aumentan temporalmente la tasa metabólica incluyen las dietas altas en proteínas (por el efecto térmico de los alimentos), la exposición al frío y la cafeína."
+  - question: "¿Qué tan precisa es esta calculadora de TMB?"
+    answer: "La ecuación de Mifflin-St Jeor predice la TMB dentro del 10% de los valores medidos para aproximadamente el 82% de las personas, según el estudio de validación original. La precisión es mayor para adultos con peso normal y disminuye algo en personas con sobrepeso u obesidad importante, o con bajo peso. Los deportistas con masa muscular por encima de la media pueden encontrar que la fórmula subestima su TMB real, mientras que las personas con menos masa muscular de lo habitual pueden ver sobreestimaciones. Para una precisión de nivel clínico, la calorimetría indirecta en un hospital o centro de medicina deportiva mide el consumo real de oxígeno."
+  - question: "¿Debo comer por debajo de mi TMB para adelgazar?"
+    answer: "Comer por debajo de tu TMB generalmente no se recomienda y puede ser contraproducente. Tu cuerpo necesita esas calorías de base para mantener las funciones básicas de los órganos, la producción hormonal y la respuesta inmunitaria. Comer de forma crónica por debajo de la TMB provoca adaptación metabólica, donde el organismo reduce el gasto energético para conservar recursos. Esto dificulta la pérdida de peso posterior y a menudo lleva a la pérdida de músculo. En su lugar, usa tu TDEE (que incluye las calorías de la actividad) como punto de partida y crea un déficit moderado de 300 a 500 calorías por debajo del TDEE para una pérdida de grasa sostenible."
+  - question: "¿Cómo se relaciona la TMB con el TDEE y el conteo de calorías?"
+    answer: "La TMB es la base de tu gasto energético diario total. El TDEE multiplica tu TMB por un factor de actividad para tener en cuenta el ejercicio y el movimiento cotidiano. Para personas sedentarias, el TDEE es unas 1,2 veces la TMB. Para personas muy activas, puede llegar a 1,9 veces la TMB. Si tu TMB es de 1.600 calorías y tienes actividad moderada (multiplicador 1,55), tu TDEE es de unas 2.480 calorías. Para perder peso deberías comer por debajo de tu TDEE (nunca por debajo de la TMB). Para ganar peso, come por encima de tu TDEE."
+
+examples:
+  - title: "Hombre activo de 30 años"
+    scenario: "Un hombre de 30 años que pesa 80 kg y mide 180 cm"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "TMB: 1.780 kcal/día"
+    explanation: "Este hombre quema aproximadamente 1.780 calorías diarias en reposo absoluto. Con actividad moderada (3-5 días de ejercicio por semana), su TDEE sería de unas 2.759 calorías al día (1.780 x 1,55)."
+  - title: "Mujer de 25 años"
+    scenario: "Una mujer de 25 años que pesa 60 kg y mide 165 cm"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "TMB: 1.345 kcal/día"
+    explanation: "Su gasto calórico en reposo es de 1.345 calorías al día. El valor más bajo en comparación con el ejemplo masculino refleja tanto el menor tamaño corporal como el ajuste específico por sexo en la fórmula de Mifflin-St Jeor."
+  - title: "Adulto mayor"
+    scenario: "Un hombre de 60 años que pesa 75 kg y mide 172 cm"
+    inputs:
+      weight: 75
+      height: 172
+      age: 60
+      gender: "male"
+    expectedResult: "TMB: 1.530 kcal/día"
+    explanation: "A los 60 años, una persona del mismo tamaño tiene una TMB aproximadamente 150 calorías menor al día que a los 30 años. Esto ilustra por qué las necesidades calóricas disminuyen con la edad y por qué mantener la masa muscular mediante ejercicio es cada vez más importante."
+
+relatedTools:
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

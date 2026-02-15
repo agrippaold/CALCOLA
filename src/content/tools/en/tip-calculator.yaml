@@ -1,0 +1,79 @@
+id: "tip-calculator"
+category: "finance"
+calculatorComponent: "TipCalculator"
+
+title: "Tip Calculator - How Much to Tip | CalcHub"
+metaDescription: "Calculate tips for any bill amount. Choose a tip percentage, split the total among friends, and see exactly what each person owes."
+h1: "Tip Calculator"
+slug: "tip-calculator"
+
+primaryKeyword: "tip calculator"
+secondaryKeywords:
+  - "gratuity calculator"
+  - "restaurant tip calculator"
+  - "tip percentage calculator"
+  - "bill split calculator"
+
+intro: "Figuring out the right tip at a restaurant, bar, or salon can feel awkward, especially when you are splitting the check with a group. This tip calculator takes the stress out of tipping by computing the gratuity amount, total bill, and per-person share in one step. Enter the bill total, pick a tip percentage, and specify how many people are splitting, then see every number you need before the server returns with the receipt."
+
+howItWorks:
+  title: "How Tip Calculations Work"
+  content: "Tipping in the United States follows a well-established set of expectations that have evolved over decades. For sit-down restaurant service, the standard range is 15% to 20% of the pre-tax bill. A 15% tip signals acceptable service, 18% is the most common middle ground, and 20% or more indicates excellent service. Some diners tip on the post-tax total out of convenience, but traditional etiquette calls for tipping on the pre-tax subtotal because the tax portion goes to the government, not the restaurant. The math itself is simple: multiply the bill by the tip percentage expressed as a decimal. An $85.00 dinner bill at 20% produces a tip of $85.00 times 0.20, which equals $17.00, bringing the total to $102.00. If four people split that total evenly, each person pays $25.50. When you change the percentage, only the multiplier changes, so the formula scales to any amount. Beyond full-service restaurants, tipping norms vary by situation. Coffee shops and counter-service spots typically see tips between $1 and $2 per drink, or 10% to 15% if you prefer a percentage. Bartenders generally receive $1 to $2 per drink or 15% to 20% on a tab. Food delivery drivers commonly receive 15% to 20%, with a minimum of $3 to $5 for small orders. Hair stylists, taxi drivers, and hotel housekeeping each have their own customary ranges, usually between 15% and 20% of the service cost. For large parties of six or more, many restaurants automatically add a gratuity of 18% to 20% to the bill. Check the receipt carefully so you do not double-tip by adding extra on top of an included service charge. When dining abroad, tipping customs differ significantly. In Japan, tipping is considered rude. In much of Europe, a service charge is included in the bill, and rounding up by a euro or two is sufficient. In Canada and Mexico, practices are closer to US norms. The tip amount is separate from the service charge that some restaurants add, so always read the fine print at the bottom of the check. Workers in the US service industry often earn a lower base wage, with tips forming the majority of their income. Federal law allows a tipped minimum wage of $2.13 per hour as long as tips bring total earnings above the regular minimum wage. This means your tip is not a bonus, it is a core part of the server's compensation. Understanding this context helps explain why American tipping percentages are higher than in countries where servers earn a full hourly wage."
+  formula: "Tip = Bill Amount x (Tip Percentage / 100)"
+  formulaExplanation: "Total = Bill Amount + Tip; Per Person = Total / Number of People"
+  academicSource: "Cornell University School of Hotel Administration. (2023). Tipping Research."
+
+faqs:
+  - question: "What is the standard tip percentage at a restaurant?"
+    answer: "The widely accepted range for sit-down restaurant service in the United States is 15% to 20% of the pre-tax bill. A tip of 15% is considered adequate for standard service, 18% is a common default, and 20% or higher shows appreciation for especially good service. For buffet-style restaurants where a server handles drinks and clears plates, 10% to 15% is typical since the service level is lower than full table service."
+  - question: "Should I calculate the tip before or after tax?"
+    answer: "Traditional etiquette says you should calculate your tip on the pre-tax subtotal, because the sales tax goes to the government and does not reflect the service you received. However, many people tip on the post-tax total for simplicity, and servers certainly appreciate the slightly higher amount. On a $100 meal with 8% sales tax, the difference between tipping 20% pre-tax ($20) and 20% post-tax ($21.60) is only $1.60, so either approach is perfectly reasonable."
+  - question: "How much should I tip for takeout and delivery orders?"
+    answer: "For takeout picked up at the counter, tipping is appreciated but not always expected, with 10% to 15% being a generous gesture. For delivery orders, a tip of 15% to 20% is standard, with a minimum of $3 to $5 for small orders. Delivery drivers use their own vehicles and fuel, so the tip helps offset those costs. During bad weather or when the restaurant is far from your location, tipping toward the higher end of the range is a considerate practice."
+  - question: "How do I split a tip fairly when dining with a group?"
+    answer: "The simplest method is to add the tip to the total bill and divide evenly by the number of people. For example, if the bill is $200 and the group leaves a 20% tip ($40), the total is $240, and each person in a group of six pays $40. If some people ordered significantly more than others, you can instead have each person tip on their own subtotal. When splitting becomes complicated, apps and calculators like this one remove the guesswork and help avoid awkward conversations about who owes what."
+  - question: "Do I need to tip if a service charge is already included?"
+    answer: "If the receipt shows an automatic service charge or gratuity, you generally do not need to add an additional tip. However, check whether the service charge actually goes to the staff, as some establishments treat it as a house fee rather than a gratuity. If service was exceptional and you want to leave extra, an additional 5% to 10% is a kind gesture. Automatic gratuities are common for large parties of six or more and at many hotel restaurants or resort dining venues."
+  - question: "How much should I tip for services outside of restaurants?"
+    answer: "Hair stylists and barbers typically receive 15% to 20% of the service cost. Taxi and rideshare drivers are commonly tipped 15% to 20% of the fare, or a flat $2 to $5 for short rides. Hotel housekeeping staff usually receive $2 to $5 per night, left daily rather than at checkout since different staff may clean your room each day. Movers are often tipped $20 to $50 per person depending on the job size. Valet parking attendants generally receive $2 to $5 when they return your car."
+
+examples:
+  - title: "Restaurant dinner with 20% tip split four ways"
+    scenario: "An $85.00 dinner bill with a 20% tip, split among 4 people"
+    inputs:
+      billAmount: 85.00
+      tipPercentage: 20
+      numberOfPeople: 4
+    expectedResult: "Tip: $17.00 | Total: $102.00 | Per person: $25.50"
+    explanation: "A 20% tip on $85.00 is $85.00 times 0.20, which equals $17.00. Adding the tip to the bill gives a total of $102.00. Dividing $102.00 by 4 people means each person pays $25.50. This falls right in the middle of the standard tipping range for good restaurant service."
+  - title: "Large group dinner with 18% tip"
+    scenario: "A $320.00 bill for a party of 8 with an 18% tip"
+    inputs:
+      billAmount: 320.00
+      tipPercentage: 18
+      numberOfPeople: 8
+    expectedResult: "Tip: $57.60 | Total: $377.60 | Per person: $47.20"
+    explanation: "At 18%, the tip on a $320.00 bill comes to $57.60, making the total $377.60. Split among 8 people, each person owes $47.20. Many restaurants automatically add 18% gratuity for large parties, so always check the receipt to avoid tipping twice."
+  - title: "Coffee shop visit"
+    scenario: "A $6.50 coffee order with a 15% tip"
+    inputs:
+      billAmount: 6.50
+      tipPercentage: 15
+      numberOfPeople: 1
+    expectedResult: "Tip: $0.98 | Total: $7.48 | Per person: $7.48"
+    explanation: "A 15% tip on $6.50 equals $0.98 (rounded from $0.975), bringing the total to $7.48. For small transactions at coffee shops, many people round up to the nearest dollar or leave a flat $1 to $2, which may end up being a higher percentage but keeps things simple."
+
+relatedTools:
+  - "sales-tax-calculator"
+  - "discount-calculator"
+  - "vat-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

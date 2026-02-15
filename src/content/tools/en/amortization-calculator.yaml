@@ -1,0 +1,79 @@
+id: "amortization-calculator"
+category: "finance"
+calculatorComponent: "AmortizationCalculator"
+
+title: "Amortization Calculator - Loan Schedule | CalcHub"
+metaDescription: "Build a full amortization schedule for any loan. See monthly payments, interest breakdown, and how extra payments can save you thousands."
+h1: "Amortization Calculator"
+slug: "amortization-calculator"
+
+primaryKeyword: "amortization calculator"
+secondaryKeywords:
+  - "amortization schedule calculator"
+  - "loan amortization calculator"
+  - "mortgage amortization calculator"
+  - "payment schedule calculator"
+
+intro: "When you take out a mortgage or car loan, each monthly payment is split between principal and interest, but the split changes with every single payment. This amortization calculator generates a complete payment schedule showing exactly how much of each payment reduces your balance and how much goes to interest. Enter your loan amount, interest rate, and term to see the full picture, including total interest paid and how extra payments could shorten the loan."
+
+howItWorks:
+  title: "How Loan Amortization Works"
+  content: "Amortization is the process of paying off a loan through a series of equal periodic payments. Each payment covers the interest that has accrued since the last payment and applies the remainder to reducing the principal balance. The word itself comes from the Latin 'ad mortem,' meaning 'to death,' referring to the gradual killing off of the debt over time. The monthly payment for a fixed-rate amortized loan is calculated using a standard formula: M = P times r times (1 + r) to the power of n, divided by (1 + r) to the power of n minus 1. Here, P is the loan principal, r is the monthly interest rate (annual rate divided by 12, expressed as a decimal), and n is the total number of payments. For a $200,000 loan at 6% annual interest over 30 years, r equals 0.005 (6% divided by 12) and n equals 360 (30 times 12). Plugging these values in gives a monthly payment of $1,199.10. Over 360 payments, the total amount paid is $431,676.38, meaning you pay $231,676.38 in interest on top of the original $200,000 principal. What makes amortization fascinating is how the payment allocation shifts over time. In the first month of the $200,000 example, $1,000.00 goes to interest ($200,000 times 0.005) and only $199.10 goes to principal. By the final payment, nearly the entire $1,199.10 goes to principal with just a few dollars in interest. This front-loaded interest structure means that in the early years, you are mostly paying the bank rather than building equity. A borrower halfway through a 30-year mortgage has not paid off half the principal, they have paid off closer to a third. This is precisely why making extra payments early in the loan has such a dramatic effect. An additional $100 per month on the $200,000 loan at 6% would save approximately $45,000 in total interest and pay off the mortgage about 5 years early. Every extra dollar applied to principal in year one saves far more than the same dollar applied in year twenty, because it prevents interest from compounding on that amount for the remaining life of the loan. Comparing a 30-year term to a 15-year term on the same loan reveals the true cost of time. The $200,000 loan at 6% over 15 years has a monthly payment of $1,687.71, roughly $489 more per month. But the total interest drops from $231,676.38 to $103,788.46, a savings of nearly $128,000. The higher monthly payment is the trade-off, but for borrowers who can afford it, the interest savings are substantial. Amortization schedules are equally useful for auto loans, personal loans, and student loans. A $30,000 car loan at 5.5% for 5 years produces a monthly payment of $573.46 with $4,407.63 in total interest. Seeing the full schedule helps borrowers understand the real cost of financing and make informed decisions about loan terms, down payment sizes, and whether refinancing makes sense."
+  formula: "M = P x [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = monthly payment, P = loan principal, r = monthly interest rate (annual rate / 12 / 100), n = total number of payments (years x 12). Total Interest = (M x n) - P"
+  academicSource: "Consumer Financial Protection Bureau. (2024). Understand Loan Options."
+
+faqs:
+  - question: "Why does most of my early payment go to interest instead of principal?"
+    answer: "Interest is calculated on the outstanding balance each month. At the start of the loan, the balance is at its highest, so the interest charge is at its highest too. As you make payments and the balance decreases, the interest charge shrinks and more of each fixed payment goes toward reducing the principal. On a $200,000 loan at 6%, the first payment allocates $1,000 to interest and only $199.10 to principal. By payment 180 (halfway through), about $578 goes to interest and $621 goes to principal. The shift accelerates as the balance drops."
+  - question: "How much can I save by making extra payments on my loan?"
+    answer: "Extra payments go directly to reducing the principal, which lowers future interest charges. On a $200,000 mortgage at 6% for 30 years, adding just $100 per month to your payment saves approximately $45,000 in total interest and pays off the loan about 5 years ahead of schedule. A one-time lump sum payment of $10,000 in year one saves roughly $30,000 in interest over the remaining term. The earlier in the loan you make extra payments, the greater the impact because you prevent interest from compounding on that principal."
+  - question: "What is the difference between a 15-year and 30-year amortization?"
+    answer: "A 15-year loan has higher monthly payments but dramatically lower total interest. For a $200,000 loan at 6%, the 30-year payment is $1,199.10 with $231,676 in total interest, while the 15-year payment is $1,687.71 with $103,788 in total interest. Choosing 15 years saves nearly $128,000 but requires about $489 more per month. The right choice depends on your monthly budget, other financial goals, and whether you could invest the difference at a higher return than the loan's interest rate."
+  - question: "Can I use an amortization calculator for car loans?"
+    answer: "Yes, the amortization formula works the same way for any fixed-rate installment loan, whether it is a mortgage, auto loan, personal loan, or student loan. Car loans are typically shorter (3 to 7 years) with different interest rates than mortgages, but the math is identical. A $30,000 auto loan at 5.5% for 5 years gives a monthly payment of $573.46 and total interest of $4,407.63. The schedule will show the same front-loaded interest pattern, just compressed into a shorter time frame."
+  - question: "What does it mean to refinance, and when should I consider it?"
+    answer: "Refinancing means replacing your current loan with a new one, typically at a lower interest rate or different term. It makes sense when interest rates have dropped significantly since you took out the original loan, your credit score has improved enough to qualify for a better rate, or you want to switch from a 30-year to a 15-year term. The general guideline is that refinancing saves money if you can reduce your rate by at least 0.5% to 1% and plan to stay in the home long enough to recoup closing costs, which typically range from 2% to 5% of the loan amount."
+  - question: "How does an amortization schedule differ from a simple interest loan?"
+    answer: "An amortized loan has fixed periodic payments that include both principal and interest, with the balance reaching zero at the end of the term. A simple interest loan calculates interest on the remaining principal balance each period, but the payment structure can vary. Interest-only loans, for example, require only interest payments for a set period before principal payments begin. With an amortized loan, you are guaranteed to pay off the debt by the end of the term as long as you make every scheduled payment, which provides a clear and predictable path to being debt-free."
+
+examples:
+  - title: "30-year mortgage at 6%"
+    scenario: "A $200,000 home loan at 6% annual interest over 30 years"
+    inputs:
+      loanAmount: 200000
+      interestRate: 6
+      loanTerm: 30
+    expectedResult: "Monthly payment: $1,199.10 | Total interest: $231,676.38"
+    explanation: "The monthly payment of $1,199.10 stays the same for all 360 payments. Over the life of the loan, you pay $431,676.38 in total, meaning $231,676.38 goes to interest alone, more than the original loan amount. The first payment splits $1,000.00 to interest and $199.10 to principal, while the final payment is almost entirely principal."
+  - title: "15-year mortgage comparison"
+    scenario: "The same $200,000 loan at 6% but repaid over 15 years instead of 30"
+    inputs:
+      loanAmount: 200000
+      interestRate: 6
+      loanTerm: 15
+    expectedResult: "Monthly payment: $1,687.71 | Total interest: $103,788.46"
+    explanation: "Cutting the term in half raises the monthly payment by $488.61 compared to the 30-year option. However, total interest drops from $231,676.38 to $103,788.46, a savings of $127,887.92. The borrower pays $303,788.46 total over 15 years versus $431,676.38 over 30 years. For borrowers who can handle the higher payment, the interest savings are substantial."
+  - title: "5-year auto loan"
+    scenario: "A $30,000 car loan at 5.5% interest over 5 years"
+    inputs:
+      loanAmount: 30000
+      interestRate: 5.5
+      loanTerm: 5
+    expectedResult: "Monthly payment: $573.46 | Total interest: $4,407.63"
+    explanation: "At $573.46 per month for 60 months, the total cost of the vehicle with financing is $34,407.63, adding $4,407.63 in interest to the $30,000 principal. The first payment allocates $137.50 to interest and $435.96 to principal. Because auto loans are shorter, the interest-to-principal ratio shifts more quickly than with a 30-year mortgage."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "loan-calculator"
+  - "auto-loan-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

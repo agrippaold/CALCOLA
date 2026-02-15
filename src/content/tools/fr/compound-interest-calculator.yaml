@@ -1,0 +1,84 @@
+id: "compound-interest-calculator"
+category: "finance"
+calculatorComponent: "CompoundInterestCalculator"
+
+title: "Calcul Intérêts Composés - Croissance | CalcHub"
+metaDescription: "Calculez la croissance de votre capital grâce aux intérêts composés. Comparez fréquences de capitalisation, durées et taux pour planifier vos placements."
+h1: "Calculateur d'Intérêts Composés"
+slug: "calcul-interets-composes"
+
+primaryKeyword: "calcul interets composes"
+secondaryKeywords:
+  - "interets composes formule"
+  - "calculer interets composes"
+  - "simulation interets composes"
+  - "capitalisation"
+
+intro: "Les intérêts composés sont le moteur silencieux de la construction de patrimoine sur le long terme. Le principe est simple : les intérêts générés par un placement sont réinvestis et produisent eux-mêmes des intérêts, créant un effet boule de neige qui accélère avec le temps. Ce calculateur vous montre précisément comment votre capital initial évolue en fonction du taux de rendement, de la durée de placement et de la fréquence de capitalisation. Renseignez vos données pour observer la croissance exponentielle de votre épargne et mieux planifier vos objectifs financiers."
+
+howItWorks:
+  title: "Comment fonctionnent les intérêts composés"
+  content: "Les intérêts composés calculent le rendement non seulement sur le capital initial, mais aussi sur l'ensemble des intérêts déjà accumulés lors des périodes précédentes. Ce mécanisme produit une croissance exponentielle et non linéaire, ce qui fait toute la différence sur des horizons de placement longs. La formule multiplie le capital par le facteur (1 + taux périodique) élevé à la puissance du nombre total de périodes de capitalisation. Prenons un cas pratique : si vous placez 10 000 € à un taux annuel de 5 % capitalisé mensuellement pendant 20 ans, votre capital atteint 27 126,40 €. Avec des intérêts simples au même taux, vous n'obtiendriez que 20 000 €. La différence de 7 126 € provient exclusivement de l'effet de capitalisation, où les intérêts gagnés les années précédentes génèrent à leur tour des revenus. La fréquence de capitalisation a un impact réel sur le résultat final. Les mêmes 10 000 € à 5 % sur 20 ans produisent 26 532,98 € en capitalisation annuelle, 27 014,85 € en capitalisation trimestrielle et 27 126,40 € en capitalisation mensuelle. L'écart entre la capitalisation annuelle et mensuelle représente près de 600 €. En revanche, la différence entre la capitalisation mensuelle et quotidienne reste marginale, avec un gain supplémentaire de seulement 34 €. Le facteur temps est la variable la plus déterminante dans cette équation. La règle de 72 permet d'estimer rapidement le temps nécessaire pour doubler un capital : il suffit de diviser 72 par le taux de rendement annuel. À 6 %, votre placement double en environ 12 ans. À 4 %, il faut 18 ans. C'est pourquoi commencer à épargner tôt, même avec des montants modestes, donne des résultats bien meilleurs que de démarrer tard avec des sommes plus importantes. En France, plusieurs supports de placement bénéficient de la capitalisation des intérêts : le Livret A, le LDDS, le PEL, les fonds en euros de l'assurance-vie et les supports en unités de compte du PEA. Le Livret A offre un taux réglementé (actuellement autour de 2,4 %) avec une capitalisation des intérêts au 31 décembre de chaque année. L'assurance-vie en fonds euros propose des taux moyens entre 2,5 % et 4 % avec une capitalisation annuelle et un avantage fiscal après huit ans de détention. Le PEA permet d'investir en actions européennes avec une exonération d'impôt sur les plus-values après cinq ans, mais les rendements sont variables et liés aux marchés financiers. Pour tirer le meilleur parti des intérêts composés, trois principes s'appliquent : commencer le plus tôt possible, réinvestir systématiquement les gains et ne pas interrompre la capitalisation sauf nécessité absolue. Retirer les intérêts chaque année au lieu de les réinvestir transforme la croissance exponentielle en croissance linéaire et réduit considérablement le résultat final sur plusieurs décennies."
+  formula: "A = P(1 + r/n)^(nt)"
+  formulaExplanation: "A = valeur future, P = capital initial, r = taux d'intérêt annuel (en décimal), n = nombre de périodes de capitalisation par an, t = durée en années"
+  academicSource: "Autorité des marchés financiers (AMF). (2024). Guide de l'épargnant : comprendre les placements financiers."
+
+faqs:
+  - question: "Quelle est la différence entre intérêts simples et intérêts composés ?"
+    answer: "Les intérêts simples sont calculés uniquement sur le capital de départ, ce qui produit une croissance linéaire. Les intérêts composés sont calculés sur le capital plus tous les intérêts déjà accumulés, ce qui produit une croissance exponentielle. Sur un placement de 10 000 € à 5 % pendant 25 ans, les intérêts simples rapportent 12 500 € (total : 22 500 €), tandis que les intérêts composés capitalisés annuellement rapportent 23 863 € (total : 33 863 €). L'écart de 11 363 € illustre la puissance de la capitalisation sur une longue période."
+  - question: "À quelle fréquence les intérêts doivent-ils être capitalisés ?"
+    answer: "Plus la capitalisation est fréquente, plus le rendement final est élevé, mais les écarts diminuent à mesure que la fréquence augmente. Pour un placement de 20 000 € à 4 % sur 15 ans : la capitalisation annuelle donne 36 018,79 €, la trimestrielle 36 227,40 €, la mensuelle 36 290,11 € et la quotidienne 36 313,42 €. La différence entre capitalisation annuelle et mensuelle est significative (271 €), mais entre mensuelle et quotidienne elle ne représente que 23 €. En pratique, la plupart des produits d'épargne français capitalisent les intérêts annuellement."
+  - question: "Comment fonctionne la règle de 72 ?"
+    answer: "La règle de 72 est un raccourci de calcul mental qui permet d'estimer le nombre d'années nécessaires pour doubler un capital avec des intérêts composés. Il suffit de diviser 72 par le taux d'intérêt annuel. À 3 %, votre capital double en environ 24 ans (72/3). À 6 %, il double en 12 ans. À 8 %, en 9 ans. Cette approximation fonctionne bien pour des taux compris entre 2 % et 12 %. Au-delà, la précision diminue. Pour des calculs plus exacts, utilisez directement le simulateur ci-dessus."
+  - question: "Les intérêts composés fonctionnent-ils aussi sur les dettes ?"
+    answer: "Les intérêts composés s'appliquent de la même manière aux dettes, mais à votre désavantage. Un crédit renouvelable de 3 000 € à 18 % de TAEG, si vous ne remboursez que les intérêts minimaux, peut atteindre plus de 6 700 € en cinq ans à cause de la capitalisation des intérêts impayés. C'est la raison pour laquelle les crédits à la consommation à taux élevé doivent être remboursés le plus rapidement possible. En France, le taux d'usure protège les consommateurs en plafonnant le TAEG maximal applicable par les établissements de crédit."
+  - question: "Quel rendement réaliste attendre de ses placements en France ?"
+    answer: "Le Livret A offre un taux réglementé autour de 2,4 % net d'impôts. Les fonds en euros de l'assurance-vie rapportent en moyenne 2,5 % à 4 % brut. Le PEA investi en actions européennes a historiquement produit un rendement moyen de 7 % à 9 % par an sur 20 ans, avec une forte volatilité à court terme. L'immobilier locatif en France affiche un rendement brut moyen de 4 % à 7 % selon les villes. Pour une projection à long terme sur un portefeuille diversifié, un taux de 4 % à 5 % net d'inflation constitue une estimation raisonnable."
+  - question: "Comment l'imposition affecte-t-elle les intérêts composés ?"
+    answer: "En France, les revenus de placements sont soumis au prélèvement forfaitaire unique (PFU ou flat tax) de 30 %, qui comprend 12,8 % d'impôt sur le revenu et 17,2 % de prélèvements sociaux. Certains placements bénéficient d'exonérations : le Livret A et le LDDS sont totalement exonérés, l'assurance-vie offre un abattement après 8 ans de détention, et le PEA exonère les plus-values d'impôt sur le revenu après 5 ans (seuls les prélèvements sociaux s'appliquent). Choisir les bons supports d'épargne peut améliorer significativement le rendement net de vos intérêts composés."
+
+examples:
+  - title: "Placement long terme en assurance-vie"
+    scenario: "Un épargnant place 15 000 € à 3,5 % capitalisé annuellement pendant 25 ans"
+    inputs:
+      principal: 15000
+      annualRate: 3.5
+      years: 25
+      compounding: "annual"
+    expectedResult: "Valeur future : 35 429,69 € | Intérêts gagnés : 20 429,69 €"
+    explanation: "Le capital initial de 15 000 € plus que double en 25 ans grâce aux intérêts composés. Les intérêts représentent 136 % du capital de départ. Au bout de 10 ans, le placement vaut 21 162 €, soit un gain de 6 162 €. Les 15 dernières années génèrent à elles seules 14 268 € d'intérêts supplémentaires, illustrant l'accélération de la croissance dans le temps."
+  - title: "Livret A au taux réglementé"
+    scenario: "Un dépôt de 10 000 € sur un Livret A à 2,4 % capitalisé annuellement pendant 10 ans"
+    inputs:
+      principal: 10000
+      annualRate: 2.4
+      years: 10
+      compounding: "annual"
+    expectedResult: "Valeur future : 12 677,10 € | Intérêts gagnés : 2 677,10 €"
+    explanation: "Le Livret A offre un rendement modeste mais garanti et totalement exonéré d'impôts et de prélèvements sociaux. Les 2 677 € d'intérêts sont nets. Ce placement convient pour une épargne de précaution, mais sur le long terme, un rendement de 2,4 % ne compense que partiellement l'inflation, ce qui peut éroder le pouvoir d'achat réel du capital."
+  - title: "PEA investi en actions européennes"
+    scenario: "Un investisseur place 20 000 € dans un PEA à 7 % capitalisé mensuellement pendant 20 ans"
+    inputs:
+      principal: 20000
+      annualRate: 7
+      years: 20
+      compounding: "monthly"
+    expectedResult: "Valeur future : 80 775,60 € | Intérêts gagnés : 60 775,60 €"
+    explanation: "Avec un rendement moyen de 7 % sur les marchés actions européens, les 20 000 € sont multipliés par quatre en 20 ans. Les intérêts composés représentent plus de trois fois le capital initial. Après 5 ans de détention du PEA, les plus-values sont exonérées d'impôt sur le revenu (seuls les prélèvements sociaux de 17,2 % s'appliquent au retrait), ce qui préserve la majeure partie des gains."
+
+relatedTools:
+  - "savings-calculator"
+  - "mortgage-calculator"
+  - "loan-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,81 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "Calculadora IMC - Índice de Masa Corporal | CalcHub"
+metaDescription: "Calcula tu IMC gratis con nuestra calculadora de Índice de Masa Corporal. Introduce peso y altura para conocer tu categoría y recomendaciones de salud."
+h1: "Calculadora IMC (Índice de Masa Corporal)"
+slug: "calculadora-imc"
+
+primaryKeyword: "calculadora imc"
+secondaryKeywords:
+  - "indice de masa corporal"
+  - "calcular imc"
+  - "calculo imc online"
+  - "imc calcular"
+
+intro: "Saber tu Índice de Masa Corporal te da una idea rápida de cómo se relaciona tu peso con tu estatura. Los médicos de todo el mundo usan el IMC como una primera herramienta de evaluación, aunque tiene limitaciones que conviene conocer. Introduce tus datos a continuación y obtén tu resultado en segundos, junto con información sobre lo que tu categoría de IMC significa realmente para tu salud y bienestar general."
+
+howItWorks:
+  title: "Cómo se calcula el IMC"
+  content: "El Índice de Masa Corporal se obtiene dividiendo el peso en kilogramos entre el cuadrado de la altura en metros. Esta fórmula fue creada por Adolphe Quetelet, un matemático belga, en la década de 1830 como método para medir las proporciones humanas a nivel poblacional. La versión métrica usa kilogramos y metros directamente, mientras que la versión imperial multiplica por 703 para convertir libras y pulgadas. Veamos qué significan los resultados en la práctica. La Organización Mundial de la Salud clasifica el IMC en cuatro grandes categorías: bajo peso (por debajo de 18,5), peso normal (de 18,5 a 24,9), sobrepeso (de 25 a 29,9) y obesidad (30 o más). Estos puntos de corte se establecieron a partir de amplios estudios epidemiológicos que relacionan los rangos de IMC con los resultados de salud a largo plazo. Sin embargo, el IMC tiene puntos ciegos importantes. No puede diferenciar entre masa muscular y masa grasa, por lo que un deportista con mucha musculatura podría aparecer como sobrepeso a pesar de tener un porcentaje de grasa corporal bajo. De forma parecida, las personas mayores que han perdido masa muscular pueden mostrar un IMC normal mientras acumulan grasa abdominal peligrosa. Para tener una imagen más completa, conviene combinar el IMC con mediciones de perímetro de cintura o cálculos de porcentaje de grasa corporal. Las poblaciones asiáticas presentan riesgos metabólicos elevados con umbrales de IMC más bajos que las poblaciones europeas, razón por la cual algunos países han adoptado puntos de corte modificados. La OMS sugiere usar 23 como umbral de sobrepeso para poblaciones asiáticas en lugar de 25. A pesar de estas limitaciones, el IMC sigue siendo la métrica de evaluación más utilizada en todo el mundo por su sencillez y por su buena correlación a nivel poblacional con el riesgo de enfermedades metabólicas. Los profesionales de la salud suelen combinarlo con lecturas de presión arterial, colesterol y glucemia para una evaluación más completa del estado de salud del paciente."
+  formula: "IMC = peso (kg) / altura (m)²"
+  formulaExplanation: "Peso en kilogramos dividido entre la altura en metros al cuadrado. Para unidades imperiales: IMC = (peso en libras × 703) / (altura en pulgadas)²"
+  academicSource: "Organización Mundial de la Salud. (2000). Obesidad: prevención y gestión de la epidemia global. Informe Técnico de la OMS 894."
+
+faqs:
+  - question: "¿Cuál es el rango de IMC saludable?"
+    answer: "La Organización Mundial de la Salud define un IMC saludable como aquel comprendido entre 18,5 y 24,9. Las personas dentro de este rango generalmente tienen menor riesgo de enfermedad cardiovascular, diabetes tipo 2 y ciertos tipos de cáncer en comparación con quienes están fuera de él. Es importante recordar que la salud individual depende de muchos factores más allá del IMC, incluyendo la calidad de la alimentación, la actividad física regular, los antecedentes familiares y marcadores metabólicos como la presión arterial y los niveles de colesterol en sangre."
+  - question: "¿Es preciso el IMC para deportistas y personas musculosas?"
+    answer: "El IMC tiende a sobreestimar la grasa corporal en personas con una masa muscular importante. Un culturista o un jugador de rugby podría registrar un IMC de 28 o más manteniendo un porcentaje de grasa corporal inferior al 15%. Si haces ejercicio con regularidad y tienes una musculatura por encima de la media, conviene que complementes tu IMC con una medición de porcentaje de grasa corporal o un cálculo de la relación cintura-cadera para obtener una evaluación más ajustada de tu composición corporal real."
+  - question: "¿El IMC se aplica de forma diferente a hombres y mujeres?"
+    answer: "La fórmula del IMC es idéntica para hombres y mujeres, pero la interpretación puede variar. Las mujeres tienen de forma natural un porcentaje de grasa corporal más alto que los hombres con el mismo IMC. Algunos investigadores han propuesto puntos de corte específicos por sexo, pero las categorías estándar de la OMS siguen siendo las más utilizadas a nivel mundial. Para las mujeres especialmente, el perímetro de cintura puede dar información adicional, ya que medidas por encima de 80 cm se asocian con un mayor riesgo para la salud."
+  - question: "¿Con qué frecuencia debo comprobar mi IMC?"
+    answer: "Para la mayoría de los adultos, consultar el IMC una vez cada pocos meses proporciona datos útiles sobre la tendencia sin fomentar un seguimiento obsesivo. Si estás intentando activamente perder o ganar peso, revisarlo cada mes te da una retroalimentación razonable sobre tu progreso. Evita pesarte a diario para calcular el IMC, ya que las fluctuaciones normales de líquidos pueden variar tu peso entre 1 y 2 kg en cualquier dirección, lo que hace poco fiables las lecturas de IMC a corto plazo."
+  - question: "¿Cuáles son las limitaciones del IMC como indicador de salud?"
+    answer: "El IMC no puede distinguir entre masa magra y masa grasa, no tiene en cuenta los patrones de distribución de la grasa (abdominal frente a subcutánea) y usa puntos de corte poblacionales que pueden no aplicarse por igual a todos los grupos étnicos. Las investigaciones muestran que las poblaciones asiáticas enfrentan riesgos metabólicos elevados con umbrales de IMC más bajos que las poblaciones europeas. Además, esta métrica no refleja los cambios en la composición corporal que se producen con el envejecimiento, ya que la pérdida de músculo suele acompañar al aumento de grasa incluso cuando el peso se mantiene estable."
+  - question: "¿Pueden los niños usar esta calculadora de IMC?"
+    answer: "Esta calculadora está diseñada para adultos a partir de 20 años. Los niños y adolescentes necesitan tablas de percentiles de IMC específicas por edad y sexo, porque su composición corporal cambia de forma significativa durante el crecimiento. Los centros de control de enfermedades proporcionan tablas separadas de IMC por edad que comparan el IMC de un niño con poblaciones de referencia de la misma edad y sexo. En estas tablas, el bajo peso se define por debajo del percentil 5 y la obesidad a partir del percentil 95."
+
+examples:
+  - title: "Adulto con peso normal"
+    scenario: "Una persona de 170 cm de altura que pesa 65 kg"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "IMC: 22,5 — Peso normal"
+    explanation: "Con un IMC de 22,5, esta persona se encuentra cómodamente dentro del rango de peso normal (18,5-24,9). Este valor de IMC está asociado con el menor riesgo estadístico de problemas de salud relacionados con el peso."
+  - title: "Evaluación de sobrepeso"
+    scenario: "Una persona de 175 cm de altura que pesa 86 kg"
+    inputs:
+      weight: 86
+      height: 175
+      unit: "metric"
+    expectedResult: "IMC: 28,1 — Sobrepeso"
+    explanation: "Un IMC de 28,1 sitúa a esta persona en la categoría de sobrepeso (25-29,9). Aunque todavía no se clasifica como obesidad, este rango se asocia con un riesgo moderadamente aumentado de problemas cardiovasculares. Perder entre 6 y 9 kg la llevaría al rango normal."
+  - title: "Comprobación de bajo peso"
+    scenario: "Una persona de 180 cm de altura que pesa 55 kg"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "IMC: 17,0 — Bajo peso"
+    explanation: "Con un IMC de 17,0, esta persona se clasifica como bajo peso (por debajo de 18,5). Estar por debajo del peso recomendado puede indicar carencias nutricionales, un sistema inmunitario debilitado y mayor riesgo de osteoporosis. Se recomienda consultar con un profesional de la salud para una evaluación personalizada."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "ideal-weight-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

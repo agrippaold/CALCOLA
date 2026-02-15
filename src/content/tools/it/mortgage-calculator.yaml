@@ -1,0 +1,81 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Calcolo Mutuo - Rata Mensile e Interessi | CalcHub"
+metaDescription: "Calcola la rata del mutuo, gli interessi totali e il piano di ammortamento. Confronta durate e tassi per trovare il mutuo più adatto alle tue esigenze."
+h1: "Calcolo Mutuo"
+slug: "calcolo-mutuo"
+
+primaryKeyword: "calcolo mutuo"
+secondaryKeywords:
+  - "calcolo rata mutuo"
+  - "simulazione mutuo"
+  - "mutuo casa calcolo"
+  - "calcolo interessi mutuo"
+
+intro: "Acquistare casa rappresenta il più grande impegno finanziario nella vita della maggior parte degli italiani. Prima di firmare qualsiasi contratto con la banca, è fondamentale sapere esattamente quanto peseranno le rate sul bilancio familiare. Questo calcolatore scompone la rata mensile in quota capitale e quota interessi, mostra il costo complessivo del finanziamento e permette di confrontare diverse ipotesi di durata e tasso. Inserisci l'importo del mutuo, il tasso di interesse e la durata per ottenere un quadro chiaro e immediato della sostenibilità del finanziamento."
+
+howItWorks:
+  title: "Come si calcola la rata del mutuo"
+  content: "Ogni mutuo a tasso fisso utilizza la stessa formula di ammortamento alla francese adottata da banche e istituti di credito in tutta Europa. La formula richiede tre parametri fondamentali: il capitale finanziato, ovvero la somma effettivamente erogata dalla banca, il tasso di interesse annuo nominale (TAN) e la durata del mutuo espressa in anni. La rata mensile rimane costante per tutta la durata del contratto, ma la composizione interna cambia progressivamente: nei primi anni la quota interessi è predominante, mentre la quota capitale è ridotta. Man mano che il debito residuo diminuisce, gli interessi maturati calano e una porzione sempre maggiore della rata va a ridurre il capitale. Questo meccanismo spiega perché effettuare rimborsi anticipati nei primi anni di vita del mutuo produce un risparmio significativamente più alto sugli interessi complessivi. Nel mercato italiano, i mutuatari si trovano di fronte a una scelta fondamentale: il mutuo a tasso fisso, che garantisce una rata costante e prevedibile, oppure il mutuo a tasso variabile, la cui rata è agganciata all'Euribor più uno spread stabilito dalla banca. L'Euribor è il tasso interbancario europeo e oscilla in base alle decisioni della Banca Centrale Europea sulla politica monetaria. Quando l'Euribor sale, la rata del variabile aumenta; quando scende, la rata si alleggerisce. Lo spread rappresenta il margine della banca e resta fisso per tutta la durata del mutuo. Facciamo un esempio concreto: su un mutuo di €200.000 al tasso fisso del 3,5% per 25 anni, la rata mensile ammonta a circa €1.001. Nel corso dei 25 anni, gli interessi totali raggiungono circa €100.300, portando il costo complessivo del finanziamento a oltre €300.000. Se la durata viene ridotta a 15 anni con lo stesso tasso, la rata sale a circa €1.430 ma gli interessi totali scendono a €57.400, con un risparmio di quasi €43.000. Anche una differenza di mezzo punto percentuale sul tasso incide significativamente: sullo stesso mutuo da €200.000 a 25 anni, passare dal 3,5% al 4% comporta circa €15.000 di interessi aggiuntivi. Per questo motivo, confrontare le offerte di più istituti e negoziare lo spread è una delle decisioni più importanti per chi richiede un mutuo. È fondamentale considerare anche il TAEG (Tasso Annuo Effettivo Globale), che a differenza del TAN include tutte le spese accessorie e rappresenta il vero costo del finanziamento."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = rata mensile, P = capitale finanziato, r = tasso di interesse mensile (tasso annuo / 12 / 100), n = numero totale di rate (anni × 12)"
+  academicSource: "Banca d'Italia. (2023). Guida al mutuo ipotecario."
+
+faqs:
+  - question: "Quanto mutuo posso permettermi con il mio stipendio?"
+    answer: "La regola generale applicata dalle banche italiane prevede che la rata del mutuo non superi un terzo del reddito netto mensile del nucleo familiare. Se il reddito netto della famiglia è di €3.000 al mese, la rata massima sostenibile è di circa €1.000. Tuttavia, le banche valutano anche altri fattori come la stabilità lavorativa (contratto a tempo indeterminato, anzianità di servizio), eventuali altri finanziamenti in corso e le spese familiari complessive. Il rapporto rata-reddito ideale si colloca fra il 25% e il 30%. Utilizza questo calcolatore per individuare l'importo del mutuo che genera una rata compatibile con il tuo bilancio familiare, ricordando di tenere un margine per le spese impreviste."
+  - question: "Meglio il tasso fisso o il tasso variabile?"
+    answer: "Il mutuo a tasso fisso garantisce una rata costante per tutta la durata, offrendo certezza e tranquillità nella pianificazione del bilancio familiare. Il mutuo a tasso variabile parte generalmente da una rata più bassa, poiché il tasso iniziale è inferiore, ma comporta il rischio che la rata aumenti se l'Euribor sale. In periodi di tassi bassi, il variabile può risultare molto conveniente, ma in fasi di rialzo dei tassi le rate possono crescere in modo significativo. Una soluzione intermedia è il mutuo a tasso misto, che consente di passare da fisso a variabile a scadenze prefissate, oppure il tasso variabile con cap, che prevede un tetto massimo alla rata."
+  - question: "Qual è la differenza tra mutuo a 15 e a 30 anni?"
+    answer: "Un mutuo di durata più breve comporta rate mensili più alte ma un risparmio molto consistente sugli interessi totali. Per un mutuo di €200.000 al 3,5%, la rata a 30 anni è di circa €898 con €123.000 di interessi complessivi, mentre a 15 anni la rata sale a circa €1.430 ma gli interessi scendono a €57.400, con un risparmio di oltre €65.000. La scelta dipende dalla capacità di spesa mensile: se la rata a 15 anni è sostenibile senza compromettere la qualità della vita e la capacità di risparmio, rappresenta l'opzione economicamente più vantaggiosa. Il mutuo a 30 anni è preferibile quando serve una rata più leggera per mantenere margine finanziario."
+  - question: "Quali sono le spese accessorie del mutuo?"
+    answer: "Oltre alla rata mensile, chi accende un mutuo in Italia deve sostenere diverse spese accessorie. Le principali sono: le spese di istruttoria della pratica, che la banca addebita per l'analisi della richiesta e variano generalmente tra lo 0,5% e l'1% dell'importo finanziato; la perizia sull'immobile, necessaria per verificarne il valore, con un costo medio fra €200 e €400; le spese notarili per l'atto di mutuo e l'iscrizione dell'ipoteca, che possono andare da €2.000 a €4.000 a seconda dell'importo; l'imposta sostitutiva pari allo 0,25% per la prima casa o al 2% per la seconda casa; e infine l'assicurazione sull'immobile contro incendio e scoppio, obbligatoria per legge. Alcune banche richiedono anche una polizza vita a copertura del debito residuo."
+  - question: "Cos'è la surroga del mutuo e come funziona?"
+    answer: "La surroga, o portabilità del mutuo, è un diritto previsto dalla Legge Bersani del 2007 che consente al mutuatario di trasferire il proprio mutuo da una banca a un'altra senza alcun costo. La nuova banca subentra nel finanziamento offrendo condizioni migliori, tipicamente un tasso di interesse più basso. La banca originaria non può opporsi né addebitare penali. Il vantaggio principale è la possibilità di ridurre la rata o la durata residua senza sostenere spese di notaio, perizia o istruttoria, che restano a carico della nuova banca. La surroga è particolarmente conveniente quando i tassi di mercato scendono rispetto al momento in cui si è stipulato il mutuo originario."
+  - question: "Come funziona l'estinzione anticipata del mutuo?"
+    answer: "L'estinzione anticipata consente di rimborsare tutto o parte del debito residuo prima della scadenza naturale del mutuo. Per i mutui stipulati dopo il 2 febbraio 2007 per l'acquisto della prima casa, la legge italiana vieta alle banche di applicare penali di estinzione anticipata. Per mutui precedenti o per seconde case, può essere prevista una penale, generalmente compresa fra lo 0,5% e il 2% del capitale rimborsato anticipatamente. L'estinzione anticipata, anche parziale, riduce il debito residuo e di conseguenza gli interessi futuri. Conviene soprattutto nei primi anni di vita del mutuo, quando la quota interessi è più alta. Prima di procedere, è consigliabile confrontare il risparmio sugli interessi con il rendimento potenziale dell'investimento alternativo di quella somma."
+
+examples:
+  - title: "Mutuo prima casa a 25 anni"
+    scenario: "Un mutuatario accende un mutuo di €150.000 al tasso fisso del 3,2% per 25 anni"
+    inputs:
+      loanAmount: 150000
+      interestRate: 3.2
+      loanTerm: 25
+    expectedResult: "Rata mensile: €726,97 | Interessi totali: €68.091,00"
+    explanation: "Con una rata di circa €727 al mese, il mutuatario pagherà circa €68.000 di interessi in 25 anni, portando il costo complessivo del finanziamento a circa €218.000. La prima rata destina €400 agli interessi e solo €327 alla riduzione del capitale."
+  - title: "Mutuo per appartamento in città"
+    scenario: "Acquisto di un appartamento con mutuo di €250.000 al 3,8% per 30 anni"
+    inputs:
+      loanAmount: 250000
+      interestRate: 3.8
+      loanTerm: 30
+    expectedResult: "Rata mensile: €1.165,68 | Interessi totali: €169.644,80"
+    explanation: "La rata mensile supera i €1.165, e nel corso di 30 anni gli interessi ammontano a quasi €170.000. Ridurre la durata a 20 anni farebbe salire la rata a circa €1.487, ma gli interessi totali scenderebbero a circa €106.900, con un risparmio di oltre €62.000."
+  - title: "Piccolo mutuo per ristrutturazione"
+    scenario: "Un mutuo di €100.000 al 4% per 15 anni per ristrutturare un immobile"
+    inputs:
+      loanAmount: 100000
+      interestRate: 4
+      loanTerm: 15
+    expectedResult: "Rata mensile: €739,69 | Interessi totali: €33.143,80"
+    explanation: "Su un importo contenuto e una durata breve, gli interessi totali restano sotto i €34.000. Il tasso del 4% è nella media per mutui ristrutturazione. Confrontare le offerte di almeno tre banche diverse può consentire di risparmiare migliaia di euro."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

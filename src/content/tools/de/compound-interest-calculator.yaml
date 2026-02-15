@@ -1,0 +1,73 @@
+id: "compound-interest-calculator"
+category: "finance"
+calculatorComponent: "CompoundInterestCalculator"
+
+title: "Zinseszinsrechner - Kapitalwachstum | CalcHub"
+metaDescription: "Berechnen Sie den Zinseszins auf Ihr Kapital. Endwert, Zinsen und Wachstum bei verschiedenen Laufzeiten und Zinssaetzen sofort berechnen."
+h1: "Zinseszinsrechner"
+slug: "zinseszinsrechner"
+
+primaryKeyword: "zinseszinsrechner"
+secondaryKeywords:
+  - "zinseszins berechnen"
+  - "kapitalwachstum rechner"
+  - "zinsrechner"
+  - "rendite berechnen"
+
+intro: "Der Zinseszinseffekt ist der staerkste Verbuendete beim langfristigen Vermoegensaufbau. Wenn Zinsen nicht ausgezahlt, sondern dem Kapital zugeschlagen werden, erwirtschaften sie im naechsten Jahr selbst wieder Zinsen. Ueber Jahrzehnte entsteht daraus ein exponentielles Wachstum, das die Ergebnisse einer einfachen Verzinsung weit uebertrifft. Dieser Zinseszinsrechner zeigt Ihnen genau, wie Ihr Anfangskapital bei einer bestimmten Rendite, Laufzeit und Zinsperiode waechst. Tragen Sie Ihre Werte ein und sehen Sie, wie die Zeit fuer Sie arbeitet."
+
+howItWorks:
+  title: "So funktioniert der Zinseszins"
+  content: "Der Zinseszins berechnet die Verzinsung nicht nur auf das urspruengliche Kapital, sondern auch auf alle bisher aufgelaufenen Zinsen. Das fuehrt zu exponentiellem statt linearem Wachstum. Die Formel multipliziert das Anfangskapital mit dem Faktor eins plus dem periodischen Zinssatz, potenziert mit der Gesamtanzahl der Zinsperioden. Ein Zahlenbeispiel verdeutlicht den Effekt: Wer 10.000 Euro zu 5 Prozent Jahreszins anlegt und die Zinsen monatlich gutschreiben laesst, hat nach 30 Jahren 44.677,44 Euro. Bei einfacher Verzinsung waeren es nur 25.000 Euro. Die Differenz von fast 20.000 Euro entsteht allein durch den Zinseszinseffekt, also dadurch, dass bereits verdiente Zinsen in den Folgejahren selbst wieder Ertraege abwerfen. Die Haeufigkeit der Zinsgutschrift spielt eine beachtliche Rolle. Dieselben 10.000 Euro zu 5 Prozent auf 30 Jahre ergeben bei jaehrlicher Gutschrift 43.219,42 Euro, bei vierteljaehrlicher 44.089,20 Euro und bei monatlicher 44.677,44 Euro. Der Unterschied zwischen jaehrlich und monatlich belaeuft sich auf rund 1.450 Euro, waehrend der Sprung von monatlich auf taeglich nur noch wenige Euro ausmacht. Die Zeit ist der maechtigste Faktor in dieser Gleichung. Eine Verdoppelung der Laufzeit bewirkt weit mehr als eine Verdoppelung des Endbetrags, weil das Wachstum exponentiell verlaeuft. Die 72er-Regel bietet eine schnelle Naeherung: Teilen Sie 72 durch den Jahreszinssatz, um die ungefaehre Verdoppelungszeit in Jahren zu erhalten. Bei 6 Prozent verdoppelt sich Ihr Kapital in rund 12 Jahren. In Deutschland unterliegen Kapitalertraege der Abgeltungssteuer in Hoehe von 25 Prozent zuzueglich Solidaritaetszuschlag und gegebenenfalls Kirchensteuer. Der Sparer-Pauschbetrag liegt seit 2023 bei 1.000 Euro fuer Alleinstehende und 2.000 Euro fuer Ehepaare. Erst Kapitalertraege oberhalb dieses Freibetrags werden besteuert. Bei laengeren Anlagezeitraeumen sollten Sie daher den Nettozins nach Steuern in die Berechnung einbeziehen, um den tatsaechlichen Vermoegensaufbau realistisch einzuschaetzen. Wer beispielsweise 5 Prozent Bruttorendite erzielt und dem Spitzensteuersatz der Abgeltungssteuer von 26,375 Prozent (inklusive Solidaritaetszuschlag) unterliegt, behaelt netto rund 3,68 Prozent. Auf 30 Jahre macht dieser Unterschied bei 10.000 Euro Anfangskapital eine Differenz von ueber 15.000 Euro zwischen Brutto- und Nettowachstum."
+  formula: "A = P(1 + r/n)^(nt)"
+  formulaExplanation: "A = Endwert, P = Anfangskapital, r = Jahreszinssatz (als Dezimalzahl), n = Zinsperioden pro Jahr, t = Laufzeit in Jahren"
+  academicSource: "Brealey, R. A., Myers, S. C., & Allen, F. (2022). Principles of Corporate Finance (14. Aufl.). McGraw-Hill Education."
+
+faqs:
+  - question: "Was ist der Unterschied zwischen einfachem Zins und Zinseszins?"
+    answer: "Beim einfachen Zins wird die Verzinsung nur auf das urspruengliche Kapital berechnet, das Wachstum verlaeuft also linear. Beim Zinseszins hingegen werden auch die bereits gutgeschriebenen Zinsen mitverzinst, was zu exponentiellem Wachstum fuehrt. Wer 10.000 Euro zu 4 Prozent ueber 20 Jahre anlegt, erhaelt bei einfacher Verzinsung 8.000 Euro Zinsen und damit ein Endkapital von 18.000 Euro. Mit Zinseszins waechst das Kapital auf 21.911 Euro, also fast 4.000 Euro mehr. Je laenger die Laufzeit, desto dramatischer wird dieser Unterschied."
+  - question: "Wie funktioniert die 72er-Regel?"
+    answer: "Die 72er-Regel ist eine Faustformel, um schnell abzuschaetzen, nach wie vielen Jahren sich ein Kapitalbetrag bei Zinseszins verdoppelt. Teilen Sie einfach 72 durch den Jahreszinssatz. Bei 4 Prozent Zinsen verdoppelt sich Ihr Geld in ungefaehr 18 Jahren (72 geteilt durch 4). Bei 6 Prozent sind es rund 12 Jahre, bei 8 Prozent etwa 9 Jahre. Die Naeherung funktioniert am genauesten bei Zinssaetzen zwischen 3 und 12 Prozent und wird bei sehr niedrigen oder sehr hohen Zinsen ungenauer."
+  - question: "Wie wird der Zinseszins in Deutschland besteuert?"
+    answer: "In Deutschland unterliegen Kapitalertraege wie Zinsen, Dividenden und Kursgewinne der Abgeltungssteuer von 25 Prozent plus 5,5 Prozent Solidaritaetszuschlag darauf, insgesamt also 26,375 Prozent. Hinzu kommt gegebenenfalls Kirchensteuer. Der Sparer-Pauschbetrag betraegt 1.000 Euro pro Person und 2.000 Euro fuer gemeinsam veranlagte Ehepaare. Kapitalertraege bis zu diesem Freibetrag bleiben steuerfrei. Um den Freibetrag auszuschoepfen, muessen Sie bei Ihrer Bank einen Freistellungsauftrag einreichen. Ertraege, die ueber dem Pauschbetrag liegen, werden automatisch besteuert."
+  - question: "Welche Rendite kann ich realistisch erwarten?"
+    answer: "Die erwartbare Rendite haengt stark von der Anlageform ab. Tagesgeldkonten bieten in Deutschland derzeit 2 bis 3,5 Prozent, Festgeld je nach Laufzeit 2,5 bis 3,8 Prozent. Ein breit gestreuter ETF auf den MSCI World hat historisch rund 7 bis 8 Prozent Jahresrendite vor Inflation erzielt, allerdings mit erheblichen Schwankungen in einzelnen Jahren. Deutsche Staatsanleihen bringen aktuell 2 bis 3 Prozent. Fuer langfristige Berechnungen mit einem ETF-Sparplan sind 5 bis 6 Prozent nach Inflation eine vorsichtige, aber realistische Annahme."
+  - question: "Wirkt der Zinseszins auch bei Schulden gegen mich?"
+    answer: "Ja, der Zinseszins wirkt bei Schulden nach demselben Prinzip, allerdings zu Ihrem Nachteil. Bei einem Dispositionskredit mit 12 Prozent Jahreszins werden die aufgelaufenen Zinsen dem Saldo zugeschlagen und im naechsten Monat mitverzinst. Ein Dispo von 5.000 Euro waechst bei 12 Prozent ohne Tilgung in 5 Jahren auf ueber 8.800 Euro an. Bei Kreditkartenschulden mit 18 bis 20 Prozent Zinsen ist der Effekt noch dramatischer. Deshalb sollten hochverzinste Schulden immer zuerst getilgt werden, bevor man in Geldanlagen mit niedrigerer Rendite investiert."
+
+examples:
+  - title: "Langfristige Geldanlage in einen ETF-Sparplan"
+    scenario: "Einmalanlage von 10.000 Euro zu 6 Prozent jaehrlicher Rendite bei monatlicher Gutschrift ueber 30 Jahre"
+    inputs:
+      principal: 10000
+      annualRate: 6
+      years: 30
+      compounding: "monthly"
+    expectedResult: "Endwert: 60.225,75 € | Zinsertrag: 50.225,75 €"
+    explanation: "Aus 10.000 Euro werden in 30 Jahren ueber 60.000 Euro. Das Kapital versechsfacht sich, wobei der Grossteil des Wachstums in den letzten 10 Jahren stattfindet. Nach 10 Jahren stehen rund 18.200 Euro, nach 20 Jahren 33.100 Euro und in den letzten 10 Jahren kommen nochmals ueber 27.000 Euro hinzu. Der Zinseszinseffekt beschleunigt sich mit der Zeit."
+  - title: "Festgeldanlage ueber 5 Jahre"
+    scenario: "Anlage von 25.000 Euro auf einem Festgeldkonto zu 3,5 Prozent bei jaehrlicher Zinsgutschrift fuer 5 Jahre"
+    inputs:
+      principal: 25000
+      annualRate: 3.5
+      years: 5
+      compounding: "annual"
+    expectedResult: "Endwert: 29.694,89 € | Zinsertrag: 4.694,89 €"
+    explanation: "Festgeld bietet Planungssicherheit bei garantiertem Zinssatz. Die 4.694,89 Euro Zinsen liegen deutlich ueber dem Sparer-Pauschbetrag, sodass auf den uebersteigenden Betrag Abgeltungssteuer anfaellt. Netto nach Steuern (bei 26,375 Prozent auf Ertraege ueber 1.000 Euro Freibetrag) bleiben rund 3.720 Euro Zinsen uebrig."
+
+relatedTools:
+  - "savings-calculator"
+  - "mortgage-calculator"
+  - "loan-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

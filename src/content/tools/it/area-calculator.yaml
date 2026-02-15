@@ -1,0 +1,78 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+
+title: "Calcolo Area - Rettangolo, Cerchio e Altre Figure | CalcHub"
+metaDescription: "Calcola l'area di rettangoli, cerchi, triangoli, trapezi ed ellissi. Calcolatrice gratuita con formule e risultati istantanei per ogni figura geometrica."
+h1: "Calcolatrice di Area"
+slug: "calcolo-area"
+
+primaryKeyword: "calcolo area"
+secondaryKeywords:
+  - "calcolo superficie"
+  - "area rettangolo"
+  - "area cerchio"
+  - "area triangolo"
+
+intro: "Devi calcolare la superficie di una stanza per posare il pavimento, progettare un'aiuola in giardino o risolvere un problema di geometria per la scuola? Questa calcolatrice gestisce cinque figure geometriche fondamentali: seleziona quella che ti serve, inserisci le dimensioni e ottieni il risultato all'istante. Funziona con qualsiasi unità di misura (metri, centimetri, piedi, pollici) e restituisce il valore in unità quadrate corrispondenti all'input."
+
+howItWorks:
+  title: "Come si Calcola l'Area delle Diverse Figure Geometriche"
+  content: "L'area misura l'estensione di una superficie piana racchiusa entro un contorno e si esprime in unità quadrate (metri quadri, centimetri quadri e così via). Ogni figura geometrica possiede una formula specifica, ricavata dai principi fondamentali della matematica euclidea. Il rettangolo ha la formula più semplice: lunghezza moltiplicata per larghezza. Una stanza di 5 metri per 4 metri ha un'area di 20 metri quadri. Il quadrato è un caso particolare del rettangolo in cui i due lati sono uguali. L'area del cerchio si calcola con la formula pi greco per il raggio al quadrato. Pi greco (circa 3,14159) è il rapporto tra la circonferenza e il diametro di qualsiasi cerchio e compare in tutte le formule che riguardano figure circolari. Un cerchio con raggio di 7 metri ha un'area di 3,14159 per 49, ovvero circa 153,94 metri quadri. Per il triangolo la formula è un mezzo per la base per l'altezza. Attenzione: l'altezza deve essere perpendicolare alla base, non coincidere con un lato obliquo. Un triangolo con base 10 cm e altezza 6 cm ha un'area di 30 centimetri quadri. Il trapezio è un quadrilatero con due lati paralleli di lunghezza diversa. La sua area si ottiene moltiplicando la somma delle due basi per l'altezza e dividendo per due. Se le basi misurano 8 e 12 metri e l'altezza è 5 metri, l'area è (8+12) per 5 diviso 2 uguale a 50 metri quadri. L'ellisse è una forma ovale definita da due semiassi: il semiasse maggiore (più lungo) e il semiasse minore (più corto). L'area è pi greco per il semiasse maggiore per il semiasse minore. Quando i due semiassi sono uguali, l'ellisse diventa un cerchio. Una piscina a forma di ellisse con semiassi di 6 e 4 metri ha un'area di circa 75,4 metri quadri. Per la conversione tra unità di superficie si applica la regola del quadrato: bisogna moltiplicare per il fattore di conversione elevato al quadrato. Poiché un metro equivale a 3,281 piedi, un metro quadro equivale a 3,281 al quadrato, ossia circa 10,764 piedi quadri. In Italia si usa comunemente il metro quadro, ma per terreni agricoli è ancora diffusa la misura in ettari (1 ettaro uguale a 10.000 metri quadri)."
+  formula: "Rettangolo: A = l × w | Cerchio: A = πr² | Triangolo: A = ½bh"
+  formulaExplanation: "Trapezio: A = ½(a+b)×h dove a e b sono i lati paralleli. Ellisse: A = π × semiasse maggiore × semiasse minore. Tutti i risultati sono espressi in unità quadrate."
+  academicSource: "Euclid. Elements, Books I-IV. c. 300 BCE. Modern reference: Stewart, J. (2020). Calculus: Early Transcendentals (9th ed.). Cengage Learning."
+
+faqs:
+  - question: "Come si calcola l'area di una forma irregolare?"
+    answer: "Per le forme irregolari si scompone la figura in forme semplici (rettangoli, triangoli, cerchi), si calcola l'area di ciascuna e poi si sommano. Ad esempio, una stanza a L si divide in due rettangoli. Un locale con una veranda semicircolare può essere trattato come un rettangolo più un mezzo cerchio. Per superfici molto irregolari, come un appezzamento di terreno con confini naturali, si usa il metodo delle coordinate (formula di Gauss) oppure strumenti di rilevamento GPS che suddividono automaticamente la forma in triangoli e ne sommano le aree."
+  - question: "Qual è la differenza tra area e perimetro?"
+    answer: "L'area misura lo spazio racchiuso all'interno di una figura ed è espressa in unità quadrate (m²), mentre il perimetro misura la lunghezza totale del contorno ed è espresso in unità lineari (m). Una stanza di 10 per 5 metri ha un'area di 50 m² ma un perimetro di 30 m. Due figure possono avere lo stesso perimetro con aree molto diverse: un rettangolo 10×5 (area 50) e un rettangolo 1×14 (area 14) hanno entrambi perimetro 30 m. Questa distinzione è fondamentale in edilizia e nel giardinaggio."
+  - question: "Come si convertono i metri quadri in piedi quadri?"
+    answer: "Un metro quadro equivale a circa 10,764 piedi quadri. Un piede quadro corrisponde a circa 0,0929 metri quadri. Per la conversione, moltiplica i metri quadri per 10,764 per ottenere i piedi quadri, oppure i piedi quadri per 0,0929 per avere i metri quadri. Per una stima mentale rapida: moltiplica i metri quadri per 10 e aggiungi circa il 7,5%. Queste conversioni sono utili quando si consultano annunci immobiliari internazionali o si confrontano misure di abitazioni in paesi diversi."
+  - question: "Come si calcola l'area di una stanza con angoli non retti?"
+    answer: "Dividi la stanza in sezioni rettangolari e calcola l'area di ciascuna separatamente. Per le pareti oblique, tratta la porzione inclinata come un triangolo. Misura la base lungo una parete e l'altezza perpendicolare fino al punto più distante della parete opposta. Somma le aree di tutte le sezioni. Per ambienti particolarmente complessi, come mansarde con muri a spiovente, conviene usare un distanziometro laser che calcola l'area direttamente da più misurazioni lungo le pareti."
+  - question: "Perché la formula del cerchio utilizza pi greco?"
+    answer: "Pi greco nasce dalla relazione fondamentale tra diametro e circonferenza di un cerchio. Qualunque sia la dimensione del cerchio, dividendo la sua circonferenza per il diametro si ottiene sempre pi greco (circa 3,14159). Quando si calcola l'area, si possono immaginare infiniti anelli concentrici sottilissimi che vanno dal centro al bordo; integrando questi anelli si arriva naturalmente alla formula pi greco per il raggio al quadrato. Pi greco è un numero irrazionale: la sua parte decimale non termina mai e non si ripete."
+  - question: "Quanta precisione serve nelle misurazioni?"
+    answer: "La precisione necessaria dipende dallo scopo. Per acquistare piastrelle o parquet, misurazioni con il 2-3% di tolleranza sono sufficienti perché i materiali si ordinano sempre con un margine di scarto (di solito il 10% in più). Per lavori edili e pratiche catastali, la precisione deve stare entro l'1%. Per applicazioni scientifiche e ingegneristiche può servire la precisione al millimetro. Misura sempre almeno due volte e utilizza la stessa unità di misura per tutto il calcolo, perché arrotondare i risultati intermedi può amplificare gli errori."
+
+examples:
+  - title: "Area della stanza per il pavimento"
+    scenario: "Calcolare l'area di un soggiorno rettangolare di 4,5 m per 3,8 m per posare il parquet"
+    inputs:
+      shape: "rectangle"
+      length: 4.5
+      width: 3.8
+    expectedResult: "Area: 17,1000 unità²"
+    explanation: "Il soggiorno ha un'area di 17,1 metri quadri. Per ordinare il parquet è buona norma aggiungere il 10% per tagli e scarti, portando la quantità d'acquisto a circa 18,8 metri quadri."
+  - title: "Aiuola circolare"
+    scenario: "Calcolare l'area di un'aiuola circolare con raggio di 2,5 m per stimare il terriccio necessario"
+    inputs:
+      shape: "circle"
+      radius: 2.5
+    expectedResult: "Area: 19,6350 unità²"
+    explanation: "L'aiuola copre circa 19,64 metri quadri. Per calcolare il volume di terriccio, basta moltiplicare l'area per la profondità desiderata: per 15 cm di terreno servono circa 2,95 metri cubi di terriccio."
+  - title: "Terreno triangolare"
+    scenario: "Misurare un terreno triangolare all'angolo di una proprietà con base 20 m e altezza 15 m"
+    inputs:
+      shape: "triangle"
+      base: 20
+      height: 15
+    expectedResult: "Area: 150,0000 unità²"
+    explanation: "Il terreno triangolare ha un'area di 150 metri quadri, equivalenti a circa 1.615 piedi quadri. Questo dato è utile per la valutazione catastale del lotto o per pianificare la destinazione d'uso del terreno."
+
+relatedTools:
+  - "percentage-calculator"
+  - "bmi-calculator"
+  - "mortgage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

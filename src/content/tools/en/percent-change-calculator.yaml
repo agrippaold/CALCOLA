@@ -1,0 +1,74 @@
+id: "percent-change-calculator"
+category: "math"
+calculatorComponent: "PercentChangeCalculator"
+lang: "en"
+
+title: "Percent Change Calculator - Increase and Decrease | CalcHub"
+metaDescription: "Calculate percent change between two values instantly. Find percentage increase, decrease, absolute difference, and multiplier with clear steps."
+h1: "Percent Change Calculator"
+slug: "percent-change-calculator"
+
+primaryKeyword: "percent change calculator"
+secondaryKeywords:
+  - "percentage increase calculator"
+  - "percentage decrease calculator"
+  - "percent difference calculator"
+  - "percentage change formula"
+
+intro: "Percent change tells you how much a value has grown or shrunk relative to its starting point. It comes up constantly in daily life, whether you are comparing last month's electric bill to this month's, tracking your portfolio performance, or measuring how sales numbers shifted after a promotion. This calculator takes two values, an original and a new one, and gives you the percent change, absolute difference, and multiplier between them. Just enter the numbers and the math is handled for you."
+
+howItWorks:
+  title: "How Percent Change Calculations Work"
+  content: "Percent change measures the relative movement between two numbers by comparing the difference to the original value. The standard formula is: Percent Change = ((New Value - Old Value) / |Old Value|) x 100. A positive result indicates an increase, while a negative result indicates a decrease. For example, if a product price went from $40 to $52, the calculation is ((52 - 40) / 40) x 100 = 30%. The price rose by 30%. If instead the price dropped from $52 to $40, you get ((40 - 52) / 52) x 100 = -23.08%, a decrease of about 23%. Notice that going up 30% and then down 23.08% lands you back at the same number. This asymmetry surprises many people but makes sense once you realize each percentage is calculated against a different base. The absolute difference is simply the new value minus the old value. In the first example above, that is $12. In the second, it is -$12. This raw number is useful when you want to know the actual magnitude of change rather than the relative size. The multiplier (also called the growth factor) is calculated as New Value / Old Value. A multiplier of 1.30 means the new value is 1.30 times the old one, equivalent to a 30% increase. A multiplier below 1 means the value shrank. For instance, a multiplier of 0.75 means the new value is 75% of the old one, representing a 25% decrease. Multipliers are especially handy when chaining multiple changes together. If a stock gains 20% one year (multiplier 1.20) and loses 10% the next (multiplier 0.90), the combined multiplier is 1.20 x 0.90 = 1.08, which is an overall 8% gain. You cannot simply add the percentages (20% minus 10% does not equal 10% in this context). When the old value is zero, percent change is undefined because you would be dividing by zero. In practice, analysts either report the absolute change alone or use a small baseline value depending on the context."
+  formula: "Percent Change = ((New - Old) / |Old|) x 100"
+  formulaExplanation: "Absolute Difference = New - Old. Multiplier = New / Old. A multiplier above 1 is an increase, below 1 is a decrease."
+  academicSource: "Bluman, A. G. (2017). Elementary Statistics: A Step by Step Approach. McGraw-Hill Education."
+
+faqs:
+  - question: "What is the difference between percent change and percent difference?"
+    answer: "Percent change uses the original (old) value as the base, so it has a clear direction: increase or decrease. Percent difference uses the average of the two values as the base, making it symmetric. If you compare 40 and 52, percent change from 40 to 52 is 30%, but percent difference is (12 / 46) x 100 = 26.09%. Use percent change when one value is clearly the starting point. Use percent difference when neither value is the baseline, like comparing test scores from two different groups."
+  - question: "Why does a 50% gain followed by a 50% loss not return to the original value?"
+    answer: "Because each percentage applies to a different base. Start with $100. A 50% gain brings you to $150. Now a 50% loss is calculated on $150, removing $75 and leaving you at $75 - not $100. The loss percentage operates on the larger number, so it removes more in absolute terms than the gain added. To recover from a 50% loss, you actually need a 100% gain. This is why financial advisors stress that avoiding losses matters more than chasing equivalent gains."
+  - question: "How do I calculate percent change when the old value is negative?"
+    answer: "Use the absolute value of the old number in the denominator. If profits went from -$200 to $300, the calculation is ((300 - (-200)) / |-200|) x 100 = (500 / 200) x 100 = 250%. The formula still works as long as you take the absolute value of the starting figure. When the old value is exactly zero, percent change is mathematically undefined, and you should report the absolute change instead."
+  - question: "What does the multiplier tell me that the percentage does not?"
+    answer: "The multiplier makes it easy to chain consecutive changes together. If revenue grew 15% in Q1 (multiplier 1.15) and 10% in Q2 (multiplier 1.10), the combined effect is 1.15 x 1.10 = 1.265, meaning a 26.5% total increase. You cannot get this by simply adding 15% + 10% = 25%. Multipliers also convert quickly to final amounts: just multiply the original value by the combined multiplier. If you started with $10,000, you end with $10,000 x 1.265 = $12,650."
+  - question: "Can percent change be greater than 100%?"
+    answer: "Yes, absolutely. A percent change above 100% means the new value is more than double the original. For instance, if a startup's revenue went from $50,000 to $175,000, the percent change is ((175,000 - 50,000) / 50,000) x 100 = 250%. The revenue is now 3.5 times the original amount. There is no upper limit to percent increase, though percent decrease caps at -100% because a value cannot drop below zero in most real-world contexts (prices, populations, etc.)."
+  - question: "How is percent change used in finance and investing?"
+    answer: "Investors rely on percent change to evaluate returns across different investments regardless of the dollar amounts involved. A $500 gain on a $5,000 investment (10% return) is a better rate of return than a $500 gain on a $25,000 investment (2% return), even though the absolute gain is identical. Financial reports, stock tickers, and economic indicators almost always show changes as percentages so that readers can compare performance on a level playing field."
+
+examples:
+  - title: "Salary raise"
+    scenario: "Your annual salary increased from $65,000 to $71,500"
+    inputs:
+      oldValue: 65000
+      newValue: 71500
+    expectedResult: "Percent Change: +10%, Absolute Difference: $6,500, Multiplier: 1.10"
+    explanation: "The new salary is 10% higher than the previous one. The multiplier of 1.10 confirms the new salary is 1.10 times the old salary."
+  - title: "Declining website traffic"
+    scenario: "Monthly visitors dropped from 24,000 to 18,000"
+    inputs:
+      oldValue: 24000
+      newValue: 18000
+    expectedResult: "Percent Change: -25%, Absolute Difference: -6,000, Multiplier: 0.75"
+    explanation: "Traffic fell by 25%. The multiplier of 0.75 shows that the new traffic level is three-quarters of the original. To return to 24,000, the site would need a 33.3% increase from 18,000."
+
+relatedTools:
+  - "percentage-calculator"
+  - "fraction-calculator"
+  - "scientific-calculator"
+
+defaults:
+  unit: "number"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+  defaultValues:
+    oldValue: 100
+    newValue: 125
+
+lastUpdated: "2026-02-15"
+author: "Prof. Luca Bernardi"
+reviewer: "Elena Rossi"
+priority: "high"

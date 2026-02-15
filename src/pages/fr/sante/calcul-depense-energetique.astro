@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import TDEECalculator from '../../../components/calculators/health/TDEECalculator';
+
+const lang = 'fr';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'tdee-calculator' && t.id.startsWith('fr/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/fr/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <TDEECalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

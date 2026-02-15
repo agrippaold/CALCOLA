@@ -120,3 +120,89 @@ export function macroSplit(
     fat: (totalCalories * ratios.fat) / 9,
   };
 }
+
+/**
+ * Body fat percentage — US Navy method.
+ * Male:   %BF = 86.010 * log10(waist - neck) - 70.041 * log10(height) + 36.76
+ * Female: %BF = 163.205 * log10(waist + hip - neck) - 97.684 * log10(height) - 78.387
+ * All measurements in cm.
+ */
+export function bodyFatNavy(
+  gender: Gender,
+  waist: number,
+  neck: number,
+  height: number,
+  hip?: number,
+): number {
+  if (waist <= 0 || neck <= 0 || height <= 0) return 0;
+  if (gender === 'male') {
+    const diff = waist - neck;
+    if (diff <= 0) return 0;
+    return 86.010 * Math.log10(diff) - 70.041 * Math.log10(height) + 36.76;
+  }
+  // female requires hip
+  if (!hip || hip <= 0) return 0;
+  const sum = waist + hip - neck;
+  if (sum <= 0) return 0;
+  return 163.205 * Math.log10(sum) - 97.684 * Math.log10(height) - 78.387;
+}
+
+/**
+ * Pregnancy due date — Naegele's rule.
+ * Due date = LMP + 280 days (40 weeks).
+ * @param lmpDate  Last menstrual period date (Date object or ISO string)
+ * @returns Due date as Date
+ */
+export function pregnancyDueDate(lmpDate: Date | string): Date {
+  const lmp = typeof lmpDate === 'string' ? new Date(lmpDate) : new Date(lmpDate.getTime());
+  lmp.setDate(lmp.getDate() + 280);
+  return lmp;
+}
+
+/**
+ * Current gestational age in weeks and days.
+ * @param lmpDate  Last menstrual period date
+ * @param today    Current date (defaults to now)
+ */
+export function gestationalAge(
+  lmpDate: Date | string,
+  today: Date = new Date(),
+): { weeks: number; days: number; totalDays: number } {
+  const lmp = typeof lmpDate === 'string' ? new Date(lmpDate) : lmpDate;
+  const diffMs = today.getTime() - lmp.getTime();
+  const totalDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  return {
+    weeks: Math.floor(totalDays / 7),
+    days: totalDays % 7,
+    totalDays,
+  };
+}
+
+/**
+ * Estimated ovulation date based on cycle length.
+ * Ovulation typically occurs 14 days before the next period.
+ * @param lastPeriodDate   First day of last period
+ * @param cycleLength      Average cycle length in days (default 28)
+ * @returns Estimated ovulation date and fertile window
+ */
+export function ovulationDate(
+  lastPeriodDate: Date | string,
+  cycleLength: number = 28,
+): { ovulation: Date; fertileStart: Date; fertileEnd: Date; nextPeriod: Date } {
+  const lp = typeof lastPeriodDate === 'string' ? new Date(lastPeriodDate) : new Date(lastPeriodDate.getTime());
+  const ovDay = cycleLength - 14;
+
+  const ovulation = new Date(lp.getTime());
+  ovulation.setDate(ovulation.getDate() + ovDay);
+
+  const fertileStart = new Date(ovulation.getTime());
+  fertileStart.setDate(fertileStart.getDate() - 5);
+
+  const fertileEnd = new Date(ovulation.getTime());
+  fertileEnd.setDate(fertileEnd.getDate() + 1);
+
+  const nextPeriod = new Date(lp.getTime());
+  nextPeriod.setDate(nextPeriod.getDate() + cycleLength);
+
+  return { ovulation, fertileStart, fertileEnd, nextPeriod };
+}

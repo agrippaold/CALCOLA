@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'fr';
+
+const tools = [
+  { name: 'Calcul Pourcentage', slug: '/fr/mathematiques/calcul-pourcentage/', description: 'Cinq modes de calcul : trouver un %, variation, augmentation et diminution en pourcentage.' },
+  { name: 'Calcul Surface', slug: '/fr/mathematiques/calcul-surface/', description: 'Calculez la surface des rectangles, cercles, triangles, trapèzes et ellipses.' },
+];
+---
+
+<BaseLayout
+  title="Calculatrices Mathématiques - Pourcentage, Surface | CalcHub"
+  description="Calculatrices mathématiques gratuites pour les pourcentages, le calcul de surfaces et les problèmes mathématiques du quotidien. Résultats instantanés avec formules détaillées."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/fr/" class="hover:text-blue-600">Accueil</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Mathématiques</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculatrices de Mathématiques</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Outils mathématiques rapides et fiables pour les calculs du quotidien. Pourcentages, géométrie et bien plus encore.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

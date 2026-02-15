@@ -1,0 +1,79 @@
+id: "percentage-calculator"
+category: "math"
+calculatorComponent: "PercentageCalculator"
+
+title: "Calcul Pourcentage - Toutes Opérations | CalcHub"
+metaDescription: "Calculez vos pourcentages en ligne : X% d'un nombre, variation, augmentation, réduction et ratio. Calculateur pourcentage gratuit avec cinq modes de calcul."
+h1: "Calculateur de Pourcentage"
+slug: "calcul-pourcentage"
+
+primaryKeyword: "calcul pourcentage"
+secondaryKeywords:
+  - "calculer pourcentage"
+  - "pourcentage de reduction"
+  - "variation pourcentage"
+  - "calculer un pourcentage"
+
+intro: "Les pourcentages sont partout dans la vie de tous les jours : calcul du prix soldé dans les magasins, vérification de la TVA sur un ticket de caisse, rendement d'un placement bancaire ou note obtenue à un examen. Ce calculateur prend en charge cinq types d'opérations sur les pourcentages pour que vous n'ayez pas à retenir les formules. Choisissez le mode de calcul souhaité, saisissez vos valeurs et obtenez le résultat sans attendre. Que vous cherchiez 20% d'un montant ou la variation entre deux chiffres d'affaires, tout est ici à portée de main."
+
+howItWorks:
+  title: "Comment fonctionne le calcul de pourcentage"
+  content: "Le mot pourcentage vient du latin per centum, qui signifie littéralement pour cent. Exprimer un nombre en pourcentage revient à le représenter sous forme de fraction dont le dénominateur est toujours 100 : dire 25% équivaut à écrire 25/100, soit un quart. Ce calculateur propose cinq modes distincts, chacun répondant à un besoin précis. Le premier mode détermine X% de Y : on multiplie Y par X divisé par 100. Par exemple, 20% de 250 donne 250 multiplié par 0,20 soit 50. Cette opération sert notamment à calculer la TVA française, dont le taux normal est fixé à 20% depuis le 1er janvier 2014. Le taux réduit de 5,5% s'applique aux produits de première nécessité, et le taux intermédiaire de 10% concerne la restauration et les travaux de rénovation. Le deuxième mode répond à la question inverse : X représente quel pourcentage de Y ? On divise X par Y puis on multiplie par 100. Si 54 élèves sur 60 ont obtenu la moyenne, le taux de réussite est 54 divisé par 60 multiplié par 100, soit 90%. Le troisième mode calcule la variation percentuelle, qui mesure l'ampleur du changement entre une valeur de départ et une valeur d'arrivée. La formule divise la différence entre la nouvelle valeur et l'ancienne par la valeur absolue de l'ancienne, puis multiplie par 100. Si le prix d'un abonnement passe de 30 euros à 36 euros, la variation est (36-30)/30 multiplié par 100 soit +20%. Si au contraire le prix descend de 36 à 30, la variation est (30-36)/36 multiplié par 100, environ -16,7%. On remarque qu'une hausse de 20% suivie d'une baisse de 16,7% ramène au même montant, mais les deux pourcentages ne sont pas identiques parce que la base de référence change. Cette asymétrie trompe beaucoup de monde : une hausse de 50% suivie d'une baisse de 50% ne ramène pas au point de départ. En partant de 100, on obtient 150 après la hausse, puis 75 après la baisse, et non 100. Pour retrouver le montant initial après une augmentation de 50%, il faudrait une diminution de 33,3%. Le quatrième mode est l'augmentation percentuelle, où le résultat s'obtient en multipliant la valeur par (1 + pourcentage/100). Un article à 80 euros avec une majoration de 20% devient 80 multiplié par 1,20 soit 96 euros. Enfin, le cinquième mode calcule la diminution percentuelle : le résultat est la valeur multipliée par (1 - pourcentage/100). Un produit à 150 euros soldé à -30% devient 150 multiplié par 0,70 soit 105 euros. Les pourcentages supérieurs à 100% sont tout à fait valides, surtout en finance : un rendement de 200% signifie que l'on a triplé le capital de départ. Les pourcentages négatifs indiquent une baisse. Ces cinq opérations constituent le socle du calcul quotidien : de la TVA aux soldes, de la feuille de paie aux bulletins scolaires, des statistiques aux analyses boursières."
+  formula: "X% de Y = (X/100) × Y"
+  formulaExplanation: "Autres modes : X est quel % de Y = (X/Y) × 100. Variation = ((nouveau-ancien)/|ancien|) × 100. Augmentation = valeur × (1+%/100). Diminution = valeur × (1-%/100)."
+  academicSource: "National Council of Teachers of Mathematics. (2000). Principles and Standards for School Mathematics. NCTM."
+
+faqs:
+  - question: "Comment calculer le pourcentage d'un nombre ?"
+    answer: "On multiplie le nombre par le pourcentage puis on divise par 100. Pour trouver 15% de 200, on calcule 200 fois 0,15 ce qui donne 30. Une astuce pratique : pour obtenir 10% d'un nombre, il suffit de déplacer la virgule d'un rang vers la gauche. Le 10% de 200 est donc 20. Pour calculer 15%, on ajoute la moitié de ce résultat : 20 plus 10 égale 30. Cette méthode de calcul mental fonctionne très bien pour estimer une réduction en magasin ou vérifier rapidement un montant de TVA sur une facture."
+  - question: "Comment trouver quel pourcentage un nombre représente par rapport à un autre ?"
+    answer: "Il faut diviser la partie par le tout et multiplier par 100. Si vous avez obtenu 42 bonnes réponses sur 50 questions à un examen, votre pourcentage est (42/50) multiplié par 100, soit 84%. Si vos dépenses mensuelles s'élèvent à 1 200 euros pour un salaire net de 2 400 euros, les dépenses représentent (1200/2400) fois 100 soit 50% de vos revenus. Le point clé est d'identifier correctement quel nombre est la partie et quel nombre est le total, car les inverser donne un résultat complètement différent."
+  - question: "Comment calculer la variation en pourcentage entre deux valeurs ?"
+    answer: "Soustrayez l'ancienne valeur de la nouvelle, divisez par la valeur absolue de l'ancienne puis multipliez par 100. Si votre loyer passe de 800 euros à 850 euros, la variation est (850-800)/800 multiplié par 100 soit une hausse de 6,25%. Si votre portefeuille boursier descend de 30 000 euros à 25 500 euros, la variation est (25500-30000)/30000 multiplié par 100 soit -15%, c'est-à-dire une baisse de 15%. Cette formule est indispensable pour comparer des évolutions d'une période à l'autre."
+  - question: "Pourquoi une hausse de 50% suivie d'une baisse de 50% ne ramène-t-elle pas au montant initial ?"
+    answer: "Parce que la seconde opération s'applique à une base différente de la première. En partant de 100, une augmentation de 50% donne 150. Une baisse de 50% appliquée à 150 donne 75, et non 100. La diminution porte sur le nombre le plus grand (150), si bien qu'elle retire davantage que ce que la hausse avait ajouté. Pour revenir exactement à 100 après un gain de 50%, il faudrait une perte de 33,3%. Cette asymétrie est très importante en Bourse : une perte de 50% sur un placement exige un gain de 100% pour retrouver la mise de départ."
+  - question: "Comment calculer une réduction pendant les soldes ?"
+    answer: "Multipliez le prix affiché par le pourcentage de réduction divisé par 100, puis soustrayez ce montant du prix d'origine. Un manteau à 180 euros avec -25% bénéficie d'une remise de 45 euros et coûte donc 135 euros. Une méthode rapide : pour 10% de réduction, déplacez la virgule d'un rang à gauche. Pour 20%, doublez le résultat du 10%. Pour 25%, prenez un quart du prix. En France, les périodes de soldes sont encadrées par la loi et durent quatre semaines, généralement en janvier et en juin ou juillet."
+  - question: "Quel est le lien entre pourcentages, fractions et nombres décimaux ?"
+    answer: "Ce sont trois manières d'exprimer la même valeur. 25% équivaut à 25/100, qui se simplifie en 1/4, et correspond au nombre décimal 0,25. Pour passer d'un pourcentage à un décimal, on divise par 100 (on déplace la virgule de deux rangs vers la gauche). Pour l'opération inverse, du décimal au pourcentage, on multiplie par 100. Pour convertir une fraction en pourcentage, on divise le numérateur par le dénominateur et on multiplie par 100. Chaque format a ses contextes de prédilection : les commerces affichent des pourcentages, les recettes de cuisine emploient des fractions et les calculs scientifiques se font en décimaux."
+
+examples:
+  - title: "Réduction pendant les soldes"
+    scenario: "Calculer le prix soldé d'un blouson à 160 euros avec une remise de 30%, TVA à 20% déjà incluse"
+    inputs:
+      mode: "decrease"
+      value: 160
+      percent: 30
+    expectedResult: "Résultat : 112,00 €"
+    explanation: "30% de 160 € font 48 €. Le prix final est 160 € moins 48 € soit 112 €. L'économie réalisée est de 48 €. La TVA à 20% est déjà comprise dans le prix affiché, conformément à la réglementation française."
+  - title: "Rendement d'un placement"
+    scenario: "Calculer la variation percentuelle d'un livret A passé de 8 000 € à 10 400 €"
+    inputs:
+      mode: "change"
+      oldValue: 8000
+      newValue: 10400
+    expectedResult: "Variation : +30%"
+    explanation: "Le placement a rapporté 2 400 € sur les 8 000 € initiaux, ce qui représente un rendement de 30%. Ce même calcul s'applique aussi bien aux actions, aux assurances-vie, à l'immobilier ou à tout autre support d'épargne."
+  - title: "Note d'un examen"
+    scenario: "Déterminer le pourcentage correspondant à 14 bonnes réponses sur 20 questions au baccalauréat"
+    inputs:
+      mode: "is_what"
+      valueX: 14
+      valueY: 20
+    expectedResult: "14 est 70,00% de 20"
+    explanation: "Un score de 14 sur 20 correspond à 70%. Dans le système de notation français, où la note maximale est 20/20, obtenir 14 place l'élève dans une bonne fourchette, au-dessus de la mention assez bien (12/20) et proche de la mention bien (14/20)."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

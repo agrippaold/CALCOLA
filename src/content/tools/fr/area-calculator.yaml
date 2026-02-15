@@ -1,0 +1,78 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+
+title: "Calcul Surface - Rectangle, Cercle et Plus | CalcHub"
+metaDescription: "Calculez la surface d'un rectangle, cercle, triangle, trapèze ou ellipse. Calculateur de surface gratuit avec formules et résultats pour chaque forme."
+h1: "Calculateur de Surface"
+slug: "calcul-surface"
+
+primaryKeyword: "calcul surface"
+secondaryKeywords:
+  - "calculer surface"
+  - "calcul aire"
+  - "surface rectangle"
+  - "surface cercle"
+
+intro: "Besoin de connaître la superficie d'une pièce avant de poser du parquet, la surface d'un parterre de fleurs ou l'aire d'une figure géométrique pour un devoir de maths ? Ce calculateur prend en charge cinq formes courantes : sélectionnez celle qui correspond à votre besoin, entrez les dimensions et obtenez la réponse instantanément. Il fonctionne avec toutes les unités de mesure, mètres, pieds, centimètres, et le résultat est exprimé en unités carrées correspondant à votre saisie."
+
+howItWorks:
+  title: "Comment le calcul de surface fonctionne selon la forme"
+  content: "La surface, aussi appelée aire, mesure la quantité d'espace en deux dimensions contenue à l'intérieur des limites d'une forme. Elle s'exprime en unités carrées : mètres carrés, centimètres carrés ou toute autre unité au carré. Chaque figure géométrique possède sa propre formule, issue de principes mathématiques fondamentaux. Le rectangle (et le carré, qui en est un cas particulier) a la formule la plus simple : longueur multipliée par largeur. Si une chambre mesure 4,5 mètres sur 3,8 mètres, sa surface est de 17,10 mètres carrés. Le carré est un rectangle dont les quatre côtés sont égaux. La surface d'un cercle se calcule avec la formule pi multiplié par le rayon au carré. Pi (environ 3,14159) représente le rapport entre la circonférence d'un cercle et son diamètre ; cette constante apparaît dans tous les calculs liés aux formes circulaires. Pour un cercle de rayon 3 mètres, la surface vaut 3,14159 fois 9 soit environ 28,27 mètres carrés. La surface d'un triangle est égale à la moitié du produit de la base par la hauteur. Attention : la hauteur doit être perpendiculaire à la base, et non la longueur d'un côté incliné. Un triangle de 12 cm de base et 8 cm de hauteur a une aire de 48 centimètres carrés. Le trapèze possède deux côtés parallèles de longueurs différentes. Son aire est égale à la moitié de la somme des deux bases multipliée par la hauteur perpendiculaire entre elles. Si les bases mesurent 6 et 10 mètres avec une hauteur de 4 mètres, la surface est 0,5 fois (6+10) fois 4 soit 32 mètres carrés. Cette forme se rencontre souvent dans les terrains en bordure de route. L'ellipse est une forme ovale définie par deux demi-axes : le demi-grand axe (le plus long) et le demi-petit axe (le plus court). Sa surface est égale à pi multiplié par le demi-grand axe multiplié par le demi-petit axe. Lorsque les deux axes sont égaux, l'ellipse devient un cercle. Une piscine ovale dont les demi-axes mesurent 5 et 3 mètres a une surface d'environ 47,12 mètres carrés. Pour les conversions entre unités de surface, on applique la règle du carré : on multiplie par le facteur de conversion élevé au carré. Un mètre vaut 3,281 pieds, donc un mètre carré vaut 3,281 au carré soit environ 10,764 pieds carrés. En France, la surface habitable d'un logement est définie par la loi Carrez pour les copropriétés : seules les surfaces dont la hauteur sous plafond dépasse 1,80 mètre sont comptabilisées. Cette notion est distincte de la surface au sol et intervient dans toute transaction immobilière. Connaître précisément la surface d'un bien est indispensable pour estimer un prix au mètre carré, calculer la quantité de peinture ou de carrelage nécessaire et respecter les normes d'urbanisme."
+  formula: "Rectangle : A = L × l | Cercle : A = πr² | Triangle : A = ½bh"
+  formulaExplanation: "Trapèze : A = ½(a+b)×h où a et b sont les côtés parallèles. Ellipse : A = π × demi-grand axe × demi-petit axe. Tous les résultats sont en unités carrées."
+  academicSource: "Euclide. Éléments, Livres I-IV. vers 300 av. J.-C. Référence moderne : Stewart, J. (2020). Calculus: Early Transcendentals (9e éd.). Cengage Learning."
+
+faqs:
+  - question: "Comment calculer la surface d'une pièce de forme irrégulière ?"
+    answer: "Pour les formes irrégulières, décomposez la pièce en formes simples (rectangles, triangles, demi-cercles), calculez chaque aire séparément puis additionnez les résultats. Par exemple, un salon en L se divise en deux rectangles. Une pièce avec une alcôve arrondie peut être traitée comme un rectangle plus un demi-cercle. Pour les terrains très irréguliers, comme un jardin aux contours sinueux, la méthode par coordonnées (triangulation à partir des sommets mesurés au GPS) donne une mesure plus fiable que la simple estimation."
+  - question: "Quelle est la différence entre surface et périmètre ?"
+    answer: "La surface mesure l'espace intérieur d'une forme (en unités carrées), tandis que le périmètre mesure la longueur totale du contour extérieur (en unités linéaires). Une chambre de 5 mètres sur 4 a une surface de 20 mètres carrés mais un périmètre de 18 mètres. Deux formes peuvent avoir le même périmètre avec des surfaces très différentes : un rectangle de 8 sur 4 (surface 32) et un rectangle de 1 sur 11 (surface 11) ont tous les deux un périmètre de 24 mètres."
+  - question: "Comment convertir des mètres carrés en pieds carrés ?"
+    answer: "Un mètre carré vaut environ 10,764 pieds carrés. Un pied carré vaut environ 0,0929 mètre carré. Pour convertir, multipliez les mètres carrés par 10,764 pour obtenir des pieds carrés, ou multipliez les pieds carrés par 0,0929 pour obtenir des mètres carrés. Pour une estimation mentale rapide : multipliez les mètres carrés par 10 et ajoutez environ 8%, ce qui donne un résultat suffisamment proche pour une première évaluation."
+  - question: "Qu'est-ce que la surface loi Carrez et pourquoi est-elle importante ?"
+    answer: "La surface loi Carrez est la superficie privative d'un lot de copropriété en France. Elle exclut les murs, cloisons, marches, cages d'escalier, gaines et embrasures de portes et fenêtres, ainsi que toute surface dont la hauteur sous plafond est inférieure à 1,80 mètre. Cette mesure est obligatoire lors de la vente d'un bien en copropriété. Une erreur de plus de 5% en faveur du vendeur donne à l'acheteur le droit de demander une diminution proportionnelle du prix pendant un an après la signature de l'acte."
+  - question: "Pourquoi la formule du cercle fait-elle intervenir pi ?"
+    answer: "Pi naît du rapport fondamental entre le diamètre d'un cercle et sa circonférence. Quelle que soit la taille du cercle, diviser la circonférence par le diamètre donne toujours pi (environ 3,14159). Pour le calcul de l'aire, on peut imaginer que l'on additionne une infinité de couronnes concentriques très fines allant du centre jusqu'au bord ; cette opération d'intégration produit naturellement la formule pi fois rayon au carré. Pi est un nombre irrationnel : son développement décimal ne se termine jamais et ne se répète jamais."
+  - question: "Quelle précision faut-il pour mes mesures ?"
+    answer: "La précision requise dépend de l'usage. Pour commander du parquet ou de la moquette, des mesures à 2-3% près suffisent car les matériaux sont vendus avec une marge de perte. Pour des travaux de construction ou un permis de construire, la tolérance descend à 1% ou moins. Pour des applications scientifiques ou industrielles, une précision au millimètre peut être exigée. Mesurez toujours deux fois et utilisez les mêmes unités dans tout le calcul. Arrondir les résultats intermédiaires peut accumuler les erreurs, gardez donc la pleine précision jusqu'au résultat final."
+
+examples:
+  - title: "Surface d'une pièce pour du parquet"
+    scenario: "Calculer la surface d'un salon rectangulaire de 5,2 m par 4,1 m"
+    inputs:
+      shape: "rectangle"
+      length: 5.2
+      width: 4.1
+    expectedResult: "Surface : 21,3200 unités²"
+    explanation: "Le salon a une surface de 21,32 mètres carrés. Pour commander du parquet, ajoutez environ 10% pour les découpes et les pertes, ce qui porte la quantité à acheter à environ 23,45 mètres carrés."
+  - title: "Parterre de fleurs circulaire"
+    scenario: "Déterminer la surface d'un massif rond de 1,8 m de rayon dans un jardin"
+    inputs:
+      shape: "circle"
+      radius: 1.8
+    expectedResult: "Surface : 10,1788 unités²"
+    explanation: "Le parterre couvre environ 10,18 mètres carrés. Pour estimer le volume de terreau nécessaire, multipliez la surface par la profondeur souhaitée (par exemple 0,20 m pour 20 cm de terre végétale, ce qui donne environ 2,04 mètres cubes)."
+  - title: "Terrain triangulaire"
+    scenario: "Mesurer un terrain en forme de triangle avec une base de 25 m et une hauteur de 18 m"
+    inputs:
+      shape: "triangle"
+      base: 25
+      height: 18
+    expectedResult: "Surface : 225,0000 unités²"
+    explanation: "Le terrain triangulaire a une surface de 225 mètres carrés. Cela correspond à environ 2 422 pieds carrés, ce qui peut servir pour une estimation de la valeur foncière ou pour planifier un aménagement paysager."
+
+relatedTools:
+  - "percentage-calculator"
+  - "bmi-calculator"
+  - "mortgage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

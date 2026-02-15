@@ -1,0 +1,79 @@
+id: "temperature-converter"
+category: "conversions"
+calculatorComponent: "TemperatureConverter"
+
+title: "Convertisseur Température - Celsius, Fahrenheit | CalcHub"
+metaDescription: "Convertissez les températures entre Celsius, Fahrenheit et Kelvin en un clic. Convertisseur gratuit avec points de repère et formules de conversion."
+h1: "Convertisseur de Température"
+slug: "convertisseur-temperature"
+
+primaryKeyword: "convertisseur temperature"
+secondaryKeywords:
+  - "celsius fahrenheit"
+  - "conversion temperature"
+  - "fahrenheit en celsius"
+  - "convertir temperature"
+
+intro: "La conversion entre échelles de température fait partie de ces petits calculs du quotidien qui posent problème parce que les formules ne sont pas du tout intuitives. Contrairement aux longueurs ou aux masses, les échelles de température ne partagent pas le même point zéro, ce qui rend la conversion moins directe qu'une simple multiplication. Ce convertisseur gère les trois grandes échelles : Celsius, Fahrenheit et Kelvin. Entrez une valeur dans l'une des trois et lisez immédiatement les équivalences dans les deux autres."
+
+howItWorks:
+  title: "Comment fonctionne la conversion de température"
+  content: "Les trois échelles de température diffèrent par leur point zéro et par la taille de leurs degrés. L'échelle Celsius (aussi appelée centigrade) fixe le 0 au point de congélation de l'eau et le 100 au point d'ébullition, à pression atmosphérique normale. Anders Celsius a créé cette échelle en 1742, mais il avait initialement placé le 0 à l'ébullition et le 100 à la congélation ; l'inversion a été réalisée après sa mort par Carl von Linné. La France et la grande majorité des pays du monde utilisent cette échelle dans la vie courante : bulletins météo, thermomètres médicaux, réglages de four. L'échelle Fahrenheit, mise au point par Daniel Gabriel Fahrenheit en 1724, place le point de congélation de l'eau à 32 et le point d'ébullition à 212. Elle reposait à l'origine sur trois repères : 0 pour un mélange de glace et de sel (la température la plus basse que Fahrenheit pouvait reproduire de façon fiable), 32 pour l'eau glacée et 96 pour la température du corps humain (révisée plus tard à 98,6). Cette histoire explique les chiffres qui semblent arbitraires à quiconque a grandi avec le Celsius. L'échelle Kelvin, unité du Système international (SI), débute au zéro absolu, le point théorique où tout mouvement moléculaire cesse, soit moins 273,15 degrés Celsius. Chaque unité Kelvin a la même taille qu'un degré Celsius, de sorte que la conversion entre les deux revient simplement à ajouter ou soustraire 273,15. Lord Kelvin a proposé cette échelle en 1848 pour les besoins de la physique, car elle n'admet aucune valeur négative, ce qui simplifie les équations de thermodynamique. Pour convertir des Celsius en Fahrenheit, on multiplie par 9/5 puis on ajoute 32. Dans l'autre sens, on soustrait 32 puis on multiplie par 5/9. Le facteur 9/5 existe parce qu'entre la congélation et l'ébullition de l'eau on compte 180 degrés Fahrenheit (212 moins 32) mais seulement 100 degrés Celsius, soit un rapport de 180/100 ou 9/5. Un repère mnémotechnique bien connu : moins 40 est la même valeur en Celsius et en Fahrenheit. Vous pouvez le vérifier : (moins 40 fois 9/5) plus 32 donne moins 72 plus 32 soit moins 40. Pour une estimation mentale rapide du Celsius vers le Fahrenheit, doublez le nombre et ajoutez 30. Cette méthode donne des résultats approchés : 20 degrés C devient environ 70 degrés F (valeur exacte : 68), 30 degrés C devient environ 90 degrés F (valeur exacte : 86). L'approximation fonctionne surtout entre 0 et 40 degrés Celsius, ce qui couvre la plupart des températures météorologiques rencontrées en France métropolitaine, où les moyennes vont de 0 degré C en hiver dans le nord à 35 degrés C en été dans le sud."
+  formula: "°F = °C × 9/5 + 32 | °C = (°F - 32) × 5/9 | K = °C + 273,15"
+  formulaExplanation: "Celsius vers Fahrenheit : multiplier par 1,8 puis ajouter 32. Fahrenheit vers Celsius : soustraire 32 puis multiplier par 0,5556. Les conversions en Kelvin ajoutent ou soustraient 273,15 par rapport au Celsius."
+  academicSource: "Bureau International des Poids et Mesures. (2019). Le Système international d'unités (SI), 9e édition."
+
+faqs:
+  - question: "Quelle est la méthode la plus simple pour convertir des Celsius en Fahrenheit de tête ?"
+    answer: "Pour une estimation rapide, doublez la température en Celsius et ajoutez 30. Cela donne un résultat à quelques degrés près pour les températures courantes : 10 degrés C devient environ 50 degrés F (valeur exacte : 50), 20 degrés C donne environ 70 degrés F (valeur exacte : 68), 30 degrés C donne environ 90 degrés F (valeur exacte : 86). Pour plus de précision, multipliez par 2, retranchez 10% du résultat et ajoutez 32. Ces raccourcis sont utiles en voyage, en cuisine ou pour comprendre un bulletin météo en Fahrenheit."
+  - question: "Pourquoi les États-Unis utilisent-ils encore le Fahrenheit ?"
+    answer: "Les États-Unis, avec quelques autres pays (Liberia, Îles Caïmans, Palaos, Bahamas, Belize), conservent le Fahrenheit principalement en raison de l'inertie des infrastructures et de l'habitude culturelle. Le Metric Conversion Act de 1975 a tenté d'imposer la métrification, mais sans obligation légale, l'adoption est restée volontaire et partielle. Le Fahrenheit persiste dans la vie courante (météo, cuisine, thermostats) tandis que le Celsius et le Kelvin dominent les contextes scientifiques, médicaux et militaires, même aux États-Unis."
+  - question: "Qu'est-ce que le zéro absolu et pourquoi est-il important ?"
+    answer: "Le zéro absolu (0 Kelvin, soit moins 273,15 degrés Celsius, soit moins 459,67 degrés Fahrenheit) est la température la plus basse théoriquement possible, celle où les particules possèdent une énergie cinétique minimale. Aucun objet n'a jamais été refroidi exactement au zéro absolu, bien que des laboratoires aient atteint des valeurs à quelques milliardièmes de degré. Son importance tient au fait que l'échelle Kelvin commence à ce point, ce qui en fait la seule échelle de température avec un vrai zéro, où zéro signifie absence d'énergie thermique."
+  - question: "À quelle température les échelles Celsius et Fahrenheit se croisent-elles ?"
+    answer: "Les deux échelles se croisent à moins 40 degrés. À ce point précis, un thermomètre Celsius et un thermomètre Fahrenheit affichent le même nombre. On peut le vérifier en injectant moins 40 dans la formule de conversion : (moins 40 fois 9/5) plus 32 donne moins 72 plus 32 soit moins 40. Ce fait constitue un bon moyen mnémotechnique et un point de repère pratique pour se souvenir de la relation entre les deux échelles de mesure."
+  - question: "Quelle échelle de température utiliser pour la cuisine ?"
+    answer: "Utilisez l'échelle indiquée par votre four et vos recettes. En France, les recettes sont en Celsius. Les recettes américaines sont en Fahrenheit. Quelques correspondances à retenir : 180 degrés C font 356 degrés F (pâtisserie classique), 200 degrés C font 392 degrés F (cuisson à chaleur moyenne-forte), 220 degrés C font 428 degrés F (rôtis), et 240 degrés C font 464 degrés F (pizza au four traditionnel). La plupart des fours modernes vendus en France affichent uniquement le Celsius, mais les modèles importés peuvent proposer les deux."
+  - question: "En quoi la conversion de température diffère-t-elle de la conversion de longueur ou de masse ?"
+    answer: "Les conversions de longueur et de masse sont proportionnelles : doubler les centimètres double toujours les pouces. Les conversions de température font intervenir à la fois une multiplication et une addition parce que les échelles n'ont pas le même point zéro. Zéro degré Celsius ne correspond pas à zéro degré Fahrenheit. Ce décalage empêche de se contenter d'un simple facteur multiplicatif. Cela signifie aussi que les écarts de température se convertissent différemment des températures absolues : un écart de 10 degrés Celsius équivaut toujours à un écart de 18 degrés Fahrenheit, quel que soit le point de départ."
+
+examples:
+  - title: "Température corporelle"
+    scenario: "Convertir la température normale du corps humain, 37 degrés Celsius, en Fahrenheit"
+    inputs:
+      temperature: 37
+      from: "celsius"
+      to: "fahrenheit"
+    expectedResult: "37 °C = 98,60 °F"
+    explanation: "La température normale du corps humain de 37 degrés C correspond à 98,6 degrés F. En France, on considère généralement qu'il y a fièvre à partir de 38 degrés C (100,4 degrés F). Une fièvre est jugée élevée au-delà de 40 degrés C (104 degrés F) et nécessite une consultation médicale."
+  - title: "Prévisions météo en voyage"
+    scenario: "Comprendre une prévision de 95 degrés Fahrenheit affichée lors d'un séjour aux États-Unis"
+    inputs:
+      temperature: 95
+      from: "fahrenheit"
+      to: "celsius"
+    expectedResult: "95 °F = 35,00 °C"
+    explanation: "95 degrés Fahrenheit équivalent à 35 degrés Celsius, une chaleur comparable à une journée de canicule dans le sud de la France. À cette température, il est recommandé de boire régulièrement et d'éviter les efforts physiques aux heures les plus chaudes."
+  - title: "Calcul scientifique en Kelvin"
+    scenario: "Convertir la température ambiante de laboratoire (293,15 K) en Celsius et Fahrenheit"
+    inputs:
+      temperature: 293.15
+      from: "kelvin"
+      to: "celsius"
+    expectedResult: "293,15 K = 20,00 °C = 68,00 °F"
+    explanation: "La température ambiante standard en contexte scientifique est 293,15 Kelvin, soit 20 degrés Celsius ou 68 degrés Fahrenheit. Les expériences de laboratoire précisent la température en Kelvin pour éviter toute confusion liée aux valeurs négatives en Celsius et pour simplifier les calculs de thermodynamique."
+
+relatedTools:
+  - "bmi-calculator"
+  - "percentage-calculator"
+  - "area-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

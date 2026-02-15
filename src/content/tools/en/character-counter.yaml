@@ -1,0 +1,78 @@
+id: "character-counter"
+category: "text"
+calculatorComponent: "CharacterCounter"
+
+title: "Character Counter - Count Characters & Check Limits"
+metaDescription: "Count characters with or without spaces. Check limits for Twitter, SMS, meta descriptions, and more. Free online character counter tool."
+h1: "Character Counter"
+slug: "character-counter"
+
+primaryKeyword: "character counter"
+secondaryKeywords:
+  - "character count tool"
+  - "letter counter"
+  - "text length checker"
+  - "character limit checker"
+
+intro: "Knowing exactly how many characters your text contains matters more than most people realize. Social media posts, SMS messages, meta descriptions, and many other formats all enforce strict character limits. This tool counts characters both with and without spaces, tracks word count, and instantly tells you whether your text fits within common platform limits like Twitter's 280-character cap or an SMS 160-character boundary."
+
+howItWorks:
+  title: "How Character Counting Works"
+  content: "Character counting operates on a simple principle: every letter, digit, punctuation mark, space, and special symbol in a text string represents one character. However, the details get more interesting once you consider different encoding standards. In the ASCII system, each character maps to a number between 0 and 127, covering English letters, digits, and basic punctuation. Unicode extends this to over 149,000 characters across scripts worldwide, but some characters (like certain emojis or characters from languages such as Chinese, Japanese, and Korean) may count as two or more bytes in UTF-8 encoding. For most practical purposes with English text, one visible glyph equals one character. This tool counts your input string by iterating through each code point and tallying the total. It also computes a separate count that excludes space characters (ASCII 32). The tool simultaneously checks your text against several well-known platform limits. Twitter allows 280 characters per tweet. A single SMS segment holds 160 characters using GSM-7 encoding; messages longer than that split into multiple segments of 153 characters each because some bytes are reserved for a concatenation header. Google typically displays 155-160 characters of a meta description in search results, though this varies. HTML title tags should stay under 60 characters so they display fully in browser tabs and search listings. Keeping track of all these limits manually is tedious, so the tool compares your current count against each threshold and shows how many characters remain or how many you have exceeded."
+  formula: "Character count = length(text); Without spaces = length(text) - count(spaces)"
+  formulaExplanation: "The total character count equals the number of code points in the string. The count without spaces subtracts every space character from that total. Platform checks compare the total against fixed thresholds such as 280 for Twitter or 160 for SMS."
+  academicSource: "The Unicode Consortium. (2023). The Unicode Standard, Version 15.1.0. Unicode, Inc. https://www.unicode.org/versions/Unicode15.1.0/"
+
+faqs:
+  - question: "Do spaces count as characters?"
+    answer: "Yes, spaces are characters. In ASCII, a space is character number 32, and it occupies one byte in virtually every encoding scheme. Most platforms that enforce character limits include spaces in the count. Twitter counts spaces, SMS counts spaces, and HTML attribute limits count spaces. This tool shows both totals so you can see the difference. If you are optimizing for a tight limit, removing extra spaces between words or trimming trailing whitespace can sometimes help you fit within the boundary."
+  - question: "How does Twitter count characters?"
+    answer: "Twitter allows 280 characters per tweet. Each letter, space, punctuation mark, and most emoji count as one or two characters depending on the specific emoji. URLs in tweets are automatically shortened by Twitter's t.co service and always count as 23 characters regardless of the actual URL length. Mentions (@username) count toward the limit, but replies that start with a mention do not count the initial mention. Hashtags including the # symbol count as characters. If you go over 280, Twitter will not let you post the tweet."
+  - question: "How many characters fit in one SMS message?"
+    answer: "A single SMS segment holds 160 characters when using the GSM-7 encoding, which covers standard English letters, digits, and common punctuation. If your message includes any character outside this set (like an emoji or accented letter), the encoding switches to UCS-2 and the limit drops to 70 characters per segment. Longer messages are split into multiple segments, each holding 153 characters (GSM-7) or 67 characters (UCS-2) because a few bytes are reserved for reassembly headers."
+  - question: "Why do some emojis count as more than one character?"
+    answer: "Many modern emojis are built from multiple Unicode code points joined together. A family emoji, for example, combines several person code points with zero-width joiner characters. The skin tone variations add a modifier code point to the base emoji. A flag emoji uses two regional indicator symbols. Because of this, a single visible emoji might represent two to seven code points. Programming languages and platforms differ in whether they count code points, grapheme clusters, or bytes, which is why you sometimes see different character counts for the same text."
+  - question: "What is the recommended character limit for a meta description?"
+    answer: "Google typically displays between 155 and 160 characters of a meta description in search results, though the exact cutoff varies based on pixel width rather than a hard character count. Wider characters like W or M take up more space than narrow ones like i or l. A safe target is 150-155 characters to make sure your full description shows up without being truncated. Writing a compelling description within this range can improve click-through rates from search engine results pages."
+  - question: "Does character count differ between programming languages?"
+    answer: "Yes, different programming languages can report different counts for the same string. Python 3 and JavaScript both count Unicode code points by default when you call len() or .length, so a basic emoji registers as one or two. Java counts UTF-16 code units, so characters outside the Basic Multilingual Plane (like many emojis) count as two. In C, strlen() counts bytes, so a multi-byte UTF-8 character can register as two, three, or four. For plain English text, all approaches produce the same number."
+  - question: "How can I reduce character count without losing meaning?"
+    answer: "Start by removing filler words like 'very', 'really', 'just', and 'that'. Replace wordy phrases with shorter alternatives: 'in order to' becomes 'to', 'at this point in time' becomes 'now', and 'due to the fact that' becomes 'because'. Use contractions where appropriate. Swap long words for shorter synonyms when the meaning stays clear. Remove redundant adjectives and adverbs. If you still need to cut more, restructure sentences to be more direct and active rather than passive."
+
+examples:
+  - title: "Twitter post check"
+    scenario: "Checking whether a drafted tweet fits within the 280-character limit"
+    inputs:
+      text: "Just finished reading a fantastic book on behavioral economics. The chapter on loss aversion changed how I think about risk in everyday decisions. Highly recommend it to anyone interested in psychology and finance."
+      includeSpaces: "true"
+    expectedResult: "208 characters (72 characters remaining for Twitter)"
+    explanation: "The text contains 208 characters including spaces, which is under the 280-character Twitter limit. This leaves 72 characters of room if you want to add a hashtag or a link."
+  - title: "Meta description optimization"
+    scenario: "Verifying a meta description stays within the recommended 155-character display window"
+    inputs:
+      text: "Free online character counter tool. Count letters, words, and sentences. Check your text against Twitter, SMS, and meta description limits instantly."
+      includeSpaces: "true"
+    expectedResult: "150 characters (within 155-character meta description guideline)"
+    explanation: "At 150 characters including spaces, this meta description fits comfortably within the display window that Google shows in search results, so the full text will be visible to users."
+  - title: "SMS segment calculation"
+    scenario: "Determining how many SMS segments a marketing message will require"
+    inputs:
+      text: "FLASH SALE: 40% off all items this weekend only! Use code SAVE40 at checkout. Free shipping on orders over $50. Shop now at example.com/sale. Offer ends Sunday 11:59 PM EST."
+      includeSpaces: "true"
+    expectedResult: "170 characters (2 SMS segments needed)"
+    explanation: "The message is 170 characters, which exceeds the single-segment limit of 160 characters. It will be sent as two SMS segments. The first segment will hold 153 characters and the second will hold the remaining 17 characters, since multi-part messages reserve 7 characters per segment for the concatenation header."
+
+relatedTools:
+  - "word-counter"
+  - "password-generator"
+  - "age-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

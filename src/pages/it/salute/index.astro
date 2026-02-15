@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'it';
+
+const tools = [
+  { name: 'Calcolo IMC', slug: '/it/salute/calcolo-imc/', description: 'Calcola il tuo Indice di Massa Corporea e scopri la tua categoria di peso.' },
+  { name: 'Metabolismo Basale (BMR)', slug: '/it/salute/calcolo-metabolismo-basale/', description: 'Calcola il tuo metabolismo basale con l\'equazione di Mifflin-St Jeor.' },
+  { name: 'Calcolo TDEE', slug: '/it/salute/calcolo-tdee/', description: 'Calcola il dispendio energetico totale giornaliero in base al tuo livello di attività.' },
+  { name: 'Calcolo Calorie', slug: '/it/salute/calcolo-calorie/', description: 'Obiettivo calorico giornaliero e ripartizione dei macronutrienti per i tuoi obiettivi.' },
+];
+---
+
+<BaseLayout
+  title="Calcolatori Salute - IMC, BMR, TDEE, Calorie | CalcHub"
+  description="Calcolatori gratuiti per salute e fitness: IMC, metabolismo basale, TDEE, fabbisogno calorico con ripartizione macronutrienti. Formule scientifiche validate."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/it/" class="hover:text-blue-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Salute</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calcolatori Salute e Fitness</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Calcolatori basati su evidenze scientifiche con equazioni validate. IMC, metabolismo basale, dispendio energetico e pianificazione calorica per decisioni consapevoli sulla tua salute.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

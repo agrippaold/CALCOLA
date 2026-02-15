@@ -1,0 +1,71 @@
+id: "temperature-converter"
+category: "conversions"
+calculatorComponent: "TemperatureConverter"
+
+title: "Temperatur Umrechner - C F Kelvin | CalcHub"
+metaDescription: "Temperatur umrechnen zwischen Celsius, Fahrenheit und Kelvin. Kostenloser Temperaturrechner mit Formeln, Referenzwerten und sofortigem Ergebnis."
+h1: "Temperatur Umrechner"
+slug: "temperatur-umrechner"
+
+primaryKeyword: "temperatur umrechnen"
+secondaryKeywords:
+  - "celsius fahrenheit umrechnen"
+  - "temperatur umrechner"
+  - "fahrenheit in celsius"
+  - "kelvin umrechnen"
+
+intro: "Das Umrechnen von Temperaturen zwischen verschiedenen Skalen gehoert zu den Aufgaben, bei denen sich viele Menschen vertun, weil die Formeln weniger eingaengig sind als bei Laengen- oder Gewichtsmassen. Waehrend man Zentimeter und Meter einfach mit einem festen Faktor umrechnet, haben Temperaturskalen unterschiedliche Nullpunkte, was die Sache weniger offensichtlich macht. Dieser Umrechner beherrscht alle drei gaengigen Temperaturskalen: Celsius, Fahrenheit und Kelvin. Geben Sie einen Wert in einer beliebigen Skala ein und lesen Sie die Entsprechungen in allen drei Systemen sofort ab."
+
+howItWorks:
+  title: "So funktioniert die Temperaturumrechnung"
+  content: "Die drei Temperaturskalen unterscheiden sich in ihren Nullpunkten und in der Groesse ihrer Gradeinteilungen. Celsius, auch Grad Celsius oder frueher Centigrad genannt, setzt den Gefrierpunkt von Wasser bei 0 Grad und den Siedepunkt bei 100 Grad unter normalem atmosphaerischem Druck auf Meereshoehe fest. Anders Celsius, ein schwedischer Astronom, fuehrte diese Skala im Jahr 1742 ein, wobei er sie urspruenglich umgekehrt definierte: 0 war der Siedepunkt und 100 der Gefrierpunkt. Erst nach seinem Tod wurde die Skala gedreht. In Deutschland und dem gesamten deutschsprachigen Raum ist Celsius die im Alltag gebraeuchliche Skala, sei es fuer Wetterberichte, Kochrezepte, Fiebermessungen oder die Einstellung der Heizungsthermostate. Fahrenheit, entwickelt von Daniel Gabriel Fahrenheit, einem in Danzig geborenen Physiker, im Jahr 1724, legt den Gefrierpunkt von Wasser auf 32 Grad und den Siedepunkt auf 212 Grad fest. Die Skala basierte urspruenglich auf drei Referenzpunkten: 0 fuer eine Kaltemischung aus Eis, Wasser und Salmiak, die die niedrigste Temperatur darstellte, die Fahrenheit zuverlaessig herstellen konnte, 32 fuer den Gefrierpunkt von reinem Wasser und 96 fuer die Koerpertemperatur, die spaeter auf 98,6 korrigiert wurde. Diese Geschichte erklaert die auf den ersten Blick willkuerlich erscheinenden Zahlen. Fahrenheit wird heute hauptsaechlich in den Vereinigten Staaten und einigen wenigen weiteren Laendern im taeglichen Leben benutzt. Kelvin ist die SI-Einheit der Temperatur und beginnt beim absoluten Nullpunkt, also dem theoretischen Zustand, in dem jede Teilchenbewegung zum Erliegen kommt. Dieser Punkt liegt bei minus 273,15 Grad Celsius beziehungsweise minus 459,67 Grad Fahrenheit. Jeder Kelvin-Schritt hat die gleiche Groesse wie ein Celsius-Grad, sodass die Umrechnung lediglich das Addieren oder Subtrahieren von 273,15 erfordert. Lord Kelvin schlug diese Skala 1848 fuer die Wissenschaft vor, da sie keine negativen Werte kennt und der Nullpunkt physikalisch sinnvoll ist. In der Physik, Chemie und Technik wird Kelvin weltweit als Standardeinheit verwendet. Um Celsius in Fahrenheit umzurechnen, multipliziert man mit 9/5 und addiert 32. In die andere Richtung zieht man 32 ab und multipliziert mit 5/9. Der Faktor 9/5 erklaert sich dadurch, dass zwischen Gefrier- und Siedepunkt des Wassers 180 Fahrenheit-Grade liegen, aber nur 100 Celsius-Grade, was ein Verhaeltnis von 180 zu 100 oder 9 zu 5 ergibt. Eine hilfreiche Merkregel: Bei minus 40 Grad zeigen beide Skalen denselben Wert an. Fuer eine schnelle Abschaetzung im Kopf von Celsius nach Fahrenheit verdoppeln Sie die Zahl und addieren 30. Das liefert brauchbare Naeherungswerte: 20 Grad Celsius ergeben ungefaehr 70 Grad Fahrenheit (genau: 68), 30 Grad Celsius ungefaehr 90 Grad Fahrenheit (genau: 86). Diese Faustformel funktioniert am besten zwischen 0 und 40 Grad Celsius, also genau im Bereich der meisten Wetter-Temperaturen. In der deutschen Kueche begegnet man Fahrenheit kaum, da saemtliche Backofen in Grad Celsius beschriftet sind. Allerdings lohnt sich die Kenntnis der Umrechnung, wenn man amerikanische Rezepte nachkocht. Typische Backtemperaturen sind 175 Grad Celsius gleich 350 Grad Fahrenheit fuer Kuchen, 200 Grad Celsius gleich 390 Grad Fahrenheit fuer Brot und 220 Grad Celsius gleich 430 Grad Fahrenheit fuer Pizza. Die Geschichte der Temperaturmessung reicht bis ins 16. Jahrhundert zurueck, als Galileo Galilei ein fruehes Thermoskop baute. Seitdem wurden zahlreiche Skalen vorgeschlagen, von denen sich nur Celsius, Fahrenheit und Kelvin dauerhaft durchgesetzt haben. Die Rankine-Skala, ein auf Fahrenheit basierendes Pendant zu Kelvin, wird heute nur noch in wenigen technischen Nischenbereichen in den USA genutzt."
+  formula: "F = C x 9/5 + 32 | C = (F - 32) x 5/9 | K = C + 273,15"
+  formulaExplanation: "Celsius zu Fahrenheit: mit 1,8 multiplizieren, dann 32 addieren. Fahrenheit zu Celsius: 32 abziehen, dann mit 0,5556 multiplizieren. Kelvin-Umrechnungen addieren oder subtrahieren 273,15 vom Celsius-Wert."
+  academicSource: "Bureau International des Poids et Mesures (BIPM). Das Internationale Einheitensystem (SI), 9. Ausgabe, 2019."
+
+faqs:
+  - question: "Wie rechne ich Celsius im Kopf schnell in Fahrenheit um?"
+    answer: "Verdoppeln Sie den Celsius-Wert und addieren Sie 30. Das ergibt Naeherungswerte, die fuer Alltagssituationen ausreichend genau sind: 10 Grad Celsius werden zu etwa 50 Grad Fahrenheit (exakt: 50), 20 Grad Celsius zu etwa 70 Grad Fahrenheit (exakt: 68), 30 Grad Celsius zu etwa 90 Grad Fahrenheit (exakt: 86). Fuer etwas mehr Genauigkeit multiplizieren Sie mit 2, ziehen 10% des Ergebnisses ab und addieren 32. Diese Faustregeln sind besonders nuetzlich auf Reisen in die USA oder beim Lesen von amerikanischen Rezepten und Wetterberichten."
+  - question: "Warum benutzen die USA und einige wenige Laender noch Fahrenheit?"
+    answer: "Die Vereinigten Staaten verwenden Fahrenheit im Alltag hauptsaechlich aus historischer Gewohnheit und wegen der bestehenden Infrastruktur. In den 1970er Jahren versuchte die US-Regierung mit dem Metric Conversion Act eine Umstellung auf das metrische System, jedoch ohne verbindliche Pflicht. Da die Teilnahme freiwillig war, blieb die Umsetzung lueckenhaft. Fahrenheit hat sich in Wetterdiensten, Kochbuecher und der Haustechnik so tief verankert, dass eine Abkehr sehr kostspielig waere. In wissenschaftlichen, medizinischen und militaerischen Zusammenhaengen arbeiten allerdings auch US-Einrichtungen laengst mit Celsius und Kelvin."
+  - question: "Was ist der absolute Nullpunkt und warum ist er wichtig?"
+    answer: "Der absolute Nullpunkt liegt bei 0 Kelvin, also bei minus 273,15 Grad Celsius beziehungsweise minus 459,67 Grad Fahrenheit. An diesem Punkt besitzen Teilchen die geringstmoegliche kinetische Energie. Kein Objekt wurde bisher exakt auf den absoluten Nullpunkt gekuehlt, obwohl Labore Temperaturen erreicht haben, die nur Milliardstel Grad davon entfernt liegen. Der absolute Nullpunkt ist deshalb bedeutsam, weil die Kelvin-Skala hier beginnt und damit die einzige Temperaturskala mit einem physikalisch echten Nullpunkt ist. Das macht Kelvin unentbehrlich fuer wissenschaftliche Berechnungen, bei denen Temperaturverhaeltnisse eine Rolle spielen."
+  - question: "Bei welcher Temperatur stimmen Celsius und Fahrenheit ueberein?"
+    answer: "Celsius und Fahrenheit schneiden sich bei minus 40 Grad. An diesem Punkt zeigen beide Thermometer denselben Wert an. Man kann das leicht nachpruefen, indem man minus 40 in eine der Umrechnungsformeln einsetzt: (minus 40 mal 9/5) plus 32 ergibt minus 72 plus 32 gleich minus 40. Dieser Fakt dient als nuetzlicher Ankerpunkt und als Merkregel, wenn man sich das Verhaeltnis der beiden Skalen einpraegen will. In der Praxis begegnet einem diese Temperatur vor allem in arktischen oder subarktischen Klimazonen wie Alaska, Kanada oder Sibirien."
+  - question: "Welche Temperaturskala soll ich beim Kochen und Backen verwenden?"
+    answer: "Verwenden Sie die Skala, die in Ihrem Rezept und auf Ihrem Backofen angegeben ist. In Deutschland, Oesterreich und der Schweiz sind nahezu alle Rezepte und Kuechengeraete in Celsius beschriftet. Amerikanische Rezepte verwenden dagegen Fahrenheit. Nuetzliche Richtwerte zum Merken: 175 Grad Celsius entsprechen 350 Grad Fahrenheit (Standardbacktemperatur fuer Kuchen), 200 Grad Celsius sind 390 Grad Fahrenheit (Brot und Auflaeufe), 220 Grad Celsius sind 430 Grad Fahrenheit (Braten bei hoher Hitze) und 250 Grad Celsius sind 480 Grad Fahrenheit (Pizza im heissen Ofen). Viele moderne Backofen bieten eine Umschaltung zwischen beiden Skalen an."
+  - question: "Warum ist die Temperaturumrechnung anders als bei Laengen oder Gewichten?"
+    answer: "Bei Laengen und Gewichten handelt es sich um rein proportionale Umrechnungen: Wenn Sie die Zentimeter verdoppeln, verdoppeln sich auch die Zoll. Temperaturskalen haben dagegen unterschiedliche Nullpunkte, weshalb neben der Multiplikation auch eine Addition noetig ist. Null Grad Celsius ist nicht gleich null Grad Fahrenheit. Dieser sogenannte Offset bedeutet, dass man nicht einfach mit einem einzigen Faktor multiplizieren kann. Ausserdem rechnen sich Temperaturdifferenzen anders um als absolute Temperaturen: Ein Temperaturunterschied von 10 Grad Celsius entspricht einem Unterschied von 18 Grad Fahrenheit, und zwar unabhaengig davon, bei welcher Ausgangstemperatur man sich befindet."
+
+examples:
+  - title: "Fiebermessung umrechnen"
+    scenario: "Umrechnung der normalen Koerpertemperatur von 37 Grad Celsius in Fahrenheit"
+    inputs:
+      temperature: 37
+      from: "celsius"
+      to: "fahrenheit"
+    expectedResult: "37 Grad C = 98,60 Grad F"
+    explanation: "Die normale Koerpertemperatur von 37 Grad Celsius entspricht 98,6 Grad Fahrenheit. Ab 38 Grad Celsius (100,4 Grad Fahrenheit) spricht man allgemein von Fieber. Ab 40 Grad Celsius (104 Grad Fahrenheit) besteht hohes Fieber, das aerztliche Aufmerksamkeit erfordert."
+  - title: "Winterwetter in den USA verstehen"
+    scenario: "Umrechnung einer amerikanischen Wettervorhersage von 14 Grad Fahrenheit in Celsius"
+    inputs:
+      temperature: 14
+      from: "fahrenheit"
+      to: "celsius"
+    expectedResult: "14 Grad F = -10,00 Grad C"
+    explanation: "14 Grad Fahrenheit entsprechen minus 10 Grad Celsius, also eisige Winterkaelte. Bei diesen Temperaturen besteht bei laengerem Aufenthalt im Freien die Gefahr von Erfrierungen an ungeschuetzten Hautstellen, insbesondere an Fingern, Zehen, Nase und Ohren."
+
+relatedTools:
+  - "area-calculator"
+  - "percentage-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

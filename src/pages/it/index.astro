@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'it';
+
+const categories = [
+  {
+    name: 'Finanza',
+    slug: 'finanza',
+    description: 'Calcolatori per mutui, prestiti, interesse composto, risparmio e investimenti.',
+    icon: '💰',
+    tools: [
+      { name: 'Calcolo Mutuo', slug: '/it/finanza/calcolo-mutuo/' },
+      { name: 'Interesse Composto', slug: '/it/finanza/calcolo-interesse-composto/' },
+      { name: 'Calcolo Prestito', slug: '/it/finanza/calcolo-prestito/' },
+      { name: 'Calcolo Risparmio', slug: '/it/finanza/calcolo-risparmio/' },
+    ],
+  },
+  {
+    name: 'Salute',
+    slug: 'salute',
+    description: 'Calcolatori per IMC, metabolismo basale, TDEE e fabbisogno calorico.',
+    icon: '🏥',
+    tools: [
+      { name: 'Calcolo IMC', slug: '/it/salute/calcolo-imc/' },
+      { name: 'Metabolismo Basale', slug: '/it/salute/calcolo-metabolismo-basale/' },
+      { name: 'Calcolo TDEE', slug: '/it/salute/calcolo-tdee/' },
+      { name: 'Calcolo Calorie', slug: '/it/salute/calcolo-calorie/' },
+    ],
+  },
+  {
+    name: 'Matematica',
+    slug: 'matematica',
+    description: 'Calcolatrici per percentuali, aree e problemi matematici quotidiani.',
+    icon: '📐',
+    tools: [
+      { name: 'Calcolo Percentuale', slug: '/it/matematica/calcolo-percentuale/' },
+      { name: 'Calcolo Area', slug: '/it/matematica/calcolo-area/' },
+    ],
+  },
+  {
+    name: 'Conversioni',
+    slug: 'conversioni',
+    description: 'Convertitori per temperatura, lunghezza, peso e volume.',
+    icon: '🔄',
+    tools: [
+      { name: 'Convertitore Temperatura', slug: '/it/conversioni/convertitore-temperatura/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - Calcolatori Online Gratuiti | Finanza, Salute, Matematica"
+  description="200+ calcolatori online gratuiti in 25 lingue. Mutuo, IMC, interesse composto, percentuali, temperatura e molto altro. Veloci, precisi, senza registrazione."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Calcolatori Online Gratuiti</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Calcolatori veloci e precisi per finanza, salute, matematica e conversioni. Senza registrazione. Senza pubblicità invasive.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/it/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Calcolatori Popolari</h2>
+    <p class="text-gray-600 mb-8">Gli strumenti più utilizzati di tutte le categorie</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/it/finanza/calcolo-mutuo/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">Finanza</div>
+        <div class="font-semibold text-gray-900">Calcolo Mutuo</div>
+        <p class="text-sm text-gray-500 mt-1">Calcola rata mensile e interessi totali.</p>
+      </a>
+      <a href="/it/salute/calcolo-imc/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Salute</div>
+        <div class="font-semibold text-gray-900">Calcolo IMC</div>
+        <p class="text-sm text-gray-500 mt-1">Verifica il tuo Indice di Massa Corporea.</p>
+      </a>
+      <a href="/it/matematica/calcolo-percentuale/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">Matematica</div>
+        <div class="font-semibold text-gray-900">Calcolo Percentuale</div>
+        <p class="text-sm text-gray-500 mt-1">Tutte le operazioni con le percentuali.</p>
+      </a>
+      <a href="/it/salute/calcolo-calorie/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Salute</div>
+        <div class="font-semibold text-gray-900">Calcolo Calorie</div>
+        <p class="text-sm text-gray-500 mt-1">Fabbisogno calorico giornaliero e macronutrienti.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Tutte le Categorie</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/it/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/it/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            Vedi tutti gli strumenti di {cat.name.toLowerCase()} &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

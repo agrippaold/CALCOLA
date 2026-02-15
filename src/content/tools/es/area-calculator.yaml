@@ -1,0 +1,78 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+
+title: "Calculadora de Area - Figuras Geometricas | CalcHub"
+metaDescription: "Calcula el area de rectangulos, circulos, triangulos, trapecios y elipses. Calculadora de area con formulas, resultados al instante y conversion de unidades."
+h1: "Calculadora de Area"
+slug: "calculadora-area"
+
+primaryKeyword: "calculadora area"
+secondaryKeywords:
+  - "calcular area"
+  - "area rectangulo"
+  - "area circulo"
+  - "area triangulo"
+
+intro: "Necesitas saber cuantos metros cuadrados tiene una habitacion para comprar baldosas, cuanta superficie ocupa un jardin circular o el area de un terreno triangular para una escritura? Esta calculadora trabaja con cinco figuras geometricas comunes. Solo tienes que seleccionar la forma, introducir las medidas y obtendras el resultado de forma inmediata. Funciona con cualquier unidad de medida: metros, centimetros, pies o pulgadas. El resultado siempre aparece en unidades cuadradas correspondientes a la unidad que hayas utilizado en las mediciones."
+
+howItWorks:
+  title: "Como se calcula el area de diferentes figuras"
+  content: "El area mide la cantidad de superficie bidimensional que queda encerrada dentro del contorno de una figura y se expresa en unidades cuadradas. Cada figura geometrica tiene su propia formula, derivada de principios matematicos que se conocen desde la antigua Grecia. El rectangulo (y el cuadrado como caso particular) tiene la formula mas sencilla: se multiplica la longitud por el ancho. Si una habitacion mide 5 metros de largo por 4 metros de ancho, su superficie es de 20 metros cuadrados. El cuadrado es simplemente un rectangulo con los cuatro lados iguales. El area del circulo se calcula multiplicando pi por el radio elevado al cuadrado. El numero pi (aproximadamente 3,14159) representa la relacion entre la circunferencia y el diametro de cualquier circulo, y aparece en todos los calculos relacionados con formas redondas. Para un circulo de 7 metros de radio, el area es 3,14159 por 49, que da aproximadamente 153,94 metros cuadrados. El area del triangulo es igual a la base multiplicada por la altura y dividida entre dos. La altura debe ser perpendicular a la base, formando un angulo recto, y no debe confundirse con la longitud de un lado inclinado. Un triangulo con una base de 10 centimetros y una altura de 6 centimetros tiene un area de 30 centimetros cuadrados. El trapecio tiene dos lados paralelos de diferente longitud. Su area se calcula sumando las dos bases paralelas, multiplicando por la altura perpendicular entre ellas y dividiendo entre dos. Si las bases miden 8 y 12 metros con una altura de 5 metros, el area es 0,5 por (8 mas 12) por 5, que da 50 metros cuadrados. La elipse es una forma ovalada definida por dos semiejes: el semieje mayor (el mas largo) y el semieje menor (el mas corto). Su area es pi multiplicado por ambos semiejes. Cuando los dos semiejes son iguales, la elipse se convierte en un circulo. Una piscina con forma de elipse cuyos semiejes miden 6 y 4 metros tiene un area de aproximadamente 75,4 metros cuadrados. La conversion de unidades sigue la regla del cuadrado: para pasar de unas unidades cuadradas a otras, se multiplica por el factor de conversion al cuadrado. Un metro equivale a 3,281 pies, asi que un metro cuadrado equivale a 3,281 al cuadrado, es decir, 10,764 pies cuadrados. En Espana las superficies de viviendas se expresan en metros cuadrados, mientras que en los registros de fincas rurales se usa a menudo la hectarea (10.000 metros cuadrados) o la fanega, una medida tradicional que varia segun la region."
+  formula: "Rectangulo: A = l * a | Circulo: A = pi*r^2 | Triangulo: A = (b*h)/2"
+  formulaExplanation: "Trapecio: A = ((B+b)*h)/2 donde B y b son los lados paralelos. Elipse: A = pi * semieje_mayor * semieje_menor. Todos los resultados en unidades cuadradas."
+  academicSource: "Euclides. Elementos, Libros I-IV. c. 300 a.C. Referencia moderna: Puig Adam, P. Curso de Geometria Metrica. Biblioteca Matematica."
+
+faqs:
+  - question: "Como calculo el area de una figura irregular?"
+    answer: "Para figuras irregulares, divide la forma en figuras simples (rectangulos, triangulos, circulos), calcula el area de cada parte por separado y luego sumalas todas. Por ejemplo, una habitacion en forma de L se puede dividir en dos rectangulos. Un salon con un mirador puede tratarse como un rectangulo mas un triangulo. Para terrenos con formas muy irregulares, como parcelas rusticas, se usa el metodo de coordenadas (dividir el perimetro en triangulos usando las coordenadas de los vertices) o herramientas de medicion con GPS que proporcionan resultados exactos."
+  - question: "Cual es la diferencia entre area y perimetro?"
+    answer: "El area mide la superficie interior de una figura (en unidades cuadradas), mientras que el perimetro mide la longitud total del contorno exterior (en unidades lineales). Una habitacion de 10 por 5 metros tiene un area de 50 metros cuadrados pero un perimetro de 30 metros. Dos figuras pueden tener el mismo perimetro y areas muy diferentes: un rectangulo de 10 por 5 (area 50) y otro de 1 por 14 (area 14) tienen ambos un perimetro de 30 metros. Esta distincion importa mucho al comprar materiales: la pintura para paredes depende del perimetro y la altura, pero las baldosas dependen del area."
+  - question: "Como paso de metros cuadrados a pies cuadrados?"
+    answer: "Un metro cuadrado equivale a aproximadamente 10,764 pies cuadrados. Un pie cuadrado equivale a unos 0,0929 metros cuadrados. Para convertir, multiplica los metros cuadrados por 10,764 para obtener pies cuadrados, o multiplica los pies cuadrados por 0,0929 para obtener metros cuadrados. Como estimacion mental rapida, multiplica los metros cuadrados por 10 y anade un 7,5% mas para obtener una cifra aproximada en pies cuadrados."
+  - question: "Como calculo el area de una habitacion con angulos irregulares?"
+    answer: "Divide la habitacion en secciones rectangulares y calcula cada una por separado. Para las paredes en angulo, trata la seccion inclinada como un triangulo. Mide la base (a lo largo de una pared) y la altura (la distancia perpendicular hasta la pared opuesta o la esquina). Suma las areas de todas las secciones. Para mayor precision en habitaciones con formas muy irregulares, considera usar un medidor laser que calcula la superficie directamente a partir de varias mediciones tomadas a lo largo de las paredes."
+  - question: "Por que la formula del circulo usa el numero pi?"
+    answer: "Pi surge de la relacion entre el diametro de un circulo y su circunferencia. Sin importar el tamano del circulo, si divides la circunferencia entre el diametro siempre obtienes pi (aproximadamente 3,14159). Al calcular el area, se integran infinitos anillos concentricos desde el centro hasta el borde, y este proceso matematico produce de forma natural la formula pi por radio al cuadrado. Pi es un numero irracional, lo que significa que su expansion decimal nunca termina ni se repite. Los antiguos griegos ya lo conocian, y Arquimedes fue el primero en establecer limites precisos para su valor."
+  - question: "Que precision necesitan mis mediciones para calcular el area?"
+    answer: "La precision necesaria depende del uso que vayas a dar al calculo. Para comprar suelo o moqueta, mediciones con un margen del 2-3% son suficientes porque los materiales se venden con margen para recortes y desperdicios. Para obras y licencias de construccion, las mediciones deben estar dentro del 1% o mejor. Para aplicaciones cientificas e ingenieria, puede necesitarse precision de milimetros. Mide siempre dos veces y usa las mismas unidades en todo el calculo. Redondear resultados intermedios puede acumular errores, asi que conserva toda la precision hasta obtener el resultado final."
+
+examples:
+  - title: "Superficie de habitacion para suelo"
+    scenario: "Calcular el area de una habitacion rectangular de 4,5 m por 3,8 m"
+    inputs:
+      shape: "rectangle"
+      length: 4.5
+      width: 3.8
+    expectedResult: "Area: 17,1000 unidades cuadradas"
+    explanation: "La habitacion tiene una superficie de 17,1 metros cuadrados. Al pedir presupuesto de suelo, anade un 10% para desperdicios y cortes, lo que sube la cantidad de material a comprar a unos 18,8 metros cuadrados."
+  - title: "Jardin circular"
+    scenario: "Calcular el area de un parterre circular con 2,5 m de radio"
+    inputs:
+      shape: "circle"
+      radius: 2.5
+    expectedResult: "Area: 19,6350 unidades cuadradas"
+    explanation: "El parterre ocupa aproximadamente 19,64 metros cuadrados. Para estimar el volumen de tierra vegetal necesario, multiplica la superficie por la profundidad deseada. Con 15 cm de sustrato (0,15 m) necesitarias unos 2,95 metros cubicos de tierra."
+  - title: "Terreno triangular"
+    scenario: "Medir una parcela triangular en esquina con 20 m de base y 15 m de altura"
+    inputs:
+      shape: "triangle"
+      base: 20
+      height: 15
+    expectedResult: "Area: 150,0000 unidades cuadradas"
+    explanation: "La parcela triangular tiene una superficie de 150 metros cuadrados. Esto equivale a aproximadamente 1.615 pies cuadrados, dato que puede ser necesario para tasaciones inmobiliarias o planes urbanisticos."
+
+relatedTools:
+  - "percentage-calculator"
+  - "bmi-calculator"
+  - "mortgage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

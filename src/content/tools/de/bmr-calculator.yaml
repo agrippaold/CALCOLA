@@ -1,0 +1,71 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "Grundumsatz Rechner - BMR Berechnen | CalcHub"
+metaDescription: "Grundumsatz berechnen mit der Mifflin-St-Jeor-Formel. Erfahren Sie, wie viele Kalorien Ihr Koerper in Ruhe verbrennt, basierend auf Alter, Gewicht und Groesse."
+h1: "Grundumsatz Rechner (Basalstoffwechselrate)"
+slug: "grundumsatz-rechner"
+
+primaryKeyword: "grundumsatz berechnen"
+secondaryKeywords:
+  - "grundumsatz rechner"
+  - "bmr rechner"
+  - "basalstoffwechsel berechnen"
+  - "kalorienverbrauch ruhe"
+
+intro: "Ihr Grundumsatz ist die Energiemenge, die Ihr Koerper allein fuer lebenswichtige Funktionen verbraucht: Atmung, Blutkreislauf, Regulierung der Koerpertemperatur und Aufrechterhaltung der Organfunktionen, waehrend Sie vollstaendig in Ruhe liegen. Bei den meisten Menschen macht der Grundumsatz zwischen 60 und 75 Prozent des taeglichen Gesamtkalorienverbrauchs aus. Wenn Sie Ihren Grundumsatz kennen, haben Sie die Basis fuer eine fundierte Ernaehrungsplanung, egal ob Sie Fett abbauen, Muskeln aufbauen oder Ihr aktuelles Gewicht halten moechten."
+
+howItWorks:
+  title: "So wird der Grundumsatz berechnet"
+  content: "Dieser Rechner verwendet die Mifflin-St-Jeor-Gleichung, die von der American Dietetic Association in einer Vergleichsstudie von 2005 als genaueste Methode zur Schaetzung des Grundumsatzes bei gesunden Personen identifiziert wurde. Die Gleichung beruecksichtigt Koerpergewicht, Groesse, Alter und biologisches Geschlecht. Fuer Maenner lautet die Formel: Grundumsatz gleich 10 mal Gewicht in Kilogramm plus 6,25 mal Groesse in Zentimetern minus 5 mal Alter in Jahren plus 5. Fuer Frauen gilt dieselbe Basisberechnung, allerdings wird am Ende 161 abgezogen statt 5 addiert. Dieser Unterschied spiegelt den im Durchschnitt hoeheren Anteil an fettfreier Koerpermasse bei Maennern wider. Die Mifflin-St-Jeor-Gleichung hat die aeltere Harris-Benedict-Gleichung von 1919 als Referenzstandard abgeloest, weil sie in verschiedenen Bevoelkerungsgruppen genauere Ergebnisse liefert. Die Harris-Benedict-Gleichung ueberschaetzt den Grundumsatz bei normalgewichtigen Personen um etwa 5 Prozent und bei adipoesen Personen um noch mehr. Mehrere Faktoren beeinflussen Ihren tatsaechlichen Grundumsatz ueber das hinaus, was die Formel erfassen kann. Die Muskelmasse ist die groesste Variable, da Muskelgewebe in Ruhe deutlich mehr Kalorien verbrennt als Fettgewebe. Zwei Personen mit identischem Gewicht, gleicher Groesse und gleichem Alter koennen Grundumsaetze aufweisen, die sich um 200 bis 300 Kalorien unterscheiden, wenn eine Person deutlich mehr fettfreie Masse hat. Auch die Genetik spielt eine Rolle und erklaert nach Berechnungen etwa 40 Prozent der Variation im Grundumsatz zwischen Personen, selbst wenn die Koerperzusammensetzung beruecksichtigt wird. Die Schilddruesenfunktion reguliert den Stoffwechsel direkt: Eine Schilddruesenunterfunktion kann den Grundumsatz um 10 bis 15 Prozent senken. Der altersbedingte Rueckgang des Grundumsatzes betraegt im Durchschnitt etwa 1 bis 2 Prozent pro Jahrzehnt nach dem 20. Lebensjahr, was hauptsaechlich auf den fortschreitenden Muskelverlust zurueckzufuehren ist und nicht auf das Altern an sich. Regelmaessiges Krafttraining kann diesen Rueckgang erheblich verlangsamen. Auch die Umgebungstemperatur, bestimmte Medikamente, Koffeinzufuhr und kuerzlich aufgenommene Nahrung erzeugen voruebergehende Schwankungen des Grundumsatzes. Fuer eine klinisch genaue Messung steht die indirekte Kalorimetrie in Krankenhaeusern oder sportmedizinischen Einrichtungen zur Verfuegung, bei der der tatsaechliche Sauerstoffverbrauch gemessen wird."
+  formula: "Grundumsatz (Mann) = 10 x Gewicht(kg) + 6,25 x Groesse(cm) - 5 x Alter + 5"
+  formulaExplanation: "Fuer Frauen wird statt +5 der Wert -161 eingesetzt. Dies ist die Mifflin-St-Jeor-Gleichung, die als genaueste Schaetzung des Grundumsatzes fuer gesunde Erwachsene gilt."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "Was ist der Unterschied zwischen Grundumsatz und Ruheumsatz?"
+    answer: "Grundumsatz (BMR) und Ruheumsatz (RMR) werden oft synonym verwendet, unterscheiden sich aber in den Messbedingungen. Der Grundumsatz erfordert strenge Laborbedingungen: 12 Stunden Nahrungskarenz, 8 Stunden Schlaf, eine thermoneutrale Umgebung und vollstaendige koerperliche sowie psychische Ruhe. Der Ruheumsatz wird unter weniger strengen Bedingungen gemessen und liegt typischerweise 10 bis 20 Prozent ueber dem Grundumsatz. Fuer die praktische Ernaehrungsplanung ist der Unterschied gering genug, dass beide Werte als Ausgangspunkt fuer die Kalorienberechnung dienen koennen."
+  - question: "Warum sinkt der Grundumsatz mit dem Alter?"
+    answer: "Der Grundumsatz nimmt nach dem 20. Lebensjahr um etwa 1 bis 2 Prozent pro Jahrzehnt ab. Der Hauptgrund dafuer ist die Sarkopenie, der fortschreitende Verlust von Muskelmasse, der natuerlich mit dem Altern einhergeht. Da Muskelgewebe metabolisch aktiv ist und in Ruhe mehr Energie verbraucht als Fettgewebe, fuehrt der Muskelverlust zu einem geringeren Energieverbrauch. Zwischen dem 30. und 80. Lebensjahr verlieren die meisten Menschen ohne Gegenmassnahmen 30 bis 40 Prozent ihrer Muskelmasse. Regelmaessiges Krafttraining und eine ausreichende Proteinzufuhr von 1,2 bis 1,6 Gramm pro Kilogramm Koerpergewicht koennen diesen Prozess deutlich verlangsamen."
+  - question: "Kann ich meinen Grundumsatz steigern?"
+    answer: "Der wirksamste Weg, den Grundumsatz zu erhoehen, ist der Aufbau von fettfreier Muskelmasse durch Krafttraining. Jedes Kilogramm Muskelmasse verbrennt in Ruhe etwa 13 Kalorien pro Tag, verglichen mit etwa 4,5 Kalorien pro Kilogramm Fettgewebe. Wenn Sie durch konsequentes Krafttraining 5 kg Muskelmasse aufbauen, steigt Ihr taeglicher Grundumsatz um rund 40 bis 65 Kalorien. Das klingt wenig, summiert sich aber ueber ein Jahr auf zusaetzliche 15.000 bis 24.000 verbrannte Kalorien in Ruhe. Weitere Faktoren, die den Stoffwechsel voruebergehend ankurbeln, sind eiweissreiche Ernaehrung, Kaelteexposition und Koffein."
+  - question: "Wie genau ist dieser Grundumsatz-Rechner?"
+    answer: "Die Mifflin-St-Jeor-Gleichung sagt den Grundumsatz laut der urspruenglichen Validierungsstudie bei etwa 82 Prozent der Personen auf 10 Prozent genau voraus. Die Genauigkeit ist bei normalgewichtigen Erwachsenen am hoechsten und nimmt bei stark ueber- oder untergewichtigen Personen etwas ab. Sportler mit ueberdurchschnittlicher Muskelmasse werden feststellen, dass die Formel ihren tatsaechlichen Grundumsatz unterschaetzt, waehrend Personen mit weniger Muskelmasse als der Durchschnitt eher ueberschaetzte Werte erhalten. Fuer eine klinisch genaue Messung empfiehlt sich die indirekte Kalorimetrie in einem Krankenhaus oder einer sportmedizinischen Praxis."
+  - question: "Sollte ich weniger als meinen Grundumsatz essen, um abzunehmen?"
+    answer: "Davon ist dringend abzuraten, da es kontraproduktiv sein kann. Ihr Koerper benoetigt die Grundumsatz-Kalorien fuer die Aufrechterhaltung der Organfunktionen, die Hormonproduktion und die Immunabwehr. Wenn Sie chronisch weniger als Ihren Grundumsatz essen, reagiert der Koerper mit einer metabolischen Anpassung: Er drosselt den Energieverbrauch, um Reserven zu schonen. Das erschwert weitere Gewichtsabnahme und fuehrt oft zum Abbau von Muskelmasse. Nutzen Sie stattdessen Ihren Gesamtumsatz (TDEE) als Ausgangspunkt und erzeugen Sie ein moderates Defizit von 300 bis 500 Kalorien unterhalb des Gesamtumsatzes fuer eine nachhaltige Fettreduktion."
+
+examples:
+  - title: "Aktiver Mann, 30 Jahre"
+    scenario: "Ein 30-jaehriger Mann mit 80 kg Koerpergewicht und 180 cm Groesse"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "Grundumsatz: 1.780 kcal/Tag"
+    explanation: "Dieser Mann verbrennt im Zustand vollstaendiger Ruhe etwa 1.780 Kalorien pro Tag. Bei moderater Aktivitaet (3 bis 5 Trainingseinheiten pro Woche) laege sein Gesamtumsatz bei rund 2.759 Kalorien taeglich (1.780 x 1,55)."
+  - title: "Frau, 25 Jahre"
+    scenario: "Eine 25-jaehrige Frau mit 60 kg Koerpergewicht und 165 cm Groesse"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "Grundumsatz: 1.345 kcal/Tag"
+    explanation: "Ihr Ruhekalorienverbrauch betraegt 1.345 pro Tag. Der niedrigere Wert im Vergleich zum maennlichen Beispiel erklaert sich durch die geringere Koerpergroesse und die geschlechtsspezifische Anpassung in der Mifflin-St-Jeor-Formel."
+
+relatedTools:
+  - "bmi-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,82 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "Calcul Métabolisme Basal (MB) en Ligne | CalcHub"
+metaDescription: "Calculez votre métabolisme basal avec l'équation de Mifflin-St Jeor. Découvrez combien de calories votre corps brûle au repos selon votre âge et votre poids."
+h1: "Calcul du Métabolisme Basal (MB)"
+slug: "calcul-metabolisme-basal"
+
+primaryKeyword: "calcul metabolisme basal"
+secondaryKeywords:
+  - "metabolisme basal"
+  - "taux metabolique basal"
+  - "calculer metabolisme basal"
+  - "mb calcul"
+
+intro: "Votre métabolisme basal correspond au nombre de calories que votre organisme dépense au repos complet pour assurer les fonctions de base : respiration, circulation sanguine, régulation de la température corporelle et fonctionnement des organes. Chez la plupart des gens, le métabolisme basal représente entre 60 % et 75 % de la dépense calorique quotidienne totale. Connaître votre MB est le point de départ indispensable pour déterminer vos besoins caloriques réels, que votre objectif soit la perte de graisse, la prise de muscle ou le maintien de votre poids actuel."
+
+howItWorks:
+  title: "Comment le métabolisme basal est calculé"
+  content: "Ce calculateur repose sur l'équation de Mifflin-St Jeor, que l'Association américaine de diététique a identifiée comme la méthode d'estimation du métabolisme basal la plus précise pour les individus en bonne santé dans une étude comparative publiée en 2005. La formule prend en compte le poids, la taille, l'âge et le sexe biologique. Pour les hommes, le calcul est le suivant : MB = 10 multiplié par le poids en kilogrammes, plus 6,25 multiplié par la taille en centimètres, moins 5 multiplié par l'âge en années, plus 5. Pour les femmes, la même base de calcul s'applique, mais on soustrait 161 au lieu d'ajouter 5. Cette différence reflète le pourcentage de masse maigre généralement plus élevé chez les hommes. L'équation de Mifflin-St Jeor a remplacé l'ancienne équation de Harris-Benedict (1919) comme référence, car elle s'est révélée plus fiable dans des populations variées. L'équation de Harris-Benedict a tendance à surestimer le métabolisme basal d'environ 5 % chez les personnes de poids normal, et davantage chez les personnes en situation d'obésité. Plusieurs facteurs influencent votre métabolisme basal réel au-delà de ce que la formule peut capter. La masse musculaire est la variable la plus déterminante : le tissu musculaire consomme plus d'énergie au repos que le tissu adipeux. Deux personnes de même poids, taille et âge peuvent présenter des métabolismes basaux différant de 200 à 300 calories si l'une possède nettement plus de masse maigre. La génétique joue également un rôle, représentant environ 40 % de la variation du métabolisme basal entre individus, même après correction pour la composition corporelle. La fonction thyroïdienne régule directement le taux métabolique : une hypothyroïdie peut réduire le MB de 10 % à 15 %. Le déclin du métabolisme basal lié à l'âge est en moyenne de 1 % à 2 % par décennie après 20 ans, principalement en raison de la perte progressive de masse musculaire plutôt que du vieillissement en lui-même. Le maintien d'une activité de musculation ou de renforcement musculaire peut freiner considérablement ce déclin. La température ambiante, certains médicaments, la consommation de caféine et l'ingestion récente de nourriture provoquent également des fluctuations temporaires du métabolisme basal."
+  formula: "MB (homme) = 10×poids(kg) + 6,25×taille(cm) - 5×âge + 5"
+  formulaExplanation: "Pour les femmes, on remplace +5 par -161. Il s'agit de l'équation de Mifflin-St Jeor, considérée comme la plus précise pour l'estimation du métabolisme basal chez les adultes en bonne santé."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "Quelle est la différence entre le métabolisme basal et le métabolisme de repos ?"
+    answer: "Le métabolisme basal (MB) et le métabolisme de repos (MR) sont souvent confondus, mais les conditions de mesure diffèrent. Le MB exige des conditions strictes de laboratoire : 12 heures de jeûne, 8 heures de sommeil, un environnement thermoneutre et un repos physique et psychologique complet. Le MR est mesuré dans des conditions moins contraignantes et se situe généralement 10 % à 20 % au-dessus du MB. En pratique, l'écart est suffisamment faible pour que les deux valeurs puissent servir de base au calcul des besoins caloriques quotidiens."
+  - question: "Pourquoi le métabolisme basal diminue-t-il avec l'âge ?"
+    answer: "Le métabolisme basal baisse d'environ 1 % à 2 % par décennie après l'âge de 20 ans. Le principal responsable est la sarcopénie, c'est-à-dire la perte progressive de masse musculaire qui survient naturellement avec le vieillissement. Le tissu musculaire étant métaboliquement actif (il brûle environ 13 calories par kilogramme par jour au repos), toute perte de muscle réduit la dépense énergétique. Entre 30 et 80 ans, la plupart des gens perdent 30 % à 40 % de leur masse musculaire sans intervention. La pratique régulière de renforcement musculaire et un apport suffisant en protéines (1,5 à 2,2 grammes par kilogramme de poids corporel) permettent de ralentir considérablement ce processus."
+  - question: "Peut-on augmenter son métabolisme basal ?"
+    answer: "Le moyen le plus efficace d'augmenter son métabolisme basal est de développer sa masse musculaire. Chaque kilogramme de muscle brûle environ 13 calories par jour au repos, contre 4,5 calories par kilogramme de graisse. En gagnant 5 kg de muscle grâce à un entraînement de force régulier, vous augmentez votre métabolisme basal d'environ 65 calories par jour. Sur une année, cela représente près de 24 000 calories supplémentaires brûlées au repos. D'autres facteurs augmentent temporairement le taux métabolique, notamment une alimentation riche en protéines (effet thermique des aliments), l'exposition au froid et la consommation de caféine."
+  - question: "Quelle est la précision de ce calculateur de métabolisme basal ?"
+    answer: "L'équation de Mifflin-St Jeor prédit le métabolisme basal à moins de 10 % de la valeur mesurée pour environ 82 % des personnes, selon l'étude de validation originale. La précision est la meilleure chez les adultes de poids normal et diminue quelque peu pour les personnes en situation de surpoids marqué ou d'insuffisance pondérale. Les sportifs ayant une masse musculaire supérieure à la moyenne constateront que la formule sous-estime probablement leur MB réel, tandis que les personnes ayant moins de muscle que la moyenne obtiendront une surestimation. Pour une précision de niveau clinique, il faut recourir à la calorimétrie indirecte dans un service hospitalier ou un centre de médecine du sport."
+  - question: "Faut-il manger en dessous de son métabolisme basal pour maigrir ?"
+    answer: "Manger en dessous de son métabolisme basal est généralement déconseillé et peut être contre-productif. Votre corps a besoin de ces calories de base pour maintenir le fonctionnement des organes, la production hormonale et les défenses immunitaires. Manger chroniquement sous le MB déclenche une adaptation métabolique : l'organisme réduit sa dépense énergétique pour préserver ses réserves. Cela rend la poursuite de la perte de poids plus difficile et conduit souvent à une perte de masse musculaire. Utilisez plutôt votre dépense énergétique totale (TDEE) comme point de départ et créez un déficit modéré de 300 à 500 calories en dessous de votre TDEE pour une perte de graisse durable."
+  - question: "Quel est le lien entre métabolisme basal, TDEE et comptage des calories ?"
+    answer: "Le métabolisme basal est la base de votre dépense énergétique totale quotidienne. La TDEE multiplie votre MB par un coefficient d'activité pour tenir compte de l'exercice physique et de vos déplacements quotidiens. Pour une personne sédentaire, la TDEE correspond à environ 1,2 fois le MB. Pour une personne très active, elle peut atteindre 1,9 fois le MB. Si votre MB est de 1 600 calories et que vous êtes modérément actif (coefficient 1,55), votre TDEE est d'environ 2 480 calories. Pour perdre du poids, vous mangerez en dessous de votre TDEE (et non en dessous de votre MB). Pour prendre du poids, vous mangerez au-dessus de votre TDEE."
+
+examples:
+  - title: "Homme actif de 30 ans"
+    scenario: "Un homme de 30 ans pesant 80 kg et mesurant 180 cm"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "MB : 1 780 kcal/jour"
+    explanation: "Cet homme brûle environ 1 780 calories par jour au repos complet. Avec une activité modérée (3 à 5 séances de sport par semaine), sa dépense énergétique totale serait d'environ 2 759 calories par jour (1 780 × 1,55)."
+  - title: "Femme de 25 ans"
+    scenario: "Une femme de 25 ans pesant 60 kg et mesurant 165 cm"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "MB : 1 345 kcal/jour"
+    explanation: "Son métabolisme basal est de 1 345 calories par jour. La valeur plus basse par rapport à l'exemple masculin s'explique à la fois par un gabarit plus petit et par l'ajustement spécifique au sexe dans la formule de Mifflin-St Jeor."
+  - title: "Adulte de 60 ans"
+    scenario: "Un homme de 60 ans pesant 75 kg et mesurant 172 cm"
+    inputs:
+      weight: 75
+      height: 172
+      age: 60
+      gender: "male"
+    expectedResult: "MB : 1 530 kcal/jour"
+    explanation: "À 60 ans, une personne de même gabarit a un métabolisme basal inférieur d'environ 150 calories par jour par rapport à 30 ans. Cet exemple illustre pourquoi les besoins caloriques diminuent avec l'âge et pourquoi le maintien de la masse musculaire par l'exercice physique prend une importance croissante."
+
+relatedTools:
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

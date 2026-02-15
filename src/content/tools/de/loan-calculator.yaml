@@ -1,0 +1,71 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Kreditrechner - Ratenkredit Berechnen | CalcHub"
+metaDescription: "Berechnen Sie die monatliche Rate, Gesamtzinsen und Laufzeit Ihres Ratenkredits. Sollzins und Effektivzins vergleichen, Monatsrate sofort ermitteln."
+h1: "Kreditrechner"
+slug: "kreditrechner"
+
+primaryKeyword: "kreditrechner"
+secondaryKeywords:
+  - "ratenkredit rechner"
+  - "kredit berechnen"
+  - "darlehensrechner"
+  - "monatsrate berechnen"
+
+intro: "Ob Autofinanzierung, Umschuldung oder eine groessere Anschaffung: Bevor Sie einen Ratenkredit aufnehmen, sollten Sie die tatsaechlichen Kosten kennen. Dieser Kreditrechner zeigt Ihnen die monatliche Rate, die Gesamtzinsen ueber die gesamte Laufzeit und den Tilgungsverlauf. Vergleichen Sie verschiedene Zinssaetze und Laufzeiten, um die Kombination zu finden, die zu Ihrem Budget passt und gleichzeitig die Zinskosten moeglichst niedrig haelt. Geben Sie einfach Kreditbetrag, Zinssatz und gewuenschte Laufzeit ein, um sofort ein Ergebnis zu erhalten."
+
+howItWorks:
+  title: "So wird ein Ratenkredit berechnet"
+  content: "Ratenkredite in Deutschland werden nach der Annuitaetenmethode berechnet, derselben Formel, die auch bei Baufinanzierungen zum Einsatz kommt. Die Bank ermittelt eine gleichbleibende monatliche Rate, die ueber die gesamte Laufzeit sowohl die Zinsen als auch die Tilgung des Darlehens abdeckt. Jede Rate setzt sich aus einem Zinsanteil und einem Tilgungsanteil zusammen. Da die Zinsen immer auf die Restschuld berechnet werden, sinkt der Zinsanteil mit jeder Zahlung, waehrend der Tilgungsanteil steigt. Am Anfang der Laufzeit ueberwiegt der Zinsanteil, gegen Ende besteht die Rate fast vollstaendig aus Tilgung. Der Zinssatz hat einen erheblichen Einfluss auf die Gesamtkosten. Bei einem Ratenkredit von 20.000 Euro ueber 5 Jahre ergibt ein Sollzins von 4 Prozent eine Monatsrate von 368,33 Euro und Gesamtzinsen von 2.099,83 Euro. Steigt der Zinssatz auf 8 Prozent, betraegt die Rate 405,53 Euro und die Gesamtzinsen verdoppeln sich nahezu auf 4.331,67 Euro. Diese vier zusaetzlichen Prozentpunkte kosten also ueber 2.200 Euro mehr. In Deutschland ist der Effektivzins (effektiver Jahreszins) die gesetzlich vorgeschriebene Vergleichsgroesse gemaess der Preisangabenverordnung (PAngV). Er enthaelt neben dem Sollzins auch alle obligatorischen Nebenkosten wie Bearbeitungsgebuehren. Seit einem BGH-Urteil von 2014 duerfen Banken fuer Verbraucherkredite keine separaten Bearbeitungsgebuehren mehr erheben, sodass Sollzins und Effektivzins bei den meisten Ratenkrediten sehr nah beieinander liegen. Die Schufa-Auskunft spielt bei der Kreditvergabe in Deutschland eine zentrale Rolle. Ihr Schufa-Score beeinflusst nicht nur, ob Sie einen Kredit erhalten, sondern auch zu welchem Zinssatz. Ein sehr guter Score (ueber 97 Prozent) qualifiziert Sie fuer die beworbenen Bestzinsen, waehrend ein Score unter 90 Prozent zu deutlichen Zinsaufschlaegen fuehren kann. Vor der Kreditaufnahme lohnt es sich, eine kostenlose Schufa-Datenkopie anzufordern und eventuelle Fehler korrigieren zu lassen. Die Verbraucherkreditrichtlinie der EU, in deutsches Recht als Verbraucherdarlehensrecht umgesetzt, schuetzt Kreditnehmer durch klare Informationspflichten, ein 14-taegiges Widerrufsrecht und das Recht auf vorzeitige Rueckzahlung. Bei vorzeitiger Abloesung darf die Bank eine Vorfaelligkeitsentschaedigung von maximal 1 Prozent der vorzeitig zurueckgezahlten Summe verlangen (0,5 Prozent bei weniger als 12 Monaten Restlaufzeit). Die Laufzeit eines Ratenkredits beeinflusst die monatliche Belastung und die Gesamtkosten gegenlaeufig. Kuerzere Laufzeiten bedeuten hoehere Monatsraten, aber deutlich geringere Zinskosten. Ein Kredit von 15.000 Euro zu 5 Prozent kostet ueber 3 Jahre insgesamt 1.175 Euro Zinsen, ueber 7 Jahre dagegen 2.775 Euro. Die 3-Jahres-Variante spart also 1.600 Euro, erfordert aber eine um rund 150 Euro hoehere Monatsrate."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = monatliche Rate, P = Kreditbetrag, r = monatlicher Zinssatz (Jahreszins / 12 / 100), n = Gesamtanzahl der Raten (Laufzeit in Jahren × 12)"
+  academicSource: "Verbraucherzentrale Bundesverband. (2025). Ratenkredite im Vergleich: Worauf Verbraucher achten sollten."
+
+faqs:
+  - question: "Wie bekomme ich den guenstigsten Zinssatz fuer einen Ratenkredit?"
+    answer: "Der Zinssatz haengt in erster Linie von Ihrem Schufa-Score, Ihrem Einkommen und der gewaehlten Laufzeit ab. Kreditnehmer mit einem Schufa-Score ueber 97 Prozent erhalten in der Regel die besten Konditionen. Vor der Kreditanfrage sollten Sie Ihre Schufa-Auskunft pruefen, bestehende Kleinkredite tilgen und keine unnoetig vielen Kreditanfragen stellen, da jede Anfrage kurzfristig den Score beeinflusst. Nutzen Sie Vergleichsportale, die Konditionsanfragen statt Kreditanfragen stellen, denn diese sind schufa-neutral. Vergleichen Sie mindestens drei bis fuenf Angebote von Direktbanken, Filialbanken und Kreditvermittlern."
+  - question: "Sollte ich eine kuerzere oder laengere Laufzeit waehlen?"
+    answer: "Kuerzere Laufzeiten sparen erheblich an Gesamtzinsen, erfordern aber hoehere monatliche Raten. Eine nuetzliche Richtlinie: Die Monatsrate fuer Konsumkredite sollte 15 Prozent Ihres Nettoeinkommens nicht uebersteigen. Wenn eine 3-Jahres-Laufzeit die Rate unangenehm hoch macht, kann eine 5-Jahres-Laufzeit bei leicht hoeheren Gesamtkosten die vernuenftigere Wahl sein. Vermeiden Sie es, die Laufzeit nur wegen einer niedrigeren Rate unnoetig in die Laenge zu ziehen, da sich die Gesamtzinsen dadurch erheblich erhoehen."
+  - question: "Kann ich meinen Ratenkredit vorzeitig ablösen?"
+    answer: "Ja, nach deutschem Verbraucherdarlehensrecht haben Sie jederzeit das Recht, Ihren Ratenkredit ganz oder teilweise vorzeitig zurueckzuzahlen. Die Bank darf dafuer eine Vorfaelligkeitsentschaedigung von hoechstens 1 Prozent des vorzeitig zurueckgezahlten Betrags verlangen, bei weniger als 12 Monaten Restlaufzeit maximal 0,5 Prozent. Bei einem Restbetrag von 10.000 Euro betraegt die maximale Entschaedigung also 100 Euro. In vielen Faellen lohnt sich die vorzeitige Abloesung trotzdem, insbesondere wenn die ersparten Zinsen die Entschaedigung deutlich uebersteigen."
+  - question: "Was ist der Unterschied zwischen Sollzins und effektivem Jahreszins?"
+    answer: "Der Sollzins (Nominalzins) gibt den reinen Darlehenszins ohne Nebenkosten an. Der effektive Jahreszins hingegen beruecksichtigt nach den Vorgaben der Preisangabenverordnung alle Kosten, die mit dem Kredit verbunden sind, einschliesslich der Verrechnung von Zins und Tilgung. Bei Ratenkrediten ohne Bearbeitungsgebuehr liegen Sollzins und Effektivzins sehr nah beieinander. Trotzdem sollten Sie beim Vergleich verschiedener Angebote immer den Effektivzins heranziehen, da er die tatsaechlichen Kosten am zuverlaessigsten abbildet und gesetzlich als Vergleichswert vorgeschrieben ist."
+  - question: "Wie wirkt sich ein Kredit auf meinen Schufa-Score aus?"
+    answer: "Die Aufnahme eines neuen Kredits fuehrt zunaechst zu einer leichten Absenkung Ihres Schufa-Scores, da eine neue Verbindlichkeit hinzukommt. Regelmaessige puenktliche Ratenzahlungen verbessern jedoch Ihre Zahlungshistorie, die der wichtigste Faktor bei der Schufa-Bewertung ist. Ueber die Laufzeit hinweg kann ein ordnungsgemaess bedienter Ratenkredit Ihren Score sogar verbessern, weil er Zuverlaessigkeit gegenueber Glaeubigern dokumentiert. Versaeumte Zahlungen werden dagegen als negatives Merkmal gespeichert und koennen Ihren Score ueber Jahre belasten."
+
+examples:
+  - title: "Autokredit fuer einen Gebrauchtwagen"
+    scenario: "Finanzierung eines Fahrzeugs mit einem Kredit von 18.000 Euro zu 4,90 Prozent Effektivzins ueber 4 Jahre"
+    inputs:
+      loanAmount: 18000
+      interestRate: 4.9
+      loanTerm: 4
+    expectedResult: "Monatliche Rate: 414,08 € | Gesamtzinsen: 1.875,72 €"
+    explanation: "Die Gesamtkosten des Fahrzeugs belaufen sich auf 19.875,72 Euro inklusive Zinsen. Bei einem Nettoeinkommen von 2.800 Euro liegt die monatliche Belastung bei knapp 15 Prozent, was als tragbar gilt. Eine Anzahlung von 3.000 Euro wuerde den Kreditbetrag auf 15.000 Euro senken, die Rate auf 345,06 Euro reduzieren und rund 470 Euro an Zinsen sparen."
+  - title: "Umschuldung eines Dispokredits"
+    scenario: "Abloesung eines Dispokredits von 8.000 Euro durch einen Ratenkredit zu 6,50 Prozent ueber 3 Jahre"
+    inputs:
+      loanAmount: 8000
+      interestRate: 6.5
+      loanTerm: 3
+    expectedResult: "Monatliche Rate: 244,93 € | Gesamtzinsen: 817,40 €"
+    explanation: "Ein Dispositionskredit kostet in Deutschland durchschnittlich 10 bis 14 Prozent Zinsen. Die Umschuldung auf einen Ratenkredit zu 6,50 Prozent spart bei 8.000 Euro Schulden gegenueber einem Dispo von 12 Prozent rund 900 Euro an Zinsen ueber 3 Jahre. Zusaetzlich erzwingt der Ratenkredit eine disziplinierte monatliche Tilgung, waehrend beim Dispo haeufig nur Minimalbetraege zurueckgefuehrt werden."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
