@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.11
-**Prossimo step da eseguire:** STEP 0.12
+**Ultimo step completato:** STEP 0.12 (FASE 0 COMPLETA)
+**Prossimo step da eseguire:** STEP 1.1
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -258,7 +258,7 @@ Completato: 2026-02-15
 File creati/modificati: Dockerfile, docker-compose.yml, nginx/nginx.conf
 Note: Multi-stage build (Node 20 → Nginx 1.25 Alpine). Gzip compression, 1y cache per /_astro/, 30d per asset statici. Security headers (X-Frame-Options, X-Content-Type-Options, XSS-Protection, Referrer-Policy). .dockerignore già creato in STEP 0.1. Build OK.
 
-## STEP 0.12 — Validazione e Script ⬜
+## STEP 0.12 — Validazione e Script ✅
 ```
 Azioni:
 1. Creare scripts/validate-content.ts (GUIDA sezione 5.1)
@@ -272,20 +272,20 @@ Azioni:
 Verifica: npm run validate esegue senza errori sul contenuto esempio
 Commit: [STEP 0.12] Add validation scripts and CI workflow
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: scripts/validate-content.ts, scripts/check-hreflang.ts, .github/workflows/build.yml, package.json (aggiornato scripts)
+Note: Validation script verifica: title <60, meta desc <160, intro >50 parole, howItWorks >200 parole, 5+ FAQ con 40+ parole, 2+ esempi, 3+ related tools, 800+ parole totali, AI blacklist, em dashes. Hreflang checker verifica bidirezionalità. CI GitHub Actions: validate → check-hreflang → build. BMI YAML corretto (howItWorks espanso a 200+ parole). Tutto passa.
 
 ## ✅ CHECKPOINT FASE 0
 ```
 Al completamento di tutti gli step 0.x:
-- [ ] npm run build completa senza errori
-- [ ] docker compose up mostra sito funzionante
-- [ ] Almeno 1 pagina calcolatore (BMI EN) renderizza completamente
-- [ ] Schema.org valido su quella pagina
-- [ ] Hreflang tags presenti
-- [ ] Lighthouse Performance ≥ 95
-- [ ] Repository pushato su GitHub con tutti i commit
+- [x] npm run build completa senza errori
+- [ ] docker compose up mostra sito funzionante (non testabile in questo ambiente)
+- [x] Almeno 1 pagina calcolatore (BMI EN) renderizza completamente
+- [x] Schema.org valido su quella pagina (FAQPage JSON-LD + BreadcrumbList microdata)
+- [x] Hreflang tags presenti (SEOHead.astro con 25 lingue + x-default)
+- [ ] Lighthouse Performance ≥ 95 (non testabile in questo ambiente, architettura ottimizzata)
+- [x] Repository pushato su GitHub con tutti i commit
 ```
 
 ---
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1-0.5b | Setup Astro + struttura + i18n + Content Collection + layouts + componenti + E-E-A-T trust |
+| 1 | 2026-02-15 | STEP 0.1-0.12 (FASE 0 COMPLETA) | Setup Astro completo: i18n 25 lingue, Content Collection, layouts, componenti Preact, Schema.org, hreflang, Docker, Nginx, validation, CI. BMI calculator funzionante. |
