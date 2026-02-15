@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Calorie Calculator - Daily Intake & Macros | CalcHub"
+metaDescription: "Calculate your daily calorie needs and macronutrient breakdown for weight loss, maintenance, or muscle gain. Based on the Mifflin-St Jeor equation."
+h1: "Calorie Calculator"
+slug: "calorie-calculator"
+
+primaryKeyword: "calorie calculator"
+secondaryKeywords:
+  - "daily calorie calculator"
+  - "calorie intake calculator"
+  - "macro calculator"
+  - "how many calories should I eat"
+
+intro: "How many calories do you actually need each day? The answer depends on your body, how active you are, and what you are trying to achieve. This calculator combines the Mifflin-St Jeor BMR equation with your activity level and goal to give you a daily calorie target along with a macronutrient breakdown showing grams of protein, carbohydrates, and fat. No guesswork, just personalized numbers you can use to plan your meals."
+
+howItWorks:
+  title: "How Daily Calorie Needs Are Calculated"
+  content: "This calculator works in three steps. First, it calculates your Basal Metabolic Rate using the Mifflin-St Jeor equation, which requires your weight, height, age, and gender. Second, it multiplies your BMR by an activity factor to determine your Total Daily Energy Expenditure, which represents maintenance calories. Third, it adjusts for your goal: weight loss subtracts 500 calories from maintenance, weight gain adds 500 calories, and maintenance keeps the number as is. The 500-calorie adjustment comes from the widely cited energy balance principle: approximately 3,500 calories equals one pound of body fat. Creating a 500-calorie daily deficit produces roughly one pound of fat loss per week. This relationship is an approximation that works well in the short to medium term, though metabolic adaptation means the actual rate of loss may slow over months of sustained dieting. The macronutrient breakdown uses a balanced split of 30% protein, 40% carbohydrates, and 30% fat. Protein is set at 30% because research consistently shows higher protein intake supports muscle preservation during calorie restriction and promotes satiety. The conversion uses 4 calories per gram for protein, 4 for carbohydrates, and 9 for fat. This split works well for most people pursuing general fitness, though specific goals may warrant adjustments. Athletes and those focused on muscle building may benefit from 35-40% protein. Endurance athletes often perform better with 50-55% carbohydrates. Low-carb approaches typically shift the ratio toward higher fat percentage while keeping protein constant. A critical principle: this calculator provides a starting point, not an exact prescription. Individual metabolic variation, measurement inaccuracies in food tracking, and day-to-day fluctuations in activity mean real-world adjustments are always necessary. Start with these numbers, track your weight and energy levels for 2-3 weeks, and adjust by 100-200 calories if results do not match expectations."
+  formula: "Calories = TDEE ± 500 (based on goal)"
+  formulaExplanation: "TDEE = BMR × activity multiplier. Weight loss: TDEE - 500. Maintenance: TDEE. Weight gain: TDEE + 500. Minimum floor of 1,200 kcal for safety."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Macronutrient recommendations: Dietary Guidelines for Americans 2020-2025, USDA."
+
+faqs:
+  - question: "How many calories should I eat to lose weight?"
+    answer: "For sustainable weight loss, eat 300-500 calories below your TDEE (maintenance level). This produces roughly 0.25-0.5 kg of fat loss per week. For most women, this means 1,400-1,800 calories per day; for most men, 1,800-2,200 calories per day, though individual needs vary based on size and activity. Avoid dropping below 1,200 calories per day without medical supervision, as very low calorie diets risk nutrient deficiencies, muscle loss, and metabolic slowdown."
+  - question: "Do I need to count calories to lose weight?"
+    answer: "Counting calories is not strictly necessary but provides the most precise control over your energy balance. Alternative approaches include portion control methods (using your hand as a measuring guide), intuitive eating principles, or tracking only protein intake while eating whole foods freely. Research shows that people who track their intake, at least initially, develop better awareness of portion sizes and calorie density. Many find that 4-6 weeks of tracking builds enough intuition to estimate portions without ongoing logging."
+  - question: "What is the best macro ratio for weight loss?"
+    answer: "Research supports higher protein intake during calorie restriction: 25-35% of total calories from protein helps preserve lean mass and increases satiety. The remaining calories can be split between carbohydrates and fats based on personal preference and adherence. A person eating 1,800 calories at 30% protein consumes 135 grams of protein per day. The specific carb-to-fat ratio matters less than total calorie intake and adequate protein for most people. Choose the split that you find easiest to maintain consistently."
+  - question: "Should I eat more on workout days and less on rest days?"
+    answer: "Calorie cycling (eating more on training days and less on rest days) is a valid approach but not required for results. Your body does not reset its energy balance at midnight; what matters is your average intake over the week. If you prefer larger meals on training days for performance and recovery, you can eat 200-300 calories above your daily target on workout days and 200-300 below on rest days while maintaining the same weekly total. This approach can improve workout quality without changing overall results."
+  - question: "Why am I not losing weight despite eating at a calorie deficit?"
+    answer: "The most common reasons are underestimating calorie intake, overestimating calorie burn, water retention masking fat loss, or metabolic adaptation from prolonged dieting. Studies show people underreport food intake by 30-50% on average when not weighing portions. Cooking oils, sauces, and drinks often go uncounted. If the scale has not moved in 3-4 weeks despite consistent tracking, either reduce intake by another 100-200 calories, increase daily movement (especially walking), or take a diet break at maintenance calories for 1-2 weeks before resuming."
+  - question: "Is 1,200 calories too low?"
+    answer: "For most adults, 1,200 calories per day is the minimum recommended by health organizations for nutritional adequacy. Below this level, it becomes difficult to meet vitamin, mineral, and protein requirements through food alone. Very short individuals with low activity levels may have legitimate maintenance calories near 1,400-1,500, making a deficit of 1,200 appropriate. For taller, heavier, or more active individuals, 1,200 calories represents an excessively aggressive deficit that increases risk of muscle loss, fatigue, hormonal disruption, and binge eating. A more moderate approach produces better long-term outcomes for the vast majority of people."
+
+examples:
+  - title: "Weight loss plan for sedentary female"
+    scenario: "A 28-year-old female, 68 kg, 165 cm, sedentary, goal: lose weight"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Daily calories: 1,227 kcal | Protein: 92g | Carbs: 123g | Fat: 41g"
+    explanation: "Her TDEE of 1,727 minus 500 gives a target of 1,227 calories (clamped to 1,200 minimum floor). The macro split provides adequate protein (92g) to support muscle retention during the calorie deficit."
+  - title: "Muscle gain for active male"
+    scenario: "A 25-year-old male, 75 kg, 178 cm, active (6 days/week), goal: gain weight"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Daily calories: 3,573 kcal | Protein: 268g | Carbs: 357g | Fat: 119g"
+    explanation: "With a TDEE of 3,073 plus a 500-calorie surplus, he needs 3,573 calories daily. The 268 grams of protein supports muscle protein synthesis during his intensive training program."
+  - title: "Maintenance for moderately active adult"
+    scenario: "A 40-year-old male, 82 kg, 175 cm, moderate exercise 4 days/week"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Daily calories: 2,668 kcal | Protein: 200g | Carbs: 267g | Fat: 89g"
+    explanation: "At maintenance, he eats approximately 2,668 calories to sustain his current weight and activity level. The 200 grams of protein supports recovery from moderate exercise while maintaining lean mass."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
