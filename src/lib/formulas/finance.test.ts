@@ -16,6 +16,8 @@ import {
   tipCalculation,
   salesTax,
   vatCalculation,
+  historicalInflation,
+  US_CPI_DATA,
 } from './finance';
 
 describe('mortgagePayment', () => {
@@ -314,5 +316,47 @@ describe('vatCalculation', () => {
   it('defaults to add mode', () => {
     const result = vatCalculation(100, 10);
     expect(result.grossPrice).toBe(110);
+  });
+});
+
+describe('historicalInflation', () => {
+  it('calculates $100 from 1970 to 2025', () => {
+    const result = historicalInflation(100, 1970, 2025);
+    expect(result).not.toBeNull();
+    // CPI 1970 = 38.8, CPI 2025 = 319.0 → 100 * 319/38.8 ≈ 822.16
+    expect(result!.adjustedValue).toBeCloseTo(822.16, 0);
+    expect(result!.cumulativeRate).toBeCloseTo(722.2, 0);
+    expect(result!.avgAnnualRate).toBeGreaterThan(3);
+    expect(result!.avgAnnualRate).toBeLessThan(4.5);
+  });
+
+  it('calculates $100 from 2000 to 2020', () => {
+    const result = historicalInflation(100, 2000, 2020);
+    expect(result).not.toBeNull();
+    // CPI 2000=172.2, CPI 2020=258.8 → 100 * 258.8/172.2 ≈ 150.29
+    expect(result!.adjustedValue).toBeCloseTo(150.29, 0);
+  });
+
+  it('returns null for invalid years', () => {
+    expect(historicalInflation(100, 1800, 2020)).toBeNull();
+    expect(historicalInflation(100, 2020, 2099)).toBeNull();
+  });
+
+  it('returns null for invalid amount', () => {
+    expect(historicalInflation(0, 1970, 2020)).toBeNull();
+    expect(historicalInflation(-100, 1970, 2020)).toBeNull();
+  });
+
+  it('handles same year', () => {
+    const result = historicalInflation(100, 2000, 2000);
+    expect(result).not.toBeNull();
+    expect(result!.adjustedValue).toBe(100);
+    expect(result!.cumulativeRate).toBe(0);
+  });
+
+  it('has CPI data from 1913 to 2025', () => {
+    expect(US_CPI_DATA[1913]).toBeDefined();
+    expect(US_CPI_DATA[2025]).toBeDefined();
+    expect(Object.keys(US_CPI_DATA).length).toBeGreaterThanOrEqual(113);
   });
 });
