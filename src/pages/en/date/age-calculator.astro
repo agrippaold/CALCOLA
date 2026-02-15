@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import AgeCalculator from '../../../components/calculators/date/AgeCalculator';
+
+const lang = 'en';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'age-calculator' && t.id.startsWith('en/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/en/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <AgeCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

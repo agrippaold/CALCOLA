@@ -1,0 +1,96 @@
+id: "gpa-calculator"
+category: "education"
+calculatorComponent: "GPACalculator"
+
+title: "GPA Calculator - Calculate Your Grade Point Average"
+metaDescription: "Calculate your GPA from letter grades and credit hours. Supports 4.0 scale, weighted courses, and cumulative GPA. Free and accurate."
+h1: "GPA Calculator"
+slug: "gpa-calculator"
+
+primaryKeyword: "gpa calculator"
+secondaryKeywords:
+  - "grade point average calculator"
+  - "college gpa calculator"
+  - "cumulative gpa calculator"
+  - "weighted gpa calculator"
+
+intro: "Your Grade Point Average condenses an entire transcript of letter grades into a single number that colleges, graduate programs, and employers use to evaluate academic performance. Calculating it by hand gets tedious once you have more than a few courses, especially when credit hours differ. This calculator lets you enter each course's letter grade and credit hours, then computes your semester GPA and cumulative GPA on the standard 4.0 scale in seconds."
+
+howItWorks:
+  title: "How GPA Calculation Works"
+  content: "The Grade Point Average is a weighted mean where each course's letter grade is converted to a numeric value and then weighted by the number of credit hours that course carries. On the standard 4.0 scale used by most American colleges and universities, an A equals 4.0, a B equals 3.0, a C equals 2.0, a D equals 1.0, and an F equals 0.0. Many institutions also use plus and minus modifiers: an A- is typically 3.7, a B+ is 3.3, a B- is 2.7, and so on in increments of 0.3 or 0.33 depending on the school. To calculate GPA, you first multiply each course's grade points by its credit hours to get quality points for that course. Then you add up all the quality points and divide by the total number of credit hours attempted. For example, if you earned an A (4.0) in a 4-credit course and a B (3.0) in a 3-credit course, your quality points are (4.0 times 4) plus (3.0 times 3) equals 16 plus 9 equals 25. Your total credit hours are 4 plus 3 equals 7. Your GPA is 25 divided by 7, which equals approximately 3.57. Cumulative GPA works the same way but includes all courses from all semesters rather than just the current one. Some schools use a weighted GPA system for honors, AP, or IB courses by adding 0.5 or 1.0 to the base grade points for those courses. On a weighted scale, an A in an AP class might count as 5.0 instead of 4.0. This tool supports both unweighted and weighted calculations. Courses where you receive a W (withdrawal) or P (pass) in a pass/fail system are typically excluded from GPA calculations because they carry no grade points, though the credit hours from a P grade may count toward graduation requirements."
+  formula: "GPA = Sum(grade_points x credit_hours) / Sum(credit_hours)"
+  formulaExplanation: "For each course, multiply the numeric grade point value (e.g., A=4.0, B=3.0) by the credit hours for that course. Add all those products together to get total quality points. Divide by the total number of credit hours attempted. The result is your GPA on a 4.0 scale."
+  academicSource: "American Association of Collegiate Registrars and Admissions Officers (AACRAO). (2022). Academic Record and Transcript Guide. AACRAO."
+
+faqs:
+  - question: "What is the GPA scale and how do letter grades convert to numbers?"
+    answer: "The standard 4.0 GPA scale assigns numeric values to letter grades: A equals 4.0, A- equals 3.7, B+ equals 3.3, B equals 3.0, B- equals 2.7, C+ equals 2.3, C equals 2.0, C- equals 1.7, D+ equals 1.3, D equals 1.0, D- equals 0.7, and F equals 0.0. Some institutions do not use plus or minus modifiers, in which case only the whole-number values apply. A few schools use variations like an A+ at 4.3 or slightly different increments, so always check your own school's grading policy."
+  - question: "How do credit hours affect my GPA?"
+    answer: "Credit hours act as weights in the GPA formula. A 4-credit course has more impact on your GPA than a 1-credit course with the same grade. If you earn an A in a 1-credit seminar and a C in a 4-credit lecture, your GPA is not the average of 4.0 and 2.0 (which would be 3.0). Instead, it is (4.0 times 1 plus 2.0 times 4) divided by (1 plus 4), which equals 12 divided by 5 equals 2.4. This weighting system means that high-credit courses in your major can significantly move your GPA up or down."
+  - question: "What is the difference between semester GPA and cumulative GPA?"
+    answer: "Semester GPA covers only the courses you took during a single term. Cumulative GPA includes every graded course from your entire academic career at that institution. Your cumulative GPA is what appears on your official transcript and what graduate schools or employers typically ask about. To calculate cumulative GPA, treat all courses across all semesters as one big pool: add up all quality points from every course and divide by all credit hours attempted. A strong or weak single semester can move the cumulative number, but the effect diminishes as you accumulate more credit hours."
+  - question: "Do pass/fail or withdrawn courses affect GPA?"
+    answer: "Pass/fail (P/F) courses and withdrawn (W) courses generally do not factor into GPA calculations. A passing grade in a P/F course earns credit toward graduation but does not generate grade points or add to the credit hours used in the GPA formula. A failing grade in a P/F course may or may not affect GPA depending on the institution -- some schools record it as an F with a 0.0, while others exclude it entirely. A W (withdrawal) appears on your transcript but carries no grade points and no credit hours, so it does not change your GPA. However, too many W grades may raise concerns for admissions committees."
+  - question: "How can I raise my GPA?"
+    answer: "The math of GPA improvement depends on where you currently stand and how many credit hours you have completed. If you have a 2.5 GPA after 60 credit hours, you have 150 total quality points. To reach a 3.0 after 90 credit hours, you need 270 total quality points, meaning you must earn 120 quality points in your next 30 credit hours, which requires a 4.0 average in all 30 credits. The more credit hours you have accumulated, the harder it becomes to move your GPA significantly. Practical strategies include retaking courses where you earned low grades (if your school's grade replacement policy allows it), focusing extra study time on high-credit courses, and seeking tutoring or study groups early in the semester rather than after midterms."
+  - question: "What is a weighted GPA and how does it differ from unweighted?"
+    answer: "A weighted GPA gives extra grade points for advanced courses such as Honors, Advanced Placement (AP), or International Baccalaureate (IB) classes. Typically, honors courses add 0.5 to the grade point value and AP/IB courses add 1.0. So an A in an AP course counts as 5.0 instead of 4.0, and a B counts as 4.0 instead of 3.0. Weighted GPAs can exceed 4.0, sometimes reaching 4.5 or even 5.0. Unweighted GPAs treat all courses equally on the 4.0 scale regardless of difficulty. Colleges are aware of both systems and often recalculate applicant GPAs using their own formula to ensure fair comparison across different high schools."
+  - question: "What GPA do I need for graduate school or professional programs?"
+    answer: "Requirements vary by program and institution. Many graduate programs set a minimum cumulative GPA of 3.0 for admission, though competitive programs often expect 3.5 or higher. Medical schools typically look for a 3.5 or above, with top-tier programs averaging around 3.7-3.8 among admitted students. Law school admissions weigh both GPA and LSAT scores, with T14 schools often seeing median GPAs of 3.8 or higher. MBA programs at top business schools commonly see median GPAs between 3.5 and 3.7. Keep in mind that GPA is just one factor; research experience, test scores, personal statements, and letters of recommendation also play significant roles in admissions decisions."
+
+examples:
+  - title: "First-semester college GPA"
+    scenario: "Calculating GPA for a freshman taking five courses in their first semester"
+    inputs:
+      course1Grade: "A"
+      course1Credits: 4
+      course2Grade: "B+"
+      course2Credits: 3
+      course3Grade: "A-"
+      course3Credits: 3
+      course4Grade: "B"
+      course4Credits: 3
+      course5Grade: "A"
+      course5Credits: 1
+    expectedResult: "Semester GPA: 3.59"
+    explanation: "Quality points: A in 4 credits (4.0 x 4 = 16.0), B+ in 3 credits (3.3 x 3 = 9.9), A- in 3 credits (3.7 x 3 = 11.1), B in 3 credits (3.0 x 3 = 9.0), A in 1 credit (4.0 x 1 = 4.0). Total quality points: 50.0. Total credits: 14. GPA: 50.0 / 14 = 3.57, which rounds to 3.57."
+  - title: "Cumulative GPA after two semesters"
+    scenario: "A student earned a 3.2 GPA over 15 credit hours in semester one and wants to know their cumulative GPA after earning better grades in semester two"
+    inputs:
+      previousGPA: 3.2
+      previousCredits: 15
+      newCourse1Grade: "A"
+      newCourse1Credits: 4
+      newCourse2Grade: "A-"
+      newCourse2Credits: 3
+      newCourse3Grade: "B+"
+      newCourse3Credits: 3
+      newCourse4Grade: "A"
+      newCourse4Credits: 3
+    expectedResult: "Cumulative GPA: 3.47"
+    explanation: "Previous quality points: 3.2 x 15 = 48.0. New quality points: A in 4 credits (16.0) + A- in 3 credits (11.1) + B+ in 3 credits (9.9) + A in 3 credits (12.0) = 49.0. Total quality points: 48.0 + 49.0 = 97.0. Total credits: 15 + 13 = 28. Cumulative GPA: 97.0 / 28 = 3.46, which rounds to 3.46."
+  - title: "Target GPA planning"
+    scenario: "A student with a current 2.8 GPA over 45 credit hours wants to know what grades they need next semester to reach a 3.0 cumulative GPA"
+    inputs:
+      currentGPA: 2.8
+      completedCredits: 45
+      targetGPA: 3.0
+      plannedCredits: 15
+    expectedResult: "Required semester GPA: 3.60 to reach a 3.0 cumulative"
+    explanation: "Current quality points: 2.8 x 45 = 126.0. Target quality points for 60 total credits at a 3.0 GPA: 3.0 x 60 = 180.0. Quality points needed in the next 15 credits: 180.0 - 126.0 = 54.0. Required semester GPA: 54.0 / 15 = 3.60. This is achievable but requires mostly A- and B+ grades across all courses."
+
+relatedTools:
+  - "age-calculator"
+  - "date-difference-calculator"
+  - "percentage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

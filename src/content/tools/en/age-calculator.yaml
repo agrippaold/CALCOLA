@@ -1,0 +1,78 @@
+id: "age-calculator"
+category: "date"
+calculatorComponent: "AgeCalculator"
+
+title: "Age Calculator - Find Your Exact Age | CalcHub"
+metaDescription: "Calculate your exact age in years, months, and days from your birth date. Free online age calculator with precise results."
+h1: "Age Calculator"
+slug: "age-calculator"
+
+primaryKeyword: "age calculator"
+secondaryKeywords:
+  - "calculate my age"
+  - "how old am I"
+  - "exact age calculator"
+  - "age in days"
+  - "birthday calculator"
+
+intro: "How old are you right now, down to the exact day? This age calculator takes your date of birth and tells you precisely how many years, months, and days you have lived. Whether you need your age for a legal document, a medical form, or just plain curiosity, enter your birth date below and get your answer instantly. You can also pick a custom target date to find out how old you were or will be on any specific day."
+
+howItWorks:
+  title: "How Age Calculation Works"
+  content: "Age calculation follows the Gregorian calendar system, which is the standard civil calendar used in most of the world. The process starts by comparing your birth date to the target date (today by default). First, the calculator counts the number of complete years between the two dates. A complete year means the birth month and day have both passed in that calendar year. Next, it counts the remaining complete months after those full years. Finally, it counts the leftover days after subtracting full years and full months. This three-tier breakdown gives you a precise result such as 28 years, 4 months, and 13 days. The calculator also handles edge cases like leap years. February 29 birthdays, for example, are accounted for by treating the next valid date (March 1) as the birthday boundary in non-leap years. Month-length differences also matter. Moving from January 31 to February means the calculator adjusts for February having only 28 or 29 days. Beyond the primary breakdown, the tool converts your total age into standalone units. You can see your age expressed purely in months, purely in weeks, or purely in days. This is useful when you need a single-unit measurement for medical dosage charts, insurance paperwork, or fitness tracking. The underlying math relies on sequential date subtraction rather than simple division by 365.25, which avoids the rounding errors that come from averaging leap year cycles."
+  formula: "Age = Target Date - Birth Date (expressed as Years, Months, Days)"
+  formulaExplanation: "Subtract the birth date from the target date. Count full years first, then remaining full months, then leftover days. Adjust for varying month lengths and leap years."
+  academicSource: "Dershowitz, N. & Reingold, E.M. (2008). Calendrical Calculations, 3rd Edition. Cambridge University Press."
+
+faqs:
+  - question: "How does the age calculator handle leap year birthdays?"
+    answer: "If you were born on February 29, the calculator recognizes that this date only exists every four years. In non-leap years, it treats March 1 as the day your age increments. So a person born on February 29, 2000 would turn 25 on March 1, 2025 (a non-leap year) and turn 26 on February 29, 2026 (a non-leap year still uses March 1 as boundary). This approach matches the legal convention followed in most jurisdictions around the world."
+  - question: "Can I calculate my age on a future or past date?"
+    answer: "Yes. By default, the calculator uses today as the target date, but you can change it to any date you want. Set a future date to find out how old you will be on your next birthday, on a specific anniversary, or on a planned event. Set a past date to determine how old you were when a particular event happened. The calculator works the same way regardless of whether the target date is in the past or future."
+  - question: "Why does my age in days not simply equal years times 365?"
+    answer: "A calendar year is not always 365 days. Leap years have 366 days, and they occur roughly every four years (with exceptions for century years not divisible by 400). Over a 28-year span, there are typically 7 leap years. Multiplying your age in years by 365 would undercount your total days by one for every leap year you have lived through. The calculator accounts for each actual calendar year individually to give you the correct total."
+  - question: "Is age calculated differently in different countries?"
+    answer: "Most countries use the Western system where you start at age zero and gain a year on each birthday. However, in some East Asian traditions (notably Korean age reckoning), a person is considered one year old at birth and gains a year every January 1 rather than on their birthday. This calculator follows the international standard (Western) method. If you need Korean age, you would add one or two years depending on whether your birthday has passed in the current calendar year."
+  - question: "How accurate is this age calculator?"
+    answer: "The calculator is accurate to the exact day within the Gregorian calendar system. It properly accounts for leap years, varying month lengths (28, 29, 30, or 31 days), and the transition between months. The only source of minor ambiguity arises when calculating month differences across months with different lengths. For example, the span from January 31 to February 28 could be interpreted as one month or as 28 days. This calculator treats it as one complete month, following the most common convention."
+  - question: "What is the difference between chronological age and biological age?"
+    answer: "Chronological age is the straightforward count of time since your birth, which is what this calculator measures. Biological age refers to how old your body appears based on biomarkers like telomere length, metabolic rate, cardiovascular fitness, and cellular health. Two people with the same chronological age can have very different biological ages depending on genetics, lifestyle, diet, and exercise habits. Chronological age is a fixed number; biological age is an estimate that varies by measurement method."
+  - question: "Can I use this calculator for legal age verification?"
+    answer: "This calculator gives you the correct chronological age based on the Gregorian calendar, which is the same system courts and governments use. However, for official legal purposes, you should always refer to government-issued identification documents. Legal age thresholds (voting age, drinking age, retirement age) vary by jurisdiction and sometimes depend on the exact hour of birth, which this calculator does not track. Use it as a reference tool, not as a legal document."
+
+examples:
+  - title: "Age from a past birth date"
+    scenario: "A person born on March 15, 1990, checking their age on February 15, 2026"
+    inputs:
+      birthDate: "1990-03-15"
+      targetDate: "2026-02-15"
+    expectedResult: "35 years, 11 months, 1 day"
+    explanation: "From March 15, 1990 to February 15, 2026 is 35 full years (March 1990 to March 2025), then 11 more months (March 2025 to February 2026), and the day count rounds to 1 day because February 15 has not yet reached March 15."
+  - title: "Leap year birthday"
+    scenario: "A person born on February 29, 2000, checking their age on February 15, 2026"
+    inputs:
+      birthDate: "2000-02-29"
+      targetDate: "2026-02-15"
+    expectedResult: "25 years, 11 months, 17 days"
+    explanation: "From February 29, 2000 to February 15, 2026 is 25 full years and 11 months plus 17 remaining days. The calculator handles the leap day birth by adjusting the month boundary when February 29 does not exist in the target year."
+  - title: "Age of a young child"
+    scenario: "A toddler born on June 1, 2023, with age checked on February 15, 2026"
+    inputs:
+      birthDate: "2023-06-01"
+      targetDate: "2026-02-15"
+    expectedResult: "2 years, 8 months, 14 days"
+    explanation: "From June 1, 2023 to February 15, 2026 gives 2 complete years (June 2023 to June 2025), then 8 more full months (June 2025 to February 2026), and 14 remaining days (February 1 to February 15)."
+
+relatedTools:
+  - "date-difference-calculator"
+  - "word-counter"
+  - "password-generator"
+
+defaults:
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

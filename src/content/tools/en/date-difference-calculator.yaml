@@ -1,0 +1,78 @@
+id: "date-difference-calculator"
+category: "date"
+calculatorComponent: "DateDifferenceCalculator"
+
+title: "Date Difference Calculator - Days Between Dates | CalcHub"
+metaDescription: "Find the exact difference between two dates in years, months, weeks, and days. Free date difference calculator with accurate results."
+h1: "Date Difference Calculator"
+slug: "date-difference-calculator"
+
+primaryKeyword: "date difference calculator"
+secondaryKeywords:
+  - "days between dates"
+  - "date duration calculator"
+  - "how many days between two dates"
+  - "calculate date difference"
+  - "weeks between dates"
+
+intro: "Need to know how much time separates two dates? This date difference calculator tells you the exact span between any two calendar dates, broken down into years, months, weeks, and days. It works for past dates, future dates, or a mix of both. Use it to figure out project timelines, count down to an event, track contract durations, or answer any question that involves measuring time between two points on the calendar."
+
+howItWorks:
+  title: "How Date Difference Calculation Works"
+  content: "The calculation begins by identifying the earlier and later date in the pair you provide. The order does not matter because the calculator always returns a positive duration. Once the dates are sorted, the algorithm counts the full calendar years between them, then the remaining complete months, and finally the leftover days. This mirrors how humans naturally think about durations. Saying '2 years, 3 months, and 12 days' is more intuitive than saying '832 days' alone, which is why the calculator provides both formats. For the total-days figure, the calculator steps through each month between the two dates and adds up the actual number of days in each month. This avoids the common mistake of dividing by 30 or 30.44 to estimate months, since calendar months range from 28 to 31 days. February in a leap year contributes 29 days rather than 28, and the calculator detects leap years using the standard Gregorian rule: a year is a leap year if it is divisible by 4, except for century years, which must also be divisible by 400. The week count is derived by dividing the total days by 7 and taking the floor value. Remaining days after full weeks are shown separately. This gives you a weeks-and-days breakdown alongside the years-months-days version. Business day calculations differ from calendar day calculations. Weekends (Saturday and Sunday) are excluded in business day counts, and public holidays may also be omitted depending on the jurisdiction. This calculator focuses on calendar days, which is the most universally applicable measure. For business day needs, you would apply an additional filter to remove non-working days from the total."
+  formula: "Difference = |Date B - Date A| (expressed as Years, Months, Weeks, Days)"
+  formulaExplanation: "Take the absolute difference between the two dates. Break the result into full years, then remaining full months, then remaining full weeks, then leftover days. Also provide the total expressed purely in days and purely in weeks."
+  academicSource: "Dershowitz, N. & Reingold, E.M. (2008). Calendrical Calculations, 3rd Edition. Cambridge University Press."
+
+faqs:
+  - question: "Does the calculator include both the start and end date in the count?"
+    answer: "By default, the calculator counts the number of days between the two dates, which excludes one endpoint. For example, from January 1 to January 3 is 2 days, not 3. If you need to include both endpoints (such as counting the first and last day of a rental period), simply add 1 to the total. Many legal and business contexts use inclusive counting, so always check which convention applies to your situation before relying on the number."
+  - question: "How does the calculator handle leap years?"
+    answer: "The calculator follows the Gregorian leap year rule. A year qualifies as a leap year if it is evenly divisible by 4, with the exception that century years (like 1900 or 2100) must also be divisible by 400. So 2000 was a leap year, but 1900 was not. When the date range spans a February in a leap year, the calculator counts 29 days for that month instead of 28. This makes the day total and week total accurate across any span of years."
+  - question: "Can I calculate the difference between dates in different centuries?"
+    answer: "Yes. The calculator works with any two valid Gregorian calendar dates, including dates separated by hundreds of years. You could find the number of days between July 4, 1776 and February 15, 2026 if you wanted. The algorithm steps through every intervening month and accounts for all leap years in between, so the result stays accurate regardless of how far apart the dates are."
+  - question: "What is the difference between calendar days and business days?"
+    answer: "Calendar days include every day on the calendar: weekdays, weekends, and holidays. Business days (also called working days) typically exclude Saturdays and Sundays, and often exclude public holidays as well. This calculator provides calendar day counts. To convert to business days as a rough estimate, multiply the number of weeks by 5 and add any remaining weekdays. For precise business day counts, you would also need a holiday calendar for the relevant jurisdiction."
+  - question: "Why might the month count seem off by one in some cases?"
+    answer: "Month boundaries in the Gregorian calendar are uneven, ranging from 28 to 31 days. When the start day is higher than the number of days in the end month, the calculator adjusts. For instance, from January 31 to February 28 is treated as exactly one month, even though only 28 days have elapsed. Similarly, from March 31 to April 30 counts as one month despite being 30 days. This convention matches the way most people interpret monthly intervals in daily life."
+  - question: "Can I use this to count down to a future event?"
+    answer: "Absolutely. Enter today as your start date and the event date as your end date. The calculator will show you exactly how many years, months, weeks, and days remain until that date. This is useful for tracking time until weddings, graduations, travel departures, contract expirations, or any scheduled milestone. You can also bookmark the result and come back to check your updated countdown."
+  - question: "How do I calculate the number of weekdays between two dates?"
+    answer: "This calculator provides total calendar days, from which you can estimate weekdays. For each complete week in the range, there are 5 weekdays. For the remaining partial week, count the weekdays manually based on which day of the week the range starts and ends. If you need an exact weekday count that also excludes public holidays, you would need a region-specific holiday calendar to filter those dates out of the total."
+
+examples:
+  - title: "Short-term project timeline"
+    scenario: "A freelancer needs to know the duration from March 1, 2026 to April 15, 2026"
+    inputs:
+      startDate: "2026-03-01"
+      endDate: "2026-04-15"
+    expectedResult: "1 month, 14 days (45 days total, 6 weeks and 3 days)"
+    explanation: "March has 31 days, so from March 1 to April 1 is exactly one month (31 calendar days). Then April 1 to April 15 adds 14 more days. The grand total is 45 calendar days, which equals 6 full weeks and 3 extra days."
+  - title: "Multi-year span with a leap year"
+    scenario: "Calculating the gap between January 10, 2020 and February 15, 2026"
+    inputs:
+      startDate: "2020-01-10"
+      endDate: "2026-02-15"
+    expectedResult: "6 years, 1 month, 5 days (2,228 days total)"
+    explanation: "From January 10, 2020 to January 10, 2026 is exactly 6 years. January 10 to February 10 adds one month. February 10 to February 15 adds 5 more days. The range includes leap years 2020 and 2024, both contributing an extra day in February, which the total of 2,228 days reflects."
+  - title: "Same-month calculation"
+    scenario: "Finding the difference between February 3, 2026 and February 15, 2026"
+    inputs:
+      startDate: "2026-02-03"
+      endDate: "2026-02-15"
+    expectedResult: "12 days (1 week and 5 days)"
+    explanation: "Both dates fall in the same month, so the calculation is straightforward. February 15 minus February 3 equals 12 calendar days, which breaks down into 1 complete week and 5 remaining days."
+
+relatedTools:
+  - "age-calculator"
+  - "word-counter"
+  - "character-counter"
+
+defaults:
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
