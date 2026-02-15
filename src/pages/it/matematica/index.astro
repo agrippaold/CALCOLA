@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'it';
+
+const tools = [
+  { name: 'Calcolo Percentuale', slug: '/it/matematica/calcolo-percentuale/', description: 'Cinque modalità di calcolo: trova %, variazione percentuale, aumento e diminuzione.' },
+  { name: 'Calcolo Area', slug: '/it/matematica/calcolo-area/', description: 'Calcola l\'area di rettangoli, cerchi, triangoli, trapezi ed ellissi.' },
+];
+---
+
+<BaseLayout
+  title="Calcolatori Matematica - Percentuali, Area e Altro | CalcHub"
+  description="Calcolatori matematici gratuiti per percentuali, calcolo di aree e problemi matematici quotidiani. Risultati istantanei con formule passo per passo."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/it/" class="hover:text-blue-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Matematica</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calcolatori di Matematica</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Strumenti matematici rapidi e affidabili per calcoli quotidiani. Percentuali, geometria e molto altro.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

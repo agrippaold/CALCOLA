@@ -1,0 +1,85 @@
+id: "tdee-calculator"
+category: "health"
+calculatorComponent: "TDEECalculator"
+
+title: "Calcolo TDEE - Fabbisogno Calorico Giornaliero | CalcHub"
+metaDescription: "Calcola il tuo fabbisogno calorico giornaliero (TDEE) in base a metabolismo basale e attività fisica. Scopri le calorie per dimagrire o aumentare di peso."
+h1: "Calcolo TDEE (Fabbisogno Energetico Giornaliero Totale)"
+slug: "calcolo-tdee"
+
+primaryKeyword: "calcolo tdee"
+secondaryKeywords:
+  - "fabbisogno calorico giornaliero"
+  - "calorie giornaliere"
+  - "dispendio energetico"
+  - "calorie di mantenimento"
+
+intro: "Il TDEE rappresenta il numero totale di calorie che il tuo organismo brucia nell'arco di un'intera giornata, includendo ogni attività dalla respirazione all'esercizio fisico, dal camminare per casa al lavoro quotidiano. Si ottiene combinando il metabolismo basale con il costo energetico di tutte le attività fisiche svolte durante la giornata. Che il tuo obiettivo sia perdere grasso corporeo, costruire massa muscolare o mantenere la forma attuale, il TDEE è il valore intorno al quale pianificare la tua alimentazione. Questo calcolatore fornisce una stima affidabile basata sull'equazione di Mifflin-St Jeor per il metabolismo basale e sui moltiplicatori di attività validati dalla ricerca scientifica."
+
+howItWorks:
+  title: "Come si calcola il TDEE"
+  content: "Il calcolo del TDEE avviene in due fasi. Prima si determina il metabolismo basale (BMR) mediante l'equazione di Mifflin-St Jeor, poi lo si moltiplica per un coefficiente di attività che riflette le abitudini di movimento e di esercizio fisico abituali. I moltiplicatori utilizzati in questo calcolatore derivano dalla ricerca sul dispendio energetico in corrispondenza di diversi stili di vita. Le persone sedentarie (lavoro d'ufficio, esercizio minimo) moltiplicano il metabolismo basale per 1,2, il che significa che l'attività fisica aggiunge circa il 20% al fabbisogno energetico di base. Chi è leggermente attivo (esercizio leggero 1-3 giorni a settimana) utilizza il fattore 1,375. Chi è moderatamente attivo (allenamento strutturato 3-5 giorni a settimana) usa 1,55. Le persone attive (esercizio intenso 6-7 giorni a settimana) usano 1,725. Chi è molto attivo (atleti agonisti, lavori fisicamente impegnativi) usa 1,9. Questi coefficienti tengono conto sia dell'esercizio strutturato sia della cosiddetta NEAT (Non-Exercise Activity Thermogenesis), ovvero tutta l'attività fisica non programmata che si svolge al di fuori degli allenamenti veri e propri. La NEAT varia enormemente tra un individuo e l'altro e può incidere da 200 a 900 calorie al giorno in funzione del tipo di occupazione, della tendenza a muoversi spontaneamente e dello stile di vita in generale. Un magazziniere che si allena anche nel tempo libero presenta una NEAT molto superiore rispetto a un impiegato che frequenta la palestra per lo stesso numero di ore. Nei moltiplicatori è incluso anche l'effetto termico del cibo (TEF), ovvero l'energia che l'organismo spende per digerire e metabolizzare gli alimenti, che corrisponde a circa il 10% dell'apporto calorico totale. Le proteine hanno l'effetto termico più elevato, pari al 20-30% delle calorie contenute, seguite dai carboidrati con il 5-10% e dai grassi con lo 0-3%. Questa è una delle ragioni per cui le diete iperproteiche favoriscono il dimagrimento. È fondamentale ricordare che il TDEE resta una stima, non una misurazione di precisione. Le variazioni individuali nell'efficienza metabolica, nei livelli ormonali, nella composizione del microbiota intestinale e nelle fluttuazioni quotidiane dell'attività fisica possono determinare scostamenti del 10-15% rispetto al valore calcolato. Il consiglio è di utilizzare il TDEE come punto di partenza e regolarlo in base ai risultati concreti osservati nell'arco di 2-4 settimane."
+  formula: "TDEE = MB × Coefficiente di Attività"
+  formulaExplanation: "Il MB si calcola con Mifflin-St Jeor (10×peso + 6,25×altezza - 5×età ± costante di sesso). I coefficienti di attività vanno da 1,2 (sedentario) a 1,9 (molto attivo)."
+  academicSource: "Harris, J. A., & Benedict, F. G. (1918). A Biometric Study of Human Basal Metabolism. Proceedings of the National Academy of Sciences, 4(12), 370-373. Activity factors: Ainsworth, B. E., et al. (2011). Compendium of Physical Activities. Medicine and Science in Sports and Exercise, 43(8), 1575-1581."
+
+faqs:
+  - question: "Quale livello di attività dovrei selezionare?"
+    answer: "Basati sulla media reale delle tue settimane, non sulla settimana in cui ti sei allenato di più. Sedentario significa che hai un lavoro d'ufficio e non fai esercizio regolarmente. Attività leggera comprende passeggiate, yoga o esercizio blando 1-3 volte a settimana. Attività moderata descrive la maggior parte delle persone che frequentano la palestra e si allenano 3-5 volte a settimana con intensità media. Attivo si applica a chi si allena intensamente quasi ogni giorno. Molto attivo è riservato agli atleti agonisti, ai lavoratori manuali o a chi combina un lavoro fisicamente impegnativo con allenamenti regolari. Nel dubbio, seleziona un livello più basso di quello che pensi e regola in base ai risultati ottenuti."
+  - question: "Come posso usare il TDEE per dimagrire?"
+    answer: "Per perdere peso è necessario introdurre meno calorie rispetto al proprio TDEE. Un deficit di 500 calorie al giorno produce un dimagrimento di circa 0,45 kg a settimana. Inizia sottraendo 300-500 calorie dal tuo TDEE e monitora il peso nell'arco di 2-3 settimane. Se non perdi peso, riduci di ulteriori 100-200 calorie. Evita deficit superiori a 1.000 calorie giornaliere poiché aumentano la perdita di massa muscolare, riducono i livelli di energia e sono difficili da sostenere nel lungo periodo. Abbina il deficit calorico a un apporto proteico adeguato (1,6-2,2 g per kg di peso corporeo) per preservare la massa muscolare durante il dimagrimento."
+  - question: "Come posso usare il TDEE per aumentare la massa muscolare?"
+    answer: "Costruire massa muscolare richiede di mangiare al di sopra del proprio TDEE per fornire l'energia e i nutrienti necessari alla sintesi di nuovo tessuto muscolare. Un surplus di 200-400 calorie al giorno favorisce la crescita muscolare limitando al minimo l'accumulo di grasso. Questo si traduce generalmente in un aumento di peso di 0,25-0,5 kg a settimana. Il fabbisogno proteico è massimo durante le fasi di surplus calorico: punta a 1,6-2,2 grammi per chilogrammo di peso corporeo al giorno. Monitora la circonferenza vita insieme al peso corporeo per assicurarti che i guadagni siano costituiti prevalentemente da massa magra piuttosto che da tessuto adiposo."
+  - question: "Perché il mio TDEE è diverso da quello indicato dal fitness tracker?"
+    answer: "I dispositivi indossabili stimano il TDEE attraverso dati sulla frequenza cardiaca, conteggio dei passi e letture dell'accelerometro, mentre questo calcolatore utilizza un approccio basato su formule matematiche. Entrambi sono stime con margini di errore. Secondo una ricerca della Stanford University, i fitness tracker tendono a sovrastimare il consumo calorico durante l'esercizio dal 27% al 93%. L'approccio basato su formule può invece sottostimare il TDEE per le persone molto attive. Per il quadro più realistico possibile, puoi calcolare la media tra il valore del tracker e quello del calcolatore, oppure utilizzare il valore calcolato come punto di partenza e regolarlo in base alle variazioni di peso effettive osservate nell'arco di 2-3 settimane."
+  - question: "Il TDEE cambia nel tempo?"
+    answer: "Il TDEE si modifica in funzione di variazioni del peso corporeo, della composizione corporea, dell'età e del livello di attività fisica. Perdere peso riduce il TDEE perché un corpo più leggero richiede meno energia per mantenersi. Guadagnare massa muscolare aumenta il TDEE perché il tessuto muscolare è metabolicamente attivo. L'adattamento metabolico che si verifica durante periodi prolungati di restrizione calorica può ridurre temporaneamente il TDEE al di sotto di quanto previsto dalla formula. È consigliabile ricalcolare il proprio TDEE ogni volta che il peso corporeo varia di più di 5 kg o quando il livello di attività fisica cambia in modo significativo."
+  - question: "Che cos'è la NEAT e perché è importante per il TDEE?"
+    answer: "La NEAT (Non-Exercise Activity Thermogenesis) comprende tutta l'attività fisica non strutturata che non rientra negli allenamenti programmati: camminare per andare a fare la spesa, gesticolare, stare in piedi alla scrivania, cucinare, fare le pulizie domestiche e tutti i movimenti quotidiani. La NEAT può incidere da 200 a 900 calorie al giorno e spiega gran parte della differenza nel consumo calorico totale tra persone con abitudini di allenamento simili. Chi si muove di più durante la giornata in modo spontaneo e naturale spesso mantiene una percentuale di grasso corporeo inferiore nonostante schemi alimentari analoghi. Aumentare la NEAT attraverso riunioni in cammino, scrivanie rialzate o parcheggiando più lontano dalla destinazione può incrementare in modo significativo il dispendio energetico quotidiano."
+
+examples:
+  - title: "Uomo moderatamente attivo"
+    scenario: "Un uomo di 30 anni, 80 kg, 180 cm, esercizio moderato 3-5 giorni a settimana"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+      activity: "moderate"
+    expectedResult: "TDEE: 2.759 kcal/giorno | MB: 1.780 kcal"
+    explanation: "Il suo metabolismo basale di 1.780 calorie viene moltiplicato per 1,55 (attività moderata). Per dimagrire, dovrebbe assumere circa 2.259 calorie al giorno (deficit di 500). Per aumentare la massa muscolare, circa 3.059 calorie (surplus di 300)."
+  - title: "Donna sedentaria impiegata"
+    scenario: "Una donna di 35 anni, 65 kg, 162 cm, lavoro d'ufficio senza esercizio regolare"
+    inputs:
+      weight: 65
+      height: 162
+      age: 35
+      gender: "female"
+      activity: "sedentary"
+    expectedResult: "TDEE: 1.618 kcal/giorno | MB: 1.348 kcal"
+    explanation: "Con uno stile di vita sedentario, il suo fabbisogno giornaliero è di circa 1.618 calorie. Aggiungere attività fisica leggera 3 volte a settimana porterebbe il TDEE a circa 1.854 calorie, offrendole maggiore flessibilità alimentare pur mantenendo o perdendo peso."
+  - title: "Atleta molto attivo"
+    scenario: "Un uomo di 25 anni, 85 kg, 185 cm, allenamento biquotidiano"
+    inputs:
+      weight: 85
+      height: 185
+      age: 25
+      gender: "male"
+      activity: "very_active"
+    expectedResult: "TDEE: 3.548 kcal/giorno | MB: 1.868 kcal"
+    explanation: "Questo atleta necessita di oltre 3.500 calorie giornaliere per mantenere il peso attuale e sostenere il carico di allenamento. Scendere al di sotto di 3.000 calorie causerebbe probabilmente un calo della prestazione sportiva, affaticamento cronico e una progressiva perdita di peso."
+
+relatedTools:
+  - "bmr-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

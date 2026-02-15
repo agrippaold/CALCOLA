@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import CompoundInterestCalculator from '../../../components/calculators/finance/CompoundInterestCalculator';
+
+const lang = 'it';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'compound-interest-calculator' && t.id.startsWith('it/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/it/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <CompoundInterestCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

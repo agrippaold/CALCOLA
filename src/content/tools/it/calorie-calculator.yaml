@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Calcolo Calorie Giornaliere e Macronutrienti | CalcHub"
+metaDescription: "Calcola il fabbisogno calorico giornaliero e i macronutrienti per dimagrire, mantenere il peso o aumentare la massa muscolare con Mifflin-St Jeor."
+h1: "Calcolo Calorie Giornaliere e Macronutrienti"
+slug: "calcolo-calorie"
+
+primaryKeyword: "calcolo calorie giornaliere"
+secondaryKeywords:
+  - "calorie giornaliere"
+  - "calcolo macronutrienti"
+  - "quante calorie al giorno"
+  - "calcolo fabbisogno calorico"
+
+intro: "Quante calorie dovresti effettivamente consumare ogni giorno? La risposta dipende dalla tua corporatura, dal livello di attività fisica e dall'obiettivo che vuoi raggiungere. Questo calcolatore combina l'equazione di Mifflin-St Jeor per il metabolismo basale con il tuo livello di attività e il tuo obiettivo specifico per fornirti un target calorico giornaliero personalizzato, accompagnato dalla suddivisione dei macronutrienti in grammi di proteine, carboidrati e grassi. Nessuna approssimazione generica, solo numeri personalizzati che puoi utilizzare immediatamente per pianificare i tuoi pasti."
+
+howItWorks:
+  title: "Come si calcola il fabbisogno calorico giornaliero"
+  content: "Questo calcolatore opera in tre passaggi distinti. Nel primo passaggio, calcola il metabolismo basale utilizzando l'equazione di Mifflin-St Jeor, che richiede peso, altezza, età e sesso. Nel secondo passaggio, moltiplica il metabolismo basale per un coefficiente di attività per determinare il fabbisogno energetico giornaliero totale (TDEE), che corrisponde alle calorie di mantenimento. Nel terzo passaggio, applica l'aggiustamento in base all'obiettivo: per il dimagrimento si sottraggono 500 calorie dal mantenimento, per l'aumento di peso se ne aggiungono 500, per il mantenimento il valore resta invariato. La correzione di 500 calorie si basa sul principio ampiamente riconosciuto del bilancio energetico: circa 7.700 calorie corrispondono a un chilogrammo di tessuto adiposo. Creare un deficit di 500 calorie al giorno produce un dimagrimento di circa mezzo chilogrammo a settimana. Questa relazione è un'approssimazione che funziona bene nel breve e medio periodo, sebbene l'adattamento metabolico faccia sì che il ritmo effettivo di dimagrimento possa rallentare nel corso di mesi di dieta continuativa. La ripartizione dei macronutrienti utilizza una suddivisione equilibrata: 30% proteine, 40% carboidrati e 30% grassi. La quota proteica è fissata al 30% perché la ricerca dimostra in modo consistente che un apporto proteico elevato favorisce il mantenimento della massa muscolare durante la restrizione calorica e aumenta il senso di sazietà. La conversione utilizza 4 calorie per grammo di proteine, 4 per i carboidrati e 9 per i grassi. Questa suddivisione è adatta alla maggior parte delle persone che perseguono obiettivi di fitness generale, anche se obiettivi specifici possono richiedere aggiustamenti mirati. Gli atleti e chi si concentra sulla crescita muscolare possono beneficiare di un 35-40% di proteine. Chi pratica sport di resistenza ottiene spesso prestazioni migliori con il 50-55% di carboidrati. Gli approcci a basso contenuto di carboidrati spostano tipicamente il rapporto verso una maggiore percentuale di grassi mantenendo le proteine costanti. Un principio fondamentale da tenere presente: questo calcolatore fornisce un punto di partenza, non una prescrizione esatta. Le variazioni metaboliche individuali, le imprecisioni nella registrazione degli alimenti e le fluttuazioni giornaliere nell'attività fisica rendono sempre necessari aggiustamenti nella pratica. Parti da questi numeri, monitora il peso e i livelli di energia per 2-3 settimane, e correggi di 100-200 calorie se i risultati non corrispondono alle aspettative."
+  formula: "Calorie = TDEE ± 500 (in base all'obiettivo)"
+  formulaExplanation: "TDEE = MB × coefficiente di attività. Dimagrimento: TDEE - 500. Mantenimento: TDEE. Aumento di peso: TDEE + 500. Soglia minima di sicurezza: 1.200 kcal."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Macronutrient recommendations: Dietary Guidelines for Americans 2020-2025, USDA."
+
+faqs:
+  - question: "Quante calorie devo assumere per dimagrire?"
+    answer: "Per un dimagrimento sostenibile, consuma 300-500 calorie in meno rispetto al tuo TDEE (livello di mantenimento). Questo produce un calo ponderale di circa 0,25-0,5 kg di grasso a settimana. Per la maggior parte delle donne, questo si traduce in 1.400-1.800 calorie al giorno; per la maggior parte degli uomini, in 1.800-2.200 calorie giornaliere, anche se il fabbisogno individuale varia in base alla corporatura e al livello di attività. Evita di scendere al di sotto di 1.200 calorie al giorno senza supervisione medica, poiché le diete fortemente ipocaloriche comportano rischi di carenze nutrizionali, perdita di massa muscolare e rallentamento metabolico."
+  - question: "È necessario contare le calorie per perdere peso?"
+    answer: "Il conteggio delle calorie non è strettamente indispensabile ma offre il controllo più preciso sul bilancio energetico. Le alternative includono i metodi di controllo delle porzioni (usando la mano come unità di misura), i principi dell'alimentazione intuitiva o il monitoraggio del solo apporto proteico mangiando liberamente cibi integrali e non trasformati. La ricerca mostra che le persone che registrano la propria alimentazione, almeno inizialmente, sviluppano una maggiore consapevolezza delle dimensioni delle porzioni e della densità calorica degli alimenti. Molti scoprono che 4-6 settimane di registrazione costruiscono un'intuizione sufficiente per stimare le porzioni senza continuare a tracciare ogni pasto."
+  - question: "Qual è la migliore ripartizione dei macronutrienti per dimagrire?"
+    answer: "La ricerca sostiene un apporto proteico più elevato durante la restrizione calorica: il 25-35% delle calorie totali dalle proteine aiuta a preservare la massa magra e aumenta il senso di sazietà. Le calorie rimanenti possono essere suddivise tra carboidrati e grassi in base alle preferenze personali e alla capacità di aderenza alla dieta. Una persona che consuma 1.800 calorie con il 30% di proteine assume 135 grammi di proteine al giorno. Il rapporto specifico tra carboidrati e grassi conta meno dell'apporto calorico totale e dell'adeguatezza proteica per la maggior parte delle persone. Scegli la suddivisione che trovi più facile da mantenere con costanza nel lungo periodo."
+  - question: "Dovrei mangiare di più nei giorni di allenamento e di meno nei giorni di riposo?"
+    answer: "Il ciclaggio calorico (mangiare di più nei giorni di allenamento e di meno nei giorni di riposo) è un approccio valido ma non indispensabile per ottenere risultati. Il corpo non azzera il bilancio energetico a mezzanotte; ciò che conta è la media dell'apporto calorico nell'arco della settimana. Se preferisci pasti più abbondanti nei giorni di allenamento per sostenere la prestazione e il recupero, puoi mangiare 200-300 calorie in più rispetto al target giornaliero nei giorni attivi e 200-300 in meno nei giorni di riposo, mantenendo invariato il totale settimanale. Questo approccio può migliorare la qualità degli allenamenti senza alterare i risultati complessivi."
+  - question: "Perché non dimagrisco nonostante mangi in deficit calorico?"
+    answer: "Le ragioni più comuni sono la sottostima dell'apporto calorico effettivo, la sovrastima del consumo calorico da esercizio, la ritenzione idrica che maschera la perdita di grasso oppure l'adattamento metabolico dovuto a una dieta prolungata. Gli studi dimostrano che le persone sottostimano l'apporto alimentare del 30-50% in media quando non pesano le porzioni con una bilancia da cucina. L'olio da cottura, i condimenti, le salse e le bevande spesso non vengono conteggiati. Se la bilancia non si è mossa nelle ultime 3-4 settimane nonostante un monitoraggio costante, puoi ridurre l'apporto di ulteriori 100-200 calorie, aumentare il movimento quotidiano (soprattutto le camminate) oppure effettuare una pausa dalla dieta mangiando al livello di mantenimento per 1-2 settimane prima di riprendere."
+  - question: "1.200 calorie al giorno sono troppe poche?"
+    answer: "Per la maggior parte degli adulti, 1.200 calorie al giorno rappresentano il minimo raccomandato dalle organizzazioni sanitarie per garantire un'adeguatezza nutrizionale. Al di sotto di questa soglia, diventa difficile soddisfare il fabbisogno di vitamine, minerali e proteine attraverso la sola alimentazione. Le persone di statura molto bassa con un basso livello di attività fisica possono avere un TDEE legittimamente vicino a 1.400-1.500 calorie, rendendo appropriato un deficit che porta a 1.200 calorie. Per le persone più alte, più pesanti o più attive, 1.200 calorie rappresentano un deficit eccessivamente aggressivo che aumenta il rischio di perdita muscolare, affaticamento, squilibri ormonali e abbuffate compensatorie. Un approccio più moderato produce risultati significativamente migliori nel lungo termine per la stragrande maggioranza delle persone."
+
+examples:
+  - title: "Piano dimagrimento per donna sedentaria"
+    scenario: "Una donna di 28 anni, 68 kg, 165 cm, sedentaria, obiettivo: dimagrire"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Calorie giornaliere: 1.227 kcal | Proteine: 92 g | Carboidrati: 123 g | Grassi: 41 g"
+    explanation: "Il suo TDEE di 1.727 calorie meno 500 dà un obiettivo di 1.227 calorie (con un pavimento minimo di 1.200). La suddivisione dei macronutrienti fornisce un apporto proteico adeguato (92 g) per sostenere il mantenimento della massa muscolare durante il deficit calorico."
+  - title: "Aumento massa muscolare per uomo attivo"
+    scenario: "Un uomo di 25 anni, 75 kg, 178 cm, attivo (6 giorni a settimana), obiettivo: aumentare di peso"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Calorie giornaliere: 3.573 kcal | Proteine: 268 g | Carboidrati: 357 g | Grassi: 119 g"
+    explanation: "Con un TDEE di 3.073 calorie più un surplus di 500, il fabbisogno è di 3.573 calorie giornaliere. I 268 grammi di proteine sostengono la sintesi proteica muscolare durante il programma di allenamento intensivo."
+  - title: "Mantenimento per adulto moderatamente attivo"
+    scenario: "Un uomo di 40 anni, 82 kg, 175 cm, esercizio moderato 4 giorni a settimana"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Calorie giornaliere: 2.668 kcal | Proteine: 200 g | Carboidrati: 267 g | Grassi: 89 g"
+    explanation: "Al livello di mantenimento, assume circa 2.668 calorie per sostenere il peso attuale e il livello di attività fisica. I 200 grammi di proteine favoriscono il recupero dall'esercizio moderato e il mantenimento della massa magra."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

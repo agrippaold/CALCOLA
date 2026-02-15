@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 1.8 (FASE 1 COMPLETA)
-**Prossimo step da eseguire:** STEP 2.1
-**Branch attivo:** claude/continue-step-tracker-BA8lt
-**Build status:** OK (32 pagine, 92 test passano, 11 YAML validati)
+**Ultimo step completato:** STEP 2.1 (IT content per 11 tool)
+**Prossimo step da eseguire:** STEP 2.2
+**Branch attivo:** claude/continue-step-tracker-ZHIy0
+**Build status:** OK (48 pagine, 92 test passano, 22 YAML validati)
 
 ---
 
@@ -397,23 +397,23 @@ Al completamento:
 
 Obiettivo: I 10 tool tradotti in IT, ES, FR, DE (4 lingue extra = 40 nuove pagine).
 
-## STEP 2.1 — Contenuto IT per 10 tool ⬜
+## STEP 2.1 — Contenuto IT per 11 tool ✅
 ```
 Azioni:
-1. Creare src/content/tools/it/ con 10 file YAML
+1. Creare src/content/tools/it/ con 11 file YAML
 2. Ogni file con keyword NATIVE italiane (non tradotte da EN!)
-   - "bmi calculator" → "calcolo bmi" (keyword nativa)
+   - "bmi calculator" → "calcolo imc" (keyword nativa)
    - "mortgage calculator" → "calcolo mutuo" (keyword nativa)
-3. Slug in italiano: "calcolo-bmi", "calcolo-mutuo", etc.
+3. Slug in italiano: "calcolo-imc", "calcolo-mutuo", etc.
 4. FAQ specifiche per mercato italiano
 5. Default: EUR, sistema metrico, formato 1.234,56
 
-Verifica: 10 pagine IT renderizzano, hreflang bidirezionale EN↔IT
-Commit: [STEP 2.1] Italian content for 10 tools with native keywords
+Verifica: 11 pagine IT renderizzano, hreflang bidirezionale EN↔IT
+Commit: [STEP 2.1] Italian content for 11 tools with native keywords
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/content/tools/it/{bmi,bmr,tdee,calorie,mortgage,compound-interest,loan,savings,percentage,area}-calculator.yaml, src/content/tools/it/temperature-converter.yaml, src/pages/it/index.astro, src/pages/it/{finanza,salute,matematica,conversioni}/index.astro, src/pages/it/salute/{calcolo-imc,calcolo-metabolismo-basale,calcolo-tdee,calcolo-calorie}.astro, src/pages/it/finanza/{calcolo-mutuo,calcolo-interesse-composto,calcolo-prestito,calcolo-risparmio}.astro, src/pages/it/matematica/{calcolo-percentuale,calcolo-area}.astro, src/pages/it/conversioni/convertitore-temperatura.astro
+Note: 11 YAML italiani con keyword native (calcolo imc, calcolo mutuo, calcolo percentuale, ecc.). Slug italiani (calcolo-imc, calcolo-mutuo, ecc.). Categorie in italiano (finanza, salute, matematica, conversioni). Defaults EUR, metrico, formato 1.234,56. Homepage IT con 4 categorie e tool popolari. 22 YAML validati. Build OK 48 pagine in 6,56s. 92 test verdi.
 
 ## STEP 2.2 — Contenuto ES per 10 tool ⬜
 ```
@@ -581,3 +581,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 |----------|------|-----------------|------|
 | 1 | 2026-02-15 | STEP 0.1-0.12 (FASE 0 COMPLETA) | Setup Astro completo: i18n 25 lingue, Content Collection, layouts, componenti Preact, Schema.org, hreflang, Docker, Nginx, validation, CI. BMI calculator funzionante. |
 | 2 | 2026-02-15 | STEP 1.1-1.8 (FASE 1 COMPLETA) | Formula library (32 fn, 92 test). 11 calcolatori EN completi: 4 finance (mortgage, compound interest, loan, savings), 4 health (BMI, BMR, TDEE, calories), 2 math (percentage, area), 1 conversion (temperature). Homepage + 4 categorie. Embed system (11 pagine). Share buttons. My Calculations page. 32 pagine totali, build 6.5s. |
+| 3 | 2026-02-15 | STEP 2.1 | Contenuto italiano per 11 tool con keyword native. 11 YAML IT + 16 pagine Astro (11 calcolatori + homepage + 4 categorie). Slug italiani: calcolo-imc, calcolo-mutuo, calcolo-percentuale, ecc. Categorie: finanza, salute, matematica, conversioni. Defaults EUR/metrico. 22 YAML validati, 48 pagine totali, build 6.56s. |

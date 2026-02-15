@@ -1,0 +1,82 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "Calcolo Metabolismo Basale (BMR) Online | CalcHub"
+metaDescription: "Calcola il tuo metabolismo basale con l'equazione di Mifflin-St Jeor. Scopri quante calorie brucia il tuo corpo a riposo in base a età, peso, altezza e sesso."
+h1: "Calcolo Metabolismo Basale (BMR)"
+slug: "calcolo-metabolismo-basale"
+
+primaryKeyword: "calcolo metabolismo basale"
+secondaryKeywords:
+  - "metabolismo basale"
+  - "bmr calcolo"
+  - "calorie a riposo"
+  - "formula metabolismo basale"
+
+intro: "Il metabolismo basale rappresenta la quantità di energia che il tuo organismo consuma esclusivamente per mantenersi in vita: respirare, far circolare il sangue, regolare la temperatura corporea e garantire il funzionamento degli organi interni durante il riposo completo. Per la maggior parte delle persone, il metabolismo basale copre tra il 60% e il 75% del fabbisogno calorico giornaliero totale. Conoscere questo valore ti fornisce la base di partenza fondamentale per calcolare quanto dovresti realmente mangiare, che il tuo obiettivo sia perdere grasso, aumentare la massa muscolare o mantenere il peso attuale."
+
+howItWorks:
+  title: "Come si calcola il metabolismo basale"
+  content: "Questo calcolatore utilizza l'equazione di Mifflin-St Jeor, identificata dall'American Dietetic Association nel 2005 come il metodo di stima del metabolismo basale più accurato per individui sani, a seguito di uno studio comparativo tra diverse formule predittive. L'equazione considera peso corporeo, altezza, età e sesso biologico. Per gli uomini, la formula prevede di moltiplicare il peso in chilogrammi per 10, sommare l'altezza in centimetri moltiplicata per 6,25, sottrarre l'età in anni moltiplicata per 5 e aggiungere la costante 5. Per le donne si applica lo stesso calcolo di base, ma si sottrae 161 anziché aggiungere 5. Questa differenza riflette la percentuale di massa magra mediamente più elevata negli uomini. L'equazione di Mifflin-St Jeor ha sostituito la precedente equazione di Harris-Benedict (1919) come standard di riferimento perché si è dimostrata più precisa su popolazioni diverse. La formula di Harris-Benedict tende a sovrastimare il metabolismo basale di circa il 5% nelle persone normopeso e in misura ancora maggiore nei soggetti obesi. Diversi fattori influenzano il metabolismo basale effettivo al di là di quanto la formula riesce a catturare. La massa muscolare è la variabile più importante, dato che il tessuto muscolare brucia più calorie a riposo rispetto al tessuto adiposo. Due persone con identico peso, altezza ed età possono avere metabolismi basali che differiscono di 200-300 calorie se una delle due possiede significativamente più massa magra. Anche la genetica gioca un ruolo rilevante, determinando circa il 40% della variazione del metabolismo basale tra individui diversi, anche dopo aver controllato per la composizione corporea. La funzionalità tiroidea regola direttamente il tasso metabolico: l'ipotiroidismo può ridurre il metabolismo basale del 10-15%. Il declino del metabolismo legato all'età è in media dell'1-2% per decennio dopo i 20 anni, principalmente a causa della progressiva perdita di massa muscolare piuttosto che dell'invecchiamento in sé. Mantenere la muscolatura attraverso l'allenamento con i pesi può rallentare significativamente questo declino. Anche la temperatura ambientale, alcuni farmaci, l'assunzione di caffeina e il consumo recente di cibo producono fluttuazioni temporanee del metabolismo basale."
+  formula: "MB (uomo) = 10×peso(kg) + 6,25×altezza(cm) - 5×età + 5"
+  formulaExplanation: "Per le donne, si sostituisce +5 con -161. Questa è l'equazione di Mifflin-St Jeor, considerata la stima più accurata del metabolismo basale per adulti sani."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "Qual è la differenza tra metabolismo basale (MB) e metabolismo a riposo (RMR)?"
+    answer: "Il metabolismo basale (MB o BMR) e il metabolismo a riposo (RMR) vengono spesso utilizzati come sinonimi, ma differiscono nelle condizioni di misurazione. Il MB richiede condizioni di laboratorio rigorose: 12 ore di digiuno, 8 ore di sonno, un ambiente termoneutro e riposo fisico e psicologico completo. Il metabolismo a riposo viene misurato in condizioni meno restrittive e risulta tipicamente superiore del 10-20% rispetto al MB. Ai fini pratici della programmazione alimentare, la differenza tra i due valori è sufficientemente contenuta da poter utilizzare indifferentemente l'uno o l'altro come punto di partenza per il calcolo delle calorie necessarie."
+  - question: "Perché il metabolismo basale diminuisce con l'avanzare dell'età?"
+    answer: "Il metabolismo basale si riduce approssimativamente dell'1-2% per ogni decennio dopo i 20 anni. La causa principale è la sarcopenia, ovvero la progressiva perdita di massa muscolare che si verifica naturalmente con l'invecchiamento. Poiché il tessuto muscolare è metabolicamente attivo e brucia circa 13 calorie per chilogrammo al giorno a riposo, perdere muscoli riduce il dispendio energetico complessivo. Tra i 30 e gli 80 anni, la maggior parte delle persone perde dal 30% al 40% della propria massa muscolare senza interventi specifici. L'allenamento regolare con sovraccarichi e un apporto proteico adeguato (1,5-2,2 grammi per chilogrammo di peso corporeo) possono rallentare sensibilmente questo processo."
+  - question: "È possibile aumentare il proprio metabolismo basale?"
+    answer: "Sviluppare la massa muscolare attraverso l'allenamento con i pesi è il metodo più efficace per incrementare il metabolismo basale. Ogni chilogrammo di muscolo brucia circa 13 calorie al giorno a riposo, rispetto alle 4,5 calorie per chilogrammo del tessuto adiposo. Aggiungere 5 chilogrammi di massa muscolare attraverso un programma costante di allenamento contro resistenza aumenta il metabolismo basale giornaliero di circa 65-80 calorie. Sebbene il dato possa sembrare modesto, nell'arco di un anno corrisponde a circa 24.000-29.000 calorie aggiuntive bruciate a riposo. Altri fattori che innalzano temporaneamente il tasso metabolico includono una dieta ricca di proteine (per effetto della termogenesi indotta dagli alimenti), l'esposizione al freddo e il consumo di caffeina."
+  - question: "Quanto è preciso questo calcolatore del metabolismo basale?"
+    answer: "L'equazione di Mifflin-St Jeor prevede il metabolismo basale con uno scarto inferiore al 10% rispetto ai valori misurati per circa l'82% delle persone, secondo lo studio di validazione originale. La precisione è massima per gli adulti normopeso e diminuisce leggermente per le persone con sovrappeso o sottopeso significativo. Gli atleti con una massa muscolare superiore alla media potrebbero riscontrare che la formula sottostima il loro metabolismo basale effettivo, mentre le persone con massa muscolare inferiore alla media potrebbero ottenere una sovrastima. Per una misurazione di precisione clinica, è possibile sottoporsi a un test di calorimetria indiretta presso un ospedale o un centro di medicina dello sport, che misura l'effettivo consumo di ossigeno dell'organismo."
+  - question: "È consigliabile mangiare meno calorie del proprio metabolismo basale per dimagrire?"
+    answer: "Scendere al di sotto del metabolismo basale con l'alimentazione è generalmente sconsigliato e può rivelarsi controproducente. L'organismo necessita di quelle calorie di base per garantire il funzionamento degli organi, la produzione ormonale e la risposta immunitaria. Una restrizione calorica cronica al di sotto del metabolismo basale innesca l'adattamento metabolico, un meccanismo attraverso il quale il corpo riduce il dispendio energetico per preservare le riserve. Questo rende più difficile un ulteriore dimagrimento e spesso provoca perdita di massa muscolare. È preferibile utilizzare il TDEE (che include le calorie consumate con l'attività fisica) come riferimento e creare un deficit moderato di 300-500 calorie al di sotto del TDEE per ottenere un dimagrimento sostenibile nel tempo."
+  - question: "Qual è la relazione tra metabolismo basale, TDEE e conteggio delle calorie?"
+    answer: "Il metabolismo basale costituisce la base del fabbisogno energetico giornaliero totale (TDEE). Il TDEE si ottiene moltiplicando il metabolismo basale per un fattore di attività che tiene conto dell'esercizio fisico e dei movimenti quotidiani. Per le persone sedentarie, il TDEE corrisponde a circa 1,2 volte il metabolismo basale. Per le persone molto attive, può raggiungere 1,9 volte il metabolismo basale. Se il tuo metabolismo basale è di 1.600 calorie e svolgi un'attività moderata (moltiplicatore 1,55), il tuo TDEE sarà di circa 2.480 calorie. Per dimagrire, dovresti mangiare al di sotto del TDEE (non al di sotto del metabolismo basale). Per aumentare di peso, dovresti mangiare al di sopra del TDEE."
+
+examples:
+  - title: "Uomo attivo di 30 anni"
+    scenario: "Un uomo di 30 anni che pesa 80 kg ed è alto 180 cm"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "MB: 1.780 kcal/giorno"
+    explanation: "Quest'uomo brucia circa 1.780 calorie al giorno in condizioni di riposo completo. Con un'attività fisica moderata (allenamento 3-5 giorni a settimana), il suo TDEE si attesterebbe intorno a 2.759 calorie giornaliere (1.780 x 1,55)."
+  - title: "Donna di 25 anni"
+    scenario: "Una donna di 25 anni che pesa 60 kg ed è alta 165 cm"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "MB: 1.345 kcal/giorno"
+    explanation: "Il suo consumo calorico a riposo è di 1.345 calorie al giorno. Il valore inferiore rispetto all'esempio maschile riflette sia la corporatura più minuta sia la correzione specifica per il sesso prevista dalla formula di Mifflin-St Jeor."
+  - title: "Adulto over 60"
+    scenario: "Un uomo di 60 anni che pesa 75 kg ed è alto 172 cm"
+    inputs:
+      weight: 75
+      height: 172
+      age: 60
+      gender: "male"
+    expectedResult: "MB: 1.530 kcal/giorno"
+    explanation: "A 60 anni, una persona delle stesse dimensioni presenta un metabolismo basale inferiore di circa 150 calorie al giorno rispetto ai 30 anni. Questo illustra perché il fabbisogno calorico diminuisce con l'età e perché mantenere la massa muscolare attraverso l'esercizio fisico diventa sempre più importante con il passare degli anni."
+
+relatedTools:
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
