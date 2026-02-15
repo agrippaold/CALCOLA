@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.7
-**Prossimo step da eseguire:** STEP 0.8
+**Ultimo step completato:** STEP 0.9
+**Prossimo step da eseguire:** STEP 0.10
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -190,7 +190,7 @@ Completato: 2026-02-15
 File creati/modificati: src/components/calculators/base/{CalculatorShell,InputField,ResultDisplay,SelectField,SliderField}.tsx
 Note: 5 componenti base Preact creati. CalculatorShell (container riutilizzabile), InputField (con unit suffix e ARIA), ResultDisplay (multi-valore con aria-live), SelectField (dropdown accessibile), SliderField (con aria-valuemin/max/now). ChartDisplay, ComparisonMode e SaveCalculation rinviati a STEP 1.x quando i calcolatori specifici li richiederanno. Build OK.
 
-## STEP 0.8 — Schema.org Generators ⬜
+## STEP 0.8 — Schema.org Generators ✅
 ```
 Azioni:
 1. Creare src/lib/schema/webApplication.ts
@@ -202,11 +202,11 @@ Azioni:
 Verifica: Schema JSON-LD valido (testare output con validator.schema.org)
 Commit: [STEP 0.8] Implement Schema.org generators (4 types per page)
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/lib/schema/{webApplication,faqPage,breadcrumbList,howTo,index}.ts
+Note: 4 generatori Schema.org + funzione unificata generateToolSchemas(). FAQ schema già integrato in FAQ.astro. Build OK.
 
-## STEP 0.9 — Hreflang e SEO ⬜
+## STEP 0.9 — Hreflang e SEO ✅
 ```
 Azioni:
 1. Creare src/lib/seo/hreflang.ts (GUIDA sezione 1.8)
@@ -218,9 +218,9 @@ Azioni:
 Verifica: Ogni pagina ha hreflang completi + canonical + x-default
 Commit: [STEP 0.9] Implement hreflang, meta tags, and robots.txt
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/lib/seo/{hreflang,meta,sitemap}.ts, public/robots.txt
+Note: Hreflang con x-default→EN, bidirezionale 25 lingue, ISO codes corretti (pt-BR, zh-Hans). SEOHead.astro già integrato in STEP 0.5. robots.txt con link sitemap. Build OK.
 
 ## STEP 0.10 — Routing Dinamico ⬜
 ```
