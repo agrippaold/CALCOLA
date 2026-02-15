@@ -1,0 +1,81 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "BMI Calculator - Check Your Body Mass Index | CalcHub"
+metaDescription: "Calculate your BMI instantly with our free Body Mass Index calculator. Enter height and weight to find your BMI category and health recommendations."
+h1: "BMI Calculator (Body Mass Index)"
+slug: "bmi-calculator"
+
+primaryKeyword: "bmi calculator"
+secondaryKeywords:
+  - "body mass index calculator"
+  - "bmi chart"
+  - "calculate bmi"
+  - "bmi check"
+
+intro: "Want to know where you stand on the weight spectrum? Your Body Mass Index gives you a quick snapshot of your weight relative to height. Doctors and researchers worldwide rely on BMI as a first-pass screening tool, though it has limitations worth understanding. Plug in your numbers below and get your result in seconds, along with context about what your BMI category actually means for your health."
+
+howItWorks:
+  title: "How BMI Is Calculated"
+  content: "Body Mass Index divides your weight by the square of your height. Adolphe Quetelet, a Belgian mathematician, developed this formula back in the 1830s as a way to measure human proportions across populations. The metric version uses kilograms and meters; the imperial version multiplies by 703 to account for pounds and inches. Here is what the numbers actually tell you. The World Health Organization classifies BMI into four broad categories: underweight (below 18.5), normal weight (18.5 to 24.9), overweight (25 to 29.9), and obese (30 and above). These cutoffs were established through large epidemiological studies linking BMI ranges to health outcomes. However, BMI has blind spots. It cannot distinguish between muscle mass and fat mass, so a muscular athlete might register as overweight despite having low body fat. Similarly, older adults who have lost muscle may show a normal BMI while carrying excess visceral fat. For a more complete picture, consider combining BMI with waist circumference measurements or body fat percentage calculations. Asian populations face elevated metabolic risks at lower BMI thresholds compared to European populations, which is why some countries have adopted modified cutoff points. The WHO suggests using 23 as the overweight threshold for Asian populations rather than 25. Despite these caveats, BMI remains the most widely used screening metric because of its simplicity and strong population-level correlation with metabolic disease risk. Clinicians often pair it with blood pressure, cholesterol, and blood sugar readings for a fuller assessment."
+  formula: "BMI = weight (kg) / height (m)²"
+  formulaExplanation: "Weight in kilograms divided by height in meters squared. For imperial units: BMI = (weight in lbs × 703) / (height in inches)²"
+  academicSource: "World Health Organization. (2000). Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894."
+
+faqs:
+  - question: "What is a healthy BMI range?"
+    answer: "The World Health Organization defines a healthy BMI as falling between 18.5 and 24.9. People within this range generally face lower risks of cardiovascular disease, type 2 diabetes, and certain cancers compared to those outside it. Keep in mind that individual health depends on many factors beyond BMI alone, including diet quality, physical activity, family history, and metabolic markers like blood pressure and cholesterol levels."
+  - question: "Is BMI accurate for athletes and muscular people?"
+    answer: "BMI tends to overestimate body fat in people with significant muscle mass. A bodybuilder or rugby player might register a BMI of 28 or higher while maintaining a body fat percentage below 15%. If you exercise regularly and carry above-average muscle, consider supplementing your BMI with a body fat percentage measurement or a waist-to-hip ratio calculation for a more accurate assessment of your body composition."
+  - question: "Does BMI apply differently to men and women?"
+    answer: "The BMI formula itself is identical for men and women, but interpretation can differ. Women naturally carry a higher percentage of body fat than men at the same BMI level. Some researchers have proposed sex-specific cutoffs, but the WHO standard categories remain the most widely used. For women especially, waist circumference can provide additional insight, with measurements above 80 cm (31.5 inches) associated with increased health risk."
+  - question: "How often should I check my BMI?"
+    answer: "For most adults, checking BMI once every few months provides useful trend data without encouraging obsessive tracking. If you are actively trying to lose or gain weight, monthly checks give you reasonable feedback on your progress. Avoid daily weighting for BMI purposes since normal fluid fluctuations can shift your weight by 1-2 kg in either direction, making short-term BMI readings unreliable."
+  - question: "What are the limitations of BMI as a health indicator?"
+    answer: "BMI cannot differentiate between lean mass and fat mass, does not account for fat distribution patterns (visceral vs. subcutaneous), and uses population-based cutoffs that may not apply equally across ethnic groups. Research shows that Asian populations face elevated metabolic risks at lower BMI thresholds than European populations. The metric also fails to capture changes in body composition that occur with aging, as muscle loss often accompanies fat gain even when weight stays stable."
+  - question: "Can children use this BMI calculator?"
+    answer: "This calculator is designed for adults aged 20 and older. Children and adolescents require age-and-sex-specific BMI percentile charts because their body composition changes significantly during growth. The CDC provides separate BMI-for-age growth charts that compare a child's BMI to reference populations of the same age and sex, with underweight defined as below the 5th percentile and obesity at or above the 95th percentile."
+
+examples:
+  - title: "Normal weight adult"
+    scenario: "A 170 cm tall person weighing 65 kg"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "BMI: 22.5 — Normal weight"
+    explanation: "At 22.5, this person falls comfortably within the normal weight range (18.5-24.9). This BMI is associated with the lowest statistical risk for weight-related health issues."
+  - title: "Overweight assessment (Imperial)"
+    scenario: "A person 5'10\" (70 inches) weighing 195 lbs"
+    inputs:
+      weight: 195
+      height: 70
+      unit: "imperial"
+    expectedResult: "BMI: 28.0 — Overweight"
+    explanation: "A BMI of 28.0 places this person in the overweight category (25-29.9). While not yet classified as obese, this range is associated with moderately increased risk for cardiovascular issues, and losing 15-20 lbs would bring them into the normal range."
+  - title: "Underweight check"
+    scenario: "A 180 cm tall person weighing 55 kg"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "BMI: 17.0 — Underweight"
+    explanation: "At 17.0, this person is classified as underweight (below 18.5). Being underweight can indicate nutritional deficiencies, weakened immune function, and increased risk of osteoporosis. Consulting a healthcare provider is recommended."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "ideal-weight-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

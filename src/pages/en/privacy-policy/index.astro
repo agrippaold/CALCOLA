@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'en';
+---
+
+<BaseLayout title="Privacy Policy | CalcHub" description="CalcHub privacy policy. We respect your privacy. No personal data collection, no tracking cookies." lang={lang}>
+  <div class="max-w-4xl mx-auto px-4 py-12 prose prose-gray max-w-none">
+    <h1>Privacy Policy</h1>
+    <p class="text-sm text-gray-500">Last updated: February 15, 2026</p>
+
+    <h2>Overview</h2>
+    <p>CalcHub respects your privacy. This policy explains what data we collect and how we use it.</p>
+
+    <h2>Data We Collect</h2>
+    <h3>Calculator Usage</h3>
+    <p>All calculations are performed in your browser. We do not send your input values to any server. Your calculation data stays on your device.</p>
+
+    <h3>Saved Calculations</h3>
+    <p>If you use the "Save calculation" feature, data is stored in your browser's localStorage. We cannot access this data. You can delete it at any time by clearing your browser data.</p>
+
+    <h3>Analytics</h3>
+    <p>We use privacy-first analytics (no cookies, no personal data) to understand which calculators are most used and improve our service. We collect aggregate page views and referrer information only. We do not track individual users.</p>
+
+    <h2>Cookies</h2>
+    <p>CalcHub does not use tracking cookies. If we display advertisements, our ad partners may use cookies subject to their own privacy policies.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>We may display advertisements through AdSense or similar services. These services operate under their own privacy policies. We do not share any user data with advertisers.</p>
+
+    <h2>Data Security</h2>
+    <p>Our website is served over HTTPS. Since we do not collect personal data, there is no personal data to breach.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>CalcHub does not knowingly collect information from children under 13. Our calculators are informational tools available to everyone.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. Changes will be posted on this page with an updated date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:contact@calchub.com">contact@calchub.com</a></p>
+  </div>
+</BaseLayout>

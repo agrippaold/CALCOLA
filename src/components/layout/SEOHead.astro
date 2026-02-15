@@ -1,0 +1,43 @@
+---
+import { LOCALES } from '../../i18n/locales';
+
+interface Props {
+  tool: {
+    title: string;
+    metaDescription: string;
+    slug: string;
+    category: string;
+  };
+  lang: string;
+}
+
+const { tool, lang } = Astro.props;
+const canonicalUrl = `https://calchub.com/${lang}/${tool.category}/${tool.slug}/`;
+const enUrl = `https://calchub.com/en/${tool.category}/${tool.slug}/`;
+---
+
+<title>{tool.title}</title>
+<meta name="description" content={tool.metaDescription} />
+
+<!-- Canonical -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- x-default (always EN) -->
+<link rel="alternate" hreflang="x-default" href={enUrl} />
+
+<!-- Hreflang for all languages -->
+{Object.entries(LOCALES).map(([code, locale]) => (
+  <link
+    rel="alternate"
+    hreflang={locale.isoCode}
+    href={`https://calchub.com/${code}/${tool.category}/${tool.slug}/`}
+  />
+))}
+
+<!-- Open Graph -->
+<meta property="og:title" content={tool.title} />
+<meta property="og:description" content={tool.metaDescription} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content="CalcHub" />
+<meta property="og:locale" content={lang} />

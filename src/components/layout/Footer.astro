@@ -1,0 +1,69 @@
+---
+import { t } from '../../i18n/utils';
+import { LOCALES } from '../../i18n/locales';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-300 mt-16">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">CalcHub</h3>
+        <p class="text-sm text-gray-400 mb-4">
+          200+ free online calculators in 25 languages.
+        </p>
+        <ul class="space-y-1 text-sm">
+          <li><a href={`/${lang}/about/`} class="hover:text-white">{t('footer.about', lang)}</a></li>
+          <li><a href={`/${lang}/methodology/`} class="hover:text-white">{t('footer.methodology', lang)}</a></li>
+          <li><a href={`/${lang}/privacy-policy/`} class="hover:text-white">{t('footer.privacy', lang)}</a></li>
+          <li><a href={`/${lang}/terms-of-service/`} class="hover:text-white">{t('footer.terms', lang)}</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">{t('nav.categories', lang)}</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href={`/${lang}/finance/`} class="hover:text-white">{t('category.finance', lang)}</a></li>
+          <li><a href={`/${lang}/health/`} class="hover:text-white">{t('category.health', lang)}</a></li>
+          <li><a href={`/${lang}/math/`} class="hover:text-white">{t('category.math', lang)}</a></li>
+          <li><a href={`/${lang}/conversion/`} class="hover:text-white">{t('category.conversion', lang)}</a></li>
+          <li><a href={`/${lang}/date/`} class="hover:text-white">{t('category.date', lang)}</a></li>
+          <li><a href={`/${lang}/construction/`} class="hover:text-white">{t('category.construction', lang)}</a></li>
+        </ul>
+      </div>
+
+      <!-- Languages (visible links for Google crawl) -->
+      <div>
+        <h3 class="text-white font-semibold mb-3">{t('footer.languages', lang)}</h3>
+        <div class="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+          {Object.values(LOCALES).map((locale) => (
+            <a
+              href={`/${locale.code}/`}
+              class={`hover:text-white ${locale.code === lang ? 'text-white font-semibold' : ''}`}
+              lang={locale.code}
+            >
+              {locale.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+      <p>&copy; {currentYear} CalcHub. {t('footer.rights', lang)}</p>
+      <p class="mt-2 sm:mt-0">
+        contact@calchub.com
+      </p>
+    </div>
+  </div>
+</footer>

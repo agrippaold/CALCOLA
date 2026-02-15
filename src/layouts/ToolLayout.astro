@@ -1,0 +1,105 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/layout/Breadcrumb.astro';
+import SEOHead from '../components/layout/SEOHead.astro';
+import AuthorByline from '../components/layout/AuthorByline.astro';
+import HowItWorks from '../components/content/HowItWorks.astro';
+import FormulaDisplay from '../components/content/FormulaDisplay.astro';
+import FAQ from '../components/content/FAQ.astro';
+import PracticalExamples from '../components/content/PracticalExamples.astro';
+import RelatedTools from '../components/content/RelatedTools.astro';
+import AdPlacement from '../components/content/AdPlacement.astro';
+import { t } from '../i18n/utils';
+
+interface Props {
+  tool: {
+    h1: string;
+    intro: string;
+    howItWorks: {
+      title: string;
+      content: string;
+      formula: string;
+      formulaExplanation: string;
+      academicSource: string;
+    };
+    faqs: Array<{ question: string; answer: string }>;
+    examples: Array<{
+      title: string;
+      scenario: string;
+      inputs: Record<string, string | number>;
+      expectedResult: string;
+      explanation: string;
+    }>;
+    relatedTools: string[];
+    lastUpdated: string;
+    author: string;
+    title: string;
+    metaDescription: string;
+    slug: string;
+    category: string;
+    defaults: Record<string, unknown>;
+  };
+  lang: string;
+}
+
+const { tool, lang } = Astro.props;
+---
+
+<BaseLayout lang={lang}>
+  <SEOHead slot="head" tool={tool} lang={lang} />
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- 1. BREADCRUMB -->
+    <Breadcrumb tool={tool} lang={lang} />
+
+    <!-- 2. H1 -->
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">{tool.h1}</h1>
+
+    <!-- 3. AUTHOR BYLINE -->
+    <AuthorByline author={tool.author} lastUpdated={tool.lastUpdated} lang={lang} />
+
+    <!-- 4. INTRO -->
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed">{tool.intro}</p>
+
+    <!-- 5. CALCULATOR (Preact Island) -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 mb-12 border border-gray-100">
+      <slot />
+    </section>
+
+    <!-- 6. AD PLACEMENT #1 -->
+    <AdPlacement position="after-calculator" />
+
+    <!-- 7. HOW IT WORKS -->
+    <HowItWorks
+      title={tool.howItWorks.title}
+      content={tool.howItWorks.content}
+      lang={lang}
+    />
+
+    <!-- 8. FORMULA -->
+    <FormulaDisplay
+      formula={tool.howItWorks.formula}
+      explanation={tool.howItWorks.formulaExplanation}
+      source={tool.howItWorks.academicSource}
+      lang={lang}
+    />
+
+    <!-- 9. PRACTICAL EXAMPLES -->
+    <PracticalExamples examples={tool.examples} lang={lang} />
+
+    <!-- 10. AD PLACEMENT #2 -->
+    <AdPlacement position="mid-content" />
+
+    <!-- 11. FAQ -->
+    <FAQ faqs={tool.faqs} lang={lang} />
+
+    <!-- 12. RELATED TOOLS -->
+    <RelatedTools tools={tool.relatedTools} lang={lang} />
+
+    <!-- 13. LAST UPDATED -->
+    <p class="text-sm text-gray-400 mt-8">
+      {t('content.lastUpdated', lang)}: {tool.lastUpdated}
+    </p>
+  </div>
+</BaseLayout>

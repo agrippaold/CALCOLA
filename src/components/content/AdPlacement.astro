@@ -1,0 +1,10 @@
+---
+interface Props {
+  position: string;
+}
+
+const { position } = Astro.props;
+---
+
+<!-- Ad placement: {position} — placeholder for AdSense/Mediavine -->
+<div class="my-4" data-ad-slot={position}></div>

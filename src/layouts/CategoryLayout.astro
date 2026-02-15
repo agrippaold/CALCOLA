@@ -1,0 +1,31 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/layout/Breadcrumb.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  lang: string;
+}
+
+const { title, description, category, lang } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} lang={lang}>
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <nav class="text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-1">
+        <li><a href={`/${lang}/`} class="hover:text-blue-600">CalcHub</a></li>
+        <li class="before:content-['/'] before:mx-1">{title}</li>
+      </ol>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">{title}</h1>
+    <p class="text-lg text-gray-600 mb-8">{description}</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
