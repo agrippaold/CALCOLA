@@ -11,8 +11,8 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 0.3
-**Prossimo step da eseguire:** STEP 0.4
+**Ultimo step completato:** STEP 0.4
+**Prossimo step da eseguire:** STEP 0.5
 **Branch attivo:** claude/start-step-0.1-OD4hw
 **Build status:** OK (npm run build passa senza errori)
 
@@ -69,7 +69,7 @@ Completato: 2026-02-15
 File creati/modificati: src/i18n/locales.ts, src/i18n/defaults.ts, src/i18n/ui.ts, src/i18n/utils.ts
 Note: 25 locali configurati con ISO codes, nomi nativi, tier, direzione testo. Defaults per valuta/unità/formato numeri. UI strings EN+IT. Helper: getLang(), t(), getLocalePath(), formatNumber(), formatCurrency(). Build OK.
 
-## STEP 0.4 — Content Collection Schema ⬜
+## STEP 0.4 — Content Collection Schema ✅
 ```
 Azioni:
 1. Creare src/content/config.ts con schema Zod (GUIDA sezione 1.5)
@@ -79,9 +79,9 @@ Azioni:
 Verifica: npm run build — Content Collection validata senza errori
 Commit: [STEP 0.4] Define Content Collection schema with Zod validation
 ```
-Completato:
-File creati/modificati:
-Note:
+Completato: 2026-02-15
+File creati/modificati: src/content.config.ts, src/content/tools/en/bmi-calculator.yaml
+Note: Schema Zod con validazione stringhe min/max, array min/max. Usato content.config.ts (Astro 5 naming) con glob loader per YAML. BMI calculator YAML validato senza errori. Build OK.
 
 ## STEP 0.5 — Layout e Componenti Base ⬜
 ```
@@ -646,4 +646,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 
 | Sessione | Data | Step completati | Note |
 |----------|------|-----------------|------|
-| 1 | 2026-02-15 | STEP 0.1, 0.2, 0.3 | Inizializzazione progetto Astro + struttura directory + sistema i18n |
+| 1 | 2026-02-15 | STEP 0.1, 0.2, 0.3, 0.4 | Setup Astro + struttura + i18n + Content Collection schema |
