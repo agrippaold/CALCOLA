@@ -1,0 +1,79 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Loan Calculator - Monthly Payment & Interest | CalcHub"
+metaDescription: "Calculate your monthly loan payment, total interest cost, and payoff timeline. Compare different rates and terms to find the best loan for your needs."
+h1: "Loan Calculator"
+slug: "loan-calculator"
+
+primaryKeyword: "loan calculator"
+secondaryKeywords:
+  - "personal loan calculator"
+  - "loan payment calculator"
+  - "loan interest calculator"
+  - "loan amortization calculator"
+
+intro: "Whether you are financing a car, consolidating debt, or covering an unexpected expense, understanding the true cost of a loan before you borrow is essential. This calculator shows your monthly payment along with the total interest you will pay over the life of the loan. Compare different interest rates and terms to find the combination that fits your budget while minimizing what you pay in interest charges."
+
+howItWorks:
+  title: "How Loan Payments Are Calculated"
+  content: "Personal loans, auto loans, and most installment loans use the same fixed-rate amortization formula as mortgages. The lender calculates a monthly payment that, when paid consistently over the loan term, pays off both the principal and all accumulated interest by the final payment. Each payment is split between interest charges on the remaining balance and principal reduction. Early payments are interest-heavy because the outstanding balance is largest. As you pay down the principal, less interest accrues each month, and a larger portion of each payment goes toward the balance. This is why the last few payments are almost entirely principal. The interest rate has an outsized effect on total loan cost. On a $20,000 personal loan for 5 years, a 6% rate produces a $386.66 monthly payment and $3,199.36 in total interest. At 12%, the payment jumps to $444.89 with $6,693.40 in total interest. That 6-point rate difference costs an extra $3,494 over five years. Loan term length creates the classic tradeoff: shorter terms mean higher monthly payments but less total interest, while longer terms reduce monthly payments but increase the overall cost. A $15,000 loan at 8% costs $6,638.28 in interest over 7 years but only $2,499.90 over 3 years. The 3-year option costs $152 more per month but saves over $4,100 in interest. Credit unions and online lenders often offer lower rates than traditional banks for personal loans, and comparing multiple offers before committing can save hundreds or thousands of dollars."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = monthly payment, P = loan principal, r = monthly interest rate (annual rate / 12 / 100), n = total number of payments (years × 12)"
+  academicSource: "Consumer Financial Protection Bureau. (2024). What is amortization and how could it affect my auto loan?"
+
+faqs:
+  - question: "How do I get the lowest interest rate on a personal loan?"
+    answer: "The biggest factors in loan pricing are your credit score, debt-to-income ratio, and the lender you choose. Borrowers with credit scores above 740 typically qualify for the best rates. Before applying, check your credit reports for errors, pay down existing balances to lower your utilization ratio, and avoid opening new credit accounts. Compare offers from at least three to five lenders including banks, credit unions, and online lenders. Rate shopping within a 14-day window counts as a single inquiry on your credit report."
+  - question: "Is it better to choose a shorter or longer loan term?"
+    answer: "Shorter terms save money overall but require higher monthly payments. A useful guideline: choose the shortest term where the monthly payment does not exceed 15% of your take-home pay for consumer debt. If a 3-year term makes payments uncomfortably tight, a 5-year term at a slightly higher total cost may be the more practical choice. Avoid stretching terms beyond what is necessary just to lower payments, as this significantly increases total interest."
+  - question: "Should I pay off my loan early?"
+    answer: "Paying off loans early saves interest and frees up cash flow. Before doing so, check whether your loan has a prepayment penalty (common with some auto loans and personal loans). If there is no penalty, any extra payment typically goes directly toward principal reduction. Even adding $50 per month to a $20,000 loan at 8% over 5 years saves approximately $900 in interest and pays the loan off about 7 months early."
+  - question: "What is the difference between APR and interest rate?"
+    answer: "The interest rate is the base cost of borrowing, while the Annual Percentage Rate (APR) includes the interest rate plus fees like origination charges spread over the loan term. A loan with a 7% interest rate and a 2% origination fee on $10,000 effectively has an APR higher than 7%. Federal law requires lenders to disclose APR so borrowers can make accurate comparisons. Always compare APR rather than interest rate when evaluating loan offers from different lenders."
+  - question: "How does a loan affect my credit score?"
+    answer: "Taking out a new loan initially causes a small dip in your credit score due to the hard inquiry and new account. However, making consistent on-time payments builds positive payment history, which is the largest factor in credit scoring models. Over time, successfully managing an installment loan improves your credit mix and demonstrates responsible borrowing behavior. Missing payments, on the other hand, can significantly damage your score for up to seven years."
+  - question: "What loan amount can I realistically afford?"
+    answer: "Financial advisors generally recommend keeping total debt payments (including the new loan) below 36% of your gross monthly income. If you earn $5,000 per month and already pay $800 toward existing debt, your remaining capacity is about $1,000 per month for new loan payments. Use this calculator to find the maximum loan amount that keeps your monthly payment within this range at current interest rates."
+
+examples:
+  - title: "Auto loan"
+    scenario: "Financing a $25,000 car at 5.9% for 5 years"
+    inputs:
+      loanAmount: 25000
+      interestRate: 5.9
+      loanTerm: 5
+    expectedResult: "Monthly payment: $482.82 | Total interest: $3,969.38"
+    explanation: "The total cost of the car becomes $28,969 including interest. Making a larger down payment to reduce the loan amount or finding a rate below 5% could save several hundred dollars over the loan term."
+  - title: "Debt consolidation loan"
+    scenario: "Consolidating $15,000 in credit card debt at 9% over 4 years"
+    inputs:
+      loanAmount: 15000
+      interestRate: 9
+      loanTerm: 4
+    expectedResult: "Monthly payment: $373.28 | Total interest: $2,917.23"
+    explanation: "If the original credit cards charged 22% APR, this consolidation saves significant interest. The fixed monthly payment also provides predictable budgeting compared to variable minimum payments on revolving credit."
+  - title: "Short-term personal loan"
+    scenario: "Borrowing $5,000 at 7.5% for 2 years"
+    inputs:
+      loanAmount: 5000
+      interestRate: 7.5
+      loanTerm: 2
+    expectedResult: "Monthly payment: $225.15 | Total interest: $403.63"
+    explanation: "A shorter loan term keeps total interest under $404 on this modest loan. The $225 monthly payment is manageable for most budgets and the loan is fully paid off in 24 months."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
