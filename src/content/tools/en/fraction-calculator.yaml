@@ -1,0 +1,82 @@
+id: "fraction-calculator"
+category: "math"
+calculatorComponent: "FractionCalculator"
+lang: "en"
+
+title: "Fraction Calculator - Add, Subtract, Multiply | CalcHub"
+metaDescription: "Free fraction calculator to add, subtract, multiply, and divide fractions. Simplify results automatically and convert between fractions and decimals."
+h1: "Fraction Calculator"
+slug: "fraction-calculator"
+
+primaryKeyword: "fraction calculator"
+secondaryKeywords:
+  - "add fractions calculator"
+  - "simplify fractions"
+  - "fraction to decimal converter"
+  - "mixed number calculator"
+
+intro: "Working with fractions by hand means finding common denominators, cross-multiplying, and reducing results - steps that are easy to mess up, especially with large or awkward numbers. This fraction calculator handles addition, subtraction, multiplication, and division of fractions and mixed numbers. Enter your two fractions, pick an operation, and the tool returns the answer in its simplest form. It also shows the decimal equivalent and the step-by-step process so you can follow along or double-check homework."
+
+howItWorks:
+  title: "How Fraction Arithmetic Works"
+  content: "A fraction represents a part of a whole, written as a numerator over a denominator. The numerator tells you how many parts you have, and the denominator tells you how many equal parts make up the whole. When adding or subtracting fractions, the denominators must match. If they already do, just add or subtract the numerators and keep the denominator. For example, 3/8 + 2/8 = 5/8. When the denominators differ, you need a common denominator. The most efficient choice is the least common denominator (LCD), which is the least common multiple (LCM) of the two denominators. For 1/4 + 2/3, the LCD of 4 and 3 is 12. Rewrite each fraction: 1/4 becomes 3/12, and 2/3 becomes 8/12. Now add: 3/12 + 8/12 = 11/12. Subtraction follows the same pattern. Multiplication is more straightforward: multiply the numerators together and the denominators together. So 2/5 x 3/7 = 6/35. No common denominator needed. Division flips the second fraction and then multiplies. Dividing 2/5 by 3/7 means computing 2/5 x 7/3 = 14/15. This flip-and-multiply rule works because dividing by a fraction is the same as multiplying by its reciprocal. After any operation, simplify the result by finding the greatest common divisor (GCD) of the numerator and denominator and dividing both by it. If you get 8/12, the GCD of 8 and 12 is 4, so the simplified form is 2/3. For mixed numbers like 2 1/3, first convert to an improper fraction: 2 x 3 + 1 = 7, so 2 1/3 = 7/3. Perform the operation, then convert back if desired by dividing the numerator by the denominator. The quotient is the whole number, and the remainder over the denominator is the fractional part. Converting fractions to decimals is simple division: 3/8 = 3 divided by 8 = 0.375. Some fractions produce repeating decimals, like 1/3 = 0.3333... Going from decimal to fraction, count the decimal places: 0.75 has two decimal places, so write 75/100 and simplify to 3/4."
+  formula: "a/b + c/d = (a*d + b*c) / (b*d)"
+  formulaExplanation: "Subtraction: a/b - c/d = (a*d - b*c) / (b*d). Multiplication: a/b x c/d = (a*c) / (b*d). Division: a/b / c/d = (a*d) / (b*c). All results should be simplified by dividing numerator and denominator by their GCD."
+  academicSource: "Wu, H. (2011). Understanding Numbers in Elementary School Mathematics. American Mathematical Society."
+
+faqs:
+  - question: "How do I add fractions with different denominators?"
+    answer: "Find the least common denominator (LCD) of both fractions, then rewrite each fraction with that denominator. For 1/6 + 3/4, the LCD of 6 and 4 is 12. Rewrite: 1/6 = 2/12 and 3/4 = 9/12. Add the numerators: 2 + 9 = 11, keeping the denominator 12. The answer is 11/12. You can always use the product of the two denominators as a common denominator (6 x 4 = 24), but the LCD keeps numbers smaller and reduces extra simplification at the end."
+  - question: "How do I simplify a fraction?"
+    answer: "Find the greatest common divisor (GCD) of the numerator and denominator, then divide both by it. For 18/24, the GCD of 18 and 24 is 6. Divide: 18/6 = 3 and 24/6 = 4, so the simplified fraction is 3/4. If you are not sure of the GCD, list the factors of each number. Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. The largest number in both lists is 6."
+  - question: "How do I convert a mixed number to an improper fraction?"
+    answer: "Multiply the whole number by the denominator, add the numerator, and place the result over the original denominator. For 3 2/5: multiply 3 x 5 = 15, add 2 = 17, so the improper fraction is 17/5. To go back, divide 17 by 5. The quotient is 3 with a remainder of 2, giving you 3 2/5 again. This conversion is the first step whenever you need to do arithmetic with mixed numbers."
+  - question: "Why do I flip the second fraction when dividing?"
+    answer: "Dividing by a fraction is the same as multiplying by its reciprocal (the flipped version). Think of it this way: 6 divided by 2 asks how many groups of 2 fit into 6. Similarly, 3/4 divided by 1/2 asks how many halves fit into three-quarters. Flipping and multiplying gives 3/4 x 2/1 = 6/4 = 3/2 = 1.5, meaning one and a half halves fit into three-quarters. The reciprocal method is a shortcut that always works."
+  - question: "How do I convert a fraction to a decimal?"
+    answer: "Divide the numerator by the denominator. For 7/8, compute 7 divided by 8 = 0.875. Some fractions produce terminating decimals (like 7/8), while others produce repeating decimals (like 1/3 = 0.333...). A fraction in lowest terms gives a terminating decimal only when the denominator's prime factors are limited to 2 and 5. Since 8 = 2 x 2 x 2, 7/8 terminates. Since 3 is neither 2 nor 5, 1/3 repeats."
+  - question: "Can this calculator handle negative fractions?"
+    answer: "Yes. A negative sign can sit in front of the fraction, on the numerator, or on the denominator - all three notations mean the same thing. For example, -3/4, (-3)/4, and 3/(-4) all equal -0.75. When multiplying or dividing, the standard sign rules apply: a negative times a negative gives a positive, and a negative times a positive gives a negative. The calculator displays the negative sign in front of the fraction for clarity."
+
+examples:
+  - title: "Adding fractions with unlike denominators"
+    scenario: "Calculate 2/3 + 3/5"
+    inputs:
+      numerator1: 2
+      denominator1: 3
+      operation: "add"
+      numerator2: 3
+      denominator2: 5
+    expectedResult: "19/15 = 1 4/15 (decimal: 1.2667)"
+    explanation: "The LCD of 3 and 5 is 15. Rewrite: 2/3 = 10/15, 3/5 = 9/15. Add: 10 + 9 = 19 over 15. As a mixed number, 19/15 = 1 4/15."
+  - title: "Dividing mixed numbers"
+    scenario: "Calculate 2 1/2 divided by 1 1/4"
+    inputs:
+      numerator1: 5
+      denominator1: 2
+      operation: "divide"
+      numerator2: 5
+      denominator2: 4
+    expectedResult: "2/1 = 2 (decimal: 2.0)"
+    explanation: "Convert to improper fractions: 2 1/2 = 5/2, 1 1/4 = 5/4. Flip and multiply: 5/2 x 4/5 = 20/10 = 2. Two and a half contains exactly two groups of one and a quarter."
+
+relatedTools:
+  - "percentage-calculator"
+  - "percent-change-calculator"
+  - "scientific-calculator"
+
+defaults:
+  unit: "number"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+  defaultValues:
+    numerator1: 1
+    denominator1: 2
+    numerator2: 1
+    denominator2: 3
+
+lastUpdated: "2026-02-15"
+author: "Prof. Luca Bernardi"
+reviewer: "Elena Rossi"
+priority: "high"

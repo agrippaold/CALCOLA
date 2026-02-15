@@ -1,0 +1,72 @@
+id: "weight-converter"
+category: "conversions"
+calculatorComponent: "WeightConverter"
+
+title: "Weight Converter - mg, g, kg, oz, lb, stone | CalcHub"
+metaDescription: "Convert between weight units including milligrams, grams, kilograms, ounces, pounds, stone, and metric tons. Free weight converter with precise calculations."
+h1: "Weight Converter"
+slug: "weight-converter"
+
+primaryKeyword: "weight converter"
+secondaryKeywords:
+  - "kg to lbs"
+  - "pounds to kilograms"
+  - "ounces to grams"
+  - "weight conversion calculator"
+
+intro: "Weight conversion comes up constantly, from reading nutrition labels to shipping packages internationally to tracking your own body weight across different scales. The metric system uses grams and kilograms, the US sticks with ounces and pounds, and the UK often mixes in stone for body weight. Add milligrams for supplements and medication dosages, and metric tons for industrial and shipping contexts, and you have a set of units that people regularly need to translate between. This converter handles milligrams, grams, kilograms, ounces, pounds, stone, and metric tons, giving you fast and accurate results."
+
+howItWorks:
+  title: "How Weight Conversion Works"
+  content: "Technically, what most people call weight is actually mass. Weight is the force of gravity acting on a mass and varies depending on where you are (you weigh less on the Moon), while mass stays constant. In everyday language and for conversion purposes, the distinction does not matter since we are all on Earth's surface where the gravitational field is effectively uniform. The metric system organizes mass in powers of ten: one gram equals 1,000 milligrams, one kilogram equals 1,000 grams, and one metric ton (also called tonne) equals 1,000 kilograms. The kilogram was originally defined in 1799 as the mass of one liter of water at 4 degrees Celsius, the temperature at which water is densest. Since 2019, the kilogram has been redefined based on the Planck constant, a fixed value in quantum physics, ending the era of the physical platinum-iridium prototype stored in Paris. The avoirdupois system, used in the US and UK for everyday weighing, divides a pound into 16 ounces. One pound is defined internationally as exactly 0.45359237 kilograms, making one ounce equal to 28.3495 grams. These are exact values established by the 1959 international yard and pound agreement, the same treaty that fixed the inch at 25.4 mm. Stone is a unit still commonly used in the UK and Ireland for body weight, where one stone equals exactly 14 pounds or about 6.35 kilograms. It is rare in the US but widely understood in British culture. To convert between systems, you multiply by the appropriate factor. Kilograms to pounds: multiply by 2.20462. Pounds to kilograms: multiply by 0.45359 (or divide by 2.20462). Grams to ounces: divide by 28.3495. A handy mental shortcut for kg to lbs: double the kilograms and add 10% of the result. For example, 70 kg doubled is 140, plus 10% (14) gives 154 lbs, very close to the exact answer of 154.32 lbs. For metric tons to pounds, multiply by 2,204.62. This matters in international freight and commodity trading, where goods may be quoted per metric ton in one market and per pound in another. In pharmaceutical and nutritional contexts, milligrams are the standard unit. Vitamin and mineral content on food labels is stated in milligrams or micrograms (one microgram equals 0.001 milligrams). Drug dosages are almost always in milligrams, making accurate conversion between milligrams and other units a matter of safety."
+  formula: "1 lb = 0.45359237 kg (exact) | 1 oz = 28.3495 g | 1 kg = 1,000 g = 1,000,000 mg | 1 stone = 14 lb = 6.35029 kg | 1 metric ton = 1,000 kg"
+  formulaExplanation: "All conversions pass through grams as the base unit. The source value is converted to grams first, then from grams to the target unit using the exact or standard conversion factor."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "How many pounds are in a kilogram?"
+    answer: "One kilogram equals approximately 2.20462 pounds. Going the other direction, one pound equals exactly 0.45359237 kilograms by international definition. For quick mental math, double the kilograms and add 10% to get a good estimate in pounds. So 80 kg doubled is 160, plus 10% (16) gives 176 lbs, compared to the exact value of 176.37 lbs. This shortcut works well across the range of common body weights and package sizes."
+  - question: "What is stone and who uses it?"
+    answer: "One stone equals 14 pounds or about 6.35 kilograms. The stone is primarily used in the United Kingdom and Ireland for expressing body weight. If someone in London says they weigh 12 stone, that means 168 pounds or about 76.2 kilograms. The unit dates back to medieval trade where actual stones were used as counterweights. While the US and most other countries do not use stone, you will encounter it frequently in British media, health services, and casual conversation."
+  - question: "What is the difference between a metric ton and a US ton?"
+    answer: "A metric ton (tonne) equals exactly 1,000 kilograms or about 2,204.62 pounds. A US ton (short ton) equals exactly 2,000 pounds or about 907.185 kilograms. There is also the imperial ton (long ton), used historically in the UK, which equals 2,240 pounds or about 1,016.05 kilograms. The metric ton is the international standard for trade and shipping. When a document simply says 'ton' without qualification, you need to determine which type is meant based on the country and context."
+  - question: "How do I convert ounces to grams for cooking?"
+    answer: "Multiply the number of ounces by 28.3495 to get grams. For quick estimates in the kitchen, rounding to 28 grams per ounce is close enough for most recipes. Common reference points: 4 ounces equals about 113 grams, 8 ounces (half a pound) equals about 227 grams, and 16 ounces (one pound) equals about 454 grams. If you are following a recipe from a European cookbook that lists ingredients in grams, a kitchen scale with a gram readout is more accurate than converting and using volume measures."
+  - question: "Why are medication dosages given in milligrams rather than grams?"
+    answer: "Medications are dosed in milligrams because the active ingredient amounts are typically very small. A common ibuprofen tablet contains 200 milligrams, which is only 0.2 grams. Expressing this as grams would require decimal points that are easy to misread, potentially causing dangerous dosing errors. Using milligrams keeps the numbers whole and readable. For extremely potent drugs, dosages go even smaller, into micrograms (one microgram equals 0.001 milligrams). The convention of using the smallest practical unit reduces the risk of misplaced decimal points in prescriptions and pharmacy work."
+  - question: "How accurate does my weight conversion need to be?"
+    answer: "It depends on the application. For body weight tracking, rounding to the nearest pound or half-kilogram is perfectly adequate since your weight naturally fluctuates by 1 to 2 kilograms throughout a single day due to food, water, and activity. For cooking, being within 5 grams is usually fine. For shipping and commerce, accuracy to the nearest gram or ounce matters because freight charges and regulatory limits are based on weight. For pharmaceuticals and chemistry, precision to the milligram or better is required. Match your conversion precision to the context and avoid false precision where the measurement itself is less accurate than the conversion math."
+
+examples:
+  - title: "Body weight - kilograms to pounds"
+    scenario: "Convert a body weight of 75 kilograms to pounds"
+    inputs:
+      value: 75
+      from: "kg"
+      to: "lb"
+    expectedResult: "75 kg = 165.35 lbs"
+    explanation: "One kilogram equals approximately 2.2046 pounds. Multiply 75 by 2.2046 to get 165.35 pounds. This conversion is frequently used in fitness and medical contexts."
+  - title: "Shipping package - pounds to kilograms"
+    scenario: "Convert a 22-pound shipping package to kilograms for international shipping"
+    inputs:
+      value: 22
+      from: "lb"
+      to: "kg"
+    expectedResult: "22 lbs = 9.98 kg"
+    explanation: "One pound equals approximately 0.4536 kilograms. A 22-pound package weighs about 9.98 kg. International shipping rates are typically calculated in kilograms."
+
+relatedTools:
+  - "temperature-converter"
+  - "volume-converter"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "Prof. Luca Bernardi"
+reviewer: "Elena Rossi"
+priority: "high"

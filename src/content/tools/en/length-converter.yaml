@@ -1,0 +1,72 @@
+id: "length-converter"
+category: "conversions"
+calculatorComponent: "LengthConverter"
+
+title: "Length Converter - mm, cm, m, km, in, ft, mi | CalcHub"
+metaDescription: "Convert between length units like millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles. Free length converter with accurate results."
+h1: "Length Converter"
+slug: "length-converter"
+
+primaryKeyword: "length converter"
+secondaryKeywords:
+  - "meters to feet"
+  - "km to miles"
+  - "inches to cm"
+  - "length conversion calculator"
+
+intro: "Length is probably the most frequently converted measurement type, whether you are buying furniture from an overseas retailer, reading a European road sign, or checking your height against a medical chart that uses different units. The metric system and the imperial system coexist in manufacturing, construction, science, and everyday life across much of the world. This converter supports the most commonly needed length units: millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles, giving you instant and accurate results in both directions."
+
+howItWorks:
+  title: "How Length Conversion Works"
+  content: "Length conversion relies on fixed, well-defined ratios between units. Within the metric system, conversions are always powers of ten: one meter equals 100 centimeters or 1,000 millimeters, and one kilometer equals 1,000 meters. This decimal structure was a deliberate design choice when the French Academy of Sciences created the metric system in the 1790s. The original definition of the meter was one ten-millionth of the distance from the North Pole to the equator along a meridian through Paris. Today, the meter is defined with absolute precision as the distance light travels in a vacuum in 1/299,792,458 of a second, a definition adopted in 1983 that ties length to a fundamental constant of physics. The imperial and US customary systems trace back to English units accumulated over centuries. In 1959, the international yard and pound agreement standardized the inch at exactly 25.4 millimeters, making the foot exactly 304.8 millimeters and the yard exactly 914.4 millimeters. This agreement, signed by the US, UK, Canada, Australia, New Zealand, and South Africa, means that metric-to-imperial conversions are based on exact, not approximate, numbers. One mile equals 5,280 feet, a number inherited from the Roman mille passus (a thousand double paces of about 5 feet each), adjusted over time by English statute. In metric terms, one mile equals exactly 1,609.344 meters, or approximately 1.609 kilometers. To convert between systems, you multiply or divide by the appropriate factor. For instance, to convert inches to centimeters, multiply by 2.54. To go from centimeters to inches, divide by 2.54 (or equivalently multiply by 0.3937). For kilometers to miles, divide by 1.609344. A handy mental shortcut for km to miles: multiply the kilometers by 0.6, which gives results accurate to within about 0.6%. Going the other direction, multiplying miles by 1.6 provides a good estimate of kilometers. For very small measurements, millimeters provide the precision needed in engineering and machining. One millimeter is roughly the thickness of a credit card. For very large distances, kilometers or miles are more practical - the circumference of the Earth at the equator is approximately 40,075 km or 24,901 miles."
+  formula: "1 in = 25.4 mm (exact) | 1 ft = 0.3048 m (exact) | 1 yd = 0.9144 m (exact) | 1 mi = 1.609344 km (exact) | 1 m = 100 cm = 1,000 mm | 1 km = 1,000 m"
+  formulaExplanation: "All conversions pass through meters as the base unit. The source value is first converted to meters using the exact factor, then from meters to the target unit."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "How many centimeters are in an inch?"
+    answer: "One inch equals exactly 2.54 centimeters. This is not an approximation but an exact definition established by the international yard and pound agreement of 1959. Before that agreement, the US and British inches differed by a tiny amount. The exact ratio makes conversion straightforward: multiply inches by 2.54 to get centimeters, or divide centimeters by 2.54 to get inches. For a quick mental estimate, one inch is slightly more than 2.5 cm."
+  - question: "What is the easiest way to convert kilometers to miles in my head?"
+    answer: "The quickest mental trick is to multiply kilometers by 0.6. For example, 100 km becomes about 60 miles (the exact answer is 62.14 miles). Another method uses the Fibonacci sequence: consecutive Fibonacci numbers approximate the km-to-miles ratio because the golden ratio (1.618) is close to the km/mile factor (1.609). So if you know 8 km, the previous Fibonacci number is 5, meaning about 5 miles. This works for 5 and 3, 13 and 8, 21 and 13, and so on."
+  - question: "Why does the US still use inches, feet, and miles instead of metric?"
+    answer: "The US adopted the metric system as a legal standard in 1866, and it has been the preferred system for federal agencies since 1975. However, switching everyday usage requires changing road signs, tools, building codes, consumer packaging, and public habits, all at significant cost and effort. Industries like automotive manufacturing and pharmaceuticals have largely moved to metric, but construction, real estate, and consumer culture still run on feet, inches, and miles. The lack of a mandatory conversion law means change happens slowly and sector by sector."
+  - question: "How do I convert height from feet and inches to centimeters?"
+    answer: "First, convert everything to inches by multiplying the feet by 12 and adding the remaining inches. Then multiply the total inches by 2.54 to get centimeters. For example, a person who is 5 feet 10 inches tall has a total of 70 inches (5 times 12 plus 10). Multiply 70 by 2.54 to get 177.8 cm. Going the other direction, divide centimeters by 2.54 to get total inches, then divide by 12 for feet and use the remainder as inches."
+  - question: "What is the difference between a nautical mile and a regular mile?"
+    answer: "A regular (statute) mile is 5,280 feet or 1,609.344 meters. A nautical mile is 1,852 meters, making it about 15% longer. The nautical mile was originally defined as one minute of arc of latitude along any meridian, which made it naturally useful for navigation because distances on charts could be read directly from the latitude scale. Aviation and maritime industries worldwide use nautical miles and knots (nautical miles per hour) as their standard units of distance and speed."
+  - question: "Is a yard exactly the same as a meter?"
+    answer: "No, but they are close. One yard equals exactly 0.9144 meters, making it about 8.6% shorter than a meter. One meter equals approximately 1.0936 yards. For casual estimates, treating a yard and a meter as roughly the same works in situations where high precision is not needed, like estimating the size of a room. For construction, engineering, or manufacturing, however, the difference adds up quickly over larger measurements and the exact conversion factor should always be used."
+
+examples:
+  - title: "Height conversion - feet and inches to centimeters"
+    scenario: "Convert a person's height of 6 feet (72 inches) to centimeters"
+    inputs:
+      value: 72
+      from: "in"
+      to: "cm"
+    expectedResult: "72 inches = 182.88 cm"
+    explanation: "One inch equals 2.54 centimeters. Multiply 72 by 2.54 to get 182.88 cm. This is a common conversion for comparing heights between US and metric measurements."
+  - title: "Road distance - miles to kilometers"
+    scenario: "Convert a marathon distance of 26.2 miles to kilometers"
+    inputs:
+      value: 26.2
+      from: "mi"
+      to: "km"
+    expectedResult: "26.2 miles = 42.16 km"
+    explanation: "One mile equals approximately 1.609 kilometers. The standard marathon distance of 26.2 miles converts to 42.16 km, which is why the metric marathon distance is officially 42.195 kilometers."
+
+relatedTools:
+  - "temperature-converter"
+  - "volume-converter"
+  - "weight-converter"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "Prof. Luca Bernardi"
+reviewer: "Elena Rossi"
+priority: "high"

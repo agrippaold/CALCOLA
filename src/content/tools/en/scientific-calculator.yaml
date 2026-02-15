@@ -1,0 +1,76 @@
+id: "scientific-calculator"
+category: "math"
+calculatorComponent: "ScientificCalculator"
+lang: "en"
+
+title: "Scientific Calculator - Trig, Logs, Powers | CalcHub"
+metaDescription: "Free online scientific calculator with trigonometry, logarithms, exponents, roots, factorials, permutations, and combinations. Fast and accurate results."
+h1: "Scientific Calculator"
+slug: "scientific-calculator"
+
+primaryKeyword: "scientific calculator"
+secondaryKeywords:
+  - "online scientific calculator"
+  - "trig calculator"
+  - "logarithm calculator"
+  - "factorial calculator"
+
+intro: "A scientific calculator goes well beyond basic arithmetic, giving you access to trigonometric functions, logarithms, exponents, roots, factorials, and combinatorics. Students working through algebra, physics, or statistics homework reach for one constantly, and professionals in engineering or data analysis rely on the same functions. This online version puts all of those capabilities in your browser with no app to install. Enter an expression or select a function, plug in your values, and the result appears instantly along with the steps taken to get there."
+
+howItWorks:
+  title: "How the Scientific Calculator Functions Work"
+  content: "This calculator covers several families of mathematical operations. Trigonometric functions - sine, cosine, and tangent - relate the angles of a right triangle to the ratios of its sides. For an angle theta, sin(theta) = opposite/hypotenuse, cos(theta) = adjacent/hypotenuse, and tan(theta) = opposite/adjacent. These functions accept input in either degrees or radians. To convert between the two: radians = degrees x (pi/180). So 90 degrees = pi/2 radians, and sin(90 degrees) = sin(pi/2) = 1. Inverse trig functions (arcsin, arccos, arctan) do the reverse, taking a ratio and returning the angle. Powers and roots generalize multiplication. The expression x^n means x multiplied by itself n times. The square root of x is x^(1/2), and the nth root of x is x^(1/n). For example, the cube root of 27 is 27^(1/3) = 3 because 3 x 3 x 3 = 27. Logarithms answer the question: to what power must the base be raised to get a given number? log base 10 of 1000 equals 3 because 10^3 = 1000. The natural logarithm (ln) uses base e (approximately 2.71828). ln(e) = 1, and ln(1) = 0. Logarithms are useful for handling very large or very small numbers and show up frequently in science, decibel scales, pH chemistry, and information theory. Factorials count arrangements. n! (n factorial) is the product of all positive integers up to n. So 5! = 5 x 4 x 3 x 2 x 1 = 120. By convention, 0! = 1. Factorials grow extremely fast: 10! = 3,628,800 and 20! is over 2.4 quintillion. Permutations count ordered arrangements of r items chosen from n: P(n,r) = n! / (n-r)!. If you want to know how many ways to arrange 3 books out of 10 on a shelf, P(10,3) = 10! / 7! = 720. Combinations count unordered selections: C(n,r) = n! / (r!(n-r)!). Choosing a 3-person committee from 10 candidates gives C(10,3) = 120 since the order of selection does not matter. Combinations always produce a smaller number than permutations for the same n and r because they remove duplicate orderings. These functions together cover the majority of calculations encountered in high school and undergraduate math and science courses."
+  formula: "sin(theta), cos(theta), tan(theta), log_b(x), x^n, n!, P(n,r), C(n,r)"
+  formulaExplanation: "Trig: sin = opp/hyp, cos = adj/hyp, tan = opp/adj. Log: log_b(x) = y means b^y = x. Factorial: n! = 1 x 2 x ... x n. Permutation: P(n,r) = n!/(n-r)!. Combination: C(n,r) = n!/(r!(n-r)!)."
+  academicSource: "Stewart, J. (2015). Calculus: Early Transcendentals. Cengage Learning."
+
+faqs:
+  - question: "What is the difference between degrees and radians?"
+    answer: "Degrees and radians are two units for measuring angles. A full circle is 360 degrees or 2*pi radians (about 6.2832 radians). To convert degrees to radians, multiply by pi/180. To go the other way, multiply by 180/pi. Most math and physics textbooks default to radians because the formulas for derivatives and integrals of trig functions are cleaner in radians. For instance, the derivative of sin(x) is cos(x) only when x is in radians. Make sure you know which mode your calculator is set to before computing."
+  - question: "How do logarithms work and when do I use them?"
+    answer: "A logarithm answers: what exponent turns the base into a given number? log base 2 of 8 = 3 because 2^3 = 8. The common log (log base 10) is used in decibel scales and earthquake magnitudes. The natural log (ln, base e) appears throughout calculus, compound interest formulas, and growth/decay models. Logarithms also let you turn multiplication into addition and exponentiation into multiplication, which simplifies complex expressions. For example, log(a*b) = log(a) + log(b), and log(a^n) = n*log(a)."
+  - question: "What is the difference between permutations and combinations?"
+    answer: "Permutations count arrangements where order matters. Combinations count selections where order does not matter. Picking a president, vice president, and treasurer from 10 people is a permutation problem: P(10,3) = 720. Picking a 3-person committee from the same group is a combination problem: C(10,3) = 120. The combination count is always smaller because each group of 3 people can be arranged in 3! = 6 orders, and 720 / 6 = 120. Use permutations for rankings, passwords, and sequences. Use combinations for teams, hands of cards, and sample groups."
+  - question: "Why does 0 factorial equal 1?"
+    answer: "By convention and for mathematical consistency, 0! is defined as 1. One way to see why: the formula n! = n x (n-1)! gives us 1! = 1 x 0!, so 0! must equal 1 for the equation to hold. Another perspective: 0! counts the number of ways to arrange zero objects, and there is exactly one way to do that - do nothing. This definition also keeps the combination formula consistent. C(n,0) = n! / (0! x n!) = 1, which correctly states there is exactly one way to choose nothing from a set."
+  - question: "How do I calculate square roots and cube roots?"
+    answer: "A square root of x finds the number that, multiplied by itself, gives x. The square root of 49 is 7 because 7 x 7 = 49. A cube root of x finds the number that, multiplied by itself three times, gives x. The cube root of 64 is 4 because 4 x 4 x 4 = 64. In general, the nth root of x equals x raised to the power 1/n. So the 5th root of 32 is 32^(1/5) = 2. This calculator handles any root by entering the appropriate exponent."
+  - question: "Can the calculator handle expressions with multiple operations?"
+    answer: "Yes. You can type full expressions like 2^3 + log(100) - sin(45) and the calculator evaluates them following standard order of operations (parentheses, exponents, multiplication/division, addition/subtraction). Parentheses let you control the evaluation order. For example, (3+2)^2 = 25, but 3+2^2 = 7 because the exponent is evaluated before the addition. When in doubt, add parentheses to make your intention clear."
+
+examples:
+  - title: "Trigonometry - finding a side length"
+    scenario: "A ladder leans against a wall at 65 degrees. The ladder is 4 meters long. How high up the wall does it reach?"
+    inputs:
+      category: "trig"
+      value: 65
+      angleUnit: "degrees"
+    expectedResult: "sin(65) = 0.9063, height = 4 x 0.9063 = 3.6252 meters"
+    explanation: "The height is the side opposite the angle, so we use sine. sin(65 degrees) = 0.9063. Multiply by the ladder length: 4 x 0.9063 = 3.6252 meters."
+  - title: "Combinations - lottery odds"
+    scenario: "How many different 6-number combinations can be drawn from 49 numbers?"
+    inputs:
+      category: "combo"
+      n: 49
+      r: 6
+    expectedResult: "C(49,6) = 13,983,816 combinations"
+    explanation: "C(49,6) = 49! / (6! x 43!) = 13,983,816. This means the odds of matching all 6 numbers with a single ticket are about 1 in 14 million."
+
+relatedTools:
+  - "percentage-calculator"
+  - "fraction-calculator"
+  - "area-calculator"
+
+defaults:
+  unit: "number"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+  defaultValues:
+    angleMode: "degrees"
+    decimalPlaces: 4
+
+lastUpdated: "2026-02-15"
+author: "Prof. Luca Bernardi"
+reviewer: "Elena Rossi"
+priority: "high"

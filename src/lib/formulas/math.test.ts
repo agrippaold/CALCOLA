@@ -10,6 +10,19 @@ import {
   areaTriangle,
   areaTrapezoid,
   areaEllipse,
+  gcd,
+  lcm,
+  fractionSimplify,
+  fractionAdd,
+  fractionSubtract,
+  fractionMultiply,
+  fractionDivide,
+  fractionToDecimal,
+  decimalToFraction,
+  factorial,
+  logBase,
+  combination,
+  permutation,
 } from './math';
 
 describe('percentage', () => {
@@ -126,5 +139,152 @@ describe('areaEllipse', () => {
 
   it('returns 0 for invalid inputs', () => {
     expect(areaEllipse(0, 5)).toBe(0);
+  });
+});
+
+// ── Fraction tests ──
+
+describe('gcd', () => {
+  it('calculates GCD of 12 and 8', () => {
+    expect(gcd(12, 8)).toBe(4);
+  });
+
+  it('calculates GCD of coprime numbers', () => {
+    expect(gcd(7, 13)).toBe(1);
+  });
+
+  it('handles zero', () => {
+    expect(gcd(0, 5)).toBe(5);
+  });
+});
+
+describe('lcm', () => {
+  it('calculates LCM of 4 and 6', () => {
+    expect(lcm(4, 6)).toBe(12);
+  });
+
+  it('handles zero', () => {
+    expect(lcm(0, 5)).toBe(0);
+  });
+});
+
+describe('fractionSimplify', () => {
+  it('simplifies 4/8 to 1/2', () => {
+    const r = fractionSimplify(4, 8);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(2);
+  });
+
+  it('handles zero denominator', () => {
+    const r = fractionSimplify(3, 0);
+    expect(r.denominator).toBe(0);
+  });
+});
+
+describe('fractionAdd', () => {
+  it('adds 1/4 + 1/4 = 1/2', () => {
+    const r = fractionAdd(1, 4, 1, 4);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(2);
+  });
+
+  it('adds 1/3 + 1/6 = 1/2', () => {
+    const r = fractionAdd(1, 3, 1, 6);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(2);
+  });
+});
+
+describe('fractionSubtract', () => {
+  it('subtracts 3/4 - 1/4 = 1/2', () => {
+    const r = fractionSubtract(3, 4, 1, 4);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(2);
+  });
+});
+
+describe('fractionMultiply', () => {
+  it('multiplies 2/3 * 3/4 = 1/2', () => {
+    const r = fractionMultiply(2, 3, 3, 4);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(2);
+  });
+});
+
+describe('fractionDivide', () => {
+  it('divides 1/2 / 1/4 = 2/1', () => {
+    const r = fractionDivide(1, 2, 1, 4);
+    expect(r.numerator).toBe(2);
+    expect(r.denominator).toBe(1);
+  });
+});
+
+describe('fractionToDecimal', () => {
+  it('converts 1/4 to 0.25', () => {
+    expect(fractionToDecimal(1, 4)).toBe(0.25);
+  });
+});
+
+describe('decimalToFraction', () => {
+  it('converts 0.75 to 3/4', () => {
+    const r = decimalToFraction(0.75);
+    expect(r.numerator).toBe(3);
+    expect(r.denominator).toBe(4);
+  });
+
+  it('converts 0.333... approximately to 1/3', () => {
+    const r = decimalToFraction(1 / 3);
+    expect(r.numerator).toBe(1);
+    expect(r.denominator).toBe(3);
+  });
+});
+
+// ── Scientific calculator tests ──
+
+describe('factorial', () => {
+  it('computes 5! = 120', () => {
+    expect(factorial(5)).toBe(120);
+  });
+
+  it('computes 0! = 1', () => {
+    expect(factorial(0)).toBe(1);
+  });
+
+  it('returns 0 for negative', () => {
+    expect(factorial(-3)).toBe(0);
+  });
+});
+
+describe('logBase', () => {
+  it('log base 10 of 100 = 2', () => {
+    expect(logBase(100, 10)).toBeCloseTo(2, 5);
+  });
+
+  it('log base 2 of 8 = 3', () => {
+    expect(logBase(8, 2)).toBeCloseTo(3, 5);
+  });
+
+  it('returns NaN for invalid input', () => {
+    expect(logBase(-1, 10)).toBeNaN();
+  });
+});
+
+describe('combination', () => {
+  it('C(5,2) = 10', () => {
+    expect(combination(5, 2)).toBe(10);
+  });
+
+  it('C(10,3) = 120', () => {
+    expect(combination(10, 3)).toBe(120);
+  });
+});
+
+describe('permutation', () => {
+  it('P(5,2) = 20', () => {
+    expect(permutation(5, 2)).toBe(20);
+  });
+
+  it('P(10,3) = 720', () => {
+    expect(permutation(10, 3)).toBe(720);
   });
 });
