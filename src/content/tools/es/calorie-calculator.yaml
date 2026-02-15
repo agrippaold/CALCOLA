@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Calculadora de Calorías y Macronutrientes | CalcHub"
+metaDescription: "Calcula tus calorías diarias y el reparto de macronutrientes para perder peso, mantenerte o ganar masa muscular. Basado en la ecuación Mifflin-St Jeor."
+h1: "Calculadora de Calorías"
+slug: "calculadora-calorias"
+
+primaryKeyword: "calculadora de calorias"
+secondaryKeywords:
+  - "calorias diarias"
+  - "calcular macronutrientes"
+  - "cuantas calorias al dia"
+  - "necesidades caloricas"
+
+intro: "¿Cuántas calorías necesitas realmente cada día? La respuesta depende de tu cuerpo, de lo activo que seas y de lo que quieras conseguir. Esta calculadora combina la ecuación de Mifflin-St Jeor para la TMB con tu nivel de actividad y tu objetivo para darte un objetivo calórico diario junto con un reparto de macronutrientes que muestra los gramos de proteínas, carbohidratos y grasas. Sin adivinanzas, solo números personalizados que puedes usar para planificar tus comidas."
+
+howItWorks:
+  title: "Cómo se calculan las necesidades calóricas diarias"
+  content: "Esta calculadora funciona en tres pasos. Primero, calcula tu Tasa Metabólica Basal usando la ecuación de Mifflin-St Jeor, que necesita tu peso, altura, edad y sexo. Segundo, multiplica tu TMB por un factor de actividad para determinar tu Gasto Energético Diario Total (TDEE), que representa las calorías de mantenimiento. Tercero, ajusta según tu objetivo: la pérdida de peso resta 500 calorías al mantenimiento, la ganancia de peso suma 500 calorías, y el mantenimiento deja el número tal cual. El ajuste de 500 calorías viene del principio ampliamente citado del balance energético: aproximadamente 7.700 calorías equivalen a un kilogramo de grasa corporal. Crear un déficit diario de 500 calorías produce más o menos medio kilogramo de pérdida de grasa por semana. Esta relación es una aproximación que funciona bien a corto y medio plazo, aunque la adaptación metabólica significa que el ritmo real de pérdida puede ralentizarse a lo largo de meses de restricción calórica continuada. El reparto de macronutrientes usa una distribución equilibrada de 30% proteínas, 40% carbohidratos y 30% grasas. Las proteínas se fijan en el 30% porque la investigación muestra de forma consistente que una ingesta más alta de proteínas favorece la conservación muscular durante la restricción calórica y aumenta la sensación de saciedad. La conversión emplea 4 calorías por gramo para las proteínas, 4 para los carbohidratos y 9 para las grasas. Este reparto funciona bien para la mayoría de las personas que buscan una forma física general, aunque objetivos específicos pueden requerir ajustes. Los deportistas y quienes se centran en ganar músculo pueden beneficiarse de un 35-40% de proteínas. Los deportistas de resistencia suelen rendir mejor con un 50-55% de carbohidratos. Los enfoques bajos en carbohidratos normalmente desplazan la proporción hacia un mayor porcentaje de grasas manteniendo las proteínas constantes. Un principio importante: esta calculadora proporciona un punto de partida, no una prescripción exacta. Las variaciones metabólicas individuales, las imprecisiones en el seguimiento de alimentos y las fluctuaciones diarias de actividad significan que siempre serán necesarios ajustes en la práctica. Empieza con estos números, controla tu peso y tus niveles de energía durante 2-3 semanas y ajusta entre 100 y 200 calorías si los resultados no coinciden con lo esperado."
+  formula: "Calorías = TDEE ± 500 (según objetivo)"
+  formulaExplanation: "TDEE = TMB × multiplicador de actividad. Pérdida de peso: TDEE - 500. Mantenimiento: TDEE. Ganancia de peso: TDEE + 500. Límite mínimo de seguridad de 1.200 kcal."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Recomendaciones de macronutrientes: Dietary Guidelines for Americans 2020-2025, USDA."
+
+faqs:
+  - question: "¿Cuántas calorías debo comer para adelgazar?"
+    answer: "Para una pérdida de peso sostenible, come entre 300 y 500 calorías por debajo de tu TDEE (nivel de mantenimiento). Esto produce aproximadamente 0,25-0,5 kg de pérdida de grasa por semana. Para la mayoría de las mujeres, esto significa entre 1.400 y 1.800 calorías al día; para la mayoría de los hombres, entre 1.800 y 2.200 calorías al día, aunque las necesidades individuales varían según el tamaño y la actividad. Evita bajar de 1.200 calorías al día sin supervisión médica, ya que las dietas muy bajas en calorías aumentan el riesgo de carencias nutricionales, pérdida de músculo y ralentización metabólica."
+  - question: "¿Necesito contar calorías para perder peso?"
+    answer: "Contar calorías no es estrictamente necesario, pero proporciona el control más preciso sobre tu balance energético. Otros enfoques incluyen métodos de control de porciones (usando la mano como guía de medida), principios de alimentación intuitiva, o hacer seguimiento solo de la ingesta de proteínas mientras comes alimentos naturales libremente. Las investigaciones indican que las personas que registran su ingesta, al menos al principio, desarrollan una mejor percepción de los tamaños de las porciones y la densidad calórica. Muchas personas descubren que 4-6 semanas de seguimiento les dan la suficiente intuición como para estimar las porciones sin necesidad de registrar de forma permanente."
+  - question: "¿Cuál es la mejor proporción de macronutrientes para adelgazar?"
+    answer: "La investigación apoya una ingesta más alta de proteínas durante la restricción calórica: entre el 25% y el 35% de las calorías totales en forma de proteínas ayuda a preservar la masa magra y aumenta la saciedad. Las calorías restantes pueden repartirse entre carbohidratos y grasas según la preferencia personal y la constancia. Una persona que come 1.800 calorías con un 30% de proteínas consume 135 gramos de proteínas al día. La proporción específica entre carbohidratos y grasas importa menos que la ingesta calórica total y las proteínas adecuadas para la mayoría de las personas. Elige el reparto que te resulte más fácil de mantener de forma constante."
+  - question: "¿Debo comer más los días de entrenamiento y menos los de descanso?"
+    answer: "El ciclado de calorías (comer más los días de entrenamiento y menos los de descanso) es un enfoque válido, pero no es necesario para obtener resultados. Tu cuerpo no reinicia su balance energético a medianoche; lo que importa es tu ingesta media a lo largo de la semana. Si prefieres comidas más abundantes los días de entrenamiento para mejorar el rendimiento y la recuperación, puedes comer 200-300 calorías por encima de tu objetivo diario en los días de ejercicio y 200-300 por debajo en los días de descanso, manteniendo el mismo total semanal. Este enfoque puede mejorar la calidad de los entrenamientos sin cambiar los resultados generales."
+  - question: "¿Por qué no pierdo peso a pesar de estar en déficit calórico?"
+    answer: "Las razones más frecuentes son subestimar la ingesta de calorías, sobreestimar las calorías quemadas, la retención de líquidos que enmascara la pérdida de grasa, o la adaptación metabólica por hacer dieta durante mucho tiempo. Los estudios muestran que las personas subreportan su ingesta de alimentos entre un 30% y un 50% de media cuando no pesan las porciones. Los aceites de cocina, las salsas y las bebidas a menudo se olvidan. Si la báscula no se ha movido en 3-4 semanas a pesar de un seguimiento constante, puedes reducir la ingesta en otras 100-200 calorías, aumentar el movimiento diario (sobre todo caminar), o hacer una pausa de la dieta en calorías de mantenimiento durante 1-2 semanas antes de retomar."
+  - question: "¿Son 1.200 calorías demasiado pocas?"
+    answer: "Para la mayoría de los adultos, 1.200 calorías al día es el mínimo recomendado por las organizaciones sanitarias para conseguir una alimentación nutricionalmente adecuada. Por debajo de este nivel, resulta difícil cubrir las necesidades de vitaminas, minerales y proteínas solo con la comida. Las personas de muy baja estatura con niveles de actividad reducidos pueden tener calorías de mantenimiento legítimas cerca de las 1.400-1.500, lo que hace que un déficit de 1.200 sea apropiado en su caso. Para personas más altas, de mayor peso corporal o más activas, 1.200 calorías representan un déficit excesivamente agresivo que aumenta el riesgo de pérdida de músculo, fatiga, alteraciones hormonales y episodios de atracones. Un enfoque más moderado produce mejores resultados a largo plazo para la gran mayoría de la gente."
+
+examples:
+  - title: "Plan de pérdida de peso para mujer sedentaria"
+    scenario: "Una mujer de 28 años, 68 kg, 165 cm, sedentaria, objetivo: perder peso"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Calorías diarias: 1.227 kcal | Proteínas: 92 g | Carbohidratos: 123 g | Grasas: 41 g"
+    explanation: "Su TDEE de 1.727 menos 500 da un objetivo de 1.227 calorías (ajustado al mínimo de 1.200). El reparto de macronutrientes aporta proteínas adecuadas (92 g) para mantener la masa muscular durante el déficit calórico."
+  - title: "Ganancia muscular para hombre activo"
+    scenario: "Un hombre de 25 años, 75 kg, 178 cm, activo (6 días/semana), objetivo: ganar peso"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Calorías diarias: 3.573 kcal | Proteínas: 268 g | Carbohidratos: 357 g | Grasas: 119 g"
+    explanation: "Con un TDEE de 3.073 más un superávit de 500 calorías, necesita 3.573 calorías diarias. Los 268 gramos de proteínas favorecen la síntesis de proteínas musculares durante su programa de entrenamiento intenso."
+  - title: "Mantenimiento para adulto moderadamente activo"
+    scenario: "Un hombre de 40 años, 82 kg, 175 cm, ejercicio moderado 4 días/semana"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Calorías diarias: 2.668 kcal | Proteínas: 200 g | Carbohidratos: 267 g | Grasas: 89 g"
+    explanation: "En mantenimiento, come aproximadamente 2.668 calorías para sostener su peso actual y nivel de actividad. Los 200 gramos de proteínas favorecen la recuperación del ejercicio moderado mientras conserva la masa magra."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

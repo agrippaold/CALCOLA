@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import LoanCalculator from '../../../components/calculators/finance/LoanCalculator';
+
+const lang = 'es';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'loan-calculator' && t.id.startsWith('es/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/es/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <LoanCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

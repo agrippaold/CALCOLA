@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'es';
+
+const tools = [
+  { name: 'Convertidor Temperatura', slug: '/es/conversiones/convertidor-temperatura/', description: 'Convierte entre Celsius, Fahrenheit y Kelvin con puntos de referencia.' },
+];
+---
+
+<BaseLayout
+  title="Convertidores de Unidades - Temperatura, Longitud, Peso | CalcHub"
+  description="Convertidores de unidades gratuitos para temperatura, longitud, peso y volumen. Convierte entre sistema métrico e imperial al instante."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/es/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Conversiones</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Convertidores de Unidades</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Convierte entre diferentes unidades de medida de forma rápida y precisa. Temperatura, longitud, peso, volumen y mucho más.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

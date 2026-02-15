@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 2.1 (IT content per 11 tool)
-**Prossimo step da eseguire:** STEP 2.2
+**Ultimo step completato:** STEP 2.2 (ES content per 11 tool)
+**Prossimo step da eseguire:** STEP 2.3
 **Branch attivo:** claude/continue-step-tracker-ZHIy0
-**Build status:** OK (48 pagine, 92 test passano, 22 YAML validati)
+**Build status:** OK (64 pagine, 92 test passano, 33 YAML validati)
 
 ---
 
@@ -415,12 +415,15 @@ Completato: 2026-02-15
 File creati/modificati: src/content/tools/it/{bmi,bmr,tdee,calorie,mortgage,compound-interest,loan,savings,percentage,area}-calculator.yaml, src/content/tools/it/temperature-converter.yaml, src/pages/it/index.astro, src/pages/it/{finanza,salute,matematica,conversioni}/index.astro, src/pages/it/salute/{calcolo-imc,calcolo-metabolismo-basale,calcolo-tdee,calcolo-calorie}.astro, src/pages/it/finanza/{calcolo-mutuo,calcolo-interesse-composto,calcolo-prestito,calcolo-risparmio}.astro, src/pages/it/matematica/{calcolo-percentuale,calcolo-area}.astro, src/pages/it/conversioni/convertitore-temperatura.astro
 Note: 11 YAML italiani con keyword native (calcolo imc, calcolo mutuo, calcolo percentuale, ecc.). Slug italiani (calcolo-imc, calcolo-mutuo, ecc.). Categorie in italiano (finanza, salute, matematica, conversioni). Defaults EUR, metrico, formato 1.234,56. Homepage IT con 4 categorie e tool popolari. 22 YAML validati. Build OK 48 pagine in 6,56s. 92 test verdi.
 
-## STEP 2.2 — Contenuto ES per 10 tool ⬜
+## STEP 2.2 — Contenuto ES per 11 tool ✅
 ```
 Come STEP 2.1 ma per spagnolo.
 Keyword native: "calculadora imc", "calculadora hipoteca", etc.
-Commit: [STEP 2.2] Spanish content for 10 tools with native keywords
+Commit: [STEP 2.2] Spanish content for 11 tools with native keywords
 ```
+Completato: 2026-02-15
+File creati/modificati: src/content/tools/es/{bmi,bmr,tdee,calorie,mortgage,compound-interest,loan,savings,percentage,area}-calculator.yaml, src/content/tools/es/temperature-converter.yaml, src/pages/es/index.astro, src/pages/es/{finanzas,salud,matematicas,conversiones}/index.astro, src/pages/es/salud/{calculadora-imc,calculadora-metabolismo-basal,calculadora-tdee,calculadora-calorias}.astro, src/pages/es/finanzas/{calculadora-hipoteca,calculadora-interes-compuesto,calculadora-prestamo,calculadora-ahorro}.astro, src/pages/es/matematicas/{calculadora-porcentaje,calculadora-area}.astro, src/pages/es/conversiones/convertidor-temperatura.astro
+Note: 11 YAML spagnoli con keyword native (calculadora imc, calculadora hipoteca, calculadora porcentaje, ecc.). Slug spagnoli. Categorie: finanzas, salud, matemáticas, conversiones. Contesto spagnolo (Euríbor, TIN/TAE, IVA 21%). Defaults EUR, metrico, formato 1.234,56. 33 YAML validati. Build OK 64 pagine in 7,15s.
 
 ## STEP 2.3 — Contenuto FR per 10 tool ⬜
 ```
@@ -582,3 +585,4 @@ Documenta qui ogni problema, cosa hai provato, e come l'hai risolto.
 | 1 | 2026-02-15 | STEP 0.1-0.12 (FASE 0 COMPLETA) | Setup Astro completo: i18n 25 lingue, Content Collection, layouts, componenti Preact, Schema.org, hreflang, Docker, Nginx, validation, CI. BMI calculator funzionante. |
 | 2 | 2026-02-15 | STEP 1.1-1.8 (FASE 1 COMPLETA) | Formula library (32 fn, 92 test). 11 calcolatori EN completi: 4 finance (mortgage, compound interest, loan, savings), 4 health (BMI, BMR, TDEE, calories), 2 math (percentage, area), 1 conversion (temperature). Homepage + 4 categorie. Embed system (11 pagine). Share buttons. My Calculations page. 32 pagine totali, build 6.5s. |
 | 3 | 2026-02-15 | STEP 2.1 | Contenuto italiano per 11 tool con keyword native. 11 YAML IT + 16 pagine Astro (11 calcolatori + homepage + 4 categorie). Slug italiani: calcolo-imc, calcolo-mutuo, calcolo-percentuale, ecc. Categorie: finanza, salute, matematica, conversioni. Defaults EUR/metrico. 22 YAML validati, 48 pagine totali, build 6.56s. |
+| 3 | 2026-02-15 | STEP 2.2 | Contenuto spagnolo per 11 tool con keyword native. 11 YAML ES + 16 pagine Astro. Slug spagnoli: calculadora-imc, calculadora-hipoteca, calculadora-porcentaje, ecc. Categorie: finanzas, salud, matemáticas, conversiones. Contesto spagnolo (Euríbor, TIN/TAE, IVA 21%). 33 YAML validati, 64 pagine totali, build 7.15s. |

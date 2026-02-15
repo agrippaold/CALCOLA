@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'es';
+
+const tools = [
+  { name: 'Calculadora Hipoteca', slug: '/es/finanzas/calculadora-hipoteca/', description: 'Calcula la cuota mensual de tu hipoteca, los intereses totales y compara plazos.' },
+  { name: 'Interés Compuesto', slug: '/es/finanzas/calculadora-interes-compuesto/', description: 'Descubre cómo crece tu capital con el interés compuesto a lo largo del tiempo.' },
+  { name: 'Calculadora Préstamo', slug: '/es/finanzas/calculadora-prestamo/', description: 'Calcula la cuota del préstamo personal, los intereses y el cuadro de amortización.' },
+  { name: 'Calculadora Ahorro', slug: '/es/finanzas/calculadora-ahorro/', description: 'Planifica tus ahorros y descubre cómo crecen con depósitos regulares e intereses.' },
+];
+---
+
+<BaseLayout
+  title="Calculadoras Financieras - Hipoteca, Préstamo, Ahorro | CalcHub"
+  description="Calculadoras financieras gratuitas: hipoteca, préstamo personal, interés compuesto, plan de ahorro. Resultados instantáneos y precisos."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/es/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Finanzas</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculadoras Financieras</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Herramientas financieras precisas para hipotecas, préstamos, inversiones y ahorro. Compara diferentes escenarios y toma decisiones informadas sobre tus finanzas.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

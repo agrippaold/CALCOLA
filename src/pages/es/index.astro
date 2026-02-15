@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'es';
+
+const categories = [
+  {
+    name: 'Finanzas',
+    slug: 'finanzas',
+    description: 'Calculadoras de hipoteca, préstamos, interés compuesto, ahorro e inversiones.',
+    icon: '💰',
+    tools: [
+      { name: 'Calculadora Hipoteca', slug: '/es/finanzas/calculadora-hipoteca/' },
+      { name: 'Interés Compuesto', slug: '/es/finanzas/calculadora-interes-compuesto/' },
+      { name: 'Calculadora Préstamo', slug: '/es/finanzas/calculadora-prestamo/' },
+      { name: 'Calculadora Ahorro', slug: '/es/finanzas/calculadora-ahorro/' },
+    ],
+  },
+  {
+    name: 'Salud',
+    slug: 'salud',
+    description: 'Calculadoras de IMC, metabolismo basal, TDEE y necesidades calóricas.',
+    icon: '🏥',
+    tools: [
+      { name: 'Calculadora IMC', slug: '/es/salud/calculadora-imc/' },
+      { name: 'Metabolismo Basal', slug: '/es/salud/calculadora-metabolismo-basal/' },
+      { name: 'Calculadora TDEE', slug: '/es/salud/calculadora-tdee/' },
+      { name: 'Calculadora Calorías', slug: '/es/salud/calculadora-calorias/' },
+    ],
+  },
+  {
+    name: 'Matemáticas',
+    slug: 'matematicas',
+    description: 'Calculadoras de porcentajes, áreas y problemas matemáticos cotidianos.',
+    icon: '📐',
+    tools: [
+      { name: 'Calculadora Porcentaje', slug: '/es/matematicas/calculadora-porcentaje/' },
+      { name: 'Calculadora Área', slug: '/es/matematicas/calculadora-area/' },
+    ],
+  },
+  {
+    name: 'Conversiones',
+    slug: 'conversiones',
+    description: 'Convertidores de temperatura, longitud, peso y volumen.',
+    icon: '🔄',
+    tools: [
+      { name: 'Convertidor Temperatura', slug: '/es/conversiones/convertidor-temperatura/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - Calculadoras Online Gratis | Finanzas, Salud, Matemáticas"
+  description="200+ calculadoras online gratuitas en 25 idiomas. Hipoteca, IMC, interés compuesto, porcentajes, temperatura y mucho más. Rápidas, precisas, sin registro."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Calculadoras Online Gratis</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Calculadoras rápidas y precisas para finanzas, salud, matemáticas y conversiones. Sin registro. Sin anuncios molestos.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/es/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Calculadoras Populares</h2>
+    <p class="text-gray-600 mb-8">Las herramientas más utilizadas de todas las categorías</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/es/finanzas/calculadora-hipoteca/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">Finanzas</div>
+        <div class="font-semibold text-gray-900">Calculadora Hipoteca</div>
+        <p class="text-sm text-gray-500 mt-1">Calcula la cuota mensual y los intereses totales.</p>
+      </a>
+      <a href="/es/salud/calculadora-imc/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Salud</div>
+        <div class="font-semibold text-gray-900">Calculadora IMC</div>
+        <p class="text-sm text-gray-500 mt-1">Comprueba tu Índice de Masa Corporal al instante.</p>
+      </a>
+      <a href="/es/matematicas/calculadora-porcentaje/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">Matemáticas</div>
+        <div class="font-semibold text-gray-900">Calculadora Porcentaje</div>
+        <p class="text-sm text-gray-500 mt-1">Todas las operaciones con porcentajes en un solo lugar.</p>
+      </a>
+      <a href="/es/salud/calculadora-calorias/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Salud</div>
+        <div class="font-semibold text-gray-900">Calculadora Calorías</div>
+        <p class="text-sm text-gray-500 mt-1">Calorías diarias y macronutrientes para tus objetivos.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Todas las Categorías</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/es/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/es/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            Ver todas las herramientas de {cat.name.toLowerCase()} &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

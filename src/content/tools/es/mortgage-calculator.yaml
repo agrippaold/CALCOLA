@@ -1,0 +1,81 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Calculadora de Hipoteca - Cuota Mensual | CalcHub"
+metaDescription: "Calcula tu cuota mensual de hipoteca, el total de intereses y el cuadro de amortización. Compara plazos y tipos de interés en diferentes escenarios."
+h1: "Calculadora de Hipoteca"
+slug: "calculadora-hipoteca"
+
+primaryKeyword: "calculadora hipoteca"
+secondaryKeywords:
+  - "calculo hipoteca"
+  - "simulador hipoteca"
+  - "cuota mensual hipoteca"
+  - "calcular hipoteca"
+
+intro: "La compra de una vivienda es la decisión financiera más importante en la vida de la mayoría de las personas. Antes de firmar cualquier documento, necesitas saber exactamente cuánto pagarás cada mes y cuánto dinero irá destinado a intereses a lo largo de los años. Esta calculadora de hipoteca desglosa tu cuota mensual en capital e intereses, muestra el coste total del préstamo hipotecario y te permite comparar diferentes escenarios cambiando el importe, el tipo de interés y el plazo. Introduce los datos de tu hipoteca para obtener cifras claras que te ayuden a tomar la mejor decisión para tu bolsillo."
+
+howItWorks:
+  title: "Cómo se calcula la cuota de una hipoteca"
+  content: "Toda hipoteca a tipo fijo se calcula mediante la fórmula de amortización francesa, el sistema más usado en España y en gran parte de Latinoamérica. Esta fórmula toma tres datos de entrada: el capital prestado (la cantidad que solicitas al banco), el tipo de interés anual y el plazo de devolución en años. El resultado es una cuota mensual constante durante toda la vida del préstamo, pero la proporción que se destina a capital y a intereses cambia con cada pago. En los primeros años, la mayor parte de tu cuota cubre los intereses generados por el saldo pendiente. A medida que el capital vivo disminuye, se generan menos intereses y una parte mayor de cada cuota reduce la deuda real. Por este motivo, realizar amortizaciones anticipadas durante los primeros años tiene un efecto desproporcionado en el ahorro total de intereses. Veamos un ejemplo práctico: para una hipoteca de 200.000 € al 3,5% de interés fijo a 30 años, la cuota mensual sería de 898,09 €. A lo largo de 30 años, pagarías 123.312,48 € en intereses, lo que significa que el coste real de la vivienda se incrementa en más de un 60% respecto al capital inicial. Si reduces el plazo a 20 años, la cuota sube a 1.159,92 € al mes, pero el total de intereses baja a 78.380,62 €, lo que supone un ahorro de casi 45.000 €. El tipo de interés tiene un impacto enorme en el coste final. En España, muchas hipotecas se contratan a tipo variable referenciado al Euríbor más un diferencial. Con el Euríbor en valores positivos, una subida de un punto porcentual en una hipoteca de 200.000 € a 25 años puede suponer más de 100 € adicionales al mes. Por eso es fundamental comparar ofertas de diferentes entidades bancarias y negociar las condiciones antes de firmar. Además de la cuota de capital e intereses, hay que tener en cuenta los gastos asociados a la compra: notaría, registro de la propiedad, gestoría, tasación del inmueble e impuestos (ITP para vivienda de segunda mano o IVA para obra nueva). Estos gastos suelen representar entre un 10% y un 15% del precio de compra y no están incluidos en esta simulación básica, pero deben considerarse en el presupuesto total."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = cuota mensual, P = capital del préstamo, r = tipo de interés mensual (tipo anual / 12 / 100), n = número total de pagos (años × 12)"
+  academicSource: "Banco de España. (2024). Guía de acceso al préstamo hipotecario."
+
+faqs:
+  - question: "¿Cuánta hipoteca puedo permitirme con mi sueldo?"
+    answer: "La norma general que aplican los bancos en España es que la cuota de la hipoteca no debe superar el 30-35% de los ingresos netos mensuales del hogar. Si tu familia ingresa 3.000 € netos al mes, la cuota máxima recomendable sería de entre 900 € y 1.050 €. Además, las entidades suelen financiar como máximo el 80% del valor de tasación, por lo que necesitarás ahorros equivalentes al 20% del precio de la vivienda más un 10-15% adicional para cubrir los gastos de compraventa. Usa esta calculadora para encontrar el importe de hipoteca que se ajusta a tu presupuesto mensual sin comprometer tu estabilidad financiera."
+  - question: "¿Qué es mejor, una hipoteca a tipo fijo o a tipo variable?"
+    answer: "La hipoteca a tipo fijo te da la seguridad de pagar siempre la misma cuota, independientemente de cómo evolucione el Euríbor. La hipoteca variable suele tener un tipo inicial más bajo, pero tu cuota se revisa cada 6 o 12 meses según el valor del Euríbor más un diferencial. En períodos de tipos bajos, la variable resulta más barata, pero cuando los tipos suben, las cuotas pueden aumentar de forma significativa. Si prefieres estabilidad y planificación a largo plazo, el tipo fijo es más adecuado. Si puedes asumir cierto riesgo y el Euríbor está en niveles moderados, la variable puede ser interesante a medio plazo."
+  - question: "¿Es mejor una hipoteca a 15 o a 30 años?"
+    answer: "Una hipoteca a 15 años tiene cuotas mensuales más altas, pero el ahorro en intereses es muy notable. Para un préstamo de 180.000 € al 3%, la cuota a 30 años es de 758,89 € con un total de intereses de 93.199,19 €, mientras que a 15 años la cuota sube a 1.243,14 € pero los intereses bajan a 43.764,68 €. Eso supone casi 50.000 € de ahorro. Elige 15 años si puedes asumir la cuota cómodamente y quieres liberarte de la deuda antes. Opta por 30 años si necesitas cuotas más bajas para mantener un colchón financiero."
+  - question: "¿Qué gastos tiene la compra de una vivienda con hipoteca?"
+    answer: "Los gastos principales incluyen: la tasación del inmueble (entre 250 € y 600 €), los gastos de notaría (entre 600 € y 1.200 €), el registro de la propiedad (entre 400 € y 700 €), la gestoría (entre 200 € y 500 €) y los impuestos. En vivienda de segunda mano se paga el Impuesto de Transmisiones Patrimoniales (ITP), que varía entre el 6% y el 10% según la comunidad autónoma. En obra nueva se aplica el IVA del 10%. En total, los gastos suelen representar entre un 10% y un 15% del precio de compraventa, y conviene tenerlos ahorrados antes de solicitar la hipoteca."
+  - question: "¿Merece la pena hacer una amortización anticipada de la hipoteca?"
+    answer: "La amortización anticipada permite reducir el capital pendiente antes de lo previsto, lo que disminuye el total de intereses pagados. Puedes elegir entre reducir la cuota mensual manteniendo el plazo, o mantener la cuota y acortar el plazo. Generalmente, reducir el plazo es más beneficioso porque eliminas más intereses a largo plazo. Por ejemplo, si aportas 10.000 € extra al principio de una hipoteca de 150.000 € al 3% a 25 años, puedes ahorrar más de 8.000 € en intereses y acortar el préstamo en más de un año. Antes de amortizar, comprueba si tu hipoteca tiene comisión por amortización anticipada."
+  - question: "¿Qué es la subrogación de hipoteca y cuándo conviene?"
+    answer: "La subrogación consiste en trasladar tu hipoteca de un banco a otro para conseguir mejores condiciones, como un tipo de interés más bajo o la eliminación de productos vinculados. También existe la subrogación de deudor, que ocurre cuando el comprador de una vivienda asume la hipoteca existente del vendedor. La subrogación de acreedor puede ser conveniente cuando el diferencial de tipo de interés entre tu hipoteca actual y la oferta del nuevo banco es de al menos 0,5 puntos porcentuales, o cuando quieres pasar de tipo variable a fijo. Ten en cuenta los gastos de subrogación (notaría, registro, tasación) para calcular si el ahorro compensa el coste del cambio."
+
+examples:
+  - title: "Hipoteca estándar a 25 años en España"
+    scenario: "Una persona solicita una hipoteca de 180.000 € al 3,2% fijo a 25 años"
+    inputs:
+      loanAmount: 180000
+      interestRate: 3.2
+      loanTerm: 25
+    expectedResult: "Cuota mensual: 872,46 € | Total intereses: 81.738,00 €"
+    explanation: "Con una cuota de 872,46 € al mes, el coste total del préstamo asciende a 261.738 €. En el primer pago, 480,00 € se destinan a intereses y solo 392,46 € reducen el capital. A medida que avanza la hipoteca, esta proporción se invierte progresivamente."
+  - title: "Hipoteca corta a 15 años"
+    scenario: "Una pareja solicita 150.000 € al 2,8% fijo a 15 años para su primera vivienda"
+    inputs:
+      loanAmount: 150000
+      interestRate: 2.8
+      loanTerm: 15
+    expectedResult: "Cuota mensual: 1.024,31 € | Total intereses: 34.375,80 €"
+    explanation: "Aunque la cuota mensual es más alta que con un plazo más largo, el ahorro total en intereses es considerable. Solo se pagan 34.375,80 € en intereses, frente a los más de 60.000 € que supondría la misma hipoteca a 30 años. La hipoteca queda cancelada en la mitad de tiempo."
+  - title: "Hipoteca de importe elevado a 30 años"
+    scenario: "Un comprador necesita 300.000 € al 3,5% fijo a 30 años para una vivienda en una gran ciudad"
+    inputs:
+      loanAmount: 300000
+      interestRate: 3.5
+      loanTerm: 30
+    expectedResult: "Cuota mensual: 1.347,13 € | Total intereses: 184.968,72 €"
+    explanation: "En una hipoteca de este importe, los intereses superan los 184.000 €, lo que representa más del 60% del capital prestado. Reducir el plazo a 20 años subiría la cuota a 1.739,88 € pero recortaría los intereses a 117.571,20 €, un ahorro de más de 67.000 €. Por ello, conviene elegir el plazo más corto que permita mantener la cuota dentro del rango de comodidad presupuestaria."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

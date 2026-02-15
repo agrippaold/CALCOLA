@@ -1,0 +1,84 @@
+id: "savings-calculator"
+category: "finance"
+calculatorComponent: "SavingsCalculator"
+
+title: "Calculadora de Ahorro - Crecimiento Capital | CalcHub"
+metaDescription: "Planifica tu ahorro con esta calculadora gratuita. Calcula cómo crecen tus depósitos y aportaciones mensuales con interés compuesto a lo largo del tiempo."
+h1: "Calculadora de Ahorro"
+slug: "calculadora-ahorro"
+
+primaryKeyword: "calculadora ahorro"
+secondaryKeywords:
+  - "plan de ahorro"
+  - "calcular intereses ahorro"
+  - "simulador ahorro"
+  - "meta de ahorro"
+
+intro: "Construir patrimonio mediante el ahorro regular es una cuestión de matemáticas simples, pero la mayoría de las personas subestiman cuánto pueden crecer cantidades modestas con el paso del tiempo. Esta calculadora combina tu depósito inicial con aportaciones mensuales periódicas y aplica el interés compuesto para proyectar tu saldo futuro. Tanto si estás creando un fondo de emergencia, ahorrando para la entrada de una vivienda o planificando tu jubilación, ver las cifras reales te ayuda a definir metas alcanzables y a mantener la disciplina financiera."
+
+howItWorks:
+  title: "Cómo se calcula el crecimiento del ahorro"
+  content: "Esta calculadora combina dos fórmulas financieras distintas en un solo resultado. El depósito inicial crece según la fórmula estándar de interés compuesto, mientras que cada aportación mensual se trata como una inversión independiente que se capitaliza desde el mes en que se realiza hasta el final del período. El valor futuro total es la suma de ambos componentes. El crecimiento de las aportaciones periódicas se calcula mediante la fórmula de anualidades, que determina cómo una serie de pagos iguales crece con el interés compuesto. Si depositas 200 € al mes al 4% de interés anual durante 20 años, esas aportaciones por sí solas crecen hasta 73.322,70 €. Si añades un depósito inicial de 5.000 €, el total alcanza 84.320,67 €. El depósito inicial aporta 10.997,97 € de ese total, mientras que los 200 € mensuales suman 48.000 € en aportaciones que generan 25.322,70 € en intereses. Esto demuestra cómo las aportaciones constantes combinadas con el interés compuesto crean un crecimiento que se acelera con el tiempo. Los primeros 5.000 € en intereses tardan unos 7 años en acumularse, mientras que los últimos 5.000 € se generan en apenas 2 años y medio. Modificar tus aportaciones aunque sea ligeramente tiene un impacto notable a largo plazo. Aumentar el ahorro mensual de 200 € a 250 € (solo 50 € más) durante 20 años al 4% añade aproximadamente 9.165 € a tu saldo final. El momento en que empiezas a ahorrar importa más que la cantidad. Empezar 5 años antes con 150 € al mes produce más que empezar más tarde con 250 € al mes durante un periodo más corto. Este principio subraya la importancia de comenzar lo antes posible, aunque las cantidades iniciales parezcan pequeñas. En el contexto español, existen varios productos de ahorro a considerar: las cuentas de ahorro remuneradas, los depósitos a plazo fijo protegidos por el Fondo de Garantía de Depósitos hasta 100.000 € por titular, los planes de pensiones con ventajas fiscales, los planes de ahorro sistemático y los fondos de inversión indexados para horizontes más largos. Cada uno tiene sus propias características de rentabilidad, liquidez y fiscalidad que conviene analizar según tu situación personal y tus objetivos financieros."
+  formula: "VF = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)]"
+  formulaExplanation: "VF = valor futuro, P = depósito inicial, r = tipo de interés anual (en decimal), n = capitalizaciones por año (12 para mensual), t = años, PMT = aportación mensual"
+  academicSource: "Fernández, P. (2023). Finanzas para directivos. IESE Business School, Universidad de Navarra."
+
+faqs:
+  - question: "¿Cuánto debería ahorrar cada mes?"
+    answer: "La regla presupuestaria 50/30/20 sugiere destinar el 20% de tus ingresos netos al ahorro y al pago de deudas. Si cobras 2.000 € netos al mes, eso serían 400 € para ahorro y amortización de deudas. Si no tienes deudas pendientes, los 400 € completos pueden ir a tus metas de ahorro. Incluso si solo puedes empezar con 50 € al mes, crear el hábito es más importante que la cantidad inicial. Aumenta tu tasa de ahorro entre un 1% y un 2% cada vez que recibas una subida de sueldo o un ingreso extra, y automatiza las transferencias a tu cuenta de ahorro para no depender de la fuerza de voluntad."
+  - question: "¿Qué rendimiento puedo esperar de una cuenta de ahorro?"
+    answer: "Las cuentas de ahorro remuneradas en España ofrecen actualmente entre el 1% y el 3,5% TAE, mientras que las cuentas corrientes tradicionales apenas rinden entre el 0,01% y el 0,1%. Los depósitos a plazo fijo se sitúan entre el 2% y el 4% según el plazo y la entidad. Para ahorros a largo plazo (más de 5 años), una cartera diversificada de fondos indexados ha ofrecido históricamente rendimientos del 7% al 10% anual antes de inflación, aunque con mayor volatilidad. Las Letras del Tesoro ofrecen tipos fijos entre el 2,5% y el 3,5% para plazos de 3 a 18 meses."
+  - question: "¿Cuánto tiempo tardaré en alcanzar mi meta de ahorro?"
+    answer: "El plazo depende de tu objetivo, tu depósito inicial, las aportaciones mensuales y el tipo de interés. Como referencia orientativa: ahorrando 400 € al mes al 4% anual, alcanzarías 20.000 € en unos 4 años, 50.000 € en unos 9 años y 100.000 € en unos 16 años. Usa esta calculadora con tus cifras concretas para obtener una proyección exacta. Dividir un objetivo grande en hitos mensuales o anuales facilita el seguimiento y ayuda a mantener la motivación a lo largo del camino."
+  - question: "¿Es mejor ahorrar o invertir mi dinero?"
+    answer: "Para el dinero que necesitarás en un plazo de 1 a 3 años (fondo de emergencia, compra a corto plazo), una cuenta de ahorro remunerada o un depósito a plazo fijo ofrece seguridad y liquidez. Para objetivos a más de 5 años, invertir en una cartera diversificada de fondos indexados ha superado históricamente a las cuentas de ahorro por un amplio margen. El rango de 3 a 5 años es una zona intermedia donde los depósitos a plazo, las Letras del Tesoro o los fondos de renta fija pueden ser apropiados. Nunca inviertas en activos volátiles dinero que vayas a necesitar a corto plazo."
+  - question: "¿Importa más el depósito inicial o las aportaciones mensuales?"
+    answer: "A largo plazo, las aportaciones mensuales regulares suelen generar más patrimonio que un depósito inicial grande sin aportaciones posteriores. Un depósito de 10.000 € sin más aportaciones al 5% durante 25 años crece hasta 33.863,55 €. En cambio, comenzar con 0 € pero aportar 200 € al mes al 5% durante 25 años alcanza 119.399,40 €. La combinación de ambos produce el mejor resultado: 10.000 € de inicio más 200 € mensuales al 5% durante 25 años arroja 153.262,95 €. El depósito inicial da una ventaja por su mayor tiempo de capitalización, pero el flujo constante de aportaciones es el motor principal del crecimiento."
+  - question: "¿Cómo afecta la inflación a mis metas de ahorro?"
+    answer: "La inflación reduce el poder adquisitivo del dinero a lo largo del tiempo, lo que significa que el dinero que ahorras hoy comprará menos en el futuro. Si necesitas 40.000 € en euros actuales dentro de 15 años, en realidad necesitarás unos 62.300 € asumiendo una inflación media del 3% anual. Cuando fijes metas de ahorro para objetivos lejanos, añade aproximadamente un 3% anual a la cantidad objetivo para compensar la pérdida de poder adquisitivo. En España, la inflación media histórica ha sido del 2,5% al 3%, y los rendimientos reales de muchas cuentas de ahorro apenas cubren la inflación, por lo que el ahorro a largo plazo se beneficia de productos con mayor rentabilidad."
+
+examples:
+  - title: "Fondo de emergencia en 2 años"
+    scenario: "Crear un colchón de seguridad partiendo de 1.500 € y aportando 350 € al mes al 3% en una cuenta remunerada"
+    inputs:
+      initialDeposit: 1500
+      monthlyContribution: 350
+      annualRate: 3
+      years: 2
+    expectedResult: "Valor futuro: 10.160,53 € | Intereses generados: 260,53 €"
+    explanation: "En 2 años, tu depósito inicial de 1.500 € más 8.400 € en aportaciones mensuales crecen hasta 10.160,53 € con 260,53 € de intereses. El fondo de emergencia recomendado equivale a entre 3 y 6 meses de gastos fijos. Con un gasto mensual de 1.800 €, este fondo cubriría más de 5 meses de gastos imprevistos."
+  - title: "Ahorro para la jubilación a 30 años"
+    scenario: "Empezar con 8.000 € a los 30 años y aportar 250 € al mes al 6% de rendimiento medio anual"
+    inputs:
+      initialDeposit: 8000
+      monthlyContribution: 250
+      annualRate: 6
+      years: 30
+    expectedResult: "Valor futuro: 295.937,07 € | Intereses generados: 197.937,07 €"
+    explanation: "Tus 98.000 € en aportaciones totales (depósito inicial más cuotas mensuales) crecen hasta casi 296.000 € gracias al interés compuesto, que genera casi 198.000 € en rendimientos. Los primeros 10 años acumulan unos 50.000 €, los siguientes 10 añaden 100.000 € más, y la última década aporta cerca de 146.000 €. Este efecto de aceleración demuestra por qué empezar pronto marca una diferencia determinante."
+  - title: "Ahorro para la entrada de un piso"
+    scenario: "Ahorrar para una entrada de 50.000 € partiendo de 6.000 € y aportando 600 € al mes al 3,5%"
+    inputs:
+      initialDeposit: 6000
+      monthlyContribution: 600
+      annualRate: 3.5
+      years: 5
+    expectedResult: "Valor futuro: 46.059,53 € | Intereses generados: 4.059,53 €"
+    explanation: "En 5 años de ahorro disciplinado, tus 42.000 € en aportaciones más los 6.000 € iniciales se convierten en 46.059,53 € con casi 4.060 € de intereses. Para alcanzar los 50.000 € de entrada, podrías aumentar la aportación mensual a 660 € o alargar el plazo unos meses. Recuerda que además de la entrada necesitarás entre un 10% y un 15% del precio de la vivienda para cubrir los gastos de compraventa."
+
+relatedTools:
+  - "compound-interest-calculator"
+  - "mortgage-calculator"
+  - "loan-calculator"
+
+defaults:
+  currency: "EUR"
+  currencySymbol: "€"
+  unit: "eur"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

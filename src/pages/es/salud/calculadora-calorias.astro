@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import CalorieCalculator from '../../../components/calculators/health/CalorieCalculator';
+
+const lang = 'es';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'calorie-calculator' && t.id.startsWith('es/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/es/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <CalorieCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

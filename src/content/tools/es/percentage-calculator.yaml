@@ -1,0 +1,79 @@
+id: "percentage-calculator"
+category: "math"
+calculatorComponent: "PercentageCalculator"
+
+title: "Calculadora de Porcentajes - Operaciones | CalcHub"
+metaDescription: "Calcula porcentajes al instante: halla el X% de Y, variacion porcentual, aumento, descuento y mas. Calculadora de porcentajes con cinco modos de calculo."
+h1: "Calculadora de Porcentajes"
+slug: "calculadora-porcentaje"
+
+primaryKeyword: "calculadora porcentaje"
+secondaryKeywords:
+  - "calcular porcentaje"
+  - "porcentaje de descuento"
+  - "variacion porcentual"
+  - "calcular tanto por ciento"
+
+intro: "Los porcentajes aparecen en todas partes: en las rebajas del supermercado, en la declaracion de la renta, en las notas del colegio y en el rendimiento de tus ahorros. Esta calculadora resuelve cinco tipos diferentes de problemas con porcentajes para que no tengas que recordar las formulas de memoria. Elige el modo de calculo que necesites, introduce los valores y obtendras el resultado de forma inmediata. Ya sea que quieras saber cuanto te ahorras con un descuento del 30% o necesites calcular la variacion porcentual entre dos cifras de ventas, esta herramienta te da la respuesta en un solo paso."
+
+howItWorks:
+  title: "Como funcionan los calculos de porcentajes"
+  content: "Un porcentaje expresa una cantidad como fraccion de 100. La palabra proviene del latin per centum, que significa por cada cien. En la vida diaria usamos porcentajes constantemente: el IVA en Espana es del 21% para el tipo general, del 10% para el reducido y del 4% para el superreducido. Esta calculadora trabaja con cinco operaciones diferentes, cada una con su propia formula matematica. Calcular el X por ciento de Y consiste en multiplicar Y por X dividido entre 100. Por ejemplo, el 20% de 150 es igual a 150 multiplicado por 0,20, lo que da 30. La operacion inversa pregunta que porcentaje representa X respecto a Y, y se calcula dividiendo X entre Y y multiplicando por 100. Si 45 alumnos de una clase de 180 han aprobado, el porcentaje es 45 dividido entre 180 por 100, es decir, el 25%. La variacion porcentual mide la diferencia relativa entre un valor antiguo y uno nuevo. La formula divide la diferencia (nuevo menos antiguo) entre el valor absoluto del numero antiguo y luego multiplica por 100. Si un piso se compraba por 180.000 euros y ahora vale 210.000 euros, la variacion es (210.000 menos 180.000) dividido entre 180.000 por 100, que da un 16,67% de aumento. Si el valor bajase de 210.000 a 180.000, la variacion seria del menos 14,29%. Observa la asimetria: una subida del 16,67% seguida de una bajada del 14,29% te devuelve al punto de partida, no una bajada del 16,67%. Este fenomeno confunde a muchas personas y es especialmente importante en el mundo de las inversiones. El aumento porcentual suma un porcentaje a un valor: resultado igual a valor por (1 mas porcentaje dividido entre 100). Un producto de 50 euros con el IVA del 21% se convierte en 50 por 1,21, que da 60,50 euros. La disminucion porcentual resta: resultado igual a valor por (1 menos porcentaje dividido entre 100). Un articulo de 200 euros con un descuento del 30% queda en 200 por 0,70, es decir, 140 euros. Los porcentajes superiores al 100% son perfectamente validos y frecuentes en contextos financieros. Un rendimiento del 150% significa que has ganado 1,5 veces tu inversion original, acabando con 2,5 veces lo que pusiste. Los porcentajes negativos indican perdidas o disminuciones. Estos calculos forman la base de las matematicas cotidianas, desde el calculo del IVA y los descuentos hasta las notas academicas, los indicadores de negocio y el analisis estadistico de datos economicos."
+  formula: "X% de Y = (X/100) * Y"
+  formulaExplanation: "Otros modos: X es que % de Y = (X/Y) * 100. Variacion porcentual = ((nuevo-antiguo)/|antiguo|) * 100. Aumento = valor * (1+%/100). Descuento = valor * (1-%/100)."
+  academicSource: "Real Academia de Ciencias Exactas, Fisicas y Naturales. Vocabulario Cientifico y Tecnico. Espasa."
+
+faqs:
+  - question: "Como se calcula el porcentaje de un numero?"
+    answer: "Multiplica el numero por el porcentaje y divide entre 100. Para hallar el 15% de 200, calcula 200 por 15 y divide entre 100, lo que da 30. Un truco rapido: para sacar el 10% de cualquier cifra, simplemente mueve la coma un lugar a la izquierda. Asi, el 10% de 200 es 20. Entonces el 15% es 20 mas la mitad de 20 (que es 10), dando 30. Este metodo mental funciona muy bien para calcular propinas o hacer estimaciones rapidas en tiendas."
+  - question: "Como calculo que porcentaje es un numero respecto a otro?"
+    answer: "Divide la parte entre el total y multiplica por 100. Si has sacado 42 puntos de 50 posibles en un examen, tu porcentaje es (42 dividido entre 50) por 100, que da el 84%. Si tus gastos mensuales son de 1.200 euros sobre un sueldo de 4.000 euros, los gastos representan (1.200 dividido entre 4.000) por 100, que es el 30% de tu salario. Lo importante es identificar correctamente cual es la parte y cual es el total en cada problema."
+  - question: "Como se calcula la variacion porcentual entre dos valores?"
+    answer: "Resta el valor antiguo al nuevo, divide entre el valor absoluto del antiguo y multiplica por 100. Si el alquiler subio de 900 euros a 990 euros, la variacion es (990 menos 900) dividido entre 900 por 100, que da un aumento del 10%. Si tu cartera de inversion bajo de 50.000 a 42.000 euros, la variacion es (42.000 menos 50.000) dividido entre 50.000 por 100, es decir, un menos 16%, lo que supone una caida del 16% en el valor de tus activos."
+  - question: "Por que una subida del 50% seguida de una bajada del 50% no devuelve al valor original?"
+    answer: "Porque el segundo porcentaje se aplica sobre una base diferente. Si empiezas con 100 y subes un 50%, llegas a 150. Pero una bajada del 50% de 150 te deja en 75, no en 100. La bajada se calcula sobre el numero mayor (150), asi que quita mas de lo que la subida habia anadido. Para volver al punto de partida tras un aumento del 50%, necesitas una bajada del 33,3%. Esta asimetria es muy importante en finanzas: si la bolsa cae un 50%, necesitas una subida del 100% solo para recuperar lo perdido."
+  - question: "Como calculo el IVA de un producto en Espana?"
+    answer: "Para anadir el IVA del 21% a un precio base, multiplica por 1,21. Si un producto cuesta 80 euros sin IVA, el precio final es 80 por 1,21, que da 96,80 euros. Para la operacion inversa, dividir un precio con IVA para obtener la base imponible, divide entre 1,21. Un articulo que cuesta 121 euros con IVA incluido tiene una base de 121 dividido entre 1,21, que son 100 euros. Recuerda que en Espana existen tres tipos de IVA: general (21%), reducido (10%) y superreducido (4%)."
+  - question: "Cual es la relacion entre porcentajes, fracciones y decimales?"
+    answer: "Porcentajes, fracciones y decimales son tres formas de expresar el mismo valor. El 25% equivale a 25/100, que es lo mismo que 1/4 o 0,25. Para pasar de porcentaje a decimal, divide entre 100 (mueve la coma dos posiciones a la izquierda). Para convertir un decimal a porcentaje, multiplica por 100 (mueve la coma dos posiciones a la derecha). Para transformar una fraccion en porcentaje, divide el numerador entre el denominador y multiplica por 100. Estas conversiones resultan muy practicas porque diferentes contextos prefieren diferentes formatos: las tiendas usan porcentajes, las recetas de cocina usan fracciones y las hojas de calculo trabajan con decimales."
+
+examples:
+  - title: "Descuento en compras"
+    scenario: "Calcular el precio rebajado de una chaqueta de 85 euros con un 25% de descuento"
+    inputs:
+      mode: "decrease"
+      value: 85
+      percent: 25
+    expectedResult: "Resultado: 63,75 euros"
+    explanation: "El 25% de 85 euros son 21,25 euros. El precio de venta es 85 menos 21,25, lo que da 63,75 euros. Te ahorras 21,25 euros en esta compra gracias al descuento aplicado."
+  - title: "Rendimiento de inversion"
+    scenario: "Calcular la variacion porcentual de una inversion de 12.000 euros que ahora vale 15.600 euros"
+    inputs:
+      mode: "change"
+      oldValue: 12000
+      newValue: 15600
+    expectedResult: "Variacion porcentual: +30%"
+    explanation: "La inversion ha ganado 3.600 euros sobre los 12.000 iniciales, lo que representa un rendimiento del 30%. Este calculo funciona igual para acciones, inmuebles o cualquier otro activo financiero."
+  - title: "Nota de examen"
+    scenario: "Calcular que porcentaje representan 37 respuestas correctas sobre un total de 45 preguntas"
+    inputs:
+      mode: "is_what"
+      valueX: 37
+      valueY: 45
+    expectedResult: "37 es el 82,22% de 45"
+    explanation: "Acertar 37 de 45 preguntas equivale a una calificacion de aproximadamente el 82,2%. Este metodo sirve para cualquier prueba o evaluacion en la que necesites convertir una puntuacion a porcentaje."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
