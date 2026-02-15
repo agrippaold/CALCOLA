@@ -111,6 +111,94 @@ export function savingsGrowth(
 }
 
 /**
+ * Auto loan monthly payment with down payment and trade-in.
+ * @param vehiclePrice  Total vehicle price
+ * @param downPayment   Down payment amount
+ * @param tradeInValue  Trade-in value of existing vehicle
+ * @param annualRate    Annual interest rate as percentage
+ * @param years         Loan term in years
+ */
+export function autoLoanPayment(
+  vehiclePrice: number,
+  downPayment: number,
+  tradeInValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  const loanAmount = vehiclePrice - downPayment - tradeInValue;
+  if (loanAmount <= 0) return 0;
+  return mortgagePayment(loanAmount, annualRate, years);
+}
+
+/**
+ * Investment future value with initial amount and regular contributions.
+ * @param initialAmount   Starting investment
+ * @param monthlyContrib  Monthly contribution
+ * @param annualReturn    Expected annual return as percentage
+ * @param years           Investment horizon in years
+ */
+export function investmentGrowth(
+  initialAmount: number,
+  monthlyContrib: number,
+  annualReturn: number,
+  years: number,
+): number {
+  return savingsGrowth(initialAmount, monthlyContrib, annualReturn, years);
+}
+
+/**
+ * Adjust a value for inflation (what today's amount will buy in the future).
+ * Formula: adjustedValue = presentValue / (1 + rate/100)^years
+ */
+export function inflationAdjust(
+  presentValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  if (years <= 0 || annualRate === 0) return presentValue;
+  return presentValue / Math.pow(1 + annualRate / 100, years);
+}
+
+/**
+ * Future cost of something accounting for inflation.
+ * Formula: futureValue = presentValue * (1 + rate/100)^years
+ */
+export function inflationFutureValue(
+  presentValue: number,
+  annualRate: number,
+  years: number,
+): number {
+  if (years <= 0 || annualRate === 0) return presentValue;
+  return presentValue * Math.pow(1 + annualRate / 100, years);
+}
+
+/**
+ * Convert currency using an exchange rate.
+ * @param amount  Amount in source currency
+ * @param rate    Exchange rate (1 source = rate target)
+ */
+export function currencyConvert(amount: number, rate: number): number {
+  if (rate <= 0) return 0;
+  return amount * rate;
+}
+
+/**
+ * Calculate discount price and savings.
+ * @param originalPrice  Original price
+ * @param discountPct    Discount percentage (e.g. 20 for 20%)
+ */
+export function discountPrice(
+  originalPrice: number,
+  discountPct: number,
+): { finalPrice: number; savings: number } {
+  if (originalPrice <= 0 || discountPct <= 0) {
+    return { finalPrice: originalPrice, savings: 0 };
+  }
+  const savings = originalPrice * (discountPct / 100);
+  return { finalPrice: originalPrice - savings, savings };
+}
+
+/**
  * Generate a full amortization schedule.
  */
 export function amortizationSchedule(

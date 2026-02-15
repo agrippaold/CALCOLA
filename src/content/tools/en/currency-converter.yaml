@@ -1,0 +1,82 @@
+id: "currency-converter"
+category: "finance"
+calculatorComponent: "CurrencyConverter"
+
+title: "Currency Converter - Exchange Rate Calculator | CalcHub"
+metaDescription: "Convert between world currencies using up-to-date reference exchange rates. Compare USD, EUR, GBP, JPY, and more for travel, business, or education."
+h1: "Currency Converter"
+slug: "currency-converter"
+
+primaryKeyword: "currency converter"
+secondaryKeywords:
+  - "exchange rate calculator"
+  - "currency exchange calculator"
+  - "money converter"
+  - "forex calculator"
+
+intro: "Whether you are planning a trip abroad, sending money to family overseas, or pricing products for an international market, knowing the accurate exchange rate between currencies is the first step. This converter lets you quickly calculate how much one currency is worth in another using reference mid-market rates. Enter an amount, select your source and target currencies, and get an instant conversion. Keep in mind that banks and exchange services typically add a margin on top of the mid-market rate, so treat these results as a baseline for comparison."
+
+howItWorks:
+  title: "How Currency Conversion Works"
+  content: "Currency exchange rates represent how much of one currency you need to buy a unit of another. When you see a EUR/USD rate of 1.08, it means one euro costs 1.08 US dollars. These rates are determined by the foreign exchange market (forex), the largest financial market in the world with over $7.5 trillion traded daily. Exchange rates fluctuate constantly based on supply and demand, which in turn are influenced by interest rate decisions from central banks, inflation differentials between countries, trade balances, geopolitical events, and investor sentiment. The mid-market rate (also called the interbank rate) is the midpoint between the buy (bid) and sell (ask) prices on the open market. This is the fairest rate available and the one financial news outlets typically quote. However, when you actually exchange money at a bank, airport kiosk, or online transfer service, you receive a different rate. The difference between the mid-market rate and the rate you are offered is the provider's markup, which is how they earn revenue on currency transactions. Banks typically add a spread of 1% to 3%, while airport exchange counters can charge 5% to 10% or more. Online services like Wise and Revolut generally offer rates much closer to the mid-market rate with transparent, lower fees. Cross rates are exchange rates between two currencies that are both calculated through a third common currency, usually the US dollar. For example, if you want to convert British pounds to Japanese yen, the system first converts GBP to USD, then USD to JPY. Most currency pairs that do not directly involve the US dollar are quoted as cross rates. Understanding this helps explain why some currency pairs have wider spreads, since two conversions introduce two layers of potential cost. When planning a large international purchase or transfer, comparing rates across multiple providers, timing the transaction during high-liquidity market hours (overlapping London and New York sessions), and using limit orders through forex platforms can all help you get a better deal."
+  formula: "Converted Amount = Amount x Exchange Rate"
+  formulaExplanation: "Exchange rate = units of target currency per one unit of source currency"
+  academicSource: "International Monetary Fund. (2024). Exchange Rate Archives."
+
+faqs:
+  - question: "What is the difference between the mid-market rate and the bank rate?"
+    answer: "The mid-market rate is the true exchange rate based on supply and demand in the global forex market, sitting exactly between the buy and sell prices. Banks and exchange services add a markup (spread) to this rate to earn profit. A bank might offer you 1.05 for EUR/USD when the mid-market rate is 1.08, pocketing the difference. Always check the mid-market rate first, then compare provider quotes to understand how much margin they are charging."
+  - question: "When is the best time to exchange currency?"
+    answer: "Exchange rates move continuously during market hours, and predicting short-term movements is extremely difficult even for professionals. However, you can optimize in practical ways. Avoid exchanging at airports or tourist areas where markups are highest. Exchange during business hours when liquidity is greatest and spreads are tightest. For large amounts, consider using a forward contract or rate alert through a transfer service to lock in a favorable rate when it appears."
+  - question: "What hidden fees should I watch for when exchanging currency?"
+    answer: "Beyond the exchange rate markup, common hidden costs include fixed transaction fees per transfer, receiving bank charges for incoming wires, intermediary (correspondent) bank fees that deduct from the amount in transit, and dynamic currency conversion charges when paying abroad with a credit card. Some services advertise zero commission but compensate with a wider exchange rate spread. Always calculate the total cost by comparing the amount received against what you would get at the mid-market rate."
+  - question: "Is it better to exchange money before traveling or at my destination?"
+    answer: "It depends on your destination and payment method. In most developed countries, using a no-foreign-transaction-fee credit or debit card gives you rates very close to the mid-market rate and is the most cost-effective option. For destinations where cash is preferred, ordering currency from your bank before departure usually beats airport exchange counters. ATMs abroad often offer reasonable rates but watch for local bank surcharges and your home bank's foreign withdrawal fees."
+  - question: "Why do exchange rates fluctuate so much?"
+    answer: "Exchange rates are driven by macroeconomic factors including interest rate differences between countries, inflation rates, trade balances, government debt levels, and political stability. When a central bank raises interest rates, its currency often strengthens because higher returns attract foreign investment. Economic uncertainty or political instability tends to weaken a currency as investors move money to safer assets. Major events like elections, trade agreements, or natural disasters can cause sudden rate swings."
+  - question: "What is the difference between a forex broker and a money transfer service?"
+    answer: "Forex brokers cater to traders who speculate on currency movements for profit, offering margin-based accounts and trading platforms with real-time charts and analysis tools. Money transfer services focus on sending specific amounts from one person or business to another across borders. Transfer services are regulated differently and optimized for one-time or recurring payments rather than active trading. For simply converting and sending money, a transfer service is usually simpler, safer, and more cost-effective than a forex broker."
+
+examples:
+  - title: "US dollars to euros"
+    scenario: "Converting $2,500 USD to EUR at a rate of 0.9220"
+    inputs:
+      amount: 2500
+      fromCurrency: "USD"
+      toCurrency: "EUR"
+      exchangeRate: 0.9220
+    expectedResult: "Converted amount: 2,305.00 EUR"
+    explanation: "At a mid-market rate of 0.9220 EUR per USD, your $2,500 converts to 2,305.00 euros. In practice, a bank might offer 0.8950 instead, giving you only 2,237.50 EUR, a difference of 67.50 EUR. Comparing providers helps you keep more of your money."
+  - title: "British pounds to Japanese yen"
+    scenario: "Converting 1,000 GBP to JPY at a rate of 191.50"
+    inputs:
+      amount: 1000
+      fromCurrency: "GBP"
+      toCurrency: "JPY"
+      exchangeRate: 191.50
+    expectedResult: "Converted amount: 191,500 JPY"
+    explanation: "The British pound is one of the strongest major currencies relative to the yen. At 191.50 JPY per GBP, 1,000 pounds gives you 191,500 yen. Because this is a cross rate calculated through USD, the actual spread from a provider may be slightly wider than for direct USD pairs."
+  - title: "Euros to Canadian dollars"
+    scenario: "Converting 5,000 EUR to CAD at a rate of 1.4850"
+    inputs:
+      amount: 5000
+      fromCurrency: "EUR"
+      toCurrency: "CAD"
+      exchangeRate: 1.4850
+    expectedResult: "Converted amount: 7,425.00 CAD"
+    explanation: "At 1.4850 CAD per EUR, your 5,000 euros become 7,425.00 Canadian dollars. If you are sending this amount through a wire transfer, check whether the provider deducts fees from the converted amount or charges them separately, as this affects the final sum your recipient receives."
+
+relatedTools:
+  - "inflation-calculator"
+  - "discount-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -7,6 +7,12 @@ import {
   roi,
   savingsGrowth,
   amortizationSchedule,
+  autoLoanPayment,
+  investmentGrowth,
+  inflationAdjust,
+  inflationFutureValue,
+  currencyConvert,
+  discountPrice,
 } from './finance';
 
 describe('mortgagePayment', () => {
@@ -131,5 +137,106 @@ describe('amortizationSchedule', () => {
 
   it('loanPayment is alias for mortgagePayment', () => {
     expect(loanPayment(100_000, 5, 30)).toBe(mortgagePayment(100_000, 5, 30));
+  });
+});
+
+describe('autoLoanPayment', () => {
+  it('calculates with down payment and trade-in', () => {
+    // $30,000 car, $5,000 down, $3,000 trade-in → $22,000 loan at 5% for 5y
+    const result = autoLoanPayment(30_000, 5_000, 3_000, 5, 5);
+    expect(result).toBeCloseTo(415.17, 0);
+  });
+
+  it('returns 0 when down payment + trade-in covers price', () => {
+    expect(autoLoanPayment(20_000, 15_000, 10_000, 5, 5)).toBe(0);
+  });
+
+  it('works with zero down payment and trade-in', () => {
+    const result = autoLoanPayment(25_000, 0, 0, 6, 4);
+    expect(result).toBeCloseTo(586.85, 0);
+  });
+});
+
+describe('investmentGrowth', () => {
+  it('calculates investment with contributions', () => {
+    // $10,000 initial + $500/month at 8% for 10 years
+    const result = investmentGrowth(10_000, 500, 8, 10);
+    expect(result).toBeCloseTo(113_669, -2);
+  });
+
+  it('matches savingsGrowth', () => {
+    const inv = investmentGrowth(5000, 200, 7, 20);
+    const sav = savingsGrowth(5000, 200, 7, 20);
+    expect(inv).toBe(sav);
+  });
+});
+
+describe('inflationAdjust', () => {
+  it('calculates purchasing power loss', () => {
+    // $100 at 3% inflation for 10 years → ~$74.41
+    const result = inflationAdjust(100, 3, 10);
+    expect(result).toBeCloseTo(74.41, 1);
+  });
+
+  it('returns original for 0 years', () => {
+    expect(inflationAdjust(100, 3, 0)).toBe(100);
+  });
+
+  it('returns original for 0% rate', () => {
+    expect(inflationAdjust(100, 0, 10)).toBe(100);
+  });
+});
+
+describe('inflationFutureValue', () => {
+  it('calculates future cost', () => {
+    // $100 item at 3% inflation for 10 years → ~$134.39
+    const result = inflationFutureValue(100, 3, 10);
+    expect(result).toBeCloseTo(134.39, 1);
+  });
+
+  it('returns original for 0 years', () => {
+    expect(inflationFutureValue(100, 3, 0)).toBe(100);
+  });
+});
+
+describe('currencyConvert', () => {
+  it('converts at given rate', () => {
+    // 100 USD at 0.92 EUR/USD → 92 EUR
+    expect(currencyConvert(100, 0.92)).toBeCloseTo(92, 2);
+  });
+
+  it('handles rate of 1', () => {
+    expect(currencyConvert(50, 1)).toBe(50);
+  });
+
+  it('returns 0 for invalid rate', () => {
+    expect(currencyConvert(100, 0)).toBe(0);
+    expect(currencyConvert(100, -1)).toBe(0);
+  });
+});
+
+describe('discountPrice', () => {
+  it('calculates 20% off $80', () => {
+    const result = discountPrice(80, 20);
+    expect(result.finalPrice).toBe(64);
+    expect(result.savings).toBe(16);
+  });
+
+  it('calculates 50% off', () => {
+    const result = discountPrice(100, 50);
+    expect(result.finalPrice).toBe(50);
+    expect(result.savings).toBe(50);
+  });
+
+  it('handles 0% discount', () => {
+    const result = discountPrice(100, 0);
+    expect(result.finalPrice).toBe(100);
+    expect(result.savings).toBe(0);
+  });
+
+  it('handles negative price', () => {
+    const result = discountPrice(-10, 20);
+    expect(result.finalPrice).toBe(-10);
+    expect(result.savings).toBe(0);
   });
 });

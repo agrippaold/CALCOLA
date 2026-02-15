@@ -1,0 +1,77 @@
+id: "roi-calculator"
+category: "finance"
+calculatorComponent: "ROICalculator"
+
+title: "ROI Calculator - Return on Investment | CalcHub"
+metaDescription: "Calculate your return on investment as a percentage. Compare ROI across stocks, real estate, business expenses, and marketing campaigns instantly."
+h1: "ROI Calculator"
+slug: "roi-calculator"
+
+primaryKeyword: "roi calculator"
+secondaryKeywords:
+  - "return on investment calculator"
+  - "ROI percentage calculator"
+  - "investment return calculator"
+  - "profit calculator"
+
+intro: "Return on investment is one of the most widely used metrics for evaluating whether a financial decision paid off. Whether you are analyzing a stock purchase, a rental property, a business expense, or a marketing campaign, ROI gives you a clear percentage that shows how much profit or loss you generated relative to what you spent. This calculator takes your total cost and total gain, then computes the ROI percentage so you can quickly compare the effectiveness of different investments and business decisions."
+
+howItWorks:
+  title: "How ROI Is Calculated"
+  content: "ROI measures the efficiency of an investment by expressing the net profit as a percentage of the original cost. The formula is straightforward: subtract the total cost from the total gain to find the net profit, then divide that net profit by the original cost and multiply by 100 to express it as a percentage. A positive ROI means you earned more than you spent, while a negative ROI means you lost money. For example, if you invested $5,000 in a stock and later sold it for $7,500, your net profit is $2,500 and your ROI is 50%. The simplicity of ROI is both its strength and its limitation. It provides an easy way to compare different investments on a common scale, regardless of the dollar amounts involved. A $1,000 investment that returns $1,500 has the same 50% ROI as a $100,000 investment that returns $150,000, making it useful for evaluating efficiency rather than absolute profit. However, standard ROI does not account for the time period of the investment. A 50% return over one year is far more impressive than a 50% return over ten years. For time-sensitive comparisons, annualized ROI is more appropriate. Annualized ROI converts the total return into a yearly equivalent rate, allowing fair comparison between investments held for different durations. The formula for annualized ROI is: ((1 + ROI)^(1/years) - 1) x 100. ROI also does not factor in risk. Two investments might both show a 20% ROI, but if one carried significantly more risk of loss, the safer option was the better risk-adjusted choice. Professionals often use metrics like the Sharpe ratio or risk-adjusted return alongside ROI for a more complete picture. In business contexts, ROI is commonly used to evaluate marketing campaigns, equipment purchases, employee training programs, and technology investments. Marketing ROI specifically measures revenue generated against marketing spend, though attributing revenue to specific campaigns can be challenging. When calculating business ROI, be sure to include all associated costs, not just the sticker price. A piece of equipment that costs $15,000 to buy but also requires $2,000 in installation and $1,000 in annual maintenance has a true cost basis higher than $15,000."
+  formula: "ROI = ((Gain - Cost) / Cost) x 100%"
+  formulaExplanation: "Gain = total amount received or current value of investment, Cost = total amount invested or spent"
+  academicSource: "Brealey, R., Myers, S., & Allen, F. (2020). Principles of Corporate Finance. McGraw-Hill."
+
+faqs:
+  - question: "What is considered a good ROI percentage?"
+    answer: "A good ROI depends heavily on the context and the type of investment. For the stock market, the historical average annual return is about 10% before inflation, so any single investment returning more than 10% per year is performing above average. For real estate, a 8% to 12% annual ROI including rental income and appreciation is generally considered strong. In business, marketing campaigns often target a 5:1 return ratio, which equates to a 400% ROI. The key is comparing ROI against relevant benchmarks rather than using a universal threshold."
+  - question: "What is the difference between ROI and annualized return?"
+    answer: "Standard ROI measures the total percentage gain or loss over the entire holding period, regardless of how long that period is. Annualized return converts that total into an equivalent yearly rate. For example, a 60% total ROI over 5 years converts to approximately 9.9% annualized return. This distinction matters when comparing investments held for different time periods. A 30% ROI over 2 years (annualized: 14.0%) is actually better than a 50% ROI over 5 years (annualized: 8.4%) on a per-year basis."
+  - question: "What does a negative ROI mean for my investment?"
+    answer: "A negative ROI means your investment lost money, specifically that the total value received is less than the total amount invested. For example, buying stock for $10,000 and selling for $8,000 gives a negative 20% ROI. While a negative ROI is never desirable, it is important to evaluate whether the loss is temporary (such as an unrealized loss in a volatile market) or permanent (such as a failed business venture). Tax-loss harvesting, where you sell losing investments to offset gains, can partially recover value from negative-ROI investments."
+  - question: "How do I calculate ROI for real estate investments?"
+    answer: "Real estate ROI should include all income and all costs. On the income side, count rental income, tax benefits, and any property appreciation when you sell. On the cost side, include the purchase price, closing costs, renovation expenses, property taxes, insurance, maintenance, property management fees, and mortgage interest if financed. For annual ROI on a rental property, divide the net annual income (rent minus all operating expenses) by the total cash invested. If you purchased a property for $200,000, earn $24,000 annually in rent, and have $8,000 in annual expenses, your annual ROI is 8%."
+  - question: "How is marketing ROI different from general investment ROI?"
+    answer: "Marketing ROI follows the same basic formula but presents unique measurement challenges. The cost side is straightforward, including ad spend, agency fees, content creation costs, and software subscriptions. The gain side is trickier because attributing revenue directly to a specific campaign requires careful tracking through UTM parameters, conversion pixels, or coupon codes. Many companies use multi-touch attribution models that assign partial credit to each marketing touchpoint a customer encounters before purchasing. A common simplification is to use incremental revenue above the baseline as the gain figure."
+  - question: "Can I use ROI to compare completely different types of investments?"
+    answer: "ROI provides a common percentage metric that allows comparison across asset classes, but it should not be the only factor. A rental property with 12% annual ROI requires active management, maintenance, and carries illiquidity risk, while an index fund with 10% annual ROI is completely passive and highly liquid. When comparing different investment types, also consider the time commitment required, the liquidity of the asset, the risk of loss, tax implications, and whether the ROI figure accounts for all associated costs. Using ROI alongside other metrics gives you a more accurate comparison."
+
+examples:
+  - title: "Stock investment gain"
+    scenario: "Purchased stock for $5,000 and sold it for $7,500"
+    inputs:
+      totalCost: 5000
+      totalGain: 7500
+    expectedResult: "ROI: 50.0% | Net profit: $2,500.00"
+    explanation: "The net profit of $2,500 divided by the original $5,000 cost yields a 50% return on investment. If this gain occurred over 2 years, the annualized ROI would be approximately 22.5%. If it took 5 years, the annualized ROI drops to about 8.4%. Context about the holding period is essential for evaluating whether this was a strong performance."
+  - title: "Rental property annual return"
+    scenario: "A $200,000 rental property generating $24,000 in annual rent with $8,000 in annual expenses"
+    inputs:
+      totalCost: 200000
+      annualIncome: 24000
+      annualExpenses: 8000
+    expectedResult: "Annual ROI: 8.0% | Net annual income: $16,000.00"
+    explanation: "The net annual income of $16,000 (rent minus expenses) divided by the $200,000 property cost gives an 8% annual ROI. This calculation does not include property appreciation, which could add another 2% to 4% annually in many markets. However, it also does not deduct mortgage interest if the property was financed, which would reduce the cash-on-cash return."
+  - title: "Marketing campaign performance"
+    scenario: "A digital marketing campaign costing $3,000 that generated $9,500 in attributed revenue"
+    inputs:
+      totalCost: 3000
+      totalGain: 9500
+    expectedResult: "ROI: 216.67% | Net profit: $6,500.00"
+    explanation: "The campaign produced $6,500 in profit on a $3,000 spend, yielding a 216.67% ROI. This represents a return ratio of roughly 3.2 to 1, meaning every dollar spent generated $3.17 in revenue. Most marketing teams consider a 3:1 or higher return ratio to be a strong result worth scaling up with additional budget."
+
+relatedTools:
+  - "investment-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

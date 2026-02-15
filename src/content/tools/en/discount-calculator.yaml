@@ -1,0 +1,76 @@
+id: "discount-calculator"
+category: "finance"
+calculatorComponent: "DiscountCalculator"
+
+title: "Discount Calculator - Sale Price & Savings | CalcHub"
+metaDescription: "Calculate the final price after a percentage discount. See exactly how much you save on any sale item and compare deals before you buy."
+h1: "Discount Calculator"
+slug: "discount-calculator"
+
+primaryKeyword: "discount calculator"
+secondaryKeywords:
+  - "sale price calculator"
+  - "percent off calculator"
+  - "savings calculator discount"
+  - "price after discount"
+
+intro: "Sales, promotions, and clearance events can make it hard to tell whether you are actually getting a good deal. This discount calculator removes the guesswork by showing you the exact final price and dollar savings for any percentage discount. Enter the original price and the discount percentage to instantly see what you will pay and what you save. Use it to compare competing deals, figure out if a coupon is worth the trip, or double-check that the register rang up the right sale price."
+
+howItWorks:
+  title: "How Discounts Are Calculated"
+  content: "A percentage discount is straightforward arithmetic: multiply the original price by the discount rate to find the savings amount, then subtract that from the original price to get the final cost. For a $200 item at 30% off, the savings are $200 times 0.30 which equals $60, making the final price $140. Where things get interesting, and where most shoppers make mistakes, is with stacked or successive discounts. If a store advertises 50% off plus an additional 20% off, the total discount is not 70%. The second discount applies to the already-reduced price. Starting at $200, the first 50% brings it to $100, then 20% off $100 removes another $20, landing at $80. The actual combined discount is 60%, not 70%. This misunderstanding is so common that some retailers use it as a deliberate pricing strategy, making deals appear larger than they are. Psychological pricing plays a major role in retail. Prices ending in .99 or .97 create the perception of a bargain, even when the actual savings are minimal. A $49.99 item at 10% off becomes $44.99, a savings of $5.00, which feels like a deal but may not justify a special trip to the store. Comparing the unit price (cost per ounce, per count, or per unit) is often more informative than the percentage discount, especially for grocery and household items. A larger package at 10% off may still cost more per unit than a smaller package at regular price. Some retailers use markup-then-discount tactics, raising the original price before a sale so the discount percentage looks impressive while the actual selling price is close to what it was before. Checking price history through browser extensions or price tracking websites can reveal whether a sale represents genuine savings. When evaluating any deal, consider the absolute dollar savings rather than just the percentage. A 5% discount on a $2,000 appliance saves $100, while a 25% discount on a $20 item saves only $5. The smaller percentage yields the larger real-world savings in your pocket."
+  formula: "Final Price = Original Price x (1 - Discount / 100)"
+  formulaExplanation: "Savings = Original Price x (Discount / 100)"
+  academicSource: "Federal Trade Commission. (2024). Shopping and Saving."
+
+faqs:
+  - question: "How do stacking discounts actually work?"
+    answer: "Stacking discounts means applying multiple percentage reductions in sequence. Each discount is calculated on the price remaining after the previous one, not on the original price. For example, 30% off followed by an extra 10% off a $100 item gives you $70 after the first discount, then $63 after the second. The total effective discount is 37%, not 40%. The order of the discounts does not matter mathematically, but the combined discount is always less than the sum of the individual percentages."
+  - question: "Is sales tax calculated before or after the discount?"
+    answer: "In the United States and most jurisdictions, sales tax is calculated on the actual price you pay after all discounts have been applied. If a $100 item is 20% off, you pay tax on $80, not on the original $100. This applies to both percentage discounts and fixed-amount coupons. Some states have specific rules for manufacturer rebates versus store coupons, so check local regulations if the distinction matters for a large purchase."
+  - question: "How can I tell if a sale price is actually a good deal?"
+    answer: "Use price tracking tools or browser extensions to see the price history of an item. Many products have a predictable pricing cycle, especially electronics and seasonal goods. Compare the sale price to the lowest price recorded in the past 90 days rather than just the listed original price. Check the per-unit cost if buying consumable goods. Finally, consider whether you actually need the item, the best deal is not buying something you would not have purchased at full price."
+  - question: "What is psychological pricing and how does it affect discounts?"
+    answer: "Psychological pricing refers to strategies like setting prices at $9.99 instead of $10.00, using anchoring with a high original price to make the sale price look attractive, or displaying percentage savings prominently while downplaying the actual dollar amount. Retailers know that a 40% off sticker triggers excitement even if the savings amount is small. Being aware of these tactics helps you evaluate deals based on actual value rather than emotional response. Always calculate the dollar amount you save, not just the percentage."
+  - question: "When are the best times of year to find the biggest discounts?"
+    answer: "In the US, the largest retail discounts typically appear during Black Friday and Cyber Monday (November), end-of-season clearance events (January and July), Amazon Prime Day (usually July), Labor Day and Memorial Day weekend sales, and post-holiday markdowns. Electronics tend to drop around new model releases. Clothing follows seasonal cycles with the deepest discounts about 6 to 8 weeks after each season begins. Back-to-school sales in August and September often cover more than just school supplies."
+  - question: "Should I use a coupon or wait for a sale?"
+    answer: "It depends on the coupon value and how predictable the sale cycle is. If you have a 20% off coupon and the item regularly goes on sale for 30% to 40% off, waiting is likely better. However, coupons on items that rarely go on sale, like staple groceries or household brands, usually represent real savings worth taking immediately. Some stores allow coupon stacking on top of sale prices, which gives you the best of both options. Check the store's coupon policy before assuming this is permitted."
+
+examples:
+  - title: "Standard clothing sale"
+    scenario: "$79.99 jacket at 25% off"
+    inputs:
+      originalPrice: 79.99
+      discount: 25
+    expectedResult: "Final price: $59.99 | You save: $20.00"
+    explanation: "A 25% discount on $79.99 gives savings of $20.00 (79.99 times 0.25 rounds to 20.00), bringing the final price to $59.99. This is a common discount level during mid-season sales. If you were already planning to buy the jacket, the $20 savings is real value."
+  - title: "Big ticket electronics purchase"
+    scenario: "$1,200 laptop at 15% off"
+    inputs:
+      originalPrice: 1200
+      discount: 15
+    expectedResult: "Final price: $1,020.00 | You save: $180.00"
+    explanation: "On a $1,200 laptop, 15% off removes $180 from the price, bringing it down to $1,020. For expensive items, even a modest-sounding percentage translates to substantial dollar savings. Compare this to waiting for a potential 20% off sale, which would save $240 total, only $60 more than the current offer."
+  - title: "Clearance rack find"
+    scenario: "$49.95 shoes at 40% off"
+    inputs:
+      originalPrice: 49.95
+      discount: 40
+    expectedResult: "Final price: $29.97 | You save: $19.98"
+    explanation: "A 40% clearance discount on $49.95 shoes saves you $19.98, dropping the price to $29.97. Clearance discounts of 40% or more are common on end-of-season inventory. At this level, you are paying less than the wholesale cost in many cases, which makes it a strong deal if the item fits your needs."
+
+relatedTools:
+  - "loan-calculator"
+  - "savings-calculator"
+  - "currency-converter"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

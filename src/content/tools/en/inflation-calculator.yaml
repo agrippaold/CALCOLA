@@ -1,0 +1,79 @@
+id: "inflation-calculator"
+category: "finance"
+calculatorComponent: "InflationCalculator"
+
+title: "Inflation Calculator - Purchasing Power | CalcHub"
+metaDescription: "Calculate how inflation affects your purchasing power over time. See how rising prices erode the value of your savings and plan ahead effectively."
+h1: "Inflation Calculator"
+slug: "inflation-calculator"
+
+primaryKeyword: "inflation calculator"
+secondaryKeywords:
+  - "purchasing power calculator"
+  - "inflation rate calculator"
+  - "cost of living calculator"
+  - "future value inflation calculator"
+
+intro: "Inflation quietly reduces the value of every dollar you hold. Over a decade, even a moderate 3% annual rate means your money loses roughly a quarter of its buying power. This calculator shows you the real impact of inflation on your savings, expenses, and long-term financial plans. Enter an amount, an expected inflation rate, and a time period to see both what today's money will cost in the future and what future dollars are worth in current terms. Use the results to set smarter savings targets and make informed retirement projections."
+
+howItWorks:
+  title: "How Inflation Affects Your Money"
+  content: "Inflation measures the rate at which the general price level of goods and services rises over time, reducing what each unit of currency can buy. In the United States, the most widely referenced measure is the Consumer Price Index (CPI), published monthly by the Bureau of Labor Statistics. The CPI tracks the average price change for a basket of common goods including food, housing, transportation, medical care, and energy. Over the past century, US inflation has averaged approximately 3% per year, though individual years vary widely, from mild deflation during the Great Depression to double-digit rates in the late 1970s and early 1980s. Inflation compounds year over year, much like interest. A 3% annual rate does not simply add 30% over ten years. Instead, each year's increase builds on the previous year's higher prices. After ten years at 3%, prices have risen by about 34.4%, meaning something that cost $100 would cost approximately $134.39. Looked at from the other direction, $100 set aside today would only purchase about $74.41 worth of goods at that point. This compounding effect is what makes inflation so damaging to cash savings held over long periods. Purchasing power is the practical way to think about what your money can actually buy. If you keep $10,000 in a savings account earning 1% interest while inflation runs at 3%, your balance grows nominally but shrinks in real terms. After 20 years, your account shows roughly $12,202 but prices have risen so that you would need $18,061 to buy what $10,000 bought originally. This gap illustrates why financial planners stress the importance of earning returns that exceed the inflation rate. Treasury Inflation-Protected Securities (TIPS), diversified stock portfolios, and real estate are common vehicles people use to keep pace with or outperform inflation over time. When planning for retirement or any long-term goal, always adjust your target amount upward to account for expected inflation so your savings maintain their real value."
+  formula: "Future Cost = Present Value x (1 + r)^t | Purchasing Power = Present Value / (1 + r)^t"
+  formulaExplanation: "r = annual inflation rate as a decimal (e.g., 3% = 0.03), t = number of years"
+  academicSource: "Bureau of Labor Statistics. (2024). Consumer Price Index Frequently Asked Questions."
+
+faqs:
+  - question: "What is the current US inflation rate?"
+    answer: "The US inflation rate fluctuates monthly based on the CPI report from the Bureau of Labor Statistics. In recent years, it has ranged from under 2% to over 9% during the post-pandemic price surge of 2022. For long-term planning, many financial advisors use 3% as a reasonable historical average. Always check the latest BLS release for the most current figure when making near-term financial decisions."
+  - question: "How can I protect my savings from inflation?"
+    answer: "The most effective way to beat inflation is to invest in assets that historically grow faster than prices rise. Diversified stock index funds have returned roughly 7% to 10% annually before inflation over the long term. Treasury Inflation-Protected Securities (TIPS) adjust their principal with CPI changes. Real estate, commodities, and I Bonds also serve as inflation hedges. Keeping large sums in low-interest checking or savings accounts is the surest way to lose purchasing power over time."
+  - question: "What is the difference between inflation and deflation?"
+    answer: "Inflation is a sustained increase in the general price level, while deflation is a sustained decrease. Moderate inflation (around 2% to 3%) is considered normal and even healthy for economic growth. Deflation, though it sounds beneficial for consumers, often signals weak demand and economic contraction. Falling prices can cause businesses to cut wages and delay investment, creating a downward spiral. Central banks generally target mild inflation rather than zero price change."
+  - question: "What is hyperinflation and has it happened in the US?"
+    answer: "Hyperinflation is extremely rapid, out-of-control inflation, typically defined as price increases exceeding 50% per month. The US has never experienced true hyperinflation, though it saw high inflation above 14% annually in 1980. Notable historical examples include Germany in 1923, Zimbabwe in 2008, and Venezuela in the late 2010s. Hyperinflation destroys savings almost overnight and usually results from governments printing excessive money to cover debts."
+  - question: "Does the CPI accurately measure real inflation?"
+    answer: "The CPI is widely used but has known limitations. Critics argue it understates inflation because it uses substitution adjustments, assuming consumers switch to cheaper alternatives when prices rise. It also struggles to capture housing costs accurately since it uses rental equivalence rather than actual home prices. On the other hand, some economists say CPI overstates inflation because it does not fully account for quality improvements in goods like electronics. Alternative measures like the Personal Consumption Expenditures (PCE) index often show slightly lower inflation than CPI."
+  - question: "How does inflation affect retirement planning?"
+    answer: "Inflation has a dramatic effect on retirement because the time horizon is so long. If you plan to retire in 25 years and need $60,000 per year in current dollars, you would actually need about $111,237 per year assuming 2.5% average annual inflation. Over a 30-year retirement, cumulative inflation can more than double your required spending. Financial planners recommend building inflation assumptions of 2.5% to 3% into all retirement projections and choosing investment allocations that have historically outpaced price increases."
+
+examples:
+  - title: "10-year inflation impact"
+    scenario: "$1,000 at 3% annual inflation over 10 years"
+    inputs:
+      amount: 1000
+      inflationRate: 3
+      years: 10
+    expectedResult: "Future cost: $1,343.92 | Purchasing power: $744.09"
+    explanation: "At 3% annual inflation, something that costs $1,000 today will cost $1,343.92 in ten years. Conversely, $1,000 saved today without any growth will only purchase $744.09 worth of goods at that point. This means your money loses about 25.6% of its real value over a single decade, even at a moderate inflation rate."
+  - title: "Retirement expense projection"
+    scenario: "$50,000 annual expenses at 2.5% inflation over 25 years"
+    inputs:
+      amount: 50000
+      inflationRate: 2.5
+      years: 25
+    expectedResult: "Future cost: $92,697.20 | Purchasing power: $26,969.53"
+    explanation: "If your current annual living expenses are $50,000, you would need $92,697 per year to maintain the same standard of living 25 years from now at 2.5% inflation. Looking at it the other way, $50,000 held in cash would only cover what $26,970 buys today. This nearly doubling of costs is why retirement savings targets must account for decades of price increases."
+  - title: "Short-term grocery budget impact"
+    scenario: "$500 monthly grocery budget at 4% food inflation over 5 years"
+    inputs:
+      amount: 500
+      inflationRate: 4
+      years: 5
+    expectedResult: "Future cost: $608.33 | Purchasing power: $410.96"
+    explanation: "Food prices often rise faster than general inflation. At 4% annual increases, a $500 monthly grocery budget would need to grow to $608 within five years just to buy the same items. If your income does not keep pace, you effectively lose about $89 per month in grocery purchasing power, forcing adjustments in what or how much you buy."
+
+relatedTools:
+  - "savings-calculator"
+  - "compound-interest-calculator"
+  - "loan-calculator"
+
+defaults:
+  unit: "usd"
+  numberFormat:
+    decimal: "."
+    thousands: ","
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
