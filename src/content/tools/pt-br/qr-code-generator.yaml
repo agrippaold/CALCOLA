@@ -1,0 +1,79 @@
+id: "qr-code-generator"
+category: "text"
+calculatorComponent: "QRCodeGenerator"
+
+title: "Gerador de QR Code Gratis - URL, Texto, WiFi, Email | CalcHub"
+metaDescription: "Gere QR codes instantaneamente para URLs, texto, credenciais WiFi e enderecos de email. Gratis, sem cadastro, baixe como PNG. Funciona em todos os dispositivos."
+h1: "Gerador de QR Code"
+slug: "gerador-qr-code"
+
+primaryKeyword: "gerador qr code"
+secondaryKeywords:
+  - "gerador qr code gratis"
+  - "criar qr code online"
+  - "qr code wifi"
+  - "qr code url"
+  - "gerar codigo qr"
+
+intro: "Crie QR codes instantaneamente para qualquer finalidade, desde compartilhar links de sites e credenciais WiFi ate codificar mensagens de texto e enderecos de email. Este gerador de QR code gratis funciona inteiramente no seu navegador, sem necessidade de cadastro e sem marcas d'agua nos downloads. Escolha entre modo URL, texto simples, email ou WiFi, gere um QR code nitido em tempo real e baixe como PNG de alta resolucao. Cada codigo utiliza correcao de erro media para permanecer escaneavel mesmo quando parcialmente obstruido ou impresso em tamanhos menores. Use para cartoes de visita, cardapios de restaurante, panfletos de eventos, embalagens de produtos ou em qualquer lugar onde voce precise de uma ponte rapida entre o mundo fisico e o digital."
+
+howItWorks:
+  title: "Como os QR Codes Funcionam"
+  content: "Um QR Code (Quick Response ou Resposta Rapida) e um codigo de barras bidimensional inventado em 1994 pela Denso Wave, subsidiaria da Toyota, originalmente para rastrear pecas automotivas durante a fabricacao. Diferente dos codigos de barras tradicionais que armazenam dados em uma dimensao usando larguras de linha variaveis, os QR codes codificam informacoes tanto na horizontal quanto na vertical usando uma matriz de modulos escuros e claros organizados em uma grade quadrada. Essa abordagem bidimensional permite que QR codes armazenem significativamente mais dados, ate 4.296 caracteres alfanumericos ou 7.089 digitos numericos, comparado a aproximadamente 20 caracteres de um codigo de barras padrao. O processo de codificacao comeca analisando os dados de entrada e selecionando o modo de codificacao mais eficiente. QR codes suportam quatro modos: numerico (apenas digitos), alfanumerico (digitos, letras maiusculas e alguns simbolos), byte (qualquer caractere via UTF-8) e kanji (caracteres japoneses). O codificador entao adiciona dados de correcao de erros usando codigos Reed-Solomon, que permitem que o QR code seja lido corretamente mesmo quando uma porcao esta danificada, suja ou obstruida. Os niveis de correcao de erros vao de L (7% de recuperacao) ate M (15%), Q (25%) e H (30%). Esta calculadora usa o nivel M como um equilibrio pratico entre densidade de dados e durabilidade. Os padroes quadrados distintivos em tres cantos de cada QR code sao chamados de padroes de localizacao. Eles permitem que leitores identifiquem o codigo, determinem sua orientacao e localizem a area de dados independentemente do angulo de visualizacao. Smartphones modernos podem ler QR codes usando seus aplicativos de camera integrados sem necessidade de software especial. A pandemia de COVID-19 acelerou dramaticamente a adocao de QR codes no Brasil e no mundo, com cardapios digitais, pagamentos via Pix, comprovantes de vacinacao e check-ins de eventos impulsionando a familiaridade do publico. Hoje, QR codes sao usados em campanhas de marketing, autenticacao de produtos, cartoes de embarque, autenticacao de dois fatores e inumeras outras aplicacoes."
+  formula: "Capacidade do QR Code: ate 4.296 caracteres alfanumericos | Nivel de correcao de erro M: 15% de recuperacao de dados"
+  formulaExplanation: "Os dados sao codificados usando correcao de erros Reed-Solomon, com padroes de localizacao para deteccao de orientacao"
+  academicSource: "ISO/IEC 18004:2015 — QR Code bar code symbology specification"
+
+faqs:
+  - question: "Este gerador de QR code e realmente gratis?"
+    answer: "Sim, este gerador de QR code e completamente gratuito, sem limitacoes, sem marcas d'agua e sem necessidade de cadastro. Os QR codes sao gerados inteiramente no seu navegador usando JavaScript, o que significa que seus dados nunca sao enviados para nenhum servidor. Voce pode gerar codigos ilimitados e baixa-los como arquivos PNG de alta resolucao para qualquer finalidade, incluindo uso comercial. Nao ha taxas ocultas, planos premium ou restricoes de funcionalidades."
+  - question: "Qual e a capacidade maxima de dados de um QR code?"
+    answer: "Um QR code pode conter ate 7.089 digitos numericos, 4.296 caracteres alfanumericos ou 2.953 bytes de dados binarios no maior tamanho padrao. Porem, QR codes praticos para escaneamento com cameras de celular funcionam melhor com conteudo mais curto. URLs devem ter idealmente menos de 300 caracteres para escaneamento confiavel. Dados muito longos produzem codigos densos que exigem impressao de maior resolucao e distancias de escaneamento mais proximas."
+  - question: "Como crio um QR code de WiFi?"
+    answer: "Selecione a aba WiFi, insira o nome da rede (SSID), a senha e o tipo de criptografia (WPA/WPA2 para a maioria das redes modernas). O gerador cria um QR code usando o formato padrao de configuracao WiFi reconhecido por dispositivos Android e iOS. Quando alguem escaneia o codigo com a camera do celular, sera solicitado a conectar-se a rede automaticamente sem precisar digitar a senha. Isso e especialmente util para redes de visitantes em casas, escritorios, cafes e hoteis."
+  - question: "QR codes podem ser escaneados se estiverem parcialmente danificados?"
+    answer: "Sim, QR codes incluem correcao de erros integrada usando codificacao Reed-Solomon. Este gerador usa o nivel de correcao de erros M, que permite que o codigo seja lido corretamente mesmo se ate 15% dos modulos estiverem danificados, sujos ou obstruidos. Niveis mais altos de correcao (Q a 25% e H a 30%) oferecem ainda mais resistencia, mas exigem codigos maiores. Essa redundancia e a razao pela qual QR codes permanecem escaneaveis mesmo quando impressos em superficies curvas ou parcialmente cobertos."
+  - question: "Que tamanho devo imprimir um QR code?"
+    answer: "O tamanho minimo recomendado depende da distancia de escaneamento. Como regra geral, o QR code deve ter pelo menos um decimo da distancia de escaneamento. Para um codigo escaneado a 10 centimetros, um tamanho minimo de 1 centimetro funciona. Para um cartaz escaneado a 1 metro, o codigo deve ter pelo menos 10 centimetros. Sempre teste seu QR code impresso na distancia de escaneamento esperada antes de fazer uma grande tiragem."
+  - question: "QR codes expiram?"
+    answer: "QR codes estaticos como os gerados por esta ferramenta nunca expiram. Os dados sao codificados diretamente no padrao de modulos pretos e brancos, entao o codigo funcionara enquanto o conteudo codificado permanecer valido. Por exemplo, um QR code codificando uma URL funcionara indefinidamente, mas o site vinculado pode sair do ar. QR codes dinamicos, oferecidos por alguns servicos comerciais, usam uma URL de redirecionamento que pode ser alterada posteriormente, mas dependem do servico continuar ativo. Codigos estaticos sao mais confiaveis para uso de longo prazo."
+
+examples:
+  - title: "QR code de URL de site"
+    scenario: "Gerar um QR code para a URL de um site comercial"
+    inputs:
+      type: "url"
+      content: "https://example.com"
+    expectedResult: "Imagem de QR code pronta para download"
+    explanation: "Insira a URL completa incluindo https:// na aba URL. O gerador cria um QR code escaneavel instantaneamente. Baixe o PNG e use em cartoes de visita, panfletos ou na vitrine da sua loja. A maioria das cameras de smartphone reconhecera automaticamente a URL e oferecera abri-la no navegador."
+  - title: "Compartilhamento de WiFi para visitantes"
+    scenario: "Criar um QR code para acesso WiFi de visitantes"
+    inputs:
+      type: "wifi"
+      ssid: "RedeVisitante"
+      password: "BemVindo2024"
+      encryption: "WPA"
+    expectedResult: "QR code WiFi que conecta dispositivos automaticamente"
+    explanation: "Mude para a aba WiFi e insira os dados da rede. O QR code gerado usa o formato padrao de configuracao WiFi. Imprima e coloque proximo a entrada ou em displays de mesa. Visitantes escaneiam com a camera do celular e conectam instantaneamente sem precisar perguntar a senha."
+  - title: "Compartilhamento de contato em evento"
+    scenario: "Criar um QR code para contato rapido por email"
+    inputs:
+      type: "email"
+      email: "contato@conferencia.com.br"
+      subject: "Contato da conferencia"
+    expectedResult: "QR code de email que abre o cliente de email com destinatario e assunto pre-preenchidos"
+    explanation: "Use a aba Email para codificar um endereco de email e uma linha de assunto opcional. Quando escaneado, o QR code abre o aplicativo de email padrao com destinatario e assunto pre-preenchidos. Ideal para crachas de conferencia, materiais promocionais ou formularios de feedback."
+
+relatedTools:
+  - "password-generator"
+  - "word-counter"
+  - "character-counter"
+
+defaults:
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-16"
+author: "CalcHub Team"
+priority: "high"

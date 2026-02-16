@@ -1,0 +1,92 @@
+id: "mortgage-calculator"
+category: "finance"
+calculatorComponent: "MortgageCalculator"
+
+title: "Calculadora de Financiamento Imobiliario - Simule Parcelas | CalcHub"
+metaDescription: "Simule seu financiamento imobiliario com tabela SAC ou Price. Calcule parcelas, juros totais e use FGTS. Comparador gratuito e instantaneo."
+h1: "Calculadora de Financiamento Imobiliario"
+slug: "calculadora-financiamento-imobiliario"
+
+primaryKeyword: "calculadora financiamento imobiliario"
+secondaryKeywords:
+  - "simulador financiamento imobiliario"
+  - "calcular parcela financiamento"
+  - "financiamento casa propria"
+  - "simulacao financiamento habitacional"
+  - "tabela SAC vs Price"
+
+intro: "Comprar a casa propria e o maior sonho e o maior compromisso financeiro da maioria dos brasileiros. Antes de assinar qualquer contrato, voce precisa saber exatamente quanto vai pagar por mes, quanto vai gastar em juros ao longo do financiamento e qual sistema de amortizacao e mais vantajoso para o seu bolso. Esta calculadora de financiamento imobiliario simula suas parcelas considerando o valor do imovel, a entrada, a taxa de juros e o prazo. Compare cenarios com tabela SAC e tabela Price para tomar a decisao mais inteligente para suas financas. Utilize os resultados para negociar melhores condicoes com bancos e instituicoes financeiras."
+
+howItWorks:
+  title: "Como funciona o calculo de financiamento imobiliario"
+  content: "No Brasil, os financiamentos imobiliarios utilizam dois sistemas principais de amortizacao: a Tabela SAC (Sistema de Amortizacao Constante) e a Tabela Price (Sistema Frances de Amortizacao). No sistema SAC, a amortizacao do principal e constante ao longo de todo o contrato, enquanto os juros sao calculados sobre o saldo devedor remanescente. Isso faz com que as parcelas comecem mais altas e diminuam progressivamente ao longo do tempo. No sistema Price, as parcelas sao fixas durante todo o periodo do financiamento, mas a composicao de cada parcela muda: no inicio, a maior parte vai para juros, e conforme o saldo devedor diminui, uma fatia maior passa a abater o principal. A maioria dos bancos brasileiros, incluindo a Caixa Economica Federal, Banco do Brasil, Itau, Bradesco e Santander, oferece financiamentos com prazos de ate 35 anos e taxas que variam conforme o perfil do cliente, o valor do imovel e o relacionamento com a instituicao. A taxa Selic, definida pelo Comite de Politica Monetaria (Copom) do Banco Central, influencia diretamente as taxas de juros praticadas nos financiamentos. Quando a Selic esta baixa, os bancos tendem a oferecer condicoes mais atrativas. Alem da taxa de juros nominal, e fundamental considerar o Custo Efetivo Total (CET), que inclui seguros obrigatorios (MIP e DFI), taxas de administracao e outros encargos embutidos no contrato. O CET pode ser significativamente maior que a taxa de juros anunciada. Por exemplo, um financiamento de R$ 300.000 a uma taxa nominal de 9% ao ano pelo sistema SAC em 30 anos teria uma primeira parcela de aproximadamente R$ 3.083 e uma ultima parcela de cerca de R$ 847. O total de juros pagos seria de aproximadamente R$ 408.375. Pelo sistema Price, a parcela fixa seria de R$ 2.414 por mes, mas o total de juros subiria para cerca de R$ 569.195. A diferenca de mais de R$ 160.000 em juros entre os dois sistemas mostra por que a escolha da tabela de amortizacao e tao importante. O programa Minha Casa Minha Vida oferece condicoes especiais para familias de baixa e media renda, com subsidios que podem reduzir significativamente o valor financiado. O uso do FGTS para compor a entrada ou amortizar parcelas tambem e uma estrategia valiosa para reduzir o custo total do financiamento. Alem disso, realizar amortizacoes extraordinarias nos primeiros anos do contrato, quando o saldo devedor e maior, gera uma economia desproporcionalmente grande em juros ao longo do tempo."
+  formula: "SAC: Parcela = (P/n) + (Saldo Devedor × r) | Price: M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "P = valor financiado, r = taxa de juros mensal (taxa anual / 12 / 100), n = numero total de parcelas (anos x 12), Saldo Devedor = valor restante do financiamento"
+  academicSource: "Banco Central do Brasil. (2024). FAQ - Financiamento Imobiliario."
+
+faqs:
+  - question: "Qual a diferenca entre tabela SAC e tabela Price?"
+    answer: "Na tabela SAC, a amortizacao do principal e constante em todas as parcelas, fazendo com que as prestacoes comecem mais altas e diminuam ao longo do tempo. Na tabela Price, as parcelas sao fixas, mas no inicio a maior parte do pagamento cobre juros. No longo prazo, a tabela SAC resulta em um custo total de juros significativamente menor. Para um financiamento de R$ 400.000 em 30 anos a 10% ao ano, a diferenca no total de juros pode ultrapassar R$ 200.000 em favor da SAC. A escolha depende da sua capacidade de pagamento inicial."
+
+  - question: "Posso usar o FGTS para financiamento imobiliario?"
+    answer: "Sim, o FGTS pode ser utilizado de varias formas no financiamento imobiliario: como parte da entrada, para amortizar ou liquidar o saldo devedor, e para pagar ate 80% do valor das parcelas por 12 meses consecutivos. Os requisitos incluem ter pelo menos tres anos de trabalho com carteira assinada (consecutivos ou nao), nao possuir outro financiamento ativo no SFH e nao ser proprietario de imovel residencial na mesma cidade. O imovel deve ter valor dentro do limite estabelecido pelo SFH e estar em condicoes de habitabilidade."
+
+  - question: "Quanto preciso dar de entrada para financiar um imovel?"
+    answer: "A maioria dos bancos brasileiros financia ate 80% do valor do imovel, exigindo uma entrada minima de 20%. Alguns programas especiais, como o Minha Casa Minha Vida, permitem financiar ate 90% para familias dentro das faixas de renda elegíveis. Alem da entrada, e necessario reservar de 3% a 5% do valor do imovel para custos com documentacao, ITBI (Imposto de Transmissao de Bens Imoveis), registro em cartorio e avaliacao do imovel. Um planejamento financeiro adequado deve considerar todos esses custos."
+
+  - question: "Como a taxa Selic afeta o financiamento imobiliario?"
+    answer: "A taxa Selic e a taxa basica de juros da economia brasileira, definida pelo Banco Central. Quando a Selic sobe, os bancos tendem a aumentar as taxas dos financiamentos imobiliarios, tornando as parcelas mais caras. Quando a Selic cai, as taxas de financiamento geralmente acompanham a queda, embora com algum atraso. Em 2020, com a Selic a 2%, as taxas de financiamento chegaram a cerca de 6,5% ao ano. Com a Selic acima de 13%, as taxas ultrapassaram 10% ao ano. Acompanhar a politica monetaria ajuda a escolher o melhor momento para contratar um financiamento."
+
+  - question: "Vale a pena amortizar o financiamento antecipadamente?"
+    answer: "Sim, a amortizacao antecipada e uma das melhores estrategias para economizar em juros. Existem duas opcoes: reduzir o prazo (mantendo a parcela) ou reduzir a parcela (mantendo o prazo). Reduzir o prazo geralmente gera uma economia maior em juros totais. Por exemplo, amortizar R$ 50.000 em um financiamento de R$ 300.000 a 9% ao ano nos primeiros anos pode economizar mais de R$ 100.000 em juros ao longo do contrato. O FGTS pode ser utilizado para amortizacoes a cada dois anos, sendo uma excelente estrategia complementar."
+
+  - question: "O que e o Custo Efetivo Total (CET) do financiamento?"
+    answer: "O CET representa o custo real do financiamento, incluindo nao apenas a taxa de juros, mas tambem todos os encargos e despesas agregados ao contrato. Isso inclui o seguro por Morte e Invalidez Permanente (MIP), o seguro de Danos Fisicos ao Imovel (DFI), a taxa de administracao mensal e eventuais tarifas de avaliacao. O CET pode ser de 1 a 3 pontos percentuais acima da taxa nominal de juros. Por isso, ao comparar propostas de diferentes bancos, sempre use o CET como parametro principal de comparacao, e nao apenas a taxa de juros nominal."
+
+examples:
+  - title: "Financiamento padrao pela Tabela SAC"
+    scenario: "Financiamento de R$ 350.000 a 9,5% ao ano pela tabela SAC em 30 anos"
+    inputs:
+      loanAmount: 350000
+      interestRate: 9.5
+      loanTerm: 30
+      amortizationType: "SAC"
+    expectedResult: "Primeira parcela: R$ 3.743,06 | Ultima parcela: R$ 990,97 | Total de juros: R$ 502.222,50"
+    explanation: "Na tabela SAC, a parcela inicial e alta (R$ 3.743) porque inclui a amortizacao constante de R$ 972,22 mais os juros sobre o saldo total. Com o passar dos anos, as parcelas diminuem progressivamente ate R$ 991 na ultima. O total de juros de R$ 502.222 representa 143% do valor financiado, mostrando o impacto dos juros em prazos longos."
+
+  - title: "Financiamento pela Tabela Price"
+    scenario: "O mesmo financiamento de R$ 350.000 a 9,5% ao ano pela tabela Price em 30 anos"
+    inputs:
+      loanAmount: 350000
+      interestRate: 9.5
+      loanTerm: 30
+      amortizationType: "Price"
+    expectedResult: "Parcela fixa: R$ 2.946,12 | Total de juros: R$ 710.603,20"
+    explanation: "A tabela Price oferece parcelas fixas menores que a primeira parcela da SAC, mas o total de juros e significativamente maior: R$ 710.603 contra R$ 502.222 da SAC, uma diferenca de mais de R$ 208.000. Na primeira parcela, apenas R$ 174 vao para amortizacao do principal, enquanto R$ 2.771 cobrem juros."
+
+  - title: "Financiamento com uso do FGTS"
+    scenario: "Imovel de R$ 250.000, entrada de R$ 30.000 mais R$ 20.000 de FGTS, financiando R$ 200.000 a 8% ao ano em 25 anos pela SAC"
+    inputs:
+      propertyValue: 250000
+      downPayment: 50000
+      loanAmount: 200000
+      interestRate: 8
+      loanTerm: 25
+      amortizationType: "SAC"
+    expectedResult: "Primeira parcela: R$ 2.000,00 | Ultima parcela: R$ 672,89 | Total de juros: R$ 200.666,67"
+    explanation: "O uso do FGTS como parte da entrada reduziu o valor financiado em R$ 20.000, economizando aproximadamente R$ 20.000 em juros ao longo do contrato. A primeira parcela de R$ 2.000 inclui R$ 666,67 de amortizacao e R$ 1.333,33 de juros. Utilizar o FGTS para amortizacoes periodicas pode reduzir ainda mais o custo total."
+
+relatedTools:
+  - "loan-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

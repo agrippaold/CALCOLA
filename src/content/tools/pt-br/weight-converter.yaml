@@ -1,0 +1,80 @@
+id: "weight-converter"
+category: "conversions"
+calculatorComponent: "WeightConverter"
+lang: "pt-br"
+
+title: "Conversor de Peso - mg, g, kg, oz, lb, arroba | CalcHub"
+metaDescription: "Converta entre unidades de peso incluindo miligramas, gramas, quilogramas, oncas, libras, arrobas e toneladas metricas. Conversor de peso gratuito com calculos precisos."
+h1: "Conversor de Peso"
+slug: "conversor-peso"
+
+primaryKeyword: "conversor de peso"
+secondaryKeywords:
+  - "kg para libras"
+  - "libras para quilogramas"
+  - "oncas para gramas"
+  - "conversor de medidas de peso"
+
+intro: "A conversao de peso surge constantemente, desde ler rotulos nutricionais ate despachar encomendas internacionais e acompanhar seu proprio peso corporal em diferentes balaneas. O sistema metrico usa gramas e quilogramas, os EUA usam oncas e libras, e no Brasil ainda utilizamos arrobas para pecuaria. Adicione miligramas para suplementos e dosagens de medicamentos, e toneladas metricas para contextos industriais e de transporte, e voce tem um conjunto de unidades que as pessoas precisam converter regularmente. Este conversor trabalha com miligramas, gramas, quilogramas, oncas, libras, arrobas e toneladas metricas, fornecendo resultados rapidos e precisos."
+
+howItWorks:
+  title: "Como Funciona a Conversao de Peso"
+  content: "Tecnicamente, o que a maioria das pessoas chama de peso e na verdade massa. Peso e a forca da gravidade agindo sobre uma massa e varia dependendo de onde voce esta (voce pesa menos na Lua), enquanto a massa permanece constante. Na linguagem cotidiana e para fins de conversao, a distincao nao importa pois todos estamos na superficie da Terra onde o campo gravitacional e efetivamente uniforme. O sistema metrico organiza a massa em potencias de dez: um grama equivale a 1.000 miligramas, um quilograma equivale a 1.000 gramas e uma tonelada metrica equivale a 1.000 quilogramas. O quilograma foi originalmente definido em 1799 como a massa de um litro de agua a 4 graus Celsius, temperatura em que a agua e mais densa. Desde 2019, o quilograma foi redefinido com base na constante de Planck, um valor fixo na fisica quantica, encerrando a era do prototipo fisico de platina-iridio armazenado em Paris. O sistema avoirdupois, usado nos EUA e Reino Unido para pesagem cotidiana, divide uma libra em 16 oncas. Uma libra e definida internacionalmente como exatamente 0,45359237 quilogramas, tornando uma onca igual a 28,3495 gramas. Esses sao valores exatos estabelecidos pelo acordo internacional de 1959, o mesmo tratado que fixou a polegada em 25,4 mm. No Brasil, alem do sistema metrico padrao, a arroba ainda e amplamente utilizada na pecuaria. Uma arroba brasileira equivale a 15 quilogramas e e a unidade padrao para comercializacao de gado bovino. O preco do boi gordo, por exemplo, e cotado em reais por arroba na B3. Para converter entre sistemas, multiplique pelo fator apropriado. Quilogramas para libras: multiplique por 2,20462. Libras para quilogramas: multiplique por 0,45359. Gramas para oncas: divida por 28,3495. Um atalho mental pratico para kg em libras: dobre os quilogramas e adicione 10% do resultado. Por exemplo, 70 kg dobrado e 140, mais 10% (14) resulta em 154 libras, muito proximo da resposta exata de 154,32 libras. Em contextos farmaceuticos e nutricionais, miligramas sao a unidade padrao. O conteudo de vitaminas e minerais em rotulos de alimentos e declarado em miligramas ou microgramas. Dosagens de medicamentos sao quase sempre em miligramas, tornando a conversao precisa entre miligramas e outras unidades uma questao de seguranca."
+  formula: "1 lb = 0,45359237 kg (exato) | 1 oz = 28,3495 g | 1 kg = 1.000 g = 1.000.000 mg | 1 arroba = 15 kg | 1 tonelada metrica = 1.000 kg"
+  formulaExplanation: "Todas as conversoes passam por gramas como unidade base. O valor de origem e convertido para gramas primeiro e depois de gramas para a unidade de destino usando o fator de conversao exato ou padrao."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "Quantas libras tem em um quilograma?"
+    answer: "Um quilograma equivale a aproximadamente 2,20462 libras. No sentido inverso, uma libra equivale a exatamente 0,45359237 quilogramas por definicao internacional. Para calculo mental rapido, dobre os quilogramas e adicione 10% para obter uma boa estimativa em libras. Entao 80 kg dobrado e 160, mais 10% (16) resulta em 176 libras, comparado ao valor exato de 176,37 libras. Esse atalho funciona bem para pesos corporais e tamanhos de encomendas comuns."
+  - question: "O que e a arroba e como e usada no Brasil?"
+    answer: "Uma arroba equivale a 15 quilogramas no Brasil. E a unidade padrao para comercializacao de gado bovino e e amplamente utilizada no agronegocio brasileiro. Quando se fala que o boi gordo esta cotado a R$300 a arroba, significa R$300 para cada 15 kg de peso vivo do animal. A arroba tambem era historicamente usada em Portugal e Espanha com valores diferentes. No Brasil, essa unidade permanece relevante exclusivamente para o setor pecuario, sendo uma das poucas unidades nao-metricas ainda em uso regular no pais."
+  - question: "Qual a diferenca entre tonelada metrica e tonelada americana?"
+    answer: "Uma tonelada metrica equivale a exatamente 1.000 quilogramas ou cerca de 2.204,62 libras. Uma tonelada americana (short ton) equivale a exatamente 2.000 libras ou cerca de 907,185 quilogramas. Existe tambem a tonelada imperial (long ton), usada historicamente no Reino Unido, que equivale a 2.240 libras ou cerca de 1.016,05 quilogramas. A tonelada metrica e o padrao internacional para comercio e transporte, e e a unica utilizada oficialmente no Brasil."
+  - question: "Como converter oncas para gramas na culinaria?"
+    answer: "Multiplique o numero de oncas por 28,3495 para obter gramas. Para estimativas rapidas na cozinha, arredondar para 28 gramas por onca e proximo o suficiente para a maioria das receitas. Pontos de referencia comuns: 4 oncas equivalem a cerca de 113 gramas, 8 oncas (meia libra) equivalem a cerca de 227 gramas, e 16 oncas (uma libra) equivalem a cerca de 454 gramas. Se voce esta seguindo uma receita de um livro europeu que lista ingredientes em gramas, uma balanca de cozinha com leitura em gramas e mais precisa do que converter e usar medidas de volume."
+  - question: "Por que dosagens de medicamentos sao dadas em miligramas?"
+    answer: "Medicamentos sao dosados em miligramas porque as quantidades de principio ativo sao tipicamente muito pequenas. Um comprimido comum de ibuprofeno contem 400 miligramas no Brasil, que e apenas 0,4 gramas. Expressar isso em gramas exigiria virgulas decimais faceis de ler errado, potencialmente causando erros de dosagem perigosos. Usar miligramas mantem os numeros inteiros e legIveis. Para medicamentos extremamente potentes, as dosagens vao ainda menores, em microgramas (um micrograma equivale a 0,001 miligramas)."
+  - question: "Qual precisao e necessaria na conversao de peso?"
+    answer: "Depende da aplicacao. Para acompanhamento de peso corporal, arredondar para o quilograma mais proximo e perfeitamente adequado, ja que seu peso flutua naturalmente de 1 a 2 quilogramas ao longo de um unico dia devido a alimentacao, hidratacao e atividade. Para culinaria, estar dentro de 5 gramas geralmente e suficiente. Para transporte e comercio, precisao ao grama ou onca mais proxima importa porque tarifas de frete e limites regulatorios sao baseados no peso. Para farmaceutica e quimica, precisao em miligramas ou melhor e exigida."
+
+examples:
+  - title: "Peso corporal - quilogramas para libras"
+    scenario: "Converter um peso corporal de 75 quilogramas para libras"
+    inputs:
+      value: 75
+      from: "kg"
+      to: "lb"
+    expectedResult: "75 kg = 165,35 libras"
+    explanation: "Um quilograma equivale a aproximadamente 2,2046 libras. Multiplique 75 por 2,2046 para obter 165,35 libras. Essa conversao e frequentemente usada em contextos de fitness e saude."
+  - title: "Encomenda internacional - libras para quilogramas"
+    scenario: "Converter uma encomenda de 22 libras para quilogramas para envio internacional"
+    inputs:
+      value: 22
+      from: "lb"
+      to: "kg"
+    expectedResult: "22 libras = 9,98 kg"
+    explanation: "Uma libra equivale a aproximadamente 0,4536 quilogramas. Uma encomenda de 22 libras pesa cerca de 9,98 kg. Tarifas de frete internacional sao tipicamente calculadas em quilogramas."
+  - title: "Pecuaria - quilogramas para arrobas"
+    scenario: "Converter o peso de um boi de 480 quilogramas para arrobas"
+    inputs:
+      value: 480
+      from: "kg"
+      to: "arroba"
+    expectedResult: "480 kg = 32 arrobas"
+    explanation: "Uma arroba brasileira equivale a 15 quilogramas. Divida 480 por 15 para obter 32 arrobas. Essa conversao e essencial para produtores rurais brasileiros que comercializam gado, pois o preco e cotado por arroba nos mercados pecuarios."
+
+relatedTools:
+  - "temperature-converter"
+  - "volume-converter"
+  - "length-converter"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

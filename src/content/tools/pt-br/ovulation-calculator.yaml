@@ -1,0 +1,69 @@
+id: "ovulation-calculator"
+category: "health"
+calculatorComponent: "OvulationCalculator"
+
+title: "Calculadora de Ovulacao - Periodo Fertil | CalcHub"
+metaDescription: "Calcule sua data de ovulacao e periodo fertil com base no seu ciclo menstrual. Descubra os melhores dias para engravidar ou planejar o metodo de consciencia da fertilidade."
+h1: "Calculadora de Ovulacao"
+slug: "calculadora-ovulacao"
+
+primaryKeyword: "calculadora ovulacao"
+secondaryKeywords:
+  - "calculadora periodo fertil"
+  - "calcular dia fertil"
+  - "calculadora fertilidade"
+  - "tabela periodo fertil"
+
+intro: "Saber quando voce ovula e a informacao mais util para quem esta tentando engravidar ou simplesmente quer entender melhor seu ciclo menstrual. Esta calculadora de ovulacao estima seus dias mais ferteis com base na duracao do seu ciclo e na data da sua ultima menstruacao. Voce vera a data prevista de ovulacao, a janela fertil completa (os dias em que a concepcao e possivel) e a data esperada da proxima menstruacao. Insira seus dados abaixo para mapear seu ciclo."
+
+howItWorks:
+  title: "Como Funcionam os Calculos de Ovulacao e Janela Fertil"
+  content: "O ciclo menstrual consiste em varias fases distintas, cada uma controlada por niveis hormonais em constante mudanca. Entender essas fases e a base para prever a ovulacao e identificar os dias ferteis. O ciclo comeca no primeiro dia de sangramento menstrual (dia 1) e termina no dia anterior ao inicio da proxima menstruacao. A duracao media do ciclo e de 28 dias, mas qualquer coisa entre 21 e 35 dias e considerada normal para mulheres adultas. A fase folicular vai do dia 1 ate a ovulacao. Durante essa fase, o hormonio foliculo-estimulante (FSH) faz com que varios foliculos nos ovarios se desenvolvam, cada um contendo um ovulo imaturo. Os niveis de estrogenio sobem conforme os foliculos crescem, o que espessa o revestimento uterino em preparacao para uma possivel implantacao. Essa fase tem duracao variavel e responde pela maior parte da diferenca entre ciclos mais curtos e mais longos. Em um ciclo de 28 dias, a fase folicular dura cerca de 14 dias. Em um ciclo de 35 dias, ela se estende para aproximadamente 21 dias. A ovulacao ocorre quando um pico de hormonio luteinizante (LH) faz o foliculo dominante liberar um ovulo maduro na trompa de Falopio. Isso normalmente acontece cerca de 24 a 36 horas apos o pico de LH. O ovulo liberado permanece viavel para fertilizacao por apenas 12 a 24 horas apos a ovulacao. Essa janela estreita e a razao pela qual o momento e tao importante para a concepcao. A fase lutea segue a ovulacao e dura ate o inicio da proxima menstruacao. Diferente da fase folicular, a fase lutea e notavelmente consistente, com aproximadamente 14 dias (variando de 12 a 16 dias na maioria das mulheres). Essa consistencia e o insight chave que torna a previsao da ovulacao possivel. Subtraindo 14 dias da data esperada da proxima menstruacao, voce pode estimar sua data de ovulacao. Para um ciclo de 28 dias, a ovulacao cai por volta do dia 14. Para um ciclo de 32 dias, por volta do dia 18 (32 menos 14). A janela fertil se estende alem do dia da ovulacao porque os espermatozoides podem sobreviver no trato reprodutivo feminino por ate 5 dias em condicoes favoraveis. Isso significa que relacoes ate 5 dias antes da ovulacao podem resultar em gravidez. Pesquisas publicadas no New England Journal of Medicine encontraram que a probabilidade de concepcao e mais alta quando a relacao ocorre nos 1 a 2 dias imediatamente antes da ovulacao, com taxas de concepcao de aproximadamente 25 a 30% por ciclo para casais saudaveis. No Brasil, o SUS oferece orientacao sobre planejamento familiar nas Unidades Basicas de Saude, incluindo metodos baseados na consciencia da fertilidade. Varios sinais fisicos podem ajudar a confirmar a ovulacao. A temperatura basal sobe 0,2 a 0,5 graus Celsius apos a ovulacao devido ao aumento da progesterona. O muco cervical torna-se claro, elastico e escorregadio nos dias anteriores a ovulacao. Algumas mulheres sentem uma leve dor no baixo ventre de um lado (chamada dor do meio ou mittelschmerz). Testes de ovulacao de farmacia detectam o pico de LH 24 a 36 horas antes da liberacao do ovulo."
+  formula: "Dia da Ovulacao = Duracao do Ciclo - 14"
+  formulaExplanation: "A ovulacao e estimada subtraindo a duracao media da fase lutea (14 dias) da duracao total do ciclo. Inicio da janela fertil = Dia da Ovulacao - 5. Fim da janela fertil = Dia da Ovulacao + 1. Proxima menstruacao = DUM + Duracao do Ciclo."
+  academicSource: "Wilcox, A.J., Weinberg, C.R., & Baird, D.D. (1995). Timing of Sexual Intercourse in Relation to Ovulation. New England Journal of Medicine, 333(23), 1517-1521. Reed, B.G. & Carr, B.R. (2018). The Normal Menstrual Cycle and the Control of Ovulation. Endotext."
+
+faqs:
+  - question: "Qual e o melhor momento para engravidar durante o ciclo?"
+    answer: "A maior probabilidade de concepcao ocorre quando a relacao acontece 1 a 2 dias antes da ovulacao. Estudos mostram taxas de concepcao por ciclo de aproximadamente 25 a 30% quando a relacao e programada para essa janela em casais saudaveis. O dia da ovulacao tambem e fertil, porem ligeiramente menos otimo porque o ovulo sobrevive apenas 12 a 24 horas apos a liberacao. Ter relacoes a cada 1 a 2 dias durante toda a janela fertil (5 dias antes ate 1 dia apos a ovulacao) maximiza as chances sem exigir precisao absoluta na previsao do dia exato da ovulacao."
+  - question: "Posso ovular em momentos diferentes a cada mes?"
+    answer: "Sim, o momento da ovulacao pode variar de ciclo para ciclo mesmo em mulheres com periodos regulares. A fase folicular (antes da ovulacao) e a porcao variavel do ciclo. Estresse, doencas, viagens, exercicios intensos e mudancas significativas de peso podem atrasar ou adiantar a ovulacao em varios dias. A fase lutea (apos a ovulacao) permanece mais consistente em torno de 14 dias. Isso significa que sua menstruacao pode atrasar nao porque a fase lutea mudou, mas porque a ovulacao foi adiada."
+  - question: "Quais sao os sinais de que estou ovulando?"
+    answer: "Varios indicadores fisicos podem ajudar a identificar a ovulacao. O muco cervical e um dos sinais mais confiaveis: nos dias anteriores a ovulacao, o muco torna-se claro, elastico e escorregadio, semelhante a clara de ovo crua. Apos a ovulacao, ele fica mais espesso. A temperatura basal sobe 0,2 a 0,5 graus Celsius apos a ovulacao. Algumas mulheres sentem uma pontada ou colica leve de um lado do baixo ventre. Sensibilidade nos seios, aumento da libido e leve inchaco tambem sao comuns. Testes de ovulacao de farmacia fornecem a deteccao mais objetiva ao medir o pico de LH 24 a 36 horas antes da liberacao do ovulo."
+  - question: "A duracao do ciclo afeta quando eu ovulo?"
+    answer: "A duracao do ciclo tem efeito direto no momento da ovulacao. Como a fase lutea e relativamente fixa em cerca de 14 dias, a variacao na duracao do ciclo e impulsionada pela fase folicular. Uma mulher com ciclo de 28 dias normalmente ovula por volta do dia 14. Uma mulher com ciclo de 35 dias ovula por volta do dia 21. Uma com ciclo de 24 dias ovula por volta do dia 10. E por isso que usar a suposicao padrao de ovulacao no dia 14 pode ser enganoso para mulheres cujos ciclos sao mais curtos ou mais longos que 28 dias."
+  - question: "Quao confiavel e esta calculadora para ciclos irregulares?"
+    answer: "Para mulheres com ciclos irregulares (onde a duracao varia mais de 7 dias de um mes para outro), esta calculadora se torna menos precisa porque a previsao depende de uma duracao de ciclo consistente. Se seus ciclos variam de 26 a 34 dias, seu dia de ovulacao pode cair em qualquer lugar do dia 12 ao dia 20, criando uma ampla janela de incerteza. Nesses casos, a calculadora funciona melhor como um guia aproximado junto com outros metodos de acompanhamento. Se seus ciclos sao consistentemente irregulares, consultar um ginecologista e recomendado para descartar condicoes como SOP ou disturbios da tireoide."
+  - question: "O estresse pode atrasar a ovulacao?"
+    answer: "Sim, o estresse pode atrasar ou ate suprimir a ovulacao. O eixo hipotalamico-hipofisario-ovariano que controla o ciclo menstrual e sensivel aos hormonios do estresse, particularmente o cortisol. Quando seu corpo esta sob estresse fisico ou psicologico significativo, pode atrasar a liberacao de GnRH, o que por sua vez atrasa os picos de FSH e LH necessarios para o desenvolvimento folicular e a ovulacao. E por isso que mulheres as vezes experimentam menstruacoes atrasadas durante eventos estressantes. O estresse cronico pode levar a ciclos anovulatorios em que nenhum ovulo e liberado."
+
+examples:
+  - title: "Ciclo padrao de 28 dias"
+    scenario: "Uma mulher com ciclo regular de 28 dias cuja ultima menstruacao comecou em 5 de janeiro de 2026"
+    inputs:
+      lastMenstrualPeriod: "2026-01-05"
+      cycleLength: 28
+    expectedResult: "Data de ovulacao: 19 de janeiro | Janela fertil: 14 a 20 de janeiro | Proxima menstruacao: 2 de fevereiro"
+    explanation: "Com um ciclo de 28 dias, a ovulacao e estimada no dia 14 (19 de janeiro). A janela fertil abre 5 dias antes da ovulacao (14 de janeiro) e fecha no dia seguinte a ovulacao (20 de janeiro). Os dias mais ferteis sao 17 a 19 de janeiro, os dois dias antes e o dia da ovulacao."
+  - title: "Ciclo mais longo de 32 dias"
+    scenario: "Uma mulher com ciclo regular de 32 dias cuja ultima menstruacao comecou em 10 de janeiro de 2026"
+    inputs:
+      lastMenstrualPeriod: "2026-01-10"
+      cycleLength: 32
+    expectedResult: "Data de ovulacao: 28 de janeiro | Janela fertil: 23 a 29 de janeiro | Proxima menstruacao: 11 de fevereiro"
+    explanation: "Com um ciclo de 32 dias, a fase lutea de 14 dias significa que a ovulacao ocorre no dia 18 (32 menos 14), que cai em 28 de janeiro. A janela fertil vai de 23 a 29 de janeiro. Note que a ovulacao e 4 dias mais tarde do que seria em um ciclo de 28 dias."
+
+relatedTools:
+  - "pregnancy-due-date-calculator"
+  - "bmi-calculator"
+  - "calorie-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-16"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,91 @@
+id: "fraction-calculator"
+category: "math"
+calculatorComponent: "FractionCalculator"
+lang: "pt-br"
+
+title: "Calculadora de Fracoes - Somar, Subtrair, Multiplicar | CalcHub"
+metaDescription: "Calculadora de fracoes gratuita para somar, subtrair, multiplicar e dividir fracoes. Simplifica resultados automaticamente e converte entre fracoes e decimais."
+h1: "Calculadora de Fracoes"
+slug: "calculadora-fracoes"
+
+primaryKeyword: "calculadora de fracoes"
+secondaryKeywords:
+  - "somar fracoes calculadora"
+  - "simplificar fracoes"
+  - "fracao para decimal conversor"
+  - "calculadora de numeros mistos"
+
+intro: "Trabalhar com fracoes manualmente significa encontrar denominadores comuns, multiplicar cruzado e reduzir resultados, etapas faceis de errar, especialmente com numeros grandes ou incomodos. Esta calculadora de fracoes realiza adicao, subtracao, multiplicacao e divisao de fracoes e numeros mistos. Insira suas duas fracoes, escolha a operacao e a ferramenta retorna a resposta na forma mais simples. Ela tambem mostra o equivalente decimal e o processo passo a passo para que voce possa acompanhar ou conferir exercicios escolares."
+
+howItWorks:
+  title: "Como Funciona a Aritmetica de Fracoes"
+  content: "Uma fracao representa uma parte de um todo, escrita como um numerador sobre um denominador. O numerador indica quantas partes voce tem, e o denominador indica quantas partes iguais compõem o todo. Ao somar ou subtrair fracoes, os denominadores devem ser iguais. Se ja forem iguais, basta somar ou subtrair os numeradores e manter o denominador. Por exemplo, 3/8 + 2/8 = 5/8. Quando os denominadores sao diferentes, voce precisa de um denominador comum. A escolha mais eficiente e o menor denominador comum (MDC), que e o minimo multiplo comum (MMC) dos dois denominadores. Para 1/4 + 2/3, o MMC de 4 e 3 e 12. Reescreva cada fracao: 1/4 se torna 3/12, e 2/3 se torna 8/12. Agora some: 3/12 + 8/12 = 11/12. A subtracao segue o mesmo padrao. A multiplicacao e mais direta: multiplique os numeradores entre si e os denominadores entre si. Assim, 2/5 x 3/7 = 6/35. Nenhum denominador comum e necessario. A divisao inverte a segunda fracao e depois multiplica. Dividir 2/5 por 3/7 significa calcular 2/5 x 7/3 = 14/15. Essa regra de inverter e multiplicar funciona porque dividir por uma fracao e o mesmo que multiplicar pelo seu inverso. Apos qualquer operacao, simplifique o resultado encontrando o maximo divisor comum (MDC) do numerador e denominador e dividindo ambos por ele. Se voce obter 8/12, o MDC de 8 e 12 e 4, entao a forma simplificada e 2/3. Para numeros mistos como 2 1/3, primeiro converta para fracao impropria: 2 x 3 + 1 = 7, portanto 2 1/3 = 7/3. Realize a operacao e depois converta de volta, se desejar, dividindo o numerador pelo denominador. O quociente e o numero inteiro, e o resto sobre o denominador e a parte fracionaria. Converter fracoes para decimais e uma divisao simples: 3/8 = 3 dividido por 8 = 0,375. Algumas fracoes produzem dizimas periodicas, como 1/3 = 0,3333... Para converter decimal em fracao, conte as casas decimais: 0,75 tem duas casas decimais, portanto escreva 75/100 e simplifique para 3/4. Fracoes sao amplamente ensinadas desde o ensino fundamental no Brasil e constituem base essencial para algebra e calculo."
+  formula: "a/b + c/d = (a*d + b*c) / (b*d)"
+  formulaExplanation: "Subtracao: a/b - c/d = (a*d - b*c) / (b*d). Multiplicacao: a/b x c/d = (a*c) / (b*d). Divisao: a/b / c/d = (a*d) / (b*c). Todos os resultados devem ser simplificados dividindo numerador e denominador pelo MDC."
+  academicSource: "Wu, H. (2011). Understanding Numbers in Elementary School Mathematics. American Mathematical Society."
+
+faqs:
+  - question: "Como somar fracoes com denominadores diferentes?"
+    answer: "Encontre o menor denominador comum (MDC) de ambas as fracoes e reescreva cada fracao com esse denominador. Para 1/6 + 3/4, o MMC de 6 e 4 e 12. Reescreva: 1/6 = 2/12 e 3/4 = 9/12. Some os numeradores: 2 + 9 = 11, mantendo o denominador 12. A resposta e 11/12. Voce sempre pode usar o produto dos dois denominadores como denominador comum (6 x 4 = 24), mas o MMC mantem os numeros menores e reduz a simplificacao extra no final."
+  - question: "Como simplificar uma fracao?"
+    answer: "Encontre o maximo divisor comum (MDC) do numerador e denominador e divida ambos por ele. Para 18/24, o MDC de 18 e 24 e 6. Divida: 18/6 = 3 e 24/6 = 4, portanto a fracao simplificada e 3/4. Se nao tiver certeza do MDC, liste os fatores de cada numero. Fatores de 18: 1, 2, 3, 6, 9, 18. Fatores de 24: 1, 2, 3, 4, 6, 8, 12, 24. O maior numero presente em ambas as listas e 6."
+  - question: "Como converter um numero misto em fracao impropria?"
+    answer: "Multiplique o numero inteiro pelo denominador, some o numerador e coloque o resultado sobre o denominador original. Para 3 2/5: multiplique 3 x 5 = 15, some 2 = 17, portanto a fracao impropria e 17/5. Para voltar, divida 17 por 5. O quociente e 3 com resto 2, resultando em 3 2/5 novamente. Essa conversao e o primeiro passo sempre que voce precisar fazer aritmetica com numeros mistos."
+  - question: "Por que inverto a segunda fracao ao dividir?"
+    answer: "Dividir por uma fracao e o mesmo que multiplicar pelo seu inverso (a versao invertida). Pense assim: 6 dividido por 2 pergunta quantos grupos de 2 cabem em 6. Da mesma forma, 3/4 dividido por 1/2 pergunta quantas metades cabem em tres quartos. Inverter e multiplicar resulta em 3/4 x 2/1 = 6/4 = 3/2 = 1,5, significando que uma metade e meia cabem em tres quartos. O metodo do inverso e um atalho que sempre funciona."
+  - question: "Como converter uma fracao em decimal?"
+    answer: "Divida o numerador pelo denominador. Para 7/8, calcule 7 dividido por 8 = 0,875. Algumas fracoes produzem decimais exatos (como 7/8), enquanto outras produzem dizimas periodicas (como 1/3 = 0,333...). Uma fracao em sua forma mais simples gera um decimal exato somente quando os fatores primos do denominador se limitam a 2 e 5. Como 8 = 2 x 2 x 2, 7/8 e exato. Como 3 nao e 2 nem 5, 1/3 e periodico."
+  - question: "A calculadora aceita fracoes negativas?"
+    answer: "Sim. Um sinal negativo pode estar na frente da fracao, no numerador ou no denominador. Todas as tres notacoes significam a mesma coisa. Por exemplo, -3/4, (-3)/4 e 3/(-4) sao todos iguais a -0,75. Ao multiplicar ou dividir, as regras de sinal padrao se aplicam: negativo vezes negativo resulta em positivo, e negativo vezes positivo resulta em negativo. A calculadora exibe o sinal negativo na frente da fracao para maior clareza."
+
+examples:
+  - title: "Somando fracoes com denominadores diferentes"
+    scenario: "Calcular 2/3 + 3/5"
+    inputs:
+      numerator1: 2
+      denominator1: 3
+      operation: "add"
+      numerator2: 3
+      denominator2: 5
+    expectedResult: "19/15 = 1 4/15 (decimal: 1,2667)"
+    explanation: "O MMC de 3 e 5 e 15. Reescreva: 2/3 = 10/15, 3/5 = 9/15. Some: 10 + 9 = 19 sobre 15. Como numero misto, 19/15 = 1 4/15."
+  - title: "Dividindo numeros mistos"
+    scenario: "Calcular 2 1/2 dividido por 1 1/4"
+    inputs:
+      numerator1: 5
+      denominator1: 2
+      operation: "divide"
+      numerator2: 5
+      denominator2: 4
+    expectedResult: "2/1 = 2 (decimal: 2,0)"
+    explanation: "Converta para fracoes improprias: 2 1/2 = 5/2, 1 1/4 = 5/4. Inverta e multiplique: 5/2 x 4/5 = 20/10 = 2. Dois e meio contem exatamente dois grupos de um e um quarto."
+  - title: "Multiplicando fracoes em receita culinaria"
+    scenario: "Uma receita pede 3/4 de xicara de acucar, mas voce quer fazer apenas 2/3 da receita"
+    inputs:
+      numerator1: 3
+      denominator1: 4
+      operation: "multiply"
+      numerator2: 2
+      denominator2: 3
+    expectedResult: "6/12 = 1/2 (decimal: 0,5)"
+    explanation: "Multiplique os numeradores: 3 x 2 = 6. Multiplique os denominadores: 4 x 3 = 12. O resultado e 6/12, que simplificado e 1/2. Voce precisara de meia xicara de acucar para 2/3 da receita."
+
+relatedTools:
+  - "percentage-calculator"
+  - "percent-change-calculator"
+  - "scientific-calculator"
+
+defaults:
+  unit: "number"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+  defaultValues:
+    numerator1: 1
+    denominator1: 2
+    numerator2: 1
+    denominator2: 3
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

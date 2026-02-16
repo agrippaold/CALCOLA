@@ -1,0 +1,79 @@
+id: "area-calculator"
+category: "math"
+calculatorComponent: "AreaCalculator"
+lang: "pt-br"
+
+title: "Calculadora de Area - Retangulo, Circulo e Mais | CalcHub"
+metaDescription: "Calcule a area de retangulos, circulos, triangulos, trapezios e elipses. Calculadora de area gratuita com formulas e resultados instantaneos para qualquer forma geometrica."
+h1: "Calculadora de Area"
+slug: "calculadora-area"
+
+primaryKeyword: "calculadora de area"
+secondaryKeywords:
+  - "calcular area"
+  - "calculo de area em metros quadrados"
+  - "area do circulo calculadora"
+  - "area do triangulo online"
+
+intro: "Precisa calcular a area de um comodo, de um terreno ou de uma forma geometrica para um trabalho escolar? Esta calculadora trabalha com cinco formas geometricas comuns. Basta selecionar a forma desejada, inserir as dimensoes e obter a resposta instantaneamente. Funciona com qualquer unidade de medida: metros, centimetros, milimetros ou qualquer outra que seu projeto exija. O resultado e apresentado em unidades quadradas correspondentes a unidade de entrada utilizada."
+
+howItWorks:
+  title: "Como a Area e Calculada para Diferentes Formas"
+  content: "Area mede a quantidade de espaco bidimensional contido dentro dos limites de uma forma, expressa em unidades quadradas. Cada forma geometrica possui uma formula distinta derivada de principios matematicos fundamentais. O retangulo (ou quadrado) tem a formula de area mais simples: comprimento multiplicado pela largura. Se um comodo mede 5 metros por 4 metros, sua area e 20 metros quadrados. Quadrados sao retangulos onde ambos os lados sao iguais. A area de um circulo e igual a pi vezes o raio ao quadrado. Pi (aproximadamente 3,14159) representa a razao entre a circunferencia de um circulo e seu diametro e aparece em todos os calculos circulares. Para um circulo com raio de 7 metros, a area e 3,14159 vezes 49, que resulta em aproximadamente 153,94 metros quadrados. A area de um triangulo e igual a metade da base vezes a altura. A altura deve ser perpendicular (em angulo reto) a base, nao o comprimento de um lado inclinado. Um triangulo com base de 10 cm e altura de 6 cm tem area de 30 centimetros quadrados. O trapezio possui dois lados paralelos de comprimentos diferentes. Sua area e igual a metade da soma dos dois lados paralelos multiplicada pela altura perpendicular entre eles. Se os lados paralelos medem 8 e 12 metros com altura de 5 metros, a area e 0,5 vezes (8+12) vezes 5, igual a 50 metros quadrados. A elipse e uma forma oval definida por dois semieixos: o semieixo maior e o semieixo menor. A area e igual a pi vezes o semieixo maior vezes o semieixo menor. Quando ambos os eixos sao iguais, a elipse se torna um circulo. Uma piscina em formato de elipse com semieixos de 6 e 4 metros tem area de aproximadamente 75,4 metros quadrados. No Brasil, o metro quadrado e a unidade padrao para imoveis e construcao civil. A conversao entre unidades quadradas segue a regra do quadrado: para converter entre unidades quadradas, multiplique pelo fator de conversao ao quadrado. Um metro equivale a 100 centimetros, portanto um metro quadrado equivale a 10.000 centimetros quadrados."
+  formula: "Retangulo: A = c * l | Circulo: A = pi*r² | Triangulo: A = (b*h)/2"
+  formulaExplanation: "Trapezio: A = ((a+b)*h)/2 onde a e b sao os lados paralelos. Elipse: A = pi * semieixo maior * semieixo menor. Todos os resultados em unidades quadradas."
+  academicSource: "Euclides. Elementos, Livros I-IV. c. 300 a.C. Referencia moderna: Stewart, J. (2020). Calculo: Transcendentes Precoces (9a ed.). Cengage Learning."
+
+faqs:
+  - question: "Como calcular a area de uma forma irregular?"
+    answer: "Para formas irregulares, divida-as em combinacoes de formas simples (retangulos, triangulos, circulos), calcule cada area separadamente e depois some todas. Por exemplo, uma sala em formato de L pode ser dividida em dois retangulos. Um comodo com sacada pode ser um retangulo mais um triangulo. Para formas altamente irregulares como terrenos naturais, ferramentas de levantamento topografico com GPS ou o metodo de geometria por coordenadas fornecem medicoes precisas."
+  - question: "Qual a diferenca entre area e perimetro?"
+    answer: "Area mede o espaco dentro de uma forma (em unidades quadradas), enquanto perimetro mede o comprimento total ao redor da borda externa (em unidades lineares). Um comodo de 10 por 5 metros tem area de 50 metros quadrados, mas perimetro de 30 metros. Duas formas podem ter o mesmo perimetro mas areas muito diferentes: um retangulo de 10x5 (area 50) e um retangulo de 1x14 (area 14) ambos possuem perimetro de 30 metros."
+  - question: "Como converter entre metros quadrados e outras unidades?"
+    answer: "Um metro quadrado equivale a 10.000 centimetros quadrados. Um hectare equivale a 10.000 metros quadrados. Um alqueire paulista equivale a aproximadamente 24.200 metros quadrados. No Brasil, terrenos rurais sao frequentemente medidos em hectares ou alqueires, enquanto imoveis urbanos usam metros quadrados. Para conversoes rapidas, divida metros quadrados por 10.000 para obter hectares."
+  - question: "Como calcular a area de um comodo com angulos irregulares?"
+    answer: "Divida o comodo em secoes retangulares e calcule cada uma separadamente. Para paredes angulares, trate a secao angulada como um triangulo. Meca a base (ao longo de uma parede) e a altura (distancia perpendicular ate a parede ou canto oposto). Some todas as areas das secoes. Para precisao em comodos complexos, considere usar uma trena a laser que calcula a area diretamente a partir de multiplas medicoes ao longo das paredes."
+  - question: "Por que a formula do circulo usa pi?"
+    answer: "Pi surge da relacao fundamental entre o diametro de um circulo e sua circunferencia. Independentemente do tamanho do circulo, dividir sua circunferencia pelo diametro sempre resulta em pi (aproximadamente 3,14159). Ao calcular a area, voce integra infinitos aneis concentricos finos do centro ate a borda, e esse processo naturalmente produz a formula pi vezes raio ao quadrado. Pi e um numero irracional, o que significa que sua expansao decimal nunca termina ou se repete."
+  - question: "Qual precisao de medida e necessaria para calcular area?"
+    answer: "Os requisitos de precisao dependem da aplicacao. Para comprar piso ou carpete, medicoes com margem de 2-3% sao suficientes, pois os materiais sao vendidos com margem para desperdicio. Para construcao civil e documentacao em cartorio no Brasil, medicoes devem estar dentro de 1% ou melhor. Para aplicacoes cientificas e de engenharia, pode ser necessaria precisao em milimetros. Sempre meca duas vezes e use as mesmas unidades em todo o calculo para evitar erros."
+
+examples:
+  - title: "Area de comodo para piso"
+    scenario: "Calculando a area de um comodo retangular de 4,5 m por 3,8 m"
+    inputs:
+      shape: "rectangle"
+      length: 4.5
+      width: 3.8
+    expectedResult: "Area: 17,1000 m²"
+    explanation: "O comodo tem uma area de 17,1 metros quadrados. Ao comprar piso, adicione 10% para desperdicio e cortes, elevando a quantidade de compra para aproximadamente 18,8 metros quadrados."
+  - title: "Canteiro circular de jardim"
+    scenario: "Encontrando a area de um canteiro circular de flores com raio de 2,5 m"
+    inputs:
+      shape: "circle"
+      radius: 2.5
+    expectedResult: "Area: 19,6350 m²"
+    explanation: "O canteiro do jardim cobre aproximadamente 19,64 metros quadrados. Para estimar o volume de terra, multiplique a area pela profundidade desejada (por exemplo, 0,15 m para 15 cm de terra vegetal resulta em cerca de 2,95 metros cubicos)."
+  - title: "Terreno triangular"
+    scenario: "Medindo um terreno triangular de esquina com 20 m de base e 15 m de altura"
+    inputs:
+      shape: "triangle"
+      base: 20
+      height: 15
+    expectedResult: "Area: 150,0000 m²"
+    explanation: "O terreno triangular tem area de 150 metros quadrados. Isso equivale a 0,015 hectares, util para avaliacao de propriedade ou planejamento de uso do solo em areas urbanas brasileiras."
+
+relatedTools:
+  - "percentage-calculator"
+  - "scientific-calculator"
+  - "fraction-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

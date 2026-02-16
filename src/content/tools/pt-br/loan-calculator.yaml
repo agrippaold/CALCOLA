@@ -1,0 +1,87 @@
+id: "loan-calculator"
+category: "finance"
+calculatorComponent: "LoanCalculator"
+
+title: "Calculadora de Emprestimo - Simule Parcelas e Juros | CalcHub"
+metaDescription: "Calcule parcelas, juros totais e CET do seu emprestimo pessoal. Compare taxas e prazos para encontrar a melhor opcao. Simulador gratuito."
+h1: "Calculadora de Emprestimo"
+slug: "calculadora-emprestimo"
+
+primaryKeyword: "calculadora emprestimo"
+secondaryKeywords:
+  - "simulador emprestimo pessoal"
+  - "calcular parcela emprestimo"
+  - "calculadora de prestacao"
+  - "simulacao emprestimo consignado"
+  - "custo efetivo total emprestimo"
+
+intro: "Antes de contratar qualquer emprestimo, e essencial entender o custo real da operacao. As taxas de juros anunciadas pelos bancos nem sempre refletem o valor total que voce vai pagar, pois nao incluem IOF, seguros e tarifas adicionais. Esta calculadora de emprestimo mostra sua parcela mensal, o total de juros pagos ao longo do contrato e permite comparar diferentes cenarios de taxa e prazo. Use os resultados para negociar melhores condicoes e escolher a modalidade mais vantajosa, seja emprestimo pessoal, consignado ou com garantia."
+
+howItWorks:
+  title: "Como funciona o calculo de emprestimo no Brasil"
+  content: "Os emprestimos pessoais no Brasil utilizam o regime de juros compostos com parcelas fixas, calculadas pela formula da tabela Price. O banco determina uma parcela constante que, ao ser paga ao longo do prazo contratado, liquida tanto o principal quanto todos os juros acumulados. Cada parcela se divide em duas partes: uma porcao de juros sobre o saldo devedor e uma porcao de amortizacao do principal. No inicio do contrato, a maior parte da parcela cobre juros, ja que o saldo devedor e alto. Conforme o saldo diminui, menos juros sao cobrados e uma fatia maior de cada parcela reduz a divida efetivamente. O Custo Efetivo Total (CET) e o indicador mais importante na hora de comparar emprestimos. Regulamentado pelo Banco Central, o CET inclui a taxa de juros, o IOF (Imposto sobre Operacoes Financeiras), seguros obrigatorios, tarifas de cadastro e quaisquer outros encargos embutidos na operacao. Um emprestimo com taxa de juros de 2% ao mes pode ter um CET de 2,5% ao mes ou mais quando todos os custos sao considerados. O IOF nos emprestimos para pessoas fisicas e composto por uma aliquota diaria de 0,0082% sobre o saldo devedor mais uma aliquota adicional de 0,38% sobre o valor total da operacao. Isso significa que emprestimos de maior prazo acumulam mais IOF proporcionalmente. As taxas de juros variam enormemente conforme a modalidade do emprestimo. O emprestimo consignado, com desconto direto em folha de pagamento, oferece as menores taxas, geralmente entre 1,5% e 2,5% ao mes, porque o risco de inadimplencia para o banco e menor. O emprestimo pessoal sem garantia varia entre 3% e 8% ao mes dependendo da instituicao e do perfil de credito do tomador. O emprestimo com garantia de imovel ou veiculo oferece taxas intermediarias. Por exemplo, um emprestimo pessoal de R$ 20.000 a 3,5% ao mes por 24 meses resulta em parcelas de R$ 1.226,49 e um total de juros de R$ 9.435,76. O mesmo valor a 1,8% ao mes (consignado) geraria parcelas de R$ 1.013,44 e juros totais de R$ 4.322,56, uma economia de mais de R$ 5.100. Essa diferenca expressiva demonstra por que pesquisar diferentes modalidades e instituicoes antes de contratar e fundamental para a saude financeira. Cooperativas de credito e fintechs frequentemente oferecem taxas mais competitivas que os grandes bancos, e a portabilidade de credito permite transferir emprestimos existentes para instituicoes com melhores condicoes."
+  formula: "M = P × [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = parcela mensal, P = valor do emprestimo, r = taxa de juros mensal (taxa anual / 12 / 100), n = numero total de parcelas (anos x 12)"
+  academicSource: "Banco Central do Brasil. (2024). Relatorio de Economia Bancaria - Taxas de Juros de Operacoes de Credito."
+
+faqs:
+  - question: "Qual a diferenca entre emprestimo pessoal e consignado?"
+    answer: "O emprestimo consignado tem as parcelas descontadas diretamente do salario, aposentadoria ou pensao do INSS, o que reduz o risco para o banco e permite taxas de juros significativamente menores. Enquanto o emprestimo pessoal comum cobra entre 3% e 8% ao mes, o consignado geralmente fica entre 1,5% e 2,5% ao mes. A desvantagem do consignado e que as parcelas nao podem ultrapassar 35% da renda liquida (incluindo o cartao consignado) e o prazo maximo e limitado a 84 meses. Para quem tem acesso, o consignado e quase sempre a opcao mais economica."
+
+  - question: "O que e o IOF e como ele impacta o emprestimo?"
+    answer: "O IOF (Imposto sobre Operacoes Financeiras) e um tributo federal que incide sobre operacoes de credito. Nos emprestimos pessoais, a aliquota e de 0,0082% ao dia sobre o saldo devedor, acumulada durante o prazo do contrato, mais 0,38% sobre o valor total da operacao. Em um emprestimo de R$ 10.000 por 12 meses, o IOF total pode chegar a aproximadamente R$ 338, representando um custo adicional significativo que eleva o CET acima da taxa de juros nominal. Esse imposto e cobrado no ato da contratacao, sendo descontado do valor liberado ou financiado junto com o emprestimo."
+
+  - question: "Como melhorar meu score de credito para conseguir taxas menores?"
+    answer: "O score de credito no Brasil e calculado pelo SPC e Serasa com base no historico de pagamentos, nivel de endividamento e relacionamento com o mercado. Para melhorar seu score, pague todas as contas em dia, mantenha o nome limpo, evite utilizar mais de 30% do limite do cartao de credito, mantenha um cadastro atualizado e evite solicitar credito em excesso. Participar do Cadastro Positivo tambem ajuda, pois permite que as instituicoes vejam seu historico de bom pagador. Cada ponto de melhora no score pode representar reducoes significativas nas taxas oferecidas."
+
+  - question: "Emprestimo com garantia vale a pena?"
+    answer: "O emprestimo com garantia de imovel (home equity) ou de veiculo oferece taxas substancialmente menores que o emprestimo pessoal sem garantia, porque o bem dado em garantia reduz o risco para o credor. As taxas de home equity giram em torno de 1% a 1,5% ao mes, enquanto o credito pessoal pode ultrapassar 5% ao mes. No entanto, e fundamental ter disciplina financeira, pois o nao pagamento pode resultar na perda do bem. O home equity permite tomar emprestado ate 60% do valor do imovel com prazos de ate 20 anos."
+
+  - question: "Posso fazer portabilidade do meu emprestimo?"
+    answer: "Sim, a portabilidade de credito e um direito do consumidor garantido pelo Banco Central. Voce pode transferir seu emprestimo para outra instituicao que oferca condicoes melhores, sem custos adicionais de transferencia. A instituicao de destino quita o saldo devedor com a instituicao de origem e emite um novo contrato com taxas mais baixas. Para solicitar, basta pedir ao banco atual o extrato com saldo devedor atualizado e apresenta-lo a instituicao que oferece melhores condicoes. E uma estrategia eficaz para reduzir o custo de dividas existentes."
+
+  - question: "Como evitar o superendividamento com emprestimos?"
+    answer: "A regra fundamental e que o total das parcelas de todos os seus emprestimos e financiamentos nao deve ultrapassar 30% da sua renda liquida mensal. Antes de contratar, faca uma planilha com todas as suas despesas fixas e variaveis para verificar se a nova parcela cabe no orcamento. Evite contratar emprestimos para cobrir outros emprestimos, pois isso cria uma bola de neve de dividas. Em caso de dificuldade, procure os programas de renegociacao dos bancos ou os mutiroes de negociacao promovidos pelo Procon e pelo Banco Central."
+
+examples:
+  - title: "Emprestimo pessoal em banco digital"
+    scenario: "Emprestimo de R$ 15.000 a 3,2% ao mes por 24 meses"
+    inputs:
+      loanAmount: 15000
+      interestRate: 3.2
+      loanTerm: 24
+    expectedResult: "Parcela mensal: R$ 928,87 | Total de juros: R$ 7.292,88"
+    explanation: "Com parcelas de R$ 928,87, o custo total do emprestimo sera de R$ 22.292,88. Isso significa que voce pagara R$ 7.292,88 em juros, o equivalente a 48,6% do valor emprestado. A primeira parcela aloca R$ 480 para juros e R$ 448,87 para amortizacao, mas essa proporcao se inverte gradualmente ao longo do contrato."
+
+  - title: "Emprestimo consignado"
+    scenario: "Emprestimo consignado de R$ 25.000 a 1,8% ao mes por 60 meses"
+    inputs:
+      loanAmount: 25000
+      interestRate: 1.8
+      loanTerm: 60
+    expectedResult: "Parcela mensal: R$ 663,77 | Total de juros: R$ 14.826,20"
+    explanation: "Mesmo com a taxa reduzida do consignado, o prazo longo de 60 meses faz com que os juros totais atinjam R$ 14.826. Se o prazo fosse reduzido para 36 meses, a parcela subiria para R$ 927,92, mas os juros cairiam para R$ 8.405,12, economizando mais de R$ 6.400. Escolher o menor prazo possivel dentro do orcamento e sempre a estrategia mais economica."
+
+  - title: "Emprestimo com garantia de imovel (home equity)"
+    scenario: "Emprestimo de R$ 100.000 com garantia de imovel a 1,1% ao mes por 120 meses"
+    inputs:
+      loanAmount: 100000
+      interestRate: 1.1
+      loanTerm: 120
+    expectedResult: "Parcela mensal: R$ 1.498,93 | Total de juros: R$ 79.871,60"
+    explanation: "A taxa reduzida do home equity (1,1% ao mes contra 3% ou mais do emprestimo pessoal) resulta em parcelas significativamente menores. Se o mesmo valor fosse contratado como emprestimo pessoal a 3,5% ao mes, a parcela seria de R$ 3.856 e os juros totais ultrapassariam R$ 362.000. A economia do home equity neste exemplo supera R$ 280.000, demonstrando o impacto enorme da taxa de juros no custo total."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Calculadora IMC', slug: '/pt-br/saude/calculadora-imc/', description: 'Calcule seu Indice de Massa Corporal e descubra sua categoria de peso.' },
+  { name: 'Metabolismo Basal (TMB)', slug: '/pt-br/saude/calculadora-metabolismo-basal/', description: 'Calcule sua taxa metabolica basal com a equacao de Mifflin-St Jeor.' },
+  { name: 'Gasto Energetico (TDEE)', slug: '/pt-br/saude/calculadora-gasto-energetico/', description: 'Calcule seu gasto energetico total diario com base no nivel de atividade.' },
+  { name: 'Calculadora Calorias', slug: '/pt-br/saude/calculadora-calorias/', description: 'Meta calorica diaria e distribuicao de macronutrientes para seus objetivos.' },
+  { name: 'Calculadora Macronutrientes', slug: '/pt-br/saude/calculadora-macronutrientes/', description: 'Calcule a distribuicao ideal de proteinas, carboidratos e gorduras.' },
+  { name: 'Gordura Corporal', slug: '/pt-br/saude/calculadora-gordura-corporal/', description: 'Estime seu percentual de gordura corporal pelo metodo da Marinha dos EUA.' },
+  { name: 'Data Provavel do Parto', slug: '/pt-br/saude/calculadora-data-parto/', description: 'Calcule a data provavel do parto e acompanhe o trimestre da gestacao.' },
+  { name: 'Calculadora Periodo Fertil', slug: '/pt-br/saude/calculadora-ovulacao/', description: 'Identifique seu periodo fertil e data estimada de ovulacao.' },
+];
+---
+
+<BaseLayout
+  title="Calculadoras Saude - IMC, TMB, TDEE, Calorias | CalcHub"
+  description="Calculadoras gratuitas de saude e fitness: IMC, metabolismo basal, TDEE, calorias com macronutrientes. Formulas cientificas validadas."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Saude</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculadoras de Saude e Fitness</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Calculadoras baseadas em evidencias cientificas com equacoes validadas. IMC, metabolismo basal, gasto energetico e planejamento calorico para decisoes conscientes sobre sua saude.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

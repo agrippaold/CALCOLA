@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Calculadora Media Escolar', slug: '/pt-br/educacao/calculadora-media-escolar/', description: 'Calcule sua media escolar ponderada com escala de notas de 0 a 10.' },
+];
+---
+
+<BaseLayout
+  title="Calculadoras Educacao - Media Escolar | CalcHub"
+  description="Calculadoras educacionais gratuitas: media escolar ponderada, ferramentas academicas para estudantes."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Educacao</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculadoras de Educacao</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Ferramentas academicas para estudantes. Calcule medias escolares e planeje seus estudos.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,79 @@
+id: "date-difference-calculator"
+category: "date"
+calculatorComponent: "DateDifferenceCalculator"
+lang: "pt-br"
+
+title: "Calculadora de Diferenca entre Datas - Dias entre Datas | CalcHub"
+metaDescription: "Encontre a diferenca exata entre duas datas em anos, meses, semanas e dias. Calculadora de diferenca entre datas gratuita com resultados precisos."
+h1: "Calculadora de Diferenca entre Datas"
+slug: "calculadora-diferenca-datas"
+
+primaryKeyword: "calculadora diferenca entre datas"
+secondaryKeywords:
+  - "dias entre datas"
+  - "calculadora de duracao entre datas"
+  - "quantos dias entre duas datas"
+  - "calcular diferenca de datas"
+  - "semanas entre datas"
+
+intro: "Precisa saber quanto tempo separa duas datas? Esta calculadora de diferenca entre datas informa o periodo exato entre quaisquer duas datas do calendario, dividido em anos, meses, semanas e dias. Funciona para datas passadas, futuras ou uma combinacao de ambas. Use-a para calcular prazos de projetos, fazer contagem regressiva para um evento, rastrear a duracao de contratos ou responder qualquer pergunta que envolva medir o tempo entre dois pontos no calendario."
+
+howItWorks:
+  title: "Como Funciona o Calculo de Diferenca entre Datas"
+  content: "O calculo comeca identificando a data mais antiga e a mais recente no par fornecido. A ordem nao importa porque a calculadora sempre retorna uma duracao positiva. Uma vez ordenadas as datas, o algoritmo conta os anos completos entre elas, depois os meses completos restantes e finalmente os dias restantes. Isso espelha como os humanos naturalmente pensam sobre duracoes. Dizer 2 anos, 3 meses e 12 dias e mais intuitivo do que dizer 832 dias sozinho, razao pela qual a calculadora fornece ambos os formatos. Para o total de dias, a calculadora percorre cada mes entre as duas datas e soma o numero real de dias de cada mes. Isso evita o erro comum de dividir por 30 ou 30,44 para estimar meses, ja que os meses do calendario variam de 28 a 31 dias. Fevereiro em ano bissexto contribui com 29 dias em vez de 28, e a calculadora detecta anos bissextos usando a regra gregoriana padrao: um ano e bissexto se divisivel por 4, exceto anos seculares, que tambem devem ser divisiveis por 400. A contagem de semanas e derivada dividindo o total de dias por 7 e pegando o valor inteiro. Os dias restantes apos as semanas completas sao mostrados separadamente. Isso fornece uma divisao em semanas e dias junto com a versao em anos, meses e dias. Calculos de dias uteis diferem de calculos de dias corridos. Fins de semana (sabado e domingo) sao excluidos na contagem de dias uteis, e feriados tambem podem ser omitidos dependendo da jurisdicao. No Brasil, existem 12 feriados nacionais oficiais alem de feriados estaduais e municipais. Esta calculadora foca em dias corridos, que e a medida mais universalmente aplicavel. Para necessidades de dias uteis, voce aplicaria um filtro adicional para remover dias nao-uteis do total. Essa ferramenta e particularmente util no contexto brasileiro para calcular prazos de contratos de trabalho, periodos de experiencia de 45 ou 90 dias, e contagens de prazo judicial."
+  formula: "Diferenca = |Data B - Data A| (expressa em Anos, Meses, Semanas, Dias)"
+  formulaExplanation: "Calcule a diferenca absoluta entre as duas datas. Divida o resultado em anos completos, depois meses completos restantes, depois semanas completas restantes e finalmente dias restantes. Forneca tambem o total expresso puramente em dias e puramente em semanas."
+  academicSource: "Dershowitz, N. & Reingold, E.M. (2008). Calendrical Calculations, 3rd Edition. Cambridge University Press."
+
+faqs:
+  - question: "A calculadora inclui tanto a data inicial quanto a final na contagem?"
+    answer: "Por padrao, a calculadora conta o numero de dias entre as duas datas, excluindo um dos extremos. Por exemplo, de 1 de janeiro a 3 de janeiro sao 2 dias, nao 3. Se voce precisa incluir ambos os extremos (como contar o primeiro e ultimo dia de um periodo de aluguel), simplesmente adicione 1 ao total. Muitos contextos legais e empresariais no Brasil usam contagem inclusiva, entao sempre verifique qual convencao se aplica a sua situacao."
+  - question: "Como a calculadora lida com anos bissextos?"
+    answer: "A calculadora segue a regra de ano bissexto gregoriana. Um ano se qualifica como bissexto se for divisivel por 4, com a excecao de que anos seculares (como 1900 ou 2100) tambem devem ser divisiveis por 400. Assim, 2000 foi bissexto, mas 1900 nao foi. Quando o intervalo de datas abrange um fevereiro em ano bissexto, a calculadora conta 29 dias para esse mes em vez de 28, tornando os totais de dias e semanas precisos em qualquer periodo."
+  - question: "Posso calcular a diferenca entre datas de seculos diferentes?"
+    answer: "Sim. A calculadora funciona com quaisquer duas datas validas do calendario gregoriano, incluindo datas separadas por centenas de anos. Voce poderia encontrar o numero de dias entre 7 de setembro de 1822 (independencia do Brasil) e 15 de fevereiro de 2026 se quisesse. O algoritmo percorre cada mes intermediario e contabiliza todos os anos bissextos, garantindo que o resultado seja preciso independentemente da distancia entre as datas."
+  - question: "Qual a diferenca entre dias corridos e dias uteis?"
+    answer: "Dias corridos incluem todos os dias do calendario: dias de semana, fins de semana e feriados. Dias uteis (tambem chamados de dias comerciais) tipicamente excluem sabados e domingos, e frequentemente tambem feriados. Esta calculadora fornece contagens de dias corridos. Para converter em dias uteis como estimativa aproximada, multiplique o numero de semanas por 5 e adicione quaisquer dias de semana restantes. Para contagens precisas de dias uteis no Brasil, seria necessario um calendario de feriados nacionais, estaduais e municipais."
+  - question: "Por que a contagem de meses pode parecer errada em alguns casos?"
+    answer: "Os limites dos meses no calendario gregoriano sao desiguais, variando de 28 a 31 dias. Quando o dia inicial e maior que o numero de dias no mes final, a calculadora ajusta. Por exemplo, de 31 de janeiro a 28 de fevereiro e tratado como exatamente um mes, mesmo que apenas 28 dias tenham se passado. Da mesma forma, de 31 de marco a 30 de abril conta como um mes apesar de ser 30 dias. Essa convencao corresponde a como a maioria das pessoas interpreta intervalos mensais na vida cotidiana."
+  - question: "Posso usar esta calculadora para contagem regressiva?"
+    answer: "Com certeza. Insira a data de hoje como data inicial e a data do evento como data final. A calculadora mostrara exatamente quantos anos, meses, semanas e dias faltam ate aquela data. Isso e util para rastrear o tempo ate casamentos, formaturas, viagens, vencimento de contratos, datas de vestibulares e ENEM, ou qualquer marco programado."
+  - question: "Como calcular prazos legais no Brasil com esta ferramenta?"
+    answer: "No direito brasileiro, prazos processuais geralmente sao contados em dias uteis (desde o CPC de 2015), enquanto prazos contratuais costumam ser em dias corridos. Esta calculadora fornece dias corridos, que serve para a maioria dos prazos contratuais. Para prazos processuais em dias uteis, use o total de dias corridos como referencia e desconte fins de semana e feriados. O periodo de experiencia trabalhista, por exemplo, segue dias corridos e esta ferramenta calcula corretamente os 45 ou 90 dias previstos na CLT."
+
+examples:
+  - title: "Cronograma de projeto de curto prazo"
+    scenario: "Um freelancer precisa saber a duracao de 1 de marco de 2026 a 15 de abril de 2026"
+    inputs:
+      startDate: "2026-03-01"
+      endDate: "2026-04-15"
+    expectedResult: "1 mes e 14 dias (45 dias no total, 6 semanas e 3 dias)"
+    explanation: "Marco tem 31 dias, entao de 1 de marco a 1 de abril e exatamente um mes (31 dias corridos). Depois, de 1 a 15 de abril adiciona mais 14 dias. O total e 45 dias corridos, equivalente a 6 semanas completas e 3 dias extras."
+  - title: "Periodo de varios anos com ano bissexto"
+    scenario: "Calculando o intervalo entre 10 de janeiro de 2020 e 15 de fevereiro de 2026"
+    inputs:
+      startDate: "2020-01-10"
+      endDate: "2026-02-15"
+    expectedResult: "6 anos, 1 mes e 5 dias (2.228 dias no total)"
+    explanation: "De 10 de janeiro de 2020 a 10 de janeiro de 2026 sao exatamente 6 anos. De 10 de janeiro a 10 de fevereiro adiciona um mes. De 10 a 15 de fevereiro adiciona mais 5 dias. O intervalo inclui os anos bissextos 2020 e 2024, ambos contribuindo com um dia extra em fevereiro, refletido no total de 2.228 dias."
+  - title: "Calculo dentro do mesmo mes"
+    scenario: "Encontrando a diferenca entre 3 de fevereiro de 2026 e 15 de fevereiro de 2026"
+    inputs:
+      startDate: "2026-02-03"
+      endDate: "2026-02-15"
+    expectedResult: "12 dias (1 semana e 5 dias)"
+    explanation: "Ambas as datas estao no mesmo mes, entao o calculo e direto. 15 de fevereiro menos 3 de fevereiro resulta em 12 dias corridos, que se dividem em 1 semana completa e 5 dias restantes."
+
+relatedTools:
+  - "age-calculator"
+  - "word-counter"
+  - "character-counter"
+
+defaults:
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Contador de Palavras', slug: '/pt-br/texto/contador-palavras/', description: 'Conte palavras, frases, paragrafos e estime tempo de leitura e fala.' },
+  { name: 'Contador de Caracteres', slug: '/pt-br/texto/contador-caracteres/', description: 'Conte caracteres com e sem espacos, verifique limites do Twitter, SMS e mais.' },
+  { name: 'Gerador de Senhas', slug: '/pt-br/texto/gerador-senhas/', description: 'Gere senhas seguras aleatorias com comprimento e tipos de caracteres personalizaveis.' },
+  { name: 'Gerador QR Code', slug: '/pt-br/texto/gerador-qr-code/', description: 'Crie QR codes para URLs, texto, WiFi e e-mail. Download gratuito em PNG.' },
+  { name: 'Verificador de Senha', slug: '/pt-br/texto/verificador-forca-senha/', description: 'Teste a seguranca da sua senha com pontuacao, estimativa de tempo para quebrar e dicas.' },
+];
+---
+
+<BaseLayout
+  title="Ferramentas de Texto - Contador Palavras, Gerador Senhas | CalcHub"
+  description="Ferramentas de texto gratuitas: contador de palavras, caracteres, gerador de senhas e QR code. Analise textos e gere senhas seguras."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Texto e Web</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Ferramentas de Texto e Web</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Ferramentas de analise e geracao de texto. Conte palavras e caracteres, gere senhas seguras e QR codes.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

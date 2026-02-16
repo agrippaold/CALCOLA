@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const categories = [
+  {
+    name: 'Financas',
+    slug: 'financas',
+    description: 'Calculadoras de financiamento, emprestimo, juros compostos, poupanca, investimento e mais.',
+    icon: '💰',
+    tools: [
+      { name: 'Financiamento Imobiliario', slug: '/pt-br/financas/calculadora-financiamento-imobiliario/' },
+      { name: 'Juros Compostos', slug: '/pt-br/financas/calculadora-juros-compostos/' },
+      { name: 'Calculadora Emprestimo', slug: '/pt-br/financas/calculadora-emprestimo/' },
+      { name: 'Calculadora Poupanca', slug: '/pt-br/financas/calculadora-poupanca/' },
+      { name: 'Financiamento Veiculo', slug: '/pt-br/financas/calculadora-financiamento-veiculo/' },
+      { name: 'Calculadora Investimento', slug: '/pt-br/financas/calculadora-investimento/' },
+      { name: 'Calculadora ROI', slug: '/pt-br/financas/calculadora-roi/' },
+      { name: 'Calculadora Inflacao', slug: '/pt-br/financas/calculadora-inflacao/' },
+      { name: 'Conversor de Moedas', slug: '/pt-br/financas/conversor-moedas/' },
+      { name: 'Calculadora Desconto', slug: '/pt-br/financas/calculadora-desconto/' },
+      { name: 'Calculadora Gorjeta', slug: '/pt-br/financas/calculadora-gorjeta/' },
+      { name: 'Calculadora Imposto', slug: '/pt-br/financas/calculadora-imposto-vendas/' },
+      { name: 'Calculadora ICMS', slug: '/pt-br/financas/calculadora-icms/' },
+      { name: 'Calculadora Amortizacao', slug: '/pt-br/financas/calculadora-amortizacao/' },
+      { name: 'Inflacao Historica', slug: '/pt-br/financas/calculadora-inflacao-historica/' },
+    ],
+  },
+  {
+    name: 'Saude',
+    slug: 'saude',
+    description: 'IMC, metabolismo basal, TDEE, calorias, macronutrientes, gordura corporal, gestacao e ovulacao.',
+    icon: '🏥',
+    tools: [
+      { name: 'Calculadora IMC', slug: '/pt-br/saude/calculadora-imc/' },
+      { name: 'Metabolismo Basal', slug: '/pt-br/saude/calculadora-metabolismo-basal/' },
+      { name: 'Gasto Energetico', slug: '/pt-br/saude/calculadora-gasto-energetico/' },
+      { name: 'Calculadora Calorias', slug: '/pt-br/saude/calculadora-calorias/' },
+      { name: 'Macronutrientes', slug: '/pt-br/saude/calculadora-macronutrientes/' },
+      { name: 'Gordura Corporal', slug: '/pt-br/saude/calculadora-gordura-corporal/' },
+      { name: 'Data do Parto', slug: '/pt-br/saude/calculadora-data-parto/' },
+      { name: 'Periodo Fertil', slug: '/pt-br/saude/calculadora-ovulacao/' },
+    ],
+  },
+  {
+    name: 'Matematica',
+    slug: 'matematica',
+    description: 'Porcentagem, area, fracoes, calculadora cientifica e variacao percentual.',
+    icon: '📐',
+    tools: [
+      { name: 'Calculadora Porcentagem', slug: '/pt-br/matematica/calculadora-porcentagem/' },
+      { name: 'Calculadora Area', slug: '/pt-br/matematica/calculadora-area/' },
+      { name: 'Variacao Percentual', slug: '/pt-br/matematica/calculadora-variacao-percentual/' },
+      { name: 'Calculadora Fracoes', slug: '/pt-br/matematica/calculadora-fracoes/' },
+      { name: 'Calculadora Cientifica', slug: '/pt-br/matematica/calculadora-cientifica/' },
+    ],
+  },
+  {
+    name: 'Conversoes',
+    slug: 'conversoes',
+    description: 'Conversores de temperatura, volume, comprimento e peso.',
+    icon: '🔄',
+    tools: [
+      { name: 'Conversor Temperatura', slug: '/pt-br/conversoes/conversor-temperatura/' },
+      { name: 'Conversor Volume', slug: '/pt-br/conversoes/conversor-volume/' },
+      { name: 'Conversor Comprimento', slug: '/pt-br/conversoes/conversor-comprimento/' },
+      { name: 'Conversor Peso', slug: '/pt-br/conversoes/conversor-peso/' },
+    ],
+  },
+  {
+    name: 'Data e Hora',
+    slug: 'data',
+    description: 'Calculadora de idade e diferenca entre datas.',
+    icon: '📅',
+    tools: [
+      { name: 'Calculadora Idade', slug: '/pt-br/data/calculadora-idade/' },
+      { name: 'Diferenca entre Datas', slug: '/pt-br/data/calculadora-diferenca-datas/' },
+    ],
+  },
+  {
+    name: 'Texto e Web',
+    slug: 'texto',
+    description: 'Contador de palavras, caracteres, gerador de senhas, QR code e mais.',
+    icon: '📝',
+    tools: [
+      { name: 'Contador Palavras', slug: '/pt-br/texto/contador-palavras/' },
+      { name: 'Contador Caracteres', slug: '/pt-br/texto/contador-caracteres/' },
+      { name: 'Gerador de Senhas', slug: '/pt-br/texto/gerador-senhas/' },
+      { name: 'Gerador QR Code', slug: '/pt-br/texto/gerador-qr-code/' },
+      { name: 'Verificador Senha', slug: '/pt-br/texto/verificador-forca-senha/' },
+    ],
+  },
+  {
+    name: 'Educacao',
+    slug: 'educacao',
+    description: 'Calculadora de media escolar e ferramentas academicas.',
+    icon: '🎓',
+    tools: [
+      { name: 'Media Escolar', slug: '/pt-br/educacao/calculadora-media-escolar/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - Calculadoras Online Gratuitas | Financas, Saude, Matematica"
+  description="200+ calculadoras online gratuitas em 25 idiomas. Financiamento, IMC, juros compostos, porcentagem, temperatura e muito mais. Rapidas, precisas, sem cadastro."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Calculadoras Online Gratuitas</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Calculadoras rapidas e precisas para financas, saude, matematica e conversoes. Sem cadastro. Sem anuncios invasivos.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/pt-br/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Calculadoras Populares</h2>
+    <p class="text-gray-600 mb-8">As ferramentas mais utilizadas de todas as categorias</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/pt-br/financas/calculadora-financiamento-imobiliario/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">Financas</div>
+        <div class="font-semibold text-gray-900">Financiamento Imobiliario</div>
+        <p class="text-sm text-gray-500 mt-1">Calcule parcela mensal e juros totais do financiamento.</p>
+      </a>
+      <a href="/pt-br/saude/calculadora-imc/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Saude</div>
+        <div class="font-semibold text-gray-900">Calculadora IMC</div>
+        <p class="text-sm text-gray-500 mt-1">Verifique seu Indice de Massa Corporal.</p>
+      </a>
+      <a href="/pt-br/matematica/calculadora-porcentagem/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">Matematica</div>
+        <div class="font-semibold text-gray-900">Calculadora Porcentagem</div>
+        <p class="text-sm text-gray-500 mt-1">Todas as operacoes com porcentagem em um so lugar.</p>
+      </a>
+      <a href="/pt-br/saude/calculadora-calorias/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">Saude</div>
+        <div class="font-semibold text-gray-900">Calculadora Calorias</div>
+        <p class="text-sm text-gray-500 mt-1">Necessidade calorica diaria e macronutrientes.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Todas as Categorias</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/pt-br/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/pt-br/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            Ver todas as ferramentas de {cat.name.toLowerCase()} &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

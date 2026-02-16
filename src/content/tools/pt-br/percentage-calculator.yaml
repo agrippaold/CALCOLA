@@ -1,0 +1,80 @@
+id: "percentage-calculator"
+category: "math"
+calculatorComponent: "PercentageCalculator"
+lang: "pt-br"
+
+title: "Calculadora de Porcentagem - Calcule Percentuais Online | CalcHub"
+metaDescription: "Calcule porcentagens instantaneamente: encontre X% de Y, variacao percentual, aumento e desconto percentual. Calculadora de porcentagem gratuita com multiplos modos."
+h1: "Calculadora de Porcentagem"
+slug: "calculadora-porcentagem"
+
+primaryKeyword: "calculadora de porcentagem"
+secondaryKeywords:
+  - "calcular porcentagem"
+  - "como calcular porcentagem"
+  - "porcentagem online"
+  - "calcular desconto percentual"
+
+intro: "Porcentagens estao presentes em praticamente todas as situacoes do dia a dia, desde calcular descontos em compras e gorjetas em restaurantes ate analisar rendimentos de investimentos e notas de provas. Esta calculadora resolve cinco tipos diferentes de problemas com porcentagem para que voce nao precise decorar formulas. Selecione o modo de calculo desejado, insira os valores e obtenha o resultado instantaneamente. Seja para descobrir quanto e 15% de um valor ou calcular a variacao percentual entre dois numeros, esta ferramenta cobre tudo."
+
+howItWorks:
+  title: "Como Funcionam os Calculos de Porcentagem"
+  content: "Porcentagens expressam um numero como uma fracao de 100. A palavra vem do latim per centum, que significa por cento. Esta calculadora trabalha com cinco operacoes distintas de porcentagem, cada uma com sua propria formula. Encontrar X por cento de Y multiplica Y por X dividido por 100. Por exemplo, 20% de 150 equivale a 150 vezes 0,20, que resulta em 30. A pergunta inversa questiona qual porcentagem X representa de Y, calculada como X dividido por Y vezes 100. Se 25 alunos de 200 passaram, isso representa 25 dividido por 200 vezes 100, igual a 12,5%. A variacao percentual mede a diferenca relativa entre um valor antigo e um novo. A formula divide a diferenca (novo menos antigo) pelo valor absoluto do numero antigo e multiplica por 100. Se uma acao subiu de R$80 para R$100, a variacao e (100-80)/80 vezes 100, igual a 25%. Se caiu de R$100 para R$80, a variacao e (80-100)/100 vezes 100, igual a menos 20%. Observe que um aumento de 25% seguido por uma queda de 20% retorna ao valor original, e nao uma queda de 25%. Essa assimetria surpreende muitas pessoas. O aumento percentual adiciona uma porcentagem ao valor: resultado igual a valor vezes (1 mais porcentagem/100). Um produto de R$50 com 8% de imposto fica 50 vezes 1,08, igual a R$54. A diminuicao percentual subtrai: resultado igual a valor vezes (1 menos porcentagem/100). Um produto de R$200 com 30% de desconto fica 200 vezes 0,70, igual a R$140. Porcentagens maiores que 100 sao perfeitamente validas e comuns em financas. Um retorno de 150% significa que voce ganhou 1,5 vezes seu investimento original, terminando com 2,5 vezes o que comecou. Porcentagens negativas indicam diminuicoes. Esses calculos formam a base da matematica do cotidiano, desde impostos e gorjetas ate calculo de notas, metricas empresariais e analise estatistica."
+  formula: "X% de Y = (X/100) * Y"
+  formulaExplanation: "Outros modos: X e qual % de Y = (X/Y) * 100. Variacao percentual = ((novo-antigo)/|antigo|) * 100. Aumento = valor * (1+%/100). Desconto = valor * (1-%/100)."
+  academicSource: "National Council of Teachers of Mathematics. (2000). Principles and Standards for School Mathematics. NCTM."
+
+faqs:
+  - question: "Como calcular a porcentagem de um numero?"
+    answer: "Multiplique o numero pela porcentagem dividida por 100. Para encontrar 15% de 200, calcule 200 vezes 0,15, que resulta em 30. Um atalho pratico: para encontrar 10% de qualquer numero, mova a virgula decimal uma casa para a esquerda. Assim, 10% de 200 e 20. Entao 15% e 20 mais a metade de 20 (que e 10), totalizando 30. Essa tecnica de calculo mental funciona bem para gorjetas e estimativas rapidas no dia a dia."
+  - question: "Como descobrir qual porcentagem um numero representa de outro?"
+    answer: "Divida a parte pelo todo e multiplique por 100. Se voce acertou 42 questoes de 50 em uma prova, sua porcentagem e (42/50) vezes 100, igual a 84%. Se suas despesas sao R$1.200 de uma renda mensal de R$4.000, as despesas representam (1200/4000) vezes 100, igual a 30% da sua renda. O segredo e identificar qual numero e a parte e qual e o todo."
+  - question: "Como calcular a variacao percentual entre dois valores?"
+    answer: "Subtraia o valor antigo do novo, divida pelo valor absoluto do valor antigo e multiplique por 100. Se o aluguel subiu de R$1.500 para R$1.650, a variacao e (1650-1500)/1500 vezes 100, igual a 10% de aumento. Se sua carteira de investimentos caiu de R$50.000 para R$42.000, a variacao e (42000-50000)/50000 vezes 100, igual a menos 16%, ou seja, uma queda de 16%."
+  - question: "Por que um aumento de 50% seguido de uma queda de 50% nao volta ao valor original?"
+    answer: "Porque a segunda porcentagem e aplicada sobre um numero diferente. Comecando em 100, um aumento de 50% da 150. Uma queda de 50% sobre 150 da 75, nao 100. A queda e aplicada sobre o numero maior (150), removendo mais do que o aumento original adicionou. Para retornar ao valor original apos um aumento de 50%, voce precisa de uma queda de 33,3%. Essa assimetria e muito importante em financas: uma perda de 50% no mercado exige um ganho de 100% para recuperar o valor investido."
+  - question: "Como calcular descontos em compras no Brasil?"
+    answer: "Para calcular um desconto, multiplique o preco original pela porcentagem de desconto dividida por 100 e subtraia do preco original. Um produto de R$250 com 30% de desconto: 250 vezes 0,30 igual a R$75 de desconto, preco final R$175. Um atalho e multiplicar diretamente pelo complemento: R$250 vezes 0,70 igual a R$175. Esse calculo e essencial para aproveitar promocoes de Black Friday, liquidacoes e ofertas do comercio brasileiro."
+  - question: "Como porcentagens se relacionam com fracoes e decimais?"
+    answer: "Porcentagens, fracoes e decimais sao tres formas de expressar o mesmo valor. 25% equivale a 25/100, que equivale a 1/4, que equivale a 0,25. Para converter porcentagem em decimal, divida por 100 (mova a virgula duas casas para a esquerda). Para converter decimal em porcentagem, multiplique por 100 (mova a virgula duas casas para a direita). Para converter fracao em porcentagem, divida o numerador pelo denominador e multiplique por 100. Essas conversoes sao uteis pois diferentes contextos favorecem formatos diferentes: lojas usam porcentagens, receitas usam fracoes e calculos usam decimais."
+
+examples:
+  - title: "Desconto em compras"
+    scenario: "Encontrando o preco com desconto de uma jaqueta de R$250 com 25% de desconto"
+    inputs:
+      mode: "decrease"
+      value: 250
+      percent: 25
+    expectedResult: "Resultado: R$187,50"
+    explanation: "25% de R$250 e R$62,50. O preco com desconto e R$250 menos R$62,50, igual a R$187,50. Voce economiza R$62,50 nesta compra."
+  - title: "Retorno de investimento"
+    scenario: "Calculando a variacao percentual de um investimento de R$12.000 para o valor atual de R$15.600"
+    inputs:
+      mode: "change"
+      oldValue: 12000
+      newValue: 15600
+    expectedResult: "Variacao percentual: +30%"
+    explanation: "O investimento ganhou R$3.600 sobre os R$12.000 originais, o que representa um retorno de 30%. Esse calculo funciona da mesma forma para acoes, imoveis ou qualquer ativo."
+  - title: "Nota de prova em porcentagem"
+    scenario: "Descobrindo qual porcentagem 37 acertos representam de 45 questoes no total"
+    inputs:
+      mode: "is_what"
+      valueX: 37
+      valueY: 45
+    expectedResult: "37 e 82,22% de 45"
+    explanation: "Acertar 37 de 45 questoes resulta em uma nota de aproximadamente 82,2%. Esse metodo funciona para qualquer prova ou avaliacao onde voce precisa converter acertos em porcentagem."
+
+relatedTools:
+  - "fraction-calculator"
+  - "percent-change-calculator"
+  - "scientific-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

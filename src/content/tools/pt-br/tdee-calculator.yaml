@@ -1,0 +1,85 @@
+id: "tdee-calculator"
+category: "health"
+calculatorComponent: "TDEECalculator"
+
+title: "Calculadora de Gasto Energetico Total Diario (GET) | CalcHub"
+metaDescription: "Calcule seu Gasto Energetico Total Diario com base na TMB e nivel de atividade fisica. Descubra suas calorias de manutencao para emagrecer, ganhar massa ou manter o peso."
+h1: "Calculadora de Gasto Energetico Total Diario (GET)"
+slug: "calculadora-gasto-energetico"
+
+primaryKeyword: "calculadora gasto energetico"
+secondaryKeywords:
+  - "gasto energetico total diario"
+  - "calcular get"
+  - "calorias de manutencao"
+  - "gasto calorico diario"
+
+intro: "O Gasto Energetico Total (GET) representa o numero total de calorias que voce queima em um dia completo, incluindo tudo, desde respirar ate se exercitar e caminhar pela casa. Ele combina sua Taxa Metabolica Basal com o custo energetico de toda atividade fisica. Seja seu objetivo perder gordura, ganhar massa muscular ou manter seu fisico atual, o GET e o numero base para planejar sua alimentacao. Esta calculadora fornece uma estimativa confiavel com base na equacao de Mifflin-St Jeor e multiplicadores de atividade validados cientificamente."
+
+howItWorks:
+  title: "Como o GET e Calculado"
+  content: "O GET e calculado determinando primeiro sua Taxa Metabolica Basal (TMB) pela equacao de Mifflin-St Jeor e depois multiplicando-a por um fator de atividade que reflete seus habitos diarios de movimentacao e exercicio. Os multiplicadores de atividade utilizados nesta calculadora vem de pesquisas sobre gasto energetico em diferentes padroes de estilo de vida. Individuos sedentarios (trabalho de escritorio, exercicio minimo) multiplicam a TMB por 1,2, o que significa que a atividade fisica adiciona cerca de 20% as necessidades energeticas basais. Pessoas levemente ativas (exercicio casual 1 a 3 dias por semana) usam 1,375. Moderadamente ativas (exercicio estruturado 3 a 5 dias por semana) usam 1,55. Individuos ativos (exercicio intenso 6 a 7 dias por semana) usam 1,725. Pessoas muito ativas (atletas, trabalho braçal) usam 1,9. No contexto brasileiro, e importante considerar que muitas pessoas combinam diferentes niveis de atividade ao longo da semana. Um trabalhador que pega transporte publico e caminha bastante no dia a dia, por exemplo, pode ter um NEAT (termogenese de atividade nao relacionada ao exercicio) mais alto do que alguem que vai de carro para o trabalho, mesmo que ambos frequentem a academia com a mesma frequencia. O NEAT inclui toda movimentacao fora dos treinos intencionais: caminhar ate o ponto de onibus, subir escadas, realizar tarefas domesticas e a movimentacao geral do cotidiano. Ele varia enormemente entre individuos e pode representar de 200 a 900 calorias por dia dependendo da ocupacao, habitos de movimento e estilo de vida geral. O efeito termico dos alimentos (ETA) tambem esta embutido nesses multiplicadores. Seu corpo gasta aproximadamente 10% da ingestao calorica total na digestao e processamento dos alimentos. A proteina tem o maior efeito termico, com 20% a 30% de suas calorias, seguida pelos carboidratos com 5% a 10%, e as gorduras com 0% a 3%. Essa e uma das razoes pelas quais dietas ricas em proteinas apoiam efetivamente a perda de gordura. E importante lembrar que o GET e uma estimativa, nao uma medida precisa. Variacoes individuais em eficiencia metabolica, niveis hormonais, composicao do microbioma intestinal e flutuacoes diarias de atividade significam que seu gasto real em qualquer dia pode diferir em 10% a 15% do valor calculado. Use o GET como ponto de partida e ajuste com base nos resultados reais ao longo de 2 a 4 semanas. Nutricionistas brasileiros registrados no CRN frequentemente utilizam o GET como base para a prescricao dietetica individualizada."
+  formula: "GET = TMB x Fator de Atividade"
+  formulaExplanation: "A TMB e calculada pela equacao Mifflin-St Jeor (10 x peso + 6,25 x altura - 5 x idade ± constante de genero). Os multiplicadores de atividade variam de 1,2 (sedentario) a 1,9 (muito ativo)."
+  academicSource: "Harris, J. A., & Benedict, F. G. (1918). A Biometric Study of Human Basal Metabolism. Proceedings of the National Academy of Sciences, 4(12), 370-373. Fatores de atividade: Ainsworth, B. E., et al. (2011). Compendium of Physical Activities. Medicine and Science in Sports and Exercise, 43(8), 1575-1581."
+
+faqs:
+  - question: "Qual nivel de atividade devo selecionar?"
+    answer: "Seja honesto sobre sua semana media em vez de escolher sua semana mais ativa. Sedentario significa que voce tem um trabalho de escritorio e nao se exercita regularmente. Atividade leve abrange caminhadas casuais, yoga ou exercicio leve 1 a 3 vezes por semana. Moderado se aplica a maioria dos frequentadores regulares de academia que treinam 3 a 5 vezes por semana com intensidade moderada. Ativo se aplica se voce se exercita intensamente na maioria dos dias. Muito ativo e reservado para atletas competitivos, trabalhadores da construcao civil ou aqueles que combinam um trabalho fisico com treinamento regular. Na duvida, escolha um nivel abaixo do que voce acha e ajuste com base nos resultados."
+  - question: "Como usar o GET para emagrecer?"
+    answer: "Para perder peso, coma menos calorias do que seu GET. Um deficit de 500 calorias por dia produz aproximadamente 0,45 kg de perda de gordura por semana. Comece subtraindo 300 a 500 calorias do seu GET e monitore seu peso ao longo de 2 a 3 semanas. Se voce nao estiver perdendo peso, reduza mais 100 a 200 calorias. Evite deficits maiores que 1.000 calorias por dia, pois aumentam a perda muscular, reduzem os niveis de energia e sao dificeis de sustentar. Combine seu deficit calorico com ingestao adequada de proteinas (1,6 a 2,2 g por kg de peso corporal) para preservar a massa muscular."
+  - question: "Como usar o GET para ganhar massa muscular?"
+    answer: "Construir musculo exige comer acima do seu GET para fornecer energia e nutrientes para a sintese de novo tecido. Um superavit de 200 a 400 calorias por dia apoia o crescimento muscular enquanto minimiza o ganho de gordura. Isso tipicamente produz ganho de peso de 0,25 a 0,5 kg por semana. As necessidades de proteina sao mais altas durante um superavit: mire em 1,6 a 2,2 gramas por quilograma de peso corporal diariamente. Acompanhe a medida da sua cintura junto com o peso corporal para garantir que os ganhos sejam principalmente de massa magra e nao de gordura."
+  - question: "Por que meu GET e diferente da estimativa do meu relogio fitness?"
+    answer: "Relogios fitness estimam o GET usando dados de frequencia cardiaca, contagem de passos e leituras do acelerometro, enquanto esta calculadora usa uma abordagem baseada em formula. Ambas sao estimativas com margens de erro. Relogios fitness tendem a superestimar a queima calorica durante o exercicio em 27% a 93% segundo pesquisa da Universidade de Stanford. A abordagem por formula pode subestimar o GET para individuos muito ativos. Para uma imagem mais precisa, faca a media da estimativa do relogio com a da formula, ou simplesmente use o valor da calculadora como ponto de partida e ajuste com base em mudancas reais de peso ao longo de 2 a 3 semanas."
+  - question: "O GET muda ao longo do tempo?"
+    answer: "O GET muda com alteracoes no peso corporal, composicao corporal, idade e padroes de atividade. Perder peso reduz o GET porque um corpo menor requer menos energia para se manter. Ganhar musculo aumenta o GET porque o tecido muscular e metabolicamente ativo. A adaptacao metabolica durante a restricao calorica prolongada pode reduzir temporariamente o GET alem do que a formula preve. Recalcule seu GET sempre que seu peso mudar mais de 5 kg ou seu nivel de atividade se alterar significativamente. No Brasil, acompanhamento nutricional periodico nas UBS pode ajudar nesse monitoramento."
+  - question: "O que e NEAT e por que importa para o GET?"
+    answer: "A Termogenese de Atividade Nao Relacionada ao Exercicio (NEAT) inclui toda atividade fisica que nao e exercicio estruturado: caminhar ate a padaria, ficar em pe no onibus, subir escadas, cozinhar, limpar e a movimentacao geral do dia a dia. O NEAT pode representar 200 a 900 calorias por dia e explica muito da variacao na queima calorica total entre pessoas com habitos de exercicio semelhantes. Individuos que inconscientemente se movem mais ao longo do dia frequentemente mantem menor gordura corporal apesar de padroes alimentares similares. Aumentar o NEAT por meio de caminhadas, uso de escadas em vez de elevadores ou estacionar mais longe pode elevar significativamente o gasto diario."
+
+examples:
+  - title: "Homem moderadamente ativo"
+    scenario: "Um homem de 30 anos, 80 kg, 1,80 m, exercicio moderado 3 a 5 dias por semana"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+      activity: "moderate"
+    expectedResult: "GET: 2.759 kcal/dia | TMB: 1.780 kcal"
+    explanation: "Sua TMB de 1.780 e multiplicada por 1,55 para atividade moderada. Para perder peso, ele visaria aproximadamente 2.259 calorias por dia (deficit de 500). Para ganhar massa muscular, aproximadamente 3.059 calorias (superavit de 300)."
+  - title: "Mulher sedentaria com trabalho de escritorio"
+    scenario: "Uma mulher de 35 anos, 65 kg, 1,62 m, trabalho de escritorio sem exercicio regular"
+    inputs:
+      weight: 65
+      height: 162
+      age: 35
+      gender: "female"
+      activity: "sedentary"
+    expectedResult: "GET: 1.618 kcal/dia | TMB: 1.348 kcal"
+    explanation: "Com um estilo de vida sedentario, suas necessidades diarias sao de apenas cerca de 1.618 calorias. Adicionar exercicio leve 3 vezes por semana aumentaria o GET para aproximadamente 1.854 calorias, dando-lhe mais flexibilidade alimentar enquanto mantem ou perde peso."
+  - title: "Atleta muito ativo"
+    scenario: "Um homem de 25 anos, 85 kg, 1,85 m, treinando duas vezes ao dia"
+    inputs:
+      weight: 85
+      height: 185
+      age: 25
+      gender: "male"
+      activity: "very_active"
+    expectedResult: "GET: 3.548 kcal/dia | TMB: 1.868 kcal"
+    explanation: "Este atleta precisa de mais de 3.500 calorias diarias para manter seu peso atual e carga de treinamento. Comer abaixo de 3.000 calorias provavelmente causaria declinio de desempenho, fadiga e perda gradual de peso. No Brasil, atletas de alto rendimento frequentemente contam com acompanhamento de nutricionistas esportivos vinculados a confederacoes."
+
+relatedTools:
+  - "bmr-calculator"
+  - "calorie-calculator"
+  - "macro-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

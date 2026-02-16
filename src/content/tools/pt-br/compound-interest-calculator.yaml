@@ -1,0 +1,91 @@
+id: "compound-interest-calculator"
+category: "finance"
+calculatorComponent: "CompoundInterestCalculator"
+
+title: "Calculadora de Juros Compostos - Simule Rendimentos | CalcHub"
+metaDescription: "Calcule juros compostos sobre seus investimentos. Simule rendimentos com CDI, Selic e poupanca. Veja o crescimento do seu dinheiro ao longo do tempo."
+h1: "Calculadora de Juros Compostos"
+slug: "calculadora-juros-compostos"
+
+primaryKeyword: "calculadora juros compostos"
+secondaryKeywords:
+  - "calcular juros compostos"
+  - "simulador juros compostos"
+  - "juros sobre juros"
+  - "formula juros compostos"
+  - "rendimento juros compostos"
+
+intro: "Os juros compostos sao a forca mais poderosa das financas pessoais. Diferente dos juros simples, onde o rendimento e calculado sempre sobre o valor inicial, nos juros compostos cada rendimento gera novos rendimentos, criando um efeito bola de neve que acelera o crescimento do seu patrimonio ao longo do tempo. Esta calculadora mostra exatamente como seu dinheiro cresce quando aplicado a taxas como CDI, Selic ou poupanca. Informe o valor inicial, a taxa de juros, o prazo e a frequencia de capitalizacao para visualizar o poder dos juros compostos trabalhando a seu favor."
+
+howItWorks:
+  title: "Como funcionam os juros compostos"
+  content: "Os juros compostos calculam o rendimento nao apenas sobre o capital inicial, mas tambem sobre todos os juros acumulados anteriormente. Isso cria um crescimento exponencial, muito diferente do crescimento linear dos juros simples. A formula multiplica o capital principal por um mais a taxa periodica de juros, elevada ao numero total de periodos de capitalizacao. No contexto brasileiro, entender juros compostos e essencial porque praticamente todos os investimentos e dividas utilizam esse regime. A caderneta de poupanca rende juros compostos mensalmente, os CDBs capitalizam diariamente, e o Tesouro Direto tambem trabalha com juros compostos. A taxa CDI, referencia para a maioria dos investimentos de renda fixa no Brasil, e expressa ao ano mas capitalizada diariamente. Vamos a um exemplo pratico: se voce investe R$ 10.000 a uma taxa equivalente a 100% do CDI (aproximadamente 13,25% ao ano em 2025) com capitalizacao diaria por 5 anos, o resultado seria aproximadamente R$ 18.851. Com juros simples, o mesmo investimento renderia apenas R$ 16.625. A diferenca de mais de R$ 2.200 vem exclusivamente do efeito da capitalizacao composta, onde os juros de cada dia geram novos juros nos dias seguintes. A frequencia de capitalizacao faz diferenca, especialmente em taxas mais altas. Os mesmos R$ 10.000 a 13% ao ano por 10 anos rendem R$ 34.392 com capitalizacao anual, R$ 36.010 com capitalizacao mensal e R$ 36.425 com capitalizacao diaria. A diferenca entre capitalizacao anual e mensal e significativa, mas entre mensal e diaria e relativamente pequena. A Regra dos 72 e um atalho util para estimar o tempo necessario para dobrar seu dinheiro: divida 72 pela taxa de juros anual. Com a taxa Selic a 12%, seu dinheiro dobra em aproximadamente 6 anos (72/12). Com a poupanca rendendo cerca de 7% ao ano, sao necessarios aproximadamente 10,3 anos para dobrar. Essa regra funciona melhor para taxas entre 4% e 15%. O tempo e a variavel mais poderosa nos juros compostos. Comecar a investir cedo, mesmo com valores pequenos, produz resultados dramaticamente superiores a comecar mais tarde com valores maiores. Um investimento de R$ 200 por mes a 10% ao ano durante 30 anos acumula mais de R$ 452.000, dos quais R$ 380.000 sao juros compostos e apenas R$ 72.000 sao aportes. Esse conceito e fundamental para o planejamento da aposentadoria e a construcao de patrimonio no longo prazo."
+  formula: "M = C × (1 + i)^n"
+  formulaExplanation: "M = montante final, C = capital inicial, i = taxa de juros por periodo (taxa anual / numero de capitalizacoes por ano), n = numero total de periodos de capitalizacao"
+  academicSource: "Assaf Neto, A. (2022). Matematica Financeira e Suas Aplicacoes (14a ed.). Atlas."
+
+faqs:
+  - question: "Qual a diferenca entre juros simples e juros compostos?"
+    answer: "Nos juros simples, o rendimento e calculado sempre sobre o capital inicial, gerando crescimento linear. Nos juros compostos, o rendimento e calculado sobre o capital inicial mais todos os juros ja acumulados, gerando crescimento exponencial. Em um investimento de R$ 10.000 a 10% ao ano por 20 anos, juros simples rendem R$ 20.000 (total de R$ 30.000), enquanto juros compostos rendem R$ 57.275 (total de R$ 67.275). Quanto maior o prazo, maior a diferenca entre os dois regimes. No Brasil, todos os investimentos financeiros utilizam o regime de juros compostos."
+
+  - question: "O que e o CDI e como ele se relaciona com juros compostos?"
+    answer: "O CDI (Certificado de Deposito Interbancario) e a taxa de referencia para operacoes entre bancos e serve como benchmark para a maioria dos investimentos de renda fixa no Brasil. Quando um CDB oferece rendimento de 110% do CDI, significa que sua rentabilidade sera 10% acima da taxa CDI. O CDI acompanha de perto a taxa Selic e capitaliza diariamente, utilizando o regime de juros compostos. Em 2025, com o CDI proximo de 13,25% ao ano, um investimento de R$ 50.000 a 100% do CDI rende aproximadamente R$ 6.625 em um ano."
+
+  - question: "Quanto rende a poupanca em juros compostos?"
+    answer: "A regra atual da poupanca define que, quando a Selic esta acima de 8,5% ao ano, o rendimento e de 0,5% ao mes mais a Taxa Referencial (TR). Quando a Selic esta igual ou abaixo de 8,5%, o rendimento e de 70% da Selic mais TR. Com a Selic elevada, a poupanca rende aproximadamente 7,5% ao ano com capitalizacao mensal. Para R$ 20.000 na poupanca por 5 anos, o montante seria de aproximadamente R$ 28.754. Apesar de isenta de imposto de renda, a poupanca geralmente perde para investimentos como CDB e Tesouro Selic em termos de rentabilidade liquida."
+
+  - question: "Como calcular juros compostos com aportes mensais?"
+    answer: "Para calcular juros compostos com aportes mensais regulares, utiliza-se a formula do valor futuro de uma anuidade combinada com o crescimento do capital inicial. Cada aporte mensal e tratado como um investimento separado que capitaliza desde o mes do deposito ate o final do periodo. Se voce investe R$ 500 por mes a 12% ao ano durante 10 anos, seus aportes totalizam R$ 60.000, mas o montante final sera de aproximadamente R$ 115.019 gracas aos juros compostos, representando um ganho de R$ 55.019 em rendimentos."
+
+  - question: "Qual a diferenca entre taxa nominal e taxa efetiva?"
+    answer: "A taxa nominal e a taxa anunciada, enquanto a taxa efetiva e a taxa realmente praticada apos considerar a capitalizacao. Uma taxa nominal de 12% ao ano com capitalizacao mensal equivale a uma taxa efetiva de 12,68% ao ano, porque cada mes os juros sao calculados sobre o montante atualizado. No mercado financeiro brasileiro, e fundamental comparar as taxas efetivas dos investimentos para tomar decisoes corretas. O CET (Custo Efetivo Total) em financiamentos e a taxa que melhor reflete o custo real para o tomador."
+
+  - question: "Investir no Tesouro Direto usa juros compostos?"
+    answer: "Sim, todos os titulos do Tesouro Direto operam no regime de juros compostos. O Tesouro Selic rende a taxa Selic capitalizada diariamente, sendo ideal para reserva de emergencia. O Tesouro Prefixado paga uma taxa fixa definida no momento da compra, com juros compostos semestrais ou no vencimento. O Tesouro IPCA+ rende a inflacao (IPCA) mais uma taxa real fixa, protegendo o poder de compra do investidor. Para um investimento de R$ 10.000 no Tesouro Selic a 13% ao ano por 3 anos, o montante bruto seria de aproximadamente R$ 14.429, antes do desconto de imposto de renda."
+
+examples:
+  - title: "Investimento em CDB a 100% do CDI"
+    scenario: "Aplicacao de R$ 10.000 a 13,25% ao ano (100% CDI) com capitalizacao diaria por 5 anos"
+    inputs:
+      principal: 10000
+      annualRate: 13.25
+      years: 5
+      compounding: "daily"
+    expectedResult: "Montante bruto: R$ 18.851,47 | Rendimento bruto: R$ 8.851,47"
+    explanation: "O capital de R$ 10.000 quase dobra em 5 anos gracas ao poder dos juros compostos a uma taxa elevada. Com a capitalizacao diaria, cada dia de rendimento gera novos rendimentos no dia seguinte. Apos o desconto de imposto de renda de 15% sobre o rendimento (aliquota para aplicacoes acima de 720 dias), o rendimento liquido seria de aproximadamente R$ 7.523."
+
+  - title: "Comparacao entre poupanca e CDB"
+    scenario: "R$ 20.000 investidos por 3 anos: poupanca (7,5% ao ano mensal) vs CDB (12% ao ano diario)"
+    inputs:
+      principal: 20000
+      annualRate: 7.5
+      years: 3
+      compounding: "monthly"
+    expectedResult: "Poupanca: R$ 24.879,15 | CDB bruto: R$ 28.587,66"
+    explanation: "A poupanca rende R$ 4.879, isenta de IR. O CDB rende R$ 8.587 brutos, e apos IR de 15% (para prazo acima de 2 anos), o rendimento liquido e de R$ 7.299. Mesmo apos impostos, o CDB supera a poupanca em mais de R$ 2.400 neste cenario, demonstrando por que diversificar alem da poupanca e vantajoso."
+
+  - title: "Efeito do tempo com aportes mensais"
+    scenario: "Aportes de R$ 500 por mes a 10% ao ano com capitalizacao mensal durante 20 anos"
+    inputs:
+      principal: 0
+      monthlyContribution: 500
+      annualRate: 10
+      years: 20
+      compounding: "monthly"
+    expectedResult: "Montante: R$ 382.846,46 | Aportes totais: R$ 120.000 | Juros: R$ 262.846,46"
+    explanation: "Sem nenhum investimento inicial, apenas R$ 500 por mes durante 20 anos transformam R$ 120.000 em aportes em mais de R$ 382.000. Os juros compostos geram R$ 262.846, que representam mais do que o dobro do valor total investido. Esse exemplo ilustra claramente por que comecar a investir cedo e manter a disciplina dos aportes regulares e a estrategia mais poderosa para construir patrimonio."
+
+relatedTools:
+  - "savings-calculator"
+  - "investment-calculator"
+  - "mortgage-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

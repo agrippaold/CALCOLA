@@ -1,0 +1,82 @@
+id: "bmr-calculator"
+category: "health"
+calculatorComponent: "BMRCalculator"
+
+title: "Calculadora de Metabolismo Basal (TMB) - Taxa Metabolica Basal | CalcHub"
+metaDescription: "Calcule sua Taxa Metabolica Basal com a equacao Mifflin-St Jeor. Descubra quantas calorias seu corpo queima em repouso com base na idade, peso e altura."
+h1: "Calculadora de Metabolismo Basal (TMB)"
+slug: "calculadora-metabolismo-basal"
+
+primaryKeyword: "calculadora metabolismo basal"
+secondaryKeywords:
+  - "taxa metabolica basal"
+  - "calcular tmb"
+  - "metabolismo basal calcular"
+  - "tmb formula"
+
+intro: "A Taxa Metabolica Basal (TMB) representa o numero de calorias que o seu corpo queima apenas para se manter vivo: respirar, circular sangue, manter a temperatura corporal e manter os orgaos funcionando enquanto voce esta em completo repouso. Ela corresponde a 60% a 75% do total de calorias diarias para a maioria das pessoas. Conhecer sua TMB fornece a base para calcular quanto voce realmente precisa comer, seja seu objetivo perder gordura, ganhar massa muscular ou manter o peso atual."
+
+howItWorks:
+  title: "Como a TMB e Calculada"
+  content: "Esta calculadora utiliza a equacao de Mifflin-St Jeor, que a Academia Americana de Nutricao e Dietetica identificou como o metodo mais preciso de estimativa da TMB para individuos saudaveis em um estudo comparativo de 2005. A equacao leva em conta peso, altura, idade e sexo biologico. Para homens, a formula e TMB = 10 vezes o peso em quilogramas mais 6,25 vezes a altura em centimetros menos 5 vezes a idade em anos mais 5. Para mulheres, o mesmo calculo base se aplica, mas subtrai 161 em vez de adicionar 5. Essa diferenca reflete o percentual geralmente maior de massa magra nos homens. A equacao de Mifflin-St Jeor substituiu a antiga equacao de Harris-Benedict (1919) como padrao-ouro porque se mostrou mais precisa em populacoes diversas. A equacao de Harris-Benedict tende a superestimar a TMB em cerca de 5% em individuos com peso normal e ainda mais em individuos obesos. No Brasil, nutricionistas registrados no Conselho Regional de Nutricionistas (CRN) frequentemente utilizam a equacao de Mifflin-St Jeor como ponto de partida em consultas de prescricao dietetica, tanto no atendimento particular quanto no SUS. Diversos fatores influenciam sua TMB real alem do que a formula captura. A massa muscular e a maior variavel, pois o tecido muscular queima mais calorias em repouso do que o tecido adiposo. Duas pessoas com peso, altura e idade identicos podem ter TMBs diferindo em 200 a 300 calorias se uma delas tiver significativamente mais massa magra. A genetica tambem desempenha um papel, respondendo por aproximadamente 40% da variacao na TMB entre individuos mesmo apos controlar a composicao corporal. A funcao da tireoide regula diretamente a taxa metabolica; o hipotireoidismo pode reduzir a TMB em 10% a 15%. O declinio da TMB relacionado a idade e em media de 1% a 2% por decada apos os 20 anos, principalmente devido a perda progressiva de musculo (sarcopenia) e nao ao envelhecimento em si. Manter a musculatura por meio de treinamento de resistencia pode desacelerar significativamente esse declinio. Temperatura ambiente, certos medicamentos, ingestao de cafeina e o consumo recente de alimentos tambem criam flutuacoes temporarias na TMB. No contexto brasileiro, onde a alimentacao e rica em carboidratos como arroz, feijao, farinhas e frutas tropicais, entender a TMB ajuda a ajustar as porcoes desses alimentos basicos para atingir objetivos especificos de peso."
+  formula: "TMB (homem) = 10 x peso(kg) + 6,25 x altura(cm) - 5 x idade + 5"
+  formulaExplanation: "Para mulheres, substitua +5 por -161. Esta e a equacao de Mifflin-St Jeor, considerada a estimativa mais precisa de TMB para adultos saudaveis."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247."
+
+faqs:
+  - question: "Qual e a diferenca entre TMB e TMR (Taxa Metabolica de Repouso)?"
+    answer: "A TMB (Taxa Metabolica Basal) e a TMR (Taxa Metabolica de Repouso) sao frequentemente usadas de forma intercambiavel, mas diferem nas condicoes de medicao. A TMB exige condicoes laboratoriais rigorosas: 12 horas de jejum, 8 horas de sono, ambiente termoneutro e repouso fisico e psicologico completo. A TMR e medida em condicoes menos restritivas e tipicamente e 10% a 20% maior que a TMB. Para fins praticos, a diferenca e pequena o suficiente para que qualquer um dos valores funcione como base para calculos de calorias diarias."
+  - question: "Por que a TMB diminui com a idade?"
+    answer: "A TMB declina aproximadamente 1% a 2% por decada apos os 20 anos. O principal fator e a sarcopenia, a perda gradual de massa muscular que ocorre naturalmente com o envelhecimento. Como o tecido muscular e metabolicamente ativo (queimando cerca de 13 calorias por quilo por dia em repouso), perder musculo reduz o gasto energetico. Entre 30 e 80 anos, a maioria das pessoas perde 30% a 40% da sua massa muscular sem intervencao. Treinamento de resistencia regular e ingestao adequada de proteinas (1,6 a 2,2 gramas por quilo de peso corporal) podem desacelerar substancialmente esse processo."
+  - question: "Posso aumentar minha TMB?"
+    answer: "Construir massa muscular magra e a forma mais eficaz de aumentar a TMB. Cada quilo de musculo queima aproximadamente 13 calorias por dia em repouso, comparado a 4,5 calorias por quilo de gordura. Adicionar 5 quilos de musculo por meio de treinamento de forca consistente eleva sua TMB diaria em aproximadamente 65 calorias. Embora isso pareca modesto, ao longo de um ano equivale a cerca de 24.000 calorias adicionais queimadas em repouso. Outros fatores que aumentam temporariamente a taxa metabolica incluem dietas ricas em proteinas (pelo efeito termico dos alimentos), exposicao ao frio e consumo de cafeina."
+  - question: "Quao precisa e esta calculadora de TMB?"
+    answer: "A equacao de Mifflin-St Jeor preve a TMB dentro de 10% dos valores medidos para cerca de 82% das pessoas, conforme o estudo de validacao original. A precisao e maior para adultos com peso normal e diminui um pouco para individuos com sobrepeso ou baixo peso significativos. Atletas com massa muscular acima da media podem descobrir que a formula subestima sua TMB real, enquanto individuos com menos massa muscular do que a media podem ver superestimacoes. Para precisao clinica, o teste de calorimetria indireta em hospital ou clinica de medicina esportiva mede o consumo real de oxigenio."
+  - question: "Devo comer abaixo da minha TMB para emagrecer?"
+    answer: "Comer abaixo da TMB geralmente nao e recomendado e pode ser contraproducente. Seu corpo precisa dessas calorias basais para manter funcoes organicas basicas, producao hormonal e resposta imunologica. A alimentacao cronica abaixo da TMB desencadeia adaptacao metabolica, onde seu corpo reduz o gasto energetico para conservar recursos. Isso dificulta a continuidade da perda de peso e frequentemente leva a perda de massa muscular. Em vez disso, use seu GET (Gasto Energetico Total) como ponto de partida e crie um deficit moderado de 300 a 500 calorias abaixo do GET para uma perda de gordura sustentavel."
+  - question: "Como a TMB se relaciona com o GET e a contagem de calorias?"
+    answer: "A TMB e a base do seu Gasto Energetico Total (GET). O GET multiplica sua TMB por um fator de atividade para contabilizar exercicios e movimentacao diaria. Para individuos sedentarios, o GET e cerca de 1,2 vezes a TMB. Para pessoas muito ativas, pode chegar a 1,9 vezes a TMB. Se sua TMB e de 1.600 calorias e voce e moderadamente ativo (multiplicador 1,55), seu GET e aproximadamente 2.480 calorias. Para emagrecer, voce comeria abaixo do GET (nao abaixo da TMB). Para engordar, comeria acima do GET. Nutricionistas do SUS utilizam esses calculos para montar planos alimentares individualizados."
+
+examples:
+  - title: "Homem ativo de 30 anos"
+    scenario: "Um homem de 30 anos pesando 80 kg com 1,80 m de altura"
+    inputs:
+      weight: 80
+      height: 180
+      age: 30
+      gender: "male"
+    expectedResult: "TMB: 1.780 kcal/dia"
+    explanation: "Esse homem queima aproximadamente 1.780 calorias diariamente em repouso completo. Com atividade moderada (3 a 5 dias de exercicio por semana), seu GET seria de aproximadamente 2.759 calorias por dia (1.780 x 1,55)."
+  - title: "Mulher de 25 anos"
+    scenario: "Uma mulher de 25 anos pesando 60 kg com 1,65 m de altura"
+    inputs:
+      weight: 60
+      height: 165
+      age: 25
+      gender: "female"
+    expectedResult: "TMB: 1.345 kcal/dia"
+    explanation: "Sua queima calorica em repouso e de 1.345 por dia. O valor mais baixo em comparacao ao exemplo masculino reflete tanto o menor tamanho corporal quanto o ajuste especifico de genero na formula de Mifflin-St Jeor."
+  - title: "Adulto mais velho"
+    scenario: "Um homem de 60 anos pesando 75 kg com 1,72 m de altura"
+    inputs:
+      weight: 75
+      height: 172
+      age: 60
+      gender: "male"
+    expectedResult: "TMB: 1.530 kcal/dia"
+    explanation: "Aos 60 anos, uma pessoa do mesmo tamanho tem uma TMB aproximadamente 150 calorias menor por dia do que aos 30 anos. Isso ilustra por que as necessidades caloricas diminuem com a idade e por que manter a massa muscular por meio de exercicios se torna cada vez mais importante. No Brasil, programas de atividade fisica para idosos estao disponiveis em muitas UBS."
+
+relatedTools:
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "bmi-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
