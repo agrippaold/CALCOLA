@@ -2,7 +2,7 @@ id: "loan-calculator"
 category: "finance"
 calculatorComponent: "LoanCalculator"
 
-title: "Calculadora de Emprestimo - Simule Parcelas e Juros | CalcHub"
+title: "Calculadora de Emprestimo - Parcelas e Juros | CalcHub"
 metaDescription: "Calcule parcelas, juros totais e CET do seu emprestimo pessoal. Compare taxas e prazos para encontrar a melhor opcao. Simulador gratuito."
 h1: "Calculadora de Emprestimo"
 slug: "calculadora-emprestimo"

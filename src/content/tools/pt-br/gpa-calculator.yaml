@@ -2,7 +2,7 @@ id: "gpa-calculator"
 category: "education"
 calculatorComponent: "GPACalculator"
 
-title: "Calculadora de Media Escolar - Calcule sua Media Ponderada | CalcHub"
+title: "Calculadora de Media Escolar - Media Ponderada | CalcHub"
 metaDescription: "Calcule sua media escolar ponderada a partir de notas e creditos. Suporta escala 4.0, disciplinas com pesos diferentes e media acumulada. Gratis e preciso."
 h1: "Calculadora de Media Escolar"
 slug: "calculadora-media-escolar"

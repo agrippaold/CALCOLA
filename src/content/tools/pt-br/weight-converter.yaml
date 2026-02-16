@@ -4,7 +4,7 @@ calculatorComponent: "WeightConverter"
 lang: "pt-br"
 
 title: "Conversor de Peso - mg, g, kg, oz, lb, arroba | CalcHub"
-metaDescription: "Converta entre unidades de peso incluindo miligramas, gramas, quilogramas, oncas, libras, arrobas e toneladas metricas. Conversor de peso gratuito com calculos precisos."
+metaDescription: "Converta entre unidades de peso: miligramas, gramas, quilogramas, oncas, libras, arrobas e toneladas metricas. Conversor de peso gratuito."
 h1: "Conversor de Peso"
 slug: "conversor-peso"
 

@@ -309,4 +309,55 @@ export const UI_STRINGS: Record<string, Record<string, string>> = {
     'footer.languages': 'Idiomas Disponiveis',
     'footer.rights': 'Todos os direitos reservados.',
   },
+
+  ar: {
+    // التنقل
+    'nav.home': 'الرئيسية',
+    'nav.categories': 'الفئات',
+    'nav.about': 'من نحن',
+    'nav.language': 'اللغة',
+
+    // الفئات
+    'category.finance': 'المالية',
+    'category.health': 'الصحة واللياقة',
+    'category.math': 'الرياضيات والعلوم',
+    'category.conversion': 'التحويلات',
+    'category.date': 'التاريخ والوقت',
+    'category.construction': 'البناء والمنزل',
+    'category.text': 'النصوص والويب',
+    'category.education': 'التعليم والترفيه',
+    'category.physics': 'الكهرباء والفيزياء',
+
+    // واجهة الآلة الحاسبة
+    'calc.calculate': 'احسب',
+    'calc.reset': 'إعادة ضبط',
+    'calc.result': 'النتيجة',
+    'calc.save': 'حفظ الحساب',
+    'calc.saved': 'تم الحفظ!',
+    'calc.share': 'مشاركة',
+    'calc.embed': 'تضمين هذه الآلة الحاسبة',
+    'calc.copyEmbed': 'نسخ كود التضمين',
+    'calc.copied': 'تم النسخ!',
+
+    // أقسام المحتوى
+    'content.howItWorks': 'كيف تعمل',
+    'content.formula': 'الصيغة',
+    'content.source': 'المصدر',
+    'content.examples': 'أمثلة عملية',
+    'content.faq': 'الأسئلة الشائعة',
+    'content.relatedTools': 'حاسبات ذات صلة',
+    'content.lastUpdated': 'آخر تحديث',
+    'content.writtenBy': 'بقلم',
+    'content.reviewedBy': 'مراجعة بواسطة',
+
+    // التذييل
+    'footer.about': 'عن CalcHub',
+    'footer.methodology': 'منهجيتنا',
+    'footer.privacy': 'سياسة الخصوصية',
+    'footer.terms': 'شروط الاستخدام',
+    'footer.contact': 'اتصل بنا',
+    'footer.allCalculators': 'جميع الآلات الحاسبة',
+    'footer.languages': 'اللغات المتاحة',
+    'footer.rights': 'جميع الحقوق محفوظة.',
+  },
 };

@@ -2,7 +2,7 @@ id: "bmr-calculator"
 category: "health"
 calculatorComponent: "BMRCalculator"
 
-title: "Calculadora de Metabolismo Basal (TMB) - Taxa Metabolica Basal | CalcHub"
+title: "Calculadora de Metabolismo Basal (TMB) | CalcHub"
 metaDescription: "Calcule sua Taxa Metabolica Basal com a equacao Mifflin-St Jeor. Descubra quantas calorias seu corpo queima em repouso com base na idade, peso e altura."
 h1: "Calculadora de Metabolismo Basal (TMB)"
 slug: "calculadora-metabolismo-basal"

@@ -3,7 +3,7 @@ category: "health"
 calculatorComponent: "TDEECalculator"
 
 title: "Calculadora de Gasto Energetico Total Diario (GET) | CalcHub"
-metaDescription: "Calcule seu Gasto Energetico Total Diario com base na TMB e nivel de atividade fisica. Descubra suas calorias de manutencao para emagrecer, ganhar massa ou manter o peso."
+metaDescription: "Calcule seu Gasto Energetico Total Diario com base na TMB e nivel de atividade fisica. Descubra suas calorias para emagrecer ou ganhar massa."
 h1: "Calculadora de Gasto Energetico Total Diario (GET)"
 slug: "calculadora-gasto-energetico"
 

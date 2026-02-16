@@ -2,7 +2,7 @@ id: "tip-calculator"
 category: "finance"
 calculatorComponent: "TipCalculator"
 
-title: "Calculadora de Gorjeta - Taxa de Serviço e Divisão de Conta | CalcHub"
+title: "Calculadora de Gorjeta - Divisao de Conta | CalcHub"
 metaDescription: "Calcule a gorjeta ou taxa de serviço para qualquer conta. Escolha o percentual, divida o total entre amigos e veja exatamente quanto cada pessoa deve pagar."
 h1: "Calculadora de Gorjeta"
 slug: "calculadora-gorjeta"

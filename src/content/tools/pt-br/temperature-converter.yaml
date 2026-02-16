@@ -3,7 +3,7 @@ category: "conversions"
 calculatorComponent: "TemperatureConverter"
 lang: "pt-br"
 
-title: "Conversor de Temperatura - Celsius, Fahrenheit, Kelvin | CalcHub"
+title: "Conversor de Temperatura - C, F, K | CalcHub"
 metaDescription: "Converta temperaturas entre Celsius, Fahrenheit e Kelvin instantaneamente. Conversor de temperatura gratuito com pontos de referencia e formulas de conversao."
 h1: "Conversor de Temperatura"
 slug: "conversor-temperatura"

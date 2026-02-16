@@ -2,7 +2,7 @@ id: "historical-inflation-calculator"
 category: "finance"
 calculatorComponent: "HistoricalInflationCalculator"
 
-title: "Calculadora de Inflação Histórica - IPCA desde 1980 | CalcHub"
+title: "Calculadora de Inflacao Historica - IPCA | CalcHub"
 metaDescription: "Veja quanto o dinheiro valia no passado usando dados reais do IPCA. Descubra quanto R$ 100 em qualquer ano valem hoje, do Plano Real à atualidade."
 h1: "Calculadora de Inflação Histórica"
 slug: "calculadora-inflacao-historica"

@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'ar';
+
+const categories = [
+  {
+    name: 'المالية',
+    slug: 'maliya',
+    description: 'حاسبات التمويل العقاري والقروض والفائدة المركبة والادخار والاستثمار والمزيد.',
+    icon: '💰',
+    tools: [
+      { name: 'التمويل العقاري', slug: '/ar/maliya/hasibet-tamwil-aqari/' },
+      { name: 'الفائدة المركبة', slug: '/ar/maliya/hasibet-fawaid-murakkaba/' },
+      { name: 'حاسبة القرض', slug: '/ar/maliya/hasibet-qard/' },
+      { name: 'حاسبة الادخار', slug: '/ar/maliya/hasibet-iddihar/' },
+      { name: 'تمويل السيارة', slug: '/ar/maliya/hasibet-tamwil-sayyara/' },
+      { name: 'حاسبة الاستثمار', slug: '/ar/maliya/hasibet-istithmar/' },
+      { name: 'العائد على الاستثمار', slug: '/ar/maliya/hasibet-aaid-istithmar/' },
+      { name: 'حاسبة التضخم', slug: '/ar/maliya/hasibet-tadakhkhum/' },
+      { name: 'محول العملات', slug: '/ar/maliya/muhawwil-umlat/' },
+      { name: 'حاسبة الخصم', slug: '/ar/maliya/hasibet-khasm/' },
+      { name: 'حاسبة البقشيش', slug: '/ar/maliya/hasibet-baqshish/' },
+      { name: 'ضريبة المبيعات', slug: '/ar/maliya/hasibet-daribat-mabiat/' },
+      { name: 'ضريبة القيمة المضافة', slug: '/ar/maliya/hasibet-qimat-mudafa/' },
+      { name: 'حاسبة الإطفاء', slug: '/ar/maliya/hasibet-itfa/' },
+      { name: 'التضخم التاريخي', slug: '/ar/maliya/hasibet-tadakhkhum-tarikhi/' },
+    ],
+  },
+  {
+    name: 'الصحة',
+    slug: 'sihha',
+    description: 'مؤشر كتلة الجسم، معدل الأيض، الطاقة اليومية، السعرات الحرارية، الدهون، الحمل والتبويض.',
+    icon: '🏥',
+    tools: [
+      { name: 'مؤشر كتلة الجسم', slug: '/ar/sihha/hasibet-kutlat-aljism/' },
+      { name: 'معدل الأيض الأساسي', slug: '/ar/sihha/hasibet-muaddal-ayad/' },
+      { name: 'الطاقة اليومية', slug: '/ar/sihha/hasibet-taqa-yawmiya/' },
+      { name: 'السعرات الحرارية', slug: '/ar/sihha/hasibet-suarat-hararia/' },
+      { name: 'المغذيات الكبرى', slug: '/ar/sihha/hasibet-mughaddhiyat/' },
+      { name: 'نسبة الدهون', slug: '/ar/sihha/hasibet-duhun-jism/' },
+      { name: 'موعد الولادة', slug: '/ar/sihha/hasibet-mawid-wilada/' },
+      { name: 'حاسبة التبويض', slug: '/ar/sihha/hasibet-tabwid/' },
+    ],
+  },
+  {
+    name: 'الرياضيات',
+    slug: 'riyadiyat',
+    description: 'النسبة المئوية، المساحة، الكسور، الآلة الحاسبة العلمية والتغير النسبي.',
+    icon: '📐',
+    tools: [
+      { name: 'النسبة المئوية', slug: '/ar/riyadiyat/hasibet-nisba-miwiya/' },
+      { name: 'حاسبة المساحة', slug: '/ar/riyadiyat/hasibet-masaha/' },
+      { name: 'التغير النسبي', slug: '/ar/riyadiyat/hasibet-taghyir-nisbi/' },
+      { name: 'حاسبة الكسور', slug: '/ar/riyadiyat/hasibet-kusur/' },
+      { name: 'الآلة الحاسبة العلمية', slug: '/ar/riyadiyat/hasibet-ilmiya/' },
+    ],
+  },
+  {
+    name: 'التحويلات',
+    slug: 'tahwilat',
+    description: 'محولات درجات الحرارة والحجم والطول والوزن.',
+    icon: '🔄',
+    tools: [
+      { name: 'محول الحرارة', slug: '/ar/tahwilat/muhawwil-harara/' },
+      { name: 'محول الحجم', slug: '/ar/tahwilat/muhawwil-hajm/' },
+      { name: 'محول الطول', slug: '/ar/tahwilat/muhawwil-tul/' },
+      { name: 'محول الوزن', slug: '/ar/tahwilat/muhawwil-wazn/' },
+    ],
+  },
+  {
+    name: 'التاريخ والوقت',
+    slug: 'tarikh',
+    description: 'حاسبة العمر وفرق التواريخ.',
+    icon: '📅',
+    tools: [
+      { name: 'حاسبة العمر', slug: '/ar/tarikh/hasibet-umr/' },
+      { name: 'فرق التواريخ', slug: '/ar/tarikh/hasibet-farq-tawarikh/' },
+    ],
+  },
+  {
+    name: 'النصوص والويب',
+    slug: 'nusus',
+    description: 'عداد الكلمات والأحرف، مولد كلمات المرور، رمز QR والمزيد.',
+    icon: '📝',
+    tools: [
+      { name: 'عداد الكلمات', slug: '/ar/nusus/addad-kalimat/' },
+      { name: 'عداد الأحرف', slug: '/ar/nusus/addad-huruf/' },
+      { name: 'مولد كلمات المرور', slug: '/ar/nusus/muwalid-kalimat-sir/' },
+      { name: 'مولد رمز QR', slug: '/ar/nusus/muwalid-ramz-qr/' },
+      { name: 'فاحص قوة كلمة المرور', slug: '/ar/nusus/faphs-quwwat-kalima-sir/' },
+    ],
+  },
+  {
+    name: 'التعليم',
+    slug: 'taalim',
+    description: 'حاسبة المعدل الدراسي وأدوات أكاديمية.',
+    icon: '🎓',
+    tools: [
+      { name: 'المعدل الدراسي', slug: '/ar/taalim/hasibet-muaddal-dirasi/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - آلات حاسبة مجانية عبر الإنترنت | المالية، الصحة، الرياضيات"
+  description="أكثر من 200 آلة حاسبة مجانية بـ 25 لغة. التمويل، مؤشر كتلة الجسم، الفائدة المركبة، النسبة المئوية والمزيد. سريعة ودقيقة وبدون تسجيل."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">آلات حاسبة مجانية عبر الإنترنت</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        آلات حاسبة سريعة ودقيقة للمالية والصحة والرياضيات والتحويلات. بدون تسجيل. بدون إعلانات مزعجة.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/ar/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">الآلات الحاسبة الأكثر شيوعاً</h2>
+    <p class="text-gray-600 mb-8">الأدوات الأكثر استخداماً من جميع الفئات</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/ar/maliya/hasibet-tamwil-aqari/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">المالية</div>
+        <div class="font-semibold text-gray-900">حاسبة التمويل العقاري</div>
+        <p class="text-sm text-gray-500 mt-1">احسب القسط الشهري وإجمالي الفوائد للتمويل العقاري.</p>
+      </a>
+      <a href="/ar/sihha/hasibet-kutlat-aljism/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">الصحة</div>
+        <div class="font-semibold text-gray-900">حاسبة مؤشر كتلة الجسم</div>
+        <p class="text-sm text-gray-500 mt-1">تحقق من مؤشر كتلة جسمك وتصنيفك الصحي.</p>
+      </a>
+      <a href="/ar/riyadiyat/hasibet-nisba-miwiya/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">الرياضيات</div>
+        <div class="font-semibold text-gray-900">حاسبة النسبة المئوية</div>
+        <p class="text-sm text-gray-500 mt-1">جميع عمليات النسبة المئوية في مكان واحد.</p>
+      </a>
+      <a href="/ar/sihha/hasibet-suarat-hararia/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">الصحة</div>
+        <div class="font-semibold text-gray-900">حاسبة السعرات الحرارية</div>
+        <p class="text-sm text-gray-500 mt-1">احتياجاتك اليومية من السعرات والمغذيات الكبرى.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">جميع الفئات</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/ar/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/ar/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            عرض جميع أدوات {cat.name} &larr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

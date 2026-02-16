@@ -3,7 +3,7 @@ category: "finance"
 calculatorComponent: "SalesTaxCalculator"
 
 title: "Calculadora de Imposto sobre Vendas - ICMS e IPI | CalcHub"
-metaDescription: "Calcule os impostos sobre vendas no Brasil. Insira o preço e a alíquota para ver o valor do imposto, custo total e a carga tributária efetiva sobre produtos e serviços."
+metaDescription: "Calcule os impostos sobre vendas no Brasil. Insira o preço e a alíquota para ver o valor do imposto, custo total e a carga tributária efetiva."
 h1: "Calculadora de Imposto sobre Vendas"
 slug: "calculadora-imposto-vendas"
 

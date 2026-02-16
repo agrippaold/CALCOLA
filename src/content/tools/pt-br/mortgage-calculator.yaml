@@ -2,7 +2,7 @@ id: "mortgage-calculator"
 category: "finance"
 calculatorComponent: "MortgageCalculator"
 
-title: "Calculadora de Financiamento Imobiliario - Simule Parcelas | CalcHub"
+title: "Calculadora Financiamento Imobiliario | CalcHub"
 metaDescription: "Simule seu financiamento imobiliario com tabela SAC ou Price. Calcule parcelas, juros totais e use FGTS. Comparador gratuito e instantaneo."
 h1: "Calculadora de Financiamento Imobiliario"
 slug: "calculadora-financiamento-imobiliario"

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ar';
+
+const tools = [
+  { name: 'حاسبة مؤشر كتلة الجسم', slug: '/ar/sihha/hasibet-kutlat-aljism/', description: 'احسب مؤشر كتلة جسمك واكتشف تصنيفك الصحي.' },
+  { name: 'حاسبة معدل الأيض الأساسي', slug: '/ar/sihha/hasibet-muaddal-ayad/', description: 'احسب معدل الأيض الأساسي بمعادلة ميفلين سانت جيور.' },
+  { name: 'حاسبة الطاقة اليومية', slug: '/ar/sihha/hasibet-taqa-yawmiya/', description: 'احسب إجمالي إنفاق الطاقة اليومي حسب مستوى نشاطك.' },
+  { name: 'حاسبة السعرات الحرارية', slug: '/ar/sihha/hasibet-suarat-hararia/', description: 'هدفك اليومي من السعرات والمغذيات حسب أهدافك.' },
+  { name: 'حاسبة المغذيات الكبرى', slug: '/ar/sihha/hasibet-mughaddhiyat/', description: 'احسب التوزيع المثالي للبروتين والكربوهيدرات والدهون.' },
+  { name: 'حاسبة نسبة الدهون', slug: '/ar/sihha/hasibet-duhun-jism/', description: 'قدّر نسبة الدهون في جسمك بطريقة البحرية الأمريكية.' },
+  { name: 'حاسبة موعد الولادة', slug: '/ar/sihha/hasibet-mawid-wilada/', description: 'احسبي موعد الولادة المتوقع وتابعي مراحل الحمل.' },
+  { name: 'حاسبة التبويض', slug: '/ar/sihha/hasibet-tabwid/', description: 'حددي فترة الخصوبة وموعد التبويض المتوقع.' },
+];
+---
+
+<BaseLayout
+  title="حاسبات الصحة - مؤشر كتلة الجسم والسعرات | CalcHub"
+  description="حاسبات صحية مجانية: مؤشر كتلة الجسم، معدل الأيض، السعرات الحرارية، المغذيات. معادلات علمية معتمدة."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ar/" class="hover:text-blue-600">الرئيسية</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">حاسبات الصحة</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">حاسبات الصحة واللياقة</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      حاسبات صحية تعتمد على معادلات علمية معتمدة. مؤشر كتلة الجسم ومعدل الأيض الأساسي والطاقة اليومية والسعرات الحرارية لمساعدتك في اتخاذ قرارات صحية مدروسة.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

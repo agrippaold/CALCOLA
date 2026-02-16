@@ -2,8 +2,8 @@ id: "vat-calculator"
 category: "finance"
 calculatorComponent: "VATCalculator"
 
-title: "Calculadora de ICMS - Cálculo por Dentro e por Fora | CalcHub"
-metaDescription: "Calcule o ICMS sobre qualquer produto ou operação. Aplique alíquotas interestaduais, substituição tributária e calcule a base de cálculo correta por estado."
+title: "Calculadora de ICMS - Calculo por Dentro | CalcHub"
+metaDescription: "Calcule o ICMS sobre qualquer produto ou operação. Aplique alíquotas interestaduais e calcule a base de cálculo correta por estado."
 h1: "Calculadora de ICMS"
 slug: "calculadora-icms"
 
