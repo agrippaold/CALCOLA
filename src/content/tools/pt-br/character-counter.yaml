@@ -1,0 +1,77 @@
+id: "character-counter"
+category: "text"
+calculatorComponent: "CharacterCounter"
+lang: "pt-br"
+
+title: "Contador de Caracteres - Conte Caracteres e Verifique Limites | CalcHub"
+metaDescription: "Conte caracteres com ou sem espacos. Verifique limites para Twitter, SMS, meta descriptions e mais. Ferramenta gratuita de contador de caracteres online."
+h1: "Contador de Caracteres"
+slug: "contador-caracteres"
+
+primaryKeyword: "contador de caracteres"
+secondaryKeywords:
+  - "ferramenta de contagem de caracteres"
+  - "contador de letras"
+  - "verificador de tamanho de texto"
+  - "verificador de limite de caracteres"
+
+intro: "Saber exatamente quantos caracteres seu texto contem importa mais do que a maioria das pessoas percebe. Publicacoes em redes sociais, mensagens SMS, meta descriptions e muitos outros formatos impõem limites rigorosos de caracteres. Esta ferramenta conta caracteres tanto com quanto sem espacos, rastreia a contagem de palavras e informa instantaneamente se seu texto cabe nos limites comuns de plataformas como o limite de 280 caracteres do Twitter ou a fronteira de 160 caracteres de SMS."
+
+howItWorks:
+  title: "Como Funciona a Contagem de Caracteres"
+  content: "A contagem de caracteres opera em um principio simples: cada letra, digito, sinal de pontuacao, espaco e simbolo especial em uma sequencia de texto representa um caractere. No entanto, os detalhes ficam mais interessantes quando consideramos diferentes padroes de codificacao. No sistema ASCII, cada caractere mapeia para um numero entre 0 e 127, cobrindo letras inglesas, digitos e pontuacao basica. Unicode estende isso para mais de 149.000 caracteres em escritas de todo o mundo, mas alguns caracteres (como certos emojis ou caracteres de linguas como chines, japones e coreano) podem contar como dois ou mais bytes na codificacao UTF-8. Para a maioria dos propositos praticos com texto em portugues, um glifo visivel equivale a um caractere. Caracteres acentuados do portugues como a, e, i, o, u, c e a contam como um caractere cada na maioria das plataformas. Esta ferramenta conta sua sequencia de entrada iterando por cada ponto de codigo e totalizando. Ela tambem calcula uma contagem separada que exclui caracteres de espaco (ASCII 32). A ferramenta simultaneamente verifica seu texto contra varios limites conhecidos de plataformas. Twitter permite 280 caracteres por tweet. Um unico segmento SMS comporta 160 caracteres usando codificacao GSM-7; mensagens mais longas se dividem em multiplos segmentos de 153 caracteres cada porque alguns bytes sao reservados para cabecalho de concatenacao. O Google tipicamente exibe 155-160 caracteres de uma meta description nos resultados de busca, embora isso varie. Tags de titulo HTML devem ficar abaixo de 60 caracteres para serem exibidas completamente em abas de navegador e listagens de busca. Acompanhar todos esses limites manualmente e tedioso, entao a ferramenta compara sua contagem atual com cada limite e mostra quantos caracteres restam ou quantos voce excedeu."
+  formula: "Contagem de caracteres = comprimento(texto); Sem espacos = comprimento(texto) - contagem(espacos)"
+  formulaExplanation: "A contagem total de caracteres equivale ao numero de pontos de codigo na string. A contagem sem espacos subtrai cada caractere de espaco desse total. Verificacoes de plataforma comparam o total com limites fixos como 280 para Twitter ou 160 para SMS."
+  academicSource: "The Unicode Consortium. (2023). The Unicode Standard, Version 15.1.0. Unicode, Inc. https://www.unicode.org/versions/Unicode15.1.0/"
+
+faqs:
+  - question: "Espacos contam como caracteres?"
+    answer: "Sim, espacos sao caracteres. No ASCII, um espaco e o caractere numero 32 e ocupa um byte em praticamente todos os esquemas de codificacao. A maioria das plataformas que impõem limites de caracteres inclui espacos na contagem. Twitter conta espacos, SMS conta espacos e limites de atributos HTML contam espacos. Esta ferramenta mostra ambos os totais para que voce possa ver a diferenca. Se estiver otimizando para um limite apertado, remover espacos extras entre palavras ou aparar espacos em branco no final pode ajuda-lo a caber no limite."
+  - question: "Como o Twitter conta caracteres?"
+    answer: "O Twitter permite 280 caracteres por tweet. Cada letra, espaco, sinal de pontuacao e a maioria dos emojis contam como um ou dois caracteres dependendo do emoji especifico. URLs em tweets sao automaticamente encurtadas pelo servico t.co do Twitter e sempre contam como 23 caracteres independentemente do comprimento real da URL. Mencoes (@usuario) contam para o limite, mas respostas que comecam com uma mencao nao contam a mencao inicial. Hashtags incluindo o simbolo # contam como caracteres."
+  - question: "Quantos caracteres cabem em uma mensagem SMS?"
+    answer: "Um unico segmento SMS comporta 160 caracteres usando codificacao GSM-7, que cobre letras padrao em ingles, digitos e pontuacao comum. Se sua mensagem inclui qualquer caractere fora desse conjunto (como emoji, acento ou cedilha), a codificacao muda para UCS-2 e o limite cai para 70 caracteres por segmento. Em portugues, caracteres acentuados como a, e, c podem acionar a codificacao UCS-2, reduzindo significativamente a capacidade da mensagem."
+  - question: "Por que alguns emojis contam como mais de um caractere?"
+    answer: "Muitos emojis modernos sao construidos a partir de multiplos pontos de codigo Unicode unidos. Um emoji de familia, por exemplo, combina varios pontos de codigo de pessoa com caracteres de uniao de largura zero. Variacoes de tom de pele adicionam um ponto de codigo modificador ao emoji base. Um emoji de bandeira usa dois simbolos de indicador regional. Por causa disso, um unico emoji visivel pode representar de dois a sete pontos de codigo. Linguagens de programacao e plataformas diferem em contar pontos de codigo, clusters de grafemas ou bytes."
+  - question: "Qual o limite de caracteres recomendado para meta description?"
+    answer: "O Google tipicamente exibe entre 155 e 160 caracteres de uma meta description nos resultados de busca, embora o corte exato varie com base na largura de pixel em vez de uma contagem fixa de caracteres. Caracteres mais largos como W ou M ocupam mais espaco que caracteres estreitos como i ou l. Uma meta segura e 150-155 caracteres para garantir que sua descricao completa apareca sem ser truncada. Escrever uma descricao atraente dentro dessa faixa pode melhorar a taxa de cliques nas paginas de resultados dos mecanismos de busca."
+  - question: "Como posso reduzir a contagem de caracteres sem perder significado?"
+    answer: "Comece removendo palavras de preenchimento como muito, realmente, apenas e que. Substitua frases longas por alternativas mais curtas: com o objetivo de se torna para, neste momento se torna agora, e pelo fato de que se torna porque. Use contracoes onde apropriado. Troque palavras longas por sinonimos mais curtos quando o significado permanece claro. Remova adjetivos e adverbios redundantes. Se ainda precisar cortar mais, reestruture as frases para serem mais diretas e ativas em vez de passivas."
+
+examples:
+  - title: "Verificacao de post no Twitter"
+    scenario: "Verificando se um tweet rascunhado cabe no limite de 280 caracteres"
+    inputs:
+      text: "Acabei de terminar de ler um livro fantastico sobre economia comportamental. O capitulo sobre aversao a perda mudou como eu penso sobre risco nas decisoes do dia a dia. Recomendo muito para quem se interessa por psicologia e financas."
+      includeSpaces: "true"
+    expectedResult: "236 caracteres (44 caracteres restantes para Twitter)"
+    explanation: "O texto contem 236 caracteres incluindo espacos, ficando abaixo do limite de 280 caracteres do Twitter. Restam 44 caracteres se voce quiser adicionar uma hashtag ou um link."
+  - title: "Otimizacao de meta description"
+    scenario: "Verificando se uma meta description fica dentro da janela recomendada de 155 caracteres"
+    inputs:
+      text: "Ferramenta gratuita de contador de caracteres online. Conte letras, palavras e frases. Verifique seu texto contra limites do Twitter, SMS e meta description."
+      includeSpaces: "true"
+    expectedResult: "155 caracteres (dentro da diretriz de meta description)"
+    explanation: "Com 155 caracteres incluindo espacos, esta meta description se encaixa confortavelmente na janela de exibicao que o Google mostra nos resultados de busca."
+  - title: "Calculo de segmentos SMS"
+    scenario: "Determinando quantos segmentos SMS uma mensagem de marketing vai exigir"
+    inputs:
+      text: "LIQUIDACAO: 40% de desconto em todos os itens somente neste fim de semana! Use o codigo PROMO40 no checkout. Frete gratis para compras acima de R$100. Compre agora em loja.com.br. Oferta termina domingo as 23:59."
+      includeSpaces: "true"
+    expectedResult: "215 caracteres (2 segmentos SMS necessarios com UCS-2 devido a acentos)"
+    explanation: "A mensagem tem 215 caracteres e inclui caracteres acentuados do portugues, acionando codificacao UCS-2 com limite de 70 caracteres por segmento. Isso resultaria em 4 segmentos SMS. Para reduzir custos, considere remover acentos ou encurtar a mensagem."
+
+relatedTools:
+  - "word-counter"
+  - "password-generator"
+  - "age-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Calculadora Porcentagem', slug: '/pt-br/matematica/calculadora-porcentagem/', description: 'Todas as operacoes com porcentagem: quanto e X% de Y, variacao, aumento e desconto.' },
+  { name: 'Calculadora Area', slug: '/pt-br/matematica/calculadora-area/', description: 'Calcule a area de retangulo, circulo, triangulo, trapezio e elipse.' },
+  { name: 'Variacao Percentual', slug: '/pt-br/matematica/calculadora-variacao-percentual/', description: 'Calcule a variacao percentual entre dois valores com indicador de aumento ou reducao.' },
+  { name: 'Calculadora Fracoes', slug: '/pt-br/matematica/calculadora-fracoes/', description: 'Some, subtraia, multiplique e divida fracoes com simplificacao automatica.' },
+  { name: 'Calculadora Cientifica', slug: '/pt-br/matematica/calculadora-cientifica/', description: 'Calculadora cientifica online com funcoes trigonometricas, logaritmos e constantes.' },
+];
+---
+
+<BaseLayout
+  title="Calculadoras Matematica - Porcentagem, Area, Fracoes | CalcHub"
+  description="Calculadoras matematicas gratuitas: porcentagem, area, fracoes, calculadora cientifica. Resultados instantaneos e precisos."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Matematica</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculadoras de Matematica</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Ferramentas matematicas para o dia a dia e estudos. Porcentagem, area, fracoes e calculadora cientifica com resultados instantaneos.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,80 @@
+id: "length-converter"
+category: "conversions"
+calculatorComponent: "LengthConverter"
+lang: "pt-br"
+
+title: "Conversor de Comprimento - mm, cm, m, km, pol, pe, mi | CalcHub"
+metaDescription: "Converta entre unidades de comprimento como milimetros, centimetros, metros, quilometros, polegadas, pes, jardas e milhas. Conversor de comprimento gratuito e preciso."
+h1: "Conversor de Comprimento"
+slug: "conversor-comprimento"
+
+primaryKeyword: "conversor de comprimento"
+secondaryKeywords:
+  - "metros para pes"
+  - "km para milhas"
+  - "polegadas para cm"
+  - "conversor de medidas de comprimento"
+
+intro: "Comprimento e provavelmente o tipo de medida mais frequentemente convertido, seja ao comprar moveis de um varejista internacional, interpretar especificacoes tecnicas em polegadas, ou verificar sua altura em um prontuario medico que usa unidades diferentes. O sistema metrico e o sistema imperial coexistem na manufatura, construcao, ciencia e vida cotidiana em grande parte do mundo. Este conversor suporta as unidades de comprimento mais comumente necessarias: milimetros, centimetros, metros, quilometros, polegadas, pes, jardas e milhas, fornecendo resultados instantaneos e precisos em ambas as direcoes."
+
+howItWorks:
+  title: "Como Funciona a Conversao de Comprimento"
+  content: "A conversao de comprimento se baseia em razoes fixas e bem definidas entre unidades. Dentro do sistema metrico, as conversoes sao sempre potencias de dez: um metro equivale a 100 centimetros ou 1.000 milimetros, e um quilometro equivale a 1.000 metros. Essa estrutura decimal foi uma escolha deliberada quando a Academia Francesa de Ciencias criou o sistema metrico nos anos 1790. A definicao original do metro era um dez-milionesimo da distancia do Polo Norte ao equador ao longo de um meridiano passando por Paris. Hoje, o metro e definido com precisao absoluta como a distancia que a luz percorre no vacuo em 1/299.792.458 de segundo, definicao adotada em 1983 que vincula o comprimento a uma constante fundamental da fisica. O sistema imperial e o sistema costumeiro americano remontam a unidades inglesas acumuladas ao longo de seculos. Em 1959, o acordo internacional da jarda e da libra padronizou a polegada em exatamente 25,4 milimetros, tornando o pe exatamente 304,8 milimetros e a jarda exatamente 914,4 milimetros. Esse acordo, assinado pelos EUA, Reino Unido, Canada, Australia, Nova Zelandia e Africa do Sul, significa que as conversoes entre metrico e imperial sao baseadas em numeros exatos. Uma milha equivale a 5.280 pes, numero herdado do mille passus romano (mil passos duplos de cerca de 5 pes cada), ajustado ao longo do tempo. Em termos metricos, uma milha equivale a exatamente 1.609,344 metros, ou aproximadamente 1,609 quilometros. Para converter entre sistemas, multiplique ou divida pelo fator apropriado. Por exemplo, para converter polegadas em centimetros, multiplique por 2,54. Para ir de centimetros a polegadas, divida por 2,54. Para quilometros a milhas, divida por 1,609344. Um atalho mental pratico para km para milhas: multiplique os quilometros por 0,6, obtendo resultados precisos dentro de 0,6%. No Brasil, o sistema metrico e o padrao oficial desde 1862, e todas as sinalizacoes rodoviarias, especificacoes de engenharia e documentos oficiais utilizam metros e quilometros. No entanto, polegadas ainda sao comumente usadas em telas de televisores e monitores, diametros de tubulacoes e ferramentas importadas."
+  formula: "1 pol = 25,4 mm (exato) | 1 pe = 0,3048 m (exato) | 1 jarda = 0,9144 m (exato) | 1 milha = 1,609344 km (exato) | 1 m = 100 cm = 1.000 mm | 1 km = 1.000 m"
+  formulaExplanation: "Todas as conversoes passam por metros como unidade base. O valor de origem e primeiro convertido para metros usando o fator exato e depois de metros para a unidade de destino."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "Quantos centimetros tem em uma polegada?"
+    answer: "Uma polegada equivale a exatamente 2,54 centimetros. Isso nao e uma aproximacao, mas uma definicao exata estabelecida pelo acordo internacional da jarda e da libra de 1959. Antes desse acordo, as polegadas americana e britanica diferiam em uma quantidade minuscula. A razao exata torna a conversao direta: multiplique polegadas por 2,54 para obter centimetros, ou divida centimetros por 2,54 para obter polegadas. Para uma estimativa mental rapida, uma polegada e um pouco mais que 2,5 cm."
+  - question: "Qual a maneira mais facil de converter quilometros para milhas mentalmente?"
+    answer: "O truque mental mais rapido e multiplicar quilometros por 0,6. Por exemplo, 100 km se tornam cerca de 60 milhas (a resposta exata e 62,14 milhas). Outro metodo usa a sequencia de Fibonacci: numeros consecutivos de Fibonacci aproximam a razao km-para-milhas porque a razao aurea (1,618) e proxima do fator km/milha (1,609). Entao se voce sabe 8 km, o numero de Fibonacci anterior e 5, significando cerca de 5 milhas. Isso funciona para 5 e 3, 13 e 8, 21 e 13, e assim por diante."
+  - question: "Como converter altura de pes e polegadas para centimetros?"
+    answer: "Primeiro, converta tudo para polegadas multiplicando os pes por 12 e adicionando as polegadas restantes. Depois, multiplique o total de polegadas por 2,54 para obter centimetros. Por exemplo, uma pessoa com 5 pes e 10 polegadas tem um total de 70 polegadas (5 vezes 12 mais 10). Multiplique 70 por 2,54 para obter 177,8 cm. No sentido inverso, divida centimetros por 2,54 para obter o total de polegadas e depois divida por 12 para obter pes, usando o resto como polegadas."
+  - question: "Por que as telas de TV sao medidas em polegadas no Brasil?"
+    answer: "Apesar do Brasil usar oficialmente o sistema metrico, as telas de televisores, monitores e smartphones sao especificadas em polegadas seguindo o padrao internacional da industria eletronica. Isso ocorre porque a maioria dos fabricantes esta localizada em paises que usam polegadas como referencia para tamanhos de tela. Uma TV de 55 polegadas tem diagonal de 139,7 cm. Uma tela de 32 polegadas equivale a 81,28 cm na diagonal. Essa convencao da industria e mantida globalmente para facilitar a comparacao entre produtos."
+  - question: "Qual a diferenca entre uma milha nautica e uma milha terrestre?"
+    answer: "Uma milha terrestre (estatutaria) tem 5.280 pes ou 1.609,344 metros. Uma milha nautica tem 1.852 metros, sendo cerca de 15% mais longa. A milha nautica foi originalmente definida como um minuto de arco de latitude ao longo de qualquer meridiano, tornando-a naturalmente util para navegacao porque distancias em cartas nauticas podiam ser lidas diretamente da escala de latitude. A aviacao e a industria maritima em todo o mundo usam milhas nauticas e nos (milhas nauticas por hora) como unidades padrao de distancia e velocidade."
+  - question: "Uma jarda e a mesma coisa que um metro?"
+    answer: "Nao, mas sao proximas. Uma jarda equivale a exatamente 0,9144 metros, sendo cerca de 8,6% menor que um metro. Um metro equivale a aproximadamente 1,0936 jardas. Para estimativas casuais, tratar uma jarda e um metro como aproximadamente iguais funciona em situacoes onde alta precisao nao e necessaria, como estimar o tamanho de um comodo. Para construcao, engenharia ou manufatura, porem, a diferenca se acumula rapidamente em medicoes maiores e o fator de conversao exato deve sempre ser utilizado."
+
+examples:
+  - title: "Conversao de altura - pes e polegadas para centimetros"
+    scenario: "Converter a altura de uma pessoa de 6 pes (72 polegadas) para centimetros"
+    inputs:
+      value: 72
+      from: "in"
+      to: "cm"
+    expectedResult: "72 polegadas = 182,88 cm"
+    explanation: "Uma polegada equivale a 2,54 centimetros. Multiplique 72 por 2,54 para obter 182,88 cm. Essa e uma conversao comum para comparar alturas entre medicoes americanas e metricas."
+  - title: "Distancia rodoviaria - milhas para quilometros"
+    scenario: "Converter a distancia de uma maratona de 26,2 milhas para quilometros"
+    inputs:
+      value: 26.2
+      from: "mi"
+      to: "km"
+    expectedResult: "26,2 milhas = 42,16 km"
+    explanation: "Uma milha equivale a aproximadamente 1,609 quilometros. A distancia padrao da maratona de 26,2 milhas converte para 42,16 km, razao pela qual a distancia metrica oficial da maratona e 42,195 quilometros."
+  - title: "Tamanho de tela - polegadas para centimetros"
+    scenario: "Converter a diagonal de uma TV de 55 polegadas para centimetros"
+    inputs:
+      value: 55
+      from: "in"
+      to: "cm"
+    expectedResult: "55 polegadas = 139,70 cm"
+    explanation: "Multiplique 55 por 2,54 para obter 139,70 cm. No Brasil, e comum encontrar televisores com medida em polegadas, e essa conversao ajuda a entender o tamanho real da tela em centimetros para planejar o espaco na parede ou no movel."
+
+relatedTools:
+  - "temperature-converter"
+  - "volume-converter"
+  - "weight-converter"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,85 @@
+id: "roi-calculator"
+category: "finance"
+calculatorComponent: "ROICalculator"
+
+title: "Calculadora de ROI - Retorno sobre Investimento | CalcHub"
+metaDescription: "Calcule o retorno sobre investimento (ROI) em percentual. Compare rentabilidade de acoes, imoveis, negocios e campanhas de marketing. Gratuito."
+h1: "Calculadora de ROI"
+slug: "calculadora-roi"
+
+primaryKeyword: "calculadora roi"
+secondaryKeywords:
+  - "calcular retorno sobre investimento"
+  - "calculadora rentabilidade"
+  - "ROI investimento"
+  - "retorno percentual investimento"
+  - "calculadora lucratividade"
+
+intro: "O retorno sobre investimento (ROI) e uma das metricas mais utilizadas no mundo dos negocios e das financas pessoais para avaliar se uma decisao financeira valeu a pena. Seja para analisar a compra de acoes na B3, a rentabilidade de um imovel alugado, o resultado de uma campanha de marketing digital ou a viabilidade de um negocio proprio, o ROI fornece um percentual claro que mostra quanto de lucro ou prejuizo foi gerado em relacao ao valor investido. Esta calculadora recebe o custo total e o ganho total da sua operacao e calcula o ROI para que voce possa comparar a eficiencia de diferentes investimentos e decisoes empresariais de forma objetiva."
+
+howItWorks:
+  title: "Como o ROI e calculado"
+  content: "O ROI mede a eficiencia de um investimento expressando o lucro liquido como um percentual do custo original. A formula e direta: subtraia o custo total do ganho total para encontrar o lucro liquido, depois divida esse lucro pelo custo original e multiplique por 100 para expressar em percentual. Um ROI positivo significa que voce ganhou mais do que gastou, enquanto um ROI negativo significa que houve prejuizo. Por exemplo, se voce investiu R$ 10.000 em acoes de uma empresa listada na B3 e vendeu a posicao por R$ 14.500, seu lucro liquido e R$ 4.500 e seu ROI e 45%. A simplicidade do ROI e ao mesmo tempo sua maior forca e sua principal limitacao. Ele permite comparar investimentos de valores distintos em uma escala comum, independentemente dos montantes envolvidos. Um investimento de R$ 5.000 que retorna R$ 7.000 tem o mesmo ROI de 40% que um investimento de R$ 200.000 que retorna R$ 280.000, facilitando a avaliacao da eficiencia relativa de cada operacao. Contudo, o ROI padrao nao considera o periodo de tempo do investimento. Um retorno de 40% em um ano e muito mais impressionante do que 40% em cinco anos. Para comparacoes sensiveis ao tempo, o ROI anualizado e mais adequado. A formula do ROI anualizado converte o retorno total em uma taxa anual equivalente: ((1 + ROI)^(1/anos) - 1) x 100. Isso permite comparar de forma justa investimentos mantidos por prazos diferentes. No contexto brasileiro, o ROI e amplamente utilizado para avaliar investimentos em renda fixa (CDB, Tesouro Direto, LCI, LCA), renda variavel (acoes, FIIs), imoveis para aluguel e empreendimentos. E importante considerar o imposto de renda na analise, pois ele afeta diretamente o ROI liquido. Um CDB que rendeu 13% bruto em um ano tera ROI liquido de aproximadamente 11% apos IR de 17,5% (para aplicacoes entre 361 e 720 dias). O ROI tambem nao considera o risco associado ao investimento. Dois investimentos podem apresentar ROI de 15%, mas se um carrega risco de perda significativamente maior, a opcao mais segura foi a melhor decisao ajustada ao risco. Profissionais frequentemente utilizam metricas como o Indice de Sharpe e o retorno ajustado ao risco junto com o ROI para uma analise mais completa. Em contextos empresariais, o ROI e aplicado para avaliar campanhas de marketing digital, aquisicao de equipamentos, treinamentos de equipe, investimentos em tecnologia e expansao de operacoes. Ao calcular o ROI de um negocio, e fundamental incluir todos os custos associados, nao apenas o investimento direto. Um equipamento que custa R$ 30.000 mas exige R$ 5.000 de instalacao e R$ 2.000 anuais de manutencao tem uma base de custo real superior a R$ 30.000."
+  formula: "ROI = ((Ganho - Custo) / Custo) × 100%"
+  formulaExplanation: "Ganho = valor total recebido ou valor atual do investimento, Custo = valor total investido ou gasto"
+  academicSource: "Damodaran, A. (2022). Investment Valuation: Tools and Techniques. Wiley."
+
+faqs:
+  - question: "Qual e um bom percentual de ROI?"
+    answer: "Um ROI considerado bom depende fortemente do contexto e do tipo de investimento. No mercado de acoes brasileiro (Ibovespa), o retorno medio historico nominal e de cerca de 12% a 15% ao ano, entao qualquer investimento que supere consistentemente essa faixa esta acima da media. Em renda fixa, com a Selic elevada, ROIs de 10% a 13% ao ano sao comuns e considerados adequados. Para imoveis de aluguel, um ROI anual de 5% a 8% sobre o valor do imovel e considerado solido. Em marketing digital, empresas geralmente buscam um retorno de pelo menos 3 para 1, equivalente a um ROI de 200%."
+
+  - question: "Qual a diferenca entre ROI e rentabilidade anualizada?"
+    answer: "O ROI padrao mede o ganho ou perda percentual total durante todo o periodo do investimento, independentemente de quanto tempo durou. A rentabilidade anualizada converte esse retorno total em uma taxa anual equivalente. Por exemplo, um ROI total de 80% em 5 anos se converte em aproximadamente 12,5% de retorno anualizado. Essa distincao e crucial ao comparar investimentos de prazos diferentes. Um ROI de 25% em 1 ano (anualizado: 25%) e na verdade superior a um ROI de 60% em 5 anos (anualizado: 9,9%) em termos de eficiencia anual do capital investido."
+
+  - question: "Como calcular o ROI de um imovel de aluguel no Brasil?"
+    answer: "O ROI de um imovel alugado deve incluir todas as receitas e todos os custos. Na receita, conte o aluguel mensal e possivel valorizacao do imovel. Nos custos, inclua o preco de compra, ITBI, escritura, registro, reformas, IPTU, condominio, taxa de administracao da imobiliaria (geralmente 8% a 10% do aluguel), manutencao e imposto de renda sobre os alugueis. Para um apartamento comprado por R$ 400.000 que gera R$ 2.500 de aluguel liquido por mes (R$ 30.000 por ano), o ROI anual e de 7,5%. Considere tambem a valorizacao media do imovel e compare com investimentos de renda fixa."
+
+  - question: "O que significa um ROI negativo?"
+    answer: "Um ROI negativo indica que o investimento gerou prejuizo, ou seja, o valor recebido ou atual e inferior ao valor investido. Comprar acoes por R$ 20.000 e vender por R$ 15.000 resulta em ROI de menos 25%. E importante avaliar se a perda e temporaria (como uma desvalorizacao de mercado em acoes que voce ainda mantem) ou permanente (como um negocio que faliu). No Brasil, prejuizos com acoes podem ser compensados com lucros futuros para efeitos de imposto de renda, reduzindo parcialmente o impacto da perda."
+
+  - question: "Como calcular o ROI de uma campanha de marketing digital?"
+    answer: "O ROI de marketing segue a mesma formula basica, mas apresenta desafios de atribuicao. O lado do custo e direto: inclua gastos com anuncios (Google Ads, Meta Ads, etc.), agencia, producao de conteudo e ferramentas de automacao. O lado do ganho exige rastreamento cuidadoso por meio de UTMs, pixels de conversao e codigos de desconto. Se uma campanha custou R$ 5.000 e gerou R$ 22.000 em vendas rastreadas, o ROI e de 340%. No e-commerce brasileiro, plataformas como VTEX e Nuvemshop facilitam a atribuicao de receita por canal, permitindo calculos de ROI mais precisos por campanha."
+
+  - question: "Posso usar o ROI para comparar investimentos de tipos diferentes?"
+    answer: "O ROI fornece uma metrica percentual comum que permite comparacao entre diferentes classes de ativos, mas nao deve ser o unico criterio. Um imovel com ROI anual de 8% exige gestao ativa, manutencao e tem baixa liquidez, enquanto um fundo de indice com ROI de 10% ao ano e completamente passivo e altamente liquido. Ao comparar tipos diferentes, considere tambem o tempo de dedicacao necessario, a liquidez do ativo, o risco de perda, as implicacoes tributarias e se o ROI inclui todos os custos associados. Usar o ROI junto com outras metricas oferece uma analise mais completa e precisa."
+
+examples:
+  - title: "Investimento em acoes na B3"
+    scenario: "Compra de acoes por R$ 15.000 e venda por R$ 21.500 apos 18 meses"
+    inputs:
+      totalCost: 15000
+      totalGain: 21500
+    expectedResult: "ROI: 43,3% | Lucro liquido: R$ 6.500"
+    explanation: "O lucro de R$ 6.500 dividido pelo custo de R$ 15.000 resulta em ROI de 43,3%. Como o ganho ocorreu em 18 meses, o ROI anualizado e de aproximadamente 27,1%. Descontando o imposto de renda de 15% sobre o ganho de capital (R$ 975), o lucro liquido cai para R$ 5.525, resultando em um ROI liquido de 36,8%. Esse retorno supera amplamente a renda fixa no mesmo periodo, mas envolveu risco de mercado significativo."
+
+  - title: "Imovel de aluguel"
+    scenario: "Apartamento comprado por R$ 350.000 gerando R$ 2.200 de aluguel liquido mensal (R$ 26.400 anuais) com R$ 6.000 em despesas anuais"
+    inputs:
+      totalCost: 350000
+      annualIncome: 26400
+      annualExpenses: 6000
+    expectedResult: "ROI anual: 5,8% | Renda liquida anual: R$ 20.400"
+    explanation: "A renda liquida anual de R$ 20.400 (aluguel menos despesas com IPTU, condominio e manutencao) dividida pelo custo de R$ 350.000 resulta em ROI de 5,8% ao ano. Esse calculo nao inclui a valorizacao do imovel, que pode adicionar 3% a 5% ao ano em regioes com crescimento urbano. Comparado a um CDB a 12% ao ano, o imovel exige mais gestao, mas oferece protecao contra inflacao e potencial de valorizacao patrimonial."
+
+  - title: "Campanha de marketing em e-commerce"
+    scenario: "Campanha de marketing digital com investimento de R$ 8.000 que gerou R$ 32.000 em vendas rastreadas"
+    inputs:
+      totalCost: 8000
+      totalGain: 32000
+    expectedResult: "ROI: 300% | Lucro: R$ 24.000"
+    explanation: "A campanha gerou R$ 24.000 de lucro sobre R$ 8.000 investidos, resultando em ROI de 300%. Isso representa uma relacao de retorno de 4 para 1, significando que cada real investido gerou R$ 4 em receita. No mercado brasileiro de marketing digital, um ROAS (Retorno sobre Gasto com Anuncios) de 4x e considerado excelente e indica que a campanha deve ser escalada com orcamento adicional, desde que o mercado-alvo suporte o aumento de volume."
+
+relatedTools:
+  - "investment-calculator"
+  - "compound-interest-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,80 @@
+id: "bmi-calculator"
+category: "health"
+calculatorComponent: "BMICalculator"
+
+title: "Calculadora de IMC - Calcule seu Indice de Massa Corporal | CalcHub"
+metaDescription: "Calcule seu IMC gratuitamente com nossa calculadora de Indice de Massa Corporal. Insira peso e altura para descobrir sua faixa de IMC e recomendacoes de saude segundo a OMS."
+h1: "Calculadora de IMC (Indice de Massa Corporal)"
+slug: "calculadora-imc"
+
+primaryKeyword: "calculadora imc"
+secondaryKeywords:
+  - "calcular imc"
+  - "indice de massa corporal"
+  - "tabela imc"
+  - "imc ideal"
+
+intro: "Quer saber se o seu peso esta adequado para a sua altura? O Indice de Massa Corporal (IMC) e o metodo mais utilizado no mundo para uma avaliacao rapida do estado nutricional. O Ministerio da Saude do Brasil e o Sistema Unico de Saude (SUS) adotam o IMC como ferramenta de triagem em consultas de atencao basica. Insira seus dados abaixo e descubra em segundos sua classificacao, junto com orientacoes sobre o que o resultado significa para a sua saude."
+
+howItWorks:
+  title: "Como o IMC e Calculado"
+  content: "O Indice de Massa Corporal divide o peso corporal pelo quadrado da altura. Essa formula foi desenvolvida pelo matematico belga Adolphe Quetelet na decada de 1830 como forma de medir proporcoes humanas em populacoes. A versao metrica, utilizada no Brasil, emprega quilogramas e metros. A Organizacao Mundial da Saude (OMS) classifica o IMC em quatro categorias principais: abaixo do peso (inferior a 18,5), peso normal ou eutrofico (18,5 a 24,9), sobrepeso (25,0 a 29,9) e obesidade (30,0 ou acima). A obesidade e subdividida em tres graus: grau I (30,0 a 34,9), grau II (35,0 a 39,9) e grau III ou obesidade morbida (40,0 ou mais). Esses pontos de corte foram estabelecidos por meio de grandes estudos epidemiologicos que relacionam faixas de IMC a desfechos de saude como doencas cardiovasculares, diabetes tipo 2 e certos tipos de cancer. No Brasil, a Vigitel (Vigilancia de Fatores de Risco e Protecao para Doencas Cronicas por Inquerito Telefonico) do Ministerio da Saude utiliza o IMC como principal indicador para monitorar as taxas de sobrepeso e obesidade na populacao brasileira. Dados recentes mostram que mais de 60% dos adultos brasileiros apresentam excesso de peso. O SUS oferece acompanhamento nutricional gratuito nas Unidades Basicas de Saude (UBS) para pacientes com IMC fora da faixa saudavel. Entretanto, o IMC possui limitacoes importantes. Ele nao consegue diferenciar massa muscular de massa gorda, o que significa que um atleta musculoso pode apresentar IMC na faixa de sobrepeso mesmo tendo baixo percentual de gordura corporal. Da mesma forma, idosos que perderam massa muscular podem apresentar IMC normal enquanto carregam excesso de gordura visceral. Para uma avaliacao mais completa, o Ministerio da Saude recomenda combinar o IMC com a medida da circunferencia da cintura. Valores acima de 94 cm para homens e 80 cm para mulheres indicam risco aumentado de complicacoes metabolicas. Populacoes asiaticas apresentam riscos metabolicos elevados em limiares de IMC mais baixos. A OMS sugere utilizar 23 como ponto de corte para sobrepeso em populacoes asiaticas, em vez de 25. Apesar dessas ressalvas, o IMC continua sendo a metrica de triagem mais amplamente utilizada pela sua simplicidade e pela forte correlacao em nivel populacional com o risco de doencas metabolicas."
+  formula: "IMC = peso (kg) / altura (m)²"
+  formulaExplanation: "Peso em quilogramas dividido pela altura em metros elevada ao quadrado. Exemplo: uma pessoa com 70 kg e 1,75 m tem IMC = 70 / (1,75 x 1,75) = 22,86."
+  academicSource: "Organizacao Mundial da Saude (OMS). (2000). Obesity: preventing and managing the global epidemic. WHO Technical Report Series 894. Ministerio da Saude do Brasil. Vigitel Brasil 2023."
+
+faqs:
+  - question: "Qual e a faixa de IMC considerada saudavel?"
+    answer: "A Organizacao Mundial da Saude define um IMC saudavel como aquele entre 18,5 e 24,9. Pessoas dentro dessa faixa geralmente apresentam menores riscos de doencas cardiovasculares, diabetes tipo 2 e certos tipos de cancer em comparacao com aquelas fora dela. No Brasil, o Ministerio da Saude utiliza essas mesmas faixas nas consultas do SUS. E importante lembrar que a saude individual depende de muitos fatores alem do IMC, incluindo qualidade da alimentacao, nivel de atividade fisica, historico familiar e marcadores metabolicos como pressao arterial e colesterol."
+  - question: "O IMC e preciso para atletas e pessoas musculosas?"
+    answer: "O IMC tende a superestimar a gordura corporal em pessoas com massa muscular significativa. Um jogador de futebol ou lutador de MMA pode registrar um IMC de 28 ou mais enquanto mantem um percentual de gordura abaixo de 15%. Se voce pratica exercicios regularmente e possui massa muscular acima da media, considere complementar o IMC com uma medicao do percentual de gordura corporal ou com o calculo da relacao cintura-quadril para uma avaliacao mais precisa da sua composicao corporal. A bioimpedancia, disponivel em muitas academias no Brasil, e uma alternativa acessivel."
+  - question: "O IMC se aplica de forma diferente para homens e mulheres?"
+    answer: "A formula do IMC e identica para homens e mulheres, mas a interpretacao pode variar. Mulheres naturalmente possuem um percentual de gordura corporal mais alto do que homens no mesmo nivel de IMC. Alguns pesquisadores propuseram pontos de corte especificos por sexo, porem as categorias padrao da OMS continuam sendo as mais utilizadas. Para mulheres especialmente, a circunferencia da cintura pode fornecer informacoes adicionais, com medidas acima de 80 cm associadas a risco aumentado para a saude. O Ministerio da Saude recomenda essa medida complementar nas avaliacoes de rotina."
+  - question: "Com que frequencia devo verificar meu IMC?"
+    answer: "Para a maioria dos adultos, verificar o IMC a cada dois ou tres meses fornece dados uteis de tendencia sem incentivar o monitoramento obsessivo. Se voce esta ativamente tentando perder ou ganhar peso, verificacoes mensais oferecem um retorno razoavel sobre seu progresso. Evite pesar-se diariamente para fins de IMC, pois flutuacoes normais de liquidos podem alterar seu peso em 1 a 2 kg em qualquer direcao, tornando leituras de IMC de curto prazo pouco confiaveis. O acompanhamento nas UBS do SUS geralmente inclui medicao de IMC a cada consulta de rotina."
+  - question: "Quais sao as limitacoes do IMC como indicador de saude?"
+    answer: "O IMC nao consegue diferenciar massa magra de massa gorda, nao leva em conta padroes de distribuicao de gordura (visceral versus subcutanea) e utiliza pontos de corte populacionais que podem nao se aplicar igualmente a todos os grupos etnicos. Pesquisas mostram que populacoes asiaticas enfrentam riscos metabolicos elevados em limiares de IMC mais baixos do que populacoes europeias. A metrica tambem falha em capturar mudancas na composicao corporal que ocorrem com o envelhecimento, ja que a perda muscular frequentemente acompanha o ganho de gordura mesmo quando o peso permanece estavel. Por isso, a ANVISA e o Ministerio da Saude recomendam avaliacoes complementares."
+  - question: "Criancas podem usar esta calculadora de IMC?"
+    answer: "Esta calculadora foi desenvolvida para adultos com 20 anos ou mais. Criancas e adolescentes necessitam de graficos de percentil de IMC especificos por idade e sexo, pois sua composicao corporal muda significativamente durante o crescimento. No Brasil, a Caderneta de Saude da Crianca, distribuida pelo SUS, contem curvas de crescimento da OMS que comparam o IMC da crianca com populacoes de referencia da mesma idade e sexo. Baixo peso e definido como abaixo do percentil 5 e obesidade no percentil 95 ou acima. O pediatra e o profissional adequado para interpretar esses dados."
+
+examples:
+  - title: "Adulto com peso normal"
+    scenario: "Uma pessoa de 1,70 m pesando 65 kg"
+    inputs:
+      weight: 65
+      height: 170
+      unit: "metric"
+    expectedResult: "IMC: 22,5 — Peso normal (eutrofico)"
+    explanation: "Com 22,5, essa pessoa se encontra confortavelmente dentro da faixa de peso normal (18,5 a 24,9). Esse IMC esta associado ao menor risco estatistico de problemas de saude relacionados ao peso. O Ministerio da Saude considera essa faixa como ideal para a populacao adulta brasileira."
+  - title: "Avaliacao de sobrepeso"
+    scenario: "Uma pessoa de 1,78 m pesando 88 kg"
+    inputs:
+      weight: 88
+      height: 178
+      unit: "metric"
+    expectedResult: "IMC: 27,8 — Sobrepeso"
+    explanation: "Um IMC de 27,8 coloca essa pessoa na categoria de sobrepeso (25,0 a 29,9). Embora ainda nao seja classificado como obeso, essa faixa esta associada a risco moderadamente aumentado para questoes cardiovasculares. Perder aproximadamente 8 a 10 kg a traria para dentro da faixa normal. O SUS oferece programas de reeducacao alimentar nas UBS."
+  - title: "Verificacao de baixo peso"
+    scenario: "Uma pessoa de 1,80 m pesando 55 kg"
+    inputs:
+      weight: 55
+      height: 180
+      unit: "metric"
+    expectedResult: "IMC: 17,0 — Abaixo do peso"
+    explanation: "Com 17,0, essa pessoa e classificada como abaixo do peso (inferior a 18,5). Estar abaixo do peso pode indicar deficiencias nutricionais, funcao imunologica enfraquecida e risco aumentado de osteoporose. E recomendavel consultar um profissional de saude. No SUS, o acompanhamento nutricional e gratuito e pode ser solicitado na Unidade Basica de Saude mais proxima."
+
+relatedTools:
+  - "bmr-calculator"
+  - "tdee-calculator"
+  - "calorie-calculator"
+  - "body-fat-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

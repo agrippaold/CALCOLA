@@ -1,0 +1,94 @@
+id: "gpa-calculator"
+category: "education"
+calculatorComponent: "GPACalculator"
+
+title: "Calculadora de Media Escolar - Calcule sua Media Ponderada | CalcHub"
+metaDescription: "Calcule sua media escolar ponderada a partir de notas e creditos. Suporta escala 4.0, disciplinas com pesos diferentes e media acumulada. Gratis e preciso."
+h1: "Calculadora de Media Escolar"
+slug: "calculadora-media-escolar"
+
+primaryKeyword: "calculadora media escolar"
+secondaryKeywords:
+  - "calcular media ponderada"
+  - "calculadora gpa"
+  - "media academica"
+  - "coeficiente de rendimento"
+
+intro: "O Coeficiente de Rendimento (CR) ou Media Ponderada Acumulada resume todo o seu historico academico em um unico numero que universidades, programas de pos-graduacao e empregadores utilizam para avaliar desempenho escolar. Calcular manualmente fica trabalhoso quando voce tem muitas disciplinas, especialmente quando a carga horaria varia. Esta calculadora permite inserir a nota e os creditos de cada disciplina e calcula sua media do semestre e media acumulada na escala padrao 4.0 em segundos."
+
+howItWorks:
+  title: "Como o Calculo de Media Funciona"
+  content: "A Media Ponderada Acumulada e uma media ponderada onde a nota de cada disciplina e convertida em um valor numerico e depois ponderada pelo numero de creditos que a disciplina carrega. Na escala padrao 4.0 usada pela maioria das universidades americanas, um A equivale a 4,0, um B a 3,0, um C a 2,0, um D a 1,0 e um F a 0,0. Muitas instituicoes tambem usam modificadores de mais e menos: um A- normalmente vale 3,7, um B+ vale 3,3, um B- vale 2,7, e assim em incrementos de 0,3. No sistema brasileiro, as notas geralmente variam de 0 a 10, e o Coeficiente de Rendimento e calculado de forma similar, multiplicando a nota de cada disciplina pelo numero de creditos. Para calcular a media, voce primeiro multiplica os pontos de cada disciplina pelos seus creditos para obter os pontos de qualidade daquela disciplina. Depois soma todos os pontos de qualidade e divide pelo total de creditos cursados. Por exemplo, se voce tirou A (4,0) em uma disciplina de 4 creditos e B (3,0) em uma de 3 creditos, seus pontos de qualidade sao (4,0 vezes 4) mais (3,0 vezes 3) igual a 16 mais 9 igual a 25. Seus creditos totais sao 4 mais 3 igual a 7. Sua media e 25 dividido por 7, que resulta em aproximadamente 3,57. A media acumulada funciona da mesma forma, mas inclui todas as disciplinas de todos os semestres. Algumas escolas usam um sistema de media ponderada para disciplinas avancadas, adicionando 0,5 ou 1,0 aos pontos base dessas disciplinas. Disciplinas em que voce recebe trancamento ou aprovacao sem nota geralmente sao excluidas do calculo da media."
+  formula: "Media = Soma(pontos_nota x creditos) / Soma(creditos)"
+  formulaExplanation: "Para cada disciplina, multiplique o valor numerico da nota pelos creditos da disciplina. Some todos esses produtos para obter o total de pontos de qualidade. Divida pelo total de creditos cursados. O resultado e sua media na escala 4.0."
+  academicSource: "American Association of Collegiate Registrars and Admissions Officers (AACRAO). (2022). Academic Record and Transcript Guide. AACRAO."
+
+faqs:
+  - question: "O que e a escala de notas e como as letras sao convertidas em numeros?"
+    answer: "A escala padrao 4.0 atribui valores numericos a notas em letras: A equivale a 4,0, A- a 3,7, B+ a 3,3, B a 3,0, B- a 2,7, C+ a 2,3, C a 2,0, C- a 1,7, D+ a 1,3, D a 1,0, D- a 0,7 e F a 0,0. Algumas instituicoes nao usam modificadores de mais ou menos, aplicando apenas os valores inteiros. No sistema brasileiro, as notas de 0 a 10 podem ser convertidas proporcionalmente para a escala 4.0 dividindo por 2,5."
+  - question: "Como os creditos afetam minha media?"
+    answer: "Os creditos funcionam como pesos na formula da media. Uma disciplina de 4 creditos tem mais impacto na sua media do que uma de 1 credito com a mesma nota. Se voce tira A em um seminario de 1 credito e C em uma disciplina de 4 creditos, sua media nao e a simples media de 4,0 e 2,0 (que seria 3,0). Em vez disso, e (4,0 vezes 1 mais 2,0 vezes 4) dividido por (1 mais 4), que resulta em 12 dividido por 5 igual a 2,4. Isso significa que disciplinas com muitos creditos podem mover sua media significativamente para cima ou para baixo."
+  - question: "Qual a diferenca entre media do semestre e media acumulada?"
+    answer: "A media do semestre considera apenas as disciplinas cursadas em um unico periodo letivo. A media acumulada inclui todas as disciplinas de toda a sua trajetoria academica naquela instituicao. Sua media acumulada e o que aparece no historico escolar oficial e o que programas de pos-graduacao ou empregadores normalmente solicitam. Para calcular a media acumulada, trate todas as disciplinas de todos os semestres como um unico conjunto: some todos os pontos de qualidade e divida por todos os creditos cursados."
+  - question: "Disciplinas trancadas ou em regime de aprovacao/reprovacao afetam a media?"
+    answer: "Disciplinas trancadas e aquelas em regime de aprovacao/reprovacao geralmente nao entram no calculo da media. Uma aprovacao em regime P/F concede creditos para a graduacao, mas nao gera pontos de qualidade nem adiciona creditos ao denominador da formula. Uma reprovacao pode ou nao afetar a media dependendo da instituicao. O trancamento aparece no historico, mas nao carrega pontos nem creditos, portanto nao altera sua media."
+  - question: "Como posso aumentar minha media?"
+    answer: "A matematica da melhoria depende de onde voce esta e quantos creditos ja cursou. Quanto mais creditos acumulados, mais dificil e mover a media significativamente. Estrategias praticas incluem refazer disciplinas em que voce tirou notas baixas (se a politica de substituicao de notas da sua instituicao permitir), dedicar mais tempo de estudo a disciplinas com muitos creditos e buscar monitoria ou grupos de estudo no inicio do semestre."
+  - question: "O que e o Coeficiente de Rendimento (CR) no sistema brasileiro?"
+    answer: "O CR e o equivalente brasileiro do GPA. E calculado multiplicando a nota final de cada disciplina (geralmente de 0 a 10) pelo numero de creditos, somando todos os produtos e dividindo pelo total de creditos cursados. Universidades federais e estaduais brasileiras utilizam o CR para classificacao em programas de intercambio, selecao de monitoria, concessao de bolsas e decisoes de desligamento academico. Um CR alto e especialmente importante para programas competitivos como medicina e engenharia."
+
+examples:
+  - title: "Media do primeiro semestre"
+    scenario: "Calculando a media de um calouro cursando cinco disciplinas no primeiro semestre"
+    inputs:
+      course1Grade: "A"
+      course1Credits: 4
+      course2Grade: "B+"
+      course2Credits: 3
+      course3Grade: "A-"
+      course3Credits: 3
+      course4Grade: "B"
+      course4Credits: 3
+      course5Grade: "A"
+      course5Credits: 1
+    expectedResult: "Media do semestre: 3,57"
+    explanation: "Pontos de qualidade: A em 4 creditos (4,0 x 4 = 16,0), B+ em 3 creditos (3,3 x 3 = 9,9), A- em 3 creditos (3,7 x 3 = 11,1), B em 3 creditos (3,0 x 3 = 9,0), A em 1 credito (4,0 x 1 = 4,0). Total de pontos: 50,0. Total de creditos: 14. Media: 50,0 / 14 = 3,57."
+  - title: "Media acumulada apos dois semestres"
+    scenario: "Um estudante obteve media 3,2 em 15 creditos no primeiro semestre e quer saber sua media acumulada apos notas melhores no segundo semestre"
+    inputs:
+      previousGPA: 3.2
+      previousCredits: 15
+      newCourse1Grade: "A"
+      newCourse1Credits: 4
+      newCourse2Grade: "A-"
+      newCourse2Credits: 3
+      newCourse3Grade: "B+"
+      newCourse3Credits: 3
+      newCourse4Grade: "A"
+      newCourse4Credits: 3
+    expectedResult: "Media acumulada: 3,46"
+    explanation: "Pontos anteriores: 3,2 x 15 = 48,0. Novos pontos: A em 4 creditos (16,0) + A- em 3 creditos (11,1) + B+ em 3 creditos (9,9) + A em 3 creditos (12,0) = 49,0. Total de pontos: 48,0 + 49,0 = 97,0. Total de creditos: 15 + 13 = 28. Media acumulada: 97,0 / 28 = 3,46."
+  - title: "Planejamento de meta de media"
+    scenario: "Um estudante com media atual de 2,8 em 45 creditos quer saber que notas precisa no proximo semestre para alcancar media acumulada de 3,0"
+    inputs:
+      currentGPA: 2.8
+      completedCredits: 45
+      targetGPA: 3.0
+      plannedCredits: 15
+    expectedResult: "Media necessaria no semestre: 3,60 para alcancar media acumulada de 3,0"
+    explanation: "Pontos atuais: 2,8 x 45 = 126,0. Pontos necessarios para 60 creditos totais com media 3,0: 3,0 x 60 = 180,0. Pontos necessarios nos proximos 15 creditos: 180,0 - 126,0 = 54,0. Media necessaria: 54,0 / 15 = 3,60. E alcancavel, mas exige notas predominantemente A- e B+ em todas as disciplinas."
+
+relatedTools:
+  - "age-calculator"
+  - "date-difference-calculator"
+  - "percentage-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-16"
+author: "CalcHub Team"
+priority: "high"

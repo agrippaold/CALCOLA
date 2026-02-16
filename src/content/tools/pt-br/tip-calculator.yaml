@@ -1,0 +1,87 @@
+id: "tip-calculator"
+category: "finance"
+calculatorComponent: "TipCalculator"
+
+title: "Calculadora de Gorjeta - Taxa de Serviço e Divisão de Conta | CalcHub"
+metaDescription: "Calcule a gorjeta ou taxa de serviço para qualquer conta. Escolha o percentual, divida o total entre amigos e veja exatamente quanto cada pessoa deve pagar."
+h1: "Calculadora de Gorjeta"
+slug: "calculadora-gorjeta"
+
+primaryKeyword: "calculadora de gorjeta"
+secondaryKeywords:
+  - "calcular gorjeta"
+  - "taxa de serviço 10%"
+  - "calculadora divisão de conta"
+  - "gorjeta restaurante"
+  - "calculadora conta restaurante"
+
+intro: "No Brasil, a taxa de serviço de 10% incluída na conta do restaurante é uma tradição que gera dúvidas entre consumidores e turistas. Afinal, essa taxa é obrigatória? Quanto dar de gorjeta além dela? Como dividir a conta de forma justa entre os amigos? Esta calculadora de gorjeta resolve todas essas questões, calculando o valor da gorjeta, o total da conta e a parcela por pessoa em um único passo. Insira o valor da conta, escolha o percentual de gorjeta desejado e indique quantas pessoas vão dividir. Prático e rápido, especialmente quando o garçom já está esperando com a maquininha na mão."
+
+howItWorks:
+  title: "Como Funciona o Cálculo de Gorjeta no Brasil"
+  content: "No Brasil, a cultura da gorjeta funciona de maneira diferente dos Estados Unidos e da Europa. A principal característica é a taxa de serviço de 10%, que aparece na maioria das contas de restaurantes, bares e casas noturnas. Essa taxa é sugerida pelo estabelecimento e distribuída entre os funcionários, incluindo garçons, cozinheiros e equipe de apoio. Ao contrário do que muitos pensam, a taxa de serviço de 10% não é obrigatória por lei. O Código de Defesa do Consumidor estabelece que o pagamento é opcional, cabendo ao cliente decidir se paga ou não. Na prática, a grande maioria dos brasileiros paga a taxa como forma de reconhecer o serviço prestado, e recusar pode ser considerado socialmente inadequado, exceto em casos de atendimento realmente insatisfatório. O cálculo em si é simples: multiplique o valor da conta pelo percentual desejado expresso como decimal. Uma conta de R$ 150,00 com 10% de gorjeta resulta em R$ 150,00 vezes 0,10, que equivale a R$ 15,00, totalizando R$ 165,00. Se quatro pessoas dividem igualmente, cada uma paga R$ 41,25. Quando o percentual muda, apenas o multiplicador se altera, então a fórmula funciona para qualquer valor. Além dos restaurantes tradicionais, a gorjeta no Brasil varia conforme o tipo de serviço. Em bares, a taxa de 10% é padrão. Em pizzarias com rodízio, muitos estabelecimentos já incluem a taxa no preço do rodízio. Em hotéis, é comum dar de R$ 5 a R$ 20 para carregadores de mala e arrumadeiras. Em salões de beleza, gorjetas de 10% a 15% são apreciadas, mas menos comuns que em outros países. Para entregadores de aplicativos de delivery como iFood e Rappi, a gorjeta é totalmente opcional e pode ser adicionada diretamente pelo aplicativo. A divisão de conta entre brasileiros tem suas particularidades culturais. O costume mais comum é dividir igualmente entre todos, independentemente do que cada um consumiu. Essa prática, conhecida informalmente como 'rachar a conta', simplifica o cálculo mas pode gerar desconforto quando há grande diferença nos valores consumidos. Algumas alternativas incluem pedir contas separadas (quando o restaurante permite), cada pessoa calcular seu consumo individual com a taxa proporcional, ou utilizar aplicativos de divisão de despesas como Splitwise. Para turistas visitando o Brasil, é importante saber que a taxa de serviço de 10% geralmente substitui a gorjeta adicional. Diferentemente dos EUA, onde gorjetas de 15% a 20% são esperadas porque compõem parte significativa do salário dos garçons, no Brasil os funcionários de restaurantes recebem pelo menos o salário mínimo garantido por lei, além de benefícios trabalhistas como FGTS, 13º salário e férias remuneradas. A taxa de serviço é, portanto, um complemento de renda e não a base salarial. Em estabelecimentos mais sofisticados ou para serviços excepcionais, deixar uma gorjeta adicional de 5% a 10% além da taxa de serviço é um gesto apreciado. Em botecos e restaurantes populares, arredondar a conta para cima ou deixar o troco como gorjeta é uma prática frequente e bem-vinda."
+  formula: "Gorjeta = Valor da Conta x (Percentual de Gorjeta / 100)"
+  formulaExplanation: "Total = Valor da Conta + Gorjeta; Por Pessoa = Total / Número de Pessoas"
+  academicSource: "Código de Defesa do Consumidor - Lei 8.078/1990. Art. 39."
+
+faqs:
+  - question: "A taxa de serviço de 10% é obrigatória no Brasil?"
+    answer: "Não, a taxa de serviço de 10% não é obrigatória. De acordo com o Código de Defesa do Consumidor, nenhum consumidor é obrigado a pagar valores que não correspondam a produtos ou serviços efetivamente contratados. O Procon de diversos estados reforça que a taxa de serviço é uma sugestão do estabelecimento, e o cliente tem o direito de recusá-la parcial ou totalmente. No entanto, na prática, a maioria dos brasileiros paga a taxa como reconhecimento do serviço, e recusar sem justificativa pode ser visto como descortesia social."
+
+  - question: "A gorjeta no Brasil é diferente da gorjeta nos EUA?"
+    answer: "Sim, há diferenças fundamentais. Nos Estados Unidos, a gorjeta de 15% a 20% é praticamente obrigatória porque os garçons recebem um salário-base muito baixo (US$ 2,13 por hora em nível federal) e dependem das gorjetas para compor sua renda. No Brasil, os funcionários de restaurantes recebem pelo menos o salário mínimo mais benefícios trabalhistas como FGTS, 13º salário e férias. A taxa de serviço de 10% é um complemento, não a base do salário. Por isso, gorjetas acima de 10% são incomuns no Brasil, embora sejam sempre apreciadas."
+
+  - question: "Devo dar gorjeta para entregadores de aplicativos?"
+    answer: "A gorjeta para entregadores de aplicativos como iFood, Rappi e Uber Eats é totalmente opcional no Brasil, mas muito bem-vinda. Os entregadores geralmente recebem valores baixos por entrega e arcam com custos de combustível, manutenção do veículo e desgaste. Uma gorjeta de R$ 2 a R$ 10, dependendo da distância e das condições climáticas, faz diferença significativa na renda diária desses profissionais. A maioria dos aplicativos oferece a opção de adicionar gorjeta diretamente na plataforma após a entrega."
+
+  - question: "Como dividir a conta de forma justa quando há grande diferença no consumo?"
+    answer: "Existem várias abordagens para lidar com essa situação comum entre brasileiros. A mais simples é cada pessoa calcular seu consumo individual e adicionar sua parcela proporcional da taxa de serviço. Outra opção é usar aplicativos como Splitwise, que permitem registrar o que cada pessoa consumiu e calcular automaticamente a divisão. Alguns restaurantes aceitam dividir a conta em comandas separadas. Em grupos de amigos próximos, a divisão igualitária tende a se equilibrar ao longo do tempo entre diferentes ocasiões."
+
+  - question: "Quanto dar de gorjeta em hotéis no Brasil?"
+    answer: "Em hotéis brasileiros, a gorjeta não é obrigatória mas é apreciada pelos funcionários. As práticas mais comuns são: R$ 5 a R$ 10 para o carregador de malas (por mala), R$ 5 a R$ 10 por dia para a arrumadeira do quarto (deixe na mesinha de cabeceira com um bilhete), R$ 2 a R$ 5 para o manobrista ao devolver o carro, e R$ 5 a R$ 20 para o concierge que faz recomendações especiais ou reservas. Em resorts all-inclusive, verifique se a taxa de serviço já está incluída na diária antes de dar gorjeta adicional."
+
+  - question: "Gorjeta deve ser incluída antes ou depois dos impostos na conta?"
+    answer: "No Brasil, as contas de restaurantes geralmente apresentam o valor total já com impostos embutidos no preço dos itens (ICMS e ISS). A taxa de serviço de 10% é calculada sobre o subtotal de consumo, que já inclui esses impostos. Diferentemente dos EUA, onde a gorjeta é calculada sobre o valor antes dos impostos, no Brasil essa distinção não se aplica na prática, pois os preços do cardápio já contemplam a tributação. Se você decidir dar uma gorjeta adicional além da taxa de serviço, calcule-a sobre o subtotal dos itens consumidos."
+
+examples:
+  - title: "Jantar em restaurante com taxa de serviço padrão"
+    scenario: "Conta de R$ 180,00 com taxa de serviço de 10%, dividida entre 3 pessoas"
+    inputs:
+      billAmount: 180.00
+      tipPercentage: 10
+      numberOfPeople: 3
+    expectedResult: "Gorjeta: R$ 18,00 | Total: R$ 198,00 | Por pessoa: R$ 66,00"
+    explanation: "A taxa de serviço de 10% sobre R$ 180,00 resulta em R$ 18,00 de gorjeta. O total da conta fica R$ 198,00, e dividindo entre 3 pessoas, cada uma paga R$ 66,00. Este é o cenário mais comum em restaurantes brasileiros, onde a taxa de 10% aparece destacada na conta e a divisão igualitária é a prática padrão entre amigos."
+
+  - title: "Churrascaria com grupo grande"
+    scenario: "Conta de R$ 650,00 em rodízio para 8 pessoas com 10% de serviço"
+    inputs:
+      billAmount: 650.00
+      tipPercentage: 10
+      numberOfPeople: 8
+    expectedResult: "Gorjeta: R$ 65,00 | Total: R$ 715,00 | Por pessoa: R$ 89,38"
+    explanation: "No rodízio de R$ 650,00 com 10% de taxa de serviço, o total chega a R$ 715,00. Dividido entre 8 pessoas, cada uma paga R$ 89,38. Em churrascarias brasileiras, o preço do rodízio geralmente é fixo por pessoa, o que facilita a divisão. A taxa de serviço é calculada sobre o valor total incluindo bebidas, que costumam ser cobradas à parte."
+
+  - title: "Happy hour em bar com gorjeta generosa"
+    scenario: "Conta de R$ 95,00 no bar com 15% de gorjeta"
+    inputs:
+      billAmount: 95.00
+      tipPercentage: 15
+      numberOfPeople: 1
+    expectedResult: "Gorjeta: R$ 14,25 | Total: R$ 109,25 | Por pessoa: R$ 109,25"
+    explanation: "Uma gorjeta de 15% sobre R$ 95,00 totaliza R$ 14,25, elevando a conta para R$ 109,25. Dar 15% em vez dos tradicionais 10% é uma forma de reconhecer um atendimento excepcional. Muitos clientes regulares de bares deixam gorjetas acima da taxa de serviço padrão como forma de manter um bom relacionamento com os garçons e garantir atendimento prioritário nas próximas visitas."
+
+relatedTools:
+  - "sales-tax-calculator"
+  - "discount-calculator"
+  - "vat-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

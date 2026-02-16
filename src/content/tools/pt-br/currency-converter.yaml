@@ -1,0 +1,90 @@
+id: "currency-converter"
+category: "finance"
+calculatorComponent: "CurrencyConverter"
+
+title: "Conversor de Moedas - Calculadora de Câmbio | CalcHub"
+metaDescription: "Converta entre moedas do mundo inteiro com taxas de câmbio atualizadas. Compare Real, dólar, euro, libra e mais para viagens, negócios e remessas internacionais."
+h1: "Conversor de Moedas"
+slug: "conversor-moedas"
+
+primaryKeyword: "conversor de moedas"
+secondaryKeywords:
+  - "calculadora de câmbio"
+  - "converter dólar para real"
+  - "cotação do dólar hoje"
+  - "taxa de câmbio PTAX"
+  - "conversor de moedas online"
+
+intro: "Seja para planejar uma viagem internacional, enviar dinheiro para o exterior ou precificar produtos importados, saber a taxa de câmbio correta é fundamental para tomar decisões financeiras inteligentes. Este conversor de moedas permite calcular rapidamente quanto vale uma moeda em relação a outra, usando taxas de referência do mercado interbancário. Insira o valor desejado, selecione as moedas de origem e destino e obtenha a conversão instantaneamente. Lembre-se de que bancos, casas de câmbio e corretoras costumam adicionar um spread sobre a taxa do mercado, então utilize estes resultados como base de comparação para encontrar a melhor oferta disponível."
+
+howItWorks:
+  title: "Como Funciona a Conversão de Moedas"
+  content: "As taxas de câmbio representam quanto de uma moeda é necessário para comprar uma unidade de outra. Quando você vê uma cotação USD/BRL de 5,15, isso significa que um dólar americano custa 5,15 reais brasileiros. Essas taxas são determinadas pelo mercado de câmbio (forex), o maior mercado financeiro do mundo, com mais de 7,5 trilhões de dólares negociados diariamente. No Brasil, a principal taxa de referência é a PTAX, calculada diariamente pelo Banco Central do Brasil com base nas operações realizadas no mercado interbancário. A PTAX é utilizada como referência para liquidação de contratos de câmbio, operações de comércio exterior e conversão de demonstrações financeiras. As taxas de câmbio flutuam constantemente com base na oferta e demanda, influenciadas por decisões de taxa de juros do Banco Central (Selic), diferenciais de inflação entre países, balança comercial, eventos geopolíticos e sentimento dos investidores. No contexto brasileiro, a taxa Selic tem impacto direto na atratividade do real para investidores estrangeiros: quando a Selic sobe, o carry trade tende a fortalecer o real; quando cai, a moeda pode se desvalorizar. A taxa do mercado interbancário, também chamada de taxa mid-market, é o ponto médio entre os preços de compra (bid) e venda (ask) no mercado aberto. Esta é a taxa mais justa disponível e a que os portais financeiros normalmente divulgam. Porém, quando você efetivamente troca dinheiro em um banco, casa de câmbio ou serviço de transferência online, recebe uma taxa diferente. A diferença entre a taxa mid-market e a taxa oferecida é o spread do provedor, que é como ele obtém receita. Bancos brasileiros tipicamente adicionam um spread de 2% a 5%, enquanto casas de câmbio em aeroportos podem cobrar 6% a 12% ou mais. Serviços digitais como Wise, Remessa Online e bancos digitais geralmente oferecem taxas muito mais próximas do mercado interbancário, com tarifas transparentes e menores. As taxas cruzadas são cotações entre duas moedas calculadas por meio de uma terceira moeda comum, geralmente o dólar americano. Por exemplo, para converter reais em ienes japoneses, o sistema primeiro converte BRL para USD e depois USD para JPY. Isso explica por que alguns pares de moedas têm spreads mais amplos, já que duas conversões introduzem duas camadas de custo potencial. Para quem precisa fazer grandes remessas internacionais ou pagamentos de importação, comparar taxas entre múltiplos provedores, monitorar o câmbio diariamente e utilizar operações programadas de câmbio pode resultar em economias significativas. Acompanhar as datas de fechamento da PTAX e as janelas de liquidação do Banco Central também ajuda a obter melhores condições nas operações de câmbio."
+  formula: "Valor Convertido = Valor x Taxa de Câmbio"
+  formulaExplanation: "Taxa de câmbio = unidades da moeda de destino por uma unidade da moeda de origem"
+  academicSource: "Banco Central do Brasil. (2025). Taxas de Câmbio - PTAX."
+
+faqs:
+  - question: "O que é a taxa PTAX e como ela é calculada?"
+    answer: "A PTAX é a taxa de câmbio de referência calculada pelo Banco Central do Brasil. Ela é apurada diariamente com base nas operações de câmbio realizadas no mercado interbancário entre as instituições financeiras autorizadas. O Banco Central coleta as cotações em quatro janelas ao longo do dia e calcula a média ponderada pelo volume negociado. A PTAX de fechamento é amplamente utilizada como referência para liquidação de contratos de câmbio, operações de comércio exterior, conversão de balanços contábeis e cálculo de tributos sobre operações cambiais."
+
+  - question: "Qual a diferença entre a taxa comercial e a taxa turismo?"
+    answer: "A taxa comercial é a cotação praticada entre bancos e grandes empresas para operações de comércio exterior, remessas internacionais e investimentos. A taxa turismo é a cotação aplicada na compra e venda de moeda estrangeira em espécie para pessoas físicas, incluindo compra de dólar em casas de câmbio, saques internacionais e carregamento de cartões pré-pagos. A taxa turismo é sempre mais alta que a comercial porque inclui custos adicionais de logística, segurança no transporte de papel-moeda, seguros e a margem de lucro da casa de câmbio ou banco."
+
+  - question: "É melhor comprar dólar no banco, na casa de câmbio ou online?"
+    answer: "Em geral, as melhores taxas de câmbio para pessoas físicas são encontradas em corretoras de câmbio online e bancos digitais, que oferecem spreads menores e maior transparência nas tarifas. Casas de câmbio físicas em grandes centros comerciais costumam ter cotações razoáveis, mas é essencial comparar antes de fechar negócio. Evite comprar moeda estrangeira em aeroportos, onde os spreads são significativamente mais altos. Para quantias maiores, negociar diretamente com a mesa de câmbio do seu banco pode resultar em cotações personalizadas mais vantajosas."
+
+  - question: "Como o IOF afeta a compra de moeda estrangeira?"
+    answer: "O IOF (Imposto sobre Operações Financeiras) é cobrado em praticamente todas as operações de câmbio no Brasil. Para compra de moeda em espécie, a alíquota é de 1,1%. Para remessas internacionais e transferências entre contas, a alíquota pode variar. Compras internacionais no cartão de crédito têm IOF de 3,38%. É importante incluir o IOF no cálculo total do custo da operação cambial, pois ele pode representar uma parcela significativa, especialmente em operações de cartão de crédito no exterior."
+
+  - question: "O que causa a volatilidade do real brasileiro?"
+    answer: "O real brasileiro é considerado uma moeda de mercado emergente e tende a ser mais volátil que moedas como o dólar, euro ou iene. Os principais fatores que influenciam sua cotação incluem a taxa Selic definida pelo Copom, a balança comercial brasileira (exportações de commodities como soja, minério de ferro e petróleo), o cenário fiscal do governo federal, a estabilidade política, o diferencial de juros em relação aos EUA e o apetite global por risco. Em momentos de incerteza, investidores internacionais tendem a retirar capital de mercados emergentes, pressionando o real para baixo."
+
+  - question: "Quando é o melhor momento para comprar dólares para uma viagem?"
+    answer: "Prever movimentos de curto prazo no câmbio é extremamente difícil, mesmo para profissionais do mercado financeiro. A estratégia mais recomendada por especialistas é a compra parcelada ao longo de semanas ou meses, diluindo o risco de comprar tudo em um momento de alta. Acompanhe a cotação diariamente e defina um preço-alvo. Evite deixar a compra para a última hora, especialmente em aeroportos. Ferramentas de alerta de câmbio de bancos digitais e corretoras podem notificá-lo quando a cotação atingir o valor desejado."
+
+examples:
+  - title: "Dólares americanos para reais"
+    scenario: "Convertendo US$ 1.000 para BRL a uma taxa de 5,15"
+    inputs:
+      amount: 1000
+      fromCurrency: "USD"
+      toCurrency: "BRL"
+      exchangeRate: 5.15
+    expectedResult: "Valor convertido: R$ 5.150,00"
+    explanation: "Na taxa mid-market de 5,15 reais por dólar, seus US$ 1.000 são equivalentes a R$ 5.150,00. Na prática, um banco brasileiro pode oferecer uma taxa turismo de 5,35 e cobrar IOF de 1,1%, resultando em um custo real maior. Comparar provedores ajuda a economizar dezenas ou centenas de reais em cada operação."
+
+  - title: "Reais para euros"
+    scenario: "Convertendo R$ 10.000 para EUR a uma taxa de 0,1750"
+    inputs:
+      amount: 10000
+      fromCurrency: "BRL"
+      toCurrency: "EUR"
+      exchangeRate: 0.1750
+    expectedResult: "Valor convertido: € 1.750,00"
+    explanation: "Na cotação de 0,1750 euros por real, R$ 10.000 convertem-se em € 1.750,00. Como esta é uma conversão que passa pelo dólar como moeda intermediária (taxa cruzada), o spread efetivo pode ser ligeiramente maior. Para uma viagem à Europa, considere também o IOF sobre a compra de moeda e as taxas da casa de câmbio."
+
+  - title: "Libras esterlinas para reais"
+    scenario: "Convertendo £ 2.000 para BRL a uma taxa de 6,45"
+    inputs:
+      amount: 2000
+      fromCurrency: "GBP"
+      toCurrency: "BRL"
+      exchangeRate: 6.45
+    expectedResult: "Valor convertido: R$ 12.900,00"
+    explanation: "A libra esterlina é uma das moedas mais fortes em relação ao real. Na cotação de 6,45 reais por libra, £ 2.000 equivalem a R$ 12.900,00. Para quem recebe pagamentos do Reino Unido ou planeja estudar na Inglaterra, monitorar a cotação GBP/BRL e utilizar serviços de remessa com boas taxas pode representar uma economia considerável ao longo do tempo."
+
+relatedTools:
+  - "inflation-calculator"
+  - "discount-calculator"
+  - "savings-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

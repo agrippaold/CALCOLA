@@ -1,0 +1,79 @@
+id: "age-calculator"
+category: "date"
+calculatorComponent: "AgeCalculator"
+lang: "pt-br"
+
+title: "Calculadora de Idade - Descubra Sua Idade Exata | CalcHub"
+metaDescription: "Calcule sua idade exata em anos, meses e dias a partir da data de nascimento. Calculadora de idade online gratuita com resultados precisos."
+h1: "Calculadora de Idade"
+slug: "calculadora-idade"
+
+primaryKeyword: "calculadora de idade"
+secondaryKeywords:
+  - "calcular minha idade"
+  - "quantos anos eu tenho"
+  - "calculadora de idade exata"
+  - "idade em dias"
+  - "calcular idade online"
+
+intro: "Quantos anos voce tem neste momento, exatamente ate o dia? Esta calculadora de idade recebe sua data de nascimento e informa com precisao quantos anos, meses e dias voce viveu. Seja para preencher um documento oficial, um formulario medico, ou por pura curiosidade, insira sua data de nascimento abaixo e obtenha a resposta instantaneamente. Voce tambem pode escolher uma data-alvo personalizada para descobrir quantos anos voce tinha ou tera em qualquer dia especifico."
+
+howItWorks:
+  title: "Como Funciona o Calculo de Idade"
+  content: "O calculo de idade segue o sistema do calendario gregoriano, que e o calendario civil padrao usado na maior parte do mundo, incluindo o Brasil. O processo comeca comparando sua data de nascimento com a data-alvo (hoje, por padrao). Primeiro, a calculadora conta o numero de anos completos entre as duas datas. Um ano completo significa que o mes e o dia de nascimento ja passaram naquele ano civil. Em seguida, conta os meses completos restantes apos esses anos inteiros. Finalmente, conta os dias restantes apos subtrair os anos e meses completos. Essa divisao em tres niveis fornece um resultado preciso como 28 anos, 4 meses e 13 dias. A calculadora tambem lida com casos especiais como anos bissextos. Aniversarios em 29 de fevereiro, por exemplo, sao tratados considerando a data valida seguinte (1 de marco) como limite de aniversario em anos nao-bissextos. Diferencas de duracao dos meses tambem importam. Mover de 31 de janeiro para fevereiro significa que a calculadora ajusta para fevereiro tendo apenas 28 ou 29 dias. Alem da divisao primaria, a ferramenta converte sua idade total em unidades independentes. Voce pode ver sua idade expressa puramente em meses, puramente em semanas ou puramente em dias. Isso e util quando voce precisa de uma medida em unidade unica para tabelas de dosagem medica, documentos de seguros ou acompanhamento de saude. No Brasil, a idade e frequentemente exigida em documentos como carteira de identidade, passaporte, inscricao em concursos publicos e matricula escolar. A matematica subjacente depende de subtracao sequencial de datas em vez de simples divisao por 365,25, evitando erros de arredondamento provenientes da media de ciclos de anos bissextos."
+  formula: "Idade = Data Alvo - Data de Nascimento (expressa em Anos, Meses, Dias)"
+  formulaExplanation: "Subtraia a data de nascimento da data-alvo. Conte primeiro os anos completos, depois os meses completos restantes e finalmente os dias restantes. Ajuste para variacoes de duracao dos meses e anos bissextos."
+  academicSource: "Dershowitz, N. & Reingold, E.M. (2008). Calendrical Calculations, 3rd Edition. Cambridge University Press."
+
+faqs:
+  - question: "Como a calculadora lida com aniversarios em anos bissextos?"
+    answer: "Se voce nasceu em 29 de fevereiro, a calculadora reconhece que essa data so existe a cada quatro anos. Em anos nao-bissextos, ela trata 1 de marco como o dia em que sua idade aumenta. Assim, uma pessoa nascida em 29 de fevereiro de 2000 completaria 25 anos em 1 de marco de 2025 (ano nao-bissexto). Essa abordagem segue a convencao legal adotada na maioria das jurisdicoes ao redor do mundo, incluindo o Brasil."
+  - question: "Posso calcular minha idade em uma data futura ou passada?"
+    answer: "Sim. Por padrao, a calculadora usa a data de hoje como data-alvo, mas voce pode altera-la para qualquer data desejada. Defina uma data futura para descobrir quantos anos tera no proximo aniversario, em um aniversario especifico ou em um evento planejado. Defina uma data passada para determinar quantos anos tinha quando um evento particular aconteceu. A calculadora funciona da mesma forma independentemente da data-alvo estar no passado ou futuro."
+  - question: "Por que minha idade em dias nao e simplesmente anos vezes 365?"
+    answer: "Um ano civil nem sempre tem 365 dias. Anos bissextos possuem 366 dias e ocorrem aproximadamente a cada quatro anos (com excecoes para anos seculares nao divisiveis por 400). Ao longo de 28 anos, existem tipicamente 7 anos bissextos. Multiplicar sua idade em anos por 365 subestimaria seus dias totais em um dia para cada ano bissexto vivido. A calculadora contabiliza cada ano civil individualmente para fornecer o total correto."
+  - question: "A idade e calculada de forma diferente em outros paises?"
+    answer: "A maioria dos paises, incluindo o Brasil, usa o sistema ocidental onde voce comeca na idade zero e ganha um ano a cada aniversario. Porem, em algumas tradicoes do Leste Asiatico (notavelmente o sistema coreano de idade), uma pessoa e considerada como tendo um ano de idade ao nascer e ganha um ano todo dia 1 de janeiro, independentemente do aniversario. Esta calculadora segue o metodo padrao internacional (ocidental) utilizado no Brasil."
+  - question: "Qual a precisao desta calculadora de idade?"
+    answer: "A calculadora e precisa ate o dia exato dentro do sistema do calendario gregoriano. Ela contabiliza corretamente anos bissextos, variacoes de duracao dos meses (28, 29, 30 ou 31 dias) e a transicao entre meses. A unica fonte de ambiguidade menor surge ao calcular diferencas de meses entre meses com duracoes diferentes. Por exemplo, o periodo de 31 de janeiro a 28 de fevereiro pode ser interpretado como um mes ou como 28 dias. Esta calculadora trata como um mes completo, seguindo a convencao mais comum."
+  - question: "Posso usar esta calculadora para verificacao de idade legal no Brasil?"
+    answer: "Esta calculadora fornece a idade cronologica correta baseada no calendario gregoriano, que e o mesmo sistema usado pelo governo brasileiro. No entanto, para fins legais oficiais, voce deve sempre consultar documentos de identificacao emitidos pelo governo. Limites de idade legais no Brasil incluem 16 anos para voto facultativo, 18 anos para maioridade civil, 21 anos para adocao e 65 anos para aposentadoria por idade. Use esta ferramenta como referencia, nao como documento legal."
+  - question: "Como calcular a idade para inscricao em concursos publicos?"
+    answer: "Concursos publicos no Brasil frequentemente exigem idade minima ou maxima na data de inscricao ou de posse. Esta calculadora pode determinar sua idade exata em qualquer data especifica inserindo sua data de nascimento e a data de referencia do concurso como data-alvo. Verifique sempre o edital do concurso para saber qual data de referencia e utilizada, pois pode ser a data de inscricao, a data da prova ou a data de posse."
+
+examples:
+  - title: "Idade a partir de data de nascimento"
+    scenario: "Uma pessoa nascida em 15 de marco de 1990 verificando sua idade em 15 de fevereiro de 2026"
+    inputs:
+      birthDate: "1990-03-15"
+      targetDate: "2026-02-15"
+    expectedResult: "35 anos, 11 meses e 1 dia"
+    explanation: "De 15 de marco de 1990 a 15 de fevereiro de 2026 sao 35 anos completos (marco 1990 a marco 2025), mais 11 meses (marco 2025 a fevereiro 2026), e 1 dia restante porque 15 de fevereiro ainda nao alcancou 15 de marco."
+  - title: "Aniversario em ano bissexto"
+    scenario: "Uma pessoa nascida em 29 de fevereiro de 2000 verificando sua idade em 15 de fevereiro de 2026"
+    inputs:
+      birthDate: "2000-02-29"
+      targetDate: "2026-02-15"
+    expectedResult: "25 anos, 11 meses e 17 dias"
+    explanation: "De 29 de fevereiro de 2000 a 15 de fevereiro de 2026 sao 25 anos completos e 11 meses mais 17 dias restantes. A calculadora ajusta o limite do mes quando 29 de fevereiro nao existe no ano-alvo."
+  - title: "Idade de crianca pequena"
+    scenario: "Um bebe nascido em 1 de junho de 2023 com idade verificada em 15 de fevereiro de 2026"
+    inputs:
+      birthDate: "2023-06-01"
+      targetDate: "2026-02-15"
+    expectedResult: "2 anos, 8 meses e 14 dias"
+    explanation: "De 1 de junho de 2023 a 15 de fevereiro de 2026 resulta em 2 anos completos (junho 2023 a junho 2025), mais 8 meses completos (junho 2025 a fevereiro 2026) e 14 dias restantes (1 a 15 de fevereiro)."
+
+relatedTools:
+  - "date-difference-calculator"
+  - "word-counter"
+  - "percentage-calculator"
+
+defaults:
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

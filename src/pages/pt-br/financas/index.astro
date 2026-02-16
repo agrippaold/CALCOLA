@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Calculadora Financiamento Imobiliario', slug: '/pt-br/financas/calculadora-financiamento-imobiliario/', description: 'Calcule a parcela mensal, juros totais e compare tabela SAC e Price.' },
+  { name: 'Calculadora Juros Compostos', slug: '/pt-br/financas/calculadora-juros-compostos/', description: 'Veja como seus investimentos crescem com juros compostos ao longo do tempo.' },
+  { name: 'Calculadora Emprestimo', slug: '/pt-br/financas/calculadora-emprestimo/', description: 'Estime parcelas mensais e custo total de emprestimos pessoais e consignados.' },
+  { name: 'Calculadora Poupanca', slug: '/pt-br/financas/calculadora-poupanca/', description: 'Projete o crescimento da sua poupanca com depositos iniciais e aportes mensais.' },
+  { name: 'Financiamento Veiculo', slug: '/pt-br/financas/calculadora-financiamento-veiculo/', description: 'Calcule parcelas do financiamento de carro com entrada e valor de troca.' },
+  { name: 'Calculadora Investimento', slug: '/pt-br/financas/calculadora-investimento/', description: 'Projete o crescimento de investimentos com aportes regulares e rendimento composto.' },
+  { name: 'Calculadora ROI', slug: '/pt-br/financas/calculadora-roi/', description: 'Calcule o retorno sobre investimento percentual para qualquer aplicacao.' },
+  { name: 'Calculadora Inflacao', slug: '/pt-br/financas/calculadora-inflacao/', description: 'Veja como a inflacao corroi o poder de compra e aumenta custos futuros.' },
+  { name: 'Conversor de Moedas', slug: '/pt-br/financas/conversor-moedas/', description: 'Converta entre 10 moedas mundiais com taxas de referencia.' },
+  { name: 'Calculadora Desconto', slug: '/pt-br/financas/calculadora-desconto/', description: 'Encontre o preco final e economia para qualquer porcentagem de desconto.' },
+  { name: 'Calculadora Gorjeta', slug: '/pt-br/financas/calculadora-gorjeta/', description: 'Calcule o valor da gorjeta, total da conta e divisao entre pessoas.' },
+  { name: 'Calculadora Imposto sobre Vendas', slug: '/pt-br/financas/calculadora-imposto-vendas/', description: 'Encontre o valor do imposto e preco total para qualquer aliquota.' },
+  { name: 'Calculadora ICMS', slug: '/pt-br/financas/calculadora-icms/', description: 'Adicione ou extraia ICMS de um preco com aliquotas por estado.' },
+  { name: 'Calculadora Amortizacao', slug: '/pt-br/financas/calculadora-amortizacao/', description: 'Veja a tabela completa de amortizacao com parcelas de principal e juros.' },
+  { name: 'Inflacao Historica', slug: '/pt-br/financas/calculadora-inflacao-historica/', description: 'Veja quanto valia o dinheiro em qualquer ano usando dados reais do CPI.' },
+];
+---
+
+<BaseLayout
+  title="Calculadoras Financeiras - Financiamento, Emprestimo, Juros | CalcHub"
+  description="Calculadoras financeiras gratuitas: financiamento imobiliario, juros compostos, emprestimo, poupanca, investimento. Resultados precisos sem cadastro."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Financas</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Calculadoras Financeiras</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Ferramentas para planejamento de financiamento, analise de emprestimos, crescimento de investimentos e projecoes de poupanca. Todos os calculos usam formulas financeiras padrao.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

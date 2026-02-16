@@ -1,0 +1,79 @@
+id: "word-counter"
+category: "text"
+calculatorComponent: "WordCounter"
+lang: "pt-br"
+
+title: "Contador de Palavras - Conte Palavras, Caracteres e Mais | CalcHub"
+metaDescription: "Conte palavras, caracteres, frases e paragrafos instantaneamente. Ferramenta gratuita de contador de palavras com estimativas de tempo de leitura e tempo de fala."
+h1: "Contador de Palavras"
+slug: "contador-palavras"
+
+primaryKeyword: "contador de palavras"
+secondaryKeywords:
+  - "contador de caracteres"
+  - "ferramenta de contagem de palavras"
+  - "contar palavras online"
+  - "tempo de leitura calculadora"
+  - "contador de frases"
+
+intro: "Seja escrevendo uma redacao com limite rigoroso de palavras, elaborando uma publicacao que precisa caber em restricoes de caracteres, ou preparando um discurso e precisando estimar quanto tempo levara para apresenta-lo, este contador de palavras fornece metricas instantaneas sobre seu texto. Cole ou digite seu conteudo na caixa e veja contagens em tempo real de palavras, caracteres (com e sem espacos), frases, paragrafos e estimativas de tempo de leitura e fala."
+
+howItWorks:
+  title: "Como Funciona a Contagem de Palavras"
+  content: "A contagem de palavras depende da deteccao de limites entre palavras em uma sequencia de texto. A abordagem mais simples divide o texto em caracteres de espaco em branco (espacos, tabulacoes e quebras de linha) e conta os segmentos resultantes. Esta ferramenta vai alem, tratando tambem casos especiais como multiplos espacos consecutivos, espacos em branco no inicio e no final, e caracteres de espaco nao-quebravel que as vezes aparecem em textos copiados de paginas web ou processadores de texto. A contagem de caracteres opera em dois modos. Caracteres com espacos conta cada caractere individual no texto, incluindo espacos, pontuacao e caracteres de quebra de linha. Caracteres sem espacos remove todos os espacos antes de contar, fornecendo apenas as letras, digitos e sinais de pontuacao. Essa distincao importa para plataformas como Twitter (agora X), que conta espacos no limite de caracteres, e para mensagens SMS, que tambem incluem espacos em seus segmentos de 160 caracteres. A deteccao de frases funciona identificando sinais de pontuacao finais: pontos finais, pontos de interrogacao e pontos de exclamacao. O algoritmo filtra abreviacoes (como Sr., Dra., EUA) e numeros decimais (como 3,14) que usam pontos mas nao marcam finais de frase. A contagem de paragrafos divide o texto em quebras de linha duplas, que e o separador padrao de paragrafos em texto simples. Quebras de linha simples dentro de um bloco de texto sao tratadas como parte do mesmo paragrafo. O tempo de leitura e estimado dividindo a contagem total de palavras por 200 palavras por minuto, que e a velocidade media de leitura silenciosa para leitores adultos de portugues, ligeiramente inferior ao ingles devido ao comprimento medio maior das palavras em portugues. O tempo de fala usa uma taxa de 150 palavras por minuto, refletindo um ritmo de apresentacao medido e claro. Ambas as estimativas arredondam para o minuto mais proximo em textos mais longos e mostram segundos para textos mais curtos."
+  formula: "Contagem de Palavras = numero de tokens separados por espaco; Tempo de Leitura = Palavras / 200 ppm"
+  formulaExplanation: "Divida o texto de entrada nos limites de espaco em branco e conte os tokens nao-vazios resultantes para obter a contagem de palavras. Divida a contagem de palavras por 200 para tempo estimado de leitura em minutos ou por 150 para tempo estimado de fala em minutos."
+  academicSource: "Brysbaert, M. (2019). How many words do we read per minute? A review and meta-analysis of reading rate. Journal of Memory and Language, 109, 104047."
+
+faqs:
+  - question: "Como o contador de palavras trata palavras hifenizadas?"
+    answer: "Palavras hifenizadas como bem-vindo ou guarda-chuva sao contadas como uma unica palavra porque nao ha espaco entre as partes. Isso segue a convencao usada pela maioria dos processadores de texto, incluindo Microsoft Word e Google Docs. Em portugues, muitas palavras compostas usam hifen conforme o Acordo Ortografico, e todas sao contadas como uma unica palavra. Se voce precisar que cada componente hifenizado seja contado separadamente para uma diretriz especifica, substitua os hifens por espacos antes de colar o texto."
+  - question: "A contagem de caracteres inclui espacos e pontuacao?"
+    answer: "A ferramenta fornece duas contagens de caracteres. Caracteres com espacos inclui cada caractere do texto: letras, digitos, espacos, tabulacoes, sinais de pontuacao e caracteres especiais. Caracteres sem espacos exclui todos os espacos mas ainda conta pontuacao e caracteres especiais. Essa contagem dupla e util porque diferentes plataformas e guias de estilo definem limites de caracteres de formas diferentes."
+  - question: "Qual a precisao da estimativa de tempo de leitura?"
+    answer: "O tempo de leitura usa 200 palavras por minuto como referencia para portugues, que vem de estudos sobre taxas de leitura. A velocidade de leitura individual varia amplamente com base na complexidade do material, familiaridade do leitor com o topico e se esta fazendo leitura dinamica ou detalhada. Textos tecnicos ou academicos sao tipicamente lidos a 120-180 palavras por minuto, enquanto ficcao leve pode ser lida a 220-280 palavras por minuto. Trate a estimativa como um ponto medio razoavel para conteudo de publico geral."
+  - question: "Posso usar esta ferramenta para linguas alem do portugues?"
+    answer: "O contador de palavras funciona com qualquer idioma que use espacos para separar palavras, incluindo espanhol, frances, alemao, ingles e a maioria das outras linguas europeias. Para idiomas como chines, japones e tailandes que nao usam espacos entre palavras, a ferramenta nao produzira uma contagem de palavras precisa porque depende do espaco como limite de palavra. A contagem de caracteres, no entanto, funciona com precisao para todos os idiomas."
+  - question: "O que conta como uma frase nesta ferramenta?"
+    answer: "Uma frase e definida como um segmento de texto terminando com ponto final, ponto de interrogacao ou ponto de exclamacao. O algoritmo tenta excluir falsos positivos como abreviacoes (Sr., Dra., etc.), iniciais e numeros decimais que usam pontos. No entanto, formatacao nao convencional ou uso intenso de reticencias (...) pode fazer com que a contagem de frases difira ligeiramente de uma contagem manual."
+  - question: "Como os paragrafos sao detectados no texto?"
+    answer: "A ferramenta conta paragrafos procurando quebras de linha duplas (uma linha em branco entre blocos de texto). Esse e o separador padrao de paragrafos em texto simples, e-mail e maioria dos editores de texto. Uma unica quebra de linha sem linha em branco entre blocos de texto nao inicia um novo paragrafo. Se seu texto usa quebras de linha simples para separar paragrafos, a contagem pode ser menor do que o esperado."
+  - question: "Quantas palavras tem uma redacao do ENEM?"
+    answer: "A redacao do ENEM exige entre 7 e 30 linhas, o que equivale aproximadamente a 200 a 500 palavras dependendo do tamanho da caligrafia. O ideal para uma boa redacao e escrever entre 25 e 30 linhas, resultando em cerca de 350 a 500 palavras. Use este contador para praticar suas redacoes e garantir que esteja dentro da faixa adequada. Redacoes com menos de 7 linhas recebem nota zero, portanto monitorar a contagem de palavras durante a pratica e fundamental."
+
+examples:
+  - title: "Post curto de blog"
+    scenario: "Um escritor cola um post de 450 palavras e quer verificar se atende o minimo de 500 palavras"
+    inputs:
+      text: "Um post de blog de 450 palavras sobre dicas de produtividade..."
+      wordCount: 450
+    expectedResult: "450 palavras, ~2.500 caracteres, ~25 frases, ~6 paragrafos, ~2 min tempo de leitura"
+    explanation: "Com 450 palavras, o post fica 50 palavras abaixo da meta de 500. O tempo de leitura estimado de aproximadamente 2 minutos (450 dividido por 200 ppm) sugere uma leitura rapida. O escritor pode ver exatamente quantas palavras adicionar para atingir o requisito minimo."
+  - title: "Redacao academica com limite de caracteres"
+    scenario: "Um estudante escreveu uma carta de motivacao de 2.000 caracteres para uma faculdade que permite maximo de 2.500 caracteres incluindo espacos"
+    inputs:
+      text: "Uma carta de motivacao sobre objetivos de carreira e interesses academicos..."
+      characterCount: 2000
+    expectedResult: "~350 palavras, 2.000 caracteres (com espacos), ~1.650 caracteres (sem espacos), ~2 min tempo de leitura"
+    explanation: "O estudante usou 2.000 dos 2.500 caracteres permitidos incluindo espacos. Restam 500 caracteres para expandir um ponto ou adicionar outra frase."
+  - title: "Roteiro de apresentacao"
+    scenario: "Um palestrante prepara um roteiro e precisa caber em uma janela de 10 minutos a 150 palavras por minuto"
+    inputs:
+      text: "Um discurso preparado sobre tendencias de energias renovaveis..."
+      wordCount: 1500
+    expectedResult: "1.500 palavras, ~8.500 caracteres, ~75 frases, ~15 paragrafos, ~7 min leitura, ~10 min fala"
+    explanation: "Com 1.500 palavras e taxa de fala de 150 palavras por minuto, o discurso se encaixa perfeitamente em um slot de 10 minutos. O tempo de leitura e menor, cerca de 7 minutos, porque a leitura silenciosa (200 ppm) e mais rapida que a apresentacao oral."
+
+relatedTools:
+  - "character-counter"
+  - "age-calculator"
+  - "date-difference-calculator"
+
+defaults:
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

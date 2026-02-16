@@ -1,0 +1,88 @@
+id: "calorie-calculator"
+category: "health"
+calculatorComponent: "CalorieCalculator"
+
+title: "Calculadora de Calorias - Ingestao Diaria e Macros | CalcHub"
+metaDescription: "Calcule suas necessidades caloricas diarias e a distribuicao de macronutrientes para emagrecer, manter o peso ou ganhar massa muscular. Baseada na equacao Mifflin-St Jeor."
+h1: "Calculadora de Calorias Diarias"
+slug: "calculadora-calorias"
+
+primaryKeyword: "calculadora de calorias"
+secondaryKeywords:
+  - "calcular calorias diarias"
+  - "quantas calorias devo comer"
+  - "calculadora calorica"
+  - "calorias para emagrecer"
+
+intro: "Quantas calorias voce realmente precisa por dia? A resposta depende do seu corpo, do seu nivel de atividade e do que voce esta tentando alcancar. Esta calculadora combina a equacao de Mifflin-St Jeor para TMB com seu nivel de atividade e objetivo para fornecer uma meta calorica diaria junto com a distribuicao de macronutrientes mostrando gramas de proteina, carboidratos e gordura. Sem adivinhacao, apenas numeros personalizados que voce pode usar para planejar suas refeicoes dentro da realidade alimentar brasileira."
+
+howItWorks:
+  title: "Como as Necessidades Caloricas Diarias Sao Calculadas"
+  content: "Esta calculadora funciona em tres etapas. Primeiro, calcula sua Taxa Metabolica Basal usando a equacao de Mifflin-St Jeor, que requer seu peso, altura, idade e sexo. Segundo, multiplica sua TMB por um fator de atividade para determinar seu Gasto Energetico Total (GET), que representa as calorias de manutencao. Terceiro, ajusta para seu objetivo: emagrecimento subtrai 500 calorias da manutencao, ganho de peso adiciona 500 calorias, e manutencao mantem o numero como esta. O ajuste de 500 calorias vem do principio amplamente citado do balanco energetico: aproximadamente 7.700 calorias equivalem a um quilo de gordura corporal. Criar um deficit diario de 500 calorias produz aproximadamente meio quilo de perda de gordura por semana. Essa relacao e uma aproximacao que funciona bem no curto e medio prazo, embora a adaptacao metabolica signifique que a taxa real de perda pode desacelerar ao longo de meses de dieta sustentada. A distribuicao de macronutrientes usa uma divisao equilibrada de 30% proteina, 40% carboidratos e 30% gordura. A proteina e definida em 30% porque pesquisas consistentemente mostram que uma ingestao proteica mais alta apoia a preservacao muscular durante a restricao calorica e promove saciedade. A conversao usa 4 calorias por grama para proteina, 4 para carboidratos e 9 para gordura. Essa divisao funciona bem para a maioria das pessoas que buscam condicionamento fisico geral. No entanto, objetivos especificos podem justificar ajustes. Atletas e aqueles focados em hipertrofia podem se beneficiar de 35% a 40% de proteina. Atletas de resistencia frequentemente performam melhor com 50% a 55% de carboidratos. Abordagens low carb tipicamente mudam a proporcao para maior percentual de gordura enquanto mantem a proteina constante. No contexto brasileiro, onde a base alimentar inclui arroz, feijao, carnes, frutas tropicais e farinha de mandioca, e possivel montar um plano alimentar rico e variado dentro dessas metas caloricas. O prato classico brasileiro de arroz com feijao ja fornece uma combinacao proteica complementar de excelente qualidade. Um principio critico: esta calculadora fornece um ponto de partida, nao uma prescricao exata. Variacao metabolica individual, imprecisoes na medicao dos alimentos e flutuacoes diarias na atividade significam que ajustes no mundo real sao sempre necessarios. Comece com esses numeros, acompanhe seu peso e niveis de energia por 2 a 3 semanas e ajuste em 100 a 200 calorias se os resultados nao corresponderem as expectativas."
+  formula: "Calorias = GET ± 500 (baseado no objetivo)"
+  formulaExplanation: "GET = TMB x multiplicador de atividade. Emagrecimento: GET - 500. Manutencao: GET. Ganho de peso: GET + 500. Piso minimo de 1.200 kcal por seguranca."
+  academicSource: "Mifflin, M. D., et al. (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241-247. Recomendacoes de macronutrientes: Guia Alimentar para a Populacao Brasileira, Ministerio da Saude, 2014."
+
+faqs:
+  - question: "Quantas calorias devo comer para emagrecer?"
+    answer: "Para emagrecimento sustentavel, coma 300 a 500 calorias abaixo do seu GET (nivel de manutencao). Isso produz aproximadamente 0,25 a 0,5 kg de perda de gordura por semana. Para a maioria das mulheres, isso significa 1.400 a 1.800 calorias por dia; para a maioria dos homens, 1.800 a 2.200 calorias por dia, embora as necessidades individuais variem com base no tamanho e atividade. Evite cair abaixo de 1.200 calorias por dia sem supervisao medica, pois dietas de muito baixa caloria arriscam deficiencias nutricionais, perda muscular e desaceleracao metabolica. No SUS, nutricionistas podem orientar planos seguros."
+  - question: "Preciso contar calorias para emagrecer?"
+    answer: "Contar calorias nao e estritamente necessario, mas fornece o controle mais preciso sobre seu balanco energetico. Abordagens alternativas incluem metodos de controle de porcao (usando a mao como guia de medida), principios de alimentacao intuitiva ou rastrear apenas a ingestao de proteina enquanto come alimentos integrais livremente. Pesquisas mostram que pessoas que rastreiam sua ingestao, pelo menos inicialmente, desenvolvem melhor consciencia sobre tamanhos de porcao e densidade calorica. Muitos descobrem que 4 a 6 semanas de rastreamento constroem intuicao suficiente para estimar porcoes sem registro continuo."
+  - question: "Qual e a melhor proporcao de macros para emagrecer?"
+    answer: "Pesquisas apoiam maior ingestao de proteinas durante a restricao calorica: 25% a 35% das calorias totais vindas de proteina ajudam a preservar massa magra e aumentam a saciedade. As calorias restantes podem ser divididas entre carboidratos e gorduras com base na preferencia pessoal e adesao. Uma pessoa comendo 1.800 calorias com 30% de proteina consome 135 gramas de proteina por dia. A proporcao especifica de carboidratos para gorduras importa menos do que a ingestao calorica total e proteina adequada para a maioria das pessoas. Escolha a divisao que voce considerar mais facil de manter consistentemente."
+  - question: "Devo comer mais nos dias de treino e menos nos dias de descanso?"
+    answer: "O ciclismo calorico (comer mais nos dias de treino e menos nos dias de descanso) e uma abordagem valida, mas nao obrigatoria para resultados. Seu corpo nao reseta seu balanco energetico a meia-noite; o que importa e sua ingestao media ao longo da semana. Se voce prefere refeicoes maiores nos dias de treino para desempenho e recuperacao, pode comer 200 a 300 calorias acima da sua meta diaria nos dias de treino e 200 a 300 abaixo nos dias de descanso, mantendo o mesmo total semanal. Essa abordagem pode melhorar a qualidade do treino sem alterar os resultados gerais."
+  - question: "Por que nao estou emagrecendo mesmo comendo em deficit calorico?"
+    answer: "As razoes mais comuns sao subestimar a ingestao calorica, superestimar a queima calorica, retencao hidrica mascarando a perda de gordura ou adaptacao metabolica por dieta prolongada. Estudos mostram que pessoas sub-relatam a ingestao alimentar em 30% a 50% em media quando nao pesam as porcoes. Oleos de cozinha, molhos e bebidas frequentemente nao sao contabilizados. Se a balanca nao se moveu em 3 a 4 semanas apesar do rastreamento consistente, reduza a ingestao em mais 100 a 200 calorias, aumente a movimentacao diaria (especialmente caminhadas) ou faca uma pausa na dieta com calorias de manutencao por 1 a 2 semanas antes de retomar."
+  - question: "1.200 calorias e muito pouco?"
+    answer: "Para a maioria dos adultos, 1.200 calorias por dia e o minimo recomendado por organizacoes de saude para adequacao nutricional. Abaixo desse nivel, torna-se dificil atender as necessidades de vitaminas, minerais e proteinas apenas por meio dos alimentos. Individuos muito baixos com niveis baixos de atividade podem ter calorias de manutencao legitimas perto de 1.400 a 1.500, tornando um deficit de 1.200 apropriado. Para individuos mais altos, mais pesados ou mais ativos, 1.200 calorias representam um deficit excessivamente agressivo que aumenta o risco de perda muscular, fadiga, disrupcao hormonal e compulsao alimentar. Uma abordagem mais moderada produz melhores resultados a longo prazo para a grande maioria das pessoas."
+
+examples:
+  - title: "Plano de emagrecimento para mulher sedentaria"
+    scenario: "Uma mulher de 28 anos, 68 kg, 1,65 m, sedentaria, objetivo: emagrecer"
+    inputs:
+      weight: 68
+      height: 165
+      age: 28
+      gender: "female"
+      activity: "sedentary"
+      goal: "lose"
+    expectedResult: "Calorias diarias: 1.227 kcal | Proteina: 92 g | Carboidratos: 123 g | Gordura: 41 g"
+    explanation: "Seu GET de 1.727 menos 500 resulta em uma meta de 1.227 calorias (limitada ao piso minimo de 1.200). A distribuicao de macros fornece proteina adequada (92 g) para apoiar a retencao muscular durante o deficit calorico. No dia a dia, isso equivale a refeicoes bem planejadas com arroz, feijao, frango grelhado, legumes e frutas."
+  - title: "Ganho de massa para homem ativo"
+    scenario: "Um homem de 25 anos, 75 kg, 1,78 m, ativo (6 dias por semana), objetivo: ganhar massa"
+    inputs:
+      weight: 75
+      height: 178
+      age: 25
+      gender: "male"
+      activity: "active"
+      goal: "gain"
+    expectedResult: "Calorias diarias: 3.573 kcal | Proteina: 268 g | Carboidratos: 357 g | Gordura: 119 g"
+    explanation: "Com um GET de 3.073 mais um superavit de 500 calorias, ele precisa de 3.573 calorias diarias. Os 268 gramas de proteina apoiam a sintese proteica muscular durante seu programa de treinamento intensivo. Fontes proteicas acessiveis no Brasil incluem frango, ovos, carne bovina e whey protein."
+  - title: "Manutencao para adulto moderadamente ativo"
+    scenario: "Um homem de 40 anos, 82 kg, 1,75 m, exercicio moderado 4 dias por semana"
+    inputs:
+      weight: 82
+      height: 175
+      age: 40
+      gender: "male"
+      activity: "moderate"
+      goal: "maintain"
+    expectedResult: "Calorias diarias: 2.668 kcal | Proteina: 200 g | Carboidratos: 267 g | Gordura: 89 g"
+    explanation: "Em manutencao, ele come aproximadamente 2.668 calorias para sustentar seu peso atual e nivel de atividade. Os 200 gramas de proteina apoiam a recuperacao do exercicio moderado enquanto mantem a massa magra."
+
+relatedTools:
+  - "tdee-calculator"
+  - "bmr-calculator"
+  - "macro-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

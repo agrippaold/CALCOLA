@@ -1,0 +1,80 @@
+id: "temperature-converter"
+category: "conversions"
+calculatorComponent: "TemperatureConverter"
+lang: "pt-br"
+
+title: "Conversor de Temperatura - Celsius, Fahrenheit, Kelvin | CalcHub"
+metaDescription: "Converta temperaturas entre Celsius, Fahrenheit e Kelvin instantaneamente. Conversor de temperatura gratuito com pontos de referencia e formulas de conversao."
+h1: "Conversor de Temperatura"
+slug: "conversor-temperatura"
+
+primaryKeyword: "conversor de temperatura"
+secondaryKeywords:
+  - "celsius para fahrenheit"
+  - "fahrenheit para celsius"
+  - "conversao de temperatura"
+  - "celsius para kelvin"
+
+intro: "Converter entre escalas de temperatura e uma daquelas tarefas cotidianas que confunde as pessoas porque as formulas nao sao intuitivas. Diferentemente de comprimento ou peso, as escalas de temperatura nao compartilham um ponto zero comum, tornando as conversoes menos diretas do que simples multiplicacoes. Este conversor trabalha com as tres principais escalas de temperatura: Celsius, Fahrenheit e Kelvin. Insira um valor em qualquer escala e veja os equivalentes nas tres escalas instantaneamente."
+
+howItWorks:
+  title: "Como Funciona a Conversao de Temperatura"
+  content: "As tres escalas de temperatura diferem em seus pontos zero e no tamanho dos graus. Celsius (tambem chamado centigrado) define 0 como o ponto de congelamento da agua e 100 como o ponto de ebulicao sob pressao atmosferica padrao. Anders Celsius criou essa escala em 1742, embora originalmente tenha definido 0 como ebulicao e 100 como congelamento, tendo sido invertida apos sua morte. Fahrenheit, desenvolvida por Daniel Gabriel Fahrenheit em 1724, define 32 como o ponto de congelamento da agua e 212 como o ponto de ebulicao. A escala foi originalmente baseada em tres pontos de referencia: 0 para uma solucao de salmoura (a temperatura mais fria que Fahrenheit conseguia produzir de forma confiavel), 32 para agua com gelo e 96 para a temperatura corporal (posteriormente revisada para 98,6). Essa historia explica os numeros aparentemente arbitrarios. Kelvin, a unidade SI de temperatura, comeca no zero absoluto, o ponto teorico onde todo movimento molecular cessa (menos 273,15 graus Celsius). Cada grau Kelvin tem o mesmo tamanho que um grau Celsius, portanto as conversoes entre eles simplesmente adicionam ou subtraem 273,15. Lord Kelvin propos essa escala em 1848 para trabalho cientifico porque nao possui valores negativos. Para converter Celsius em Fahrenheit, multiplique por 9/5 e adicione 32. Para o caminho inverso, subtraia 32 e multiplique por 5/9. O fator 9/5 existe porque ha 180 graus Fahrenheit entre o congelamento e a ebulicao da agua (212 menos 32), mas apenas 100 graus Celsius, resultando na razao 180/100 ou 9/5. Um atalho util: menos 40 e o mesmo tanto em Celsius quanto em Fahrenheit. Para conversoes mentais rapidas de Celsius para Fahrenheit, dobre o numero e adicione 30. Isso fornece resultados aproximados: 20 graus C se torna cerca de 70 graus F (real: 68), 30 graus C se torna cerca de 90 graus F (real: 86). A aproximacao funciona melhor entre 0 e 40 graus Celsius, abrangendo a maioria das temperaturas climaticas. No Brasil, a escala Celsius e a padrao para uso diario, previsao do tempo, culinaria e aplicacoes medicas."
+  formula: "°F = °C x 9/5 + 32 | °C = (°F - 32) x 5/9 | K = °C + 273,15"
+  formulaExplanation: "Celsius para Fahrenheit: multiplique por 1,8 e adicione 32. Fahrenheit para Celsius: subtraia 32 e multiplique por 0,5556. Conversoes para Kelvin adicionam ou subtraem 273,15 do Celsius."
+  academicSource: "Bureau International des Poids et Mesures. (2019). The International System of Units (SI), 9th edition."
+
+faqs:
+  - question: "Qual a maneira mais facil de converter Celsius para Fahrenheit mentalmente?"
+    answer: "Para estimativas rapidas, dobre a temperatura em Celsius e adicione 30. Isso fornece resultados com poucos graus de diferenca para temperaturas comuns: 10 graus C se torna cerca de 50 graus F (exato: 50), 20 graus C se torna cerca de 70 graus F (exato: 68), 30 graus C se torna cerca de 90 graus F (exato: 86). Para mais precisao, multiplique por 2, subtraia 10% do resultado e adicione 32. Esses atalhos sao uteis para viagens internacionais, culinaria e entender previsoes do tempo em escalas diferentes."
+  - question: "Por que os Estados Unidos ainda usam Fahrenheit?"
+    answer: "Os Estados Unidos, junto com poucos outros paises, continuam usando Fahrenheit principalmente devido a infraestrutura estabelecida e familiaridade cultural. Os EUA tentaram a metricacao nos anos 1970 com a Lei de Conversao Metrica, mas sem requisitos obrigatorios, a adocao permaneceu voluntaria e incompleta. Fahrenheit persiste na vida cotidiana (clima, culinaria, termostatos) enquanto Celsius e Kelvin dominam contextos cientificos, medicos e militares dentro dos EUA."
+  - question: "O que e o zero absoluto e por que ele importa?"
+    answer: "O zero absoluto (0 Kelvin, menos 273,15 graus Celsius, menos 459,67 graus Fahrenheit) e a menor temperatura teoricamente possivel, onde as particulas possuem energia cinetica minima. Nenhum objeto jamais foi resfriado exatamente ao zero absoluto, embora laboratorios tenham alcancado bilionesimos de grau acima dele. Importa porque a escala Kelvin comeca nesse ponto, sendo a unica escala com um verdadeiro ponto zero onde zero significa ausencia de energia termica, tornando-a essencial para calculos cientificos envolvendo razoes de temperatura."
+  - question: "Em que temperatura Celsius e Fahrenheit sao iguais?"
+    answer: "As escalas Celsius e Fahrenheit se cruzam em menos 40 graus. Nesse ponto, ambos os termometros mostram o mesmo numero. Voce pode verificar inserindo menos 40 em qualquer formula de conversao: (menos 40 vezes 9/5) mais 32 igual a menos 72 mais 32 igual a menos 40. Esse fato serve como um ponto de referencia util e funciona como um mnemonico pratico ao lembrar a relacao de conversao entre as duas escalas."
+  - question: "Qual escala de temperatura devo usar na culinaria?"
+    answer: "No Brasil, use sempre Celsius, que e o padrao nos fornos e receitas nacionais. Se seguir receitas americanas em Fahrenheit, sera necessario converter. Equivalencias comuns que vale memorizar: 180 graus C equivale a 350 graus F (panificacao padrao), 200 graus C equivale a 400 graus F (assados), 220 graus C equivale a 425 graus F (gratinados), e 230 graus C equivale a 450 graus F (pizza e paes). Muitos fornos modernos exibem ambas as escalas."
+  - question: "Como a conversao de temperatura difere da conversao de comprimento ou peso?"
+    answer: "Conversoes de comprimento e peso sao proporcionais (puramente multiplicativas): dobrar os centimetros sempre dobra as polegadas. Conversoes de temperatura envolvem tanto multiplicacao quanto adicao porque as escalas possuem pontos zero diferentes. Zero graus Celsius nao equivale a zero graus Fahrenheit. Esse deslocamento significa que voce nao pode simplesmente multiplicar por um fator de conversao. Tambem significa que diferencas de temperatura convertem diferentemente de temperaturas absolutas: uma diferenca de 10 graus Celsius equivale a uma diferenca de 18 graus Fahrenheit, independentemente do ponto de partida."
+
+examples:
+  - title: "Verificacao de temperatura corporal"
+    scenario: "Convertendo a temperatura corporal normal de 37 graus Celsius para Fahrenheit"
+    inputs:
+      temperature: 37
+      from: "celsius"
+      to: "fahrenheit"
+    expectedResult: "37°C = 98,60°F"
+    explanation: "A temperatura corporal humana normal de 37 graus C equivale a 98,6 graus F. Febre e geralmente considerada a partir de 38 graus C (100,4 graus F). Febre de nivel emergencial comeca por volta de 40 graus C (104 graus F)."
+  - title: "Temperatura de inverno no sul do Brasil"
+    scenario: "Entendendo uma temperatura de menos 4 graus Celsius registrada em Sao Joaquim-SC em Fahrenheit"
+    inputs:
+      temperature: -4
+      from: "celsius"
+      to: "fahrenheit"
+    expectedResult: "-4°C = 24,80°F"
+    explanation: "Menos 4 graus Celsius equivale a 24,8 graus Fahrenheit, representando condicoes de frio extremo para padroes brasileiros. Em cidades serranas de Santa Catarina e Rio Grande do Sul, temperaturas negativas ocorrem durante o inverno e podem causar geadas intensas."
+  - title: "Temperatura cientifica"
+    scenario: "Convertendo a temperatura ambiente (293,15 K) para Celsius e Fahrenheit"
+    inputs:
+      temperature: 293.15
+      from: "kelvin"
+      to: "celsius"
+    expectedResult: "293,15 K = 20,00°C = 68,00°F"
+    explanation: "A temperatura ambiente padrao em contextos cientificos e 293,15 Kelvin, equivalente a 20 graus Celsius ou 68 graus Fahrenheit. Experimentos de laboratorio frequentemente especificam temperaturas em Kelvin para evitar confusao com valores negativos de Celsius."
+
+relatedTools:
+  - "volume-converter"
+  - "length-converter"
+  - "weight-converter"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import BodyFatCalculator from '../../../components/calculators/health/BodyFatCalculator';
+
+const lang = 'pt-br';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'body-fat-calculator' && t.id.startsWith('pt-br/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/pt-br/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <BodyFatCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

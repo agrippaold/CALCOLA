@@ -1,0 +1,84 @@
+id: "discount-calculator"
+category: "finance"
+calculatorComponent: "DiscountCalculator"
+
+title: "Calculadora de Desconto - Preço Final e Economia | CalcHub"
+metaDescription: "Calcule o preço final após um desconto percentual. Veja exatamente quanto você economiza em qualquer promoção e compare ofertas antes de comprar."
+h1: "Calculadora de Desconto"
+slug: "calculadora-desconto"
+
+primaryKeyword: "calculadora de desconto"
+secondaryKeywords:
+  - "calcular desconto"
+  - "preço com desconto"
+  - "desconto percentual calculadora"
+  - "calculadora de promoção"
+  - "quanto economizo com desconto"
+
+intro: "Promoções, liquidações, cupons de desconto e ofertas relâmpago fazem parte do dia a dia do consumidor brasileiro, mas nem sempre é fácil calcular se o negócio realmente vale a pena. Esta calculadora de desconto elimina as dúvidas ao mostrar o preço final exato e a economia em reais para qualquer percentual de desconto aplicado. Insira o preço original e a porcentagem de desconto para ver instantaneamente quanto você vai pagar e quanto vai economizar. Use para comparar ofertas concorrentes, verificar se um cupom de desconto compensa, avaliar promoções de Black Friday ou conferir se o caixa da loja aplicou o desconto corretamente no seu produto."
+
+howItWorks:
+  title: "Como os Descontos São Calculados"
+  content: "O cálculo de um desconto percentual é uma operação aritmética direta: multiplique o preço original pela taxa de desconto para encontrar o valor da economia, depois subtraia do preço original para obter o custo final. Para um produto de R$ 200,00 com 30% de desconto, a economia é R$ 200,00 vezes 0,30, que resulta em R$ 60,00, tornando o preço final R$ 140,00. Onde as coisas ficam interessantes, e onde a maioria dos consumidores se confunde, é com descontos acumulados ou progressivos. Se uma loja anuncia 50% de desconto mais um desconto adicional de 20%, o desconto total não é 70%. O segundo desconto é aplicado sobre o preço já reduzido. Partindo de R$ 200,00, os primeiros 50% reduzem para R$ 100,00, depois 20% sobre R$ 100,00 removem mais R$ 20,00, chegando a R$ 80,00. O desconto combinado real é de 60%, não 70%. Esse equívoco é tão comum que alguns varejistas utilizam essa estratégia deliberadamente, fazendo as ofertas parecerem maiores do que realmente são. O desconto progressivo é uma tática muito popular no varejo brasileiro, especialmente durante a Black Friday e datas comemorativas. Funciona assim: compre 1 peça com 10% de desconto, 2 peças com 20% e 3 ou mais peças com 30%. Parece vantajoso, mas é essencial calcular se o desconto por unidade realmente compensa a compra de itens adicionais que você talvez não precise. A precificação psicológica desempenha um papel fundamental no varejo. Preços terminados em ,99 ou ,90 criam a percepção de barganha, mesmo quando a economia real é mínima. Um produto de R$ 49,99 com 10% de desconto fica R$ 44,99, uma economia de R$ 5,00, que pode não justificar o esforço de ir até a loja ou pagar o frete. Comparar o preço por unidade, por litro ou por quilograma é frequentemente mais informativo que o percentual de desconto, especialmente para itens de supermercado e higiene pessoal. Uma embalagem maior com 10% de desconto pode ainda custar mais por unidade que uma embalagem menor no preço regular. No Brasil, os sites de comparação de preços e extensões de navegador como Zoom, Buscapé e Pelando são ferramentas valiosas para verificar o histórico de preços e identificar se uma promoção representa economia genuína. Durante a Black Friday brasileira, é comum o fenômeno apelidado de 'Black Fraude', onde alguns varejistas aumentam os preços nas semanas anteriores para depois anunciar grandes descontos que na verdade refletem o preço original ou até mais. Acompanhar o histórico de preços por pelo menos 30 dias antes de grandes eventos promocionais é a melhor forma de garantir que você está realmente economizando. Ao avaliar qualquer oferta, considere a economia absoluta em reais, e não apenas o percentual. Um desconto de 5% em um eletrodoméstico de R$ 3.000 economiza R$ 150, enquanto 25% de desconto em um produto de R$ 40 economiza apenas R$ 10. O percentual menor gera a maior economia real no seu bolso."
+  formula: "Preço Final = Preço Original x (1 - Desconto / 100)"
+  formulaExplanation: "Economia = Preço Original x (Desconto / 100)"
+  academicSource: "Procon-SP. (2025). Guia de Direitos do Consumidor em Promoções."
+
+faqs:
+  - question: "Como funcionam os descontos acumulados ou progressivos?"
+    answer: "Descontos acumulados significam a aplicação de múltiplas reduções percentuais em sequência. Cada desconto é calculado sobre o preço restante após o anterior, e não sobre o preço original. Por exemplo, 30% de desconto seguido de 10% adicional sobre um produto de R$ 100,00 resulta em R$ 70,00 após o primeiro desconto e depois R$ 63,00 após o segundo. O desconto efetivo total é de 37%, não 40%. A ordem dos descontos não importa matematicamente, mas o desconto combinado é sempre menor que a soma dos percentuais individuais."
+
+  - question: "Os impostos são calculados antes ou depois do desconto?"
+    answer: "No Brasil, os impostos sobre produtos como ICMS e IPI são calculados com base no preço efetivo da transação, ou seja, após a aplicação dos descontos incondicionais. Se um produto de R$ 100,00 está com 20% de desconto, os impostos incidem sobre R$ 80,00, não sobre o preço original. Já os descontos condicionais, como aqueles vinculados a pagamento antecipado ou cumprimento de metas, podem ter tratamento fiscal diferente. Para compras do dia a dia, o preço no caixa já inclui os impostos embutidos."
+
+  - question: "Como saber se uma promoção de Black Friday é realmente vantajosa?"
+    answer: "Utilize ferramentas de acompanhamento de preços como Buscapé, Zoom ou Pelando para verificar o histórico de preços do produto nos últimos 30 a 90 dias. Compare o preço promocional com o menor preço registrado no período, e não apenas com o preço de etiqueta original. Desconfie de descontos muito altos em produtos que raramente têm promoções significativas. Verifique se a loja é confiável consultando o Reclame Aqui. E lembre-se: a melhor promoção é não comprar algo que você não precisa, independentemente do percentual de desconto."
+
+  - question: "O que é o desconto por pagamento à vista no Brasil?"
+    answer: "No Brasil, muitos lojistas oferecem descontos especiais para pagamento à vista, seja em dinheiro, PIX ou débito. Isso acontece porque o comerciante evita as taxas das operadoras de cartão de crédito, que podem variar de 2% a 5% por transação, além de receber o dinheiro imediatamente em vez de esperar 30 dias pela antecipação. Descontos de 5% a 15% para pagamento via PIX se tornaram extremamente comuns no comércio brasileiro, representando economia real e imediata para o consumidor."
+
+  - question: "Como calcular o desconto real em um parcelamento sem juros?"
+    answer: "No Brasil, o parcelamento sem juros é amplamente oferecido, mas frequentemente o preço parcelado é o preço cheio, enquanto o pagamento à vista recebe desconto adicional. Para calcular o custo real do parcelamento, compare o preço à vista com o valor total parcelado. Se um produto custa R$ 1.000 à vista ou R$ 1.200 em 12x sem juros, o parcelamento embute 20% de custo. Se o preço é idêntico, o parcelamento sem juros é vantajoso porque você pode investir o dinheiro restante e obter rendimento enquanto paga as parcelas."
+
+  - question: "Cupons de desconto de aplicativos realmente valem a pena?"
+    answer: "Cupons de aplicativos de delivery, e-commerce e marketplace podem representar economia real, especialmente para novos usuários ou em compras acima de determinado valor mínimo. Porém, é importante verificar se o preço do produto no aplicativo já não está inflacionado em relação à loja física ou ao site da marca. Muitos restaurantes em apps de delivery cobram de 15% a 30% a mais que o preço no balcão. Um cupom de 20% pode simplesmente anular essa diferença. Compare sempre o preço final com cupom no app versus o preço direto no estabelecimento ou site oficial."
+
+examples:
+  - title: "Desconto em eletrônico na Black Friday"
+    scenario: "Smartphone de R$ 2.499,00 com 20% de desconto"
+    inputs:
+      originalPrice: 2499.00
+      discount: 20
+    expectedResult: "Preço final: R$ 1.999,20 | Você economiza: R$ 499,80"
+    explanation: "Um desconto de 20% sobre R$ 2.499,00 gera uma economia de R$ 499,80, reduzindo o preço para R$ 1.999,20. Para itens de alto valor como smartphones, verifique o histórico de preços antes de comprar para garantir que o desconto é genuíno. Em sites como Zoom e Buscapé, você pode acompanhar a evolução do preço ao longo dos meses."
+
+  - title: "Promoção em roupas no shopping"
+    scenario: "Camiseta de R$ 89,90 com 30% de desconto"
+    inputs:
+      originalPrice: 89.90
+      discount: 30
+    expectedResult: "Preço final: R$ 62,93 | Você economiza: R$ 26,97"
+    explanation: "Com 30% de desconto, a camiseta de R$ 89,90 sai por R$ 62,93, uma economia de R$ 26,97. Este é um nível de desconto comum em liquidações de troca de coleção nas lojas brasileiras. Se a loja oferecer desconto adicional no PIX, o preço final pode cair ainda mais, tornando a compra bastante vantajosa."
+
+  - title: "Cupom de desconto em compras online"
+    scenario: "Compra de R$ 350,00 com cupom de 15% de desconto"
+    inputs:
+      originalPrice: 350.00
+      discount: 15
+    expectedResult: "Preço final: R$ 297,50 | Você economiza: R$ 52,50"
+    explanation: "Um cupom de 15% aplicado sobre R$ 350,00 resulta em economia de R$ 52,50, com preço final de R$ 297,50. Verifique se o cupom tem valor mínimo de compra, prazo de validade e se é válido para todas as categorias de produtos. Alguns cupons excluem itens já em promoção ou categorias específicas como eletrônicos e livros."
+
+relatedTools:
+  - "loan-calculator"
+  - "savings-calculator"
+  - "currency-converter"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

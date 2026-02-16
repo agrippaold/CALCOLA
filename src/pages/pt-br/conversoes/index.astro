@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'pt-br';
+
+const tools = [
+  { name: 'Conversor Temperatura', slug: '/pt-br/conversoes/conversor-temperatura/', description: 'Converta entre Celsius, Fahrenheit e Kelvin com pontos de referencia.' },
+  { name: 'Conversor Volume', slug: '/pt-br/conversoes/conversor-volume/', description: 'Converta entre litros, mililitros, galoes, copos e outras unidades de volume.' },
+  { name: 'Conversor Comprimento', slug: '/pt-br/conversoes/conversor-comprimento/', description: 'Converta entre metros, centimetros, pes, polegadas, quilometros e milhas.' },
+  { name: 'Conversor Peso', slug: '/pt-br/conversoes/conversor-peso/', description: 'Converta entre quilogramas, gramas, libras, oncas e toneladas.' },
+];
+---
+
+<BaseLayout
+  title="Conversores de Unidades - Temperatura, Volume, Comprimento, Peso | CalcHub"
+  description="Conversores de unidades gratuitos: temperatura, volume, comprimento e peso. Converta entre sistemas metrico e imperial instantaneamente."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/pt-br/" class="hover:text-blue-600">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Conversoes</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">Conversores de Unidades</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Conversores precisos para temperatura, volume, comprimento e peso. Converta entre unidades metricas e imperiais instantaneamente.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

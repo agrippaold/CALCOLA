@@ -1,0 +1,76 @@
+id: "pregnancy-due-date-calculator"
+category: "health"
+calculatorComponent: "PregnancyCalculator"
+
+title: "Calculadora de Data Provavel do Parto (DPP) | CalcHub"
+metaDescription: "Calcule a data provavel do parto e acompanhe marcos da gestacao. Insira a data da ultima menstruacao para ver a DPP, trimestre e idade gestacional."
+h1: "Calculadora de Data Provavel do Parto (DPP)"
+slug: "calculadora-data-parto"
+
+primaryKeyword: "calculadora data provavel parto"
+secondaryKeywords:
+  - "data provavel do parto"
+  - "calculadora gestacao"
+  - "calcular dpp"
+  - "semanas de gestacao calculadora"
+
+intro: "Quer saber quando seu bebe vai nascer? Esta calculadora de data provavel do parto utiliza a data da sua ultima menstruacao para estimar a data esperada de nascimento, a idade gestacional atual, o progresso do trimestre e os principais marcos da gravidez. Embora apenas cerca de 5% dos bebes nascam na data prevista exata, ter uma data estimada ajuda voce e seu medico a planejar o pre-natal, monitorar o desenvolvimento fetal e se preparar para o parto. No SUS, o acompanhamento pre-natal e gratuito e segue as mesmas diretrizes de calculo. Insira a data do primeiro dia da sua ultima menstruacao abaixo."
+
+howItWorks:
+  title: "Como o Calculo da Data Provavel do Parto Funciona"
+  content: "O metodo mais utilizado para estimar a data provavel do parto e a Regra de Naegele, nomeada em homenagem ao obstetra alemao Franz Naegele que a publicou em 1812. A regra e direta: tome o primeiro dia da ultima menstruacao (DUM), adicione 280 dias (40 semanas) e voce obtem a data provavel do parto (DPP). Isso tambem pode ser calculado adicionando um ano, subtraindo tres meses e adicionando sete dias a data da DUM. O numero de 280 dias assume um ciclo menstrual de 28 dias com ovulacao ocorrendo no dia 14. Como a concepcao tipicamente acontece ao redor da ovulacao, a duracao real da gravidez da concepcao ao nascimento e de aproximadamente 266 dias (38 semanas), mas como a data exata da concepcao raramente e conhecida, a convencao medica conta a partir da DUM. Isso significa que as duas primeiras semanas de uma gravidez, conforme contadas pela idade gestacional, ocorrem antes da concepcao de fato. No Brasil, o Ministerio da Saude e o SUS utilizam a Regra de Naegele como metodo padrao no cartao da gestante, documento entregue na primeira consulta de pre-natal. A idade gestacional e a idade fetal sao portanto medidas diferentes. A idade gestacional conta a partir da DUM e e usada em todos os contextos medicos. A idade fetal (tambem chamada idade embrionaria ou concepcional) conta a partir da data estimada de fertilizacao e e aproximadamente duas semanas menor que a idade gestacional. A gravidez e dividida em tres trimestres, cada um representando aproximadamente 13 semanas. O primeiro trimestre abrange as semanas 1 a 12 e e quando o ovo fertilizado se implanta, os orgaos principais comecam a se formar e o risco de aborto espontaneo e mais alto. O segundo trimestre cobre as semanas 13 a 26, frequentemente chamado de periodo mais confortavel, quando os enjoos matinais tipicamente diminuem, o bebe comeca a se mover perceptivelmente e a ultrassonografia morfologica e realizada por volta da semana 20. O terceiro trimestre vai da semana 27 ate o parto, periodo no qual o bebe ganha a maior parte do peso de nascimento, os pulmoes amadurecem e o corpo se prepara para o trabalho de parto. Por que a data provavel do parto e apenas uma estimativa? Varios fatores contribuem para a incerteza. Primeiro, nem todas as mulheres tem ciclos de 28 dias. Uma mulher com ciclo de 35 dias provavelmente ovulou por volta do dia 21 em vez do dia 14, empurrando a data real de concepcao uma semana inteira alem do que a Regra de Naegele assume. Segundo, mesmo dentro de um ciclo regular, o momento da ovulacao pode variar em varios dias de mes para mes. Terceiro, a variacao individual na taxa de crescimento fetal significa que alguns bebes se desenvolvem mais rapido ou mais devagar que a media. Dados estatisticos mostram que apenas cerca de 5% dos bebes chegam na data prevista exata. Aproximadamente 80% dos partos ocorrem dentro de uma janela de duas semanas antes a duas semanas apos a data estimada. A gestacao a termo e agora definida como 39 semanas e 0 dias ate 40 semanas e 6 dias. No Brasil, o pre-natal pelo SUS preconiza no minimo seis consultas durante a gestacao, com ultrassonografia no primeiro trimestre para datacao mais precisa. A ultrassonografia de primeiro trimestre mede o comprimento cabeca-nadega do embriao e pode estimar a idade gestacional com precisao de 5 a 7 dias. Se a data baseada na ultrassonografia diferir da data baseada na DUM em mais de 7 dias no primeiro trimestre, a maioria dos profissionais ajustara a data provavel do parto para corresponder a ultrassonografia."
+  formula: "DPP = DUM + 280 dias"
+  formulaExplanation: "Data da Ultima Menstruacao mais 280 dias (40 semanas). Alternativamente: DUM + 1 ano - 3 meses + 7 dias. Idade gestacional = data atual menos data da DUM. Idade fetal = idade gestacional menos 14 dias."
+  academicSource: "American College of Obstetricians and Gynecologists (ACOG). Committee Opinion No. 700: Methods for Estimating the Due Date. Obstetrics & Gynecology, 2017. Ministerio da Saude do Brasil. Caderneta da Gestante. Naegele, F.C. (1812). Lehrbuch der Geburtshilfe."
+
+faqs:
+  - question: "Quao precisa e a data provavel do parto calculada a partir da ultima menstruacao?"
+    answer: "Uma DPP baseada na DUM e uma estimativa com margem de aproximadamente duas semanas para a maioria das mulheres. A precisao depende fortemente da regularidade do seu ciclo menstrual. Mulheres com ciclos consistentes de 28 dias obtem as estimativas mais precisas baseadas na DUM. Aquelas com ciclos irregulares (variando mais de uma semana entre os meses) podem descobrir que sua data baseada na DUM esta errada por uma semana ou mais. A datacao por ultrassonografia de primeiro trimestre e considerada mais precisa, com precisao dentro de 5 a 7 dias. No SUS, a ultrassonografia do primeiro trimestre e oferecida gratuitamente e pode ajustar a DPP."
+  - question: "O que significa idade gestacional?"
+    answer: "A idade gestacional e a medida medica padrao de quanto a gravidez progrediu, contada a partir do primeiro dia da sua ultima menstruacao e nao a partir da concepcao. Isso significa que a idade gestacional inclui aproximadamente duas semanas antes da fertilizacao realmente ocorrer. Quando um medico diz que voce esta com 8 semanas de gravidez, ele quer dizer 8 semanas de idade gestacional, o que corresponde a aproximadamente 6 semanas desde que o embriao foi concebido. Todos os marcos pre-natais, graficos de desenvolvimento fetal e diretrizes de momento do parto usam a idade gestacional como ponto de referencia."
+  - question: "Por que tao poucos bebes nascem na data prevista exata?"
+    answer: "Apenas cerca de 5% dos bebes nascem na data provavel do parto exata porque o calculo assume duracao media do ciclo, momento medio de ovulacao e taxa media de crescimento fetal. Na realidade, essas tres variaveis diferem de pessoa para pessoa. A ovulacao pode ocorrer em qualquer lugar do dia 10 ao dia 20, mesmo em mulheres com ciclos regulares. As taxas de crescimento fetal sao influenciadas por genetica, funcao placentaria, nutricao materna e muitos outros fatores. A DPP e melhor entendida como o centro de uma janela provavel de parto abrangendo aproximadamente quatro semanas (de 38 a 42 semanas de idade gestacional)."
+  - question: "Quais sao os tres trimestres e seus principais marcos?"
+    answer: "O primeiro trimestre (semanas 1 a 12) cobre a implantacao, formacao de orgaos e deteccao precoce dos batimentos cardiacos por volta da semana 6. Enjoos matinais sao mais comuns nesse periodo. O segundo trimestre (semanas 13 a 26) traz a ultrassonografia morfologica por volta da semana 20, voce pode comecar a sentir movimentos fetais entre as semanas 16 e 22, e o risco de aborto espontaneo cai significativamente. O terceiro trimestre (semanas 27 a 40) e quando o bebe ganha a maior parte do peso, os pulmoes amadurecem para respirar fora do utero e o corpo se prepara para o trabalho de parto. As consultas de pre-natal se tornam mais frequentes nesse periodo."
+  - question: "A duracao do ciclo afeta minha data provavel do parto?"
+    answer: "Sim, a duracao do ciclo afeta diretamente a precisao de uma DPP baseada na DUM. A Regra de Naegele assume um ciclo de 28 dias com ovulacao no dia 14. Se seu ciclo e mais longo, digamos 35 dias, a ovulacao provavelmente ocorreu por volta do dia 21 em vez do dia 14, significando que sua data real do parto seria cerca de uma semana mais tarde do que o calculo padrao sugere. Da mesma forma, ciclos mais curtos (como 24 dias) podem significar que a ovulacao ocorreu antes e sua DPP poderia ser alguns dias antes. Mencione a duracao do seu ciclo ao seu obstetra para maior precisao no calculo."
+  - question: "Quando a gravidez e considerada a termo?"
+    answer: "O Colegio Americano de Obstetras e Ginecologistas define a gestacao a termo como 39 semanas e 0 dias ate 40 semanas e 6 dias de idade gestacional. Termo precoce e de 37 semanas e 0 dias ate 38 semanas e 6 dias. Termo tardio e de 41 semanas e 0 dias ate 41 semanas e 6 dias. Pos-termo comeca com 42 semanas e 0 dias. Essas distincoes importam porque bebes nascidos com 39 a 40 semanas tem melhores desfechos em media do que aqueles nascidos com 37 a 38 semanas. No Brasil, a Federacao Brasileira de Ginecologia e Obstetricia (FEBRASGO) segue diretrizes similares, e partos eletivos antes de 39 semanas nao sao recomendados sem indicacao medica."
+
+examples:
+  - title: "Calculo padrao pela DUM"
+    scenario: "Uma mulher cuja ultima menstruacao comecou em 1 de junho de 2026, com ciclo regular de 28 dias"
+    inputs:
+      lastMenstrualPeriod: "2026-06-01"
+      cycleLength: 28
+    expectedResult: "Data provavel do parto: 8 de marco de 2027 | Idade gestacional varia conforme a data do calculo"
+    explanation: "Adicionando 280 dias a 1 de junho de 2026 resulta em uma data provavel do parto de 8 de marco de 2027. Com um ciclo padrao de 28 dias, a ovulacao provavelmente ocorreu por volta de 15 de junho (dia 14). O primeiro trimestre se estende ate 24 de agosto, o segundo trimestre ate 30 de novembro, e o terceiro trimestre ate a DPP. No SUS, a primeira consulta de pre-natal deve ocorrer idealmente ainda no primeiro trimestre."
+  - title: "Ajuste para ciclo mais longo"
+    scenario: "Uma mulher cuja ultima menstruacao comecou em 15 de maio de 2026, com ciclo regular de 35 dias"
+    inputs:
+      lastMenstrualPeriod: "2026-05-15"
+      cycleLength: 35
+    expectedResult: "DPP ajustada: 26 de fevereiro de 2027 (calculo padrao daria 19 de fevereiro de 2027)"
+    explanation: "O calculo padrao pela DUM resulta em 19 de fevereiro de 2027 (280 dias a partir de 15 de maio). Porem, com um ciclo de 35 dias, a ovulacao provavelmente ocorreu por volta do dia 21 (5 de junho) em vez do dia 14 (29 de maio). Essa diferenca de 7 dias desloca a DPP ajustada para aproximadamente 26 de fevereiro de 2027. Esse exemplo mostra por que informar a duracao do seu ciclo ao obstetra melhora a precisao da data estimada."
+  - title: "Gestante no segundo trimestre"
+    scenario: "Uma mulher cuja ultima menstruacao comecou em 1 de setembro de 2025, com ciclo de 28 dias, consultando em 15 de fevereiro de 2026"
+    inputs:
+      lastMenstrualPeriod: "2025-09-01"
+      cycleLength: 28
+    expectedResult: "DPP: 8 de junho de 2026 | Idade gestacional em 15/02/2026: 23 semanas e 5 dias | Trimestre: segundo"
+    explanation: "Com a DUM em 1 de setembro de 2025, a DPP e 8 de junho de 2026. Em 15 de fevereiro de 2026, a gestante esta com 23 semanas e 5 dias, no final do segundo trimestre. Nessa fase, a ultrassonografia morfologica ja deve ter sido realizada e os movimentos fetais sao facilmente percebidos. O pre-natal pelo SUS deve incluir consultas mensais nesta fase."
+
+relatedTools:
+  - "ovulation-calculator"
+  - "bmi-calculator"
+  - "calorie-calculator"
+
+defaults:
+  unit: "metric"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

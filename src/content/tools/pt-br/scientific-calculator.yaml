@@ -1,0 +1,83 @@
+id: "scientific-calculator"
+category: "math"
+calculatorComponent: "ScientificCalculator"
+lang: "pt-br"
+
+title: "Calculadora Cientifica Online - Trigonometria, Logaritmos, Potencias | CalcHub"
+metaDescription: "Calculadora cientifica online gratuita com trigonometria, logaritmos, expoentes, raizes, fatoriais, permutacoes e combinacoes. Resultados rapidos e precisos."
+h1: "Calculadora Cientifica Online"
+slug: "calculadora-cientifica"
+
+primaryKeyword: "calculadora cientifica online"
+secondaryKeywords:
+  - "calculadora cientifica gratis"
+  - "calculadora trigonometrica"
+  - "calculadora de logaritmo"
+  - "calculadora de fatorial"
+
+intro: "Uma calculadora cientifica vai muito alem da aritmetica basica, oferecendo acesso a funcoes trigonometricas, logaritmos, expoentes, raizes, fatoriais e combinatoria. Estudantes de ensino medio e superior que trabalham com matematica, fisica ou estatistica a utilizam constantemente, e profissionais de engenharia e analise de dados dependem das mesmas funcoes. Esta versao online coloca todas essas capacidades no seu navegador sem necessidade de instalar aplicativos. Insira uma expressao ou selecione uma funcao, coloque seus valores e o resultado aparece instantaneamente junto com os passos realizados."
+
+howItWorks:
+  title: "Como Funcionam as Funcoes da Calculadora Cientifica"
+  content: "Esta calculadora abrange diversas familias de operacoes matematicas. Funcoes trigonometricas - seno, cosseno e tangente - relacionam os angulos de um triangulo retangulo com as razoes de seus lados. Para um angulo teta, sen(teta) = cateto oposto/hipotenusa, cos(teta) = cateto adjacente/hipotenusa e tan(teta) = cateto oposto/cateto adjacente. Essas funcoes aceitam entrada em graus ou radianos. Para converter entre os dois: radianos = graus x (pi/180). Assim, 90 graus = pi/2 radianos, e sen(90 graus) = sen(pi/2) = 1. Funcoes trigonometricas inversas (arcseno, arccosseno, arctangente) fazem o inverso, recebendo uma razao e retornando o angulo. Potencias e raizes generalizam a multiplicacao. A expressao x^n significa x multiplicado por si mesmo n vezes. A raiz quadrada de x e x^(1/2), e a raiz enesima de x e x^(1/n). Por exemplo, a raiz cubica de 27 e 27^(1/3) = 3 porque 3 x 3 x 3 = 27. Logaritmos respondem a pergunta: a qual potencia a base deve ser elevada para obter um determinado numero? log na base 10 de 1000 e 3 porque 10^3 = 1000. O logaritmo natural (ln) usa a base e (aproximadamente 2,71828). ln(e) = 1, e ln(1) = 0. Logaritmos sao uteis para lidar com numeros muito grandes ou muito pequenos e aparecem frequentemente em ciencia, escalas de decibeis, quimica de pH e teoria da informacao. Fatoriais contam arranjos. n! (n fatorial) e o produto de todos os inteiros positivos ate n. Assim, 5! = 5 x 4 x 3 x 2 x 1 = 120. Por convencao, 0! = 1. Fatoriais crescem extremamente rapido: 10! = 3.628.800 e 20! ultrapassa 2,4 quintilhoes. Permutacoes contam arranjos ordenados de r itens escolhidos dentre n: P(n,r) = n! / (n-r)!. Se voce quiser saber de quantas maneiras pode organizar 3 livros de 10 em uma prateleira, P(10,3) = 10! / 7! = 720. Combinacoes contam selecoes nao ordenadas: C(n,r) = n! / (r!(n-r)!). Escolher um comite de 3 pessoas dentre 10 candidatos resulta em C(10,3) = 120, ja que a ordem de selecao nao importa. Combinacoes sempre produzem um numero menor que permutacoes para os mesmos n e r, pois removem ordenacoes duplicadas. Essas funcoes cobrem a maioria dos calculos encontrados no ensino medio e na graduacao em cursos de matematica, fisica e engenharia no Brasil, sendo essenciais para preparacao do ENEM e vestibulares."
+  formula: "sen(teta), cos(teta), tan(teta), log_b(x), x^n, n!, P(n,r), C(n,r)"
+  formulaExplanation: "Trig: sen = oposto/hipotenusa, cos = adjacente/hipotenusa, tan = oposto/adjacente. Log: log_b(x) = y significa b^y = x. Fatorial: n! = 1 x 2 x ... x n. Permutacao: P(n,r) = n!/(n-r)!. Combinacao: C(n,r) = n!/(r!(n-r)!)."
+  academicSource: "Stewart, J. (2015). Calculus: Early Transcendentals. Cengage Learning."
+
+faqs:
+  - question: "Qual a diferenca entre graus e radianos?"
+    answer: "Graus e radianos sao duas unidades para medir angulos. Um circulo completo equivale a 360 graus ou 2*pi radianos (cerca de 6,2832 radianos). Para converter graus em radianos, multiplique por pi/180. Para o caminho inverso, multiplique por 180/pi. A maioria dos livros de matematica e fisica usa radianos porque as formulas de derivadas e integrais de funcoes trigonometricas ficam mais limpas em radianos. Por exemplo, a derivada de sen(x) e cos(x) somente quando x esta em radianos. Certifique-se de saber em qual modo sua calculadora esta configurada antes de calcular."
+  - question: "Como funcionam os logaritmos e quando devo usa-los?"
+    answer: "Um logaritmo responde: qual expoente transforma a base em um dado numero? log na base 2 de 8 = 3 porque 2^3 = 8. O logaritmo comum (base 10) e usado em escalas de decibeis e magnitudes de terremotos. O logaritmo natural (ln, base e) aparece em todo o calculo, formulas de juros compostos e modelos de crescimento e decaimento. Logaritmos tambem permitem transformar multiplicacao em adicao e exponenciacao em multiplicacao, simplificando expressoes complexas. Por exemplo, log(a*b) = log(a) + log(b), e log(a^n) = n*log(a)."
+  - question: "Qual a diferenca entre permutacoes e combinacoes?"
+    answer: "Permutacoes contam arranjos onde a ordem importa. Combinacoes contam selecoes onde a ordem nao importa. Escolher presidente, vice-presidente e tesoureiro dentre 10 pessoas e um problema de permutacao: P(10,3) = 720. Escolher um comite de 3 pessoas do mesmo grupo e um problema de combinacao: C(10,3) = 120. O numero de combinacoes e sempre menor porque cada grupo de 3 pessoas pode ser arranjado de 3! = 6 ordens, e 720 / 6 = 120. Use permutacoes para classificacoes, senhas e sequencias. Use combinacoes para equipes, maos de cartas e grupos de amostras."
+  - question: "Por que 0 fatorial e igual a 1?"
+    answer: "Por convencao e consistencia matematica, 0! e definido como 1. Uma forma de entender: a formula n! = n x (n-1)! nos da 1! = 1 x 0!, portanto 0! deve ser 1 para que a equacao se mantenha. Outra perspectiva: 0! conta o numero de maneiras de arranjar zero objetos, e existe exatamente uma maneira de fazer isso, nao fazer nada. Essa definicao tambem mantem a formula de combinacao consistente. C(n,0) = n! / (0! x n!) = 1, o que corretamente afirma que ha exatamente uma maneira de nao escolher nada de um conjunto."
+  - question: "Como calcular raizes quadradas e cubicas?"
+    answer: "A raiz quadrada de x encontra o numero que, multiplicado por si mesmo, resulta em x. A raiz quadrada de 49 e 7 porque 7 x 7 = 49. A raiz cubica de x encontra o numero que, multiplicado por si mesmo tres vezes, resulta em x. A raiz cubica de 64 e 4 porque 4 x 4 x 4 = 64. Em geral, a raiz enesima de x e x elevado a 1/n. Assim, a raiz quinta de 32 e 32^(1/5) = 2. Esta calculadora lida com qualquer raiz inserindo o expoente apropriado."
+  - question: "A calculadora pode resolver expressoes com multiplas operacoes?"
+    answer: "Sim. Voce pode digitar expressoes completas como 2^3 + log(100) - sen(45) e a calculadora as avalia seguindo a ordem padrao de operacoes (parenteses, expoentes, multiplicacao e divisao, adicao e subtracao). Parenteses permitem controlar a ordem de avaliacao. Por exemplo, (3+2)^2 = 25, mas 3+2^2 = 7 porque o expoente e avaliado antes da adicao. Na duvida, adicione parenteses para deixar sua intencao clara."
+
+examples:
+  - title: "Trigonometria - encontrando o comprimento de um lado"
+    scenario: "Uma escada encostada em uma parede forma um angulo de 65 graus. A escada tem 4 metros de comprimento. A que altura da parede ela chega?"
+    inputs:
+      category: "trig"
+      value: 65
+      angleUnit: "degrees"
+    expectedResult: "sen(65) = 0,9063, altura = 4 x 0,9063 = 3,6252 metros"
+    explanation: "A altura e o lado oposto ao angulo, portanto usamos o seno. sen(65 graus) = 0,9063. Multiplique pelo comprimento da escada: 4 x 0,9063 = 3,6252 metros."
+  - title: "Combinacoes - probabilidade na Mega-Sena"
+    scenario: "Quantas combinacoes diferentes de 6 numeros podem ser sorteadas de 60 numeros na Mega-Sena?"
+    inputs:
+      category: "combo"
+      n: 60
+      r: 6
+    expectedResult: "C(60,6) = 50.063.860 combinacoes"
+    explanation: "C(60,6) = 60! / (6! x 54!) = 50.063.860. Isso significa que as chances de acertar todos os 6 numeros com um unico jogo sao de aproximadamente 1 em 50 milhoes."
+  - title: "Logaritmo - calculo de pH"
+    scenario: "Calcular o pH de uma solucao com concentracao de ions hidrogenio de 0,001 mol/L"
+    inputs:
+      category: "log"
+      value: 0.001
+      base: 10
+    expectedResult: "log(0,001) = -3, portanto pH = 3"
+    explanation: "O pH e calculado como -log10 da concentracao de H+. Como log10(0,001) = log10(10^-3) = -3, o pH e igual a 3, indicando uma solucao acida."
+
+relatedTools:
+  - "percentage-calculator"
+  - "fraction-calculator"
+  - "area-calculator"
+
+defaults:
+  unit: "number"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+  defaultValues:
+    angleMode: "degrees"
+    decimalPlaces: 4
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

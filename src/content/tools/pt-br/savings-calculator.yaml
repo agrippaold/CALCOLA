@@ -1,0 +1,90 @@
+id: "savings-calculator"
+category: "finance"
+calculatorComponent: "SavingsCalculator"
+
+title: "Calculadora de Poupanca e Investimentos - Simule Rendimentos | CalcHub"
+metaDescription: "Simule o crescimento da sua poupanca, CDB, LCI ou LCA com aportes mensais. Compare rendimentos e planeje suas metas financeiras gratuitamente."
+h1: "Calculadora de Poupanca"
+slug: "calculadora-poupanca"
+
+primaryKeyword: "calculadora poupanca"
+secondaryKeywords:
+  - "simulador caderneta poupanca"
+  - "calculadora rendimento poupanca"
+  - "simulador CDB LCI LCA"
+  - "calculadora de investimento renda fixa"
+  - "quanto rende a poupanca"
+
+intro: "Construir patrimonio por meio de aportes regulares e o caminho mais seguro para conquistar seus objetivos financeiros. A maioria dos brasileiros subestima o quanto valores modestos podem crescer ao longo do tempo quando aplicados de forma consistente. Esta calculadora combina seu deposito inicial com contribuicoes mensais e aplica juros compostos para projetar o saldo futuro em diferentes cenarios de investimento. Seja para montar sua reserva de emergencia, juntar a entrada da casa propria ou planejar a aposentadoria, visualizar os numeros concretos ajuda a definir metas realistas e manter a disciplina nos aportes."
+
+howItWorks:
+  title: "Como funciona o crescimento da poupanca"
+  content: "Esta calculadora utiliza duas formulas de juros compostos combinadas em um unico resultado. O deposito inicial cresce pela formula padrao de juros compostos ao longo de todo o periodo, enquanto cada aporte mensal e tratado como um investimento separado que capitaliza desde o mes do deposito ate o final do prazo. O valor futuro total e a soma dos dois componentes. No Brasil, a caderneta de poupanca segue regras especificas definidas pelo Banco Central. Quando a taxa Selic esta acima de 8,5% ao ano, a poupanca rende 0,5% ao mes mais a Taxa Referencial (TR). Quando a Selic esta igual ou abaixo de 8,5%, o rendimento e de 70% da Selic mais a TR. A poupanca tem a vantagem de ser isenta de imposto de renda para pessoas fisicas, mas frequentemente perde em rentabilidade liquida para investimentos como CDB, LCI e LCA. O CDB (Certificado de Deposito Bancario) e um dos investimentos de renda fixa mais populares no Brasil. Oferece rendimento atrelado ao CDI (geralmente entre 90% e 120% do CDI) com capitalizacao diaria. Apesar de incidir imposto de renda regressivo (22,5% para ate 180 dias, 20% para 181-360 dias, 17,5% para 361-720 dias e 15% acima de 720 dias), o CDB costuma superar a poupanca em termos de rendimento liquido. As LCIs (Letras de Credito Imobiliario) e LCAs (Letras de Credito do Agronegocio) oferecem uma vantagem significativa: sao isentas de imposto de renda para pessoas fisicas. Um CDB a 100% do CDI e equivalente a uma LCI de aproximadamente 85% do CDI em termos de rendimento liquido, considerando a aliquota de IR de 15%. Portanto, uma LCI a 90% do CDI supera um CDB a 100% do CDI no longo prazo. Por exemplo, se voce deposita R$ 5.000 iniciais e faz aportes mensais de R$ 500 a uma taxa de 10% ao ano (equivalente a um CDB a 100% do CDI com Selic a 10%) por 10 anos, o montante acumulado seria de aproximadamente R$ 107.838. Seus depositos totalizam R$ 65.000, e os juros compostos geram R$ 42.838 em rendimentos. Aumentar o aporte mensal em apenas R$ 100 (para R$ 600) adicionaria aproximadamente R$ 12.260 ao saldo final. O momento de comecar e mais importante que o valor dos aportes. Iniciar cinco anos antes com R$ 300 por mes produz mais patrimonio do que comecar depois com R$ 500 por mes por um periodo menor, gracas ao tempo adicional de capitalizacao composta."
+  formula: "VF = C(1 + i)^n + PMT × [((1 + i)^n - 1) / i]"
+  formulaExplanation: "VF = valor futuro, C = deposito inicial, i = taxa de juros mensal (taxa anual / 12), n = numero total de meses, PMT = aporte mensal"
+  academicSource: "Banco Central do Brasil. (2024). Calculadora do Cidadao - Correcao pela Poupanca."
+
+faqs:
+  - question: "Quanto rende a poupanca hoje?"
+    answer: "Com a taxa Selic acima de 8,5% ao ano, a poupanca rende 0,5% ao mes mais a Taxa Referencial (TR), o que resulta em aproximadamente 7,5% a 8% ao ano. Para um deposito de R$ 10.000, isso significa cerca de R$ 750 a R$ 800 de rendimento anual, isento de imposto de renda. Apesar de ser o investimento mais popular do Brasil, a poupanca frequentemente perde para a inflacao medida pelo IPCA em periodos de precos mais pressionados, o que significa que o poder de compra do dinheiro pode diminuir mesmo rendendo na poupanca."
+
+  - question: "CDB, LCI ou LCA: qual rende mais?"
+    answer: "A resposta depende das taxas oferecidas e do prazo do investimento. Um CDB a 110% do CDI paga mais que uma LCI a 90% do CDI, mesmo apos o imposto de renda do CDB. Porem, uma LCI a 95% do CDI supera um CDB a 110% do CDI para prazos acima de 2 anos. A regra pratica e: multiplique a taxa do CDB por 0,85 (descontando IR de 15% para prazos longos) e compare com a taxa da LCI ou LCA. Se a taxa da LCI for superior ao resultado, ela e a melhor opcao. Todos esses investimentos sao protegidos pelo FGC ate R$ 250.000 por CPF por instituicao."
+
+  - question: "O que e a reserva de emergencia e quanto devo ter?"
+    answer: "A reserva de emergencia e um colchao financeiro para cobrir despesas imprevistas ou periodos sem renda. Especialistas recomendam acumular de 3 a 6 meses das suas despesas mensais fixas. Se suas despesas mensais somam R$ 4.000, sua reserva ideal seria entre R$ 12.000 e R$ 24.000. Esse valor deve ficar em investimentos de alta liquidez e baixo risco, como Tesouro Selic ou CDB de liquidez diaria, que permitem resgate a qualquer momento sem perda significativa de rentabilidade."
+
+  - question: "Vale a pena tirar o dinheiro da poupanca?"
+    answer: "Na maioria dos cenarios, sim. Um CDB de banco medio pagando 110% do CDI, mesmo apos imposto de renda, supera a poupanca em rentabilidade liquida. O Tesouro Selic tambem tende a render mais que a poupanca com risco semelhante. A principal vantagem da poupanca e a simplicidade e a isencao de IR, mas para quem busca rentabilidade melhor, migrar para renda fixa mais sofisticada e uma decisao financeiramente inteligente. A migracao pode ser feita gradualmente, mantendo parte na poupanca como reserva de acesso imediato."
+
+  - question: "O que e o FGC e como ele protege meus investimentos?"
+    answer: "O Fundo Garantidor de Creditos (FGC) e uma entidade privada que protege depositantes e investidores em caso de falencia de instituicoes financeiras. O FGC garante ate R$ 250.000 por CPF por instituicao financeira, com um teto global de R$ 1 milhao renovavel a cada 4 anos. Sao cobertos pela garantia: poupanca, CDB, LCI, LCA, LC (Letras de Cambio) e RDB. Nao sao cobertos: fundos de investimento, acoes, debentures e titulos do Tesouro Direto (que tem garantia do Tesouro Nacional). Para maximizar a protecao, diversifique entre diferentes instituicoes."
+
+  - question: "Como planejar a aposentadoria com aportes mensais?"
+    answer: "O planejamento da aposentadoria exige consistencia e visao de longo prazo. Se voce tem 25 anos e quer se aposentar aos 60 com uma renda mensal complementar de R$ 5.000 (equivalente a um patrimonio de aproximadamente R$ 1.200.000), precisara investir cerca de R$ 900 por mes a uma taxa real de 6% ao ano durante 35 anos. Comecando aos 35 anos, o aporte necessario sobe para R$ 1.900 por mes em 25 anos. Essa diferenca dramatica mostra por que comecar cedo e a estrategia mais eficaz. Combine aportes em renda fixa e renda variavel conforme seu perfil de risco."
+
+examples:
+  - title: "Reserva de emergencia"
+    scenario: "Construindo reserva de R$ 20.000 com deposito inicial de R$ 2.000 e aportes de R$ 800 por mes a 8% ao ano (CDB liquidez diaria)"
+    inputs:
+      initialDeposit: 2000
+      monthlyContribution: 800
+      annualRate: 8
+      years: 2
+    expectedResult: "Valor futuro: R$ 22.126,47 | Rendimento: R$ 926,47"
+    explanation: "Em aproximadamente 22 meses, voce atingiria a meta de R$ 20.000 com os aportes de R$ 800 mensais. Ao final de 2 anos, o saldo acumulado seria R$ 22.126, incluindo R$ 926 de rendimentos. A meta de reserva de emergencia equivale a cerca de 5 meses de despesas de R$ 4.000, dentro da faixa recomendada por especialistas."
+
+  - title: "Acumular para entrada de imovel"
+    scenario: "Juntando R$ 80.000 para entrada de imovel com R$ 10.000 iniciais e R$ 1.200 mensais a 10% ao ano (LCI 90% CDI)"
+    inputs:
+      initialDeposit: 10000
+      monthlyContribution: 1200
+      annualRate: 10
+      years: 4
+    expectedResult: "Valor futuro: R$ 85.221,38 | Rendimento: R$ 17.621,38"
+    explanation: "Em 4 anos, seus R$ 67.600 em depositos totais crescem para R$ 85.221 gracas aos R$ 17.621 em juros compostos. A LCI tem a vantagem de ser isenta de imposto de renda, entao todo o rendimento e liquido. Com esse valor como entrada de 20%, voce poderia financiar um imovel de ate R$ 425.000 dentro das condicoes da maioria dos bancos."
+
+  - title: "Aposentadoria em 25 anos"
+    scenario: "Investindo R$ 5.000 iniciais mais R$ 600 mensais a 9% ao ano durante 25 anos"
+    inputs:
+      initialDeposit: 5000
+      monthlyContribution: 600
+      annualRate: 9
+      years: 25
+    expectedResult: "Valor futuro: R$ 711.539,20 | Rendimento: R$ 526.539,20"
+    explanation: "Seus aportes totalizam R$ 185.000 ao longo de 25 anos, mas os juros compostos adicionam R$ 526.539, quase tres vezes o valor investido. Esse patrimonio, aplicado a 0,7% ao mes, geraria uma renda passiva de aproximadamente R$ 4.981 por mes, demonstrando como a disciplina de aportes regulares combinada com o tempo cria independencia financeira."
+
+relatedTools:
+  - "compound-interest-calculator"
+  - "investment-calculator"
+  - "inflation-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

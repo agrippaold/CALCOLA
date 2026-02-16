@@ -1,0 +1,88 @@
+id: "amortization-calculator"
+category: "finance"
+calculatorComponent: "AmortizationCalculator"
+
+title: "Calculadora de Amortização - Tabela SAC e Price | CalcHub"
+metaDescription: "Monte a tabela de amortização completa do seu financiamento. Compare tabela SAC e Price, veja parcelas mensais, juros e como pagamentos extras podem economizar milhares."
+h1: "Calculadora de Amortização"
+slug: "calculadora-amortizacao"
+
+primaryKeyword: "calculadora amortizacao"
+secondaryKeywords:
+  - "tabela SAC calculadora"
+  - "tabela Price calculadora"
+  - "amortização de financiamento"
+  - "calculadora parcela financiamento"
+  - "amortização extraordinária"
+  - "simulador amortização"
+
+intro: "Ao contratar um financiamento imobiliário, empréstimo de veículo ou crédito pessoal no Brasil, cada parcela mensal é dividida entre amortização do principal e pagamento de juros, e essa proporção muda a cada pagamento. Esta calculadora de amortização gera a tabela completa de pagamentos mostrando exatamente quanto de cada parcela reduz seu saldo devedor e quanto vai para os juros. Insira o valor do financiamento, a taxa de juros e o prazo para visualizar todo o cronograma, incluindo o total de juros pagos e como amortizações extraordinárias com o FGTS ou recursos próprios podem encurtar significativamente o prazo e reduzir o custo total do seu financiamento."
+
+howItWorks:
+  title: "Como a Amortização de Financiamentos Funciona no Brasil"
+  content: "Amortização é o processo de quitação gradual de uma dívida por meio de pagamentos periódicos. Cada pagamento cobre os juros acumulados desde a última parcela e aplica o restante na redução do saldo devedor. No Brasil, os dois sistemas de amortização mais utilizados são a Tabela SAC (Sistema de Amortização Constante) e a Tabela Price (Sistema Francês de Amortização). Na Tabela SAC, a amortização do principal é constante ao longo de todo o financiamento, enquanto os juros diminuem progressivamente. Isso resulta em parcelas decrescentes: a primeira parcela é a mais alta e a última é a mais baixa. Para um financiamento de R$ 300.000 a 10% ao ano (0,833% ao mês) em 360 meses, a amortização mensal constante é R$ 833,33. Na primeira parcela, os juros são R$ 2.500,00 (R$ 300.000 x 0,00833), totalizando R$ 3.333,33. Na última parcela, os juros são apenas R$ 6,94, totalizando R$ 840,28. Na Tabela Price, as parcelas são fixas durante todo o prazo, calculadas pela fórmula: M = P vezes r vezes (1 + r) elevado a n, dividido por (1 + r) elevado a n menos 1. Onde P é o principal, r é a taxa mensal e n é o número de parcelas. Para o mesmo financiamento de R$ 300.000, a parcela fixa seria R$ 2.632,71. Nos primeiros meses, a maior parte da parcela vai para juros; nos últimos, quase toda a parcela é amortização. O total de juros na Price é significativamente maior que no SAC para as mesmas condições. A escolha entre SAC e Price depende do perfil do mutuário. A SAC é mais vantajosa financeiramente porque reduz o saldo devedor mais rapidamente, resultando em menos juros totais. Porém, exige parcelas iniciais maiores, o que pode comprometer a capacidade de pagamento no início do financiamento. A Price oferece parcelas menores e previsíveis, facilitando o planejamento financeiro, mas custa mais em juros totais. No financiamento imobiliário brasileiro, o SAC é o sistema mais utilizado, adotado por Caixa Econômica Federal, Banco do Brasil e demais instituições financeiras. A amortização extraordinária é uma ferramenta poderosa para reduzir o custo do financiamento. No Brasil, o mutuário pode utilizar o saldo do FGTS (Fundo de Garantia do Tempo de Serviço) a cada dois anos para amortizar o saldo devedor do financiamento habitacional. A amortização pode ser feita de duas formas: reduzindo o valor das parcelas futuras mantendo o prazo, ou mantendo o valor das parcelas e reduzindo o prazo. Financeiramente, reduzir o prazo é mais vantajoso porque elimina meses de incidência de juros. Uma amortização extraordinária de R$ 30.000 no início de um financiamento de R$ 300.000 a 10% ao ano por 30 anos pode economizar mais de R$ 100.000 em juros ao longo do contrato. No Brasil, as taxas de juros de financiamento imobiliário são corrigidas por indexadores como a TR (Taxa Referencial), o IPCA (Índice de Preços ao Consumidor Amplo) ou a taxa fixa. Financiamentos corrigidos pelo IPCA oferecem taxas nominais mais baixas, mas carregam o risco de a inflação aumentar significativamente, elevando o saldo devedor. Financiamentos com taxa fixa mais TR são mais previsíveis. Comparar o Custo Efetivo Total (CET) entre diferentes instituições é essencial, pois além dos juros, o CET inclui seguros obrigatórios, taxas de administração e outros encargos que impactam o custo real do financiamento."
+  formula: "M = P x [r(1+r)^n] / [(1+r)^n - 1]"
+  formulaExplanation: "M = parcela mensal (Price), P = valor financiado, r = taxa de juros mensal (taxa anual / 12 / 100), n = número total de parcelas (anos x 12). SAC: Amortização = P / n; Parcela = Amortização + (Saldo Devedor x r)"
+  academicSource: "Banco Central do Brasil. (2025). Calculadora do Cidadão - Financiamento com Prestações Fixas."
+
+faqs:
+  - question: "Qual é a diferença entre a Tabela SAC e a Tabela Price?"
+    answer: "Na Tabela SAC, a amortização do principal é constante e as parcelas são decrescentes, começando maiores e diminuindo ao longo do tempo. Na Tabela Price, as parcelas são fixas durante todo o contrato, com a proporção entre juros e amortização mudando progressivamente. O SAC resulta em menos juros totais porque o saldo devedor é reduzido mais rapidamente. Para um financiamento de R$ 300.000 a 10% ao ano em 30 anos, o total de juros na SAC é significativamente menor que na Price, mas as parcelas iniciais são maiores."
+
+  - question: "Posso usar o FGTS para amortizar meu financiamento imobiliário?"
+    answer: "Sim, o FGTS pode ser utilizado a cada dois anos para amortizar o saldo devedor do financiamento habitacional, desde que o imóvel esteja localizado no mesmo município ou região metropolitana onde você trabalha ou reside, o financiamento esteja no âmbito do SFH (Sistema Financeiro de Habitação) e o imóvel tenha valor dentro do limite estabelecido. Você pode escolher entre reduzir o prazo do financiamento ou o valor das parcelas. Reduzir o prazo é financeiramente mais vantajoso."
+
+  - question: "Quanto posso economizar fazendo amortizações extras?"
+    answer: "O impacto de amortizações extras é enorme, especialmente no início do financiamento. Em um financiamento de R$ 300.000 a 10% ao ano por 30 anos, uma amortização extra de R$ 500 por mês economiza aproximadamente R$ 200.000 em juros totais e reduz o prazo em cerca de 12 anos. Uma única amortização de R$ 50.000 no quinto ano economiza mais de R$ 150.000 em juros. Cada real aplicado à amortização no início do contrato previne juros compostos sobre aquele valor pelo restante do prazo."
+
+  - question: "O que é o CET e por que é importante na comparação de financiamentos?"
+    answer: "O CET (Custo Efetivo Total) é o indicador que expressa o custo total do financiamento como uma taxa percentual anual. Ele inclui não apenas a taxa de juros, mas também seguros obrigatórios (MIP e DFI), taxas de administração, tarifas de avaliação do imóvel, e outros encargos. Dois financiamentos com a mesma taxa de juros nominal podem ter CET diferentes dependendo dos custos acessórios. O Banco Central exige que todas as instituições financeiras informem o CET, tornando-o a melhor métrica para comparar propostas de diferentes bancos."
+
+  - question: "Financiamento com IPCA ou TR: qual escolher?"
+    answer: "Financiamentos indexados ao IPCA oferecem taxas nominais mais baixas (IPCA + 4% a 6%), mas o saldo devedor é corrigido pela inflação, podendo aumentar significativamente em cenários de inflação alta. Financiamentos com TR (taxa fixa + TR) são mais previsíveis porque a TR tem se mantido próxima de zero há anos. Para perfis conservadores e financiamentos de longo prazo, a TR oferece mais segurança. O IPCA pode ser vantajoso se você planeja quitar o financiamento antecipadamente ou se a inflação se mantiver controlada abaixo das metas do Banco Central."
+
+  - question: "Por que no início do financiamento a maior parte da parcela vai para juros?"
+    answer: "Os juros são calculados sobre o saldo devedor existente em cada mês. No início do financiamento, o saldo devedor está no seu valor máximo, então a parcela de juros é proporcionalmente alta. À medida que você paga parcelas e o saldo devedor diminui, os juros de cada mês também diminuem, e uma parcela maior do pagamento vai para a amortização do principal. Em um financiamento de R$ 300.000 a 10% ao ano na tabela Price, a primeira parcela destina cerca de 95% para juros. No meio do contrato, a proporção se equilibra, e nas últimas parcelas, quase 100% é amortização."
+
+examples:
+  - title: "Financiamento imobiliário pela Tabela SAC"
+    scenario: "Financiamento de R$ 300.000 a 10% ao ano por 30 anos na Tabela SAC"
+    inputs:
+      loanAmount: 300000
+      interestRate: 10
+      loanTerm: 30
+    expectedResult: "Primeira parcela: R$ 3.333,33 | Última parcela: R$ 840,28 | Juros totais: R$ 451.250,00 aprox."
+    explanation: "Na Tabela SAC, a amortização mensal é constante em R$ 833,33 (R$ 300.000 / 360). A primeira parcela soma R$ 833,33 de amortização mais R$ 2.500,00 de juros (R$ 300.000 x 0,833%), totalizando R$ 3.333,33. As parcelas decrescem progressivamente porque os juros diminuem à medida que o saldo devedor é reduzido. Este sistema é o mais utilizado no financiamento imobiliário brasileiro pela Caixa Econômica Federal."
+
+  - title: "Financiamento imobiliário pela Tabela Price"
+    scenario: "O mesmo financiamento de R$ 300.000 a 10% ao ano por 30 anos na Tabela Price"
+    inputs:
+      loanAmount: 300000
+      interestRate: 10
+      loanTerm: 30
+    expectedResult: "Parcela fixa: R$ 2.632,71 | Juros totais: R$ 647.775,60 aprox."
+    explanation: "Na Tabela Price, a parcela fixa de R$ 2.632,71 é menor que a primeira parcela do SAC (R$ 3.333,33), mas maior que as últimas parcelas. O total de juros na Price (R$ 647.775,60) é significativamente maior que no SAC (R$ 451.250,00), uma diferença de quase R$ 200.000 ao longo dos 30 anos. A parcela inicial é mais acessível, mas o custo total é substancialmente maior."
+
+  - title: "Financiamento de veículo"
+    scenario: "Financiamento de R$ 60.000 para carro a 1,5% ao mês por 48 meses"
+    inputs:
+      loanAmount: 60000
+      interestRate: 18
+      loanTerm: 4
+    expectedResult: "Parcela mensal: R$ 1.764,22 | Juros totais: R$ 24.682,56 aprox."
+    explanation: "No financiamento de veículo a 1,5% ao mês (18% ao ano), a parcela fixa é R$ 1.764,22 por 48 meses. O total pago é R$ 84.682,56, dos quais R$ 24.682,56 são juros, representando 41% a mais que o valor financiado. As taxas de juros para veículos no Brasil costumam ser significativamente mais altas que para imóveis. Dar uma entrada maior e optar por prazo menor reduz substancialmente o custo total dos juros."
+
+relatedTools:
+  - "mortgage-calculator"
+  - "loan-calculator"
+  - "auto-loan-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"

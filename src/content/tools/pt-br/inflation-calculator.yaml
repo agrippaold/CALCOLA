@@ -1,0 +1,87 @@
+id: "inflation-calculator"
+category: "finance"
+calculatorComponent: "InflationCalculator"
+
+title: "Calculadora de Inflacao - Poder de Compra e IPCA | CalcHub"
+metaDescription: "Calcule como a inflacao afeta seu poder de compra ao longo do tempo. Simule com IPCA, IGP-M e projete custos futuros. Ferramenta gratuita."
+h1: "Calculadora de Inflacao"
+slug: "calculadora-inflacao"
+
+primaryKeyword: "calculadora inflacao"
+secondaryKeywords:
+  - "calculadora poder de compra"
+  - "calculadora IPCA"
+  - "correcao monetaria inflacao"
+  - "calculadora IGP-M"
+  - "impacto inflacao dinheiro"
+
+intro: "A inflacao corroi silenciosamente o valor de cada real que voce guarda. Ao longo de uma decada, mesmo uma taxa moderada de 5% ao ano significa que seu dinheiro perde mais de 40% do poder de compra. Esta calculadora mostra o impacto real da inflacao sobre suas economias, despesas e planos financeiros de longo prazo. Informe um valor, a taxa de inflacao esperada e o periodo para visualizar tanto o custo futuro equivalente quanto o valor presente do dinheiro futuro. Use os resultados para definir metas de economia mais inteligentes, negociar reajustes salariais e fazer projecoes realistas para a aposentadoria no contexto brasileiro."
+
+howItWorks:
+  title: "Como a inflacao afeta o seu dinheiro"
+  content: "A inflacao mede a taxa de aumento geral dos precos de bens e servicos ao longo do tempo, reduzindo o que cada unidade de moeda pode comprar. No Brasil, o principal indicador de inflacao e o IPCA (Indice Nacional de Precos ao Consumidor Amplo), calculado mensalmente pelo IBGE. O IPCA acompanha a variacao de precos de uma cesta de consumo que inclui alimentacao, habitacao, transporte, saude, educacao, vestuario e comunicacao, entre outros grupos. Nas ultimas duas decadas, o IPCA acumulado anual variou entre 3% e 10%, com picos acima de 10% em 2015 e 2021-2022. O Banco Central do Brasil utiliza o sistema de metas de inflacao, buscando manter o IPCA dentro de uma faixa determinada pelo Conselho Monetario Nacional. Quando a inflacao sobe acima da meta, o Copom (Comite de Politica Monetaria) tende a elevar a taxa Selic para desacelerar a economia e conter os precos. Quando a inflacao esta controlada, ha espaco para reduzir a Selic e estimular o crescimento. A inflacao se acumula ano a ano, de forma composta, assim como os juros. Uma taxa de 5% ao ano nao soma simplesmente 50% em dez anos. Na verdade, cada ano o aumento incide sobre os precos ja reajustados do ano anterior. Apos dez anos a 5%, os precos aumentaram 62,9%, o que significa que algo que custava R$ 100 passaria a custar R$ 162,89. Olhando pelo outro lado, R$ 100 guardados hoje comprariam apenas o equivalente a R$ 61,39 em bens e servicos apos uma decada. O IGP-M (Indice Geral de Precos - Mercado), calculado pela FGV, e outro indicador amplamente utilizado no Brasil, especialmente para reajustes de alugueis e contratos. O IGP-M inclui precos no atacado (IPA), que representam 60% do indice, alem de precos ao consumidor (IPC, 30%) e custos da construcao civil (INCC, 10%). Por ter forte componente de atacado, o IGP-M e mais sensivel a variacao cambial e precos de commodities, podendo divergir significativamente do IPCA em determinados periodos. Em 2020, por exemplo, o IGP-M acumulou 23,14% enquanto o IPCA ficou em 4,52%. O poder de compra e a forma pratica de entender o que seu dinheiro realmente pode adquirir. Se voce mantem R$ 50.000 na poupanca rendendo 7% ao ano enquanto a inflacao fica em 5%, seu ganho real e de apenas 2% ao ano. Em termos nominais, apos 20 anos sua poupanca mostraria R$ 193.484, mas a inflacao teria elevado os precos de forma que voce precisaria de R$ 132.665 para comprar o que R$ 50.000 compravam originalmente. Titulos como o Tesouro IPCA+, fundos de inflacao e imoveis sao veiculos comuns que os brasileiros utilizam para manter ou superar a inflacao ao longo do tempo. Ao planejar a aposentadoria ou qualquer objetivo de longo prazo, sempre ajuste o valor-alvo para cima considerando a inflacao esperada, garantindo que suas economias preservem o poder de compra real."
+  formula: "Custo Futuro = Valor Presente × (1 + i)^t | Poder de Compra = Valor Presente / (1 + i)^t"
+  formulaExplanation: "i = taxa de inflacao anual como decimal (ex.: 5% = 0,05), t = numero de anos"
+  academicSource: "IBGE - Instituto Brasileiro de Geografia e Estatistica. (2024). Sistema Nacional de Indices de Precos ao Consumidor - IPCA."
+
+faqs:
+  - question: "Qual e a inflacao atual no Brasil?"
+    answer: "A inflacao no Brasil medida pelo IPCA varia mensalmente conforme os relatorios do IBGE. Nos ultimos anos, o IPCA anual oscilou entre 3,75% e 10,06%. Para planejamento de longo prazo, muitos economistas e planejadores financeiros utilizam uma taxa media de 4% a 5% ao ano como referencia razoavel, alinhada com o centro da meta de inflacao do Banco Central. Para decisoes de curto prazo, sempre consulte o ultimo boletim Focus do Banco Central, que agrega as projecoes de dezenas de instituicoes financeiras para o IPCA dos proximos anos."
+
+  - question: "Qual a diferenca entre IPCA e IGP-M?"
+    answer: "O IPCA e medido pelo IBGE e reflete a variacao de precos para familias com renda de 1 a 40 salarios minimos, sendo o indice oficial de inflacao usado pelo Banco Central para a meta de inflacao. O IGP-M e calculado pela FGV e incorpora precos no atacado (60%), ao consumidor (30%) e na construcao civil (10%). Por incluir precos de atacado, o IGP-M e mais sensivel ao cambio e commodities, podendo divergir bastante do IPCA. O IGP-M e tradicionalmente usado para reajuste de alugueis e contratos, mas muitos locadores e locatarios tem migrado para o IPCA por ser mais estavel e representativo do custo de vida real."
+
+  - question: "Como proteger meu dinheiro da inflacao?"
+    answer: "A forma mais eficaz de proteger o patrimonio contra a inflacao e investir em ativos que historicamente crescem acima dos precos. O Tesouro IPCA+ e o investimento mais direto, pois garante uma taxa real (acima da inflacao) definida no momento da compra. Acoes e fundos imobiliarios tendem a acompanhar ou superar a inflacao no longo prazo. Imoveis fisicos tambem sao tradicionalmente considerados protecao contra inflacao. Manter grandes quantias em poupanca ou em dinheiro em especie e a forma mais segura de perder poder de compra ao longo do tempo."
+
+  - question: "O que e hiperinflacao e o Brasil ja passou por isso?"
+    answer: "Hiperinflacao e uma inflacao extremamente rapida e descontrolada, geralmente definida como aumentos de precos superiores a 50% ao mes. O Brasil viveu um periodo de hiperinflacao nos anos 1980 e inicio dos anos 1990, com a inflacao anual chegando a 2.477% em 1993. Os precos mudavam diariamente, e os brasileiros precisavam correr ao supermercado no dia do pagamento antes que os precos subissem. O Plano Real, implementado em 1994, estabilizou a moeda e a inflacao, trazendo o pais para niveis civilizados de variacao de precos. Essa experiencia historica explica por que muitos brasileiros mais velhos tem aversao a inflacao."
+
+  - question: "Como a inflacao afeta o planejamento da aposentadoria?"
+    answer: "A inflacao tem impacto dramatico na aposentadoria porque o horizonte de tempo e muito longo. Se voce planeja se aposentar em 25 anos e precisa de R$ 8.000 por mes em valores atuais, considerando uma inflacao media de 4,5% ao ano, precisara de aproximadamente R$ 24.000 por mes para manter o mesmo padrao de vida. Ao longo de 30 anos de aposentadoria, a inflacao acumulada pode triplicar ou quadruplicar suas necessidades de gastos. Planejadores financeiros recomendam incorporar uma inflacao de 4% a 5% ao ano em todas as projecoes de aposentadoria e escolher investimentos que superem consistentemente a inflacao."
+
+  - question: "O que e a correcao monetaria e como ela funciona?"
+    answer: "A correcao monetaria e o mecanismo de reajuste de valores com base em um indice de inflacao para preservar o poder de compra. No Brasil, ela e aplicada em diversas situacoes: reajuste de alugueis (geralmente pelo IGP-M ou IPCA), atualizacao de dividas judiciais (pela tabela do tribunal), correcao do salario minimo, reajuste de contratos de prestacao de servicos e atualizacao de valores na declaracao de imposto de renda. O Tesouro IPCA+ e um exemplo de investimento com correcao monetaria automatica, pois seu valor principal e ajustado diariamente pelo IPCA, garantindo que o investidor receba uma taxa de juros real acima da inflacao."
+
+examples:
+  - title: "Impacto da inflacao em 10 anos"
+    scenario: "R$ 1.000 considerando inflacao media de 5% ao ano durante 10 anos"
+    inputs:
+      amount: 1000
+      inflationRate: 5
+      years: 10
+    expectedResult: "Custo futuro: R$ 1.628,89 | Poder de compra: R$ 613,91"
+    explanation: "Com inflacao de 5% ao ano, algo que custa R$ 1.000 hoje custara R$ 1.628,89 em dez anos. Por outro lado, R$ 1.000 guardados sem rendimento algum comprarao apenas o equivalente a R$ 613,91 em bens e servicos. Isso representa uma perda de 38,6% do poder de compra em uma unica decada, demonstrando por que deixar dinheiro parado e uma forma garantida de perder patrimonio."
+
+  - title: "Projecao de despesas na aposentadoria"
+    scenario: "Despesas mensais de R$ 6.000 considerando inflacao de 4,5% ao ano por 25 anos"
+    inputs:
+      amount: 6000
+      inflationRate: 4.5
+      years: 25
+    expectedResult: "Custo futuro: R$ 17.880,62 | Poder de compra: R$ 2.012,70"
+    explanation: "Se suas despesas mensais atuais sao de R$ 6.000, daqui a 25 anos voce precisara de aproximadamente R$ 17.881 por mes para manter o mesmo padrao de vida, considerando inflacao de 4,5% ao ano. Isso significa que seu patrimonio de aposentadoria precisa gerar quase tres vezes o valor atual de despesas. Esse quase triplo nos custos e a razao pela qual metas de aposentadoria devem sempre ser ajustadas pela inflacao projetada."
+
+  - title: "Inflacao no supermercado"
+    scenario: "Compra mensal de R$ 800 no supermercado com inflacao de alimentos de 7% ao ano por 5 anos"
+    inputs:
+      amount: 800
+      inflationRate: 7
+      years: 5
+    expectedResult: "Custo futuro: R$ 1.122,08 | Poder de compra: R$ 570,47"
+    explanation: "Os precos de alimentos frequentemente sobem mais rapido que a inflacao geral no Brasil. Com 7% de aumento anual, uma compra de supermercado de R$ 800 passaria a custar R$ 1.122 em cinco anos, um aumento de mais de R$ 322 por mes. Se seu salario nao acompanhar esse reajuste, voce perdera o equivalente a R$ 230 mensais em poder de compra no supermercado, forcando ajustes na quantidade ou qualidade dos itens adquiridos."
+
+relatedTools:
+  - "savings-calculator"
+  - "compound-interest-calculator"
+  - "investment-calculator"
+
+defaults:
+  unit: "brl"
+  numberFormat:
+    decimal: ","
+    thousands: "."
+
+lastUpdated: "2026-02-15"
+author: "CalcHub Team"
+priority: "high"
