@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import PercentChangeCalculator from '../../../components/calculators/math/PercentChangeCalculator';
+
+const lang = 'ja';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'percent-change-calculator' && t.id.startsWith('ja/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/ja/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <PercentChangeCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'ja';
+
+const categories = [
+  {
+    name: '金融',
+    slug: 'kinyu',
+    description: '住宅ローン、複利、貸付、貯蓄、投資、ROI、為替など多数の金融計算ツール。',
+    icon: '💰',
+    tools: [
+      { name: '住宅ローン計算', slug: '/ja/kinyu/jutaku-loan-keisan/' },
+      { name: '複利計算', slug: '/ja/kinyu/fukuri-keisan/' },
+      { name: 'ローン計算', slug: '/ja/kinyu/loan-keisan/' },
+      { name: '貯金計算', slug: '/ja/kinyu/chokin-keisan/' },
+      { name: 'カーローン計算', slug: '/ja/kinyu/car-loan-keisan/' },
+      { name: '投資計算', slug: '/ja/kinyu/toshi-keisan/' },
+      { name: 'ROI計算', slug: '/ja/kinyu/roi-keisan/' },
+      { name: 'インフレーション計算', slug: '/ja/kinyu/inflation-keisan/' },
+      { name: '為替変換', slug: '/ja/kinyu/kawase-henkan/' },
+      { name: '割引計算', slug: '/ja/kinyu/waribiki-keisan/' },
+      { name: 'チップ計算', slug: '/ja/kinyu/chip-keisan/' },
+      { name: '消費税計算', slug: '/ja/kinyu/shouhizei-keisan/' },
+      { name: '税計算', slug: '/ja/kinyu/zei-keisan/' },
+      { name: '返済計算', slug: '/ja/kinyu/hensai-keisan/' },
+      { name: '歴史的インフレーション計算', slug: '/ja/kinyu/rekishi-inflation-keisan/' },
+    ],
+  },
+  {
+    name: '健康',
+    slug: 'kenko',
+    description: 'BMI、基礎代謝量、TDEE、カロリー、マクロ栄養素、体脂肪率、出産予定日、排卵日計算。',
+    icon: '🏥',
+    tools: [
+      { name: 'BMI計算', slug: '/ja/kenko/bmi-keisan/' },
+      { name: '基礎代謝量計算', slug: '/ja/kenko/kiso-taisya-keisan/' },
+      { name: 'TDEE計算', slug: '/ja/kenko/tdee-keisan/' },
+      { name: 'カロリー計算', slug: '/ja/kenko/calorie-keisan/' },
+      { name: 'マクロ栄養素計算', slug: '/ja/kenko/macro-keisan/' },
+      { name: '体脂肪率計算', slug: '/ja/kenko/taishibou-keisan/' },
+      { name: '出産予定日計算', slug: '/ja/kenko/shussan-yoteibi-keisan/' },
+      { name: '排卵日計算', slug: '/ja/kenko/hairan-keisan/' },
+    ],
+  },
+  {
+    name: '数学',
+    slug: 'sugaku',
+    description: '割合、面積、変化率、分数、関数電卓など、日常の数学計算ツール。',
+    icon: '📐',
+    tools: [
+      { name: '割合計算', slug: '/ja/sugaku/wariai-keisan/' },
+      { name: '面積計算', slug: '/ja/sugaku/menseki-keisan/' },
+      { name: '変化率計算', slug: '/ja/sugaku/henka-ritsu-keisan/' },
+      { name: '分数計算', slug: '/ja/sugaku/bunsu-keisan/' },
+      { name: '関数電卓', slug: '/ja/sugaku/kagaku-keisan/' },
+    ],
+  },
+  {
+    name: '変換',
+    slug: 'henkan',
+    description: '温度、長さ、重量、体積の単位変換ツール。',
+    icon: '🔄',
+    tools: [
+      { name: '温度変換', slug: '/ja/henkan/ondo-henkan/' },
+      { name: '体積変換', slug: '/ja/henkan/taiseki-henkan/' },
+      { name: '長さ変換', slug: '/ja/henkan/nagasa-henkan/' },
+      { name: '重量変換', slug: '/ja/henkan/juryo-henkan/' },
+    ],
+  },
+  {
+    name: '日時',
+    slug: 'nichiji',
+    description: '年齢計算、日数計算など、日付と時間のツール。',
+    icon: '📅',
+    tools: [
+      { name: '年齢計算', slug: '/ja/nichiji/nenrei-keisan/' },
+      { name: '日数計算', slug: '/ja/nichiji/nichisu-keisan/' },
+    ],
+  },
+  {
+    name: 'テキスト',
+    slug: 'tekisuto',
+    description: '単語カウント、文字カウント、パスワード生成、QRコード作成ツール。',
+    icon: '📝',
+    tools: [
+      { name: '単語カウント', slug: '/ja/tekisuto/tango-kaunto/' },
+      { name: '文字カウント', slug: '/ja/tekisuto/moji-kaunto/' },
+      { name: 'パスワード生成', slug: '/ja/tekisuto/password-sakusei/' },
+      { name: 'QRコード作成', slug: '/ja/tekisuto/qr-code-sakusei/' },
+      { name: 'パスワード強度チェック', slug: '/ja/tekisuto/password-kyodo-check/' },
+    ],
+  },
+  {
+    name: '教育',
+    slug: 'kyoiku',
+    description: 'GPA計算や学業計画ツール。',
+    icon: '🎓',
+    tools: [
+      { name: 'GPA計算', slug: '/ja/kyoiku/gpa-keisan/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - 無料オンライン計算ツール | 金融・健康・数学"
+  description="25以上の言語で200以上の無料オンライン計算ツール。住宅ローン、BMI、複利、割合、温度変換など。高速・正確・登録不要。"
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">無料オンライン計算ツール</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        金融、健康、数学、変換のための高速・正確な計算ツール。登録不要。広告なし。
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/ja/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">人気の計算ツール</h2>
+    <p class="text-gray-600 mb-8">全カテゴリの中で最も利用されているツール</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/ja/kinyu/jutaku-loan-keisan/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">金融</div>
+        <div class="font-semibold text-gray-900">住宅ローン計算</div>
+        <p class="text-sm text-gray-500 mt-1">毎月の返済額と総利息を計算します。</p>
+      </a>
+      <a href="/ja/kenko/bmi-keisan/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">健康</div>
+        <div class="font-semibold text-gray-900">BMI計算</div>
+        <p class="text-sm text-gray-500 mt-1">BMI（体格指数）を簡単に計算できます。</p>
+      </a>
+      <a href="/ja/sugaku/wariai-keisan/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">数学</div>
+        <div class="font-semibold text-gray-900">割合計算</div>
+        <p class="text-sm text-gray-500 mt-1">あらゆる割合計算をひとつにまとめました。</p>
+      </a>
+      <a href="/ja/kenko/calorie-keisan/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">健康</div>
+        <div class="font-semibold text-gray-900">カロリー計算</div>
+        <p class="text-sm text-gray-500 mt-1">1日に必要なカロリーとマクロ栄養素の内訳。</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">全カテゴリ</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/ja/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/ja/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            {cat.name}ツールをすべて見る &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
