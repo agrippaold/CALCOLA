@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'ko';
+
+const categories = [
+  {
+    name: '금융',
+    slug: 'geumyung',
+    description: '주택대출, 복리, 대출, 저축, 투자, ROI 등 금융 계산기.',
+    icon: '💰',
+    tools: [
+      { name: '주택대출 계산기', slug: '/ko/geumyung/jutaek-daechu-gyesangi/' },
+      { name: '복리 계산기', slug: '/ko/geumyung/bokri-gyesangi/' },
+      { name: '대출 계산기', slug: '/ko/geumyung/daechu-gyesangi/' },
+      { name: '저축 계산기', slug: '/ko/geumyung/jeochuk-gyesangi/' },
+      { name: '차량 대출 계산기', slug: '/ko/geumyung/charang-daechu-gyesangi/' },
+      { name: '투자 계산기', slug: '/ko/geumyung/tuja-gyesangi/' },
+      { name: 'ROI 계산기', slug: '/ko/geumyung/roi-gyesangi/' },
+      { name: '물가상승 계산기', slug: '/ko/geumyung/mullga-sangseung-gyesangi/' },
+      { name: '환율 계산기', slug: '/ko/geumyung/hwanyul-gyesangi/' },
+      { name: '할인 계산기', slug: '/ko/geumyung/halin-gyesangi/' },
+      { name: '팁 계산기', slug: '/ko/geumyung/tip-gyesangi/' },
+      { name: '판매세 계산기', slug: '/ko/geumyung/panmae-se-gyesangi/' },
+      { name: '부가세 계산기', slug: '/ko/geumyung/bugase-gyesangi/' },
+      { name: '상환 계산기', slug: '/ko/geumyung/sanghwan-gyesangi/' },
+      { name: '역사 물가 계산기', slug: '/ko/geumyung/yeoksa-mullga-gyesangi/' },
+    ],
+  },
+  {
+    name: '건강',
+    slug: 'geongang',
+    description: 'BMI, 기초대사량, TDEE, 칼로리, 매크로, 체지방, 임신, 배란 계산기.',
+    icon: '🏥',
+    tools: [
+      { name: 'BMI 계산기', slug: '/ko/geongang/bmi-gyesangi/' },
+      { name: '기초대사량 계산기', slug: '/ko/geongang/gicho-daesa-gyesangi/' },
+      { name: 'TDEE 계산기', slug: '/ko/geongang/tdee-gyesangi/' },
+      { name: '칼로리 계산기', slug: '/ko/geongang/kalori-gyesangi/' },
+      { name: '매크로 계산기', slug: '/ko/geongang/macro-gyesangi/' },
+      { name: '체지방 계산기', slug: '/ko/geongang/chebang-gyesangi/' },
+      { name: '출산예정일 계산기', slug: '/ko/geongang/chulsan-yejeongi-gyesangi/' },
+      { name: '배란일 계산기', slug: '/ko/geongang/baeran-gyesangi/' },
+    ],
+  },
+  {
+    name: '수학',
+    slug: 'suhak',
+    description: '백분율, 면적, 분수, 과학 계산기 등 수학 도구.',
+    icon: '📐',
+    tools: [
+      { name: '백분율 계산기', slug: '/ko/suhak/baekbunul-gyesangi/' },
+      { name: '면적 계산기', slug: '/ko/suhak/myeonjeok-gyesangi/' },
+      { name: '변화율 계산기', slug: '/ko/suhak/byeonhwa-yul-gyesangi/' },
+      { name: '분수 계산기', slug: '/ko/suhak/bunsu-gyesangi/' },
+      { name: '공학 계산기', slug: '/ko/suhak/gwahak-gyesangi/' },
+    ],
+  },
+  {
+    name: '변환',
+    slug: 'byeonhwan',
+    description: '온도, 길이, 무게, 부피 단위 변환기.',
+    icon: '🔄',
+    tools: [
+      { name: '온도 변환기', slug: '/ko/byeonhwan/ondo-byeonhwan/' },
+      { name: '부피 변환기', slug: '/ko/byeonhwan/bupi-byeonhwan/' },
+      { name: '길이 변환기', slug: '/ko/byeonhwan/giri-byeonhwan/' },
+      { name: '무게 변환기', slug: '/ko/byeonhwan/mugae-byeonhwan/' },
+    ],
+  },
+  {
+    name: '날짜',
+    slug: 'naljja',
+    description: '나이 계산기, 날짜 차이 계산기 등 날짜 도구.',
+    icon: '📅',
+    tools: [
+      { name: '나이 계산기', slug: '/ko/naljja/nai-gyesangi/' },
+      { name: '날짜 차이 계산기', slug: '/ko/naljja/naljja-chai-gyesangi/' },
+    ],
+  },
+  {
+    name: '텍스트',
+    slug: 'tekseuteu',
+    description: '단어 수, 글자 수, 비밀번호 도구, QR 코드 생성기.',
+    icon: '📝',
+    tools: [
+      { name: '단어 수 세기', slug: '/ko/tekseuteu/daneo-gyesu/' },
+      { name: '글자 수 세기', slug: '/ko/tekseuteu/geulja-gyesu/' },
+      { name: '비밀번호 생성기', slug: '/ko/tekseuteu/bimilbeonho-saengseong/' },
+      { name: 'QR 코드 생성기', slug: '/ko/tekseuteu/qr-code-saengseong/' },
+      { name: '비밀번호 강도 검사', slug: '/ko/tekseuteu/bimilbeonho-gangdo/' },
+    ],
+  },
+  {
+    name: '교육',
+    slug: 'gyoyuk',
+    description: '학점 계산기 및 학업 계획 도구.',
+    icon: '🎓',
+    tools: [
+      { name: '학점 계산기', slug: '/ko/gyoyuk/hakjeom-gyesangi/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - 무료 온라인 계산기 | 금융, 건강, 수학"
+  description="25개 언어로 200개 이상의 무료 온라인 계산기. 주택대출, BMI, 복리, 백분율, 온도 변환 등. 빠르고 정확하며 가입 불필요."
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">무료 온라인 계산기</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        금융, 건강, 수학, 단위 변환을 위한 빠르고 정확한 계산기. 가입 불필요. 광고 없음.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/ko/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">인기 계산기</h2>
+    <p class="text-gray-600 mb-8">모든 카테고리에서 가장 많이 사용되는 도구</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/ko/geumyung/jutaek-daechu-gyesangi/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">금융</div>
+        <div class="font-semibold text-gray-900">주택대출 계산기</div>
+        <p class="text-sm text-gray-500 mt-1">월 상환액과 총 이자를 계산하세요.</p>
+      </a>
+      <a href="/ko/geongang/bmi-gyesangi/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">건강</div>
+        <div class="font-semibold text-gray-900">BMI 계산기</div>
+        <p class="text-sm text-gray-500 mt-1">체질량지수를 즉시 확인하세요.</p>
+      </a>
+      <a href="/ko/suhak/baekbunul-gyesangi/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">수학</div>
+        <div class="font-semibold text-gray-900">백분율 계산기</div>
+        <p class="text-sm text-gray-500 mt-1">모든 백분율 계산을 한 곳에서.</p>
+      </a>
+      <a href="/ko/geongang/kalori-gyesangi/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">건강</div>
+        <div class="font-semibold text-gray-900">칼로리 계산기</div>
+        <p class="text-sm text-gray-500 mt-1">매크로 영양소 분석과 함께 일일 칼로리 필요량을 확인하세요.</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">전체 카테고리</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/ko/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/ko/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            모든 {cat.name} 도구 보기 &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ko';
+
+const tools = [
+  { name: '주택대출 계산기', slug: '/ko/geumyung/jutaek-daechu-gyesangi/', description: '월 상환액, 총 이자를 계산하고 대출 조건을 비교하세요.' },
+  { name: '복리 계산기', slug: '/ko/geumyung/bokri-gyesangi/', description: '복리로 투자금이 시간에 따라 어떻게 성장하는지 확인하세요.' },
+  { name: '대출 계산기', slug: '/ko/geumyung/daechu-gyesangi/', description: '개인, 자동차, 학자금 대출의 월 상환액과 총 비용을 계산하세요.' },
+  { name: '저축 계산기', slug: '/ko/geumyung/jeochuk-gyesangi/', description: '초기 예금과 월 적금으로 저축 성장을 예측하세요.' },
+  { name: '차량 대출 계산기', slug: '/ko/geumyung/charang-daechu-gyesangi/', description: '계약금과 보상판매 가치를 포함한 자동차 할부금을 계산하세요.' },
+  { name: '투자 계산기', slug: '/ko/geumyung/tuja-gyesangi/', description: '정기 투자와 복리 수익으로 투자 성장을 예측하세요.' },
+  { name: 'ROI 계산기', slug: '/ko/geumyung/roi-gyesangi/', description: '모든 지출이나 투자에 대한 투자수익률을 계산하세요.' },
+  { name: '물가상승 계산기', slug: '/ko/geumyung/mullga-sangseung-gyesangi/', description: '인플레이션이 구매력에 미치는 영향과 미래 비용 증가를 확인하세요.' },
+  { name: '환율 계산기', slug: '/ko/geumyung/hwanyul-gyesangi/', description: '10개 주요 세계 통화 간의 환율을 변환하세요.' },
+  { name: '할인 계산기', slug: '/ko/geumyung/halin-gyesangi/', description: '할인율에 따른 최종 가격과 절약 금액을 확인하세요.' },
+  { name: '팁 계산기', slug: '/ko/geumyung/tip-gyesangi/', description: '팁 금액, 총 청구액을 계산하고 여러 명이 나눠 내세요.' },
+  { name: '판매세 계산기', slug: '/ko/geumyung/panmae-se-gyesangi/', description: '판매세율에 따른 세금 금액과 총 가격을 계산하세요.' },
+  { name: '부가세 계산기', slug: '/ko/geumyung/bugase-gyesangi/', description: '순 가격에 부가세를 더하거나 총 가격에서 부가세를 추출하세요.' },
+  { name: '상환 계산기', slug: '/ko/geumyung/sanghwan-gyesangi/', description: '원금과 이자 분할이 포함된 전체 대출 상환 일정을 확인하세요.' },
+  { name: '역사 물가 계산기', slug: '/ko/geumyung/yeoksa-mullga-gyesangi/', description: '미국 CPI 데이터를 사용해 1913년부터 2025년까지의 화폐 가치를 확인하세요.' },
+];
+---
+
+<BaseLayout
+  title="금융 계산기 - 대출, 이자, 투자 | CalcHub"
+  description="무료 금융 계산기: 주택대출, 복리, 대출 상환, 저축 성장. 가입 없이 정확한 결과를 확인하세요."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ko/" class="hover:text-blue-600">홈</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">금융 계산기</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">금융 계산기</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      주택대출, 대출 분석, 투자 성장, 저축 예측을 위한 도구. 은행과 금융 전문가가 사용하는 표준 금융 공식으로 계산합니다.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

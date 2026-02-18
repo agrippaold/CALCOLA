@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ko';
+
+const tools = [
+  { name: 'BMI 계산기', slug: '/ko/geongang/bmi-gyesangi/', description: 'BMI를 계산하고 건강 카테고리를 확인하세요.' },
+  { name: '기초대사량 계산기', slug: '/ko/geongang/gicho-daesa-gyesangi/', description: '안정 시 기초대사량(BMR)을 계산하세요.' },
+  { name: 'TDEE 계산기', slug: '/ko/geongang/tdee-gyesangi/', description: '활동 수준에 따른 총 일일 에너지 소비량을 계산하세요.' },
+  { name: '칼로리 계산기', slug: '/ko/geongang/kalori-gyesangi/', description: '매크로 영양소 분석과 함께 일일 칼로리 필요량을 확인하세요.' },
+  { name: '매크로 계산기', slug: '/ko/geongang/macro-gyesangi/', description: '목표에 맞는 일일 단백질, 탄수화물, 지방 섭취량을 계산하세요.' },
+  { name: '체지방 계산기', slug: '/ko/geongang/chebang-gyesangi/', description: '신체 측정값을 이용해 체지방률을 추정하세요.' },
+  { name: '출산예정일 계산기', slug: '/ko/geongang/chulsan-yejeongi-gyesangi/', description: '마지막 생리일 기준으로 출산 예정일을 계산하세요.' },
+  { name: '배란일 계산기', slug: '/ko/geongang/baeran-gyesangi/', description: '배란일과 가임 기간을 예측하세요.' },
+];
+---
+
+<BaseLayout
+  title="건강 계산기 - BMI, 칼로리, 체지방 | CalcHub"
+  description="무료 건강 계산기: BMI, 기초대사량, 칼로리, 매크로 영양소. 과학적 공식 기반의 정확한 결과."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ko/" class="hover:text-blue-600">홈</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">건강 계산기</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">건강 및 피트니스 계산기</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      과학적 공식에 기반한 건강 계산기. BMI, 기초대사량, TDEE, 칼로리 계산 등을 이용하실 수 있습니다.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ko';
+
+const tools = [
+  { name: '백분율 계산기', slug: '/ko/suhak/baekbunul-gyesangi/', description: '모든 백분율 계산을 한 곳에서 해결하세요.' },
+  { name: '면적 계산기', slug: '/ko/suhak/myeonjeok-gyesangi/', description: '다양한 도형의 면적을 계산하세요.' },
+  { name: '변화율 계산기', slug: '/ko/suhak/byeonhwa-yul-gyesangi/', description: '두 값 사이의 백분율 변화를 계산하세요.' },
+  { name: '분수 계산기', slug: '/ko/suhak/bunsu-gyesangi/', description: '분수의 덧셈, 뺄셈, 곱셈, 나눗셈을 계산하세요.' },
+  { name: '공학 계산기', slug: '/ko/suhak/gwahak-gyesangi/', description: '삼각함수, 로그, 지수 등 고급 수학 연산을 수행하세요.' },
+];
+---
+
+<BaseLayout
+  title="수학 계산기 - 백분율, 면적, 분수 | CalcHub"
+  description="무료 수학 계산기: 백분율, 면적, 분수, 공학 계산기. 빠르고 정확한 수학 도구."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ko/" class="hover:text-blue-600">홈</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">수학 계산기</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">수학 계산기</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      백분율, 면적, 분수, 공학 계산 등 일상적인 수학 문제를 해결하는 도구. 정확한 결과를 즉시 확인하세요.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
