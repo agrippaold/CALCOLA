@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ja';
+
+const tools = [
+  { name: '割合計算', slug: '/ja/sugaku/wariai-keisan/', description: '5つの割合計算モード：割合の計算、変化率、増加、減少。' },
+  { name: '面積計算', slug: '/ja/sugaku/menseki-keisan/', description: '長方形、円、三角形、台形、楕円の面積を計算します。' },
+  { name: '変化率計算', slug: '/ja/sugaku/henka-ritsu-keisan/', description: '2つの値の間の増減率を計算します。' },
+  { name: '分数計算', slug: '/ja/sugaku/bunsu-keisan/', description: '分数の四則演算と小数への変換ができます。' },
+  { name: '関数電卓', slug: '/ja/sugaku/kagaku-keisan/', description: '三角関数、対数、累乗、階乗、組み合わせの計算。' },
+];
+---
+
+<BaseLayout
+  title="数学計算ツール - 割合・分数・関数電卓 | CalcHub"
+  description="無料の数学計算ツール：割合、面積、変化率、分数、関数電卓。数式付きで即座に正確な結果を表示。"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ja/" class="hover:text-blue-600">ホーム</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">数学計算ツール</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">数学計算ツール</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      日常の計算に便利な数学ツール。割合、幾何学、その他の計算を素早く正確に行えます。
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

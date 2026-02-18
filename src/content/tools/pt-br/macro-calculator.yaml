@@ -2,8 +2,8 @@ id: "macro-calculator"
 category: "health"
 calculatorComponent: "MacroCalculator"
 
-title: "Calculadora de Macronutrientes - Proteinas, Carboidratos e Gorduras | CalcHub"
-metaDescription: "Calcule a distribuicao ideal de macronutrientes: proteinas, carboidratos e gorduras com base nos seus objetivos caloricos. Suporta dieta flexivel, hiperproteica, low carb e cetogenica."
+title: "Calculadora de Macronutrientes - Macros | CalcHub"
+metaDescription: "Calcule a distribuicao ideal de proteinas, carboidratos e gorduras para seus objetivos. Suporta dieta flexivel, low carb e cetogenica."
 h1: "Calculadora de Macronutrientes"
 slug: "calculadora-macronutrientes"
 

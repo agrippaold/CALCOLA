@@ -2,7 +2,7 @@ id: "auto-loan-calculator"
 category: "finance"
 calculatorComponent: "AutoLoanCalculator"
 
-title: "Calculadora de Financiamento de Veiculo - Simule Parcelas | CalcHub"
+title: "Calculadora Financiamento Veiculo - Parcelas | CalcHub"
 metaDescription: "Simule o financiamento do seu carro ou moto. Calcule parcelas, juros totais e CET. Compare entrada e prazos com tabela FIPE. Gratuito e rapido."
 h1: "Calculadora de Financiamento de Veiculo"
 slug: "calculadora-financiamento-veiculo"

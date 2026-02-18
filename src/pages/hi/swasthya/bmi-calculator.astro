@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import BMICalculator from '../../../components/calculators/health/BMICalculator';
+
+const lang = 'hi';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'bmi-calculator' && t.id.startsWith('hi/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/hi/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <BMICalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

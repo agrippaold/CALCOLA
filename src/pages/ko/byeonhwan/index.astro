@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ko';
+
+const tools = [
+  { name: '온도 변환기', slug: '/ko/byeonhwan/ondo-byeonhwan/', description: '섭씨, 화씨, 켈빈 간의 온도를 변환하세요.' },
+  { name: '부피 변환기', slug: '/ko/byeonhwan/bupi-byeonhwan/', description: '리터, 갤런, 밀리리터 등 부피 단위를 변환하세요.' },
+  { name: '길이 변환기', slug: '/ko/byeonhwan/giri-byeonhwan/', description: '미터, 피트, 인치, 킬로미터 등 길이 단위를 변환하세요.' },
+  { name: '무게 변환기', slug: '/ko/byeonhwan/mugae-byeonhwan/', description: '킬로그램, 파운드, 온스 등 무게 단위를 변환하세요.' },
+];
+---
+
+<BaseLayout
+  title="단위 변환기 - 온도, 길이, 무게 | CalcHub"
+  description="무료 단위 변환기: 온도, 부피, 길이, 무게. 빠르고 정확한 단위 변환 도구."
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ko/" class="hover:text-blue-600">홈</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">단위 변환기</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">단위 변환기</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      온도, 길이, 무게, 부피 등 다양한 단위를 빠르고 정확하게 변환하세요.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

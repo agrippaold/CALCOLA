@@ -2,7 +2,7 @@ id: "savings-calculator"
 category: "finance"
 calculatorComponent: "SavingsCalculator"
 
-title: "Calculadora de Poupanca e Investimentos - Simule Rendimentos | CalcHub"
+title: "Calculadora de Poupanca - Rendimentos | CalcHub"
 metaDescription: "Simule o crescimento da sua poupanca, CDB, LCI ou LCA com aportes mensais. Compare rendimentos e planeje suas metas financeiras gratuitamente."
 h1: "Calculadora de Poupanca"
 slug: "calculadora-poupanca"

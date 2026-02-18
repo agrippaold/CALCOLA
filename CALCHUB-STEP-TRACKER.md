@@ -11,10 +11,10 @@ questo file per sapere da dove ripartire.
 
 ## STATO ATTUALE
 
-**Ultimo step completato:** STEP 3.8 (Link-bait tools: historical inflation, QR code, password strength checker)
-**Prossimo step da eseguire:** STEP 4.1
-**Branch attivo:** claude/continue-step-tracker-gNWpS
-**Build status:** OK (157 pagine, 185 test passano, 84 YAML validati)
+**Ultimo step completato:** STEP 4.2 (AR Arabic localization for 40 tools with RTL)
+**Prossimo step da eseguire:** STEP 4.3
+**Branch attivo:** claude/continue-step-tracker-rh26Q
+**Build status:** OK (253 pagine, 185 test passano, 124+ YAML validati)
 
 ---
 
@@ -560,8 +560,20 @@ Note: HistoricalInflationCalculator con dati CPI reali 1913-2025, quick presets,
 
 # FASE 4 — MULTILINGUA COMPLETO PER 30 TOOL (Sessione 19-30)
 
-## STEP 4.1 — PT-BR per 30 tool ⬜
-## STEP 4.2 — AR per 30 tool (include test RTL) ⬜
+## STEP 4.1 — PT-BR per 40 tool ✅
+```
+Commit: [STEP 4.1] Add complete PT-BR (Brazilian Portuguese) localization
+```
+Completato: 2026-02-16
+File creati/modificati: src/i18n/ui.ts (PT-BR strings), 40 YAML in src/content/tools/pt-br/, 48 pagine Astro in src/pages/pt-br/ (homepage + 7 categorie + 40 tool)
+Note: 40 tool PT-BR con keyword native (calculadora imc, calculadora juros compostos, etc.). Categorie: financas, saude, matematica, conversoes, data, texto, educacao. Contesto brasiliano (IPCA, CDI, INSS, CLT). Defaults BRL, metrico. Fix metaDescription e title troppo lunghi. Build OK 205 pagine.
+## STEP 4.2 — AR per 40 tool (include test RTL) ✅
+```
+Commit: [STEP 4.2] Add complete AR (Arabic) localization with RTL support
+```
+Completato: 2026-02-16
+File creati/modificati: src/i18n/ui.ts (AR strings 44 keys), 40 YAML in src/content/tools/ar/, 48 pagine Astro in src/pages/ar/ (homepage + 7 categorie + 40 tool)
+Note: 40 tool AR con keyword native arabe. Categorie: maliya, sihha, riyadiyat, tahwilat, tarikh, nusus, taalim. Slug translitterati (hasibet-*, muhawwil-*, addad-*, muwalid-*). Contesto arabo/Gulf (SAR, finanza islamica, IVA 15%, NIST/AACRAO). RTL supportato via BaseLayout.astro (dir='rtl'). Formato numeri arabi (٫ decimale, ٬ migliaia). Build OK 253 pagine, 185 test verdi.
 ## STEP 4.3 — HI, JA, KO per 30 tool ⬜
 ## STEP 4.4 — RU, TR, ID, ZH-HANS per 30 tool ⬜
 ## STEP 4.5 — Tier 3 batch 1: PL, NL, TH, SV, RO ⬜

@@ -2,8 +2,8 @@ id: "bmi-calculator"
 category: "health"
 calculatorComponent: "BMICalculator"
 
-title: "Calculadora de IMC - Calcule seu Indice de Massa Corporal | CalcHub"
-metaDescription: "Calcule seu IMC gratuitamente com nossa calculadora de Indice de Massa Corporal. Insira peso e altura para descobrir sua faixa de IMC e recomendacoes de saude segundo a OMS."
+title: "Calculadora de IMC - Indice de Massa Corporal | CalcHub"
+metaDescription: "Calcule seu IMC gratis com nossa calculadora de Indice de Massa Corporal. Insira peso e altura para descobrir sua faixa de IMC e recomendacoes da OMS."
 h1: "Calculadora de IMC (Indice de Massa Corporal)"
 slug: "calculadora-imc"
 

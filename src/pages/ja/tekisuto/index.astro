@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ja';
+
+const tools = [
+  { name: '単語カウント', slug: '/ja/tekisuto/tango-kaunto/', description: '単語数、文数、段落数をカウントし、読了時間を推定します。' },
+  { name: '文字カウント', slug: '/ja/tekisuto/moji-kaunto/', description: 'スペースの有無で文字数をカウント。Twitter、SMSなどの制限を確認できます。' },
+  { name: 'パスワード生成', slug: '/ja/tekisuto/password-sakusei/', description: 'カスタマイズ可能な長さと文字種で安全なランダムパスワードを生成します。' },
+  { name: 'QRコード作成', slug: '/ja/tekisuto/qr-code-sakusei/', description: 'URL、テキスト、WiFi、メール用のQRコードを作成。PNGで無料ダウンロード。' },
+  { name: 'パスワード強度チェック', slug: '/ja/tekisuto/password-kyodo-check/', description: 'パスワードのセキュリティをスコア、解読時間の推定、改善のヒントで確認します。' },
+];
+---
+
+<BaseLayout
+  title="テキストツール - 文字カウント・パスワード生成 | CalcHub"
+  description="無料のテキストツール：単語カウント、文字カウント、パスワード生成、QRコード作成。テキスト分析とパスワード生成を即座に。"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ja/" class="hover:text-blue-600">ホーム</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">テキストツール</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">テキストツール</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      テキスト分析・生成ツール。単語・文字カウント、安全なパスワード生成、QRコード作成など。
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

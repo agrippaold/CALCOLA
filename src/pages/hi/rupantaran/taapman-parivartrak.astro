@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import TemperatureConverter from '../../../components/calculators/conversion/TemperatureConverter';
+
+const lang = 'hi';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'temperature-converter' && t.id.startsWith('hi/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/hi/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <TemperatureConverter client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

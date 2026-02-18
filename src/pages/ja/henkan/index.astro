@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'ja';
+
+const tools = [
+  { name: '温度変換', slug: '/ja/henkan/ondo-henkan/', description: '摂氏、華氏、ケルビンの相互変換と参考温度を表示します。' },
+  { name: '体積変換', slug: '/ja/henkan/taiseki-henkan/', description: 'mL、リットル、ガロン、カップ、液量オンスなどの体積を変換します。' },
+  { name: '長さ変換', slug: '/ja/henkan/nagasa-henkan/', description: 'mm、cm、m、km、インチ、フィート、ヤード、マイルの相互変換。' },
+  { name: '重量変換', slug: '/ja/henkan/juryo-henkan/', description: 'mg、g、kg、オンス、ポンド、ストーン、トンの相互変換。' },
+];
+---
+
+<BaseLayout
+  title="単位変換ツール - 温度・長さ・重量・体積 | CalcHub"
+  description="無料の単位変換ツール：温度、長さ、重量、体積。メートル法とヤード・ポンド法の即座の変換。"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/ja/" class="hover:text-blue-600">ホーム</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">変換ツール</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">単位変換ツール</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      温度、長さ、重量、体積などの単位を素早く正確に変換できます。
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

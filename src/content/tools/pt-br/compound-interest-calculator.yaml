@@ -2,7 +2,7 @@ id: "compound-interest-calculator"
 category: "finance"
 calculatorComponent: "CompoundInterestCalculator"
 
-title: "Calculadora de Juros Compostos - Simule Rendimentos | CalcHub"
+title: "Calculadora de Juros Compostos - Rendimentos | CalcHub"
 metaDescription: "Calcule juros compostos sobre seus investimentos. Simule rendimentos com CDI, Selic e poupanca. Veja o crescimento do seu dinheiro ao longo do tempo."
 h1: "Calculadora de Juros Compostos"
 slug: "calculadora-juros-compostos"

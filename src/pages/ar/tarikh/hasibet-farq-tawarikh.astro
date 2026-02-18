@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import DateDifferenceCalculator from '../../../components/calculators/date/DateDifferenceCalculator';
+
+const lang = 'ar';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'date-difference-calculator' && t.id.startsWith('ar/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/ar/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <DateDifferenceCalculator client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'hi';
+
+const tools = [
+  { name: 'प्रतिशत कैलकुलेटर', slug: '/hi/ganit/pratishat-calculator/', description: 'एक ही जगह पर सभी प्रतिशत गणनाएँ करें।' },
+  { name: 'क्षेत्रफल कैलकुलेटर', slug: '/hi/ganit/kshetraphal-calculator/', description: 'विभिन्न आकृतियों का क्षेत्रफल सूत्रों से ज्ञात करें।' },
+  { name: 'प्रतिशत परिवर्तन कैलकुलेटर', slug: '/hi/ganit/pratishat-parivartan-calculator/', description: 'दो मानों के बीच प्रतिशत वृद्धि या कमी की गणना।' },
+  { name: 'भिन्न कैलकुलेटर', slug: '/hi/ganit/bhinn-calculator/', description: 'भिन्नों को जोड़ें, घटाएं, गुणा करें और भाग दें।' },
+  { name: 'वैज्ञानिक कैलकुलेटर', slug: '/hi/ganit/vaigyanik-calculator/', description: 'त्रिकोणमिति, लघुगणक और उन्नत गणितीय कार्य।' },
+];
+---
+
+<BaseLayout
+  title="गणित कैलकुलेटर - प्रतिशत, क्षेत्रफल | CalcHub"
+  description="मुफ्त गणित कैलकुलेटर: प्रतिशत, क्षेत्रफल, भिन्न, वैज्ञानिक कैलकुलेटर। सटीक और तेज़ गणना।"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/hi/" class="hover:text-blue-600">होम</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">गणित</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">गणित कैलकुलेटर</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      दैनिक गणितीय समस्याओं के लिए कैलकुलेटर। प्रतिशत, क्षेत्रफल, भिन्न और वैज्ञानिक गणनाएँ।
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

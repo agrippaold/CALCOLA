@@ -309,4 +309,208 @@ export const UI_STRINGS: Record<string, Record<string, string>> = {
     'footer.languages': 'Idiomas Disponiveis',
     'footer.rights': 'Todos os direitos reservados.',
   },
+
+  ar: {
+    // التنقل
+    'nav.home': 'الرئيسية',
+    'nav.categories': 'الفئات',
+    'nav.about': 'من نحن',
+    'nav.language': 'اللغة',
+
+    // الفئات
+    'category.finance': 'المالية',
+    'category.health': 'الصحة واللياقة',
+    'category.math': 'الرياضيات والعلوم',
+    'category.conversion': 'التحويلات',
+    'category.date': 'التاريخ والوقت',
+    'category.construction': 'البناء والمنزل',
+    'category.text': 'النصوص والويب',
+    'category.education': 'التعليم والترفيه',
+    'category.physics': 'الكهرباء والفيزياء',
+
+    // واجهة الآلة الحاسبة
+    'calc.calculate': 'احسب',
+    'calc.reset': 'إعادة ضبط',
+    'calc.result': 'النتيجة',
+    'calc.save': 'حفظ الحساب',
+    'calc.saved': 'تم الحفظ!',
+    'calc.share': 'مشاركة',
+    'calc.embed': 'تضمين هذه الآلة الحاسبة',
+    'calc.copyEmbed': 'نسخ كود التضمين',
+    'calc.copied': 'تم النسخ!',
+
+    // أقسام المحتوى
+    'content.howItWorks': 'كيف تعمل',
+    'content.formula': 'الصيغة',
+    'content.source': 'المصدر',
+    'content.examples': 'أمثلة عملية',
+    'content.faq': 'الأسئلة الشائعة',
+    'content.relatedTools': 'حاسبات ذات صلة',
+    'content.lastUpdated': 'آخر تحديث',
+    'content.writtenBy': 'بقلم',
+    'content.reviewedBy': 'مراجعة بواسطة',
+
+    // التذييل
+    'footer.about': 'عن CalcHub',
+    'footer.methodology': 'منهجيتنا',
+    'footer.privacy': 'سياسة الخصوصية',
+    'footer.terms': 'شروط الاستخدام',
+    'footer.contact': 'اتصل بنا',
+    'footer.allCalculators': 'جميع الآلات الحاسبة',
+    'footer.languages': 'اللغات المتاحة',
+    'footer.rights': 'جميع الحقوق محفوظة.',
+  },
+
+  hi: {
+    // नेविगेशन
+    'nav.home': 'होम',
+    'nav.categories': 'श्रेणियाँ',
+    'nav.about': 'हमारे बारे में',
+    'nav.language': 'भाषा',
+
+    // श्रेणियाँ
+    'category.finance': 'वित्त',
+    'category.health': 'स्वास्थ्य और फिटनेस',
+    'category.math': 'गणित और विज्ञान',
+    'category.conversion': 'रूपांतरण',
+    'category.date': 'दिनांक और समय',
+    'category.construction': 'निर्माण और घर',
+    'category.text': 'टेक्स्ट और वेब',
+    'category.education': 'शिक्षा और मनोरंजन',
+    'category.physics': 'बिजली और भौतिकी',
+
+    // कैलकुलेटर UI
+    'calc.calculate': 'गणना करें',
+    'calc.reset': 'रीसेट',
+    'calc.result': 'परिणाम',
+    'calc.save': 'गणना सहेजें',
+    'calc.saved': 'सहेजा गया!',
+    'calc.share': 'शेयर करें',
+    'calc.embed': 'इस कैलकुलेटर को एम्बेड करें',
+    'calc.copyEmbed': 'एम्बेड कोड कॉपी करें',
+    'calc.copied': 'कॉपी हो गया!',
+
+    // सामग्री अनुभाग
+    'content.howItWorks': 'यह कैसे काम करता है',
+    'content.formula': 'सूत्र',
+    'content.source': 'स्रोत',
+    'content.examples': 'व्यावहारिक उदाहरण',
+    'content.faq': 'अक्सर पूछे जाने वाले प्रश्न',
+    'content.relatedTools': 'संबंधित कैलकुलेटर',
+    'content.lastUpdated': 'अंतिम अपडेट',
+    'content.writtenBy': 'लेखक',
+    'content.reviewedBy': 'समीक्षक',
+
+    // फुटर
+    'footer.about': 'CalcHub के बारे में',
+    'footer.methodology': 'हमारी कार्यप्रणाली',
+    'footer.privacy': 'गोपनीयता नीति',
+    'footer.terms': 'सेवा की शर्तें',
+    'footer.contact': 'संपर्क',
+    'footer.allCalculators': 'सभी कैलकुलेटर',
+    'footer.languages': 'उपलब्ध भाषाएँ',
+    'footer.rights': 'सर्वाधिकार सुरक्षित।',
+  },
+
+  ja: {
+    // ナビゲーション
+    'nav.home': 'ホーム',
+    'nav.categories': 'カテゴリ',
+    'nav.about': '概要',
+    'nav.language': '言語',
+
+    // カテゴリ
+    'category.finance': '金融',
+    'category.health': '健康・フィットネス',
+    'category.math': '数学・科学',
+    'category.conversion': '単位変換',
+    'category.date': '日付・時間',
+    'category.construction': '建設・住宅',
+    'category.text': 'テキスト・Web',
+    'category.education': '教育・学習',
+    'category.physics': '電気・物理',
+
+    // 電卓UI
+    'calc.calculate': '計算する',
+    'calc.reset': 'リセット',
+    'calc.result': '結果',
+    'calc.save': '計算を保存',
+    'calc.saved': '保存しました！',
+    'calc.share': '共有',
+    'calc.embed': 'この計算機を埋め込む',
+    'calc.copyEmbed': '埋め込みコードをコピー',
+    'calc.copied': 'コピーしました！',
+
+    // コンテンツセクション
+    'content.howItWorks': '計算方法',
+    'content.formula': '計算式',
+    'content.source': '出典',
+    'content.examples': '計算例',
+    'content.faq': 'よくある質問',
+    'content.relatedTools': '関連する計算機',
+    'content.lastUpdated': '最終更新',
+    'content.writtenBy': '著者',
+    'content.reviewedBy': '監修',
+
+    // フッター
+    'footer.about': 'CalcHubについて',
+    'footer.methodology': '計算方法について',
+    'footer.privacy': 'プライバシーポリシー',
+    'footer.terms': '利用規約',
+    'footer.contact': 'お問い合わせ',
+    'footer.allCalculators': 'すべての計算機',
+    'footer.languages': '対応言語',
+    'footer.rights': 'All rights reserved.',
+  },
+
+  ko: {
+    // 내비게이션
+    'nav.home': '홈',
+    'nav.categories': '카테고리',
+    'nav.about': '소개',
+    'nav.language': '언어',
+
+    // 카테고리
+    'category.finance': '금융',
+    'category.health': '건강 및 피트니스',
+    'category.math': '수학 및 과학',
+    'category.conversion': '단위 변환',
+    'category.date': '날짜 및 시간',
+    'category.construction': '건설 및 주택',
+    'category.text': '텍스트 및 웹',
+    'category.education': '교육 및 학습',
+    'category.physics': '전기 및 물리',
+
+    // 계산기 UI
+    'calc.calculate': '계산하기',
+    'calc.reset': '초기화',
+    'calc.result': '결과',
+    'calc.save': '계산 저장',
+    'calc.saved': '저장됨!',
+    'calc.share': '공유',
+    'calc.embed': '이 계산기 삽입',
+    'calc.copyEmbed': '삽입 코드 복사',
+    'calc.copied': '복사됨!',
+
+    // 콘텐츠 섹션
+    'content.howItWorks': '계산 방법',
+    'content.formula': '공식',
+    'content.source': '출처',
+    'content.examples': '계산 예시',
+    'content.faq': '자주 묻는 질문',
+    'content.relatedTools': '관련 계산기',
+    'content.lastUpdated': '최종 업데이트',
+    'content.writtenBy': '작성자',
+    'content.reviewedBy': '검토자',
+
+    // 푸터
+    'footer.about': 'CalcHub 소개',
+    'footer.methodology': '계산 방법론',
+    'footer.privacy': '개인정보처리방침',
+    'footer.terms': '이용약관',
+    'footer.contact': '문의',
+    'footer.allCalculators': '모든 계산기',
+    'footer.languages': '지원 언어',
+    'footer.rights': 'All rights reserved.',
+  },
 };

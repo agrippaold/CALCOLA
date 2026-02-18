@@ -2,7 +2,7 @@ id: "qr-code-generator"
 category: "text"
 calculatorComponent: "QRCodeGenerator"
 
-title: "Gerador de QR Code Gratis - URL, Texto, WiFi, Email | CalcHub"
+title: "Gerador de QR Code Gratis - URL e Texto | CalcHub"
 metaDescription: "Gere QR codes instantaneamente para URLs, texto, credenciais WiFi e enderecos de email. Gratis, sem cadastro, baixe como PNG. Funciona em todos os dispositivos."
 h1: "Gerador de QR Code"
 slug: "gerador-qr-code"
