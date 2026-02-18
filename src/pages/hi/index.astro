@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lang = 'hi';
+
+const categories = [
+  {
+    name: 'वित्तीय',
+    slug: 'vittiya',
+    description: 'होम लोन, चक्रवृद्धि ब्याज, ऋण, बचत, निवेश और अन्य वित्तीय कैलकुलेटर।',
+    icon: '💰',
+    tools: [
+      { name: 'गृह ऋण कैलकुलेटर', slug: '/hi/vittiya/grih-rin-calculator/' },
+      { name: 'चक्रवृद्धि ब्याज कैलकुलेटर', slug: '/hi/vittiya/chakravridhi-byaj-calculator/' },
+      { name: 'ऋण कैलकुलेटर', slug: '/hi/vittiya/rin-calculator/' },
+      { name: 'बचत कैलकुलेटर', slug: '/hi/vittiya/bachat-calculator/' },
+      { name: 'वाहन ऋण कैलकुलेटर', slug: '/hi/vittiya/vahan-rin-calculator/' },
+      { name: 'निवेश कैलकुलेटर', slug: '/hi/vittiya/nivesh-calculator/' },
+      { name: 'ROI कैलकुलेटर', slug: '/hi/vittiya/roi-calculator/' },
+      { name: 'मुद्रास्फीति कैलकुलेटर', slug: '/hi/vittiya/mudra-sfiti-calculator/' },
+      { name: 'मुद्रा परिवर्तक', slug: '/hi/vittiya/mudra-parivartrak/' },
+      { name: 'छूट कैलकुलेटर', slug: '/hi/vittiya/chhoot-calculator/' },
+      { name: 'टिप कैलकुलेटर', slug: '/hi/vittiya/tip-calculator/' },
+      { name: 'बिक्री कर कैलकुलेटर', slug: '/hi/vittiya/bikri-kar-calculator/' },
+      { name: 'GST कैलकुलेटर', slug: '/hi/vittiya/gst-calculator/' },
+      { name: 'ऋण परिपालन कैलकुलेटर', slug: '/hi/vittiya/rin-paripalan-calculator/' },
+      { name: 'ऐतिहासिक मुद्रास्फीति कैलकुलेटर', slug: '/hi/vittiya/aitihasik-mudra-sfiti-calculator/' },
+    ],
+  },
+  {
+    name: 'स्वास्थ्य',
+    slug: 'swasthya',
+    description: 'BMI, बेसल मेटाबॉलिक रेट, TDEE, कैलोरी, मैक्रो, शारीरिक वसा, प्रसव तिथि और ओवुलेशन।',
+    icon: '🏥',
+    tools: [
+      { name: 'BMI कैलकुलेटर', slug: '/hi/swasthya/bmi-calculator/' },
+      { name: 'BMR कैलकुलेटर', slug: '/hi/swasthya/bmr-calculator/' },
+      { name: 'TDEE कैलकुलेटर', slug: '/hi/swasthya/tdee-calculator/' },
+      { name: 'कैलोरी कैलकुलेटर', slug: '/hi/swasthya/calorie-calculator/' },
+      { name: 'मैक्रो कैलकुलेटर', slug: '/hi/swasthya/macro-calculator/' },
+      { name: 'शरीर वसा कैलकुलेटर', slug: '/hi/swasthya/sharir-vasa-calculator/' },
+      { name: 'प्रसव तिथि कैलकुलेटर', slug: '/hi/swasthya/prasav-tithi-calculator/' },
+      { name: 'ओवुलेशन कैलकुलेटर', slug: '/hi/swasthya/ovulation-calculator/' },
+    ],
+  },
+  {
+    name: 'गणित',
+    slug: 'ganit',
+    description: 'प्रतिशत, क्षेत्रफल, प्रतिशत परिवर्तन, भिन्न और वैज्ञानिक कैलकुलेटर।',
+    icon: '📐',
+    tools: [
+      { name: 'प्रतिशत कैलकुलेटर', slug: '/hi/ganit/pratishat-calculator/' },
+      { name: 'क्षेत्रफल कैलकुलेटर', slug: '/hi/ganit/kshetraphal-calculator/' },
+      { name: 'प्रतिशत परिवर्तन कैलकुलेटर', slug: '/hi/ganit/pratishat-parivartan-calculator/' },
+      { name: 'भिन्न कैलकुलेटर', slug: '/hi/ganit/bhinn-calculator/' },
+      { name: 'वैज्ञानिक कैलकुलेटर', slug: '/hi/ganit/vaigyanik-calculator/' },
+    ],
+  },
+  {
+    name: 'रूपांतरण',
+    slug: 'rupantaran',
+    description: 'तापमान, आयतन, लंबाई और वजन रूपांतरण उपकरण।',
+    icon: '🔄',
+    tools: [
+      { name: 'तापमान परिवर्तक', slug: '/hi/rupantaran/taapman-parivartrak/' },
+      { name: 'आयतन परिवर्तक', slug: '/hi/rupantaran/aayatan-parivartrak/' },
+      { name: 'लंबाई परिवर्तक', slug: '/hi/rupantaran/lambai-parivartrak/' },
+      { name: 'वजन परिवर्तक', slug: '/hi/rupantaran/vajan-parivartrak/' },
+    ],
+  },
+  {
+    name: 'दिनांक',
+    slug: 'dinank',
+    description: 'आयु गणना और दिनांक अंतर कैलकुलेटर।',
+    icon: '📅',
+    tools: [
+      { name: 'आयु कैलकुलेटर', slug: '/hi/dinank/aayu-calculator/' },
+      { name: 'दिनांक अंतर कैलकुलेटर', slug: '/hi/dinank/dinank-antar-calculator/' },
+    ],
+  },
+  {
+    name: 'पाठ',
+    slug: 'paath',
+    description: 'शब्द गणक, अक्षर गणक, पासवर्ड निर्माता, QR कोड और पासवर्ड शक्ति परीक्षक।',
+    icon: '📝',
+    tools: [
+      { name: 'शब्द गणक', slug: '/hi/paath/shabd-gannak/' },
+      { name: 'अक्षर गणक', slug: '/hi/paath/akshar-gannak/' },
+      { name: 'पासवर्ड निर्माता', slug: '/hi/paath/password-nirmatak/' },
+      { name: 'QR कोड निर्माता', slug: '/hi/paath/qr-code-nirmatak/' },
+      { name: 'पासवर्ड शक्ति परीक्षक', slug: '/hi/paath/password-shakti-parikshak/' },
+    ],
+  },
+  {
+    name: 'शिक्षा',
+    slug: 'shiksha',
+    description: 'GPA कैलकुलेटर और शैक्षणिक उपकरण।',
+    icon: '🎓',
+    tools: [
+      { name: 'GPA कैलकुलेटर', slug: '/hi/shiksha/gpa-calculator/' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="CalcHub - मुफ्त ऑनलाइन कैलकुलेटर | वित्त, स्वास्थ्य, गणित"
+  description="25+ भाषाओं में 200+ मुफ्त ऑनलाइन कैलकुलेटर। होम लोन, BMI, चक्रवृद्धि ब्याज, प्रतिशत, तापमान और बहुत कुछ। तेज़, सटीक, बिना पंजीकरण।"
+  lang={lang}
+>
+  {/* Hero Section */}
+  <section class="bg-gradient-to-b from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">मुफ्त ऑनलाइन कैलकुलेटर</h1>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        वित्त, स्वास्थ्य, गणित और रूपांतरण के लिए तेज़ और सटीक कैलकुलेटर। बिना पंजीकरण। बिना परेशान करने वाले विज्ञापन।
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {categories.map((cat) => (
+          <a
+            href={`/hi/${cat.slug}/`}
+            class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Popular Tools */}
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">लोकप्रिय कैलकुलेटर</h2>
+    <p class="text-gray-600 mb-8">सभी श्रेणियों के सबसे अधिक उपयोग किए जाने वाले उपकरण</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="/hi/vittiya/grih-rin-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-blue-600 mb-1">वित्तीय</div>
+        <div class="font-semibold text-gray-900">गृह ऋण कैलकुलेटर</div>
+        <p class="text-sm text-gray-500 mt-1">मासिक किस्त और कुल ब्याज की गणना करें।</p>
+      </a>
+      <a href="/hi/swasthya/bmi-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">स्वास्थ्य</div>
+        <div class="font-semibold text-gray-900">BMI कैलकुलेटर</div>
+        <p class="text-sm text-gray-500 mt-1">अपना बॉडी मास इंडेक्स तुरंत जानें।</p>
+      </a>
+      <a href="/hi/ganit/pratishat-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-purple-600 mb-1">गणित</div>
+        <div class="font-semibold text-gray-900">प्रतिशत कैलकुलेटर</div>
+        <p class="text-sm text-gray-500 mt-1">एक ही जगह पर सभी प्रतिशत गणनाएँ।</p>
+      </a>
+      <a href="/hi/swasthya/calorie-calculator/" class="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+        <div class="text-sm font-medium text-green-600 mb-1">स्वास्थ्य</div>
+        <div class="font-semibold text-gray-900">कैलोरी कैलकुलेटर</div>
+        <p class="text-sm text-gray-500 mt-1">दैनिक कैलोरी और मैक्रोन्यूट्रिएंट्स आपके लक्ष्यों के लिए।</p>
+      </a>
+    </div>
+  </section>
+
+  {/* Categories with Tools */}
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">सभी श्रेणियाँ</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {categories.map((cat) => (
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+          <a href={`/hi/${cat.slug}/`} class="block mb-3">
+            <h3 class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              {cat.name}
+            </h3>
+          </a>
+          <p class="text-gray-600 text-sm mb-4">{cat.description}</p>
+          <ul class="space-y-2">
+            {cat.tools.map((tool) => (
+              <li>
+                <a
+                  href={tool.slug}
+                  class="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
+                >
+                  {tool.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/hi/${cat.slug}/`}
+            class="inline-block mt-4 text-sm text-gray-500 hover:text-blue-600"
+          >
+            सभी {cat.name.toLowerCase()} उपकरण देखें &rarr;
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

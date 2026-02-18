@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import ToolLayout from '../../../layouts/ToolLayout.astro';
+import CharacterCounter from '../../../components/calculators/text/CharacterCounter';
+
+const lang = 'hi';
+
+const allTools = await getCollection('tools');
+const toolEntry = allTools.find(
+  (t) => t.data.id === 'character-counter' && t.id.startsWith('hi/')
+);
+
+if (!toolEntry) {
+  return Astro.redirect('/hi/');
+}
+
+const tool = toolEntry.data;
+---
+
+<ToolLayout tool={tool} lang={lang}>
+  <CharacterCounter client:visible defaults={tool.defaults} lang={lang} />
+</ToolLayout>

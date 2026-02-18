@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'hi';
+
+const tools = [
+  { name: 'शब्द गणक', slug: '/hi/paath/shabd-gannak/', description: 'किसी भी पाठ में शब्दों, वाक्यों और अनुच्छेदों की गणना।' },
+  { name: 'अक्षर गणक', slug: '/hi/paath/akshar-gannak/', description: 'रियल-टाइम में अक्षरों, शब्दों और रिक्त स्थानों की गणना।' },
+  { name: 'पासवर्ड निर्माता', slug: '/hi/paath/password-nirmatak/', description: 'अनुकूलन योग्य लंबाई और जटिलता के साथ सुरक्षित पासवर्ड बनाएं।' },
+  { name: 'QR कोड निर्माता', slug: '/hi/paath/qr-code-nirmatak/', description: 'किसी भी URL या पाठ के लिए QR कोड तुरंत बनाएं।' },
+  { name: 'पासवर्ड शक्ति परीक्षक', slug: '/hi/paath/password-shakti-parikshak/', description: 'अपने पासवर्ड की सुरक्षा शक्ति का आकलन करें।' },
+];
+---
+
+<BaseLayout
+  title="पाठ उपकरण - शब्द गणक, पासवर्ड | CalcHub"
+  description="मुफ्त पाठ उपकरण: शब्द गणक, अक्षर गणक, पासवर्ड निर्माता, QR कोड। तेज़ और सुरक्षित।"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/hi/" class="hover:text-blue-600">होम</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">पाठ</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">पाठ और वेब उपकरण</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      शब्द गणना, अक्षर गणना, पासवर्ड निर्माण, QR कोड और पासवर्ड सुरक्षा परीक्षण उपकरण।
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

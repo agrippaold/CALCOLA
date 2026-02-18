@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'hi';
+
+const tools = [
+  { name: 'BMI कैलकुलेटर', slug: '/hi/swasthya/bmi-calculator/', description: 'अपना बॉडी मास इंडेक्स और स्वास्थ्य श्रेणी जानें।' },
+  { name: 'BMR कैलकुलेटर', slug: '/hi/swasthya/bmr-calculator/', description: 'मिफ्लिन-सेंट जियोर समीकरण से बेसल मेटाबॉलिक रेट की गणना।' },
+  { name: 'TDEE कैलकुलेटर', slug: '/hi/swasthya/tdee-calculator/', description: 'गतिविधि स्तर के अनुसार कुल दैनिक ऊर्जा व्यय की गणना।' },
+  { name: 'कैलोरी कैलकुलेटर', slug: '/hi/swasthya/calorie-calculator/', description: 'आपके लक्ष्यों के लिए दैनिक कैलोरी और मैक्रोन्यूट्रिएंट्स।' },
+  { name: 'मैक्रो कैलकुलेटर', slug: '/hi/swasthya/macro-calculator/', description: 'प्रोटीन, कार्ब्स और वसा का आदर्श दैनिक सेवन जानें।' },
+  { name: 'शरीर वसा कैलकुलेटर', slug: '/hi/swasthya/sharir-vasa-calculator/', description: 'शरीर माप के आधार पर शारीरिक वसा प्रतिशत का अनुमान।' },
+  { name: 'प्रसव तिथि कैलकुलेटर', slug: '/hi/swasthya/prasav-tithi-calculator/', description: 'अंतिम मासिक धर्म की तिथि से अपेक्षित प्रसव तिथि की गणना।' },
+  { name: 'ओवुलेशन कैलकुलेटर', slug: '/hi/swasthya/ovulation-calculator/', description: 'अपनी प्रजनन अवधि और ओवुलेशन तिथियों का अनुमान लगाएं।' },
+];
+---
+
+<BaseLayout
+  title="स्वास्थ्य कैलकुलेटर - BMI और कैलोरी | CalcHub"
+  description="मुफ्त स्वास्थ्य कैलकुलेटर: BMI, बेसल मेटाबॉलिक रेट, कैलोरी, मैक्रो। वैज्ञानिक सूत्रों पर आधारित।"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/hi/" class="hover:text-blue-600">होम</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">स्वास्थ्य</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">स्वास्थ्य और फिटनेस कैलकुलेटर</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      वैज्ञानिक सूत्रों पर आधारित स्वास्थ्य कैलकुलेटर। BMI, बेसल मेटाबॉलिक रेट, TDEE, कैलोरी गणना और अधिक।
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

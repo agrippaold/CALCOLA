@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const lang = 'hi';
+
+const tools = [
+  { name: 'गृह ऋण कैलकुलेटर', slug: '/hi/vittiya/grih-rin-calculator/', description: 'मासिक किस्त, कुल ब्याज और ऋण अनुसूची की गणना करें।' },
+  { name: 'चक्रवृद्धि ब्याज कैलकुलेटर', slug: '/hi/vittiya/chakravridhi-byaj-calculator/', description: 'देखें कि चक्रवृद्धि ब्याज से आपका निवेश कैसे बढ़ता है।' },
+  { name: 'ऋण कैलकुलेटर', slug: '/hi/vittiya/rin-calculator/', description: 'व्यक्तिगत ऋण की मासिक किस्त और कुल लागत का अनुमान लगाएं।' },
+  { name: 'बचत कैलकुलेटर', slug: '/hi/vittiya/bachat-calculator/', description: 'प्रारंभिक जमा और मासिक योगदान से बचत की वृद्धि का अनुमान।' },
+  { name: 'वाहन ऋण कैलकुलेटर', slug: '/hi/vittiya/vahan-rin-calculator/', description: 'डाउन पेमेंट और ट्रेड-इन मूल्य के साथ वाहन ऋण किस्त की गणना।' },
+  { name: 'निवेश कैलकुलेटर', slug: '/hi/vittiya/nivesh-calculator/', description: 'नियमित योगदान और चक्रवृद्धि रिटर्न के साथ निवेश वृद्धि का अनुमान।' },
+  { name: 'ROI कैलकुलेटर', slug: '/hi/vittiya/roi-calculator/', description: 'किसी भी निवेश पर प्रतिशत रिटर्न की गणना करें।' },
+  { name: 'मुद्रास्फीति कैलकुलेटर', slug: '/hi/vittiya/mudra-sfiti-calculator/', description: 'देखें कि मुद्रास्फीति क्रय शक्ति को कैसे प्रभावित करती है।' },
+  { name: 'मुद्रा परिवर्तक', slug: '/hi/vittiya/mudra-parivartrak/', description: 'संदर्भ दरों के साथ 10 विश्व मुद्राओं के बीच रूपांतरण।' },
+  { name: 'छूट कैलकुलेटर', slug: '/hi/vittiya/chhoot-calculator/', description: 'किसी भी छूट प्रतिशत के लिए अंतिम मूल्य और बचत पता करें।' },
+  { name: 'टिप कैलकुलेटर', slug: '/hi/vittiya/tip-calculator/', description: 'टिप राशि, कुल बिल और लोगों के बीच बँटवारे की गणना।' },
+  { name: 'बिक्री कर कैलकुलेटर', slug: '/hi/vittiya/bikri-kar-calculator/', description: 'किसी भी कर दर के लिए कर राशि और कुल मूल्य पता करें।' },
+  { name: 'GST कैलकुलेटर', slug: '/hi/vittiya/gst-calculator/', description: 'मूल्य में GST जोड़ें या निकालें।' },
+  { name: 'ऋण परिपालन कैलकुलेटर', slug: '/hi/vittiya/rin-paripalan-calculator/', description: 'मूलधन और ब्याज किस्तों की पूरी परिशोधन सारणी देखें।' },
+  { name: 'ऐतिहासिक मुद्रास्फीति कैलकुलेटर', slug: '/hi/vittiya/aitihasik-mudra-sfiti-calculator/', description: 'CPI डेटा का उपयोग करके किसी भी वर्ष में पैसे का मूल्य जानें।' },
+];
+---
+
+<BaseLayout
+  title="वित्तीय कैलकुलेटर - ऋण, ब्याज, निवेश | CalcHub"
+  description="मुफ्त वित्तीय कैलकुलेटर: होम लोन, चक्रवृद्धि ब्याज, ऋण, बचत, निवेश। सटीक परिणाम बिना पंजीकरण।"
+  lang={lang}
+>
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/hi/" class="hover:text-blue-600">होम</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">वित्तीय</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">वित्तीय कैलकुलेटर</h1>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      ऋण योजना, निवेश विश्लेषण, बचत अनुमान और वित्तीय गणना के लिए उपकरण। सभी गणनाएँ मानक वित्तीय सूत्रों पर आधारित हैं।
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <a
+          href={tool.slug}
+          class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+        >
+          <h2 class="font-semibold text-gray-900 text-lg mb-2">{tool.name}</h2>
+          <p class="text-sm text-gray-500">{tool.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
